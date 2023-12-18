@@ -1,0 +1,11 @@
+﻿C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\ImplementationGuide-hl7.fhir.id.core.json: line 1, col 15469, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
+C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\ImplementationGuide-hl7.fhir.id.core.json: line 0, col 0, Warning - The resource should declare its jurisdiction to match the package id (hl7.fhir.id.core, jurisdiction = urn:iso:std:iso:3166#ID instead of or as well as [null]) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#ID "null"') (BUSINESSRULE)
+C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-MyPatient.json: line 1, col 70213, Error - When HL7 is publishing a resource, the owning committee must be stated using the http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension (BUSINESSRULE)
+C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-MyPatient.json: line 0, col 0, Error - The resource must declare its jurisdiction to match the package id (hl7.fhir.id.core, jurisdiction = urn:iso:std:iso:3166#ID) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#ID "null"') (BUSINESSRULE)
+
+IDCore : Validation Results
+=========================================
+
+err = 3, warn = 5, info = 0
+IG Publisher Version: 1.5.8
+Generated Mon Dec 18 10:34:34 WIB 2023. FHIR version 4.0.1 for hl7.fhir.id.core#0.1.0 (canonical = http://hl7.org/fhir/id/core)

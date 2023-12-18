@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "hl7.fhir.id.core",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.org/fhir/id/core/ImplementationGuide/hl7.fhir.id.core",
+    "version" : "0.1.0",
+    "name" : "IDCore"
+  },
+  {
+    "id" : "MyPatient",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/id/core/StructureDefinition/MyPatient",
+    "version" : "0.1.0",
+    "name" : "MyPatient"
+  }
+]

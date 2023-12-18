@@ -1,0 +1,183 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.id.core",
+  "url": "http://hl7.org/fhir/id/core/ImplementationGuide/hl7.fhir.id.core",
+  "version": "0.1.0",
+  "name": "IDCore",
+  "title": "ID Core Implementation Guide",
+  "status": "draft",
+  "publisher": "Thomas Chaidir",
+  "contact": [
+    {
+      "name": "Thomas Chaidir",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://satusehat.kemkes.go.id/"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.id.core",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/MyPatient"
+        },
+        "name": "MyPatient",
+        "description": "An example profile of the Patient resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/PatientExample"
+        },
+        "name": "PatientExample",
+        "description": "An example of a patient with a license to krill.",
+        "exampleCanonical": "http://hl7.org/fhir/id/core/StructureDefinition/MyPatient"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-pelayanan.html",
+          "title": "Modul Pelayanan",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "resume-medis-jilid1.html",
+              "title": "Resume Medis Jilid 1",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "resume-medis-jilid2.html",
+              "title": "Resume Medis Jilid 2",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "rawat-jalan-fase1.html",
+              "title": "Rawat Jalan Fase 1",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "rawat-jalan-fase2.html",
+              "title": "Rawat Jalan Fase 2",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "igd-fase1.html",
+              "title": "Igd Fase 1",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "igd-fase2.html",
+              "title": "Igd Fase 2",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "useCase.html",
+          "title": "Penerapan (Use Case)",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "imunisasi.html",
+              "title": "Imunisasi",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "gizi-tumbang.html",
+              "title": "Gizi Tumbang",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "shk.html",
+              "title": "Shk",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "anc.html",
+              "title": "Anc",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "inc.html",
+              "title": "Inc",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "pnc.html",
+              "title": "Pnc",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "dicom.html",
+          "title": "Sistem DICOM",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "architecture.html",
+              "title": "Architecture",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "dicom-requirement.html",
+              "title": "Dicom Requirement",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "dicom-router.html",
+              "title": "Dicom Router",
+              "generation": "markdown"
+            }
+          ]
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/includes"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent"
+      },
+      {
+        "code": "path-pages",
+        "value": "fsh-generated/includes"
+      },
+      {
+        "code": "path-history",
+        "value": "http://hl7.org/fhir/id/core/history.html"
+      }
+    ]
+  }
+}
