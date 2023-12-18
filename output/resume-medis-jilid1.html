@@ -207,8 +207,18 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#alur-integrasi-rawat-jalan-fase-1-alur-interoperabilitas-secara-umum-untuk-resume-medis-rawat-jalan" id="markdown-toc-alur-integrasi-rawat-jalan-fase-1-alur-interoperabilitas-secara-umum-untuk-resume-medis-rawat-jalan">Alur Integrasi Rawat Jalan Fase 1: Alur interoperabilitas secara umum untuk resume medis rawat jalan</a></li>
+  <li><a href="#1-pendaftaran-pasien" id="markdown-toc-1-pendaftaran-pasien">1. Pendaftaran Pasien</a></li>
+  <li><a href="#2-pendaftaran-kunjungan-pasien" id="markdown-toc-2-pendaftaran-kunjungan-pasien">2. Pendaftaran Kunjungan Pasien</a></li>
+  <li><a href="#2-pendaftaran-kunjungan-pasien-1" id="markdown-toc-2-pendaftaran-kunjungan-pasien-1">`2. Pendaftaran Kunjungan Pasien</a>    <ul>
+      <li><a href="#pemetaan-nilai" id="markdown-toc-pemetaan-nilai">Pemetaan Nilai</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-pengiriman-data-keluhan-utama" id="markdown-toc-3-pengiriman-data-keluhan-utama">3. Pengiriman Data Keluhan Utama</a></li>
+</ul>
+
 </div>
 <h3 id="alur-integrasi-rawat-jalan-fase-1-alur-interoperabilitas-secara-umum-untuk-resume-medis-rawat-jalan">Alur Integrasi Rawat Jalan Fase 1: Alur interoperabilitas secara umum untuk resume medis rawat jalan</h3>
 <p>Tahapan alur interoperabilitas dan resource yang digunakan untuk Resume Medis Rawat Jalan dapat dilihat pada gambar di bawah ini.</p>
@@ -217,34 +227,2287 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <div>
 <figure class="figure">
-<figcaption class="figure-caption"><strong>Example of a simple FHIR RESTful Search Transaction</strong></figcaption>
+<figcaption class="figure-caption"><strong></strong></figcaption>
   <img src="alur_integrasi-rawat_jalan_jilid_1.png" class="img-responsive img-rounded center-block" alt="alur_integrasi-rawat_jalan_jilid_1.png" width="75%" />
 </figure>
 
 <p></p>
 </div>
 
-<p>Alur integrasi dan format pengiriman data terkait secara umum selain data pemeriksaan penunjang dijelaskan pada Panduan Interoperabilitas sesuai dengan use case masing-masing (klik di sini) Resume Medis Rawat Jalan Jilid 1. Adapun langkah yang akan dijelaskan pada Panduan Interoperabilitas sesuai dengan use case masing-masing (klik di sini) Resume Medis Rawat Jalan Jilid 1 yaitu:</p>
-<ol>
-  <li>Pendaftaran Identitas Pasien</li>
-  <li>Pendataan Kunjungan</li>
-  <li>Anamnesis</li>
-  <li>Hasil Pemeriksaan Fisik</li>
-  <li>Tindakan/Prosedur Medis Diagnostik</li>
-  <li>Diagnosis</li>
-  <li>Tindakan/Prosedur Medis Terapetik</li>
-  <li>Tatalaksana</li>
-  <li>Prognosis</li>
-  <li>Rencana Tindak Lanjut/ Cara Keluar + dari Rumah Sakit</li>
-  <li>Instruksi untuk Tindak Lanjut</li>
-  <li>Sarana Transportasi untuk Rujuk</li>
-  <li>Kondisi Saat Meninggalkan RS</li>
-  <li>Pasien Pulang</li>
-</ol>
+<p>Alur integrasi dan format pengiriman data terkait secara umum selain data pemeriksaan penunjang dijelaskan pada Panduan Interoperabilitas sesuai dengan use case masing-masing (klik di sini) Resume Medis Rawat Jalan Jilid 1. Adapun langkah yang akan dijelaskan pada Panduan Interoperabilitas sesuai dengan use case masing-masing (klik di sini) Resume Medis Rawat Jalan Jilid 1 yaitu:
+‘1. Pendaftaran Identitas Pasien
+‘2. Pendataan Kunjungan
+‘3. Anamnesis
+‘4. Hasil Pemeriksaan Fisik
+‘9. Tindakan/Prosedur Medis Diagnostik
+‘10. Diagnosis
+‘11. Tindakan/Prosedur Medis Terapetik
+‘12. Tatalaksana
+‘13. Prognosis
+‘14. Rencana Tindak Lanjut/ Cara Keluar + dari Rumah Sakit
+  ‘1. Instruksi untuk Tindak Lanjut
+  ‘2. Sarana Transportasi untuk Rujuk
+‘15. Kondisi Saat Meninggalkan RS
+‘16. Pasien Pulang</p>
 
 <p>Data atau variabel resume medis rawat jalan yang dapat dipertukarkan dalam SATUSEHAT sebagai berikut:</p>
 
-<h2 id="tabel-2-informasi-variabel-rawat-jalan-fase-1"><em>Tabel 2. Informasi Variabel Rawat Jalan Fase 1</em></h2>
+<h4 id="tabel-2-informasi-variabel-rawat-jalan-fase-1"><em>Tabel 2. Informasi Variabel Rawat Jalan Fase 1</em></h4>
+
+<table style="border:1px solid black;" class="tableblock frame-all grid-all stripes-even stretch">
+  <caption class="title">Tabel 2. Informasi Variabel</caption>
+  <colgroup>
+    <col style="width:16.6666%" />
+    <col style="width:16.6666%" />
+    <col style="width:16.6666%" />
+    <col style="width:16.6666%" />
+    <col style="width:16.6666%" />
+    <col style="width:16.667%" />
+  </colgroup>
+  <thead style="border:1px solid black;">
+    <tr style="border:1px solid black;">
+      <th class="tableblock halign-center valign-top">No</th>
+      <th class="tableblock halign-center valign-top" colspan="2">Variabel</th>
+      <th class="tableblock halign-center valign-top">
+        <em>Resource</em> FHIR
+      </th>
+      <th class="tableblock halign-center valign-top">
+        <em>Path</em> FHIR
+      </th>
+      <th class="tableblock halign-center valign-top">Fase</th>
+    </tr>
+  </thead>
+  <tbody style="border:1px solid black;">
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>1</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="5">
+        <p class="tableblock">
+          <strong>Identitas Umum Pasien</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>a</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>Nomor SATUSEHAT Pasien</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Patient</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.identifier[i].use</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="19">
+        <p class="tableblock">
+          <strong>1</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.identifier[i].system</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.identifier[i].value</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>b</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Nama Lengkap</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.name[i].text</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>c</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>Nomor Induk Kependudukan (NIK)</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Patient</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.identifier[i].use</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.identifier[i].system</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.identifier[i].value</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>d</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>Nomor Identitas Lain (Khusus WNA): Nomor Paspor / KITAS</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Patient</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.identifier[i].use</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.identifier[i].system</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.identifier[i].value</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>e</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Tempat Lahir</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.extension:birthPlace</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>f</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Tanggal Lahir</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.birthDate</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>g</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Jenis Kelamin</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.gender</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>h</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Nama Penjamin</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.contact[i].name.text</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>i</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>Nomor Telepon Penjamin</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Patient</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.contact[i].telecom.system</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.contact[i].telecom.value</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Patient.contact[i].telecom.use</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>j</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Ruangan / Kelas / Poli</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.location</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>k</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Nama Dokter Penanggung Jawab Pelayanan (DPJP)</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.participant</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>2</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="5">
+        <p class="tableblock">
+          <strong>Tanggal dan Waktu Masuk</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>a</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Tanggal Masuk</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.period.start</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>1</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>b</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Jam masuk</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.period.start</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>3</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="5">
+        <p class="tableblock">
+          <strong>Tanggal dan Waktu Discharge Administrasi</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>a</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Tanggal Discharge Administrasi</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.period.end</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>1</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>b</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Jam Discharge Administrasi</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.period.end</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>4</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2">
+        <p class="tableblock">
+          <strong>Keluhan Utama</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Condition</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Condition.code</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>6</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>5</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="5">
+        <p class="tableblock">
+          <strong>Diagnosis</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>a</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>Diagnosis Awal / Masuk</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.diagnosis.condition</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="12">
+        <p class="tableblock">
+          <strong>1</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.diagnosis.use</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Condition</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Condition.code</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>b</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="3">
+        <p class="tableblock">
+          <strong>Diagnosis Akhir / Keluar</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="4"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4">
+        <p class="tableblock">
+          <strong>1. Diagnosis Primer / Utama</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.diagnosis.condition</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.diagnosis.use</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.diagnosis.rank</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Condition</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Condition.code</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="4"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4">
+        <p class="tableblock">
+          <strong>2. Diagnosis Sekunder / Penyerta</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.diagnosis.condition.code</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.diagnosis.use</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.diagnosis.rank</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Condition</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Condition.code</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>6</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="5">
+        <p class="tableblock">
+          <strong>Pemeriksaan Penunjang</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>a</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>Laboratorium</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Observation</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.category.coding</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>4</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.value[x]</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4">
+        <p class="tableblock">
+          <strong>b</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4">
+        <p class="tableblock">
+          <strong>Radiologi</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Observation</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.category.coding</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4">
+        <p class="tableblock">
+          <strong>6</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.value[x]</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ImagingStudy</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>7</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2" rowspan="2">
+        <p class="tableblock">
+          <strong>Tindakan / Prosedur Medis</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>
+            <code>Procedure</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Procedure.code.coding</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>2</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Procedure.category.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>8</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="5">
+        <p class="tableblock">
+          <strong>Obat-obatan / Terapi</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="2"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>a</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>Nama Obat</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Medication</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Medication.code</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="11">
+        <p class="tableblock">
+          <strong>3</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest.medicationReference</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="2"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>b</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>Bentuk / Sediaan</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Medication</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Medication.form</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest.medicationReference</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>c</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Jumlah Obat</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest.dispenseRequest.quantity</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>d</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Metode / Rute Pemberian</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest.dosageInstruction.route</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>e</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Dosis Obat yang Diberikan</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.value</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>f</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Unit</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest.dosageInstruction.doseAndRate.doseQuantity.unit</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>g</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Frekuensi / Interval</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest.dosageInstruction.timing</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="2"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>h</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>Aturan Tambahan</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="2">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest.dosageInstruction.additionalInstruction.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationRequest.dosageInstruction.additionalInstruction.text</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4">
+        <p class="tableblock">
+          <strong>9</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2" rowspan="4">
+        <p class="tableblock">
+          <strong>Diet</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4">
+        <p class="tableblock">
+          <strong>
+            <code>Composition</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Composition.type</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="4">
+        <p class="tableblock">
+          <strong>2</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Composition.section.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Composition.text.status</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Composition.text.div</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>10</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2" rowspan="2">
+        <p class="tableblock">
+          <strong>Alergi</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>
+            <code>AllergyIntolerance</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>AllergyIntolerance.category.coding</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>5</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-left valign-top">
+        <p class="tableblock">
+          <strong>
+            <code>AllergyIntolerance.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>11</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2">
+        <p class="tableblock">
+          <strong>Prognosis</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ClinicalImpression</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ClinicalImpression.prognosisCodeableConcept.coding</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>5</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>12</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2" rowspan="2">
+        <p class="tableblock">
+          <strong>Kondisi Saat Meninggalkan Rumah Sakit</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Condition</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Condition.code</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>5</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.hospitalization.dischargeDisposition</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>13</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2" rowspan="3">
+        <p class="tableblock">
+          <strong>Tingkat Kesadaran</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Observation</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.category.coding</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>5</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.valueCodeableConcept.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>14</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="5">
+        <p class="tableblock">
+          <strong>Keadaan umum</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>a</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="4">
+        <p class="tableblock">
+          <strong>Vital Sign</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>1. Denyut jantung</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Observation</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.category.coding</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="16"></td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.valueQuantity</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>2. Pernapasan</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Observation</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.category.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.valueQuantity</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>3. Tekanan darah</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2"></td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>* Sistole</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Observation</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.category.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.valueQuantity</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>* Diastole</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Observation</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.category.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.valueQuantity</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" class="tableblock halign-center valign-top" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>4. Suhu tubuh</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>
+            <code>Observation</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.category.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Observation.valueQuantity</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>15</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2" rowspan="2">
+        <p class="tableblock">
+          <strong>Rencana Tindak Lanjut / Cara Keluar dari Rumah Sakit</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.hospitalization.dischargeDisposition</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>5</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ServiceRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ServiceRequest.code.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>16</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="5">
+        <p class="tableblock">
+          <strong>Obat yang Dibawa Pulang</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>a</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>Nama Obat</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Medication</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Medication.code</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="11">
+        <p class="tableblock">
+          <strong>3</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense.medicationReference</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>b</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>Bentuk / Sediaan</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Medication</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Medication.form</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense.medicationReference</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>c</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Jumlah Obat</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense.quantity</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>d</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Metode / Rute Pemberian</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense.dosageInstruction.route</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>e</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Dosis Obat yang Diberikan</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense.dosageInstruction.doseAndRate.doseQuantity.value</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>f</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Unit</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense.dosageInstruction.doseAndRate.doseQuantity.unit</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>g</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Frekuensi / Interval</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense.dosageInstruction.timing</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>h</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>Aturan Tambahan</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense.dosageInstruction.additionalInstruction.coding</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>MedicationDispense.dosageInstruction.additionalInstruction.text</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>17</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="5">
+        <p class="tableblock">
+          <strong>Instruksi untuk Tindak Lanjut</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>a</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="3">
+        <p class="tableblock">
+          <strong>Kontrol ke</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="5">
+        <p class="tableblock">
+          <strong>
+            <code>ServiceRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ServiceRequest.performer.organization</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="5">
+        <p class="tableblock">
+          <strong>5</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ServiceRequest.performer.locationReference</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ServiceRequest.performer.locationCode</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>b</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Tanggal</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ServiceRequest.occurenceDateTime</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;"></td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>c</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>Dalam Keadaan Darurat dapat Menghubungi</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ServiceRequest.patientInstruction</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>18</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2">
+        <p class="tableblock">
+          <strong>Edukasi</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Procedure</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Procedure.code.coding</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>5</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>19</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2">
+        <p class="tableblock">
+          <strong>Sarana Transportasi Untuk Rujuk</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ServiceRequest</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>ServiceRequest.locationCode</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>5</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>20</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2">
+        <p class="tableblock">
+          <strong>Pasien / Penanggung Jawab (Nama dan Tanda Tangan)</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.subject</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>1</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>21</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" colspan="2" rowspan="2">
+        <p class="tableblock">
+          <strong>Dokter Penanggung Jawab Pelayanan (Nama dan Tanda Tangan)</strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.participant</code>
+          </strong>
+        </p>
+      </td>
+      <td halign="left" valign="middle" style="border:1px solid black;" rowspan="2">
+        <p class="tableblock">
+          <strong>1</strong>
+        </p>
+      </td>
+    </tr>
+    <tr style="border:1px solid black;">
+      <td halign="left" valign="middle" style="border:1px solid black;">
+        <p class="tableblock">
+          <strong>
+            <code>Encounter.participant.type</code>
+          </strong>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="1-pendaftaran-pasien">1. Pendaftaran Pasien</h2>
+
+<p>Apabila melakukan pengiriman data kesehatan melalui SATUSEHAT yang memiliki elemen data terkait pasien, maka diperlukan informasi <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">{patient-ihs-number}</code></span> dari pasien yang bersangkutan. <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">{patient-ihs-number}</code></span> seorang pasien didapatkan dari <em>Master Patient Index</em> (MPI) Kementerian Kesehatan. MPI menyimpan data-data demografi pasien berskala nasional, mulai dari nama, tanggal lahir, alamat, identitas resmi yang diterbitkan pemerintah, dan lain lain. Setelah mendapatkan <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">{patient-ihs-number}</code></span>, ID dapat disimpan secara di masing-masing sistem internal fasyankes maupun partner non-fasyankes. <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">{patient-ihs-number}</code></span> akan mempermudah pelaporan pelayanan kesehatan yang berhubungan dengan pasien, karena partner tidak diwajibkan menyertakan data diri setiap ada pengiriman data <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">{patient-ihs-number}</code></span> juga dapat digunakan untuk melihat data diri pasien secara menyeluruh.</p>
+
+<p>Proses pencarian <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">{patient-ihs-number}</code></span> dari pasien dapat dilakukan melalui FHIR API dengan metode GET. Untuk metode pencarian data pasien di SATUSEHAT secara detail dapat dilihat dalam <em>resource</em> Patient dan terkait panduan/playbook MPI dapat dilihat dalam dokumen Master Patient Index.</p>
+
+<h2 id="2-pendaftaran-kunjungan-pasien">2. Pendaftaran Kunjungan Pasien</h2>
+
+<h2 id="2-pendaftaran-kunjungan-pasien-1">`2. Pendaftaran Kunjungan Pasien</h2>
+
+<p>Kunjungan pasien dapat didefinisikan sebagai interaksi pasien terhadap suatu layanan fasyankes. Sebagai contoh, dalam satu rangkaian rawat jalan, seluruh rangkaian dapat didefinisikan sebagai satu <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">Encounter</code></span>. Data-data kunjungan pasien yang direkam meliputi kapan pertemuan tersebut mulai dan selesai, siapa tenaga kesehatan yang melayani, siapa subjek dari pelayanannya, dan informasi pendukung lainnya.</p>
+
+<h3 id="pemetaan-nilai">Pemetaan Nilai</h3>
+<p>Berikut pemetaan nilai untuk <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">Encounter</code></span> yang direpresentasikan dalam peta referensi (path) ke properti (<em>element id</em>) terkait, untuk konteks data kunjungan:</p>
 
 <blockquote>
   <p>⚠️ <strong>Penting</strong></p>
@@ -262,7 +2525,138 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <blockquote>
   <p>💡 <strong>Tips</strong></p>
 
-  <p><span style="background-color:green">Silakan klik setiap teks variabel/parameter/element FHIR pada daftar pemetaan nilai di bawah ini (berwarna <span style="color:#c81e1e">merah</span>), untuk membaca panduan lebih detail/lanjut ke bagian yang direferensikan. </span></p>
+  <p>Silakan klik setiap teks variabel/parameter/element FHIR pada daftar pemetaan nilai di bawah ini (berwarna <span style="color:#c81e1e">merah</span>), untuk membaca panduan lebih detail/lanjut ke bagian yang direferensikan.</p>
+</blockquote>
+
+<ul>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.identifier'[i]'</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.status</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.statusHistory[i].status</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.statusHistory[i].period</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.class</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.classHistory[i].class</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.classHistory[i].period</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.type</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.serviceType</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.priority</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.subject</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.episodeOfCare</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.basedOn</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.participant[i].type</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.participant[i].individual</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.period</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.length</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.reasonCode</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.reasonReference</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.diagnosis[i].condition</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.diagnosis[i].use</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.diagnosis[i].rank</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.account</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.hospitalization.preAdmissionIdentifier</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.hospitalization.origin</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.hospitalization.admitSource</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.hospitalization.reAdmission</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.hospitalization.dietPreference</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.hospitalization.specialArrangement</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.hospitalization.destination</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.hospitalization.dischargeDisposition</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.location[i]</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">*Encounter.serviceProvider</a></code></strong></p>
+  </li>
+  <li>
+    <p class="tableblock"><strong><code style="background-color:#fffbf5"><a href="http://google.com" style="color:#c20a0a;">Encounter.partOf
+
+</a></code></strong></p>
+  </li>
+</ul>
+<p>Penjelasan tipe mandatoris, deskripsi dan format pengisian dari setiap elemen data/path di dalam resource <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">[Patient Definition]</code></span> (data pendaftaran kunjungan pasien), dapat dilihat dalam resource <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">Encounter</code></span>. Untuk contoh pengiriman data atau payload dari <span style="color:#c81e1e"><code class="language-plaintext highlighter-rouge">Encounter</code></span> dapat dilihat dalam Postman Collection.</p>
+
+<h2 id="3-pengiriman-data-keluhan-utama">3. Pengiriman Data Keluhan Utama</h2>
+
+<p>Keluhan utama yang dimiliki pasien dapat dikirimkan menggunakan resource Condition.</p>
+
+<blockquote>
+  <p>⚠️ <strong>Penting</strong></p>
+
+  <p>Setiap terdapat simbol asterik <strong><code class="language-plaintext highlighter-rouge">*</code></strong> sebelum nama variabel/parameter/element FHIR yang disebutkan, maka variabel/parameter/element FHIR tersebut bersifat WAJIB, <strong>harus ada</strong>, atau <strong>pasti selalu ada</strong>, contoh: *Location.identifier.</p>
+
+  <p><strong>Standar format Waktu</strong> yang digunakan dalam pengiriman data adalah <strong>UTC +00</strong>. Misalnya waktu <strong>WIB</strong>, maka format yang digunakan adalah <strong>waktu sekarang dikurangi 7</strong>, jika <strong>WITA</strong>, maka <strong>waktu sekarang dikurangi 8</strong>, dan <strong>Jika WIT</strong>, maka <strong>waktu sekarang dikurangi 9</strong>.</p>
+
+  <p><strong>Contoh</strong>: Pukul 17.35 WIB tanggal 23 Agustus 2023 maka yang dikirimkan adalah waktunya perlu diubah ke UTC +00 menjadi 10.35, berarti menjadi <code class="language-plaintext highlighter-rouge">2023-08-23T10:35:00+00:00</code>.</p>
+
+  <p>Standar format pengiriman Tanggal tidak bisa kurang dari 31 Agustus 2022.</p>
+
+</blockquote>
+
+<blockquote>
+  <p>💡 <strong>Tips</strong></p>
+
+  <p>Silakan klik setiap teks variabel/parameter/element FHIR pada daftar pemetaan nilai di bawah ini (berwarna <span style="color:#c81e1e">merah</span>), untuk membaca panduan lebih detail/lanjut ke bagian yang direferensikan.</p>
 </blockquote>
 
 
@@ -290,7 +2684,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">Thomas Chaidir</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 18, 2023 17:49+0700">2023-12-18</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">Thomas Chaidir</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 18, 2023 23:39+0700">2023-12-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

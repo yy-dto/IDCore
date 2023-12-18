@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "IDCore"] ; # 
   fhir:title [ fhir:v "ID Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-18T17:49:54+07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-18T23:39:05+07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Thomas Chaidir" ] ;

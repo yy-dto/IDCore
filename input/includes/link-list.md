@@ -18,3 +18,4 @@
 [Kebutuhan Sistem dan Instalasi Router]:dicom-requirement.html
 [DICOM Router]:dicom-router.html
 [Home]: index.html "Home Page"
+[Patient Definition]: StructureDefinition-MyPatient-definitions.html
