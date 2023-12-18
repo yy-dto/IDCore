@@ -2,8 +2,8 @@
 [Modul Pelayanan]:modul-pelayanan.html
 [Resume Medis Jilid 1]:resume-medis-jilid1.html
 [Resume Medis Jilid 2]:resume-medis-jilid2.html
-[Rawat Jalan Fase 1]:rawat-jalan-fase1.html
-[Rawat Jalan Fase 2]:rawat-jalan-fase2.html
+[Rawat Inap Fase 1]:rawat-inap-fase1.html
+[Rawat Inap Fase 2]:rawat-inap-fase2.html
 [IGD Fase 1]:igd-fase1.html
 [IGD Fase 2]:igd-fase2.html
 [Penerapan (Use Case)]:useCase.html

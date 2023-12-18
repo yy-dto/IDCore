@@ -10,7 +10,7 @@
   <name value="IDCore"/>
   <title value="ID Core Implementation Guide"/>
   <status value="draft"/>
-  <date value="2023-12-18T10:33:32+07:00"/>
+  <date value="2023-12-18T17:49:54+07:00"/>
   <publisher value="Thomas Chaidir"/>
   <contact>
     <name value="Thomas Chaidir"/>
@@ -504,18 +504,18 @@
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="rawat-jalan-fase1.html"/>
+            <valueUrl value="rawat-inap-fase1.html"/>
           </extension>
-          <nameUrl value="rawat-jalan-fase1.html"/>
-          <title value="Rawat Jalan Fase 1"/>
+          <nameUrl value="rawat-inap-fase1.html"/>
+          <title value="Rawat Inap Fase 1"/>
           <generation value="markdown"/>
         </page>
         <page>
           <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-            <valueUrl value="rawat-jalan-fase2.html"/>
+            <valueUrl value="rawat-inap-fase2.html"/>
           </extension>
-          <nameUrl value="rawat-jalan-fase2.html"/>
-          <title value="Rawat Jalan Fase 2"/>
+          <nameUrl value="rawat-inap-fase2.html"/>
+          <title value="Rawat Inap Fase 2"/>
           <generation value="markdown"/>
         </page>
         <page>

@@ -105,10 +105,10 @@
         <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
       </li>
       <li>
-        <a href="rawat-jalan-fase1.html">Rawat Jalan Fase 1</a>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
       </li>
       <li>
-        <a href="rawat-jalan-fase2.html">Rawat Jalan Fase 2</a>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
       </li>
       <li>
         <a href="igd-fase1.html">IGD Fase 1</a>
@@ -210,6 +210,60 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <div>
 <!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
 </div>
+<h3 id="alur-integrasi-rawat-jalan-fase-1-alur-interoperabilitas-secara-umum-untuk-resume-medis-rawat-jalan">Alur Integrasi Rawat Jalan Fase 1: Alur interoperabilitas secara umum untuk resume medis rawat jalan</h3>
+<p>Tahapan alur interoperabilitas dan resource yang digunakan untuk Resume Medis Rawat Jalan dapat dilihat pada gambar di bawah ini.</p>
+
+<!-- all this Bootstrap html for getting an image to fit nicely in text - 640 pix wide -->
+
+<div>
+<figure class="figure">
+<figcaption class="figure-caption"><strong>Example of a simple FHIR RESTful Search Transaction</strong></figcaption>
+  <img src="alur_integrasi-rawat_jalan_jilid_1.png" class="img-responsive img-rounded center-block" alt="alur_integrasi-rawat_jalan_jilid_1.png" width="75%" />
+</figure>
+
+<p></p>
+</div>
+
+<p>Alur integrasi dan format pengiriman data terkait secara umum selain data pemeriksaan penunjang dijelaskan pada Panduan Interoperabilitas sesuai dengan use case masing-masing (klik di sini) Resume Medis Rawat Jalan Jilid 1. Adapun langkah yang akan dijelaskan pada Panduan Interoperabilitas sesuai dengan use case masing-masing (klik di sini) Resume Medis Rawat Jalan Jilid 1 yaitu:</p>
+<ol>
+  <li>Pendaftaran Identitas Pasien</li>
+  <li>Pendataan Kunjungan</li>
+  <li>Anamnesis</li>
+  <li>Hasil Pemeriksaan Fisik</li>
+  <li>Tindakan/Prosedur Medis Diagnostik</li>
+  <li>Diagnosis</li>
+  <li>Tindakan/Prosedur Medis Terapetik</li>
+  <li>Tatalaksana</li>
+  <li>Prognosis</li>
+  <li>Rencana Tindak Lanjut/ Cara Keluar + dari Rumah Sakit</li>
+  <li>Instruksi untuk Tindak Lanjut</li>
+  <li>Sarana Transportasi untuk Rujuk</li>
+  <li>Kondisi Saat Meninggalkan RS</li>
+  <li>Pasien Pulang</li>
+</ol>
+
+<p>Data atau variabel resume medis rawat jalan yang dapat dipertukarkan dalam SATUSEHAT sebagai berikut:</p>
+
+<h2 id="tabel-2-informasi-variabel-rawat-jalan-fase-1"><em>Tabel 2. Informasi Variabel Rawat Jalan Fase 1</em></h2>
+
+<blockquote>
+  <p>⚠️ <strong>Penting</strong></p>
+
+  <p>Setiap terdapat simbol asterik <strong><code class="language-plaintext highlighter-rouge">*</code></strong> sebelum nama variabel/parameter/element FHIR yang disebutkan, maka variabel/parameter/element FHIR tersebut bersifat WAJIB, <strong>harus ada</strong>, atau <strong>pasti selalu ada</strong>, contoh: *Location.identifier.</p>
+
+  <p><strong>Standar format Waktu</strong> yang digunakan dalam pengiriman data adalah <strong>UTC +00</strong>. Misalnya waktu <strong>WIB</strong>, maka format yang digunakan adalah <strong>waktu sekarang dikurangi 7</strong>, jika <strong>WITA</strong>, maka <strong>waktu sekarang dikurangi 8</strong>, dan <strong>Jika WIT</strong>, maka <strong>waktu sekarang dikurangi 9</strong>.</p>
+
+  <p><strong>Contoh</strong>: Pukul 17.35 WIB tanggal 23 Agustus 2023 maka yang dikirimkan adalah waktunya perlu diubah ke UTC +00 menjadi 10.35, berarti menjadi <code class="language-plaintext highlighter-rouge">2023-08-23T10:35:00+00:00</code>.</p>
+
+  <p>Standar format pengiriman Tanggal tidak bisa kurang dari 31 Agustus 2022.</p>
+
+</blockquote>
+
+<blockquote>
+  <p>💡 <strong>Tips</strong></p>
+
+  <p><span style="background-color:green">Silakan klik setiap teks variabel/parameter/element FHIR pada daftar pemetaan nilai di bawah ini (berwarna <span style="color:#c81e1e">merah</span>), untuk membaca panduan lebih detail/lanjut ke bagian yang direferensikan. </span></p>
+</blockquote>
 
 
 
@@ -236,7 +290,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">Thomas Chaidir</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 18, 2023 10:33+0700">2023-12-18</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">Thomas Chaidir</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Dec 18, 2023 17:49+0700">2023-12-18</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

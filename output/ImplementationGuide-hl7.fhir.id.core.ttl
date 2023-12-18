@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "IDCore"] ; # 
   fhir:title [ fhir:v "ID Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-18T10:33:32+07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-18T17:49:54+07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Thomas Chaidir" ] ;
@@ -580,18 +580,18 @@
          ] [
            fhir:extension ( [
              fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "rawat-jalan-fase1.html"^^xsd:anyURI ]
+             fhir:value [ fhir:v "rawat-inap-fase1.html"^^xsd:anyURI ]
            ] ) ;
-           fhir:name [ fhir:v "rawat-jalan-fase1.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Rawat Jalan Fase 1" ] ;
+           fhir:name [ fhir:v "rawat-inap-fase1.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Rawat Inap Fase 1" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [
              fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
-             fhir:value [ fhir:v "rawat-jalan-fase2.html"^^xsd:anyURI ]
+             fhir:value [ fhir:v "rawat-inap-fase2.html"^^xsd:anyURI ]
            ] ) ;
-           fhir:name [ fhir:v "rawat-jalan-fase2.html"^^xsd:anyURI ] ;
-           fhir:title [ fhir:v "Rawat Jalan Fase 2" ] ;
+           fhir:name [ fhir:v "rawat-inap-fase2.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "Rawat Inap Fase 2" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] [
            fhir:extension ( [

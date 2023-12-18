@@ -10,7 +10,7 @@
   "name" : "IDCore",
   "title" : "ID Core Implementation Guide",
   "status" : "draft",
-  "date" : "2023-12-18T10:33:32+07:00",
+  "date" : "2023-12-18T17:49:54+07:00",
   "publisher" : "Thomas Chaidir",
   "contact" : [{
     "name" : "Thomas Chaidir",
@@ -667,19 +667,19 @@
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "rawat-jalan-fase1.html"
+            "valueUrl" : "rawat-inap-fase1.html"
           }],
-          "nameUrl" : "rawat-jalan-fase1.html",
-          "title" : "Rawat Jalan Fase 1",
+          "nameUrl" : "rawat-inap-fase1.html",
+          "title" : "Rawat Inap Fase 1",
           "generation" : "markdown"
         },
         {
           "extension" : [{
             "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-            "valueUrl" : "rawat-jalan-fase2.html"
+            "valueUrl" : "rawat-inap-fase2.html"
           }],
-          "nameUrl" : "rawat-jalan-fase2.html",
-          "title" : "Rawat Jalan Fase 2",
+          "nameUrl" : "rawat-inap-fase2.html",
+          "title" : "Rawat Inap Fase 2",
           "generation" : "markdown"
         },
         {
