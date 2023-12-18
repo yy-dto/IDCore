@@ -29,7 +29,6 @@ Data atau variabel resume medis rawat jalan yang dapat dipertukarkan dalam SATUS
 
 {% include pendaftaran-pasien-generic.md %}
 
-
 ## 2. Pendaftaran Kunjungan Pasien
 
 {% include pendaftaran-kunjungan-generic.md %}

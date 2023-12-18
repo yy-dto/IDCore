@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MyPatient"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-12-18T23:39:05+07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-12-19T01:00:26+07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Thomas Chaidir" ] ;

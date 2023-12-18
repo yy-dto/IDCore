@@ -7,6 +7,7 @@ Berikut pemetaan nilai untuk <span style="color:#c81e1e">`Encounter`</span> yang
 
 {% include admonitionblock-tip-element.md %}
 
-{% include encounter-generic.md %}
+{% include encounter-generic-2.md %}
+
 
 Penjelasan tipe mandatoris, deskripsi dan format pengisian dari setiap elemen data/path di dalam resource <span style="color:#c81e1e">`[Patient Definition]`</span> (data pendaftaran kunjungan pasien), dapat dilihat dalam resource <span style="color:#c81e1e">`Encounter`</span>. Untuk contoh pengiriman data atau payload dari <span style="color:#c81e1e">`Encounter`</span> dapat dilihat dalam Postman Collection.
