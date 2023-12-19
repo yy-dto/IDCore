@@ -1,6 +1,6 @@
 > ⚠️ **Penting**
 >
-> Setiap terdapat simbol asterik **`*`** sebelum nama variabel/parameter/element FHIR yang disebutkan, maka variabel/parameter/element FHIR tersebut bersifat WAJIB, **harus ada**, atau **pasti selalu ada**, contoh: *Location.identifier.
+> Setiap terdapat simbol asterik **`*`** sebelum nama variabel/parameter/element FHIR yang disebutkan, maka variabel/parameter/element FHIR tersebut bersifat WAJIB, **harus ada**, atau **pasti selalu ada**, contoh: `*Location.identifier`.
 >
 > **Standar format Waktu** yang digunakan dalam pengiriman data adalah **UTC +00**. Misalnya waktu **WIB**, maka format yang digunakan adalah **waktu sekarang dikurangi 7**, jika **WITA**, maka **waktu sekarang dikurangi 8**, dan **Jika WIT**, maka **waktu sekarang dikurangi 9**.
 >

@@ -1,5 +1,5 @@
 <table style="border:1px solid black;" class="tableblock frame-all grid-all stripes-even stretch">
-  <caption class="title">Tabel 2. Informasi Variabel</caption>
+  <caption class="title">Tabel 2. Informasi Variabel Rawat Jalan Fase 1</caption>
   <colgroup>
     <col style="width:16.6666%">
     <col style="width:16.6666%">
