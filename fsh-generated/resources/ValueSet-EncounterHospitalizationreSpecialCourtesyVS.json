@@ -1,0 +1,19 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EncounterHospitalizationreSpecialCourtesyVS",
+  "id": "EncounterHospitalizationreSpecialCourtesyVS",
+  "title": "Special courtesy",
+  "description": "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreSpecialCourtesyVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      }
+    ]
+  }
+}

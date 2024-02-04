@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "EncounterLocationUpgradeClassVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <code>http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass</code></li></ul></div>"
+  },
+  "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationUpgradeClassVS",
+  "version" : "0.1.0",
+  "name" : "EncounterLocationUpgradeClassVS",
+  "title" : "Encounter Location Upgrade Class",
+  "status" : "active",
+  "date" : "2024-02-04T23:26:43+07:00",
+  "publisher" : "Thomas Chaidir",
+  "contact" : [{
+    "name" : "Thomas Chaidir",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://satusehat.kemkes.go.id/"
+    }]
+  }],
+  "description" : "A set of codes, specifying location UpgradeClass.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"
+    }]
+  }
+}

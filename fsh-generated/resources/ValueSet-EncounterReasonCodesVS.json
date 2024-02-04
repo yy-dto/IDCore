@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EncounterReasonCodesVS",
+  "id": "EncounterReasonCodesVS",
+  "title": "Reason Code",
+  "description": "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterReasonCodesVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10"
+      }
+    ]
+  }
+}

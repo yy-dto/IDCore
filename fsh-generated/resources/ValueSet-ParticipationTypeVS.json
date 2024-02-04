@@ -1,0 +1,19 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ParticipationTypeVS",
+  "id": "ParticipationTypeVS",
+  "title": "Participant type",
+  "description": "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/ParticipationTypeVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      },
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/participant-type"
+      }
+    ]
+  }
+}

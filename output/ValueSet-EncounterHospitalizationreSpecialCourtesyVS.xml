@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="EncounterHospitalizationreSpecialCourtesyVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-EncounterSpecialCourtesy.html"><code>http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy</code></a></li><li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-NullFlavor.html"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreSpecialCourtesyVS"/>
+  <version value="0.1.0"/>
+  <name value="EncounterHospitalizationreSpecialCourtesyVS"/>
+  <title value="Special courtesy"/>
+  <status value="active"/>
+  <date value="2024-02-04T23:26:43+07:00"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines a set of codes that can be used to indicate special courtesies provided to the patient."/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy"/>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-NullFlavor"/>
+    </include>
+  </compose>
+</ValueSet>

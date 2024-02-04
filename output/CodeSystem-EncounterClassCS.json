@@ -1,0 +1,29 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "EncounterClassCS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>http://terminology.kemkes.go.id/CodeSystem/encounter-class</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">referred-procedure<a name=\"EncounterClassCS-referred-procedure\"> </a></td><td>Prosedur yang Dirujuk</td></tr></table></div>"
+  },
+  "url" : "http://terminology.kemkes.go.id/CodeSystem/encounter-class",
+  "version" : "0.1.0",
+  "name" : "EncounterClassCS",
+  "title" : "Encounter Class",
+  "status" : "active",
+  "date" : "2024-02-04T23:26:43+07:00",
+  "publisher" : "Thomas Chaidir",
+  "contact" : [{
+    "name" : "Thomas Chaidir",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://satusehat.kemkes.go.id/"
+    }]
+  }],
+  "description" : "Local ID encounter Class",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "referred-procedure",
+    "display" : "Prosedur yang Dirujuk"
+  }]
+}

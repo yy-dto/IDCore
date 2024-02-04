@@ -1,0 +1,36 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterLocationServiceClassInpatientCS",
+      "title" : "Encounter Location ServiceClass Inpatient",
+      "description" : "Local ID encounter location ServiceClass Inpatient"
+    },
+    {
+      "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterLocationServiceClassOutpatientCS",
+      "title" : "Encounter Location ServiceClass Outpatient",
+      "description" : "Local ID encounter location ServiceClass Outpatient"
+    },
+    {
+      "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterLocationUpgradeClass",
+      "title" : "Encounter Location UpgradeClass",
+      "description" : "Local ID encounter location UpgradeClass"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/encounter-class",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterClassCS",
+      "title" : "Encounter Class",
+      "description" : "Local ID encounter Class"
+    }
+  ]
+}

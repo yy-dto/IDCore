@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EncounterServiceTypeVS",
+  "id": "EncounterServiceTypeVS",
+  "title": "Service type",
+  "description": "This value set defines an example set of codes of service-types.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/service-type"
+      }
+    ]
+  }
+}

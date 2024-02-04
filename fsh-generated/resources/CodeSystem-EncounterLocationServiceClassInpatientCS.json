@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "EncounterLocationServiceClassInpatientCS",
+  "id": "EncounterLocationServiceClassInpatientCS",
+  "title": "Encounter Location ServiceClass Inpatient",
+  "description": "Local ID encounter location ServiceClass Inpatient",
+  "url": "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Kelas 1"
+    },
+    {
+      "code": "2",
+      "display": "Kelas 2"
+    },
+    {
+      "code": "3",
+      "display": "Kelas 3"
+    },
+    {
+      "code": "vip",
+      "display": "Kelas VIP"
+    },
+    {
+      "code": "vvip",
+      "display": "Kelas VVIP"
+    }
+  ],
+  "count": 5
+}

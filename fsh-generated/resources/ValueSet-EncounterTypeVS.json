@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EncounterTypeVS",
+  "id": "EncounterTypeVS",
+  "title": "Encounter type",
+  "description": "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterTypeVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/encounter-type"
+      }
+    ]
+  }
+}

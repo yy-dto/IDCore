@@ -1,0 +1,59 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IDCoreEncounterIMP",
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounterIMP",
+  "name": "IDCoreEncounterIMP",
+  "status": "active",
+  "description": "Encounter profile for inpatient patient",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.location.extension",
+        "path": "Encounter.location.extension",
+        "min": 1
+      },
+      {
+        "id": "Encounter.location.extension.extension.value[x]:valueCodeableConcept",
+        "path": "Encounter.location.extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationUpgradeClassVS"
+        }
+      }
+    ]
+  }
+}

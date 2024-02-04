@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="EncounterLocationServiceClassOutpatientVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <code>http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient</code></li></ul></div>
+  </text>
+  <url value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassOutpatientVS"/>
+  <version value="0.1.0"/>
+  <name value="EncounterLocationServiceClassOutpatientVS"/>
+  <title value="Encounter Location ServiceClass-Outpatient"/>
+  <status value="active"/>
+  <date value="2024-02-04T23:26:43+07:00"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <description value="A set of codes, specifying location ServiceClass for outpatient patient."/>
+  <compose>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EncounterServiceTypeVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-service-type.html\"><code>http://terminology.hl7.org/CodeSystem/service-type</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EncounterServiceTypeVS"] ; # 
+  fhir:title [ fhir:v "Service type"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-02-04T23:26:43+07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Thomas Chaidir" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set defines an example set of codes of service-types."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/service-type"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

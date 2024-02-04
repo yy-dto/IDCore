@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "EncounterHospitalizationSpecialArrangementsVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-encounter-special-arrangements.html\"><code>http://terminology.hl7.org/CodeSystem/encounter-special-arrangements</code></a></li></ul></div>"
+  },
+  "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationSpecialArrangementsVS",
+  "version" : "0.1.0",
+  "name" : "EncounterHospitalizationSpecialArrangementsVS",
+  "title" : "Special arrangements",
+  "status" : "active",
+  "date" : "2024-02-04T23:26:43+07:00",
+  "publisher" : "Thomas Chaidir",
+  "contact" : [{
+    "name" : "Thomas Chaidir",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://satusehat.kemkes.go.id/"
+    }]
+  }],
+  "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+    }]
+  }
+}

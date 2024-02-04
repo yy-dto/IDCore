@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="EncounterHospitalizationDischargeDispositionVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-discharge-disposition.html"><code>http://terminology.hl7.org/CodeSystem/discharge-disposition</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationDischargeDispositionVS"/>
+  <version value="0.1.0"/>
+  <name value="EncounterHospitalizationDischargeDispositionVS"/>
+  <title value="Discharge disposition"/>
+  <status value="active"/>
+  <date value="2024-02-04T23:26:43+07:00"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines a set of codes that can be used to where the patient left the hospital."/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/discharge-disposition"/>
+    </include>
+  </compose>
+</ValueSet>

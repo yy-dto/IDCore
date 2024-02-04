@@ -15,13 +15,13 @@ Description: "ID Core Encounter profile"
 * serviceType 0..1
 * priority 0..1
 * subject 0..1
-* episodeOfCare 0..1
-* basedOn 0..1
+* episodeOfCare 0..*
+* basedOn 0..*
 * participant 0..*
 * participant.type 0..*
 * participant.period 0..1
 * participant.individual 1..1
-* appointment 0..1
+* appointment 0..*
 * period 1..1
 * period.start 1..1
 * length 0..1
@@ -37,9 +37,9 @@ Description: "ID Core Encounter profile"
 * hospitalization.origin 0..1
 * hospitalization.admitSource 0..1
 * hospitalization.reAdmission 0..1
-* hospitalization.dietPreference 0..1
-* hospitalization.specialCourtesy 0..1
-* hospitalization.specialArrangement 0..1
+* hospitalization.dietPreference 0..*
+* hospitalization.specialCourtesy 0..*
+* hospitalization.specialArrangement 0..*
 * hospitalization.destination 0..1
 * hospitalization.dischargeDisposition 0..1
 * location 0..*
@@ -47,6 +47,10 @@ Description: "ID Core Encounter profile"
 * location.status 0..1
 * location.physicalType 0..1
 * location.period 0..1
+* location.extension 0..*
+* location.extension.url 1..1
+* location.extension.extension.url 1..1
+* location.extension.extension.valueCodeableConcept 1..1
 * serviceProvider 1..1
 * partOf 0..1
 * status from EncounterStatusVS
@@ -65,23 +69,40 @@ Description: "ID Core Encounter profile"
 * appointment only Reference(Appointment)
 * reasonCode from EncounterReasonCodesVS
 * reasonReference only Reference(Condition or Procedure or Observation or ImmunizationRecommendation)
-* diagnosis.condition only Reference(Condition or Procedure)
+* diagnosis.condition only Reference(Condition)
 * diagnosis.use from EncounterDiagnosisUseVS
 * account only Reference(Account)
 * hospitalization.origin only Reference(Location or Organization)
-* hospitalization.admitSource from EncounterHospitalizationreAdmitSourceVS
+* hospitalization.admitSource from EncounterHospitalizationAdmitSourceVS
 * hospitalization.reAdmission from EncounterHospitalizationreAdmitSourceVS
 * hospitalization.destination only Reference(Location or Organization)
 * location.location only Reference(Location)
 * serviceProvider only Reference(Organization)
 * partOf only Reference(Encounter)
 
-Profile: IDCoreEncounterStatusFinished
-Parent: IDCoreEncounter
-Description: "Encounter profile when the Status is Finished"
-* statusHistory.period.start 1..1
-* statusHistory.period.end 1..1
-* classHistory.period.start 1..1 
-* classHistory.period.end 1..1 
-* diagnosis 1..*
-* diagnosis.condition 1..1
+Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $locationServiceClass-Inpatient = http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient
+Alias: $locationUpgradeClass = http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass
+Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
+
+Instance: IDCoreEncounter
+InstanceOf: Encounter
+Usage: #example
+* basedOn = Reference(ServiceRequest/1e1a260d-538f-4172-ad68-0aa5f8ccfc4a)
+* class = $v3-ActCode#IMP "inpatient encounter"
+* identifier.system = "http://sys-ids.kemkes.go.id/encounter/10085103"
+* identifier.value = "10085103"
+* location.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass"
+* location.extension.extension[+].url = "value"
+* location.extension.extension[=].valueCodeableConcept = $locationServiceClass-Inpatient#1 "Kelas 1"
+* location.extension.extension[+].url = "upgradeClassIndicator"
+* location.extension.extension[=].valueCodeableConcept = $locationUpgradeClass#kelas-tetap "Kelas Tetap Perawatan"
+* location.location = Reference(Location/b29038d4-9ef0-4eb3-a2e9-3c02df668b07) "Bed 2, Ruang 210, Bangsal Rawat Inap Kelas 1, Layanan Penyakit Dalam, Lantai 2, Gedung Utama"
+* participant.individual = Reference(Practitioner/N10000001) "Dokter Bronsig"
+* participant.type = $v3-ParticipationType#ATND "attender"
+* period.start = "2022-12-25T08:00:00+00:00"
+* serviceProvider = Reference(Organization/10085103)
+* status = #in-progress
+* statusHistory.period.start = "2022-12-25T08:00:00+00:00"
+* statusHistory.status = #in-progress
+* subject = Reference(Patient/100000030015) "Diana Smith"

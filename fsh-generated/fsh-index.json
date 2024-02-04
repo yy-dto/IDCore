@@ -1,0 +1,274 @@
+[
+  {
+    "outputFile": "CodeSystem-EncounterClassCS.json",
+    "fshName": "EncounterClassCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-EncounterClass.fsh",
+    "startLine": 4,
+    "endLine": 9
+  },
+  {
+    "outputFile": "CodeSystem-EncounterLocationServiceClassInpatientCS.json",
+    "fshName": "EncounterLocationServiceClassInpatientCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-EncounterLocationServiceClass-Inpatient.fsh",
+    "startLine": 4,
+    "endLine": 17
+  },
+  {
+    "outputFile": "CodeSystem-EncounterLocationServiceClassOutpatientCS.json",
+    "fshName": "EncounterLocationServiceClassOutpatientCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-EncounterLocationServiceClass-Outpatient.fsh",
+    "startLine": 4,
+    "endLine": 11
+  },
+  {
+    "outputFile": "CodeSystem-EncounterLocationUpgradeClass.json",
+    "fshName": "EncounterLocationUpgradeClass",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-EncounterLocationUpgradeClass.fsh",
+    "startLine": 4,
+    "endLine": 15
+  },
+  {
+    "outputFile": "Encounter-IDCoreEncounter.json",
+    "fshName": "IDCoreEncounter",
+    "fshType": "Instance",
+    "fshFile": "Profile-IDCoreEncounter.fsh",
+    "startLine": 88,
+    "endLine": 108
+  },
+  {
+    "outputFile": "Encounter-IDCoreEncounterEMER.json",
+    "fshName": "IDCoreEncounterEMER",
+    "fshType": "Instance",
+    "fshFile": "Profile-IDCoreEncounterEMER.fsh",
+    "startLine": 12,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Encounter-IDCoreEncounterIMP.json",
+    "fshName": "IDCoreEncounterIMP",
+    "fshType": "Instance",
+    "fshFile": "Profile-IDCoreEncounterIMP.fsh",
+    "startLine": 13,
+    "endLine": 34
+  },
+  {
+    "outputFile": "Encounter-IDCoreEncounterStatusFinished.json",
+    "fshName": "IDCoreEncounterStatusFinished",
+    "fshType": "Instance",
+    "fshFile": "Profile-IDCoreEncounterStatusFinished.fsh",
+    "startLine": 18,
+    "endLine": 53
+  },
+  {
+    "outputFile": "Patient-PatientExample.json",
+    "fshName": "PatientExample",
+    "fshType": "Instance",
+    "fshFile": "patient.fsh",
+    "startLine": 9,
+    "endLine": 14
+  },
+  {
+    "outputFile": "StructureDefinition-EncounterLocation.json",
+    "fshName": "EncounterLocation",
+    "fshType": "Extension",
+    "fshFile": "Extension-EncounterLocation.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreEncounter.json",
+    "fshName": "IDCoreEncounter",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreEncounter.fsh",
+    "startLine": 1,
+    "endLine": 81
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreEncounterEMER.json",
+    "fshName": "IDCoreEncounterEMER",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreEncounterEMER.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreEncounterIMP.json",
+    "fshName": "IDCoreEncounterIMP",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreEncounterIMP.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreEncounterStatusFinished.json",
+    "fshName": "IDCoreEncounterStatusFinished",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreEncounterStatusFinished.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-MyPatient.json",
+    "fshName": "MyPatient",
+    "fshType": "Profile",
+    "fshFile": "patient.fsh",
+    "startLine": 4,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-ActPriorityVS.json",
+    "fshName": "ActPriorityVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ActPriority.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterClassVS.json",
+    "fshName": "EncounterClassVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterClass.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-EncounterDiagnosisUseVS.json",
+    "fshName": "EncounterDiagnosisUseVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterDiagnosisUse.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterHospitalizationAdmitSourceVS.json",
+    "fshName": "EncounterHospitalizationAdmitSourceVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterHospitalizationAdmitSource.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-EncounterHospitalizationDischargeDispositionVS.json",
+    "fshName": "EncounterHospitalizationDischargeDispositionVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterHospitalizationDischargeDisposition.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterHospitalizationSpecialArrangementsVS.json",
+    "fshName": "EncounterHospitalizationSpecialArrangementsVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterHospitalizationSpecialArrangements.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterHospitalizationreAdmitSourceVS.json",
+    "fshName": "EncounterHospitalizationreAdmitSourceVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterHospitalizationreAdmitSource.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterHospitalizationreDietVS.json",
+    "fshName": "EncounterHospitalizationreDietVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterHospitalizationreDiet.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterHospitalizationreSpecialCourtesyVS.json",
+    "fshName": "EncounterHospitalizationreSpecialCourtesyVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterHospitalizationreSpecialCourtesy.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-EncounterLocationServiceClassInpatientVS.json",
+    "fshName": "EncounterLocationServiceClassInpatientVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterLocationServiceClass-Inpatient.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterLocationServiceClassOutpatientVS.json",
+    "fshName": "EncounterLocationServiceClassOutpatientVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterLocationServiceClass-Outpatient.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterLocationStatusVS.json",
+    "fshName": "EncounterLocationStatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterLocationStatus.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterLocationTypeVS.json",
+    "fshName": "EncounterLocationTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterLocationType.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterLocationUpgradeClassVS.json",
+    "fshName": "EncounterLocationUpgradeClassVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterLocationEncounterLocationUpgradeClass.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterReasonCodesVS.json",
+    "fshName": "EncounterReasonCodesVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterReasonCodes.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterServiceTypeVS.json",
+    "fshName": "EncounterServiceTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterServiceType.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterStatusVS.json",
+    "fshName": "EncounterStatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterStatus.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterTypeVS.json",
+    "fshName": "EncounterTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterType.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-ParticipationTypeVS.json",
+    "fshName": "ParticipationTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ParticipationType.fsh",
+    "startLine": 1,
+    "endLine": 5
+  }
+]

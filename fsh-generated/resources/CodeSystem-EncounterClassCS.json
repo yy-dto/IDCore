@@ -1,0 +1,17 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "EncounterClassCS",
+  "id": "EncounterClassCS",
+  "title": "Encounter Class",
+  "description": "Local ID encounter Class",
+  "url": "http://terminology.kemkes.go.id/CodeSystem/encounter-class",
+  "concept": [
+    {
+      "code": "referred-procedure",
+      "display": "Prosedur yang Dirujuk"
+    }
+  ],
+  "count": 1
+}

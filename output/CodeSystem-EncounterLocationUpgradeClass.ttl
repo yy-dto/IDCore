@@ -1,0 +1,47 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/EncounterLocationUpgradeClass> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EncounterLocationUpgradeClass"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">kelas-tetap<a name=\"EncounterLocationUpgradeClass-kelas-tetap\"> </a></td><td>Kelas Tetap Perawatan</td></tr><tr><td style=\"white-space:nowrap\">naik-kelas<a name=\"EncounterLocationUpgradeClass-naik-kelas\"> </a></td><td>Kenaikan Kelas Perawatan</td></tr><tr><td style=\"white-space:nowrap\">turun-kelas<a name=\"EncounterLocationUpgradeClass-turun-kelas\"> </a></td><td>Penurunan Kelas Perawatan</td></tr><tr><td style=\"white-space:nowrap\">titip-rawat<a name=\"EncounterLocationUpgradeClass-titip-rawat\"> </a></td><td>Titip Kelas Perawatan</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EncounterLocationUpgradeClass"] ; # 
+  fhir:title [ fhir:v "Encounter Location UpgradeClass"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-02-04T23:26:43+07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Thomas Chaidir" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Local ID encounter location UpgradeClass"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "kelas-tetap" ] ;
+     fhir:display [ fhir:v "Kelas Tetap Perawatan" ]
+  ] [
+     fhir:code [ fhir:v "naik-kelas" ] ;
+     fhir:display [ fhir:v "Kenaikan Kelas Perawatan" ]
+  ] [
+     fhir:code [ fhir:v "turun-kelas" ] ;
+     fhir:display [ fhir:v "Penurunan Kelas Perawatan" ]
+  ] [
+     fhir:code [ fhir:v "titip-rawat" ] ;
+     fhir:display [ fhir:v "Titip Kelas Perawatan" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

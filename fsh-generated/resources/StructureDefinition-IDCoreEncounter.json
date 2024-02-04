@@ -1,0 +1,210 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IDCoreEncounter",
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter",
+  "name": "IDCoreEncounter",
+  "status": "active",
+  "description": "ID Core Encounter profile",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Encounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.identifier",
+        "path": "Encounter.identifier",
+        "min": 1
+      },
+      {
+        "id": "Encounter.status",
+        "path": "Encounter.status",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS"
+        }
+      },
+      {
+        "id": "Encounter.statusHistory.status",
+        "path": "Encounter.statusHistory.status",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS"
+        }
+      },
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS"
+        }
+      },
+      {
+        "id": "Encounter.classHistory.class",
+        "path": "Encounter.classHistory.class",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS"
+        }
+      },
+      {
+        "id": "Encounter.type",
+        "path": "Encounter.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterTypeVS"
+        }
+      },
+      {
+        "id": "Encounter.serviceType",
+        "path": "Encounter.serviceType",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS"
+        }
+      },
+      {
+        "id": "Encounter.priority",
+        "path": "Encounter.priority",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/ActPriorityVS"
+        }
+      },
+      {
+        "id": "Encounter.participant.type",
+        "path": "Encounter.participant.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/ParticipationTypeVS"
+        }
+      },
+      {
+        "id": "Encounter.participant.individual",
+        "path": "Encounter.participant.individual",
+        "min": 1
+      },
+      {
+        "id": "Encounter.period",
+        "path": "Encounter.period",
+        "min": 1
+      },
+      {
+        "id": "Encounter.period.start",
+        "path": "Encounter.period.start",
+        "min": 1
+      },
+      {
+        "id": "Encounter.reasonCode",
+        "path": "Encounter.reasonCode",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterReasonCodesVS"
+        }
+      },
+      {
+        "id": "Encounter.diagnosis.condition",
+        "path": "Encounter.diagnosis.condition",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Encounter.diagnosis.use",
+        "path": "Encounter.diagnosis.use",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterDiagnosisUseVS"
+        }
+      },
+      {
+        "id": "Encounter.hospitalization.admitSource",
+        "path": "Encounter.hospitalization.admitSource",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationAdmitSourceVS"
+        }
+      },
+      {
+        "id": "Encounter.hospitalization.reAdmission",
+        "path": "Encounter.hospitalization.reAdmission",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreAdmitSourceVS"
+        }
+      },
+      {
+        "id": "Encounter.location.extension.extension.extension",
+        "path": "Encounter.location.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.location.extension.extension.value[x]",
+        "path": "Encounter.location.extension.extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Encounter.location.extension.extension.value[x]:valueCodeableConcept",
+        "path": "Encounter.location.extension.extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Encounter.location.extension.value[x]",
+        "path": "Encounter.location.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Encounter.serviceProvider",
+        "path": "Encounter.serviceProvider",
+        "min": 1
+      }
+    ]
+  }
+}

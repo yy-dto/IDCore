@@ -1,0 +1,212 @@
+[
+  {
+    "id" : "EncounterLocationServiceClassInpatientCS",
+    "type" : "CodeSystem",
+    "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationServiceClassInpatientCS"
+  },
+  {
+    "id" : "EncounterLocationServiceClassOutpatientCS",
+    "type" : "CodeSystem",
+    "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationServiceClassOutpatientCS"
+  },
+  {
+    "id" : "EncounterLocationUpgradeClass",
+    "type" : "CodeSystem",
+    "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationUpgradeClass"
+  },
+  {
+    "id" : "EncounterClassCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/encounter-class",
+    "version" : "0.1.0",
+    "name" : "EncounterClassCS"
+  },
+  {
+    "id" : "hl7.fhir.id.core",
+    "type" : "ImplementationGuide",
+    "url" : "https://fhir.kemkes.go.id/r4/ImplementationGuide/hl7.fhir.id.core",
+    "version" : "0.1.0",
+    "name" : "IDCore"
+  },
+  {
+    "id" : "EncounterLocation",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation",
+    "version" : "0.1.0",
+    "name" : "EncounterLocation"
+  },
+  {
+    "id" : "IDCoreEncounter",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter",
+    "version" : "0.1.0",
+    "name" : "IDCoreEncounter"
+  },
+  {
+    "id" : "IDCoreEncounterEMER",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounterEMER",
+    "version" : "0.1.0",
+    "name" : "IDCoreEncounterEMER"
+  },
+  {
+    "id" : "IDCoreEncounterIMP",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounterIMP",
+    "version" : "0.1.0",
+    "name" : "IDCoreEncounterIMP"
+  },
+  {
+    "id" : "IDCoreEncounterStatusFinished",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounterStatusFinished",
+    "version" : "0.1.0",
+    "name" : "IDCoreEncounterStatusFinished"
+  },
+  {
+    "id" : "MyPatient",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/MyPatient",
+    "version" : "0.1.0",
+    "name" : "MyPatient"
+  },
+  {
+    "id" : "ActPriorityVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ActPriorityVS",
+    "version" : "0.1.0",
+    "name" : "ActPriorityVS"
+  },
+  {
+    "id" : "EncounterClassVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS",
+    "version" : "0.1.0",
+    "name" : "EncounterClassVS"
+  },
+  {
+    "id" : "EncounterDiagnosisUseVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterDiagnosisUseVS",
+    "version" : "0.1.0",
+    "name" : "EncounterDiagnosisUseVS"
+  },
+  {
+    "id" : "EncounterHospitalizationAdmitSourceVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationAdmitSourceVS",
+    "version" : "0.1.0",
+    "name" : "EncounterHospitalizationAdmitSourceVS"
+  },
+  {
+    "id" : "EncounterHospitalizationDischargeDispositionVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationDischargeDispositionVS",
+    "version" : "0.1.0",
+    "name" : "EncounterHospitalizationDischargeDispositionVS"
+  },
+  {
+    "id" : "EncounterHospitalizationSpecialArrangementsVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationSpecialArrangementsVS",
+    "version" : "0.1.0",
+    "name" : "EncounterHospitalizationSpecialArrangementsVS"
+  },
+  {
+    "id" : "EncounterHospitalizationreAdmitSourceVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreAdmitSourceVS",
+    "version" : "0.1.0",
+    "name" : "EncounterHospitalizationreAdmitSourceVS"
+  },
+  {
+    "id" : "EncounterHospitalizationreDietVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreDietVS",
+    "version" : "0.1.0",
+    "name" : "EncounterHospitalizationreDietVS"
+  },
+  {
+    "id" : "EncounterHospitalizationreSpecialCourtesyVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreSpecialCourtesyVS",
+    "version" : "0.1.0",
+    "name" : "EncounterHospitalizationreSpecialCourtesyVS"
+  },
+  {
+    "id" : "EncounterLocationServiceClassInpatientVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassInpatientVS",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationServiceClassInpatientVS"
+  },
+  {
+    "id" : "EncounterLocationServiceClassOutpatientVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassOutpatientVS",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationServiceClassOutpatientVS"
+  },
+  {
+    "id" : "EncounterLocationStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationStatusVS",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationStatusVS"
+  },
+  {
+    "id" : "EncounterLocationTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationTypeVS",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationTypeVS"
+  },
+  {
+    "id" : "EncounterLocationUpgradeClassVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationUpgradeClassVS",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationUpgradeClassVS"
+  },
+  {
+    "id" : "EncounterReasonCodesVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterReasonCodesVS",
+    "version" : "0.1.0",
+    "name" : "EncounterReasonCodesVS"
+  },
+  {
+    "id" : "EncounterServiceTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS",
+    "version" : "0.1.0",
+    "name" : "EncounterServiceTypeVS"
+  },
+  {
+    "id" : "EncounterStatusVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS",
+    "version" : "0.1.0",
+    "name" : "EncounterStatusVS"
+  },
+  {
+    "id" : "EncounterTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterTypeVS",
+    "version" : "0.1.0",
+    "name" : "EncounterTypeVS"
+  },
+  {
+    "id" : "ParticipationTypeVS",
+    "type" : "ValueSet",
+    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ParticipationTypeVS",
+    "version" : "0.1.0",
+    "name" : "ParticipationTypeVS"
+  }
+]

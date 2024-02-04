@@ -1,0 +1,431 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.id.core",
+  "url": "https://fhir.kemkes.go.id/r4/ImplementationGuide/hl7.fhir.id.core",
+  "version": "0.1.0",
+  "name": "IDCore",
+  "title": "ID Core Implementation Guide",
+  "status": "active",
+  "publisher": "Thomas Chaidir",
+  "contact": [
+    {
+      "name": "Thomas Chaidir",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://satusehat.kemkes.go.id/"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.id.core",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterHospitalizationAdmitSourceVS"
+        },
+        "name": "Admit Source",
+        "description": "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterDiagnosisUseVS"
+        },
+        "name": "DiagnosisRole",
+        "description": "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterHospitalizationreDietVS"
+        },
+        "name": "Diet",
+        "description": "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterHospitalizationDischargeDispositionVS"
+        },
+        "name": "Discharge disposition",
+        "description": "This value set defines a set of codes that can be used to where the patient left the hospital.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/EncounterClassCS"
+        },
+        "name": "Encounter Class",
+        "description": "Local ID encounter Class",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EncounterLocation"
+        },
+        "name": "Encounter Location",
+        "description": "Encounter Location.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/EncounterLocationServiceClassInpatientCS"
+        },
+        "name": "Encounter Location ServiceClass Inpatient",
+        "description": "Local ID encounter location ServiceClass Inpatient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/EncounterLocationServiceClassOutpatientCS"
+        },
+        "name": "Encounter Location ServiceClass Outpatient",
+        "description": "Local ID encounter location ServiceClass Outpatient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterLocationServiceClassInpatientVS"
+        },
+        "name": "Encounter Location ServiceClass-Inpatient",
+        "description": "A set of codes, specifying location ServiceClass for inpatient patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterLocationServiceClassOutpatientVS"
+        },
+        "name": "Encounter Location ServiceClass-Outpatient",
+        "description": "A set of codes, specifying location ServiceClass for outpatient patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterLocationStatusVS"
+        },
+        "name": "Encounter Location Status",
+        "description": "The status of the location.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterLocationTypeVS"
+        },
+        "name": "Encounter Location Type",
+        "description": "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterLocationUpgradeClassVS"
+        },
+        "name": "Encounter Location Upgrade Class",
+        "description": "A set of codes, specifying location UpgradeClass.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/EncounterLocationUpgradeClass"
+        },
+        "name": "Encounter Location UpgradeClass",
+        "description": "Local ID encounter location UpgradeClass",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterTypeVS"
+        },
+        "name": "Encounter type",
+        "description": "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterStatusVS"
+        },
+        "name": "EncounterStatus",
+        "description": "Current state of the encounter.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounter"
+        },
+        "name": "IDCoreEncounter",
+        "description": "ID Core Encounter profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/IDCoreEncounter"
+        },
+        "name": "IDCoreEncounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounterEMER"
+        },
+        "name": "IDCoreEncounterEMER",
+        "description": "Encounter profile for Emergency patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/IDCoreEncounterEMER"
+        },
+        "name": "IDCoreEncounterEMER",
+        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounterIMP"
+        },
+        "name": "IDCoreEncounterIMP",
+        "description": "Encounter profile for inpatient patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/IDCoreEncounterIMP"
+        },
+        "name": "IDCoreEncounterIMP",
+        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounterStatusFinished"
+        },
+        "name": "IDCoreEncounterStatusFinished",
+        "description": "Encounter profile when the Status is Finished",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/IDCoreEncounterStatusFinished"
+        },
+        "name": "IDCoreEncounterStatusFinished",
+        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/MyPatient"
+        },
+        "name": "MyPatient",
+        "description": "An example profile of the Patient resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ParticipationTypeVS"
+        },
+        "name": "Participant type",
+        "description": "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/PatientExample"
+        },
+        "name": "PatientExample",
+        "description": "An example of a patient with a license to krill.",
+        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/MyPatient"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterReasonCodesVS"
+        },
+        "name": "Reason Code",
+        "description": "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterServiceTypeVS"
+        },
+        "name": "Service type",
+        "description": "This value set defines an example set of codes of service-types.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterHospitalizationSpecialArrangementsVS"
+        },
+        "name": "Special arrangements",
+        "description": "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterHospitalizationreSpecialCourtesyVS"
+        },
+        "name": "Special courtesy",
+        "description": "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterHospitalizationreAdmitSourceVS"
+        },
+        "name": "v2 RE-ADMISSION INDICATOR",
+        "description": "FHIR Value set/code system definition for HL7 v2 table 0092 ( RE-ADMISSION INDICATOR)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ActPriorityVS"
+        },
+        "name": "v3 Code System ActPriority",
+        "description": "A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterClassVS"
+        },
+        "name": "V3 Value SetActEncounterCode",
+        "description": "Domain provides codes that qualify the ActEncounterClass (ENC)",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-pelayanan.html",
+          "title": "Modul Pelayanan",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "resume-medis-jilid1.html",
+              "title": "Resume Medis Jilid 1",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "resume-medis-jilid2.html",
+              "title": "Resume Medis Jilid 2",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "rawat-inap-fase1.html",
+              "title": "Rawat Inap Fase 1",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "rawat-inap-fase2.html",
+              "title": "Rawat Inap Fase 2",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "igd-fase1.html",
+              "title": "Igd Fase 1",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "igd-fase2.html",
+              "title": "Igd Fase 2",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "useCase.html",
+          "title": "Penerapan (Use Case)",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "imunisasi.html",
+              "title": "Imunisasi",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "gizi-tumbang.html",
+              "title": "Gizi Tumbang",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "shk.html",
+              "title": "Shk",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "anc.html",
+              "title": "Anc",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "inc.html",
+              "title": "Inc",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "pnc.html",
+              "title": "Pnc",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "dicom.html",
+          "title": "Sistem DICOM",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "architecture.html",
+              "title": "Architecture",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "dicom-requirement.html",
+              "title": "Dicom Requirement",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "dicom-router.html",
+              "title": "Dicom Router",
+              "generation": "markdown"
+            }
+          ]
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/includes"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent"
+      },
+      {
+        "code": "path-pages",
+        "value": "fsh-generated/includes"
+      }
+    ]
+  }
+}
