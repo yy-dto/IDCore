@@ -1,5 +1,13 @@
 [
   {
+    "outputFile": "CodeSystem-41b4aac4-719f-4f8a-a96b-92e493c99b75.json",
+    "fshName": "KemkesCancerNCategory",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesCancerNCategory.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
     "outputFile": "CodeSystem-EncounterClassCS.json",
     "fshName": "EncounterClassCS",
     "fshType": "CodeSystem",
@@ -30,6 +38,54 @@
     "fshFile": "CodeSystem-EncounterLocationUpgradeClass.fsh",
     "startLine": 4,
     "endLine": 15
+  },
+  {
+    "outputFile": "CodeSystem-KemkesCancerMCategory.json",
+    "fshName": "KemkesCancerMCategoryCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesCancerMCategory.fsh",
+    "startLine": 1,
+    "endLine": 25
+  },
+  {
+    "outputFile": "CodeSystem-KemkesCancerTCategoryCS.json",
+    "fshName": "KemkesCancerTCategoryCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesCancerTCategory.fsh",
+    "startLine": 1,
+    "endLine": 39
+  },
+  {
+    "outputFile": "CodeSystem-KemkesClinicalTermCS.json",
+    "fshName": "KemkesClinicalTermCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesClinicalTerm.fsh",
+    "startLine": 1,
+    "endLine": 251
+  },
+  {
+    "outputFile": "CodeSystem-KemkesICDOMorphologyCS.json",
+    "fshName": "KemkesICDOMorphologyCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesICD-O-Morphology.fsh",
+    "startLine": 1,
+    "endLine": 1162
+  },
+  {
+    "outputFile": "CodeSystem-KemkesICDOTopographyCS.json",
+    "fshName": "KemkesICDOTopographyCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesICD-O-Topography.fsh",
+    "startLine": 1,
+    "endLine": 419
+  },
+  {
+    "outputFile": "Condition-IDCoreCondition.json",
+    "fshName": "IDCoreCondition",
+    "fshType": "Instance",
+    "fshFile": "Profile-IDCoreCondition.fsh",
+    "startLine": 47,
+    "endLine": 56
   },
   {
     "outputFile": "Encounter-IDCoreEncounter.json",
@@ -80,6 +136,14 @@
     "endLine": 11
   },
   {
+    "outputFile": "StructureDefinition-IDCoreCondition.json",
+    "fshName": "IDCoreCondition",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreCondition.fsh",
+    "startLine": 1,
+    "endLine": 41
+  },
+  {
     "outputFile": "StructureDefinition-IDCoreEncounter.json",
     "fshName": "IDCoreEncounter",
     "fshType": "Profile",
@@ -126,6 +190,78 @@
     "fshFile": "ValueSet-ActPriority.fsh",
     "startLine": 1,
     "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-ConditionBodySiteVS.json",
+    "fshName": "ConditionBodySiteVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ConditionBodySite.fsh",
+    "startLine": 1,
+    "endLine": 40842
+  },
+  {
+    "outputFile": "ValueSet-ConditionCategoryVS.json",
+    "fshName": "ConditionCategoryVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ConditionCategory.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-ConditionClinicalStatusVS.json",
+    "fshName": "ConditionClinicalStatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ConditionClinicalStatus.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-ConditionCodeVS.json",
+    "fshName": "ConditionCodeVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ConditionCode.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ValueSet-ConditionEvidenceCodeVS.json",
+    "fshName": "ConditionEvidenceCodeVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ConditionEvidenceCode.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-ConditionSeverityVS.json",
+    "fshName": "ConditionSeverityVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ConditionSeverity.fsh",
+    "startLine": 3,
+    "endLine": 21
+  },
+  {
+    "outputFile": "ValueSet-ConditionStageSummaryVS.json",
+    "fshName": "ConditionStageSummaryVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ConditionStageSummary.fsh",
+    "startLine": 1,
+    "endLine": 1026
+  },
+  {
+    "outputFile": "ValueSet-ConditionStageTypeVS.json",
+    "fshName": "ConditionStageTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ConditionStageType.fsh",
+    "startLine": 1,
+    "endLine": 1017
+  },
+  {
+    "outputFile": "ValueSet-ConditionVerificationStatusVS.json",
+    "fshName": "ConditionVerificationStatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ConditionVerificationStatus.fsh",
+    "startLine": 1,
+    "endLine": 16
   },
   {
     "outputFile": "ValueSet-EncounterClassVS.json",

@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ConditionCodeVS",
+  "id": "ConditionCodeVS",
+  "title": "Condition Code",
+  "description": "This value set defines set of codes for Condition Code.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/ConditionCodeVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct/900000000000207008/version/20221231"
+      },
+      {
+        "system": "http://hl7.org/fhir/sid/icd-10"
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term"
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/icd-o-morphology"
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/icd-o-topography"
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/cancer-t-category"
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/cancer-n-category"
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/cancer-m-category"
+      }
+    ]
+  }
+}

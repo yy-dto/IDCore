@@ -34,6 +34,78 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/ConditionBodySiteVS"
+        },
+        "name": "Condition BodySite",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConditionCategoryVS"
+        },
+        "name": "Condition Category",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConditionClinicalStatusVS"
+        },
+        "name": "Condition Clinical Status",
+        "description": "This defines a set of codes for Condition Clinical Status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConditionCodeVS"
+        },
+        "name": "Condition Code",
+        "description": "This value set defines set of codes for Condition Code.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConditionEvidenceCodeVS"
+        },
+        "name": "Condition Evidence Code",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConditionSeverityVS"
+        },
+        "name": "Condition Severity",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConditionStageSummaryVS"
+        },
+        "name": "Condition Stage Summary",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConditionStageTypeVS"
+        },
+        "name": "Condition Stage Type",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ConditionVerificationStatusVS"
+        },
+        "name": "Condition Verification Status",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/EncounterDiagnosisUseVS"
         },
         "name": "DiagnosisRole",
@@ -154,6 +226,37 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/KemkesICDOMorphologyCS"
+        },
+        "name": "ICD-0 Morphology",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesICDOTopographyCS"
+        },
+        "name": "ICD-0 Topography",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreCondition"
+        },
+        "name": "IDCoreCondition",
+        "description": "ID Core Condition profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/IDCoreCondition"
+        },
+        "name": "IDCoreCondition",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/IDCoreEncounter"
         },
         "name": "IDCoreEncounter",
@@ -214,6 +317,27 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/KemkesCancerMCategory"
+        },
+        "name": "Kemkes Cancer M Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/41b4aac4-719f-4f8a-a96b-92e493c99b75"
+        },
+        "name": "Kemkes Cancer N Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesCancerTCategoryCS"
+        },
+        "name": "Kemkes Cancer T Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/MyPatient"
         },
         "name": "MyPatient",
@@ -266,6 +390,14 @@
         },
         "name": "Special courtesy",
         "description": "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesClinicalTermCS"
+        },
+        "name": "Terminology Kemkes Clinical Term CodeSystem",
+        "description": "Created by: Fadhil Muhammad",
         "exampleBoolean": false
       },
       {

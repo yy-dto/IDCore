@@ -1,0 +1,112 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "KemkesCancerTCategoryCS",
+  "id": "KemkesCancerTCategoryCS",
+  "title": "Kemkes Cancer T Category",
+  "url": "http://terminology.kemkes.go.id/CodeSystem/cancer-t-category",
+  "concept": [
+    {
+      "code": "T0",
+      "display": "T0"
+    },
+    {
+      "code": "T1",
+      "display": "T1"
+    },
+    {
+      "code": "T1a",
+      "display": "T1a"
+    },
+    {
+      "code": "T1b",
+      "display": "T1b"
+    },
+    {
+      "code": "T1c",
+      "display": "T1c"
+    },
+    {
+      "code": "T2",
+      "display": "T2"
+    },
+    {
+      "code": "T2a",
+      "display": "T2a"
+    },
+    {
+      "code": "T2b",
+      "display": "T2b"
+    },
+    {
+      "code": "T2c",
+      "display": "T2c"
+    },
+    {
+      "code": "T3",
+      "display": "T3"
+    },
+    {
+      "code": "T3a",
+      "display": "T3a"
+    },
+    {
+      "code": "T3b",
+      "display": "T3b"
+    },
+    {
+      "code": "T3c",
+      "display": "T3c"
+    },
+    {
+      "code": "T4",
+      "display": "T4"
+    },
+    {
+      "code": "T4a",
+      "display": "T4a"
+    },
+    {
+      "code": "T4b",
+      "display": "T4b"
+    },
+    {
+      "code": "Ta",
+      "display": "Ta"
+    },
+    {
+      "code": "Tis",
+      "display": "Tis"
+    },
+    {
+      "code": "TX",
+      "display": "TX"
+    }
+  ],
+  "meta": {
+    "versionId": "1",
+    "lastUpdated": "2024-02-05T12:10:37.276+07:00"
+  },
+  "version": "1.0.0",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "terminologisehat@kemkes.go.id"
+        }
+      ],
+      "name": "DTO Kemkes"
+    }
+  ],
+  "compositional": false,
+  "caseSensitive": true,
+  "versionNeeded": true,
+  "hierarchyMeaning": "is-a",
+  "language": "English",
+  "experimental": false,
+  "date": "2024-02-05T00:00:00.000Z",
+  "publisher": "DTO MoH",
+  "count": 19
+}

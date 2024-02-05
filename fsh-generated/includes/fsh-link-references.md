@@ -1,4 +1,13 @@
 [EncounterHospitalizationAdmitSourceVS]: ValueSet-EncounterHospitalizationAdmitSourceVS.html
+[ConditionBodySiteVS]: ValueSet-ConditionBodySiteVS.html
+[ConditionCategoryVS]: ValueSet-ConditionCategoryVS.html
+[ConditionClinicalStatusVS]: ValueSet-ConditionClinicalStatusVS.html
+[ConditionCodeVS]: ValueSet-ConditionCodeVS.html
+[ConditionEvidenceCodeVS]: ValueSet-ConditionEvidenceCodeVS.html
+[ConditionSeverityVS]: ValueSet-ConditionSeverityVS.html
+[ConditionStageSummaryVS]: ValueSet-ConditionStageSummaryVS.html
+[ConditionStageTypeVS]: ValueSet-ConditionStageTypeVS.html
+[ConditionVerificationStatusVS]: ValueSet-ConditionVerificationStatusVS.html
 [EncounterDiagnosisUseVS]: ValueSet-EncounterDiagnosisUseVS.html
 [EncounterHospitalizationreDietVS]: ValueSet-EncounterHospitalizationreDietVS.html
 [EncounterHospitalizationDischargeDispositionVS]: ValueSet-EncounterHospitalizationDischargeDispositionVS.html
@@ -14,6 +23,10 @@
 [EncounterLocationUpgradeClass]: CodeSystem-EncounterLocationUpgradeClass.html
 [EncounterTypeVS]: ValueSet-EncounterTypeVS.html
 [EncounterStatusVS]: ValueSet-EncounterStatusVS.html
+[KemkesICDOMorphologyCS]: CodeSystem-KemkesICDOMorphologyCS.html
+[KemkesICDOTopographyCS]: CodeSystem-KemkesICDOTopographyCS.html
+[IDCoreCondition]: StructureDefinition-IDCoreCondition.html
+[IDCoreCondition]: Condition-IDCoreCondition.html
 [IDCoreEncounter]: StructureDefinition-IDCoreEncounter.html
 [IDCoreEncounter]: Encounter-IDCoreEncounter.html
 [IDCoreEncounterEMER]: StructureDefinition-IDCoreEncounterEMER.html
@@ -22,6 +35,9 @@
 [IDCoreEncounterIMP]: Encounter-IDCoreEncounterIMP.html
 [IDCoreEncounterStatusFinished]: StructureDefinition-IDCoreEncounterStatusFinished.html
 [IDCoreEncounterStatusFinished]: Encounter-IDCoreEncounterStatusFinished.html
+[KemkesCancerMCategoryCS]: CodeSystem-KemkesCancerMCategory.html
+[KemkesCancerNCategory]: CodeSystem-41b4aac4-719f-4f8a-a96b-92e493c99b75.html
+[KemkesCancerTCategoryCS]: CodeSystem-KemkesCancerTCategoryCS.html
 [MyPatient]: StructureDefinition-MyPatient.html
 [ParticipationTypeVS]: ValueSet-ParticipationTypeVS.html
 [PatientExample]: Patient-PatientExample.html
@@ -29,6 +45,7 @@
 [EncounterServiceTypeVS]: ValueSet-EncounterServiceTypeVS.html
 [EncounterHospitalizationSpecialArrangementsVS]: ValueSet-EncounterHospitalizationSpecialArrangementsVS.html
 [EncounterHospitalizationreSpecialCourtesyVS]: ValueSet-EncounterHospitalizationreSpecialCourtesyVS.html
+[KemkesClinicalTermCS]: CodeSystem-KemkesClinicalTermCS.html
 [EncounterHospitalizationreAdmitSourceVS]: ValueSet-EncounterHospitalizationreAdmitSourceVS.html
 [ActPriorityVS]: ValueSet-ActPriorityVS.html
 [EncounterClassVS]: ValueSet-EncounterClassVS.html
