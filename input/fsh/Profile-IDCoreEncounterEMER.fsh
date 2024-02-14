@@ -1,7 +1,7 @@
 Profile: IDCoreEncounterEMER
 Parent: IDCoreEncounter
 Description: "Encounter profile for Emergency patient"
-* location.extension 1..*
+* location.extension.extension 1..1
 * location.extension.extension.valueCodeableConcept from EncounterLocationServiceClassOutpatientVS
 
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode

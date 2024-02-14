@@ -47,10 +47,6 @@ Description: "ID Core Encounter profile"
 * location.status 0..1
 * location.physicalType 0..1
 * location.period 0..1
-* location.extension 0..*
-* location.extension.url 1..1
-* location.extension.extension.url 1..1
-* location.extension.extension.valueCodeableConcept 1..1
 * serviceProvider 1..1
 * partOf 0..1
 * status from EncounterStatusVS
@@ -68,8 +64,8 @@ Description: "ID Core Encounter profile"
 * participant.individual only Reference(Practitioner or PractitionerRole or RelatedPerson)
 * appointment only Reference(Appointment)
 * reasonCode from EncounterReasonCodesVS
-* reasonReference only Reference(Condition or Procedure or Observation or ImmunizationRecommendation)
-* diagnosis.condition only Reference(Condition)
+* reasonReference only Reference(IDCoreCondition or Procedure or Observation or ImmunizationRecommendation)
+* diagnosis.condition only Reference(IDCoreCondition)
 * diagnosis.use from EncounterDiagnosisUseVS
 * account only Reference(Account)
 * hospitalization.origin only Reference(Location or Organization)

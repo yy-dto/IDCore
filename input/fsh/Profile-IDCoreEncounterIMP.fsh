@@ -1,7 +1,6 @@
 Profile: IDCoreEncounterIMP
 Parent: IDCoreEncounter
 Description: "Encounter profile for inpatient patient"
-* location.extension 1..*
 * location.extension.extension.valueCodeableConcept from EncounterLocationServiceClassInpatientVS
 * location.extension.extension.valueCodeableConcept from EncounterLocationUpgradeClassVS
 

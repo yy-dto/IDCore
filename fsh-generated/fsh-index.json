@@ -92,8 +92,8 @@
     "fshName": "IDCoreEncounter",
     "fshType": "Instance",
     "fshFile": "Profile-IDCoreEncounter.fsh",
-    "startLine": 88,
-    "endLine": 108
+    "startLine": 84,
+    "endLine": 104
   },
   {
     "outputFile": "Encounter-IDCoreEncounterEMER.json",
@@ -108,8 +108,8 @@
     "fshName": "IDCoreEncounterIMP",
     "fshType": "Instance",
     "fshFile": "Profile-IDCoreEncounterIMP.fsh",
-    "startLine": 13,
-    "endLine": 34
+    "startLine": 12,
+    "endLine": 33
   },
   {
     "outputFile": "Encounter-IDCoreEncounterStatusFinished.json",
@@ -149,7 +149,7 @@
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreEncounter.fsh",
     "startLine": 1,
-    "endLine": 81
+    "endLine": 77
   },
   {
     "outputFile": "StructureDefinition-IDCoreEncounterEMER.json",
@@ -165,7 +165,7 @@
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreEncounterIMP.fsh",
     "startLine": 1,
-    "endLine": 6
+    "endLine": 5
   },
   {
     "outputFile": "StructureDefinition-IDCoreEncounterStatusFinished.json",
