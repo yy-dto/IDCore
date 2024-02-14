@@ -1,3 +1,5 @@
+Alias: $IDCoreEncounter = https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter
+
 Profile: IDCoreCondition
 Parent: Condition
 Description: "ID Core Condition profile"
@@ -33,7 +35,7 @@ Description: "ID Core Condition profile"
 * code from ConditionCodeVS
 * bodySite from ConditionBodySiteVS
 * subject only Reference(Patient)
-* encounter only Reference(Encounter)
+* encounter only Reference($IDCoreEncounter)
 * recorder only Reference(Practitioner or PractitionerRole or Patient or RelatedPerson)
 * stage.summary from ConditionStageSummaryVS
 * stage.assessment only Reference(ClinicalImpression or DiagnosticReport or Observation)

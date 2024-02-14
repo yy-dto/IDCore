@@ -34,7 +34,6 @@
 [IDCoreEncounterIMP]: StructureDefinition-IDCoreEncounterIMP.html
 [IDCoreEncounterIMP]: Encounter-IDCoreEncounterIMP.html
 [IDCoreEncounterStatusFinished]: StructureDefinition-IDCoreEncounterStatusFinished.html
-[IDCoreEncounterStatusFinished]: Encounter-IDCoreEncounterStatusFinished.html
 [KemkesCancerMCategoryCS]: CodeSystem-KemkesCancerMCategory.html
 [KemkesCancerNCategory]: CodeSystem-41b4aac4-719f-4f8a-a96b-92e493c99b75.html
 [KemkesCancerTCategoryCS]: CodeSystem-KemkesCancerTCategoryCS.html

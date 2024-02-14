@@ -1,7 +1,7 @@
 Profile: IDCoreEncounter
-Parent: Encounter
+Parent: http://hl7.org/fhir/StructureDefinition/Encounter
 Description: "ID Core Encounter profile"
-
+* ^url = "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
 * identifier 1..*
 * status 1..1
 * statusHistory 0..*
@@ -43,6 +43,7 @@ Description: "ID Core Encounter profile"
 * hospitalization.destination 0..1
 * hospitalization.dischargeDisposition 0..1
 * location 0..*
+* location.extension contains https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation named encounterLocation 0..1
 * location.location 1..1
 * location.status 0..1
 * location.physicalType 0..1
@@ -53,7 +54,7 @@ Description: "ID Core Encounter profile"
 * statusHistory.status from EncounterStatusVS
 * statusHistory.period 1..1
 * class from EncounterClassVS
-* classHistory.class  from EncounterClassVS
+* classHistory.class from EncounterClassVS
 * type from EncounterTypeVS
 * serviceType from EncounterServiceTypeVS
 * priority from ActPriorityVS

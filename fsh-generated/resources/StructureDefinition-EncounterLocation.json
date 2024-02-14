@@ -3,9 +3,9 @@
   "id": "EncounterLocation",
   "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation",
   "name": "EncounterLocation",
-  "title": "Encounter Location",
+  "title": "Encounter Location Extention",
   "status": "active",
-  "description": "Encounter Location.",
+  "description": "The administrative code of the address, represented in six levels: province, city/regency, district, village, rt and rw.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Encounter Location",
-        "definition": "Encounter Location."
+        "short": "Encounter Location Extention",
+        "definition": "The administrative code of the address, represented in six levels: province, city/regency, district, village, rt and rw."
       },
       {
         "id": "Extension.extension",
@@ -39,17 +39,36 @@
         "min": 1
       },
       {
-        "id": "Extension.extension.extension",
+        "id": "Extension.extension:serviceClass",
+        "path": "Extension.extension",
+        "sliceName": "serviceClass",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:serviceClass.extension",
         "path": "Extension.extension.extension",
         "min": 1
       },
       {
-        "id": "Extension.extension.extension.extension",
+        "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator",
+        "path": "Extension.extension.extension",
+        "sliceName": "upgradeClassIndicator",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator.extension",
         "path": "Extension.extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension.extension.value[x]",
+        "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "upgradeClassIndicator"
+      },
+      {
+        "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator.value[x]",
         "path": "Extension.extension.extension.value[x]",
         "slicing": {
           "discriminator": [
@@ -60,14 +79,13 @@
           ],
           "ordered": false,
           "rules": "open"
-        },
-        "min": 1
+        }
       },
       {
-        "id": "Extension.extension.extension.value[x]:valueCodeableConcept",
+        "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator.value[x]:valueCodeableConcept",
         "path": "Extension.extension.extension.value[x]",
         "sliceName": "valueCodeableConcept",
-        "min": 1,
+        "min": 0,
         "max": "1",
         "type": [
           {
@@ -75,12 +93,17 @@
           }
         ],
         "binding": {
-          "strength": "extensible",
+          "strength": "required",
           "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/lEncounterLocationServiceClassOutpatientVS"
         }
       },
       {
-        "id": "Extension.extension.value[x]",
+        "id": "Extension.extension:serviceClass.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "serviceClass"
+      },
+      {
+        "id": "Extension.extension:serviceClass.value[x]",
         "path": "Extension.extension.value[x]",
         "max": "0"
       },

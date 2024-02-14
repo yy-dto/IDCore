@@ -6,9 +6,9 @@
   "status" : "active",
   "package-id" : "hl7.fhir.id.core",
   "ig-ver" : "0.1.0",
-  "date" : "Wed, 14 Feb, 2024 21:17:20 +0700",
+  "date" : "Thu, 15 Feb, 2024 00:55:16 +0700",
   "exception" : "Error from http://tx.fhir.org/r4: Request took too long to process (60sec)",
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 634148560
+  "maxMemory" : 678628800
 }

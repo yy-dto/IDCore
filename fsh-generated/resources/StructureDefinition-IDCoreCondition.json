@@ -110,7 +110,15 @@
       {
         "id": "Condition.encounter",
         "path": "Condition.encounter",
-        "min": 1
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
+            ]
+          }
+        ]
       },
       {
         "id": "Condition.onset[x]",

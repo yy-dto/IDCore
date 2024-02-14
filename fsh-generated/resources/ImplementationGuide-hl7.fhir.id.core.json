@@ -140,8 +140,8 @@
         "reference": {
           "reference": "StructureDefinition/EncounterLocation"
         },
-        "name": "Encounter Location",
-        "description": "Encounter Location.",
+        "name": "Encounter Location Extention",
+        "description": "The administrative code of the address, represented in six levels: province, city/regency, district, village, rt and rw.",
         "exampleBoolean": false
       },
       {
@@ -307,13 +307,6 @@
         "name": "IDCoreEncounterStatusFinished",
         "description": "Encounter profile when the Status is Finished",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Encounter/IDCoreEncounterStatusFinished"
-        },
-        "name": "IDCoreEncounterStatusFinished",
-        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
       },
       {
         "reference": {

@@ -1,6 +1,7 @@
 Resource: Encounter
-Parent: Resource
+Parent: DomainResource
 Description: "An interaction between a patient and healthcare provider(s) for the purpose of providing healthcare service(s) or assessing the health status of a patient."
+* ^url = "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation"
 * ^contact[0].telecom.system = #url
 * ^contact[=].telecom.value = "http://hl7.org/fhir"
 * ^contact[+].telecom.system = #url
@@ -179,3 +180,5 @@ Description: "An interaction between a patient and healthcare provider(s) for th
 * partOf ^comment = "This is also used for associating a child's encounter back to the mother's encounter.\r\rRefer to the Notes section in the Patient resource for further details."
 * partOf ^type.extension.url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy"
 * partOf ^type.extension.valueBoolean = true
+* partOf ^type.extension.valueBoolean = true
+* url = "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation" (exactly)

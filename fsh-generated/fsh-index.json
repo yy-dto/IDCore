@@ -84,16 +84,16 @@
     "fshName": "IDCoreCondition",
     "fshType": "Instance",
     "fshFile": "Profile-IDCoreCondition.fsh",
-    "startLine": 47,
-    "endLine": 56
+    "startLine": 49,
+    "endLine": 58
   },
   {
     "outputFile": "Encounter-IDCoreEncounter.json",
     "fshName": "IDCoreEncounter",
     "fshType": "Instance",
     "fshFile": "Profile-IDCoreEncounter.fsh",
-    "startLine": 84,
-    "endLine": 104
+    "startLine": 85,
+    "endLine": 105
   },
   {
     "outputFile": "Encounter-IDCoreEncounterEMER.json",
@@ -112,14 +112,6 @@
     "endLine": 33
   },
   {
-    "outputFile": "Encounter-IDCoreEncounterStatusFinished.json",
-    "fshName": "IDCoreEncounterStatusFinished",
-    "fshType": "Instance",
-    "fshFile": "Profile-IDCoreEncounterStatusFinished.fsh",
-    "startLine": 18,
-    "endLine": 53
-  },
-  {
     "outputFile": "Patient-PatientExample.json",
     "fshName": "PatientExample",
     "fshType": "Instance",
@@ -133,15 +125,15 @@
     "fshType": "Extension",
     "fshFile": "Extension-EncounterLocation.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 18
   },
   {
     "outputFile": "StructureDefinition-IDCoreCondition.json",
     "fshName": "IDCoreCondition",
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreCondition.fsh",
-    "startLine": 1,
-    "endLine": 41
+    "startLine": 3,
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-IDCoreEncounter.json",
@@ -149,7 +141,7 @@
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreEncounter.fsh",
     "startLine": 1,
-    "endLine": 77
+    "endLine": 78
   },
   {
     "outputFile": "StructureDefinition-IDCoreEncounterEMER.json",

@@ -36,6 +36,10 @@
   "differential": {
     "element": [
       {
+        "id": "Encounter.location.extension",
+        "path": "Encounter.location.extension"
+      },
+      {
         "id": "Encounter.location.extension.extension",
         "path": "Encounter.location.extension.extension",
         "min": 1,
