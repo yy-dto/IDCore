@@ -20,7 +20,7 @@ Description: "Terminology Kemkes examination CodeSystem"
 * ^compositional = false
 * ^versionNeeded = true
 * ^content = #complete
-* * #X099080 "Titer Anti-ABO"
+* #X099080 "Titer Anti-ABO"
 * #X099081 "Sugar Water Test/Sucrose Water Test"
 * #X099082 "Badan inklusi Hb H"
 * #X099083 "Protein C kontrol"
