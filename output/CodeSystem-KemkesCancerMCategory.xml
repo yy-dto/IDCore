@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KemkesCancerMCategory"/>
+  <language value="English"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="English" lang="English"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/cancer-m-category</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">M0<a name="KemkesCancerMCategory-M0"> </a></td></tr><tr><td style="white-space:nowrap">M1<a name="KemkesCancerMCategory-M1"> </a></td></tr><tr><td style="white-space:nowrap">M1a<a name="KemkesCancerMCategory-M1a"> </a></td></tr><tr><td style="white-space:nowrap">M1b<a name="KemkesCancerMCategory-M1b"> </a></td></tr><tr><td style="white-space:nowrap">M1c<a name="KemkesCancerMCategory-M1c"> </a></td></tr><tr><td style="white-space:nowrap">MX<a name="KemkesCancerMCategory-MX"> </a></td></tr></table></div>
+  </text>
+  <url value="http://terminology.kemkes.go.id/CodeSystem/cancer-m-category"/>
+  <version value="0.1.0"/>
+  <name value="KemkesCancerMCategoryCS"/>
+  <title value="Kemkes Cancer M Category"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2024-02-05T00:00:00.000Z"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="is-a"/>
+  <compositional value="false"/>
+  <versionNeeded value="true"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="M0"/>
+    <display value="M0"/>
+  </concept>
+  <concept>
+    <code value="M1"/>
+    <display value="M1"/>
+  </concept>
+  <concept>
+    <code value="M1a"/>
+    <display value="M1a"/>
+  </concept>
+  <concept>
+    <code value="M1b"/>
+    <display value="M1b"/>
+  </concept>
+  <concept>
+    <code value="M1c"/>
+    <display value="M1c"/>
+  </concept>
+  <concept>
+    <code value="MX"/>
+    <display value="MX"/>
+  </concept>
+</CodeSystem>

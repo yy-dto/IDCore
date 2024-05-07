@@ -14,8 +14,11 @@ Description: "Created by: Fadhil Muhammad"
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "terminologisehat@kemkes.go.id"
 * ^caseSensitive = true
-* ^valueSet = "http://terminology.kemkes.go.id/CodeSystem/clinical-term?vs"
+* ^valueSet = "http://terminology.kemkes.go.id/ValueSet/clinical-term"
 * ^hierarchyMeaning = #is-a
+* ^experimental = false
+* ^date = "2024-02-05T00:00:00.000Z"
+* ^publisher = "DTO MoH"
 * ^compositional = false
 * ^versionNeeded = true
 * ^content = #complete

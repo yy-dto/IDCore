@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="EncounterHospitalizationAdmitSourceVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-admit-source.html"><code>http://terminology.hl7.org/CodeSystem/admit-source</code></a></li><li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html"><code>http://hl7.org/fhir/sid/icd-10</code></a></li></ul></div>
+  </text>
+  <url value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationAdmitSourceVS"/>
+  <version value="0.1.0"/>
+  <name value="EncounterHospitalizationAdmitSourceVS"/>
+  <title value="Admit Source"/>
+  <status value="active"/>
+  <date value="2024-02-15T12:08:26+07:00"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <description value="This value set defines a set of codes that can be used to indicate from where the patient came in."/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -82,10 +82,11 @@ pages:
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
     - input/includes
-#    - input/resources
+    - input/resources/*
     - fsh-generated/resources
   path-pages:
-    - input/pagecontent
+    - input/pagecontent/valueset
+    - input/pagecontent/codesystem
 #    - input/intro-notes
     - fsh-generated/includes
 #   excludettl: true

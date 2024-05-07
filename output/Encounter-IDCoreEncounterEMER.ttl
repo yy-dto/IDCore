@@ -1,0 +1,99 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/Encounter/IDCoreEncounterEMER> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IDCoreEncounterEMER"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"^^xsd:anyURI ;
+       fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"IDCoreEncounterEMER\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;IDCoreEncounterEMER&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-IDCoreEncounter.html\">IDCoreEncounter</a></p></div><p><b>identifier</b>: id: KSP20240001</p><p><b>status</b>: arrived</p><h3>StatusHistories</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>arrived</td><td>2023-07-04 08:30:00+0000 --&gt; (ongoing)</td></tr></table><p><b>class</b>: emergency (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code EMER = 'emergency', stated as 'emergency')</p><p><b>subject</b>: <a href=\"Patient/100000030015\">Patient/100000030015: Diana Smith</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>attender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#ATND)</span></td><td><a href=\"Practitioner/N10000001\">Practitioner/N10000001: Dokter Bronsig</a></td></tr></table><p><b>period</b>: 2023-07-04 08:30:00+0000 --&gt; (ongoing)</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Location</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td/><td><a href=\"Location/022f4098-d391-42c0-bba1-abeab8232a13\">Location/022f4098-d391-42c0-bba1-abeab8232a13: Ruangan Triase, Instalasi Gawat Darurat, Gedung Utama, Lantai 1</a></td><td>2023-07-04 08:30:00+0000 --&gt; (ongoing)</td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization/10000002\">Organization/10000002</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://sys-ids.kemkes.go.id/encounter/10000002"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "KSP20240001" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "arrived"] ; # 
+  fhir:statusHistory ( [
+     fhir:status [ fhir:v "arrived" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2023-07-04T08:30:00+00:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "EMER" ] ;
+     fhir:display [ fhir:v "emergency" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.kemkes.go.id/r4/Patient/100000030015> ;
+     fhir:reference [ fhir:v "Patient/100000030015" ] ;
+     fhir:display [ fhir:v "Diana Smith" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ATND" ] ;
+         fhir:display [ fhir:v "attender" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <https://fhir.kemkes.go.id/r4/Practitioner/N10000001> ;
+       fhir:reference [ fhir:v "Practitioner/N10000001" ] ;
+       fhir:display [ fhir:v "Dokter Bronsig" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2023-07-04T08:30:00+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:location ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "reguler" ] ;
+             fhir:display [ fhir:v "Kelas Reguler" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "upgradeClassIndicator"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "kelas-tetap" ] ;
+             fhir:display [ fhir:v "Kelas Tetap Perawatan" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass"^^xsd:anyURI ]
+     ] ) ;
+     fhir:location [
+       fhir:link <https://fhir.kemkes.go.id/r4/Location/022f4098-d391-42c0-bba1-abeab8232a13> ;
+       fhir:reference [ fhir:v "Location/022f4098-d391-42c0-bba1-abeab8232a13" ] ;
+       fhir:display [ fhir:v "Ruangan Triase, Instalasi Gawat Darurat, Gedung Utama, Lantai 1" ]
+     ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2023-07-04T08:30:00+00:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://fhir.kemkes.go.id/r4/Organization/10000002> ;
+     fhir:reference [ fhir:v "Organization/10000002" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

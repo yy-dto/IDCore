@@ -1,0 +1,56 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/ValueSet/ConditionSeverityVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ConditionSeverityVS"] ; # 
+  fhir:meta [
+     fhir:versionId [ fhir:v "1" ] ;
+     fhir:lastUpdated [ fhir:v "2023-11-05T18:45:16.553+07:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:language [ fhir:v "English"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"English\" lang=\"English\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/24484000\">24484000</a></td><td>Severe</td></tr><tr><td><a href=\"http://snomed.info/id/6736007\">6736007</a></td><td>Moderate</td></tr><tr><td><a href=\"http://snomed.info/id/255604002\">255604002</a></td><td>Mild</td></tr><tr><td><a href=\"http://snomed.info/id/442452003\">442452003</a></td><td>Life threatening severity</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://dto.kemkes.go.id//VS/Condition.severity"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ConditionSeverityVS"] ; # 
+  fhir:title [ fhir:v "Condition Severity"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-11-02T09:00:59.000Z"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Thomas Chaidir" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Created by: Fadhil Muhammad"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "24484000" ] ;
+         fhir:display [ fhir:v "Severe" ]
+       ] [
+         fhir:code [ fhir:v "6736007" ] ;
+         fhir:display [ fhir:v "Moderate" ]
+       ] [
+         fhir:code [ fhir:v "255604002" ] ;
+         fhir:display [ fhir:v "Mild" ]
+       ] [
+         fhir:code [ fhir:v "442452003" ] ;
+         fhir:display [ fhir:v "Life threatening severity" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

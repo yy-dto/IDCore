@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "EncounterLocationServiceClassOutpatient",
+  "id": "EncounterLocationServiceClassOutpatient",
+  "title": "Encounter Location ServiceClass Outpatient",
+  "description": "Local ID encounter location ServiceClass Outpatient",
+  "url": "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient",
+  "concept": [
+    {
+      "code": "reguler",
+      "display": "Kelas Reguler"
+    },
+    {
+      "code": "eksekutif",
+      "display": "Kelas Eksekutif"
+    }
+  ],
+  "count": 2
+}

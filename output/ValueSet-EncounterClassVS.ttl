@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EncounterClassVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ActCode.html\"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-EncounterClassCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/encounter-class</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EncounterClassVS"] ; # 
+  fhir:title [ fhir:v "V3 Value SetActEncounterCode"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-02-15T12:08:26+07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Thomas Chaidir" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Domain provides codes that qualify the ActEncounterClass (ENC)"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/encounter-class"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

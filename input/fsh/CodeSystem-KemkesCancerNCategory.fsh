@@ -1,5 +1,4 @@
 CodeSystem: KemkesCancerNCategory
-Id: 41b4aac4-719f-4f8a-a96b-92e493c99b75
 Title: "Kemkes Cancer N Category"
 * ^meta.versionId = "2"
 * ^meta.lastUpdated = "2024-02-05T12:25:03.974+07:00"
@@ -15,8 +14,9 @@ Title: "Kemkes Cancer N Category"
 * ^versionNeeded = false
 * ^hierarchyMeaning = #is-a
 * ^language = #English
+* ^valueSet = "http://terminology.kemkes.go.id/ValueSet/cancer-n-category"
 * ^date = "2024-02-05T00:00:00.000Z"
-* ^experimental = true
+* ^experimental = false
 * ^publisher = "DTO MoH"
 * ^count = 14
 * #N0 "N0"

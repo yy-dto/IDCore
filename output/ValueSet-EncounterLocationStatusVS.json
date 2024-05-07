@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "EncounterLocationStatusVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"http://hl7.org/fhir/R4/codesystem-encounter-location-status.html\"><code>http://hl7.org/fhir/encounter-location-status</code></a></li></ul></div>"
+  },
+  "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationStatusVS",
+  "version" : "0.1.0",
+  "name" : "EncounterLocationStatusVS",
+  "title" : "Encounter Location Status",
+  "status" : "active",
+  "date" : "2024-02-15T12:08:26+07:00",
+  "publisher" : "Thomas Chaidir",
+  "contact" : [{
+    "name" : "Thomas Chaidir",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://satusehat.kemkes.go.id/"
+    }]
+  }],
+  "description" : "The status of the location.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/encounter-location-status"
+    }]
+  }
+}

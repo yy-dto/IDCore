@@ -1,0 +1,110 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KemkesCancerTCategoryCS",
+  "meta" : {
+    "versionId" : "1",
+    "lastUpdated" : "2024-02-05T12:10:37.276+07:00"
+  },
+  "language" : "English",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"English\" lang=\"English\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/cancer-t-category</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">T0<a name=\"KemkesCancerTCategoryCS-T0\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T1<a name=\"KemkesCancerTCategoryCS-T1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T1a<a name=\"KemkesCancerTCategoryCS-T1a\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T1b<a name=\"KemkesCancerTCategoryCS-T1b\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T1c<a name=\"KemkesCancerTCategoryCS-T1c\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T2<a name=\"KemkesCancerTCategoryCS-T2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T2a<a name=\"KemkesCancerTCategoryCS-T2a\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T2b<a name=\"KemkesCancerTCategoryCS-T2b\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T2c<a name=\"KemkesCancerTCategoryCS-T2c\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T3<a name=\"KemkesCancerTCategoryCS-T3\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T3a<a name=\"KemkesCancerTCategoryCS-T3a\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T3b<a name=\"KemkesCancerTCategoryCS-T3b\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T3c<a name=\"KemkesCancerTCategoryCS-T3c\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T4<a name=\"KemkesCancerTCategoryCS-T4\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T4a<a name=\"KemkesCancerTCategoryCS-T4a\"> </a></td></tr><tr><td style=\"white-space:nowrap\">T4b<a name=\"KemkesCancerTCategoryCS-T4b\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ta<a name=\"KemkesCancerTCategoryCS-Ta\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Tis<a name=\"KemkesCancerTCategoryCS-Tis\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TX<a name=\"KemkesCancerTCategoryCS-TX\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://terminology.kemkes.go.id/CodeSystem/cancer-t-category",
+  "version" : "0.1.0",
+  "name" : "KemkesCancerTCategoryCS",
+  "title" : "Kemkes Cancer T Category",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-02-05T00:00:00.000Z",
+  "publisher" : "Thomas Chaidir",
+  "contact" : [{
+    "name" : "Thomas Chaidir",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://satusehat.kemkes.go.id/"
+    }]
+  }],
+  "caseSensitive" : true,
+  "hierarchyMeaning" : "is-a",
+  "compositional" : false,
+  "versionNeeded" : true,
+  "content" : "complete",
+  "count" : 19,
+  "concept" : [{
+    "code" : "T0",
+    "display" : "T0"
+  },
+  {
+    "code" : "T1",
+    "display" : "T1"
+  },
+  {
+    "code" : "T1a",
+    "display" : "T1a"
+  },
+  {
+    "code" : "T1b",
+    "display" : "T1b"
+  },
+  {
+    "code" : "T1c",
+    "display" : "T1c"
+  },
+  {
+    "code" : "T2",
+    "display" : "T2"
+  },
+  {
+    "code" : "T2a",
+    "display" : "T2a"
+  },
+  {
+    "code" : "T2b",
+    "display" : "T2b"
+  },
+  {
+    "code" : "T2c",
+    "display" : "T2c"
+  },
+  {
+    "code" : "T3",
+    "display" : "T3"
+  },
+  {
+    "code" : "T3a",
+    "display" : "T3a"
+  },
+  {
+    "code" : "T3b",
+    "display" : "T3b"
+  },
+  {
+    "code" : "T3c",
+    "display" : "T3c"
+  },
+  {
+    "code" : "T4",
+    "display" : "T4"
+  },
+  {
+    "code" : "T4a",
+    "display" : "T4a"
+  },
+  {
+    "code" : "T4b",
+    "display" : "T4b"
+  },
+  {
+    "code" : "Ta",
+    "display" : "Ta"
+  },
+  {
+    "code" : "Tis",
+    "display" : "Tis"
+  },
+  {
+    "code" : "TX",
+    "display" : "TX"
+  }]
+}

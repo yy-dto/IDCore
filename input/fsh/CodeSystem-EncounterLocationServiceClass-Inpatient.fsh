@@ -1,10 +1,11 @@
 // @Name: Local Code Systems
 
 // Define a local code system
-CodeSystem: EncounterLocationServiceClassInpatientCS
+CodeSystem: EncounterLocationServiceClassInpatient
 Title: "Encounter Location ServiceClass Inpatient"
 Description: "Local ID encounter location ServiceClass Inpatient"
-* ^url =  "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"
+* ^url =  "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"
+* ^valueSet = "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"
 * #1
     "Kelas 1"
 * #2

@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/EncounterLocationServiceClassInpatientCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "EncounterLocationServiceClassInpatientCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"EncounterLocationServiceClassInpatientCS-1\"> </a></td><td>Kelas 1</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"EncounterLocationServiceClassInpatientCS-2\"> </a></td><td>Kelas 2</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"EncounterLocationServiceClassInpatientCS-3\"> </a></td><td>Kelas 3</td></tr><tr><td style=\"white-space:nowrap\">vip<a name=\"EncounterLocationServiceClassInpatientCS-vip\"> </a></td><td>Kelas VIP</td></tr><tr><td style=\"white-space:nowrap\">vvip<a name=\"EncounterLocationServiceClassInpatientCS-vvip\"> </a></td><td>Kelas VVIP</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EncounterLocationServiceClassInpatientCS"] ; # 
+  fhir:title [ fhir:v "Encounter Location ServiceClass Inpatient"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-02-15T12:08:26+07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Thomas Chaidir" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Local ID encounter location ServiceClass Inpatient"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Kelas 1" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Kelas 2" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Kelas 3" ]
+  ] [
+     fhir:code [ fhir:v "vip" ] ;
+     fhir:display [ fhir:v "Kelas VIP" ]
+  ] [
+     fhir:code [ fhir:v "vvip" ] ;
+     fhir:display [ fhir:v "Kelas VVIP" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

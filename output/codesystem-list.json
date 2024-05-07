@@ -1,0 +1,84 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterLocationServiceClassInpatientCS",
+      "title" : "Encounter Location ServiceClass Inpatient",
+      "description" : "Local ID encounter location ServiceClass Inpatient"
+    },
+    {
+      "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterLocationServiceClassOutpatientCS",
+      "title" : "Encounter Location ServiceClass Outpatient",
+      "description" : "Local ID encounter location ServiceClass Outpatient"
+    },
+    {
+      "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterLocationUpgradeClass",
+      "title" : "Encounter Location UpgradeClass",
+      "description" : "Local ID encounter location UpgradeClass"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/cancer-m-category",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesCancerMCategoryCS",
+      "title" : "Kemkes Cancer M Category",
+      "description" : null
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/cancer-n-category",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesCancerNCategory",
+      "title" : "Kemkes Cancer N Category",
+      "description" : null
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/cancer-t-category",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesCancerTCategoryCS",
+      "title" : "Kemkes Cancer T Category",
+      "description" : null
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesClinicalTermCS",
+      "title" : "Terminology Kemkes Clinical Term CodeSystem",
+      "description" : "Created by: Fadhil Muhammad"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/encounter-class",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterClassCS",
+      "title" : "Encounter Class",
+      "description" : "Local ID encounter Class"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/icd-o-morphology",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesICDOMorphologyCS",
+      "title" : "ICD-0 Morphology",
+      "description" : "Created by: Fadhil Muhammad"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/icd-o-topography",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesICDOTopographyCS",
+      "title" : "ICD-0 Topography",
+      "description" : "Created by: Fadhil Muhammad"
+    }
+  ]
+}

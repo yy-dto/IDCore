@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ConditionCodeVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://snomed.info/sct/900000000000207008/version/20221231</code></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-KemkesICDOMorphologyCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/icd-o-morphology</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-KemkesICDOTopographyCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/icd-o-topography</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-KemkesCancerTCategoryCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/cancer-t-category</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-41b4aac4-719f-4f8a-a96b-92e493c99b75.html\"><code>http://terminology.kemkes.go.id/CodeSystem/cancer-n-category</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-KemkesCancerMCategory.html\"><code>http://terminology.kemkes.go.id/CodeSystem/cancer-m-category</code></a></li></ul></div>"
+  },
+  "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ConditionCodeVS",
+  "version" : "0.1.0",
+  "name" : "ConditionCodeVS",
+  "title" : "Condition Code",
+  "status" : "active",
+  "date" : "2024-02-15T12:08:26+07:00",
+  "publisher" : "Thomas Chaidir",
+  "contact" : [{
+    "name" : "Thomas Chaidir",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://satusehat.kemkes.go.id/"
+    }]
+  }],
+  "description" : "This value set defines set of codes for Condition Code.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct/900000000000207008/version/20221231"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10"
+    },
+    {
+      "system" : "http://terminology.kemkes.go.id/CodeSystem/clinical-term"
+    },
+    {
+      "system" : "http://terminology.kemkes.go.id/CodeSystem/icd-o-morphology"
+    },
+    {
+      "system" : "http://terminology.kemkes.go.id/CodeSystem/icd-o-topography"
+    },
+    {
+      "system" : "http://terminology.kemkes.go.id/CodeSystem/cancer-t-category"
+    },
+    {
+      "system" : "http://terminology.kemkes.go.id/CodeSystem/cancer-n-category"
+    },
+    {
+      "system" : "http://terminology.kemkes.go.id/CodeSystem/cancer-m-category"
+    }]
+  }
+}

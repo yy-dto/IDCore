@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="EncounterLocationUpgradeClass"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">kelas-tetap<a name="EncounterLocationUpgradeClass-kelas-tetap"> </a></td><td>Kelas Tetap Perawatan</td></tr><tr><td style="white-space:nowrap">naik-kelas<a name="EncounterLocationUpgradeClass-naik-kelas"> </a></td><td>Kenaikan Kelas Perawatan</td></tr><tr><td style="white-space:nowrap">turun-kelas<a name="EncounterLocationUpgradeClass-turun-kelas"> </a></td><td>Penurunan Kelas Perawatan</td></tr><tr><td style="white-space:nowrap">titip-rawat<a name="EncounterLocationUpgradeClass-titip-rawat"> </a></td><td>Titip Kelas Perawatan</td></tr></table></div>
+  </text>
+  <url value="hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"/>
+  <version value="0.1.0"/>
+  <name value="EncounterLocationUpgradeClass"/>
+  <title value="Encounter Location UpgradeClass"/>
+  <status value="active"/>
+  <date value="2024-02-15T12:08:26+07:00"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <description value="Local ID encounter location UpgradeClass"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="kelas-tetap"/>
+    <display value="Kelas Tetap Perawatan"/>
+  </concept>
+  <concept>
+    <code value="naik-kelas"/>
+    <display value="Kenaikan Kelas Perawatan"/>
+  </concept>
+  <concept>
+    <code value="turun-kelas"/>
+    <display value="Penurunan Kelas Perawatan"/>
+  </concept>
+  <concept>
+    <code value="titip-rawat"/>
+    <display value="Titip Kelas Perawatan"/>
+  </concept>
+</CodeSystem>

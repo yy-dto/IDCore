@@ -1,4 +1,16 @@
 Alias: $IDCoreEncounter = https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter
+Alias: $Condition-clinicalCS = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias: $Condition-clinicalVS = http://terminology.hl7.org/ValueSet/condition-clinical
+Alias: $Condition-categoryCS = http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $Condition-categoryVS = http://terminology.hl7.org/ValueSet/condition-category
+Alias: $Condition-code = http://hl7.org/fhir/CodeSystem/condition-code
+Alias: $Condition-severity = http://hl7.org/fhir/ValueSet/condition-severity
+Alias: $Condition-ver-status = http://terminology.hl7.org/ValueSet/condition-ver-status
+Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
+Alias: $Body-site = http://hl7.org/fhir/ValueSet/body-site
+Alias: $ConditionEvidenceCode = http://hl7.org/fhir/ValueSet/manifestation-or-symptom
+Alias: $Condition-stage = http://hl7.org/fhir/ValueSet/condition-stage
+Alias: $Condition-stage-type = http://hl7.org/fhir/ValueSet/condition-stage-type 
 
 Profile: IDCoreCondition
 Parent: Condition
@@ -24,33 +36,29 @@ Description: "ID Core Condition profile"
 * evidence.code 0..*
 * evidence.detail 0..*
 * note 0..*
-
-* clinicalStatus from ConditionClinicalStatusVS
+* clinicalStatus from $Condition-clinicalVS
 * onsetDateTime only dateTime
 * recordedDate only dateTime
 * abatementDateTime only dateTime
-* verificationStatus from ConditionVerificationStatusVS
-* category from ConditionCategoryVS
-* severity from ConditionSeverityVS
-* code from ConditionCodeVS
-* bodySite from ConditionBodySiteVS
+* verificationStatus from $Condition-ver-status
+* category from $Condition-categoryVS
+* severity from $Condition-severity
+* code from $Condition-code
+* bodySite from $Body-site
 * subject only Reference(Patient)
-* encounter only Reference($IDCoreEncounter)
+* encounter only Reference(Encounter)
+* encounter MS
 * recorder only Reference(Practitioner or PractitionerRole or Patient or RelatedPerson)
-* stage.summary from ConditionStageSummaryVS
+* stage.summary from $Condition-stage
 * stage.assessment only Reference(ClinicalImpression or DiagnosticReport or Observation)
-* stage.type from ConditionStageTypeVS
-* evidence.code from ConditionEvidenceCodeVS
-
-Alias: $condition-clinical = http://terminology.hl7.org/CodeSystem/condition-clinical
-Alias: $condition-category = http://terminology.hl7.org/CodeSystem/condition-category
-Alias: $icd-10 = http://hl7.org/fhir/sid/icd-10
+* stage.type from $Condition-stage-type
+* evidence.code from $ConditionEvidenceCode
 
 Instance: IDCoreCondition
 InstanceOf: Condition
 Usage: #example
-* clinicalStatus = $condition-clinical#active "Active"
-* category = $condition-category#encounter-diagnosis "Encounter Diagnosis"
+* clinicalStatus = $Condition-clinicalCS#active "Active"
+* category = $Condition-categoryCS#encounter-diagnosis "Encounter Diagnosis"
 * code = $icd-10#A15.0 "Tuberculosis of lung, confirmed by sputum microscopy with or without culture"
 * subject = Reference(Patient/100000030009) "Budi Santoso"
 * encounter = Reference(Encounter/2823ed1d-3e3e-434e-9a5b-9c579d192787)

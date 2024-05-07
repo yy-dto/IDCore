@@ -1,52 +1,52 @@
-Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives
-\fsh-generated\resources\ImplementationGuide-hl7.fhir.id.core.json	17510	-	0	0	0	0	0	0	5	164
-fsh-generated/resources/CodeSystem-41b4aac4-719f-4f8a-a96b-92e493c99b75.json	1618	10	0	0	0	1	0	0	0	19
-fsh-generated/resources/CodeSystem-EncounterClassCS.json	409	2	1	0	0	0	0	0	0	13
-fsh-generated/resources/CodeSystem-EncounterLocationServiceClassInpatientCS.json	740	3	0	0	0	0	0	0	0	11
-fsh-generated/resources/CodeSystem-EncounterLocationServiceClassOutpatientCS.json	586	3	0	0	0	0	0	0	0	10
-fsh-generated/resources/CodeSystem-EncounterLocationUpgradeClass.json	721	3	0	0	0	0	0	0	0	10
-fsh-generated/resources/CodeSystem-KemkesCancerMCategory.json	1061	5	0	0	0	0	0	0	0	15
-fsh-generated/resources/CodeSystem-KemkesCancerTCategoryCS.json	1888	9	0	0	0	0	0	0	0	17
-fsh-generated/resources/CodeSystem-KemkesClinicalTermCS.json	19151	68	0	0	0	0	0	0	2	93
-fsh-generated/resources/CodeSystem-KemkesICDOMorphologyCS.json	98578	282	1	0	0	0	0	0	8	388
-fsh-generated/resources/CodeSystem-KemkesICDOTopographyCS.json	31899	94	1	0	0	0	0	0	2	139
-fsh-generated/resources/Condition-IDCoreCondition.json	1005	4	0	0	0	0	0	0	0	37
-fsh-generated/resources/Encounter-IDCoreEncounter.json	2434	5	0	0	0	0	0	0	0	418
-fsh-generated/resources/Encounter-IDCoreEncounterEMER.json	2488	7	0	0	0	0	0	0	0	24
-fsh-generated/resources/Encounter-IDCoreEncounterIMP.json	2622	6	0	0	0	0	0	0	0	28
-fsh-generated/resources/Patient-PatientExample.json	259	2	1	0	0	0	0	0	0	5
-fsh-generated/resources/StructureDefinition-EncounterLocation.json	3654	7	0	0	0	0	0	73	1	107
-fsh-generated/resources/StructureDefinition-IDCoreCondition.json	5172	13	0	0	0	0	0	195	0	144
-fsh-generated/resources/StructureDefinition-IDCoreEncounter.json	6161	13	0	0	0	0	0	219	0	254
-fsh-generated/resources/StructureDefinition-IDCoreEncounterEMER.json	2462	6	0	0	0	0	0	223	0	219
-fsh-generated/resources/StructureDefinition-IDCoreEncounterIMP.json	2281	6	0	0	0	0	0	217	0	230
-fsh-generated/resources/StructureDefinition-IDCoreEncounterStatusFinished.json	1699	5	0	0	0	0	0	223	0	229
-fsh-generated/resources/StructureDefinition-MyPatient.json	1165	4	0	0	0	0	0	138	0	141
-fsh-generated/resources/ValueSet-ActPriorityVS.json	549	2	1	0	0	0	0	0	0	58
-fsh-generated/resources/ValueSet-ConditionBodySiteVS.json	4795997	9630	0	1	0	0	0	0	216	288637
-fsh-generated/resources/ValueSet-ConditionCategoryVS.json	811	3	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-ConditionClinicalStatusVS.json	462	2	0	0	0	0	0	0	1	-
-fsh-generated/resources/ValueSet-ConditionCodeVS.json	1070	3	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-ConditionEvidenceCodeVS.json	1038	3	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-ConditionSeverityVS.json	1184	5	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-ConditionStageSummaryVS.json	164810	223	0	0	0	0	0	0	4	-
-fsh-generated/resources/ValueSet-ConditionStageTypeVS.json	121114	229	0	0	0	0	0	0	4	-
-fsh-generated/resources/ValueSet-ConditionVerificationStatusVS.json	854	3	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterClassVS.json	530	2	1	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterDiagnosisUseVS.json	513	1	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterHospitalizationAdmitSourceVS.json	587	3	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterHospitalizationDischargeDispositionVS.json	560	2	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterHospitalizationSpecialArrangementsVS.json	602	2	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterHospitalizationreAdmitSourceVS.json	520	2	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterHospitalizationreDietVS.json	512	1	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterHospitalizationreSpecialCourtesyVS.json	657	3	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterLocationServiceClassInpatientVS.json	553	2	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterLocationServiceClassOutpatientVS.json	559	2	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterLocationStatusVS.json	420	2	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterLocationTypeVS.json	509	1	1	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterLocationUpgradeClassVS.json	485	2	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterReasonCodesVS.json	458	2	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterServiceTypeVS.json	440	2	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterStatusVS.json	381	2	0	0	0	0	0	0	0	-
-fsh-generated/resources/ValueSet-EncounterTypeVS.json	509	2	0	0	0	0	0	0	1	-
-fsh-generated/resources/ValueSet-ParticipationTypeVS.json	584	2	0	0	0	0	0	0	0	-
+Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+\fsh-generated\resources\ImplementationGuide-hl7.fhir.id.core.json	17510	-	0	0	0	0	0	0	7	106	0	0	37	0	0	0	0	3	0	0	437	227	0	0	0	9	0	7
+fsh-generated/resources/CodeSystem-41b4aac4-719f-4f8a-a96b-92e493c99b75.json	1618	10	0	0	0	1	0	0	0	14	0	0	5	0	0	0	0	0	0	0	88	3047	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-EncounterClassCS.json	409	3	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	46	359	0	0	0	0	0	1
+fsh-generated/resources/CodeSystem-EncounterLocationServiceClassInpatientCS.json	740	3	1	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	52	171	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-EncounterLocationServiceClassOutpatientCS.json	586	3	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	51	135	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-EncounterLocationUpgradeClass.json	721	3	0	0	0	0	0	0	0	12	0	0	3	0	0	0	0	0	0	0	82	153	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-KemkesCancerMCategory.json	1061	4	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	64	133	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-KemkesCancerTCategoryCS.json	1888	7	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	61	130	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-KemkesClinicalTermCS.json	19151	59	0	0	0	0	0	0	2	92	0	0	0	0	0	0	0	1	0	0	456	286	0	0	0	7	0	0
+fsh-generated/resources/CodeSystem-KemkesICDOMorphologyCS.json	98578	212	1	0	0	0	0	0	9	357	0	0	3	0	0	0	0	1	0	0	2281	583	0	0	0	24	0	3
+fsh-generated/resources/CodeSystem-KemkesICDOTopographyCS.json	31899	72	0	0	0	0	0	0	4	168	0	0	1	0	0	0	0	1	0	0	727	236	0	0	0	9	0	1
+fsh-generated/resources/Condition-IDCoreCondition.json	1005	4	0	0	0	0	0	0	0	32	0	0	0	0	0	0	0	0	0	0	44	57	0	0	0	0	0	0
+fsh-generated/resources/Encounter-IDCoreEncounter.json	2434	7	0	0	0	0	0	0	0	720	0	0	0	0	0	0	0	0	0	0	57	80	0	0	0	0	0	0
+fsh-generated/resources/Encounter-IDCoreEncounterEMER.json	2488	7	0	0	0	0	0	0	0	42	0	0	0	0	0	0	0	0	0	0	60	48	0	0	0	0	0	1
+fsh-generated/resources/Encounter-IDCoreEncounterIMP.json	2622	6	0	0	0	0	0	0	0	30	0	0	0	0	0	0	0	0	0	0	66	47	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientExample.json	259	2	1	0	0	0	0	0	0	24	0	0	0	0	0	0	0	0	0	0	24	44	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-EncounterLocation.json	3653	6	0	0	1	0	0	80	1	167	0	0	2	0	0	0	0	0	0	0	445	1863	0	0	0	4	0	0
+fsh-generated/resources/StructureDefinition-IDCoreCondition.json	5172	10	0	0	0	0	0	515	0	135	0	0	1	0	0	0	0	2	0	0	1041	1119	0	0	0	7	0	3
+fsh-generated/resources/StructureDefinition-IDCoreEncounter.json	6161	23	0	0	0	0	0	159	0	233	0	0	1	0	0	0	0	1	0	0	1048	1159	0	0	0	14	1	1
+fsh-generated/resources/StructureDefinition-IDCoreEncounterEMER.json	2462	6	0	0	0	0	0	223	0	191	0	0	0	0	0	0	0	2	0	0	494	1520	0	0	0	9	0	2
+fsh-generated/resources/StructureDefinition-IDCoreEncounterIMP.json	2281	6	0	0	0	0	0	191	0	198	0	0	0	0	0	0	0	2	0	0	496	891	0	0	0	10	0	1
+fsh-generated/resources/StructureDefinition-IDCoreEncounterStatusFinished.json	1699	4	1	0	0	0	0	204	0	191	0	0	1	0	0	0	0	1	0	0	537	983	0	0	0	9	0	2
+fsh-generated/resources/StructureDefinition-MyPatient.json	1165	5	0	0	0	0	0	110	0	90	0	0	4	0	0	0	0	1	0	0	316	1190	0	0	2	7	0	0
+fsh-generated/resources/ValueSet-ActPriorityVS.json	549	2	0	0	0	0	0	0	0	75	0	0	0	0	0	0	0	0	0	0	24	8798	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-ConditionBodySiteVS.json	4795997	8678	0	0	0	0	0	0	169	10248	0	0	1	0	0	0	0	70	0	0	42171	9095	0	0	0	942	0	41
+fsh-generated/resources/ValueSet-ConditionCategoryVS.json	811	4	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	42	204	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-ConditionClinicalStatusVS.json	462	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	47	247	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-ConditionCodeVS.json	1070	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	52	59	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-ConditionEvidenceCodeVS.json	1038	3	1	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	44	61	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-ConditionSeverityVS.json	1184	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	41	83	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-ConditionStageSummaryVS.json	164810	175	0	0	0	0	0	0	3	457	0	0	0	0	0	0	0	1	0	0	2570	230	0	0	0	22	0	0
+fsh-generated/resources/ValueSet-ConditionStageTypeVS.json	121114	177	0	0	0	0	0	0	3	260	0	0	0	0	0	0	0	2	0	0	1364	246	0	0	0	21	0	1
+fsh-generated/resources/ValueSet-ConditionVerificationStatusVS.json	854	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	31	124	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-EncounterClassVS.json	530	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	35	76	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-EncounterDiagnosisUseVS.json	513	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	34	125	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterHospitalizationAdmitSourceVS.json	587	2	1	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	33	77	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterHospitalizationDischargeDispositionVS.json	560	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	30	145	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterHospitalizationSpecialArrangementsVS.json	602	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	33	103	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterHospitalizationreAdmitSourceVS.json	520	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	33	71	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-EncounterHospitalizationreDietVS.json	512	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	28	105	0	0	1	0	0	0
+fsh-generated/resources/ValueSet-EncounterHospitalizationreSpecialCourtesyVS.json	657	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	32	216	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterLocationServiceClassInpatientVS.json	553	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	30	87	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterLocationServiceClassOutpatientVS.json	559	2	1	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	34	88	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterLocationStatusVS.json	420	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	37	128	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterLocationTypeVS.json	509	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	33	288	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterLocationUpgradeClassVS.json	485	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	33	70	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterReasonCodesVS.json	458	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	30	73	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-EncounterServiceTypeVS.json	440	3	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	31	3606	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterStatusVS.json	381	2	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	30	95	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-EncounterTypeVS.json	509	2	1	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	34	66	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-ParticipationTypeVS.json	584	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	36	501	0	0	0	1	0	0

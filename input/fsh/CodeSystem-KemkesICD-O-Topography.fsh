@@ -13,6 +13,8 @@ Description: "Created by: Fadhil Muhammad"
 * ^versionNeeded = false
 * ^hierarchyMeaning = #is-a
 * ^language = #English
+* ^valueSet = "http://terminology.kemkes.go.id/ValueSet/icd-o-morphology"
+* ^experimental = false
 * ^date = "2024-02-05T00:00:00.000Z"
 * ^publisher = "DTO MoH"
 * ^count = 401

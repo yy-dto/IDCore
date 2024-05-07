@@ -926,8 +926,8 @@
   "language": "Indonesia",
   "version": "1.0.0",
   "experimental": false,
-  "date": "2023-11-02T09:00:48.000Z",
-  "publisher": "DTO Kemkes",
+  "date": "2024-02-05T00:00:00.000Z",
+  "publisher": "DTO MoH",
   "contact": [
     {
       "name": "DTO Kemkes",
@@ -940,7 +940,7 @@
     }
   ],
   "caseSensitive": true,
-  "valueSet": "http://terminology.kemkes.go.id/CodeSystem/clinical-term?vs",
+  "valueSet": "http://terminology.kemkes.go.id/ValueSet/clinical-term",
   "hierarchyMeaning": "is-a",
   "compositional": false,
   "versionNeeded": true,

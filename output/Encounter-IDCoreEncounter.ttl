@@ -1,0 +1,94 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/Encounter/IDCoreEncounter> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IDCoreEncounter"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Encounter</b><a name=\"IDCoreEncounter\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Encounter &quot;IDCoreEncounter&quot; </p></div><p><b>identifier</b>: id: 10085103</p><p><b>status</b>: in-progress</p><h3>StatusHistories</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Status</b></td><td><b>Period</b></td></tr><tr><td style=\"display: none\">*</td><td>in-progress</td><td>2022-12-25 08:00:00+0000 --&gt; (ongoing)</td></tr></table><p><b>class</b>: inpatient encounter (Details: http://terminology.hl7.org/CodeSystem/v3-ActCode code IMP = 'inpatient encounter', stated as 'inpatient encounter')</p><p><b>subject</b>: <a href=\"Patient/100000030015\">Patient/100000030015: Diana Smith</a></p><p><b>basedOn</b>: <a href=\"ServiceRequest/1e1a260d-538f-4172-ad68-0aa5f8ccfc4a\">ServiceRequest/1e1a260d-538f-4172-ad68-0aa5f8ccfc4a</a></p><h3>Participants</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Type</b></td><td><b>Individual</b></td></tr><tr><td style=\"display: none\">*</td><td>attender <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ParticipationType.html\">ParticipationType</a>#ATND)</span></td><td><a href=\"Practitioner/N10000001\">Practitioner/N10000001: Dokter Bronsig</a></td></tr></table><p><b>period</b>: 2022-12-25 08:00:00+0000 --&gt; (ongoing)</p><h3>Locations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Extension</b></td><td><b>Location</b></td></tr><tr><td style=\"display: none\">*</td><td/><td><a href=\"Location/b29038d4-9ef0-4eb3-a2e9-3c02df668b07\">Location/b29038d4-9ef0-4eb3-a2e9-3c02df668b07: Bed 2, Ruang 210, Bangsal Rawat Inap Kelas 1, Layanan Penyakit Dalam, Lantai 2, Gedung Utama</a></td></tr></table><p><b>serviceProvider</b>: <a href=\"Organization/10085103\">Organization/10085103</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://sys-ids.kemkes.go.id/encounter/10085103"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "10085103" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:statusHistory ( [
+     fhir:status [ fhir:v "in-progress" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2022-12-25T08:00:00+00:00"^^xsd:dateTime ]
+     ]
+  ] ) ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "IMP" ] ;
+     fhir:display [ fhir:v "inpatient encounter" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://fhir.kemkes.go.id/r4/Patient/100000030015> ;
+     fhir:reference [ fhir:v "Patient/100000030015" ] ;
+     fhir:display [ fhir:v "Diana Smith" ]
+  ] ; # 
+  fhir:basedOn ( [
+     fhir:link <https://fhir.kemkes.go.id/r4/ServiceRequest/1e1a260d-538f-4172-ad68-0aa5f8ccfc4a> ;
+     fhir:reference [ fhir:v "ServiceRequest/1e1a260d-538f-4172-ad68-0aa5f8ccfc4a" ]
+  ] ) ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ATND" ] ;
+         fhir:display [ fhir:v "attender" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <https://fhir.kemkes.go.id/r4/Practitioner/N10000001> ;
+       fhir:reference [ fhir:v "Practitioner/N10000001" ] ;
+       fhir:display [ fhir:v "Dokter Bronsig" ]
+     ]
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2022-12-25T08:00:00+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:location ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "1" ] ;
+             fhir:display [ fhir:v "Kelas 1" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "upgradeClassIndicator"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "kelas-tetap" ] ;
+             fhir:display [ fhir:v "Kelas Tetap Perawatan" ]
+           ] )
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass"^^xsd:anyURI ]
+     ] ) ;
+     fhir:location [
+       fhir:link <https://fhir.kemkes.go.id/r4/Location/b29038d4-9ef0-4eb3-a2e9-3c02df668b07> ;
+       fhir:reference [ fhir:v "Location/b29038d4-9ef0-4eb3-a2e9-3c02df668b07" ] ;
+       fhir:display [ fhir:v "Bed 2, Ruang 210, Bangsal Rawat Inap Kelas 1, Layanan Penyakit Dalam, Lantai 2, Gedung Utama" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:link <https://fhir.kemkes.go.id/r4/Organization/10085103> ;
+     fhir:reference [ fhir:v "Organization/10085103" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

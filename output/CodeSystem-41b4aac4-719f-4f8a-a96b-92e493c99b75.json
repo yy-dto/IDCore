@@ -1,0 +1,90 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "41b4aac4-719f-4f8a-a96b-92e493c99b75",
+  "meta" : {
+    "versionId" : "2",
+    "lastUpdated" : "2024-02-05T12:25:03.974+07:00"
+  },
+  "language" : "English",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"English\" lang=\"English\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/cancer-n-category</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">N0<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N0\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N1<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N1\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N1a<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N1a\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N1b<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N1b\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N1c<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N1c\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N2<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N2\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N2a<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N2a\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N2b<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N2b\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N2c<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N2c\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N3<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N3\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N3a<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N3a\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N3b<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N3b\"> </a></td></tr><tr><td style=\"white-space:nowrap\">N3c<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-N3c\"> </a></td></tr><tr><td style=\"white-space:nowrap\">NX<a name=\"41b4aac4-719f-4f8a-a96b-92e493c99b75-NX\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://terminology.kemkes.go.id/CodeSystem/cancer-n-category",
+  "version" : "0.1.0",
+  "name" : "KemkesCancerNCategory",
+  "title" : "Kemkes Cancer N Category",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2024-02-05T00:00:00.000Z",
+  "publisher" : "Thomas Chaidir",
+  "contact" : [{
+    "name" : "Thomas Chaidir",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://satusehat.kemkes.go.id/"
+    }]
+  }],
+  "caseSensitive" : true,
+  "hierarchyMeaning" : "is-a",
+  "compositional" : false,
+  "versionNeeded" : false,
+  "content" : "complete",
+  "count" : 14,
+  "concept" : [{
+    "code" : "N0",
+    "display" : "N0"
+  },
+  {
+    "code" : "N1",
+    "display" : "N1"
+  },
+  {
+    "code" : "N1a",
+    "display" : "N1a"
+  },
+  {
+    "code" : "N1b",
+    "display" : "N1b"
+  },
+  {
+    "code" : "N1c",
+    "display" : "N1c"
+  },
+  {
+    "code" : "N2",
+    "display" : "N2"
+  },
+  {
+    "code" : "N2a",
+    "display" : "N2a"
+  },
+  {
+    "code" : "N2b",
+    "display" : "N2b"
+  },
+  {
+    "code" : "N2c",
+    "display" : "N2c"
+  },
+  {
+    "code" : "N3",
+    "display" : "N3"
+  },
+  {
+    "code" : "N3a",
+    "display" : "N3a"
+  },
+  {
+    "code" : "N3b",
+    "display" : "N3b"
+  },
+  {
+    "code" : "N3c",
+    "display" : "N3c"
+  },
+  {
+    "code" : "NX",
+    "display" : "NX"
+  }]
+}

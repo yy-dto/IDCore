@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Terminology Kemkes Clinical Term CodeSystem - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.45"}
+    h3,h4,h5,h6{--heading-prefix:"5.45"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Terminology Kemkes Clinical Term CodeSystem</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-KemkesClinicalTermCS.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-KemkesClinicalTermCS.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-KemkesClinicalTermCS.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Terminology Kemkes Clinical Term CodeSystem
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.kemkes.go.id/CodeSystem/clinical-term<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.kemkes.go.id/CodeSystem/clinical-term|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2023-11-02
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">KemkesClinicalTermCS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Created by: Fadhil Muhammad</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-ConditionBodySiteVS.html">ConditionBodySiteVS</a></li>
+ <li><a href="ValueSet-ConditionEvidenceCodeVS.html">ConditionEvidenceCodeVS</a></li>
+ <li><a href="ValueSet-ConditionCodeVS.html">ConditionCodeVS</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">AL000001<a name="KemkesClinicalTermCS-AL000001"> </a></td><td>Rumput bermuda</td></tr><tr><td style="white-space:nowrap">AL000002<a name="KemkesClinicalTermCS-AL000002"> </a></td><td>Rumput timotius</td></tr><tr><td style="white-space:nowrap">AL000003<a name="KemkesClinicalTermCS-AL000003"> </a></td><td>Akasia</td></tr><tr><td style="white-space:nowrap">AL000004<a name="KemkesClinicalTermCS-AL000004"> </a></td><td>Minyak kelapa sawit</td></tr><tr><td style="white-space:nowrap">AL000005<a name="KemkesClinicalTermCS-AL000005"> </a></td><td>Tungau debu</td></tr><tr><td style="white-space:nowrap">AL000006<a name="KemkesClinicalTermCS-AL000006"> </a></td><td>Tungau bahan pangan</td></tr><tr><td style="white-space:nowrap">AL000007<a name="KemkesClinicalTermCS-AL000007"> </a></td><td>Tungau Perabotan Rumah</td></tr><tr><td style="white-space:nowrap">AL000008<a name="KemkesClinicalTermCS-AL000008"> </a></td><td>Tungau tepung, beras</td></tr><tr><td style="white-space:nowrap">AL000009<a name="KemkesClinicalTermCS-AL000009"> </a></td><td>Kapuk</td></tr><tr><td style="white-space:nowrap">AL000010<a name="KemkesClinicalTermCS-AL000010"> </a></td><td>Racun lebah madu</td></tr><tr><td style="white-space:nowrap">AL000011<a name="KemkesClinicalTermCS-AL000011"> </a></td><td>Kecoa jerman</td></tr><tr><td style="white-space:nowrap">AL000012<a name="KemkesClinicalTermCS-AL000012"> </a></td><td>Candida albicans</td></tr><tr><td style="white-space:nowrap">AL000013<a name="KemkesClinicalTermCS-AL000013"> </a></td><td>Tepung terigu</td></tr><tr><td style="white-space:nowrap">AL000014<a name="KemkesClinicalTermCS-AL000014"> </a></td><td>Ragi</td></tr><tr><td style="white-space:nowrap">AL000015<a name="KemkesClinicalTermCS-AL000015"> </a></td><td>Ikan kod</td></tr><tr><td style="white-space:nowrap">AL000016<a name="KemkesClinicalTermCS-AL000016"> </a></td><td>Salmon</td></tr><tr><td style="white-space:nowrap">AL000017<a name="KemkesClinicalTermCS-AL000017"> </a></td><td>Daging bebek</td></tr><tr><td style="white-space:nowrap">AL000018<a name="KemkesClinicalTermCS-AL000018"> </a></td><td>Daging sapi</td></tr><tr><td style="white-space:nowrap">AL000019<a name="KemkesClinicalTermCS-AL000019"> </a></td><td>Daging ayam</td></tr><tr><td style="white-space:nowrap">AL000020<a name="KemkesClinicalTermCS-AL000020"> </a></td><td>Daging domba</td></tr><tr><td style="white-space:nowrap">AL000021<a name="KemkesClinicalTermCS-AL000021"> </a></td><td>Keju cheedar</td></tr><tr><td style="white-space:nowrap">AL000022<a name="KemkesClinicalTermCS-AL000022"> </a></td><td>Kopi</td></tr><tr><td style="white-space:nowrap">AL000023<a name="KemkesClinicalTermCS-AL000023"> </a></td><td>Nasi putih</td></tr><tr><td style="white-space:nowrap">AL000024<a name="KemkesClinicalTermCS-AL000024"> </a></td><td>Kuning telur</td></tr><tr><td style="white-space:nowrap">AL000025<a name="KemkesClinicalTermCS-AL000025"> </a></td><td>Kerang</td></tr><tr><td style="white-space:nowrap">AL000026<a name="KemkesClinicalTermCS-AL000026"> </a></td><td>Kacang merah</td></tr><tr><td style="white-space:nowrap">AL000027<a name="KemkesClinicalTermCS-AL000027"> </a></td><td>Kacang hijau</td></tr><tr><td style="white-space:nowrap">AL000028<a name="KemkesClinicalTermCS-AL000028"> </a></td><td>Bulu ayam</td></tr><tr><td style="white-space:nowrap">AL000029<a name="KemkesClinicalTermCS-AL000029"> </a></td><td>Kacang polong</td></tr><tr><td style="white-space:nowrap">AL000030<a name="KemkesClinicalTermCS-AL000030"> </a></td><td>Tepung gandum</td></tr><tr><td style="white-space:nowrap">AL000031<a name="KemkesClinicalTermCS-AL000031"> </a></td><td>Makerel</td></tr><tr><td style="white-space:nowrap">AL000032<a name="KemkesClinicalTermCS-AL000032"> </a></td><td>Kerang simping</td></tr><tr><td style="white-space:nowrap">AL000033<a name="KemkesClinicalTermCS-AL000033"> </a></td><td>Susu kambing</td></tr><tr><td style="white-space:nowrap">AL000034<a name="KemkesClinicalTermCS-AL000034"> </a></td><td>Paprika</td></tr><tr><td style="white-space:nowrap">AL000035<a name="KemkesClinicalTermCS-AL000035"> </a></td><td>Kubis</td></tr><tr><td style="white-space:nowrap">AL000036<a name="KemkesClinicalTermCS-AL000036"> </a></td><td>Adas</td></tr><tr><td style="white-space:nowrap">AL000037<a name="KemkesClinicalTermCS-AL000037"> </a></td><td>Selada</td></tr><tr><td style="white-space:nowrap">AL000038<a name="KemkesClinicalTermCS-AL000038"> </a></td><td>Labu</td></tr><tr><td style="white-space:nowrap">AL000039<a name="KemkesClinicalTermCS-AL000039"> </a></td><td>Lobak</td></tr><tr><td style="white-space:nowrap">AL000040<a name="KemkesClinicalTermCS-AL000040"> </a></td><td>Timun jepang/Zucchini</td></tr><tr><td style="white-space:nowrap">AL000041<a name="KemkesClinicalTermCS-AL000041"> </a></td><td>Gandum kuda/buckwheat</td></tr><tr><td style="white-space:nowrap">AL000042<a name="KemkesClinicalTermCS-AL000042"> </a></td><td>Sarden</td></tr><tr><td style="white-space:nowrap">AL000043<a name="KemkesClinicalTermCS-AL000043"> </a></td><td>Debu rumah</td></tr><tr><td style="white-space:nowrap">PR000001<a name="KemkesClinicalTermCS-PR000001"> </a></td><td>Prognosis baik</td></tr><tr><td style="white-space:nowrap">PR000002<a name="KemkesClinicalTermCS-PR000002"> </a></td><td>Prognosis dubia et bonam / cenderung baik</td></tr><tr><td style="white-space:nowrap">PR000003<a name="KemkesClinicalTermCS-PR000003"> </a></td><td>Prognosis dubia et malam / cenderung tidak baik</td></tr><tr><td style="white-space:nowrap">PR000004<a name="KemkesClinicalTermCS-PR000004"> </a></td><td>Prognosis tidak baik</td></tr><tr><td style="white-space:nowrap">OI000001<a name="KemkesClinicalTermCS-OI000001"> </a></td><td>Gizi Buruk</td></tr><tr><td style="white-space:nowrap">OI000002<a name="KemkesClinicalTermCS-OI000002"> </a></td><td>Gizi Kurang</td></tr><tr><td style="white-space:nowrap">OI000003<a name="KemkesClinicalTermCS-OI000003"> </a></td><td>Gizi Baik</td></tr><tr><td style="white-space:nowrap">OI000004<a name="KemkesClinicalTermCS-OI000004"> </a></td><td>Risiko Gizi Lebih</td></tr><tr><td style="white-space:nowrap">OI000005<a name="KemkesClinicalTermCS-OI000005"> </a></td><td>Gizi Lebih</td></tr><tr><td style="white-space:nowrap">OI000006<a name="KemkesClinicalTermCS-OI000006"> </a></td><td>Obesitas</td></tr><tr><td style="white-space:nowrap">OI000007<a name="KemkesClinicalTermCS-OI000007"> </a></td><td>Berat Badan Sangat Kurang</td></tr><tr><td style="white-space:nowrap">OI000008<a name="KemkesClinicalTermCS-OI000008"> </a></td><td>Berat Badan Kurang</td></tr><tr><td style="white-space:nowrap">OI000009<a name="KemkesClinicalTermCS-OI000009"> </a></td><td>Berat Badan Normal</td></tr><tr><td style="white-space:nowrap">OI000010<a name="KemkesClinicalTermCS-OI000010"> </a></td><td>Risiko Berat Badan Lebih</td></tr><tr><td style="white-space:nowrap">OI000011<a name="KemkesClinicalTermCS-OI000011"> </a></td><td>Sangat Pendek</td></tr><tr><td style="white-space:nowrap">OI000012<a name="KemkesClinicalTermCS-OI000012"> </a></td><td>Pendek</td></tr><tr><td style="white-space:nowrap">OI000013<a name="KemkesClinicalTermCS-OI000013"> </a></td><td>Normal</td></tr><tr><td style="white-space:nowrap">OI000014<a name="KemkesClinicalTermCS-OI000014"> </a></td><td>Tinggi</td></tr><tr><td style="white-space:nowrap">OI000015<a name="KemkesClinicalTermCS-OI000015"> </a></td><td>Normocephaly</td></tr><tr><td style="white-space:nowrap">OI000016<a name="KemkesClinicalTermCS-OI000016"> </a></td><td>Sesuai Usia</td></tr><tr><td style="white-space:nowrap">OI000017<a name="KemkesClinicalTermCS-OI000017"> </a></td><td>Tidak Sesuai Usia</td></tr><tr><td style="white-space:nowrap">OI000018<a name="KemkesClinicalTermCS-OI000018"> </a></td><td>Kurang Energi Kronis (KEK)</td></tr><tr><td style="white-space:nowrap">OC000001<a name="KemkesClinicalTermCS-OC000001"> </a></td><td>Jarak kehamilan</td></tr><tr><td style="white-space:nowrap">OC000002<a name="KemkesClinicalTermCS-OC000002"> </a></td><td>Kepala Terhadap PAP</td></tr><tr><td style="white-space:nowrap">OC000003<a name="KemkesClinicalTermCS-OC000003"> </a></td><td>Jumlah Janin</td></tr><tr><td style="white-space:nowrap">OC000004<a name="KemkesClinicalTermCS-OC000004"> </a></td><td>Letak Janin (USG)</td></tr><tr><td style="white-space:nowrap">OC000005<a name="KemkesClinicalTermCS-OC000005"> </a></td><td>Indeks Berat Badan menurut Panjang Badan (z-score)</td></tr><tr><td style="white-space:nowrap">OC000006<a name="KemkesClinicalTermCS-OC000006"> </a></td><td>Indeks Berat Badan menurut Tinggi Badan (z-score)</td></tr><tr><td style="white-space:nowrap">OC000007<a name="KemkesClinicalTermCS-OC000007"> </a></td><td>Lama Perawatan</td></tr><tr><td style="white-space:nowrap">OC000008<a name="KemkesClinicalTermCS-OC000008"> </a></td><td>Status Pertumbuhan dan Perkembangan</td></tr><tr><td style="white-space:nowrap">OC000009<a name="KemkesClinicalTermCS-OC000009"> </a></td><td>Mendapatkan Makanan Pendamping ASI (MPASI)</td></tr><tr><td style="white-space:nowrap">OC000010<a name="KemkesClinicalTermCS-OC000010"> </a></td><td>Indeks Massa Tubuh Sebelum Hamil</td></tr><tr><td style="white-space:nowrap">OC000011<a name="KemkesClinicalTermCS-OC000011"> </a></td><td>Target Kenaikan Berat Badan</td></tr><tr><td style="white-space:nowrap">OC000012<a name="KemkesClinicalTermCS-OC000012"> </a></td><td>Kenaikan Berat Badan Adekuat</td></tr><tr><td style="white-space:nowrap">OC000013<a name="KemkesClinicalTermCS-OC000013"> </a></td><td>Penolong Persalinan</td></tr><tr><td style="white-space:nowrap">OC000014<a name="KemkesClinicalTermCS-OC000014"> </a></td><td>Memiliki Buku KIA</td></tr><tr><td style="white-space:nowrap">OC000015<a name="KemkesClinicalTermCS-OC000015"> </a></td><td>Konseling Perawatan Bayi Baru Lahir</td></tr><tr><td style="white-space:nowrap">OC000016<a name="KemkesClinicalTermCS-OC000016"> </a></td><td>Waktu Inisiasi Menyusui Dini</td></tr><tr><td style="white-space:nowrap">OC000017<a name="KemkesClinicalTermCS-OC000017"> </a></td><td>Produksi ASI</td></tr><tr><td style="white-space:nowrap">OC000018<a name="KemkesClinicalTermCS-OC000018"> </a></td><td>Onset Kala III</td></tr><tr><td style="white-space:nowrap">OC000019<a name="KemkesClinicalTermCS-OC000019"> </a></td><td>Onset Kala IV</td></tr><tr><td style="white-space:nowrap">OC000020<a name="KemkesClinicalTermCS-OC000020"> </a></td><td>Tanda Infeksi Perineum</td></tr><tr><td style="white-space:nowrap">OC000021<a name="KemkesClinicalTermCS-OC000021"> </a></td><td>WHODAS 2.0 Subacute ADL Score</td></tr><tr><td style="white-space:nowrap">OC000022<a name="KemkesClinicalTermCS-OC000022"> </a></td><td>WHODAS 2.0 Chronic ADL Score</td></tr><tr><td style="white-space:nowrap">OC000023<a name="KemkesClinicalTermCS-OC000023"> </a></td><td/></tr><tr><td style="white-space:nowrap">OC000024<a name="KemkesClinicalTermCS-OC000024"> </a></td><td>Kondisi Payudara</td></tr><tr><td style="white-space:nowrap">OC000025<a name="KemkesClinicalTermCS-OC000025"> </a></td><td>Tanda Infeksi Luka Jahitan Sectio Caesaria</td></tr><tr><td style="white-space:nowrap">OC000026<a name="KemkesClinicalTermCS-OC000026"> </a></td><td>Masa terjadi Kematian Ibu</td></tr><tr><td style="white-space:nowrap">OC000027<a name="KemkesClinicalTermCS-OC000027"> </a></td><td>Masa terjadi Kematian Anak</td></tr><tr><td style="white-space:nowrap">OC000028<a name="KemkesClinicalTermCS-OC000028"> </a></td><td>Jenis Tempat Tinggal</td></tr><tr><td style="white-space:nowrap">OC000029<a name="KemkesClinicalTermCS-OC000029"> </a></td><td>Urutan ke (untuk bayi kembar)</td></tr><tr><td style="white-space:nowrap">OV000001<a name="KemkesClinicalTermCS-OV000001"> </a></td><td>Masuk panggul</td></tr><tr><td style="white-space:nowrap">OV000002<a name="KemkesClinicalTermCS-OV000002"> </a></td><td>Belum masuk panggul</td></tr><tr><td style="white-space:nowrap">OV000003<a name="KemkesClinicalTermCS-OV000003"> </a></td><td>Presentasi Kepala</td></tr><tr><td style="white-space:nowrap">OV000004<a name="KemkesClinicalTermCS-OV000004"> </a></td><td>Presentasi Bokong</td></tr><tr><td style="white-space:nowrap">OV000005<a name="KemkesClinicalTermCS-OV000005"> </a></td><td>Letak Lintang</td></tr><tr><td style="white-space:nowrap">OV000006<a name="KemkesClinicalTermCS-OV000006"> </a></td><td>Intrauteri</td></tr><tr><td style="white-space:nowrap">OV000007<a name="KemkesClinicalTermCS-OV000007"> </a></td><td>Ekstrauteri</td></tr><tr><td style="white-space:nowrap">OV000008<a name="KemkesClinicalTermCS-OV000008"> </a></td><td>5–9 kg</td></tr><tr><td style="white-space:nowrap">OV000009<a name="KemkesClinicalTermCS-OV000009"> </a></td><td>7–11.5 kg</td></tr><tr><td style="white-space:nowrap">OV000010<a name="KemkesClinicalTermCS-OV000010"> </a></td><td>11.5–16 kg</td></tr><tr><td style="white-space:nowrap">OV000011<a name="KemkesClinicalTermCS-OV000011"> </a></td><td>12.5–18 kg</td></tr><tr><td style="white-space:nowrap">OV000012<a name="KemkesClinicalTermCS-OV000012"> </a></td><td>Dukun</td></tr><tr><td style="white-space:nowrap">OV000013<a name="KemkesClinicalTermCS-OV000013"> </a></td><td>Lebih dari Lima</td></tr><tr><td style="white-space:nowrap">OV000014<a name="KemkesClinicalTermCS-OV000014"> </a></td><td>Kurang dari 1 Jam</td></tr><tr><td style="white-space:nowrap">OV000015<a name="KemkesClinicalTermCS-OV000015"> </a></td><td>Lebih dari 1 Jam</td></tr><tr><td style="white-space:nowrap">OV000016<a name="KemkesClinicalTermCS-OV000016"> </a></td><td>Produksi ASI ada</td></tr><tr><td style="white-space:nowrap">OV000017<a name="KemkesClinicalTermCS-OV000017"> </a></td><td>Produksi ASI ada tapi sedikit</td></tr><tr><td style="white-space:nowrap">OV000018<a name="KemkesClinicalTermCS-OV000018"> </a></td><td>Produksi ASI tidak ada</td></tr><tr><td style="white-space:nowrap">OV000019<a name="KemkesClinicalTermCS-OV000019"> </a></td><td>Frekuensi his</td></tr><tr><td style="white-space:nowrap">OV000020<a name="KemkesClinicalTermCS-OV000020"> </a></td><td>Intensitas his</td></tr><tr><td style="white-space:nowrap">OV000021<a name="KemkesClinicalTermCS-OV000021"> </a></td><td>Durasi lama his</td></tr><tr><td style="white-space:nowrap">OV000022<a name="KemkesClinicalTermCS-OV000022"> </a></td><td>Interval his</td></tr><tr><td style="white-space:nowrap">OV000023<a name="KemkesClinicalTermCS-OV000023"> </a></td><td>Datangnya his</td></tr><tr><td style="white-space:nowrap">OV000024<a name="KemkesClinicalTermCS-OV000024"> </a></td><td>Lokia berbau normal</td></tr><tr><td style="white-space:nowrap">OV000025<a name="KemkesClinicalTermCS-OV000025"> </a></td><td>Lokia berbau amis/busuk</td></tr><tr><td style="white-space:nowrap">OV000026<a name="KemkesClinicalTermCS-OV000026"> </a></td><td>Laceration of perineum during delivery involving vaginal mucosa and perineal skin</td></tr><tr><td style="white-space:nowrap">OV000027<a name="KemkesClinicalTermCS-OV000027"> </a></td><td>Laceration of perineum during delivery involving perineum muscles</td></tr><tr><td style="white-space:nowrap">OV000028<a name="KemkesClinicalTermCS-OV000028"> </a></td><td>Laceration of perineum during delivery involving anal epithelium</td></tr><tr><td style="white-space:nowrap">OI000019<a name="KemkesClinicalTermCS-OI000019"> </a></td><td>Mild to No Pain</td></tr><tr><td style="white-space:nowrap">OI000020<a name="KemkesClinicalTermCS-OI000020"> </a></td><td>Mild to Moderate Pain</td></tr><tr><td style="white-space:nowrap">OI000021<a name="KemkesClinicalTermCS-OI000021"> </a></td><td>7 - 11 (Risiko rendah)</td></tr><tr><td style="white-space:nowrap">OI000022<a name="KemkesClinicalTermCS-OI000022"> </a></td><td>&gt; 12 (Risiko tinggi)</td></tr><tr><td style="white-space:nowrap">OI000023<a name="KemkesClinicalTermCS-OI000023"> </a></td><td>0 - 89 (Risiko rendah)</td></tr><tr><td style="white-space:nowrap">OI000024<a name="KemkesClinicalTermCS-OI000024"> </a></td><td>&gt; 90 (Risiko tinggi)</td></tr><tr><td style="white-space:nowrap">OI000025<a name="KemkesClinicalTermCS-OI000025"> </a></td><td>Tidak Normal</td></tr><tr><td style="white-space:nowrap">OI000026<a name="KemkesClinicalTermCS-OI000026"> </a></td><td>0 - 24 (Risiko rendah)</td></tr><tr><td style="white-space:nowrap">OI000027<a name="KemkesClinicalTermCS-OI000027"> </a></td><td>25 - 44 (Risiko sedang)</td></tr><tr><td style="white-space:nowrap">OI000028<a name="KemkesClinicalTermCS-OI000028"> </a></td><td>≥ 45 (Risiko tinggi)</td></tr><tr><td style="white-space:nowrap">OC000030<a name="KemkesClinicalTermCS-OC000030"> </a></td><td>Berat saat meninggal</td></tr><tr><td style="white-space:nowrap">OC000031<a name="KemkesClinicalTermCS-OC000031"> </a></td><td>Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)</td></tr><tr><td style="white-space:nowrap">OC000032<a name="KemkesClinicalTermCS-OC000032"> </a></td><td>Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)</td></tr><tr><td style="white-space:nowrap">OC000033<a name="KemkesClinicalTermCS-OC000033"> </a></td><td>Dugaan Sebab Kematian</td></tr><tr><td style="white-space:nowrap">OC000034<a name="KemkesClinicalTermCS-OC000034"> </a></td><td>Surat Pengantar Rujukan</td></tr><tr><td style="white-space:nowrap">OC000035<a name="KemkesClinicalTermCS-OC000035"> </a></td><td>Humpty Dumpty Scale</td></tr><tr><td style="white-space:nowrap">OC000036<a name="KemkesClinicalTermCS-OC000036"> </a></td><td>Edmonson Psychiatric Fall Risk Assessment</td></tr><tr><td style="white-space:nowrap">OC000037<a name="KemkesClinicalTermCS-OC000037"> </a></td><td>Jenis Tempat Bersalin</td></tr><tr><td style="white-space:nowrap">OV000047<a name="KemkesClinicalTermCS-OV000047"> </a></td><td>Tidak ada maserasi</td></tr><tr><td style="white-space:nowrap">OV000048<a name="KemkesClinicalTermCS-OV000048"> </a></td><td>Maserasi Tingkat Satu</td></tr><tr><td style="white-space:nowrap">OV000049<a name="KemkesClinicalTermCS-OV000049"> </a></td><td>Maserasi Tingkat Dua</td></tr><tr><td style="white-space:nowrap">OV000050<a name="KemkesClinicalTermCS-OV000050"> </a></td><td>Maserasi Tingkat Tiga</td></tr><tr><td style="white-space:nowrap">OV000051<a name="KemkesClinicalTermCS-OV000051"> </a></td><td>Belum Tahu Ada Tidaknya Maserasi</td></tr><tr><td style="white-space:nowrap">OV000052<a name="KemkesClinicalTermCS-OV000052"> </a></td><td>Sesuai</td></tr><tr><td style="white-space:nowrap">OV000053<a name="KemkesClinicalTermCS-OV000053"> </a></td><td>Tidak Sesuai</td></tr><tr><td style="white-space:nowrap">OC000055<a name="KemkesClinicalTermCS-OC000055"> </a></td><td>Kriteria Pasien yang dilakukan Rencana Pemulangan</td></tr><tr><td style="white-space:nowrap">OV000072<a name="KemkesClinicalTermCS-OV000072"> </a></td><td>Pasien dengan perawatan berkelanjutan atau panjang</td></tr><tr><td style="white-space:nowrap">OV000073<a name="KemkesClinicalTermCS-OV000073"> </a></td><td>Tidak masuk kriteria</td></tr><tr><td style="white-space:nowrap">OC000056<a name="KemkesClinicalTermCS-OC000056"> </a></td><td>Skor Total Debris Indeks</td></tr><tr><td style="white-space:nowrap">OC000057<a name="KemkesClinicalTermCS-OC000057"> </a></td><td>Skor Total Kalkulus Indeks</td></tr><tr><td style="white-space:nowrap">OC000058<a name="KemkesClinicalTermCS-OC000058"> </a></td><td>Skor Total Oral Hygiene Index Simplified (OHIS)</td></tr><tr><td style="white-space:nowrap">OC000059<a name="KemkesClinicalTermCS-OC000059"> </a></td><td>Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OC000060<a name="KemkesClinicalTermCS-OC000060"> </a></td><td>Kondisi Gigi dan Mulut Lainnya</td></tr><tr><td style="white-space:nowrap">OC000061<a name="KemkesClinicalTermCS-OC000061"> </a></td><td>Pemeriksaan Odontogram</td></tr><tr><td style="white-space:nowrap">OV000074<a name="KemkesClinicalTermCS-OV000074"> </a></td><td>Tidak ada Torus Palatinus</td></tr><tr><td style="white-space:nowrap">OV000075<a name="KemkesClinicalTermCS-OV000075"> </a></td><td>Torus Palatinus Kecil</td></tr><tr><td style="white-space:nowrap">OV000076<a name="KemkesClinicalTermCS-OV000076"> </a></td><td>Torus Palatinus Sedang</td></tr><tr><td style="white-space:nowrap">OV000077<a name="KemkesClinicalTermCS-OV000077"> </a></td><td>Torus Palatinus Besar</td></tr><tr><td style="white-space:nowrap">OV000078<a name="KemkesClinicalTermCS-OV000078"> </a></td><td>Multiple Torus Palatinus</td></tr><tr><td style="white-space:nowrap">OV000079<a name="KemkesClinicalTermCS-OV000079"> </a></td><td>Tidak ada Torus Mandibularis</td></tr><tr><td style="white-space:nowrap">OV000080<a name="KemkesClinicalTermCS-OV000080"> </a></td><td>Torus Mandibularis Sisi Kiri</td></tr><tr><td style="white-space:nowrap">OV000081<a name="KemkesClinicalTermCS-OV000081"> </a></td><td>Torus Mandibularis Sisi Kanan</td></tr><tr><td style="white-space:nowrap">OV000082<a name="KemkesClinicalTermCS-OV000082"> </a></td><td>Torus Mandibularis pada Kedua Sisi</td></tr><tr><td style="white-space:nowrap">OV000083<a name="KemkesClinicalTermCS-OV000083"> </a></td><td>Palatum Dalam</td></tr><tr><td style="white-space:nowrap">OV000084<a name="KemkesClinicalTermCS-OV000084"> </a></td><td>Palatum Sedang</td></tr><tr><td style="white-space:nowrap">OV000085<a name="KemkesClinicalTermCS-OV000085"> </a></td><td>Palatum Rendah</td></tr><tr><td style="white-space:nowrap">OV000086<a name="KemkesClinicalTermCS-OV000086"> </a></td><td>Tidak Ada Diastema</td></tr><tr><td style="white-space:nowrap">OV000087<a name="KemkesClinicalTermCS-OV000087"> </a></td><td>Ada Diastema</td></tr><tr><td style="white-space:nowrap">OV000088<a name="KemkesClinicalTermCS-OV000088"> </a></td><td>Tidak Ada Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OV000089<a name="KemkesClinicalTermCS-OV000089"> </a></td><td>Ada Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OV000090<a name="KemkesClinicalTermCS-OV000090"> </a></td><td>Gigi tidak ada/ tidak diketahui</td></tr><tr><td style="white-space:nowrap">OV000091<a name="KemkesClinicalTermCS-OV000091"> </a></td><td>Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OV000092<a name="KemkesClinicalTermCS-OV000092"> </a></td><td>Gigi Non-Vital</td></tr><tr><td style="white-space:nowrap">OV000093<a name="KemkesClinicalTermCS-OV000093"> </a></td><td>Sisa Akar</td></tr><tr><td style="white-space:nowrap">OV000094<a name="KemkesClinicalTermCS-OV000094"> </a></td><td>Metal Bridge</td></tr><tr><td style="white-space:nowrap">OV000095<a name="KemkesClinicalTermCS-OV000095"> </a></td><td>Porcelain Bridge</td></tr><tr><td style="white-space:nowrap">OV000096<a name="KemkesClinicalTermCS-OV000096"> </a></td><td>Frame</td></tr><tr><td style="white-space:nowrap">OI000029<a name="KemkesClinicalTermCS-OI000029"> </a></td><td>Kondisi Gigi Baik</td></tr><tr><td style="white-space:nowrap">OI000030<a name="KemkesClinicalTermCS-OI000030"> </a></td><td>Kondisi Gigi Cukup Baik</td></tr><tr><td style="white-space:nowrap">OI000031<a name="KemkesClinicalTermCS-OI000031"> </a></td><td>Kondisi Gigi Buruk</td></tr><tr><td style="white-space:nowrap">OV000097<a name="KemkesClinicalTermCS-OV000097"> </a></td><td>Terdapat debris pada 1/3 permukaan servikal gigi atau dijumpai stain ekstrinsik</td></tr><tr><td style="white-space:nowrap">OV000098<a name="KemkesClinicalTermCS-OV000098"> </a></td><td>Terdapat debris pada 1/3 – 2/3 permukaan gigi</td></tr><tr><td style="white-space:nowrap">OV000099<a name="KemkesClinicalTermCS-OV000099"> </a></td><td>Terdapat debris pada &gt; 2/3 permukaan gigi</td></tr><tr><td style="white-space:nowrap">OV000100<a name="KemkesClinicalTermCS-OV000100"> </a></td><td>Terdapat kalkulus supragingiva pada 1/3 permukaan servikal gigi tanpa kalkulus subgingiva</td></tr><tr><td style="white-space:nowrap">OV000101<a name="KemkesClinicalTermCS-OV000101"> </a></td><td>Terdapat kalkulus supragingiva pada 1/3 – 2/3 permukaan gigi dan/atau terdapat kalkulus subgingiva berupa titik-titik yang tidak melingkari leher gigi</td></tr><tr><td style="white-space:nowrap">OV000102<a name="KemkesClinicalTermCS-OV000102"> </a></td><td>Terdapat kalkulus supragingiva pada &gt; 2/3 permukaan gigi dan/atau terdapat kalkulus subgingiva yang melingkari leher gigi</td></tr><tr><td style="white-space:nowrap">OC000062<a name="KemkesClinicalTermCS-OC000062"> </a></td><td>Debris Indeks</td></tr><tr><td style="white-space:nowrap">OC000063<a name="KemkesClinicalTermCS-OC000063"> </a></td><td>Kalkulus Indeks</td></tr><tr><td style="white-space:nowrap">OV000112<a name="KemkesClinicalTermCS-OV000112"> </a></td><td>Diberikan ASI Eksklusif</td></tr><tr><td style="white-space:nowrap">OV000113<a name="KemkesClinicalTermCS-OV000113"> </a></td><td>Tidak Diberikan ASI Eksklusif</td></tr><tr><td style="white-space:nowrap">OV000169<a name="KemkesClinicalTermCS-OV000169"> </a></td><td>Sendiri</td></tr><tr><td style="white-space:nowrap">OV000170<a name="KemkesClinicalTermCS-OV000170"> </a></td><td>Dukun</td></tr><tr><td style="white-space:nowrap">grup1-icdmm<a name="KemkesClinicalTermCS-grup1-icdmm"> </a></td><td>Kehamilan dengan komplikasi abortus</td></tr><tr><td style="white-space:nowrap">grup2-icdmm<a name="KemkesClinicalTermCS-grup2-icdmm"> </a></td><td>Hipertensi dalam kehamilan, persalinan atau nifas</td></tr><tr><td style="white-space:nowrap">grup3-icdmm<a name="KemkesClinicalTermCS-grup3-icdmm"> </a></td><td>Perdarahan obstetrik</td></tr><tr><td style="white-space:nowrap">grup4-icdmm<a name="KemkesClinicalTermCS-grup4-icdmm"> </a></td><td>Infeksi terkait kehamilan</td></tr><tr><td style="white-space:nowrap">grup5-icdmm<a name="KemkesClinicalTermCS-grup5-icdmm"> </a></td><td>Komplikasi obstetrik lain</td></tr><tr><td style="white-space:nowrap">grup6-icdmm<a name="KemkesClinicalTermCS-grup6-icdmm"> </a></td><td>Komplikasi manajemen yang tidak terantisipasi</td></tr><tr><td style="white-space:nowrap">grup7-icdmm<a name="KemkesClinicalTermCS-grup7-icdmm"> </a></td><td>Komplikasi non obstetrik</td></tr><tr><td style="white-space:nowrap">grup8-icdmm<a name="KemkesClinicalTermCS-grup8-icdmm"> </a></td><td>Penyebab dasar tidak diketahui</td></tr><tr><td style="white-space:nowrap">grup9-icdmm<a name="KemkesClinicalTermCS-grup9-icdmm"> </a></td><td>Ko insiden</td></tr><tr><td style="white-space:nowrap">ED000001<a name="KemkesClinicalTermCS-ED000001"> </a></td><td>Edukasi Prognosis</td></tr><tr><td style="white-space:nowrap">ED000002<a name="KemkesClinicalTermCS-ED000002"> </a></td><td>Edukasi terkait Alternatif Tindakan dan Resikonya</td></tr><tr><td style="white-space:nowrap">ED000003<a name="KemkesClinicalTermCS-ED000003"> </a></td><td/></tr><tr><td style="white-space:nowrap">ED000004<a name="KemkesClinicalTermCS-ED000004"> </a></td><td/></tr><tr><td style="white-space:nowrap">ED000005<a name="KemkesClinicalTermCS-ED000005"> </a></td><td/></tr><tr><td style="white-space:nowrap">ED000006<a name="KemkesClinicalTermCS-ED000006"> </a></td><td/></tr><tr><td style="white-space:nowrap">ED000007<a name="KemkesClinicalTermCS-ED000007"> </a></td><td/></tr><tr><td style="white-space:nowrap">ED000008<a name="KemkesClinicalTermCS-ED000008"> </a></td><td>Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas</td></tr><tr><td style="white-space:nowrap">ED000009<a name="KemkesClinicalTermCS-ED000009"> </a></td><td>Edukasi IMD dan ASI Eksklusif</td></tr><tr><td style="white-space:nowrap">ED000010<a name="KemkesClinicalTermCS-ED000010"> </a></td><td>Edukasi PHBS</td></tr><tr><td style="white-space:nowrap">ED000011<a name="KemkesClinicalTermCS-ED000011"> </a></td><td>Edukasi KB pasca salin</td></tr><tr><td style="white-space:nowrap">ED000012<a name="KemkesClinicalTermCS-ED000012"> </a></td><td>Edukasi lainnya</td></tr><tr><td style="white-space:nowrap">PC000001<a name="KemkesClinicalTermCS-PC000001"> </a></td><td>Perawatan Tali Pusat</td></tr><tr><td style="white-space:nowrap">PC000002<a name="KemkesClinicalTermCS-PC000002"> </a></td><td>Pemberian Salep Antibiotik Mata</td></tr><tr><td style="white-space:nowrap">PC000003<a name="KemkesClinicalTermCS-PC000003"> </a></td><td>Manajemen Terpadu Bayi Muda (MTBM)</td></tr><tr><td style="white-space:nowrap">PC000004<a name="KemkesClinicalTermCS-PC000004"> </a></td><td>KB Pasca Persalinan</td></tr><tr><td style="white-space:nowrap">TL000001<a name="KemkesClinicalTermCS-TL000001"> </a></td><td>Rawat inap</td></tr><tr><td style="white-space:nowrap">FO000001<a name="KemkesClinicalTermCS-FO000001"> </a></td><td>MT Lokal</td></tr><tr><td style="white-space:nowrap">FO000002<a name="KemkesClinicalTermCS-FO000002"> </a></td><td>MT Pabrikan</td></tr><tr><td style="white-space:nowrap">LO000001<a name="KemkesClinicalTermCS-LO000001"> </a></td><td>Puskesmas</td></tr><tr><td style="white-space:nowrap">LO000002<a name="KemkesClinicalTermCS-LO000002"> </a></td><td>Rumah Sakit</td></tr><tr><td style="white-space:nowrap">LO000003<a name="KemkesClinicalTermCS-LO000003"> </a></td><td>Klinik</td></tr><tr><td style="white-space:nowrap">LO000004<a name="KemkesClinicalTermCS-LO000004"> </a></td><td>Rumah</td></tr><tr><td style="white-space:nowrap">SU000001<a name="KemkesClinicalTermCS-SU000001"> </a></td><td>Keluarga</td></tr><tr><td style="white-space:nowrap">SU000002<a name="KemkesClinicalTermCS-SU000002"> </a></td><td>Tenaga kesehatan</td></tr><tr><td style="white-space:nowrap">SU000003<a name="KemkesClinicalTermCS-SU000003"> </a></td><td>Lainnya</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">Thomas Chaidir</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 15, 2024 12:08+0700">2024-02-15</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

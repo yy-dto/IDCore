@@ -13,8 +13,9 @@ Title: "Kemkes Cancer M Category"
 * ^versionNeeded = true
 * ^hierarchyMeaning = #is-a
 * ^language = #English
+* ^valueSet = "http://terminology.kemkes.go.id/ValueSet/cancer-m-category"
 * ^date = "2024-02-05T00:00:00.000Z"
-* ^experimental = true
+* ^experimental = false
 * ^publisher = "DTO MoH"
 * ^count = 6
 * #M0 "M0"

@@ -13,6 +13,6 @@ Context: Encounter.location
 * extension[serviceClass].extension ^slicing.rules = #open
 * extension[serviceClass].extension contains
     upgradeClassIndicator 1..1
-* extension[serviceClass].extension[upgradeClassIndicator].valueCodeableConcept from https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassInpatientVS
-* extension[serviceClass].extension[upgradeClassIndicator].valueCodeableConcept from https://fhir.kemkes.go.id/r4/ValueSet/lEncounterLocationServiceClassOutpatientVS
+* extension[serviceClass].extension[upgradeClassIndicator].valueCodeableConcept from EncounterLocationServiceClassInpatientVS
+* extension[serviceClass].extension[upgradeClassIndicator].valueCodeableConcept from EncounterLocationServiceClassOutpatientVS
 * url = "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation" (exactly)

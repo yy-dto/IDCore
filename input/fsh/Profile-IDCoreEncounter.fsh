@@ -1,5 +1,5 @@
 Profile: IDCoreEncounter
-Parent: http://hl7.org/fhir/StructureDefinition/Encounter
+Parent: Encounter
 Description: "ID Core Encounter profile"
 * ^url = "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
 * identifier 1..*
@@ -50,28 +50,28 @@ Description: "ID Core Encounter profile"
 * location.period 0..1
 * serviceProvider 1..1
 * partOf 0..1
-* status from EncounterStatusVS
-* statusHistory.status from EncounterStatusVS
+* status from EncounterStatus
+* statusHistory.status from EncounterStatus
 * statusHistory.period 1..1
-* class from EncounterClassVS
-* classHistory.class from EncounterClassVS
-* type from EncounterTypeVS
-* serviceType from EncounterServiceTypeVS
-* priority from ActPriorityVS
+* class from encounter-class
+* classHistory.class from encounter-class
+* type from encounter-type
+* serviceType from service-type
+* priority from ActPriority
 * subject only Reference(Patient or Group)
 * episodeOfCare only Reference(EpisodeOfCare)
 * basedOn only Reference(ServiceRequest)
-* participant.type from ParticipationTypeVS
+* participant.type from v3-ParticipationType
 * participant.individual only Reference(Practitioner or PractitionerRole or RelatedPerson)
 * appointment only Reference(Appointment)
-* reasonCode from EncounterReasonCodesVS
-* reasonReference only Reference(IDCoreCondition or Procedure or Observation or ImmunizationRecommendation)
-* diagnosis.condition only Reference(IDCoreCondition)
-* diagnosis.use from EncounterDiagnosisUseVS
+* reasonCode from encounter-reason
+* reasonReference only Reference(Condition or Procedure or Observation or ImmunizationRecommendation)
+* diagnosis.condition only Reference(Condition)
+* diagnosis.use from diagnosis-role
 * account only Reference(Account)
 * hospitalization.origin only Reference(Location or Organization)
-* hospitalization.admitSource from EncounterHospitalizationAdmitSourceVS
-* hospitalization.reAdmission from EncounterHospitalizationreAdmitSourceVS
+* hospitalization.admitSource from encounter-admit-source
+* hospitalization.reAdmission from v2-0092
 * hospitalization.destination only Reference(Location or Organization)
 * location.location only Reference(Location)
 * serviceProvider only Reference(Organization)

@@ -14,6 +14,7 @@ Title: "Kemkes Cancer T Category"
 * ^versionNeeded = true
 * ^hierarchyMeaning = #is-a
 * ^language = #English
+* ^valueSet = "http://terminology.kemkes.go.id/ValueSet/cancer-t-category"
 * ^experimental = false
 * ^date = "2024-02-05T00:00:00.000Z"
 * ^publisher = "DTO MoH"

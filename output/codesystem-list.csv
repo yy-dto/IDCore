@@ -1,0 +1,11 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient,0.1.0,active,,EncounterLocationServiceClassInpatientCS,Encounter Location ServiceClass Inpatient,"Local ID encounter location ServiceClass Inpatient",
+hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient,0.1.0,active,,EncounterLocationServiceClassOutpatientCS,Encounter Location ServiceClass Outpatient,"Local ID encounter location ServiceClass Outpatient",
+hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass,0.1.0,active,,EncounterLocationUpgradeClass,Encounter Location UpgradeClass,"Local ID encounter location UpgradeClass",
+http://terminology.kemkes.go.id/CodeSystem/cancer-m-category,0.1.0,active,,KemkesCancerMCategoryCS,Kemkes Cancer M Category,"",
+http://terminology.kemkes.go.id/CodeSystem/cancer-n-category,0.1.0,active,,KemkesCancerNCategory,Kemkes Cancer N Category,"",
+http://terminology.kemkes.go.id/CodeSystem/cancer-t-category,0.1.0,active,,KemkesCancerTCategoryCS,Kemkes Cancer T Category,"",
+http://terminology.kemkes.go.id/CodeSystem/clinical-term,0.1.0,active,,KemkesClinicalTermCS,Terminology Kemkes Clinical Term CodeSystem,"Created by: Fadhil Muhammad",
+http://terminology.kemkes.go.id/CodeSystem/encounter-class,0.1.0,active,,EncounterClassCS,Encounter Class,"Local ID encounter Class",
+http://terminology.kemkes.go.id/CodeSystem/icd-o-morphology,0.1.0,active,,KemkesICDOMorphologyCS,ICD-0 Morphology,"Created by: Fadhil Muhammad",
+http://terminology.kemkes.go.id/CodeSystem/icd-o-topography,0.1.0,active,,KemkesICDOTopographyCS,ICD-0 Topography,"Created by: Fadhil Muhammad",
