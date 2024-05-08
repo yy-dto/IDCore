@@ -1,0 +1,98 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "KemkesCompositionSectionCS",
+  "id": "KemkesCompositionSectionCS",
+  "title": "Terminology Kemkes composition section CodeSystem",
+  "description": "Terminology Kemkes composition section CodeSystem",
+  "url": "http://terminology.kemkes.go.id/CodeSystem/composition-section",
+  "concept": [
+    {
+      "code": "COS000001",
+      "display": "Keadaan Saat Masuk "
+    },
+    {
+      "code": "COS000002",
+      "display": "Kondisi Medis/Faktor Risiko"
+    },
+    {
+      "code": "COS000003",
+      "display": "Pengambilan Spesimen"
+    },
+    {
+      "code": "COS000004",
+      "display": "Hasil Pemeriksaan Laboratorium"
+    },
+    {
+      "code": "COS000005",
+      "display": "Form Keluar"
+    },
+    {
+      "code": "COS000006",
+      "display": "Deteksi Dini Hipertensi"
+    },
+    {
+      "code": "COS000007",
+      "display": "Deteksi Dini Obesitas"
+    },
+    {
+      "code": "COS000008",
+      "display": "Deteksi Dini Penyakit Jantung"
+    },
+    {
+      "code": "COS000009",
+      "display": "Deteksi Dini Diabetes Melitus"
+    },
+    {
+      "code": "COS000010",
+      "display": "Deteksi Dini Stroke"
+    },
+    {
+      "code": "COS000011",
+      "display": "Deteksi Dini Asam Urat"
+    },
+    {
+      "code": "COS000012",
+      "display": "Deteksi Dini Kanker"
+    },
+    {
+      "code": "COS000013",
+      "display": "Deteksi Dini Thalassemia"
+    },
+    {
+      "code": "COS000014",
+      "display": "Deteksi dini PPOK"
+    },
+    {
+      "code": "COS000015",
+      "display": "Deteksi Dini Gangguan Penglihatan"
+    },
+    {
+      "code": "COS000016",
+      "display": "Deteksi Dini Gangguan Pendengaran"
+    }
+  ],
+  "language": "Indonesia",
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-02-05T00:00:00.000Z",
+  "publisher": "DTO MoH",
+  "contact": [
+    {
+      "name": "DTO Kemkes",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "terminologisehat@kemkes.go.id"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "valueSet": "http://terminology.kemkes.go.id/ValueSet/composition-section",
+  "hierarchyMeaning": "is-a",
+  "compositional": false,
+  "versionNeeded": true,
+  "count": 16
+}

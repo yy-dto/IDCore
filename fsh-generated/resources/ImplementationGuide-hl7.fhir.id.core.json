@@ -1,0 +1,544 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.id.core",
+  "url": "https://fhir.kemkes.go.id/r4/ImplementationGuide/hl7.fhir.id.core",
+  "version": "0.1.0",
+  "name": "IDCore",
+  "title": "ID Core Implementation Guide",
+  "status": "active",
+  "publisher": "Thomas Chaidir",
+  "contact": [
+    {
+      "name": "Thomas Chaidir",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://satusehat.kemkes.go.id/"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.id.core",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/EncounterLocation"
+        },
+        "name": "Encounter Location Extention",
+        "description": "The administrative code of the address, represented in six levels: province, city/regency, district, village, rt and rw.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/EncounterLocationServiceClassInpatient"
+        },
+        "name": "Encounter Location ServiceClass Inpatient",
+        "description": "Local ID encounter location ServiceClass Inpatient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/EncounterLocationServiceClassOutpatient"
+        },
+        "name": "Encounter Location ServiceClass Outpatient",
+        "description": "Local ID encounter location ServiceClass Outpatient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterLocationServiceClassInpatientVS"
+        },
+        "name": "Encounter Location ServiceClass-Inpatient",
+        "description": "A set of codes, specifying location ServiceClass for inpatient patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterLocationServiceClassOutpatientVS"
+        },
+        "name": "Encounter Location ServiceClass-Outpatient",
+        "description": "A set of codes, specifying location ServiceClass for outpatient patient.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/EncounterLocationUpgradeClassVS"
+        },
+        "name": "Encounter Location Upgrade Class",
+        "description": "A set of codes, specifying location UpgradeClass.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/EncounterLocationUpgradeClass"
+        },
+        "name": "Encounter Location UpgradeClass",
+        "description": "Local ID encounter location UpgradeClass",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesICDOMorphologyCS"
+        },
+        "name": "ICD-0 Morphology",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesICDOTopographyCS"
+        },
+        "name": "ICD-0 Topography",
+        "description": "Created by: Fadhil Muhammad",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreCondition"
+        },
+        "name": "IDCoreCondition",
+        "description": "ID Core Condition profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/IDCoreCondition"
+        },
+        "name": "IDCoreCondition",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounter"
+        },
+        "name": "IDCoreEncounter",
+        "description": "ID Core Encounter profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/IDCoreEncounter"
+        },
+        "name": "IDCoreEncounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounterEMER"
+        },
+        "name": "IDCoreEncounterEMER",
+        "description": "Encounter profile for Emergency patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/IDCoreEncounterEMER"
+        },
+        "name": "IDCoreEncounterEMER",
+        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounterIMP"
+        },
+        "name": "IDCoreEncounterIMP",
+        "description": "Encounter profile for inpatient patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/IDCoreEncounterIMP"
+        },
+        "name": "IDCoreEncounterIMP",
+        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounterStatusFinished"
+        },
+        "name": "IDCoreEncounterStatusFinished",
+        "description": "Encounter profile when the Status is Finished",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreObservation"
+        },
+        "name": "IDCoreObservation",
+        "description": "ID Core Observation profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesCancerMCategory"
+        },
+        "name": "Kemkes Cancer M Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesCancerNCategory"
+        },
+        "name": "Kemkes Cancer N Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesCancerTCategoryCS"
+        },
+        "name": "Kemkes Cancer T Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesCarePlanCategoryCS"
+        },
+        "name": "Terminology Kemkes Clinical Term CodeSystem",
+        "description": "Terminology Kemkes Clinical Speciality CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesClinicalSpecialityCS"
+        },
+        "name": "Terminology Kemkes Clinical Term CodeSystem",
+        "description": "Terminology Kemkes Clinical Speciality CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesClinicalTermCS"
+        },
+        "name": "Terminology Kemkes Clinical Term CodeSystem",
+        "description": "Terminology Kemkes Clinical Term CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesCompositionSectionCS"
+        },
+        "name": "Terminology Kemkes composition section CodeSystem",
+        "description": "Terminology Kemkes composition section CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesCompositionTypeCS"
+        },
+        "name": "Terminology Kemkes composition type CodeSystem",
+        "description": "Terminology Kemkes composition type CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesExaminationCS"
+        },
+        "name": "Terminology Kemkes examination CodeSystem",
+        "description": "Terminology Kemkes examination CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesHospitalClassCS"
+        },
+        "name": "Terminology Kemkes Hospital Class CodeSystem",
+        "description": "Terminology Kemkes Hospital Class CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesImmunizationProgramEligibilityCS"
+        },
+        "name": "Terminology Kemkes immunization program eligibility CodeSystem",
+        "description": "Terminology Kemkes immunization program eligibility CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesImmunizationReasonCS"
+        },
+        "name": "Terminology Kemkes immunization reason CodeSystem",
+        "description": "Terminology Kemkes immunization reason CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesImmunizationRoutineTimingCS"
+        },
+        "name": "Terminology Kemkes immunization routine timing CodeSystem",
+        "description": "Terminology Kemkes immunization routine timing CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesImmunizationStatusReasonCS"
+        },
+        "name": "Terminology Kemkes immunization statusReason CodeSystem",
+        "description": "Terminology Kemkes immunization statusReason  CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesImmunizationFundingSourceCS"
+        },
+        "name": "Terminology Kemkes immunization- funding source CodeSystem",
+        "description": "Terminology Kemkes immunization- funding source CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesKPSPCS"
+        },
+        "name": "Terminology Kemkes kpsp CodeSystem",
+        "description": "Terminology Kemkes kpsp CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesLocationUpgradeClassCS"
+        },
+        "name": "Terminology Kemkes location upgrade class CodeSystem",
+        "description": "Terminology Kemkes location upgrade class CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesLocationTypeCS"
+        },
+        "name": "Terminology Kemkes location-type CodeSystem",
+        "description": "Terminology Kemkes location-type CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesMedicationFormCS"
+        },
+        "name": "Terminology Kemkes medication form CodeSystem",
+        "description": "Terminology Kemkes medication form CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesMedicationTypeCS"
+        },
+        "name": "Terminology Kemkes medication type CodeSystem",
+        "description": "Terminology Kemkes medication type CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesObservationInterpretationCS"
+        },
+        "name": "Terminology Kemkes ObservationInterpretation CodeSystem",
+        "description": "Terminology Kemkes Observation Interpretation CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesOrganizationTypeCS"
+        },
+        "name": "Terminology Kemkes organization type CodeSystem",
+        "description": "Terminology Kemkes organization type CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesPrevTBTreatmentCS"
+        },
+        "name": "Terminology Kemkes prev-tb-treatment CodeSystem",
+        "description": "Terminology Kemkes prev-tb-treatment CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/KemkesSmallestLogisticUnitCS"
+        },
+        "name": "Terminology Kemkes smallest logistic unit CodeSystem",
+        "description": "Terminology Kemkes smallest logistic unit CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Observation.code"
+        },
+        "name": "Value set specific for Observation Code",
+        "description": "Value set specific for Observation Code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Observation.interpretation"
+        },
+        "name": "Value set specific for Observation Code",
+        "description": "Value set specific for Observation Code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Observation.valueCodeableConceptSpecific"
+        },
+        "name": "Value set specific for Observation specific value CodeableConcept",
+        "description": "Value set specific for Observation specific value CodeableConcept",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Observation.valueCodeableConcept"
+        },
+        "name": "Value set specific for Observation value CodeableConcept",
+        "description": "Value set specific for Observation value CodeableConcept",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-pelayanan.html",
+          "title": "Modul Pelayanan",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "resume-medis-jilid1.html",
+              "title": "Resume Medis Jilid 1",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "resume-medis-jilid2.html",
+              "title": "Resume Medis Jilid 2",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "rawat-inap-fase1.html",
+              "title": "Rawat Inap Fase 1",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "rawat-inap-fase2.html",
+              "title": "Rawat Inap Fase 2",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "igd-fase1.html",
+              "title": "Igd Fase 1",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "igd-fase2.html",
+              "title": "Igd Fase 2",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "useCase.html",
+          "title": "Penerapan (Use Case)",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "imunisasi.html",
+              "title": "Imunisasi",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "gizi-tumbang.html",
+              "title": "Gizi Tumbang",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "shk.html",
+              "title": "Shk",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "anc.html",
+              "title": "Anc",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "inc.html",
+              "title": "Inc",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "pnc.html",
+              "title": "Pnc",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "dicom.html",
+          "title": "Sistem DICOM",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "architecture.html",
+              "title": "Architecture",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "dicom-requirement.html",
+              "title": "Dicom Requirement",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "dicom-router.html",
+              "title": "Dicom Router",
+              "generation": "markdown"
+            }
+          ]
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2023+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/includes"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/valuset/*"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources/codesystem/*"
+      },
+      {
+        "code": "path-resource",
+        "value": "fsh-generated/resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent/valueset"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/pagecontent/codesystem"
+      },
+      {
+        "code": "path-pages",
+        "value": "fsh-generated/includes"
+      }
+    ]
+  }
+}

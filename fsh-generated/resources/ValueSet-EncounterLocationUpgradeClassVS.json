@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EncounterLocationUpgradeClassVS",
+  "id": "EncounterLocationUpgradeClassVS",
+  "title": "Encounter Location Upgrade Class",
+  "description": "A set of codes, specifying location UpgradeClass.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationUpgradeClassVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"
+      }
+    ]
+  }
+}

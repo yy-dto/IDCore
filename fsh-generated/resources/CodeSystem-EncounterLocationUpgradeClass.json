@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "EncounterLocationUpgradeClass",
+  "id": "EncounterLocationUpgradeClass",
+  "title": "Encounter Location UpgradeClass",
+  "description": "Local ID encounter location UpgradeClass",
+  "url": "hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
+  "concept": [
+    {
+      "code": "kelas-tetap",
+      "display": "Kelas Tetap Perawatan"
+    },
+    {
+      "code": "naik-kelas",
+      "display": "Kenaikan Kelas Perawatan"
+    },
+    {
+      "code": "turun-kelas",
+      "display": "Penurunan Kelas Perawatan"
+    },
+    {
+      "code": "titip-rawat",
+      "display": "Titip Kelas Perawatan"
+    }
+  ],
+  "count": 4
+}

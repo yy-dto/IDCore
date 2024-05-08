@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "KemkesObservationInterpretationCS",
+  "id": "KemkesObservationInterpretationCS",
+  "title": "Terminology Kemkes ObservationInterpretation CodeSystem",
+  "description": "Terminology Kemkes Observation Interpretation CodeSystem",
+  "url": "http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation",
+  "concept": [
+    {
+      "code": "BMI-Normal",
+      "display": "Normal weight"
+    },
+    {
+      "code": "BMI-SevereUnder",
+      "display": "Severely Underweight"
+    }
+  ],
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-11-09T13:31:14.515+07:00"
+  },
+  "language": "Indonesia",
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-02-05T00:00:00.000Z",
+  "publisher": "DTO MoH",
+  "contact": [
+    {
+      "name": "DTO Kemkes",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "terminologisehat@kemkes.go.id"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "valueSet": "http://terminology.kemkes.go.id/ValueSet/ObservationInterpretation",
+  "hierarchyMeaning": "is-a",
+  "compositional": false,
+  "versionNeeded": true,
+  "count": 2
+}

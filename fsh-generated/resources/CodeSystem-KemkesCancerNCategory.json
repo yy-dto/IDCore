@@ -1,0 +1,93 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "KemkesCancerNCategory",
+  "id": "KemkesCancerNCategory",
+  "title": "Kemkes Cancer N Category",
+  "url": "http://terminology.kemkes.go.id/CodeSystem/cancer-n-category",
+  "concept": [
+    {
+      "code": "N0",
+      "display": "N0"
+    },
+    {
+      "code": "N1",
+      "display": "N1"
+    },
+    {
+      "code": "N1a",
+      "display": "N1a"
+    },
+    {
+      "code": "N1b",
+      "display": "N1b"
+    },
+    {
+      "code": "N1c",
+      "display": "N1c"
+    },
+    {
+      "code": "N2",
+      "display": "N2"
+    },
+    {
+      "code": "N2a",
+      "display": "N2a"
+    },
+    {
+      "code": "N2b",
+      "display": "N2b"
+    },
+    {
+      "code": "N2c",
+      "display": "N2c"
+    },
+    {
+      "code": "N3",
+      "display": "N3"
+    },
+    {
+      "code": "N3a",
+      "display": "N3a"
+    },
+    {
+      "code": "N3b",
+      "display": "N3b"
+    },
+    {
+      "code": "N3c",
+      "display": "N3c"
+    },
+    {
+      "code": "NX",
+      "display": "NX"
+    }
+  ],
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2024-02-05T12:25:03.974+07:00"
+  },
+  "version": "1.0.0",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "terminologisehat@kemkes.go.id"
+        }
+      ],
+      "name": "DTO Kemkes"
+    }
+  ],
+  "compositional": false,
+  "caseSensitive": true,
+  "versionNeeded": false,
+  "hierarchyMeaning": "is-a",
+  "language": "English",
+  "valueSet": "http://terminology.kemkes.go.id/ValueSet/cancer-n-category",
+  "date": "2024-02-05T00:00:00.000Z",
+  "experimental": false,
+  "publisher": "DTO MoH",
+  "count": 14
+}

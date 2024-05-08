@@ -1,0 +1,963 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Observation.interpretation",
+  "id": "Observation.interpretation",
+  "title": "Value set specific for Observation Code",
+  "description": "Value set specific for Observation Code",
+  "url": "http://terminology.kemkes.go.id/ValueSet/Observation.interpretation",
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000001"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000002"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000003"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000004"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000005"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000006"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000007"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000008"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000009"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000010"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000011"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000012"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000013"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000014"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000015"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000016"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000017"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000018"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000019"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000020"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000021"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000022"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000023"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000024"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000025"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000026"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000027"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000028"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000029"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000030"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000031"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000035"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000045"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000046"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000047"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000048"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OV000298"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OV000299"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OV000300"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "X099770"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "X099771"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "X099772"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "IP099352"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "IP099353"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "IP099354"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "IP099355"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "BMI-SevereUnder"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "827069000"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "827068008"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "56218007"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "248311001"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "73211009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "45089002"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "397543001"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "397542006"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "397541004"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "274572000"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "23986001"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "248325000"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "248324001"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "414915002"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "2004005"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "255330009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "860635002"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "714628002"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "39021009"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000040"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000041"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000042"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000043"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000044"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000036"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000037"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000038"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000039"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000032"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000033"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000034"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000019"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000020"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000026"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000027"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000028"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000021"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000022"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000023"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000024"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "260305007"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "260306008"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "260307004"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "260308009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "263865001"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "264605009"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "272069004"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "76948002"
+          }
+        ]
+      }
+    ]
+  }
+}

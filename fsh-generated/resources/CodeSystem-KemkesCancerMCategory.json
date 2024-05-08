@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "KemkesCancerMCategoryCS",
+  "id": "KemkesCancerMCategory",
+  "title": "Kemkes Cancer M Category",
+  "url": "http://terminology.kemkes.go.id/CodeSystem/cancer-m-category",
+  "concept": [
+    {
+      "code": "M0",
+      "display": "M0"
+    },
+    {
+      "code": "M1",
+      "display": "M1"
+    },
+    {
+      "code": "M1a",
+      "display": "M1a"
+    },
+    {
+      "code": "M1b",
+      "display": "M1b"
+    },
+    {
+      "code": "M1c",
+      "display": "M1c"
+    },
+    {
+      "code": "MX",
+      "display": "MX"
+    }
+  ],
+  "version": "1.0.0",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "terminologisehat@kemkes.go.id"
+        }
+      ],
+      "name": "DTO Kemkes"
+    }
+  ],
+  "compositional": false,
+  "caseSensitive": true,
+  "versionNeeded": true,
+  "hierarchyMeaning": "is-a",
+  "language": "English",
+  "valueSet": "http://terminology.kemkes.go.id/ValueSet/cancer-m-category",
+  "date": "2024-02-05T00:00:00.000Z",
+  "experimental": false,
+  "publisher": "DTO MoH",
+  "count": 6
+}

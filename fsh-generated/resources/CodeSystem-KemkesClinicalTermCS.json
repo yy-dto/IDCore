@@ -1,0 +1,2794 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "KemkesClinicalTermCS",
+  "id": "KemkesClinicalTermCS",
+  "title": "Terminology Kemkes Clinical Term CodeSystem",
+  "description": "Terminology Kemkes Clinical Term CodeSystem",
+  "url": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+  "concept": [
+    {
+      "code": "AL000001",
+      "display": "Rumput bermuda"
+    },
+    {
+      "code": "AL000002",
+      "display": "Rumput timotius"
+    },
+    {
+      "code": "AL000003",
+      "display": "Akasia"
+    },
+    {
+      "code": "AL000004",
+      "display": "Minyak kelapa sawit"
+    },
+    {
+      "code": "AL000005",
+      "display": "Tungau debu"
+    },
+    {
+      "code": "AL000006",
+      "display": "Tungau bahan pangan"
+    },
+    {
+      "code": "AL000007",
+      "display": "Tungau Perabotan Rumah"
+    },
+    {
+      "code": "AL000008",
+      "display": "Tungau tepung, beras"
+    },
+    {
+      "code": "AL000009",
+      "display": "Kapuk"
+    },
+    {
+      "code": "AL000010",
+      "display": "Racun lebah madu"
+    },
+    {
+      "code": "AL000011",
+      "display": "Kecoa jerman"
+    },
+    {
+      "code": "AL000012",
+      "display": "Candida albicans"
+    },
+    {
+      "code": "AL000013",
+      "display": "Tepung terigu"
+    },
+    {
+      "code": "AL000014",
+      "display": "Ragi"
+    },
+    {
+      "code": "AL000015",
+      "display": "Ikan kod"
+    },
+    {
+      "code": "AL000016",
+      "display": "Salmon"
+    },
+    {
+      "code": "AL000017",
+      "display": "Daging bebek"
+    },
+    {
+      "code": "AL000018",
+      "display": "Daging sapi"
+    },
+    {
+      "code": "AL000019",
+      "display": "Daging ayam"
+    },
+    {
+      "code": "AL000020",
+      "display": "Daging domba "
+    },
+    {
+      "code": "AL000021",
+      "display": "Keju cheedar"
+    },
+    {
+      "code": "AL000022",
+      "display": "Kopi"
+    },
+    {
+      "code": "AL000023",
+      "display": "Nasi putih"
+    },
+    {
+      "code": "AL000024",
+      "display": "Kuning telur "
+    },
+    {
+      "code": "AL000025",
+      "display": "Kerang "
+    },
+    {
+      "code": "AL000026",
+      "display": "Kacang merah"
+    },
+    {
+      "code": "AL000027",
+      "display": "Kacang hijau"
+    },
+    {
+      "code": "AL000028",
+      "display": "Bulu ayam"
+    },
+    {
+      "code": "AL000029",
+      "display": "Kacang polong"
+    },
+    {
+      "code": "AL000030",
+      "display": "Tepung gandum"
+    },
+    {
+      "code": "AL000031",
+      "display": "Makerel"
+    },
+    {
+      "code": "AL000032",
+      "display": "Kerang simping"
+    },
+    {
+      "code": "AL000033",
+      "display": "Susu kambing"
+    },
+    {
+      "code": "AL000034",
+      "display": "Paprika"
+    },
+    {
+      "code": "AL000035",
+      "display": "Kubis"
+    },
+    {
+      "code": "AL000036",
+      "display": "Adas"
+    },
+    {
+      "code": "AL000037",
+      "display": "Selada"
+    },
+    {
+      "code": "AL000038",
+      "display": "Labu"
+    },
+    {
+      "code": "AL000039",
+      "display": "Lobak"
+    },
+    {
+      "code": "AL000040",
+      "display": "Timun jepang/Zucchini"
+    },
+    {
+      "code": "AL000041",
+      "display": "Gandum kuda/buckwheat"
+    },
+    {
+      "code": "AL000042",
+      "display": "Sarden"
+    },
+    {
+      "code": "AL000043",
+      "display": "Debu rumah"
+    },
+    {
+      "code": "CB000001",
+      "display": "Tidak ada metastasis jauh"
+    },
+    {
+      "code": "CB000002",
+      "display": "Metastasis jauh tidak diketahui"
+    },
+    {
+      "code": "CB000003",
+      "display": "Lateralitas tidak diketahui"
+    },
+    {
+      "code": "CC000001",
+      "display": "Dada terasa tidak nyaman"
+    },
+    {
+      "code": "CC000002",
+      "display": "Nyeri dada lebih lama dari 20 menit"
+    },
+    {
+      "code": "CC000003",
+      "display": "TNM tidak dapat diaplikasikan"
+    },
+    {
+      "code": "CC000004",
+      "display": "Organ dan KGB sekitar"
+    },
+    {
+      "code": "CC000005",
+      "display": "Perluasan tumor sebelum terapi tidak diketahui"
+    },
+    {
+      "code": "CC000007",
+      "display": "Malnutrisi pada penyakit akut"
+    },
+    {
+      "code": "CC000008",
+      "display": "Malnutrisi pada anak (tidak terkait penyakit)"
+    },
+    {
+      "code": "CC000009",
+      "display": "Malnutrisi pada anak (terkait penyakit)"
+    },
+    {
+      "code": "CC000010",
+      "display": "Keterbatasan/ ketidakpatuhan dalam menjalankan rekomendasi diet"
+    },
+    {
+      "code": "CC000019",
+      "display": "Riwayat diare"
+    },
+    {
+      "code": "CC000020",
+      "display": "Riwayat infeksi saluran pernapasan akut"
+    },
+    {
+      "code": "CC000021",
+      "display": "Riwayat kecacingan"
+    },
+    {
+      "code": "CC000022",
+      "display": "Riwayat defisiensi vitamin A"
+    },
+    {
+      "code": "CC000023",
+      "display": "Riwayat xeroftalmia"
+    },
+    {
+      "code": "CC000024",
+      "display": "Nyeri dada pertama kali dengan aktivitas ringan"
+    },
+    {
+      "code": "CE000001",
+      "display": "Basis diagnosis berdasarkan operasi/otopsi tanpa histologi"
+    },
+    {
+      "code": "CE000002",
+      "display": "Basis diagnosis berdasarkan otopsi dengan histologi"
+    },
+    {
+      "code": "CE000003",
+      "display": "Basis diagnosis tidak diketahui"
+    },
+    {
+      "code": "CS000001",
+      "display": "Stadium tumor tidak diaplikasikan"
+    },
+    {
+      "code": "CS000002",
+      "display": "Stadium tumor tidak diketahui"
+    },
+    {
+      "code": "ED000001",
+      "display": "Edukasi Prognosis"
+    },
+    {
+      "code": "ED000002",
+      "display": "Edukasi terkait Alternatif Tindakan dan Resikonya"
+    },
+    {
+      "code": "ED000003",
+      "display": "Edukasi Rehabilitasi Medis"
+    },
+    {
+      "code": "ED000004",
+      "display": "Edukasi Manajemen Nyeri"
+    },
+    {
+      "code": "ED000005",
+      "display": "Edukasi Gizi"
+    },
+    {
+      "code": "ED000006",
+      "display": "Edukasi Cuci Tangan"
+    },
+    {
+      "code": "ED000007",
+      "display": "Edukasi Penggunaan Alat Medis"
+    },
+    {
+      "code": "ED000008",
+      "display": "Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas"
+    },
+    {
+      "code": "ED000009",
+      "display": "Edukasi IMD dan ASI Eksklusif"
+    },
+    {
+      "code": "ED000010",
+      "display": "Edukasi PHBS"
+    },
+    {
+      "code": "ED000011",
+      "display": "Edukasi KB pasca salin"
+    },
+    {
+      "code": "ED000012",
+      "display": "Edukasi lainnya"
+    },
+    {
+      "code": "ED000013",
+      "display": "Edukasi Pencegahan Anemia"
+    },
+    {
+      "code": "EHA000001",
+      "display": "Kader/ Komunitas"
+    },
+    {
+      "code": "EHA000002",
+      "display": "Datang sendiri"
+    },
+    {
+      "code": "EHA000003",
+      "display": "Kegiatan ACF"
+    },
+    {
+      "code": "EHA000004",
+      "display": "Skrining TBC DM"
+    },
+    {
+      "code": "EHA000005",
+      "display": "Pemadanan Data BPJS"
+    },
+    {
+      "code": "FO000001",
+      "display": "MT Lokal"
+    },
+    {
+      "code": "FO000002",
+      "display": "MT Pabrikan"
+    },
+    {
+      "code": "grup1-icdmm",
+      "display": "Kehamilan dengan komplikasi abortus"
+    },
+    {
+      "code": "grup2-icdmm",
+      "display": "Hipertensi dalam kehamilan, persalinan atau nifas"
+    },
+    {
+      "code": "grup3-icdmm",
+      "display": "Perdarahan obstetrik"
+    },
+    {
+      "code": "grup4-icdmm",
+      "display": "Infeksi terkait kehamilan"
+    },
+    {
+      "code": "grup5-icdmm",
+      "display": "Komplikasi obstetrik lain"
+    },
+    {
+      "code": "grup6-icdmm",
+      "display": "Komplikasi manajemen yang tidak terantisipasi"
+    },
+    {
+      "code": "grup7-icdmm",
+      "display": "Komplikasi non obstetrik"
+    },
+    {
+      "code": "grup8-icdmm",
+      "display": "Penyebab dasar tidak diketahui"
+    },
+    {
+      "code": "grup9-icdmm",
+      "display": "Ko insiden"
+    },
+    {
+      "code": "LO000001",
+      "display": "Puskesmas"
+    },
+    {
+      "code": "LO000002",
+      "display": "Rumah Sakit"
+    },
+    {
+      "code": "LO000003",
+      "display": "Klinik"
+    },
+    {
+      "code": "LO000004",
+      "display": "Rumah"
+    },
+    {
+      "code": "OC000001",
+      "display": "Jarak kehamilan"
+    },
+    {
+      "code": "OC000002",
+      "display": "Trial lens axis"
+    },
+    {
+      "code": "OC000003",
+      "display": "Pemeriksaan lanjutan jika dinyatakan buta"
+    },
+    {
+      "code": "OC000005",
+      "display": "Indeks Berat Badan menurut Panjang Badan (z-score)"
+    },
+    {
+      "code": "OC000006",
+      "display": "Indeks Berat Badan menurut Tinggi Badan (z-score)"
+    },
+    {
+      "code": "OC000007",
+      "display": "Lama Perawatan"
+    },
+    {
+      "code": "OC000008",
+      "display": "Status Pertumbuhan dan Perkembangan"
+    },
+    {
+      "code": "OC000009",
+      "display": "Mendapatkan Makanan Pendamping ASI (MPASI)"
+    },
+    {
+      "code": "OC000010",
+      "display": "Indeks Massa Tubuh Sebelum Hamil"
+    },
+    {
+      "code": "OC000011",
+      "display": "Target Kenaikan Berat Badan"
+    },
+    {
+      "code": "OC000012",
+      "display": "Kenaikan Berat Badan Adekuat"
+    },
+    {
+      "code": "OC000013",
+      "display": "Penolong Persalinan"
+    },
+    {
+      "code": "OC000014",
+      "display": "Memiliki Buku KIA"
+    },
+    {
+      "code": "OC000015",
+      "display": "Konseling Perawatan Bayi Baru Lahir"
+    },
+    {
+      "code": "OC000016",
+      "display": "Waktu Inisiasi Menyusui Dini"
+    },
+    {
+      "code": "OC000017",
+      "display": "Produksi ASI"
+    },
+    {
+      "code": "OC000018",
+      "display": "Onset Kala III"
+    },
+    {
+      "code": "OC000019",
+      "display": "Onset Kala IV"
+    },
+    {
+      "code": "OC000020",
+      "display": "Tanda Infeksi Perineum"
+    },
+    {
+      "code": "OC000021",
+      "display": "WHODAS 2.0 Subacute ADL Score"
+    },
+    {
+      "code": "OC000022",
+      "display": "WHODAS 2.0 Chronic ADL Score"
+    },
+    {
+      "code": "OC000023",
+      "display": "Penyebab nyeri"
+    },
+    {
+      "code": "OC000024",
+      "display": "Kondisi Payudara"
+    },
+    {
+      "code": "OC000025",
+      "display": "Tanda Infeksi Luka Jahitan Sectio Caesaria"
+    },
+    {
+      "code": "OC000026",
+      "display": "Masa terjadi Kematian Ibu"
+    },
+    {
+      "code": "OC000027",
+      "display": "Masa terjadi Kematian Anak"
+    },
+    {
+      "code": "OC000030",
+      "display": "Berat saat meninggal"
+    },
+    {
+      "code": "OC000031",
+      "display": "Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)"
+    },
+    {
+      "code": "OC000032",
+      "display": "Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)"
+    },
+    {
+      "code": "OC000033",
+      "display": "Dugaan Sebab Kematian"
+    },
+    {
+      "code": "OC000034",
+      "display": "Surat Pengantar Rujukan"
+    },
+    {
+      "code": "OC000035",
+      "display": "Humpty Dumpty Scale"
+    },
+    {
+      "code": "OC000036",
+      "display": "Edmonson Psychiatric Fall Risk Assessment"
+    },
+    {
+      "code": "OC000037",
+      "display": "Jenis Tempat Bersalin"
+    },
+    {
+      "code": "OC000055",
+      "display": "Kriteria Pasien yang dilakukan Rencana Pemulangan"
+    },
+    {
+      "code": "OC000056",
+      "display": "Skor Total Debris Indeks"
+    },
+    {
+      "code": "OC000057",
+      "display": "Skor Total Kalkulus Indeks"
+    },
+    {
+      "code": "OC000058",
+      "display": "Skor Total Oral Hygiene Index Simplified (OHIS)"
+    },
+    {
+      "code": "OC000059",
+      "display": "Gigi Anomali"
+    },
+    {
+      "code": "OC000060",
+      "display": "Kondisi Gigi dan Mulut Lainnya"
+    },
+    {
+      "code": "OC000061",
+      "display": "Pemeriksaan Odontogram"
+    },
+    {
+      "code": "OC000062",
+      "display": "Debris Indeks"
+    },
+    {
+      "code": "OC000063",
+      "display": "Kalkulus Indeks"
+    },
+    {
+      "code": "OC000078",
+      "display": "Pemeriksaan tanda dan gejala infeksi"
+    },
+    {
+      "code": "OC000079",
+      "display": "Tes serologis HIV ibu"
+    },
+    {
+      "code": "OC000080",
+      "display": "Efektifitas hisapan bayi"
+    },
+    {
+      "code": "OC000081",
+      "display": "Posisi pelekatan bayi pada puting"
+    },
+    {
+      "code": "OC000082",
+      "display": "Posisi menyusu bayi"
+    },
+    {
+      "code": "OC000083",
+      "display": "Tes serologis HIV anak"
+    },
+    {
+      "code": "OC000084",
+      "display": "Tes virologis HIV anak"
+    },
+    {
+      "code": "OC000085",
+      "display": "Klasifikasi berat badan menurut umur dan/atau masalah pemberian ASI"
+    },
+    {
+      "code": "OC000086",
+      "display": "Klasifikasi Berat Badan Menurut Umur dan/atau Masalah Pemberian Minum"
+    },
+    {
+      "code": "OC000087",
+      "display": "Pemberian Vitamin K pada Bayi Baru Lahir"
+    },
+    {
+      "code": "OC000088",
+      "display": "Pemeriksaan tanda bahaya umum"
+    },
+    {
+      "code": "OC000089",
+      "display": "Klasifikasi status kegawatan"
+    },
+    {
+      "code": "OC000090",
+      "display": "Pemeriksaan tanda dan gejala sukar bernafas"
+    },
+    {
+      "code": "OC000091",
+      "display": "Klasifikasi batuk dan/atau sukar bernapas"
+    },
+    {
+      "code": "OC000092",
+      "display": "Perilaku Parasosial"
+    },
+    {
+      "code": "OC000097",
+      "display": "Pemeriksaan tanda dan gejala diare"
+    },
+    {
+      "code": "OC000098",
+      "display": "Klasifikasi diare"
+    },
+    {
+      "code": "OC000099",
+      "display": "Status daerah endemis malaria"
+    },
+    {
+      "code": "OC000100",
+      "display": "Klasifikasi demam"
+    },
+    {
+      "code": "OC000101",
+      "display": "Pemeriksaan tanda dan gejala campak"
+    },
+    {
+      "code": "OC000102",
+      "display": "Klasifikasi campak"
+    },
+    {
+      "code": "OC000103",
+      "display": "Durasi cairan/nanah keluar dari telinga"
+    },
+    {
+      "code": "OC000104",
+      "display": "Pemeriksaan infeksi dengue"
+    },
+    {
+      "code": "OC000105",
+      "display": "Klasifikasi infeksi dengue"
+    },
+    {
+      "code": "OC000106",
+      "display": "Pemeriksaan tanda dan gejala masalah telinga"
+    },
+    {
+      "code": "OC000107",
+      "display": "Klasifikasi masalah telinga"
+    },
+    {
+      "code": "OC000108",
+      "display": "Klasifikasi status gizi"
+    },
+    {
+      "code": "OC000109",
+      "display": "Klasifikasi status pertumbuhan"
+    },
+    {
+      "code": "OC000111",
+      "display": "Klasifikasi anemia"
+    },
+    {
+      "code": "OC000112",
+      "display": "Durasi sukar bernapas"
+    },
+    {
+      "code": "OC000113",
+      "display": "Durasi diare"
+    },
+    {
+      "code": "OC000114",
+      "display": "Membutuhkan suplemen vitamin A"
+    },
+    {
+      "code": "OC000115",
+      "display": "H Dosis Rendah"
+    },
+    {
+      "code": "OC000116",
+      "display": "FQ Dosis Rendah"
+    },
+    {
+      "code": "OC000117",
+      "display": "Hasil Uji Metode LJ"
+    },
+    {
+      "code": "OC000118",
+      "display": "Hasil Uji Metode MGIT"
+    },
+    {
+      "code": "OC000119",
+      "display": "Hasil Uji Lfx"
+    },
+    {
+      "code": "OC000120",
+      "display": "Hasil Uji Mfx DT"
+    },
+    {
+      "code": "OC000121",
+      "display": "Pemeriksaan tanda dan gejala demam"
+    },
+    {
+      "code": "OC000122",
+      "display": "Carta Prediksi Risiko"
+    },
+    {
+      "code": "OC000124",
+      "display": "Pemeriksaan kebugaran 1000m"
+    },
+    {
+      "code": "OC000125",
+      "display": "Pemeriksaan kebugaran 1600m"
+    },
+    {
+      "code": "OC000126",
+      "display": "Klasifikasi infeksi"
+    },
+    {
+      "code": "OC000127",
+      "display": "Jumlah TTD dikonsumsi dalam satu bulan terakhir"
+    },
+    {
+      "code": "OC000128",
+      "display": "Umur pertama kali timbul kuning"
+    },
+    {
+      "code": "OC000129",
+      "display": "Klasifikasi ikterus"
+    },
+    {
+      "code": "OC000130",
+      "display": "Ada tanda-tanda retensi"
+    },
+    {
+      "code": "OC000131",
+      "display": "Perawakan tampak kurus"
+    },
+    {
+      "code": "OC000133",
+      "display": "Kategori Sasaran Imunisasi COVID-19"
+    },
+    {
+      "code": "OC000134",
+      "display": "Left Ventricular Hypertrophy (LVH) Eksentrik"
+    },
+    {
+      "code": "OC000135",
+      "display": "Status sekolah"
+    },
+    {
+      "code": "OC000136",
+      "display": "Trial lens sferis"
+    },
+    {
+      "code": "OC000137",
+      "display": "Trial lens silinder"
+    },
+    {
+      "code": "OC000138",
+      "display": "Pajanan di rumah tangga/tempat kerja"
+    },
+    {
+      "code": "OC000139",
+      "display": "Waktu terakhir kali ibu diberikan transfusi darah"
+    },
+    {
+      "code": "OC000140",
+      "display": "Ibu konsumsi obat anti tiroid"
+    },
+    {
+      "code": "OC000141",
+      "display": "Ada kelainan bawaan"
+    },
+    {
+      "code": "OC000142",
+      "display": "Wajah mongoloid"
+    },
+    {
+      "code": "OC000144",
+      "display": "Pemeriksaan layanan gizi buruk"
+    },
+    {
+      "code": "OC000145",
+      "display": "Urutan pengiriman sampel"
+    },
+    {
+      "code": "OC000146",
+      "display": "Status pertumbuhan tidak naik (Status T)"
+    },
+    {
+      "code": "OC000147",
+      "display": "Tanda-tanda komplikasi pada balita"
+    },
+    {
+      "code": "OC000148",
+      "display": "Pemeriksaan gangguan konsumsi dan gangguan fisik lainnya"
+    },
+    {
+      "code": "OC000149",
+      "display": "Pekerjaan orang tua"
+    },
+    {
+      "code": "OC000150",
+      "display": "Suspek tuli kongenital"
+    },
+    {
+      "code": "OC000151",
+      "display": "Suspek presbikusis"
+    },
+    {
+      "code": "OC000152",
+      "display": "Suspek retinopati"
+    },
+    {
+      "code": "OC000153",
+      "display": "Ada tanda-tanda defisiensi zat gizi mikro"
+    },
+    {
+      "code": "OC000154",
+      "display": "Shadow test"
+    },
+    {
+      "code": "OC000155",
+      "display": "Gejala klinis risiko anemia"
+    },
+    {
+      "code": "OC000156",
+      "display": "Tindakan pasca fibrinolisis"
+    },
+    {
+      "code": "OC000157",
+      "display": "Jenis Intervensi Koroner Perkutan"
+    },
+    {
+      "code": "OC000158",
+      "display": "Volume balloon"
+    },
+    {
+      "code": "OC000159",
+      "display": "Wake up stroke"
+    },
+    {
+      "code": "OC000160",
+      "display": "Letak Infark"
+    },
+    {
+      "code": "OC000161",
+      "display": "Sisi Infark"
+    },
+    {
+      "code": "OC000162",
+      "display": "Volume Perdarahan"
+    },
+    {
+      "code": "OC000163",
+      "display": "Sumber Perdarahan Infratentorial"
+    },
+    {
+      "code": "OC000164",
+      "display": "Cardiothoracic Ratio (CTR)"
+    },
+    {
+      "code": "OC000165",
+      "display": "Lokasi elevasi segmen ST"
+    },
+    {
+      "code": "OC000166",
+      "display": "Tanggal dan jam onset terberat"
+    },
+    {
+      "code": "OC000167",
+      "display": "Arteri koroner yang terlibat dalam Sindrom Koroner Akut"
+    },
+    {
+      "code": "OC000168",
+      "display": "Klasifikasi Killip"
+    },
+    {
+      "code": "OC000169",
+      "display": "GRACE Score"
+    },
+    {
+      "code": "OC000170",
+      "display": "Riwayat KB Hormonal"
+    },
+    {
+      "code": "OC000171",
+      "display": "Tanggal dan jam wire menembus lesi"
+    },
+    {
+      "code": "OC000172",
+      "display": "Tanggal dan jam mulai dimasukkan obat fibrinolisis"
+    },
+    {
+      "code": "OC000173",
+      "display": "Prediksi Risiko PTM tanpa Pemeriksaan Laboratorium"
+    },
+    {
+      "code": "OC000176",
+      "display": "Pencegahan Sekunder Penyakit Jantung Rematik"
+    },
+    {
+      "code": "OC000177",
+      "display": "Tidak Diketahui Mendapat Obat"
+    },
+    {
+      "code": "OC000178",
+      "display": "Jenis Obat Pencegahan Sekunder PJR"
+    },
+    {
+      "code": "OC000179",
+      "display": "Target Organ Damage Hipertensi"
+    },
+    {
+      "code": "OC000180",
+      "display": "Intensitas Obat Statin"
+    },
+    {
+      "code": "OC000181",
+      "display": "Alberta Stroke Program Early CT score"
+    },
+    {
+      "code": "OC000182",
+      "display": "Time to Recanalization"
+    },
+    {
+      "code": "OC000183",
+      "display": "Thrombolysis in Cerebral Infarction Score"
+    },
+    {
+      "code": "OCC000003",
+      "display": "Lokasi elevasi segmen ST"
+    },
+    {
+      "code": "OCV000001",
+      "display": "LBBB baru"
+    },
+    {
+      "code": "OCV000003",
+      "display": "Tidak ada perubahan akut"
+    },
+    {
+      "code": "OCV000004",
+      "display": "ST elevasi tidak dapat ditentukan"
+    },
+    {
+      "code": "OI000001",
+      "display": "Gizi Buruk"
+    },
+    {
+      "code": "OI000002",
+      "display": "Gizi Kurang"
+    },
+    {
+      "code": "OI000003",
+      "display": "Gizi Baik"
+    },
+    {
+      "code": "OI000004",
+      "display": "Risiko Gizi Lebih"
+    },
+    {
+      "code": "OI000005",
+      "display": "Gizi Lebih"
+    },
+    {
+      "code": "OI000006",
+      "display": "Obesitas"
+    },
+    {
+      "code": "OI000007",
+      "display": "Berat Badan Sangat Kurang"
+    },
+    {
+      "code": "OI000008",
+      "display": "Berat Badan Kurang"
+    },
+    {
+      "code": "OI000009",
+      "display": "Berat Badan Normal"
+    },
+    {
+      "code": "OI000010",
+      "display": "Risiko Berat Badan Lebih"
+    },
+    {
+      "code": "OI000011",
+      "display": "Sangat Pendek"
+    },
+    {
+      "code": "OI000012",
+      "display": "Pendek"
+    },
+    {
+      "code": "OI000013",
+      "display": "Normal"
+    },
+    {
+      "code": "OI000014",
+      "display": "Tinggi"
+    },
+    {
+      "code": "OI000015",
+      "display": "Normocephaly"
+    },
+    {
+      "code": "OI000016",
+      "display": "Sesuai Usia"
+    },
+    {
+      "code": "OI000017",
+      "display": "Tidak Sesuai Usia"
+    },
+    {
+      "code": "OI000018",
+      "display": "Kurang Energi Kronis (KEK) "
+    },
+    {
+      "code": "OI000019",
+      "display": "Mild to No Pain"
+    },
+    {
+      "code": "OI000020",
+      "display": "Mild to Moderate Pain"
+    },
+    {
+      "code": "OI000021",
+      "display": "7 - 11 (Risiko rendah)"
+    },
+    {
+      "code": "OI000022",
+      "display": "> 12 (Risiko tinggi)"
+    },
+    {
+      "code": "OI000023",
+      "display": "0 - 89 (Risiko rendah)"
+    },
+    {
+      "code": "OI000024",
+      "display": "> 90 (Risiko tinggi)"
+    },
+    {
+      "code": "OI000025",
+      "display": "Tidak Normal"
+    },
+    {
+      "code": "OI000026",
+      "display": "0 - 24 (Risiko rendah)"
+    },
+    {
+      "code": "OI000027",
+      "display": "25 - 44 (Risiko sedang)"
+    },
+    {
+      "code": "OI000028",
+      "display": "≥ 45 (Risiko tinggi)"
+    },
+    {
+      "code": "OI000029",
+      "display": "Kondisi Gigi Baik"
+    },
+    {
+      "code": "OI000030",
+      "display": "Kondisi Gigi Cukup Baik"
+    },
+    {
+      "code": "OI000031",
+      "display": "Kondisi Gigi Buruk"
+    },
+    {
+      "code": "OI000032",
+      "display": "Anemia ringan"
+    },
+    {
+      "code": "OI000033",
+      "display": "Anemia sedang"
+    },
+    {
+      "code": "OI000034",
+      "display": "Anemia berat"
+    },
+    {
+      "code": "OI000035",
+      "display": "Risiko Kurang Energi Kronis (KEK)"
+    },
+    {
+      "code": "OI000036",
+      "display": "Tingkat kebugaran jasmani baik"
+    },
+    {
+      "code": "OI000037",
+      "display": "Tingkat kebugaran jasmani cukup"
+    },
+    {
+      "code": "OI000038",
+      "display": "Tingkat kebugaran jasmani kurang"
+    },
+    {
+      "code": "OI000039",
+      "display": "Borderline"
+    },
+    {
+      "code": "OI000040",
+      "display": "Tekanan darah optimal"
+    },
+    {
+      "code": "OI000041",
+      "display": "Tekanan darah normal tinggi"
+    },
+    {
+      "code": "OI000042",
+      "display": "Hipertensi derajat 3"
+    },
+    {
+      "code": "OI000043",
+      "display": "LDL mendekati optimal"
+    },
+    {
+      "code": "OI000044",
+      "display": "Kelainan organik"
+    },
+    {
+      "code": "OI000045",
+      "display": "Ketergantungan Ringan"
+    },
+    {
+      "code": "OI000046",
+      "display": "Ketergantungan Sedang"
+    },
+    {
+      "code": "OI000047",
+      "display": "Ketergantungan Berat"
+    },
+    {
+      "code": "OI000048",
+      "display": "Ketergantungan Total"
+    },
+    {
+      "code": "OM000001",
+      "display": "LJ"
+    },
+    {
+      "code": "OM000002",
+      "display": "MGIT"
+    },
+    {
+      "code": "OV000003",
+      "display": "Restriksi berat"
+    },
+    {
+      "code": "OV000005",
+      "display": "Letak Lintang"
+    },
+    {
+      "code": "OV000006",
+      "display": "Intrauteri"
+    },
+    {
+      "code": "OV000007",
+      "display": "Ekstrauteri"
+    },
+    {
+      "code": "OV000008",
+      "display": "5–9 kg"
+    },
+    {
+      "code": "OV000009",
+      "display": "7–11.5 kg"
+    },
+    {
+      "code": "OV000010",
+      "display": "11.5–16 kg"
+    },
+    {
+      "code": "OV000011",
+      "display": "12.5–18 kg"
+    },
+    {
+      "code": "OV000012",
+      "display": "Dukun"
+    },
+    {
+      "code": "OV000013",
+      "display": "Lebih dari Lima"
+    },
+    {
+      "code": "OV000014",
+      "display": "Kurang dari 1 Jam"
+    },
+    {
+      "code": "OV000015",
+      "display": "Lebih dari 1 Jam"
+    },
+    {
+      "code": "OV000016",
+      "display": "Produksi ASI ada"
+    },
+    {
+      "code": "OV000017",
+      "display": "Produksi ASI ada tapi sedikit"
+    },
+    {
+      "code": "OV000018",
+      "display": "Produksi ASI tidak ada"
+    },
+    {
+      "code": "OV000019",
+      "display": "Frekuensi his"
+    },
+    {
+      "code": "OV000020",
+      "display": "Intensitas his"
+    },
+    {
+      "code": "OV000021",
+      "display": "Durasi lama his"
+    },
+    {
+      "code": "OV000022",
+      "display": "Interval his"
+    },
+    {
+      "code": "OV000023",
+      "display": "Datangnya his"
+    },
+    {
+      "code": "OV000024",
+      "display": "Lokia berbau normal"
+    },
+    {
+      "code": "OV000025",
+      "display": "Lokia berbau amis/busuk"
+    },
+    {
+      "code": "OV000026",
+      "display": "Laceration of perineum during delivery involving vaginal mucosa and perineal skin"
+    },
+    {
+      "code": "OV000027",
+      "display": "Laceration of perineum during delivery involving perineum muscles"
+    },
+    {
+      "code": "OV000028",
+      "display": "Laceration of perineum during delivery involving anal epithelium"
+    },
+    {
+      "code": "OV000047",
+      "display": "Tidak ada maserasi"
+    },
+    {
+      "code": "OV000048",
+      "display": "Maserasi Tingkat Satu"
+    },
+    {
+      "code": "OV000049",
+      "display": "Maserasi Tingkat Dua"
+    },
+    {
+      "code": "OV000050",
+      "display": "Maserasi Tingkat Tiga"
+    },
+    {
+      "code": "OV000051",
+      "display": "Belum Tahu Ada Tidaknya Maserasi"
+    },
+    {
+      "code": "OV000052",
+      "display": "Sesuai"
+    },
+    {
+      "code": "OV000053",
+      "display": "Tidak Sesuai"
+    },
+    {
+      "code": "OV000072",
+      "display": "Pasien dengan perawatan berkelanjutan atau panjang"
+    },
+    {
+      "code": "OV000073",
+      "display": "Tidak masuk kriteria"
+    },
+    {
+      "code": "OV000074",
+      "display": "Tidak ada Torus Palatinus"
+    },
+    {
+      "code": "OV000075",
+      "display": "Torus Palatinus Kecil"
+    },
+    {
+      "code": "OV000076",
+      "display": "Torus Palatinus Sedang"
+    },
+    {
+      "code": "OV000077",
+      "display": "Torus Palatinus Besar"
+    },
+    {
+      "code": "OV000078",
+      "display": "Multiple Torus Palatinus"
+    },
+    {
+      "code": "OV000079",
+      "display": "Tidak ada Torus Mandibularis"
+    },
+    {
+      "code": "OV000080",
+      "display": "Torus Mandibularis Sisi Kiri"
+    },
+    {
+      "code": "OV000081",
+      "display": "Torus Mandibularis Sisi Kanan"
+    },
+    {
+      "code": "OV000082",
+      "display": "Torus Mandibularis pada Kedua Sisi"
+    },
+    {
+      "code": "OV000083",
+      "display": "Palatum Dalam"
+    },
+    {
+      "code": "OV000084",
+      "display": "Palatum Sedang"
+    },
+    {
+      "code": "OV000085",
+      "display": "Palatum Rendah"
+    },
+    {
+      "code": "OV000086",
+      "display": "Tidak Ada Diastema"
+    },
+    {
+      "code": "OV000087",
+      "display": "Ada Diastema"
+    },
+    {
+      "code": "OV000088",
+      "display": "Tidak Ada Gigi Anomali"
+    },
+    {
+      "code": "OV000089",
+      "display": "Ada Gigi Anomali"
+    },
+    {
+      "code": "OV000090",
+      "display": "Gigi tidak ada/ tidak diketahui"
+    },
+    {
+      "code": "OV000091",
+      "display": "Gigi Anomali"
+    },
+    {
+      "code": "OV000092",
+      "display": "Gigi Non-Vital"
+    },
+    {
+      "code": "OV000093",
+      "display": "Sisa Akar"
+    },
+    {
+      "code": "OV000094",
+      "display": "Metal Bridge"
+    },
+    {
+      "code": "OV000095",
+      "display": "Porcelain Bridge"
+    },
+    {
+      "code": "OV000096",
+      "display": "Frame"
+    },
+    {
+      "code": "OV000097",
+      "display": "Terdapat debris pada 1/3 permukaan servikal gigi atau dijumpai stain ekstrinsik"
+    },
+    {
+      "code": "OV000098",
+      "display": "Terdapat debris pada 1/3 – 2/3 permukaan gigi"
+    },
+    {
+      "code": "OV000099",
+      "display": "Terdapat debris pada > 2/3 permukaan gigi"
+    },
+    {
+      "code": "OV000100",
+      "display": "Terdapat kalkulus supragingiva pada 1/3 permukaan servikal gigi tanpa kalkulus subgingiva"
+    },
+    {
+      "code": "OV000101",
+      "display": "Terdapat kalkulus supragingiva pada 1/3 – 2/3 permukaan gigi dan/atau terdapat kalkulus subgingiva berupa titik-titik yang tidak melingkari leher gigi"
+    },
+    {
+      "code": "OV000102",
+      "display": "Terdapat kalkulus supragingiva pada > 2/3 permukaan gigi dan/atau terdapat kalkulus subgingiva yang melingkari leher gigi"
+    },
+    {
+      "code": "OV000112",
+      "display": "Diberikan ASI Eksklusif"
+    },
+    {
+      "code": "OV000113",
+      "display": "Tidak Diberikan ASI Eksklusif"
+    },
+    {
+      "code": "OV000124",
+      "display": "Bayi tidak mau mengisap"
+    },
+    {
+      "code": "OV000125",
+      "display": "Suhu tubuh >37,5°C"
+    },
+    {
+      "code": "OV000126",
+      "display": "Suhu tubuh <36,5°C"
+    },
+    {
+      "code": "OV000127",
+      "display": "Bayi bergerak atas kemauan sendiri"
+    },
+    {
+      "code": "OV000128",
+      "display": "Bayi bergerak hanya ketika dirangsang"
+    },
+    {
+      "code": "OV000129",
+      "display": "Demam mungkin bukan dengue"
+    },
+    {
+      "code": "OV000130",
+      "display": "Mata bernanah banyak"
+    },
+    {
+      "code": "OV000131",
+      "display": "Mata bernanah sedikit"
+    },
+    {
+      "code": "OV000132",
+      "display": "Pusar kemerahan"
+    },
+    {
+      "code": "OV000133",
+      "display": "Perbedaan saturasi oksigen >3%"
+    },
+    {
+      "code": "OV000134",
+      "display": "Infeksi bakteri berat"
+    },
+    {
+      "code": "OV000135",
+      "display": "Infeksi bakteri lokal"
+    },
+    {
+      "code": "OV000136",
+      "display": "Mungkin bukan infeksi"
+    },
+    {
+      "code": "OV000137",
+      "display": "Penyakit sangat berat"
+    },
+    {
+      "code": "OV000138",
+      "display": "Normocephaly"
+    },
+    {
+      "code": "OV000145",
+      "display": "Malaria positive"
+    },
+    {
+      "code": "OV000146",
+      "display": "Malaria negative"
+    },
+    {
+      "code": "OV000160",
+      "display": "Demam <39°C"
+    },
+    {
+      "code": "OV000161",
+      "display": "Demam ≥39°C"
+    },
+    {
+      "code": "OV000163",
+      "display": "Kemerahan anggota tubuh"
+    },
+    {
+      "code": "OV000166",
+      "display": "Persistent inconsolable screaming"
+    },
+    {
+      "code": "OV000167",
+      "display": "Bayi tidak BAB 48 jam setelah lahir"
+    },
+    {
+      "code": "OV000169",
+      "display": "Sendiri"
+    },
+    {
+      "code": "OV000170",
+      "display": "Dukun"
+    },
+    {
+      "code": "OV000171",
+      "display": "Rewel"
+    },
+    {
+      "code": "OV000172",
+      "display": "Perdarahan lain"
+    },
+    {
+      "code": "OV000173",
+      "display": "Perdarahan pada lokasi penyuntikan"
+    },
+    {
+      "code": "OV000174",
+      "display": "Timbul kuning pada hari pertama (<24 jam) setelah lahir"
+    },
+    {
+      "code": "OV000175",
+      "display": "Timbul kuning pada umur >24 jam sampai dengan umur 14 hari"
+    },
+    {
+      "code": "OV000176",
+      "display": "Timbul kuning pada umur >14 hari"
+    },
+    {
+      "code": "OV000177",
+      "display": "Kuning sampai telapak tangan"
+    },
+    {
+      "code": "OV000178",
+      "display": "Kuning sampai telapak kaki"
+    },
+    {
+      "code": "OV000179",
+      "display": "Ikterus berat"
+    },
+    {
+      "code": "OV000180",
+      "display": "Tidak ada ikterus"
+    },
+    {
+      "code": "OV000181",
+      "display": "Cubitan kulit perut kembalinya sangat lambat"
+    },
+    {
+      "code": "OV000182",
+      "display": "Cubitan kulit perut kembalinya lambat"
+    },
+    {
+      "code": "OV000183",
+      "display": "Cubitan kulit perut kembali segera"
+    },
+    {
+      "code": "OV000184",
+      "display": "Diare dehidrasi berat"
+    },
+    {
+      "code": "OV000185",
+      "display": "Diare dehidrasi ringan/sedang"
+    },
+    {
+      "code": "OV000186",
+      "display": "Diare tanpa dehidrasi"
+    },
+    {
+      "code": "OV000187",
+      "display": "Terpajan HIV: mungkin infeksi HIV"
+    },
+    {
+      "code": "OV000188",
+      "display": "Infeksi HIV tidak diketahui"
+    },
+    {
+      "code": "OV000189",
+      "display": "Bukan infeksi HIV"
+    },
+    {
+      "code": "OV000190",
+      "display": "< 2 kg (umur < 7 hari)"
+    },
+    {
+      "code": "OV000191",
+      "display": "Rendah < -2 SD"
+    },
+    {
+      "code": "OV000192",
+      "display": "Tidak rendah ≥ -2 SD"
+    },
+    {
+      "code": "OV000193",
+      "display": "Posisi menyusu bayi benar"
+    },
+    {
+      "code": "OV000194",
+      "display": "Posisi menyusu bayi salah"
+    },
+    {
+      "code": "OV000195",
+      "display": "Tidak melekat sama sekali"
+    },
+    {
+      "code": "OV000196",
+      "display": "Tidak melekat dengan baik"
+    },
+    {
+      "code": "OV000197",
+      "display": "Melekat dengan baik"
+    },
+    {
+      "code": "OV000198",
+      "display": "Tidak mengisap sama sekali"
+    },
+    {
+      "code": "OV000199",
+      "display": "Tidak mengisap dengan efektif"
+    },
+    {
+      "code": "OV000200",
+      "display": "Mengisap dengan efektif"
+    },
+    {
+      "code": "OV000201",
+      "display": "Berat badan sangat rendah menurut umur"
+    },
+    {
+      "code": "OV000202",
+      "display": "Berat badan rendah menurut umur dan/atau masalah pemberian ASI"
+    },
+    {
+      "code": "OV000203",
+      "display": "Berat badan tidak rendah menurut umur dan tidak ada masalah pemberian ASI"
+    },
+    {
+      "code": "OV000204",
+      "display": "Berat badan rendah menurut umur dan/atau masalah pemberian minum"
+    },
+    {
+      "code": "OV000205",
+      "display": "Berat badan tidak rendah menurut umur dan tidak ada masalah pemberian minum"
+    },
+    {
+      "code": "OV000206",
+      "display": "Anak tidak bisa minum atau menyusu"
+    },
+    {
+      "code": "OV000207",
+      "display": "Anak memuntahkan semua makanan dan minuman"
+    },
+    {
+      "code": "OV000208",
+      "display": "Anak tidak dapat ditenangkan"
+    },
+    {
+      "code": "OV000209",
+      "display": "Pandangan mata kosong"
+    },
+    {
+      "code": "OV000210",
+      "display": "Mata tidak terbuka"
+    },
+    {
+      "code": "OV000211",
+      "display": "Anak mencari posisi paling nyaman dan menolak berbaring"
+    },
+    {
+      "code": "OV000212",
+      "display": "Anak malas minum"
+    },
+    {
+      "code": "OV000213",
+      "display": "Anak minum dengan lahap"
+    },
+    {
+      "code": "OV000214",
+      "display": "Diare dehidrasi berat"
+    },
+    {
+      "code": "OV000215",
+      "display": "Diare dehidrasi ringan/sedang"
+    },
+    {
+      "code": "OV000216",
+      "display": "Anak menangis melengking"
+    },
+    {
+      "code": "OV000217",
+      "display": "Diare persisten berat"
+    },
+    {
+      "code": "OV000218",
+      "display": "Diare persisten"
+    },
+    {
+      "code": "OV000219",
+      "display": "Daerah endemis tinggi"
+    },
+    {
+      "code": "OV000220",
+      "display": "Daerah endemis rendah"
+    },
+    {
+      "code": "OV000221",
+      "display": "Daerah non endemis"
+    },
+    {
+      "code": "OV000222",
+      "display": "Ada penyebab lain dari demam"
+    },
+    {
+      "code": "OV000223",
+      "display": "Penyakit berat dengan demam"
+    },
+    {
+      "code": "OV000224",
+      "display": "Demam mungkin bukan malaria"
+    },
+    {
+      "code": "OV000225",
+      "display": "Penyakit berat dengan demam"
+    },
+    {
+      "code": "OV000226",
+      "display": "Demam bukan malaria"
+    },
+    {
+      "code": "OV000227",
+      "display": "Ada luka di mulut tidak dalam atau luas"
+    },
+    {
+      "code": "OV000228",
+      "display": "Ada luka di mulut dalam atau luas"
+    },
+    {
+      "code": "OV000229",
+      "display": "Campak dengan komplikasi berat"
+    },
+    {
+      "code": "OV000230",
+      "display": "Campak dengan komplikasi pada mata"
+    },
+    {
+      "code": "OV000231",
+      "display": "Campak dengan komplikasi pada mulut"
+    },
+    {
+      "code": "OV000232",
+      "display": "Campak dengan komplikasi pada mata dan mulut"
+    },
+    {
+      "code": "OV000233",
+      "display": "Kaki/ tangan tampak pucat"
+    },
+    {
+      "code": "OV000234",
+      "display": "Waktu pengisian kapiler >2 detik"
+    },
+    {
+      "code": "OV000235",
+      "display": "Nyeri tekan perut kanan atas"
+    },
+    {
+      "code": "OV000236",
+      "display": "Ada pembesaran hepar >2 cm"
+    },
+    {
+      "code": "OV000241",
+      "display": "Infeksi telinga akut"
+    },
+    {
+      "code": "OV000242",
+      "display": "Tidak ada infeksi telinga"
+    },
+    {
+      "code": "OV000243",
+      "display": "BB/PB (TB): <-3 SD"
+    },
+    {
+      "code": "OV000244",
+      "display": "BB/PB (TB): -3 SD - < -2 SD"
+    },
+    {
+      "code": "OV000245",
+      "display": "BB/PB (TB): -2 SD - 1 SD"
+    },
+    {
+      "code": "OV000246",
+      "display": "BB/PB (TB): > 1 SD - 2 SD"
+    },
+    {
+      "code": "OV000247",
+      "display": "BB/PB (TB): > 2 SD - 3 SD"
+    },
+    {
+      "code": "OV000248",
+      "display": "BB/PB (TB): > 3 SD"
+    },
+    {
+      "code": "OV000249",
+      "display": "LiLA < 11,5 cm"
+    },
+    {
+      "code": "OV000250",
+      "display": "LiLA 11,5 cm - 12,5 cm"
+    },
+    {
+      "code": "OV000251",
+      "display": "LiLA ≥ 12,5 cm"
+    },
+    {
+      "code": "OV000252",
+      "display": "Ada tanda-tanda komplikasi medis"
+    },
+    {
+      "code": "OV000253",
+      "display": "Terlalu lemah untuk menyusu"
+    },
+    {
+      "code": "OV000254",
+      "display": "Gizi buruk dengan komplikasi berat"
+    },
+    {
+      "code": "OV000255",
+      "display": "Gizi buruk tanpa komplikasi"
+    },
+    {
+      "code": "OV000258",
+      "display": "Risiko Gizi Lebih"
+    },
+    {
+      "code": "OV000265",
+      "display": "Sangat pendek"
+    },
+    {
+      "code": "OV000266",
+      "display": "Pendek"
+    },
+    {
+      "code": "OV000272",
+      "display": "Anemia berat"
+    },
+    {
+      "code": "OV000273",
+      "display": "Demam tinggi terus menerus"
+    },
+    {
+      "code": "OV000274",
+      "display": "Badan teraba dingin"
+    },
+    {
+      "code": "OV000275",
+      "display": "Muntah terus menerus"
+    },
+    {
+      "code": "OV000276",
+      "display": "BAK terakhir ≥6 jam"
+    },
+    {
+      "code": "OV000277",
+      "display": "BAK terakhir <6 jam"
+    },
+    {
+      "code": "OV000278",
+      "display": "Ada rasa penuh di telinga"
+    },
+    {
+      "code": "OV000279",
+      "display": "Influenza A virus unsubtype"
+    },
+    {
+      "code": "OV000280",
+      "display": "Influenza B virus lineage not determined"
+    },
+    {
+      "code": "OV000281",
+      "display": "Ada kotoran keluar pada lubang tidak normal di sekitar anus"
+    },
+    {
+      "code": "OV000282",
+      "display": "Pusar kemerahan meluas sampai dinding perut >1 cm"
+    },
+    {
+      "code": "OV000283",
+      "display": "Imunisasi lengkap"
+    },
+    {
+      "code": "OV000285",
+      "display": "Penyandang immunocompromised sedang-berat (orang yang mengalami gangguan sistem imun)"
+    },
+    {
+      "code": "OV000286",
+      "display": "Dewasa dengan komorbid"
+    },
+    {
+      "code": "OV000287",
+      "display": "Pneumonia berat"
+    },
+    {
+      "code": "OV000288",
+      "display": "Batuk bukan pneumonia"
+    },
+    {
+      "code": "OV000289",
+      "display": "Infeksi telinga kronis"
+    },
+    {
+      "code": "OV000290",
+      "display": "Ada nanah/ lendir"
+    },
+    {
+      "code": "OV000291",
+      "display": "Ada bercak darah"
+    },
+    {
+      "code": "OV000292",
+      "display": "Ada air liur"
+    },
+    {
+      "code": "OV000294",
+      "display": "Masalah asupan yang tidak adekuat"
+    },
+    {
+      "code": "OV000295",
+      "display": "Masalah absorpsi"
+    },
+    {
+      "code": "OV000296",
+      "display": "Masalah peningkatan kebutuhan kalori"
+    },
+    {
+      "code": "OV000297",
+      "display": "Demam > 38,5 C"
+    },
+    {
+      "code": "OV000298",
+      "display": "Risiko malnutrisi rendah"
+    },
+    {
+      "code": "OV000299",
+      "display": "Risiko malnutrisi sedang"
+    },
+    {
+      "code": "OV000300",
+      "display": "Risiko malnutrisi tinggi"
+    },
+    {
+      "code": "OV000301",
+      "display": "Memiliki diagnosis kanker >5 tahun yang lalu"
+    },
+    {
+      "code": "OV000302",
+      "display": "Memiliki diagnosis kanker <5 tahun yang lalu"
+    },
+    {
+      "code": "OV000303",
+      "display": "Tidak pernah didiagnosis menderita kanker"
+    },
+    {
+      "code": "OV000304",
+      "display": "Curiga Serumen"
+    },
+    {
+      "code": "OV000305",
+      "display": "Naik adekuat"
+    },
+    {
+      "code": "OV000306",
+      "display": "Tidak Adekuat"
+    },
+    {
+      "code": "OV000307",
+      "display": "Formula 75"
+    },
+    {
+      "code": "OV000308",
+      "display": "Formula 100"
+    },
+    {
+      "code": "OV000309",
+      "display": "ReSoMal (Rehydration Solution for Malnutrition)"
+    },
+    {
+      "code": "OV000310",
+      "display": "1 kapsul biru"
+    },
+    {
+      "code": "OV000311",
+      "display": "1/2 kapsul biru"
+    },
+    {
+      "code": "OV000314",
+      "display": "Curiga OMSK (otitis media supuratif kronik)"
+    },
+    {
+      "code": "OV000316",
+      "display": "Dilakukan monitoring penyakit penyerta/ penyulit"
+    },
+    {
+      "code": "OV000318",
+      "display": "Dilakukan stimulasi tumbuh kembang"
+    },
+    {
+      "code": "OV000319",
+      "display": "Sekolah"
+    },
+    {
+      "code": "OV000320",
+      "display": "Tidak sekolah"
+    },
+    {
+      "code": "OV000321",
+      "display": "Sangat pucat"
+    },
+    {
+      "code": "OV000322",
+      "display": "Tidak pucat"
+    },
+    {
+      "code": "OV000323",
+      "display": "Susunan gigi depan tidak teratur"
+    },
+    {
+      "code": "OV000324",
+      "display": "Gigi berlubang"
+    },
+    {
+      "code": "OV000325",
+      "display": "Pelayan Publik"
+    },
+    {
+      "code": "OV000326",
+      "display": "Diplomat"
+    },
+    {
+      "code": "OV000327",
+      "display": "Gotong Royong"
+    },
+    {
+      "code": "OV000328",
+      "display": "BUMD"
+    },
+    {
+      "code": "OV000329",
+      "display": "BUMN"
+    },
+    {
+      "code": "OV000330",
+      "display": "Disabilitas Lainnya"
+    },
+    {
+      "code": "OV000331",
+      "display": "Disabilitas Mental"
+    },
+    {
+      "code": "OV000332",
+      "display": "Ibu Menyusui"
+    },
+    {
+      "code": "OV000333",
+      "display": "Masyarakat Lainnya"
+    },
+    {
+      "code": "OV000334",
+      "display": "Masyarakat Umum"
+    },
+    {
+      "code": "OV000335",
+      "display": "Pariwisata"
+    },
+    {
+      "code": "OV000336",
+      "display": "Pedagang Pasar"
+    },
+    {
+      "code": "OV000337",
+      "display": "Pegawai Pemerintah"
+    },
+    {
+      "code": "OV000338",
+      "display": "Pejabat Negara"
+    },
+    {
+      "code": "OV000339",
+      "display": "Pelayan Publik"
+    },
+    {
+      "code": "OV000340",
+      "display": "Pendamping Disabilitas"
+    },
+    {
+      "code": "OV000341",
+      "display": "Pendidik"
+    },
+    {
+      "code": "OV000342",
+      "display": "Penyuluh Agama"
+    },
+    {
+      "code": "OV000343",
+      "display": "Pra-Lansia"
+    },
+    {
+      "code": "OV000344",
+      "display": "Transportasi Publik"
+    },
+    {
+      "code": "OV000345",
+      "display": "Wakil Rakyat"
+    },
+    {
+      "code": "OV000346",
+      "display": "WNA(PNA/OI)"
+    },
+    {
+      "code": "OV000349",
+      "display": "Suara nafas vesikular meningkat"
+    },
+    {
+      "code": "OV000350",
+      "display": "Suara nafas vesikular melemah"
+    },
+    {
+      "code": "OV000351",
+      "display": "Positif (HPV tipe onkogenik lain)"
+    },
+    {
+      "code": "OV000352",
+      "display": "Positif (HPV tipe 16/18/52)"
+    },
+    {
+      "code": "OV000354",
+      "display": "Tidak ada keluarga yang terdiagnosis kanker"
+    },
+    {
+      "code": "OV000355",
+      "display": "Kelopak mata bawah dalam pucat"
+    },
+    {
+      "code": "OV000356",
+      "display": "Bibir tampak pucat"
+    },
+    {
+      "code": "OV000357",
+      "display": "Telapak tangan tampak pucat"
+    },
+    {
+      "code": "OV000358",
+      "display": "Disabilitas netra"
+    },
+    {
+      "code": "OV000359",
+      "display": "Disabilitas rungu"
+    },
+    {
+      "code": "OV000360",
+      "display": "Disabilitas wicara"
+    },
+    {
+      "code": "OV000361",
+      "display": "Akibat stroke"
+    },
+    {
+      "code": "OV000362",
+      "display": "Akibat kusta"
+    },
+    {
+      "code": "OV000363",
+      "display": "Disabilitas grahita"
+    },
+    {
+      "code": "OV000364",
+      "display": "Heartline Pusat Jantung Nasional Harapan Kita (PJNHK)"
+    },
+    {
+      "code": "OV000365",
+      "display": "Tanpa konfirmasi"
+    },
+    {
+      "code": "OV000366",
+      "display": "Tidak dilakukan reperfusi"
+    },
+    {
+      "code": "OV000367",
+      "display": "Subkorteks"
+    },
+    {
+      "code": "OV000368",
+      "display": "LBBB baru"
+    },
+    {
+      "code": "OV000369",
+      "display": "Tidak ada perubahan akut"
+    },
+    {
+      "code": "OV000370",
+      "display": "ST elevasi tidak dapat ditentukan"
+    },
+    {
+      "code": "OV000371",
+      "display": "Terjadi Multiple Perdarahan"
+    },
+    {
+      "code": "OV000372",
+      "display": "Tidak Terjadi Multiple Perdarahan"
+    },
+    {
+      "code": "OV000373",
+      "display": "Tidak ada tanda klinis gagal jantung"
+    },
+    {
+      "code": "OV000374",
+      "display": "Tidak dapat diaplikasikan / tidak tersedia"
+    },
+    {
+      "code": "OV000375",
+      "display": "Respon iskemia positif"
+    },
+    {
+      "code": "OV000376",
+      "display": "Respon iskemia negatif"
+    },
+    {
+      "code": "OV000377",
+      "display": "<5%"
+    },
+    {
+      "code": "OV000378",
+      "display": "5% to < 10%"
+    },
+    {
+      "code": "OV000379",
+      "display": "10% to < 20%"
+    },
+    {
+      "code": "OV000380",
+      "display": "20% to < 30%"
+    },
+    {
+      "code": "OV000381",
+      "display": ">= 30%"
+    },
+    {
+      "code": "OV000388",
+      "display": "Penurunan berat badan ≤5%"
+    },
+    {
+      "code": "OV000389",
+      "display": "Penurunan berat badan >5 - 10%"
+    },
+    {
+      "code": "OV000390",
+      "display": "Penurunan berat badan >10 - 20%"
+    },
+    {
+      "code": "OV000391",
+      "display": "Penurunan berat badan > 20%"
+    },
+    {
+      "code": "OV000401",
+      "display": "Benzatin Penicillin G (BPG) intramuskular"
+    },
+    {
+      "code": "OV000402",
+      "display": "Penicillin oral"
+    },
+    {
+      "code": "OV000403",
+      "display": "Erythromycin oral"
+    },
+    {
+      "code": "OV000404",
+      "display": "Tidak sama sekali"
+    },
+    {
+      "code": "OV000405",
+      "display": "Iya dan tidak teratur"
+    },
+    {
+      "code": "OV000406",
+      "display": "Iya dan teratur"
+    },
+    {
+      "code": "OV000407",
+      "display": "Statin Intensitas Tinggi"
+    },
+    {
+      "code": "OV000408",
+      "display": "Statin Intensitas Sedang"
+    },
+    {
+      "code": "OV000409",
+      "display": "Statin Intensitas Rendah"
+    },
+    {
+      "code": "OV000410",
+      "display": "Grade 0"
+    },
+    {
+      "code": "OV000411",
+      "display": "Grade 2a"
+    },
+    {
+      "code": "OV000412",
+      "display": "Grade 2b"
+    },
+    {
+      "code": "PC000001",
+      "display": "Perawatan Tali Pusat "
+    },
+    {
+      "code": "PC000002",
+      "display": "Pemberian Salep Antibiotik Mata"
+    },
+    {
+      "code": "PC000003",
+      "display": "Manajemen Terpadu Bayi Muda (MTBM)"
+    },
+    {
+      "code": "PC000004",
+      "display": "KB Pasca Persalinan"
+    },
+    {
+      "code": "PC000012",
+      "display": "Terapi tidak diketahui"
+    },
+    {
+      "code": "PC000013",
+      "display": "Riwayat tes HIV ibu"
+    },
+    {
+      "code": "PC000014",
+      "display": "Riwayat tes HIV anak"
+    },
+    {
+      "code": "PC000015",
+      "display": "Point of Care Testing HB Meter"
+    },
+    {
+      "code": "PC000016",
+      "display": "Riwayat transfusi darah ibu"
+    },
+    {
+      "code": "PR000001",
+      "display": "Prognosis baik"
+    },
+    {
+      "code": "PR000002",
+      "display": "Prognosis dubia et bonam / cenderung baik"
+    },
+    {
+      "code": "PR000003",
+      "display": "Prognosis dubia et malam / cenderung tidak baik"
+    },
+    {
+      "code": "PR000004",
+      "display": "Prognosis tidak baik"
+    },
+    {
+      "code": "QRI000001",
+      "display": "Terduga TBC SO"
+    },
+    {
+      "code": "QRI000002",
+      "display": "Terduga TBC RO"
+    },
+    {
+      "code": "QRI000003",
+      "display": "Ada"
+    },
+    {
+      "code": "QRI000004",
+      "display": "Tidak ada"
+    },
+    {
+      "code": "QRI000005",
+      "display": "Sereal, akar, dan umbi"
+    },
+    {
+      "code": "QRI000007",
+      "display": "Susu dan produk olahannya"
+    },
+    {
+      "code": "QRI000008",
+      "display": "Daging dan/atau ikan"
+    },
+    {
+      "code": "QRI000010",
+      "display": "Buah dan sayur sumber vitamin A"
+    },
+    {
+      "code": "QRI000011",
+      "display": "Buah dan sayur lainnya"
+    },
+    {
+      "code": "QRI000012",
+      "display": "Kehamilan KEK"
+    },
+    {
+      "code": "QRI000013",
+      "display": "Kehamilan Non KEK"
+    },
+    {
+      "code": "QRI000014",
+      "display": "Tidak"
+    },
+    {
+      "code": "QRI000015",
+      "display": "Ya, tidak setiap hari"
+    },
+    {
+      "code": "QRI000016",
+      "display": "Ya, setiap hari"
+    },
+    {
+      "code": "QRI000017",
+      "display": "Memiliki tempat kerja mengandung zat karsinogenik"
+    },
+    {
+      "code": "QRI000018",
+      "display": "Tidak yakin memiliki tempat kerja mengandung zat karsinogenik"
+    },
+    {
+      "code": "QRI000019",
+      "display": "Tidak memiliki tempat kerja mengandung zat karsinogenik"
+    },
+    {
+      "code": "QRI000020",
+      "display": "Memiliki riwayat keluarga kanker kolorektal generasi pertama"
+    },
+    {
+      "code": "QRI000021",
+      "display": "Tidak memiliki riwayat keluarga kanker kolorektal generasi pertama"
+    },
+    {
+      "code": "QRI000022",
+      "display": "Perokok aktif (dalam 1 tahun ini masih merokok)"
+    },
+    {
+      "code": "QRI000023",
+      "display": "Perokok/bekas perokok berhenti <10 tahun lalu"
+    },
+    {
+      "code": "QRI000024",
+      "display": "Memiliki tempat tinggal berpotensi tinggi"
+    },
+    {
+      "code": "QRI000025",
+      "display": "Tidak yakin memiliki tempat tinggal berpotensi tinggi"
+    },
+    {
+      "code": "QRI000026",
+      "display": "Tidak memiliki tempat tinggal berpotensi tinggi"
+    },
+    {
+      "code": "QRI000027",
+      "display": "Memiliki lingkungan dalam rumah yang tidak sehat"
+    },
+    {
+      "code": "QRI000029",
+      "display": "Memiliki lingkungan dalam rumah yang sehat"
+    },
+    {
+      "code": "QRI000032",
+      "display": "Memiliki diagnosis kanker >5 tahun yang lalu"
+    },
+    {
+      "code": "QRI000033",
+      "display": "Memiliki diagnosis kanker <5 tahun yang lalu"
+    },
+    {
+      "code": "QRI000034",
+      "display": "Tidak pernah didiagnosis menderita kanker"
+    },
+    {
+      "code": "QRI000035",
+      "display": "Memiliki keluarga yang terdiagnosis kanker lain"
+    },
+    {
+      "code": "QRI000036",
+      "display": "Tidak ada keluarga yang terdiagnosis kanker"
+    },
+    {
+      "code": "QRI000037",
+      "display": "Pre Hospitalization"
+    },
+    {
+      "code": "QRI000039",
+      "display": "Kamar Penuh"
+    },
+    {
+      "code": "QRI000040",
+      "display": "Kamar Tidak Tersedia"
+    },
+    {
+      "code": "QRI000041",
+      "display": "Atas Permintaan Sendiri (APS)"
+    },
+    {
+      "code": "QRI000042",
+      "display": "Post Hospitalization"
+    },
+    {
+      "code": "QRII000001",
+      "display": "Penyandang immunocompromised (12 - <60 tahun)"
+    },
+    {
+      "code": "QRII000002",
+      "display": "Kanker aktif (pengobatan imunosupresif aktif untuk tumor atau keganasan hematologi (termasuk leukemia, limfoma, dan mieloma), atau dalam waktu 12 bulan setelah mengakhiri pengobatan)"
+    },
+    {
+      "code": "QRII000003",
+      "display": "Pasien yang mengalami imunodefisiensi dan secara aktif mendapatkan obat imunosupresan"
+    },
+    {
+      "code": "QRII000004",
+      "display": "ODHA dengan CD4 <200 sel/μl dengan salah satu/lebih kondisi berikut: infeksi oportunistik, tidak sedang menjalani pengobatan HIV, atau viral load yang terdeteksi"
+    },
+    {
+      "code": "QRII000005",
+      "display": "Tidak Diketahui Mendapat Obat"
+    },
+    {
+      "code": "QRII000006",
+      "display": "Mendapat Obat Statin Intensitas Tinggi"
+    },
+    {
+      "code": "QRII000007",
+      "display": "Mendapat Obat Statin Intensitas Moderate"
+    },
+    {
+      "code": "QRII000008",
+      "display": "Mendapat Obat Statin Intensitas Rendah"
+    },
+    {
+      "code": "QRII000009",
+      "display": "Optimal Medical Therapy (OMT)"
+    },
+    {
+      "code": "QRII000010",
+      "display": "Tidak sama sekali"
+    },
+    {
+      "code": "QRII000011",
+      "display": "Iya dan tidak teratur"
+    },
+    {
+      "code": "QRII000012",
+      "display": "Iya dan teratur"
+    },
+    {
+      "code": "QRII000013",
+      "display": "Benzatin Penicillin G (BPG) intramuskular"
+    },
+    {
+      "code": "QRII000014",
+      "display": "Penicillin oral"
+    },
+    {
+      "code": "QRII000015",
+      "display": "Erythromycin oral"
+    },
+    {
+      "code": "SC000001",
+      "display": "Spesimen Rusak"
+    },
+    {
+      "code": "SRC000011",
+      "display": "Pemeriksaaan TCM XDR"
+    },
+    {
+      "code": "SRC000012",
+      "display": "Pemeriksaaan LPA lini 1"
+    },
+    {
+      "code": "SRC000013",
+      "display": "Pemeriksaaan LPA lini 2"
+    },
+    {
+      "code": "SRC000014",
+      "display": "Pemeriksaan Paket Standar Kepekaan"
+    },
+    {
+      "code": "SRR000007",
+      "display": "Pemeriksaan Diagnosis"
+    },
+    {
+      "code": "SRR000008",
+      "display": "Follow Up"
+    },
+    {
+      "code": "SRR000009",
+      "display": "Pemeriksaan Ulang"
+    },
+    {
+      "code": "SRR000010",
+      "display": "Akhir Pengobatan"
+    },
+    {
+      "code": "SRR000011",
+      "display": "Monitoring rutin"
+    },
+    {
+      "code": "SRR000012",
+      "display": "PPIA"
+    },
+    {
+      "code": "ST000001",
+      "display": "Sputum Pagi"
+    },
+    {
+      "code": "ST000002",
+      "display": "Sputum Sewaktu"
+    },
+    {
+      "code": "SU000001",
+      "display": "Keluarga"
+    },
+    {
+      "code": "SU000002",
+      "display": "Tenaga kesehatan"
+    },
+    {
+      "code": "SU000003",
+      "display": "Lainnya"
+    },
+    {
+      "code": "TL000001",
+      "display": "Rawat inap"
+    },
+    {
+      "code": "X099379",
+      "display": "Pemeriksaaan TCM XDR"
+    },
+    {
+      "code": "X099380",
+      "display": "Line Probe Assay (LPA) Lini 1"
+    },
+    {
+      "code": "X099381",
+      "display": "Line Probe Assay (LPA) Lini 2"
+    },
+    {
+      "code": "X099383",
+      "display": "Pemeriksaan Paket Standar Kepekaan"
+    },
+    {
+      "code": "X099384",
+      "display": "Pemeriksaan paket standar kepekaan (H - SLID - capreomycin)"
+    },
+    {
+      "code": "X099385",
+      "display": "Pemeriksaan paket standar kepekaan (H Dosis Tingsi)"
+    },
+    {
+      "code": "X099386",
+      "display": "Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) BTA"
+    },
+    {
+      "code": "X099387",
+      "display": "Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) biakan"
+    },
+    {
+      "code": "X099388",
+      "display": "Biakan TB"
+    },
+    {
+      "code": "X099389",
+      "display": "Hasil Uji Metode LJ"
+    },
+    {
+      "code": "X099390",
+      "display": "Hasil Uji Metode MGIT"
+    },
+    {
+      "code": "X099391",
+      "display": "H Dosis Rendah"
+    },
+    {
+      "code": "X099392",
+      "display": "FQ Dosis Rendah"
+    },
+    {
+      "code": "X099393",
+      "display": "Hasil Uji Lfx"
+    },
+    {
+      "code": "X099394",
+      "display": "Hasil Uji Mfx DT"
+    },
+    {
+      "code": "X099770",
+      "display": "Rifampisin sensitive"
+    },
+    {
+      "code": "X099771",
+      "display": "Rifampisin resistan"
+    },
+    {
+      "code": "X099772",
+      "display": "Rifampisin indeterminate"
+    },
+    {
+      "code": "X099773",
+      "display": "Indeterminate (IDT)"
+    },
+    {
+      "code": "X099774",
+      "display": "Ress Inffered (RI)"
+    },
+    {
+      "code": "X099775",
+      "display": "Moxifloxacin DT (Mfx DT)"
+    },
+    {
+      "code": "X099776",
+      "display": "H High Dosage [Susceptibility] by Method for Slow-growing mycobacteria"
+    },
+    {
+      "code": "X099777",
+      "display": "H - SLID - capreomycin [Susceptibility] by Method for Slow-growing mycobacteria"
+    },
+    {
+      "code": "X099778",
+      "display": "Moxifloxacin High Dosage [Susceptibility] by Method for Slow-growing mycobacteria"
+    },
+    {
+      "code": "X099779",
+      "display": "Delamanid [Susceptibility] by Method for Slow-growing mycobacteria"
+    },
+    {
+      "code": "X099780",
+      "display": "Bedaquiline [Susceptibility] by Method for Slow-growing mycobacteria"
+    }
+  ],
+  "meta": {
+    "versionId": "2",
+    "lastUpdated": "2023-11-09T13:31:14.515+07:00"
+  },
+  "language": "Indonesia",
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-02-05T00:00:00.000Z",
+  "publisher": "DTO MoH",
+  "contact": [
+    {
+      "name": "DTO Kemkes",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "terminologisehat@kemkes.go.id"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "valueSet": "http://terminology.kemkes.go.id/ValueSet/clinical-term",
+  "hierarchyMeaning": "is-a",
+  "compositional": false,
+  "versionNeeded": true,
+  "count": 689
+}

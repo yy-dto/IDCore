@@ -1,0 +1,226 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "KemkesLocationTypeCS",
+  "id": "KemkesLocationTypeCS",
+  "title": "Terminology Kemkes location-type CodeSystem",
+  "description": "Terminology Kemkes location-type CodeSystem",
+  "url": "http://terminology.kemkes.go.id/CodeSystem/location-type",
+  "concept": [
+    {
+      "code": "LO000001",
+      "display": "Dalam perjalanan dari rumah/ masyarakat"
+    },
+    {
+      "code": "LO000002",
+      "display": "Dalam perjalanan ke faskes lain"
+    },
+    {
+      "code": "LO000003",
+      "display": "Tempat Meninggal Lainnya"
+    },
+    {
+      "code": "LO000004",
+      "display": "Belum Tahu Jenis Tempat Meninggal"
+    },
+    {
+      "code": "LT000001",
+      "display": "Lokasi Tempat Bersalin"
+    },
+    {
+      "code": "LT000002",
+      "display": "Tempat Meninggal Faskes"
+    },
+    {
+      "code": "LT000003",
+      "display": "Tempat Meninggal Non Faskes"
+    },
+    {
+      "code": "LT000004",
+      "display": "Alamat Lahir"
+    },
+    {
+      "code": "LT000005",
+      "display": "Alamat Mati"
+    },
+    {
+      "code": "LT000006",
+      "display": "Rumah Ibu"
+    },
+    {
+      "code": "LT000007",
+      "display": "Rumah Dukun"
+    },
+    {
+      "code": "LT000008",
+      "display": "Dalam perjalanan dari rumah/ masyarakat"
+    },
+    {
+      "code": "LT000009",
+      "display": "Dalam perjalanan ke faskes lain"
+    },
+    {
+      "code": "LT000010",
+      "display": "Tempat Meninggal Lainnya"
+    },
+    {
+      "code": "LT000011",
+      "display": "Belum Tahu Jenis Tempat Meninggal"
+    },
+    {
+      "code": "RT0001",
+      "display": "Wahana PIDI"
+    },
+    {
+      "code": "RT0002",
+      "display": "Wahana PIDGI"
+    },
+    {
+      "code": "RT0003",
+      "display": "RS Pendidikan"
+    },
+    {
+      "code": "RT0004",
+      "display": "Tempat Tidur"
+    },
+    {
+      "code": "RT0005",
+      "display": "Bank Darah"
+    },
+    {
+      "code": "RT0006",
+      "display": "Instalasi Gawat Darurat"
+    },
+    {
+      "code": "RT0007",
+      "display": "Ruang Perawatan Intensif Umum (ICU)"
+    },
+    {
+      "code": "RT0008",
+      "display": "Ruangan Persalinan"
+    },
+    {
+      "code": "RT0009",
+      "display": "Ruang Perawatan Intensif"
+    },
+    {
+      "code": "RT0010",
+      "display": "Daerah Rawat Pasien ICU/ICCU/HCU/ PICU"
+    },
+    {
+      "code": "RT0011",
+      "display": "Ruangan Perawatan Intensif Pediatrik (PICU)"
+    },
+    {
+      "code": "RT0012",
+      "display": "Ruangan Perawatan Intensif Neonatus(NICU)"
+    },
+    {
+      "code": "RT0013",
+      "display": "High Care Unit (HCU)"
+    },
+    {
+      "code": "RT0014",
+      "display": "Intensive Cardiology Care Unit (ICCU)"
+    },
+    {
+      "code": "RT0015",
+      "display": "Respiratory Intensive Care Unit (RICU)"
+    },
+    {
+      "code": "RT0016",
+      "display": "Ruang Rawat Inap"
+    },
+    {
+      "code": "RT0017",
+      "display": "Ruangan Perawatan (Post Partum)"
+    },
+    {
+      "code": "RT0018",
+      "display": "Ruangan Perawatan Isolasi"
+    },
+    {
+      "code": "RT0019",
+      "display": "Ruangan Perawatan Neonatus Infeksius/ Isolasi"
+    },
+    {
+      "code": "RT0020",
+      "display": "Ruangan Perawatan Neonatus Non Infeksius"
+    },
+    {
+      "code": "RT0021",
+      "display": "Ruangan Perawatan Pasien Paska Terapi"
+    },
+    {
+      "code": "RT0022",
+      "display": "Ruangan Rawat Pasca Persalinan"
+    },
+    {
+      "code": "RT0023",
+      "display": "Ruangan/ Daerah Rawat Pasien Isolasi"
+    },
+    {
+      "code": "RT0024",
+      "display": "Ruangan/ Daerah Rawat Pasien Non Isolasi"
+    },
+    {
+      "code": "RT0025",
+      "display": "Ruang Operasi"
+    },
+    {
+      "code": "RT0026",
+      "display": "Ruangan Observasi"
+    },
+    {
+      "code": "RT0027",
+      "display": "Ruangan Resusitasi"
+    },
+    {
+      "code": "RT0028",
+      "display": "Ruangan Tindakan Anak"
+    },
+    {
+      "code": "RT0029",
+      "display": "Ruangan Tindakan Bedah"
+    },
+    {
+      "code": "RT0030",
+      "display": "Ruangan Tindakan Kebidanan"
+    },
+    {
+      "code": "RT0031",
+      "display": "Ruangan Tindakan Non-Bedah"
+    },
+    {
+      "code": "RT0032",
+      "display": "Ruangan Triase"
+    },
+    {
+      "code": "RT0033",
+      "display": "Ruangan Ultra Sonografi (USG)"
+    }
+  ],
+  "language": "Indonesia",
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-02-05T00:00:00.000Z",
+  "publisher": "DTO MoH",
+  "contact": [
+    {
+      "name": "DTO Kemkes",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "terminologisehat@kemkes.go.id"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "valueSet": "http://terminology.kemkes.go.id/ValueSet/location-type",
+  "hierarchyMeaning": "is-a",
+  "compositional": false,
+  "versionNeeded": true,
+  "count": 48
+}

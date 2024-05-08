@@ -1,0 +1,238 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "KemkesOrganizationTypeCS",
+  "id": "KemkesOrganizationTypeCS",
+  "title": "Terminology Kemkes organization type CodeSystem",
+  "description": "Terminology Kemkes organization type CodeSystem",
+  "url": "http://terminology.kemkes.go.id/CodeSystem/organization-type",
+  "concept": [
+    {
+      "code": "EHA000004",
+      "display": "Skrining TBC DM"
+    },
+    {
+      "code": "OT000001",
+      "display": "Polindes"
+    },
+    {
+      "code": "OT000002",
+      "display": "Pustu"
+    },
+    {
+      "code": "OT000003",
+      "display": "RS ODHA"
+    },
+    {
+      "code": "OT000004",
+      "display": "Bidan Praktek Mandiri"
+    },
+    {
+      "code": "OT000005",
+      "display": "Rumah Dukun"
+    },
+    {
+      "code": "OT000006",
+      "display": "Rumah Sakit Pemerintah"
+    },
+    {
+      "code": "OT000007",
+      "display": "Rumah Sakit Swasta"
+    },
+    {
+      "code": "OT000008",
+      "display": "Rumah Bersalin"
+    },
+    {
+      "code": "OT000009",
+      "display": "Balai Kesehatan Paru Masyarakat"
+    },
+    {
+      "code": "OT000010",
+      "display": "Klinik Medis Utama"
+    },
+    {
+      "code": "OT000011",
+      "display": "Klinik Medis Pratama"
+    },
+    {
+      "code": "OT000012",
+      "display": "Dokter Praktik Mandiri"
+    },
+    {
+      "code": "OT000013",
+      "display": "Bidan Praktik Mandiri"
+    },
+    {
+      "code": "101",
+      "display": "Tempat Praktik Mandiri Tenaga Kesehatan"
+    },
+    {
+      "code": "102",
+      "display": "Pusat Kesehatan Masyarakat"
+    },
+    {
+      "code": "103",
+      "display": "Klinik"
+    },
+    {
+      "code": "104",
+      "display": "Rumah Sakit"
+    },
+    {
+      "code": "105",
+      "display": "Apotek"
+    },
+    {
+      "code": "106",
+      "display": "Unit Transfusi Darah"
+    },
+    {
+      "code": "107",
+      "display": "Laboratorium Kesehatan"
+    },
+    {
+      "code": "108",
+      "display": "Optikal"
+    },
+    {
+      "code": "109",
+      "display": "Fasilitas Pelayanan Kedokteran untuk Kepentingan Hukum"
+    },
+    {
+      "code": "110",
+      "display": "Fasilitas Pelayanan Kesehatan Tradisional"
+    },
+    {
+      "code": "111",
+      "display": "Balai Kesehatan"
+    },
+    {
+      "code": "112",
+      "display": "Fasilitas Pelayanan Kesehatan Lainnya"
+    },
+    {
+      "code": "113",
+      "display": "Industri Farmasi"
+    },
+    {
+      "code": "114",
+      "display": "Industri Alkes"
+    },
+    {
+      "code": "115",
+      "display": "Industri PKRT"
+    },
+    {
+      "code": "116",
+      "display": "Industri Kosmetika"
+    },
+    {
+      "code": "117",
+      "display": "Industri Obat Tradisional"
+    },
+    {
+      "code": "118",
+      "display": "Usaha Kecil & Mikro Obat Tradisional"
+    },
+    {
+      "code": "119",
+      "display": "Industri Rumah Tangga Pangan"
+    },
+    {
+      "code": "120",
+      "display": "Industri Rumah Tangga Alkes PKRT"
+    },
+    {
+      "code": "121",
+      "display": "Pedagang Besar Farmasi"
+    },
+    {
+      "code": "122",
+      "display": "Penyalur Alkes PKRT"
+    },
+    {
+      "code": "123",
+      "display": "Toko Obat"
+    },
+    {
+      "code": "124",
+      "display": "Toko Alkes PKRT"
+    },
+    {
+      "code": "125",
+      "display": "Rumah Duka"
+    },
+    {
+      "code": "126",
+      "display": "Institusi Pendidikan Tenaga Kesehatan"
+    },
+    {
+      "code": "127",
+      "display": "Institusi Diklat dan Pengembangan SDMK"
+    },
+    {
+      "code": "128",
+      "display": "Institusi Pendidikan Lainnya"
+    },
+    {
+      "code": "129",
+      "display": "Dinas Kesehatan"
+    },
+    {
+      "code": "130",
+      "display": "Posyandu Prima"
+    },
+    {
+      "code": "131",
+      "display": "Posyandu"
+    },
+    {
+      "code": "132",
+      "display": "Sentra Vaksinasi / Pos Imunisasi Lainnya"
+    },
+    {
+      "code": "133",
+      "display": "Sekolah"
+    },
+    {
+      "code": "134",
+      "display": "Kantor Kesehatan Pelabuhan"
+    },
+    {
+      "code": "135",
+      "display": "Instalasi Farmasi"
+    },
+    {
+      "code": "136",
+      "display": "Sarana Pembuangan Limbah Medis"
+    },
+    {
+      "code": "137",
+      "display": "Asuransi / Unit Pembiayaan"
+    }
+  ],
+  "language": "Indonesia",
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-02-05T00:00:00.000Z",
+  "publisher": "DTO MoH",
+  "contact": [
+    {
+      "name": "DTO Kemkes",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "terminologisehat@kemkes.go.id"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "valueSet": "http://terminology.kemkes.go.id/ValueSet/organization-type",
+  "hierarchyMeaning": "is-a",
+  "compositional": false,
+  "versionNeeded": true,
+  "count": 51
+}

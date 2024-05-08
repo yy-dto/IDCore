@@ -1,6 +1,5 @@
 {
     "resourceType": "ValueSet",
-    "id": "service-type",
     "meta": {
         "lastUpdated": "2020-02-24T12:41:39.109+11:00",
         "profile": [

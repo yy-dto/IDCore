@@ -1,0 +1,378 @@
+[
+  {
+    "outputFile": "CodeSystem-EncounterLocationServiceClassInpatient.json",
+    "fshName": "EncounterLocationServiceClassInpatient",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-EncounterLocationServiceClass-Inpatient.fsh",
+    "startLine": 4,
+    "endLine": 18
+  },
+  {
+    "outputFile": "CodeSystem-EncounterLocationServiceClassOutpatient.json",
+    "fshName": "EncounterLocationServiceClassOutpatient",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-EncounterLocationServiceClass-Outpatient.fsh",
+    "startLine": 4,
+    "endLine": 11
+  },
+  {
+    "outputFile": "CodeSystem-EncounterLocationUpgradeClass.json",
+    "fshName": "EncounterLocationUpgradeClass",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-EncounterLocationUpgradeClass.fsh",
+    "startLine": 4,
+    "endLine": 15
+  },
+  {
+    "outputFile": "CodeSystem-KemkesCancerMCategory.json",
+    "fshName": "KemkesCancerMCategoryCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesCancerMCategory.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "CodeSystem-KemkesCancerNCategory.json",
+    "fshName": "KemkesCancerNCategory",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesCancerNCategory.fsh",
+    "startLine": 1,
+    "endLine": 35
+  },
+  {
+    "outputFile": "CodeSystem-KemkesCancerTCategoryCS.json",
+    "fshName": "KemkesCancerTCategoryCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesCancerTCategory.fsh",
+    "startLine": 1,
+    "endLine": 40
+  },
+  {
+    "outputFile": "CodeSystem-KemkesCarePlanCategoryCS.json",
+    "fshName": "KemkesCarePlanCategoryCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesCarePlanCategory.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "CodeSystem-KemkesClinicalSpecialityCS.json",
+    "fshName": "KemkesClinicalSpecialityCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesClinicalSpeciality.fsh",
+    "startLine": 1,
+    "endLine": 262
+  },
+  {
+    "outputFile": "CodeSystem-KemkesClinicalTermCS.json",
+    "fshName": "KemkesClinicalTermCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesClinicalTerm.fsh",
+    "startLine": 1,
+    "endLine": 713
+  },
+  {
+    "outputFile": "CodeSystem-KemkesCompositionSectionCS.json",
+    "fshName": "KemkesCompositionSectionCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesCompositionSection.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
+    "outputFile": "CodeSystem-KemkesCompositionTypeCS.json",
+    "fshName": "KemkesCompositionTypeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesCompositionType.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "CodeSystem-KemkesExaminationCS.json",
+    "fshName": "KemkesExaminationCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesExamination.fsh",
+    "startLine": 1,
+    "endLine": 255
+  },
+  {
+    "outputFile": "CodeSystem-KemkesHospitalClassCS.json",
+    "fshName": "KemkesHospitalClassCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesHospitalClass.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "CodeSystem-KemkesICDOMorphologyCS.json",
+    "fshName": "KemkesICDOMorphologyCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesICD-O-Morphology.fsh",
+    "startLine": 1,
+    "endLine": 1164
+  },
+  {
+    "outputFile": "CodeSystem-KemkesICDOTopographyCS.json",
+    "fshName": "KemkesICDOTopographyCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesICD-O-Topography.fsh",
+    "startLine": 1,
+    "endLine": 421
+  },
+  {
+    "outputFile": "CodeSystem-KemkesImmunizationFundingSourceCS.json",
+    "fshName": "KemkesImmunizationFundingSourceCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesImmunizationFundingSource.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "CodeSystem-KemkesImmunizationProgramEligibilityCS.json",
+    "fshName": "KemkesImmunizationProgramEligibilityCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesImmunizationProgramEligibility.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "CodeSystem-KemkesImmunizationReasonCS.json",
+    "fshName": "KemkesImmunizationReasonCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesImmunizationReason.fsh",
+    "startLine": 1,
+    "endLine": 34
+  },
+  {
+    "outputFile": "CodeSystem-KemkesImmunizationRoutineTimingCS.json",
+    "fshName": "KemkesImmunizationRoutineTimingCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesImmunizationRoutineTiming.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "CodeSystem-KemkesImmunizationStatusReasonCS.json",
+    "fshName": "KemkesImmunizationStatusReasonCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesImmunizationStatusReason.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "CodeSystem-KemkesKPSPCS.json",
+    "fshName": "KemkesKPSPCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesKPSP.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "CodeSystem-KemkesLocationTypeCS.json",
+    "fshName": "KemkesLocationTypeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesLocationType.fsh",
+    "startLine": 1,
+    "endLine": 70
+  },
+  {
+    "outputFile": "CodeSystem-KemkesLocationUpgradeClassCS.json",
+    "fshName": "KemkesLocationUpgradeClassCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesLocationUpgradeClass.fsh",
+    "startLine": 1,
+    "endLine": 28
+  },
+  {
+    "outputFile": "CodeSystem-KemkesMedicationFormCS.json",
+    "fshName": "KemkesMedicationFormCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesMedicationForm.fsh",
+    "startLine": 1,
+    "endLine": 123
+  },
+  {
+    "outputFile": "CodeSystem-KemkesMedicationTypeCS.json",
+    "fshName": "KemkesMedicationTypeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesMedicationType.fsh",
+    "startLine": 1,
+    "endLine": 27
+  },
+  {
+    "outputFile": "CodeSystem-KemkesObservationInterpretationCS.json",
+    "fshName": "KemkesObservationInterpretationCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesObservationInterpretation.fsh",
+    "startLine": 1,
+    "endLine": 26
+  },
+  {
+    "outputFile": "CodeSystem-KemkesOrganizationTypeCS.json",
+    "fshName": "KemkesOrganizationTypeCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesOrganizationType.fsh",
+    "startLine": 1,
+    "endLine": 73
+  },
+  {
+    "outputFile": "CodeSystem-KemkesPrevTBTreatmentCS.json",
+    "fshName": "KemkesPrevTBTreatmentCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesPrevTBTreatment.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "CodeSystem-KemkesSmallestLogisticUnitCS.json",
+    "fshName": "KemkesSmallestLogisticUnitCS",
+    "fshType": "CodeSystem",
+    "fshFile": "CodeSystem-KemkesSmallestLogisticUnit.fsh",
+    "startLine": 1,
+    "endLine": 38
+  },
+  {
+    "outputFile": "Condition-IDCoreCondition.json",
+    "fshName": "IDCoreCondition",
+    "fshType": "Instance",
+    "fshFile": "Profile-IDCoreCondition.fsh",
+    "startLine": 57,
+    "endLine": 66
+  },
+  {
+    "outputFile": "Encounter-IDCoreEncounter.json",
+    "fshName": "IDCoreEncounter",
+    "fshType": "Instance",
+    "fshFile": "Profile-IDCoreEncounter.fsh",
+    "startLine": 85,
+    "endLine": 105
+  },
+  {
+    "outputFile": "Encounter-IDCoreEncounterEMER.json",
+    "fshName": "IDCoreEncounterEMER",
+    "fshType": "Instance",
+    "fshFile": "Profile-IDCoreEncounterEMER.fsh",
+    "startLine": 12,
+    "endLine": 32
+  },
+  {
+    "outputFile": "Encounter-IDCoreEncounterIMP.json",
+    "fshName": "IDCoreEncounterIMP",
+    "fshType": "Instance",
+    "fshFile": "Profile-IDCoreEncounterIMP.fsh",
+    "startLine": 12,
+    "endLine": 33
+  },
+  {
+    "outputFile": "StructureDefinition-EncounterLocation.json",
+    "fshName": "EncounterLocation",
+    "fshType": "Extension",
+    "fshFile": "Extension-EncounterLocation.fsh",
+    "startLine": 1,
+    "endLine": 18
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreCondition.json",
+    "fshName": "IDCoreCondition",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreCondition.fsh",
+    "startLine": 15,
+    "endLine": 55
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreEncounter.json",
+    "fshName": "IDCoreEncounter",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreEncounter.fsh",
+    "startLine": 1,
+    "endLine": 78
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreEncounterEMER.json",
+    "fshName": "IDCoreEncounterEMER",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreEncounterEMER.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreEncounterIMP.json",
+    "fshName": "IDCoreEncounterIMP",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreEncounterIMP.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreEncounterStatusFinished.json",
+    "fshName": "IDCoreEncounterStatusFinished",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreEncounterStatusFinished.fsh",
+    "startLine": 1,
+    "endLine": 9
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreObservation.json",
+    "fshName": "IDCoreObservation",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreObservation.fsh",
+    "startLine": 11,
+    "endLine": 83
+  },
+  {
+    "outputFile": "ValueSet-EncounterLocationServiceClassInpatientVS.json",
+    "fshName": "EncounterLocationServiceClassInpatientVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterLocationServiceClass-Inpatient.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterLocationServiceClassOutpatientVS.json",
+    "fshName": "EncounterLocationServiceClassOutpatientVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterLocationServiceClass-Outpatient.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-EncounterLocationUpgradeClassVS.json",
+    "fshName": "EncounterLocationUpgradeClassVS",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterLocationEncounterLocationUpgradeClass.fsh",
+    "startLine": 1,
+    "endLine": 4
+  },
+  {
+    "outputFile": "ValueSet-Observation.code.json",
+    "fshName": "Observation.code",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ObservationCode.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "ValueSet-Observation.interpretation.json",
+    "fshName": "Observation.interpretation",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ObservationInterpretation.fsh",
+    "startLine": 4,
+    "endLine": 102
+  },
+  {
+    "outputFile": "ValueSet-Observation.valueCodeableConcept.json",
+    "fshName": "Observation.valueCodeableConcept",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ObservationValueCodeableConcept.fsh",
+    "startLine": 1,
+    "endLine": 7
+  },
+  {
+    "outputFile": "ValueSet-Observation.valueCodeableConceptSpecific.json",
+    "fshName": "Observation.valueCodeableConceptSpecific",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ObservationValueCodeableConceptSpecific.fsh",
+    "startLine": 1,
+    "endLine": 55
+  }
+]

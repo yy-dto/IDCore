@@ -1,0 +1,22 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Observation.valueCodeableConcept",
+  "id": "Observation.valueCodeableConcept",
+  "title": "Value set specific for Observation value CodeableConcept",
+  "description": "Value set specific for Observation value CodeableConcept",
+  "url": "http://terminology.kemkes.go.id/ValueSet/Observation.valueCodeableConcept",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org"
+      },
+      {
+        "system": "http://snomed.info/sct"
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term"
+      }
+    ]
+  }
+}

@@ -24,5 +24,3 @@ Description: "Terminology Kemkes Observation Interpretation CodeSystem"
 * ^content = #complete
 * #BMI-Normal "Normal weight"
 * #BMI-SevereUnder "Severely Underweight"
-* #BMI-Normal "Normal weight"
-* #BMI-SevereUnder "Severely Underweight"
