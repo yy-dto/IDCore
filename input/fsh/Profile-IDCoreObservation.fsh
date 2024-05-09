@@ -1,8 +1,8 @@
-Alias: $Observation.code = http://terminology.kemkes.go.id/ValueSet/Observation.code
+Alias: $ObservationCode = http://terminology.kemkes.go.id/ValueSet/Observation-code
 Alias: $Observation.category = http://terminology.hl7.org/ValueSet/v3-ObservationCategory
 Alias: $Observation.dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason
 Alias: $Observation.interpretation = http://terminology.kemkes.go.id/ValueSet/Observation.interpretation
-Alias: $Observation.bodySite = http://hl7.org/fhir/ValueSet/body-site
+Alias: $ObservationBodySite = http://terminology.kemkes.go.id/ValueSet/Observation-bodysite
 Alias: $Observation.methods = http://hl7.org/fhir/ValueSet/observation-methods
 Alias: $Observation.status = http://hl7.org/fhir/ValueSet/observation-status
 Alias: $Observation.referencerangeType = http://terminology.hl7.org/ValueSet/referencerange-meaning
@@ -52,7 +52,7 @@ Description: "ID Core Observation profile"
 * partOf only Reference(MedicationAdministration or MedicationDispense or MedicationStatement or Procedure or Immunization or ImagingStudy) 
 * status from $Observation.status
 * category from $Observation.category
-* code from $Observation.code
+* code from $ObservationCode
 * subject only Reference(Patient or Group or Device or Location) 
 * focus only Reference(Resource) 
 * encounter only Reference(Encounter) 
@@ -63,7 +63,7 @@ Description: "ID Core Observation profile"
 * dataAbsentReason from $Observation.dataAbsentReason
 * interpretation from $Observation.interpretation
 * note only Annotation 
-* bodySite from $Observation.bodySite
+* bodySite from $ObservationBodySite
 * method from $Observation.methods
 * specimen only Reference(Specimen) 
 * device only Reference(Device or DeviceMetric) 
@@ -77,7 +77,7 @@ Description: "ID Core Observation profile"
 * hasMember only Reference(Observation or QuestionnaireResponse or MolecularSequence) 
 * derivedFrom only Reference(DocumentReference or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence) 
 * component only BackboneElement 
-* component.code from $Observation.code
+* component.code from $ObservationCode
 * component.value[x] only Quantity or CodeableConcept or string or boolean or integer or Range or Ratio or SampledData or time or dateTime or Period 
 * component.dataAbsentReason from $Observation.dataAbsentReason
 * component.interpretation from $Observation.interpretation

@@ -1,7 +1,7 @@
-ValueSet: Observation.code
+ValueSet: Observationcode
 Title: "Value set specific for Observation Code"
 Description: "Value set specific for Observation Code"
-* ^url = "http://terminology.kemkes.go.id/ValueSet/Observation.code"
+* ^url = "http://terminology.kemkes.go.id/ValueSet/Observation-code"
 * include codes from system http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes
 * include codes from system http://loinc.org
 * include codes from system http://terminology.kemkes.go.id/CodeSystem/clinical-term

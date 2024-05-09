@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationBodySite",
+  "id": "ObservationBodySite",
+  "title": "Value set specific for Observation BodySite",
+  "description": "Value set specific for Observation BodySite",
+  "url": "http://terminology.kemkes.go.id/ValueSet/Observation-bodysite",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "91723000"
+          }
+        ]
+      }
+    ]
+  }
+}

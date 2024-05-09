@@ -26,6 +26,14 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/IDCoreVSBPDiastolic"
+        },
+        "name": "Diastolic Blood Pressure",
+        "description": "Profile for diastolic blood pressure value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/EncounterLocation"
         },
         "name": "Encounter Location Extention",
@@ -191,6 +199,14 @@
           "reference": "CodeSystem/KemkesCancerTCategoryCS"
         },
         "name": "Kemkes Cancer T Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreVSBPSystolic"
+        },
+        "name": "Systolic Blood Pressure",
+        "description": "Profile for systolic blood pressure value.",
         "exampleBoolean": false
       },
       {
@@ -363,7 +379,15 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/Observation.code"
+          "reference": "ValueSet/ObservationBodySite"
+        },
+        "name": "Value set specific for Observation BodySite",
+        "description": "Value set specific for Observation BodySite",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/Observationcode"
         },
         "name": "Value set specific for Observation Code",
         "description": "Value set specific for Observation Code",
@@ -391,6 +415,14 @@
         },
         "name": "Value set specific for Observation value CodeableConcept",
         "description": "Value set specific for Observation value CodeableConcept",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreObservationVitalSigns"
+        },
+        "name": "Vital Signs Profile",
+        "description": "IDCore Vital Signs Profile",
         "exampleBoolean": false
       }
     ],

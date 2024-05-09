@@ -66,7 +66,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation.code"
+          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation-code"
         }
       },
       {
@@ -100,7 +100,7 @@
         "path": "Observation.bodySite",
         "binding": {
           "strength": "required",
-          "valueSet": "http://hl7.org/fhir/ValueSet/body-site"
+          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation-bodysite"
         }
       },
       {
@@ -132,7 +132,7 @@
         "path": "Observation.component.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation.code"
+          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation-code"
         }
       },
       {

@@ -1,8 +1,0 @@
-canonical: http://terminology.hl7.org
-fhirVersion: 4.0.1
-FSHOnly: true
-applyExtensionMetadataToRoot: false
-id: terminology.hl7
-name: TerminologyHl7
-status: active
-version: 3.0.0

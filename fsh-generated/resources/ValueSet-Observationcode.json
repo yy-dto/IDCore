@@ -1,0 +1,55 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Observationcode",
+  "id": "Observationcode",
+  "title": "Value set specific for Observation Code",
+  "description": "Value set specific for Observation Code",
+  "url": "http://terminology.kemkes.go.id/ValueSet/Observation-code",
+  "compose": {
+    "include": [
+      {
+        "system": "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes"
+      },
+      {
+        "system": "http://loinc.org"
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term"
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/examination"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "116312005"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "116337000"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "297268004"
+          }
+        ]
+      }
+    ]
+  }
+}

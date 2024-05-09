@@ -320,6 +320,30 @@
     "endLine": 83
   },
   {
+    "outputFile": "StructureDefinition-IDCoreObservationVitalSigns.json",
+    "fshName": "IDCoreObservationVitalSigns",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreObservationVitalSigns.fsh",
+    "startLine": 12,
+    "endLine": 54
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreVSBPDiastolic.json",
+    "fshName": "IDCoreVSBPDiastolic",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreVSBPDiastolic.fsh",
+    "startLine": 3,
+    "endLine": 20
+  },
+  {
+    "outputFile": "StructureDefinition-IDCoreVSBPSystolic.json",
+    "fshName": "IDCoreVSBPSystolic",
+    "fshType": "Profile",
+    "fshFile": "Profile-IDCoreVSBPSystolic.fsh",
+    "startLine": 3,
+    "endLine": 20
+  },
+  {
     "outputFile": "ValueSet-EncounterLocationServiceClassInpatientVS.json",
     "fshName": "EncounterLocationServiceClassInpatientVS",
     "fshType": "ValueSet",
@@ -344,14 +368,6 @@
     "endLine": 4
   },
   {
-    "outputFile": "ValueSet-Observation.code.json",
-    "fshName": "Observation.code",
-    "fshType": "ValueSet",
-    "fshFile": "ValueSet-ObservationCode.fsh",
-    "startLine": 1,
-    "endLine": 11
-  },
-  {
     "outputFile": "ValueSet-Observation.interpretation.json",
     "fshName": "Observation.interpretation",
     "fshType": "ValueSet",
@@ -374,5 +390,21 @@
     "fshFile": "ValueSet-ObservationValueCodeableConceptSpecific.fsh",
     "startLine": 1,
     "endLine": 55
+  },
+  {
+    "outputFile": "ValueSet-ObservationBodySite.json",
+    "fshName": "ObservationBodySite",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ObservationBodySite.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-Observationcode.json",
+    "fshName": "Observationcode",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-ObservationCode.fsh",
+    "startLine": 1,
+    "endLine": 11
   }
 ]

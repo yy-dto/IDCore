@@ -39,10 +39,14 @@ StructureDefinition-IDCoreEncounterEMER.json             IDCoreEncounterEMER    
 StructureDefinition-IDCoreEncounterIMP.json              IDCoreEncounterIMP                         Profile     Profile-IDCoreEncounterIMP.fsh                               1 - 5
 StructureDefinition-IDCoreEncounterStatusFinished.json   IDCoreEncounterStatusFinished              Profile     Profile-IDCoreEncounterStatusFinished.fsh                    1 - 9
 StructureDefinition-IDCoreObservation.json               IDCoreObservation                          Profile     Profile-IDCoreObservation.fsh                                11 - 83
+StructureDefinition-IDCoreObservationVitalSigns.json     IDCoreObservationVitalSigns                Profile     Profile-IDCoreObservationVitalSigns.fsh                      12 - 54
+StructureDefinition-IDCoreVSBPDiastolic.json             IDCoreVSBPDiastolic                        Profile     Profile-IDCoreVSBPDiastolic.fsh                              3 - 20
+StructureDefinition-IDCoreVSBPSystolic.json              IDCoreVSBPSystolic                         Profile     Profile-IDCoreVSBPSystolic.fsh                               3 - 20
 ValueSet-EncounterLocationServiceClassInpatientVS.json   EncounterLocationServiceClassInpatientVS   ValueSet    ValueSet-EncounterLocationServiceClass-Inpatient.fsh         1 - 4
 ValueSet-EncounterLocationServiceClassOutpatientVS.json  EncounterLocationServiceClassOutpatientVS  ValueSet    ValueSet-EncounterLocationServiceClass-Outpatient.fsh        1 - 4
 ValueSet-EncounterLocationUpgradeClassVS.json            EncounterLocationUpgradeClassVS            ValueSet    ValueSet-EncounterLocationEncounterLocationUpgradeClass.fsh  1 - 4
-ValueSet-Observation.code.json                           Observation.code                           ValueSet    ValueSet-ObservationCode.fsh                                 1 - 11
 ValueSet-Observation.interpretation.json                 Observation.interpretation                 ValueSet    ValueSet-ObservationInterpretation.fsh                       4 - 102
 ValueSet-Observation.valueCodeableConcept.json           Observation.valueCodeableConcept           ValueSet    ValueSet-ObservationValueCodeableConcept.fsh                 1 - 7
 ValueSet-Observation.valueCodeableConceptSpecific.json   Observation.valueCodeableConceptSpecific   ValueSet    ValueSet-ObservationValueCodeableConceptSpecific.fsh         1 - 55
+ValueSet-ObservationBodySite.json                        ObservationBodySite                        ValueSet    ValueSet-ObservationBodySite.fsh                             1 - 5
+ValueSet-Observationcode.json                            Observationcode                            ValueSet    ValueSet-ObservationCode.fsh                                 1 - 11

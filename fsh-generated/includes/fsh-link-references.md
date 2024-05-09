@@ -1,3 +1,4 @@
+[IDCoreVSBPDiastolic]: StructureDefinition-IDCoreVSBPDiastolic.html
 [EncounterLocation]: StructureDefinition-EncounterLocation.html
 [EncounterLocationServiceClassInpatient]: CodeSystem-EncounterLocationServiceClassInpatient.html
 [EncounterLocationServiceClassOutpatient]: CodeSystem-EncounterLocationServiceClassOutpatient.html
@@ -20,6 +21,7 @@
 [KemkesCancerMCategoryCS]: CodeSystem-KemkesCancerMCategory.html
 [KemkesCancerNCategory]: CodeSystem-KemkesCancerNCategory.html
 [KemkesCancerTCategoryCS]: CodeSystem-KemkesCancerTCategoryCS.html
+[IDCoreVSBPSystolic]: StructureDefinition-IDCoreVSBPSystolic.html
 [KemkesCarePlanCategoryCS]: CodeSystem-KemkesCarePlanCategoryCS.html
 [KemkesClinicalSpecialityCS]: CodeSystem-KemkesClinicalSpecialityCS.html
 [KemkesClinicalTermCS]: CodeSystem-KemkesClinicalTermCS.html
@@ -41,7 +43,9 @@
 [KemkesOrganizationTypeCS]: CodeSystem-KemkesOrganizationTypeCS.html
 [KemkesPrevTBTreatmentCS]: CodeSystem-KemkesPrevTBTreatmentCS.html
 [KemkesSmallestLogisticUnitCS]: CodeSystem-KemkesSmallestLogisticUnitCS.html
-[Observation.code]: ValueSet-Observation.code.html
+[ObservationBodySite]: ValueSet-ObservationBodySite.html
+[Observationcode]: ValueSet-Observationcode.html
 [Observation.interpretation]: ValueSet-Observation.interpretation.html
 [Observation.valueCodeableConceptSpecific]: ValueSet-Observation.valueCodeableConceptSpecific.html
 [Observation.valueCodeableConcept]: ValueSet-Observation.valueCodeableConcept.html
+[IDCoreObservationVitalSigns]: StructureDefinition-IDCoreObservationVitalSigns.html
