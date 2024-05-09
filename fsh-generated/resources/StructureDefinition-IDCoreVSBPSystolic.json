@@ -71,7 +71,7 @@
             "human": "All FHIR elements must have a @value or children",
             "source": "http://hl7.org/fhir/StructureDefinition/Element",
             "severity": "error",
-            "expression": "if(Observation.value.ofType(Quantity).value >= 0,Observation.value.ofType(Quantity).value < 450)",
+            "expression": "iif(Observation.value.ofType(Quantity).value >= 0,Observation.value.ofType(Quantity).value < 450)",
             "xpath": "@value|f:*|h:div"
           }
         ]
