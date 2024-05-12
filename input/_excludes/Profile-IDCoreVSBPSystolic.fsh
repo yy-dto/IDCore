@@ -4,9 +4,9 @@ Profile: IDCoreVSBPSystolic
 Parent: IDCoreObservationVitalSigns
 Title: "Systolic Blood Pressure"
 Description: "Profile for systolic blood pressure value."
-* ^url = "http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-systolic"
-* ^version = "1.0.0"
-* ^status = #active
+* ^url = "http://hl7.org/fhir/us/vitals/StructureDefinition/vs-bp-systolic"
+* ^version = "2.0.0"
+* ^status = #draft
 * code.coding.code = #8480-6 (exactly)
 * code.coding.display ^short = "Systolic blood pressure"
 * value[x] 1..1
@@ -22,6 +22,6 @@ Description: "Profile for systolic blood pressure value."
 Invariant: sys-ele-1
 Description: "All FHIR elements must have a @value or children"
 * severity = #error
-* expression = "Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450"
+* expression = "if(Observation.value.ofType(Quantity).value >= 0,Observation.value.ofType(Quantity).value < 450)"
 * xpath = "@value|f:*|h:div"
 * source = "http://hl7.org/fhir/StructureDefinition/Element"

@@ -13,13 +13,9 @@ Profile: IDCoreObservationVitalSigns
 Parent: IDCoreObservation
 Title: "Vital Signs Profile"
 Description: "IDCore Vital Signs Profile"
-* ^url = "http://hl7.org/fhir/StructureDefinition/vitalsigns"
-* ^status = #draft
+* ^url = "http://terminology.kemkes.go.id/StructureDefinition/vitalsigns"
+* ^status = #active
 * ^experimental = false
-* ^date = "2016-03-25"
-* ^publisher = "Health Level Seven International (Orders and Observations Workgroup)"
-* ^contact.telecom.system = #url
-* ^contact.telecom.value = "http://www.hl7.org/Special/committees/orders/index.cfm Orders and Observations"
 * status 1..1 MS
 * status only code
 * status from http://hl7.org/fhir/ValueSet/observation-status (required)

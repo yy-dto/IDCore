@@ -4,9 +4,9 @@ Profile: IDCoreVSBPDiastolic
 Parent: IDCoreObservationVitalSigns
 Title: "Diastolic Blood Pressure"
 Description: "Profile for diastolic blood pressure value."
-* ^url = "http://hl7.org/fhir/us/vitals/StructureDefinition/vs-bp-diastolic"
-* ^version = "2.0.0"
-* ^status = #draft
+* ^url = "http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-diastolic"
+* ^version = "1.0.0"
+* ^status = #active
 * code.coding.code = #8462-4 (exactly)
 * code.coding.display ^short = "Diastolic blood pressure"
 * value[x] 1..1
@@ -22,6 +22,6 @@ Description: "Profile for diastolic blood pressure value."
 Invariant: dias-ele-1
 Description: "All FHIR elements must have a @value or children"
 * severity = #error
-* expression = "if(Observation.value.ofType(Quantity).value > 0,Observation.value.ofType(Quantity).value > 450)"
+* expression = "Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450"
 * xpath = "@value|f:*|h:div"
 * source = "http://hl7.org/fhir/StructureDefinition/Element"

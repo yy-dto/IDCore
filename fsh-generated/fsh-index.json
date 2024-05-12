@@ -325,7 +325,7 @@
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreObservationVitalSigns.fsh",
     "startLine": 12,
-    "endLine": 54
+    "endLine": 50
   },
   {
     "outputFile": "StructureDefinition-IDCoreVSBPDiastolic.json",

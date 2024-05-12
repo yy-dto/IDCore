@@ -39,7 +39,7 @@ StructureDefinition-IDCoreEncounterEMER.json             IDCoreEncounterEMER    
 StructureDefinition-IDCoreEncounterIMP.json              IDCoreEncounterIMP                         Profile     Profile-IDCoreEncounterIMP.fsh                               1 - 5
 StructureDefinition-IDCoreEncounterStatusFinished.json   IDCoreEncounterStatusFinished              Profile     Profile-IDCoreEncounterStatusFinished.fsh                    1 - 9
 StructureDefinition-IDCoreObservation.json               IDCoreObservation                          Profile     Profile-IDCoreObservation.fsh                                11 - 83
-StructureDefinition-IDCoreObservationVitalSigns.json     IDCoreObservationVitalSigns                Profile     Profile-IDCoreObservationVitalSigns.fsh                      12 - 54
+StructureDefinition-IDCoreObservationVitalSigns.json     IDCoreObservationVitalSigns                Profile     Profile-IDCoreObservationVitalSigns.fsh                      12 - 50
 StructureDefinition-IDCoreVSBPDiastolic.json             IDCoreVSBPDiastolic                        Profile     Profile-IDCoreVSBPDiastolic.fsh                              3 - 20
 StructureDefinition-IDCoreVSBPSystolic.json              IDCoreVSBPSystolic                         Profile     Profile-IDCoreVSBPSystolic.fsh                               3 - 20
 ValueSet-EncounterLocationServiceClassInpatientVS.json   EncounterLocationServiceClassInpatientVS   ValueSet    ValueSet-EncounterLocationServiceClass-Inpatient.fsh         1 - 4

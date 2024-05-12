@@ -1,23 +1,11 @@
 {
   "resourceType": "StructureDefinition",
   "id": "IDCoreObservationVitalSigns",
-  "url": "http://hl7.org/fhir/StructureDefinition/vitalsigns",
+  "url": "http://terminology.kemkes.go.id/StructureDefinition/vitalsigns",
   "name": "IDCoreObservationVitalSigns",
   "title": "Vital Signs Profile",
-  "status": "draft",
+  "status": "active",
   "experimental": false,
-  "date": "2016-03-25",
-  "publisher": "Health Level Seven International (Orders and Observations Workgroup)",
-  "contact": [
-    {
-      "telecom": [
-        {
-          "system": "url",
-          "value": "http://www.hl7.org/Special/committees/orders/index.cfm Orders and Observations"
-        }
-      ]
-    }
-  ],
   "description": "IDCore Vital Signs Profile",
   "fhirVersion": "4.0.1",
   "mapping": [
