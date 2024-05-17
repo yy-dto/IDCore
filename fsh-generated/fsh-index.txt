@@ -48,5 +48,5 @@ ValueSet-EncounterLocationUpgradeClassVS.json            EncounterLocationUpgrad
 ValueSet-Observation.interpretation.json                 Observation.interpretation                 ValueSet    ValueSet-ObservationInterpretation.fsh                       4 - 102
 ValueSet-Observation.valueCodeableConcept.json           Observation.valueCodeableConcept           ValueSet    ValueSet-ObservationValueCodeableConcept.fsh                 1 - 7
 ValueSet-Observation.valueCodeableConceptSpecific.json   Observation.valueCodeableConceptSpecific   ValueSet    ValueSet-ObservationValueCodeableConceptSpecific.fsh         1 - 55
-ValueSet-ObservationBodySite.json                        ObservationBodySite                        ValueSet    ValueSet-ObservationBodySite.fsh                             1 - 5
+ValueSet-ObservationBodySite.json                        ObservationBodySite                        ValueSet    ValueSet-ObservationBodySite.fsh                             1 - 40830
 ValueSet-Observationcode.json                            Observationcode                            ValueSet    ValueSet-ObservationCode.fsh                                 1 - 11

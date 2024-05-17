@@ -8,38 +8,6 @@
   "status": "active",
   "description": "Profile for systolic blood pressure value.",
   "fhirVersion": "4.0.1",
-  "mapping": [
-    {
-      "identity": "workflow",
-      "uri": "http://hl7.org/fhir/workflow",
-      "name": "Workflow Pattern"
-    },
-    {
-      "identity": "sct-concept",
-      "uri": "http://snomed.info/conceptdomain",
-      "name": "SNOMED CT Concept Domain Binding"
-    },
-    {
-      "identity": "v2",
-      "uri": "http://hl7.org/v2",
-      "name": "HL7 v2 Mapping"
-    },
-    {
-      "identity": "rim",
-      "uri": "http://hl7.org/v3",
-      "name": "RIM Mapping"
-    },
-    {
-      "identity": "w5",
-      "uri": "http://hl7.org/fhir/fivews",
-      "name": "FiveWs Pattern Mapping"
-    },
-    {
-      "identity": "sct-attr",
-      "uri": "http://snomed.org/attributebinding",
-      "name": "SNOMED CT Attribute Binding"
-    }
-  ],
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -71,11 +39,7 @@
             "human": "All FHIR elements must have a @value or children",
             "source": "http://hl7.org/fhir/StructureDefinition/Element",
             "severity": "error",
-<<<<<<< HEAD
             "expression": "Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450",
-=======
-            "expression": "iif(Observation.value.ofType(Quantity).value >= 0,Observation.value.ofType(Quantity).value < 450)",
->>>>>>> 7987d8d55815406d1f5a7fc15c4c0e02556e406e
             "xpath": "@value|f:*|h:div"
           }
         ]
