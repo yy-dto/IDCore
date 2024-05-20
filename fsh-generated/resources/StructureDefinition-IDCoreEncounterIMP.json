@@ -14,10 +14,6 @@
   "differential": {
     "element": [
       {
-        "id": "Encounter.location.extension",
-        "path": "Encounter.location.extension"
-      },
-      {
         "id": "Encounter.location.extension.extension.extension",
         "path": "Encounter.location.extension.extension.extension",
         "max": "0"
@@ -49,7 +45,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationUpgradeClassVS"
+          "valueSet": "http://terminology.kemkes.go.id/ValueSet/locationUpgradeClass"
         }
       },
       {

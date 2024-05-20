@@ -9,9 +9,6 @@
   "compose": {
     "include": [
       {
-        "system": "http://loinc.org"
-      },
-      {
         "system": "http://loinc.org",
         "filter": [
           {

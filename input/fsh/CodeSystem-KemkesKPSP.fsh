@@ -1,4 +1,4 @@
-CodeSystem: KemkesKPSPCS
+CodeSystem: KemkesKPSP
 Title: "Terminology Kemkes kpsp CodeSystem"
 Description: "Terminology Kemkes kpsp CodeSystem"
 * ^language = #Indonesia

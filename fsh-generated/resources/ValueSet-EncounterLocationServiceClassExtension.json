@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EncounterLocationServiceClassExtension",
+  "id": "EncounterLocationServiceClassExtension",
+  "title": "Encounter Location Extension",
+  "description": "A set of codes, specifying location extension valueset.",
+  "url": "http://terminology.kemkes.go.id/ValueSet/EncounterLocationServiceClassExtension",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "http://terminology.kemkes.go.id/ValueSet/locationServiceClass-Inpatient"
+        ]
+      },
+      {
+        "valueSet": [
+          "http://terminology.kemkes.go.id/ValueSet/locationServiceClass-Outpatient"
+        ]
+      }
+    ]
+  }
+}

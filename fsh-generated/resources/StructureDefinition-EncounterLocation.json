@@ -1,6 +1,33 @@
 {
   "resourceType": "StructureDefinition",
   "id": "EncounterLocation",
+  "extension": [
+    {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation",
+      "extension": [
+        {
+          "url": "value",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "reguler"
+              }
+            ]
+          }
+        },
+        {
+          "url": "upgradeClassIndicator",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "kelas-tetap"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
   "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation",
   "name": "EncounterLocation",
   "title": "Encounter Location Extention",
@@ -36,19 +63,74 @@
         "path": "Extension.extension",
         "sliceName": "serviceClass",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/contactpoint-extension"
+            ]
+          }
+        ]
       },
       {
         "id": "Extension.extension:serviceClass.extension",
         "path": "Extension.extension.extension",
-        "min": 1
+        "min": 2
+      },
+      {
+        "id": "Extension.extension:serviceClass.extension:locationServiceClass",
+        "path": "Extension.extension.extension",
+        "sliceName": "locationServiceClass",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/contactpoint-extension"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:serviceClass.extension:locationServiceClass.extension",
+        "path": "Extension.extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:serviceClass.extension:locationServiceClass.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "locationServiceClass"
+      },
+      {
+        "id": "Extension.extension:serviceClass.extension:locationServiceClass.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://terminology.kemkes.go.id/ValueSet/EncounterLocationServiceClassExtension"
+        }
       },
       {
         "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator",
         "path": "Extension.extension.extension",
         "sliceName": "upgradeClassIndicator",
         "min": 1,
-        "max": "1"
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/contactpoint-extension"
+            ]
+          }
+        ]
       },
       {
         "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator.extension",
@@ -63,23 +145,7 @@
       {
         "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator.value[x]",
         "path": "Extension.extension.extension.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator.value[x]:valueCodeableConcept",
-        "path": "Extension.extension.extension.value[x]",
-        "sliceName": "valueCodeableConcept",
-        "min": 0,
-        "max": "1",
+        "min": 1,
         "type": [
           {
             "code": "CodeableConcept"
@@ -87,7 +153,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassOutpatientVS"
+          "valueSet": "http://terminology.kemkes.go.id/ValueSet/locationUpgradeClass"
         }
       },
       {

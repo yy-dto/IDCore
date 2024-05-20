@@ -324,7 +324,127 @@
           {
             "property": "concept",
             "op": "is-a",
+            "value": "OI000032"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000033"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000034"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
             "value": "OI000035"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000036"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000037"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000038"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000039"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000040"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000041"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000042"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000043"
+          }
+        ]
+      },
+      {
+        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "OI000044"
           }
         ]
       },
@@ -665,216 +785,6 @@
             "property": "concept",
             "op": "is-a",
             "value": "39021009"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000040"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000041"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000042"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000043"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000044"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000036"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000037"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000038"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000039"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000032"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000033"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000034"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000019"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000020"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000026"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000027"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000028"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000021"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000022"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000023"
-          }
-        ]
-      },
-      {
-        "system": "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "is-a",
-            "value": "OI000024"
           }
         ]
       },

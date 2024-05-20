@@ -2,7 +2,6 @@ ValueSet: Observation.valueCodeableConceptSpecific
 Title: "Value set specific for Observation specific value CodeableConcept"
 Description: "Value set specific for Observation specific value CodeableConcept"
 * ^url = "http://terminology.kemkes.go.id/ValueSet/Observation.valueCodeableConceptSpecific"
-* include codes from system http://loinc.org
 * include codes from system http://loinc.org where concept is-a #LA17718-0 "Sinus rhythm"
 * include codes from system http://loinc.org where concept is-a #LA17099-5 "Sinus tachycardia"
 * include codes from system http://loinc.org where concept is-a #LA17098-7 "Sinus bradycardia"

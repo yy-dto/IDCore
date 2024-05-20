@@ -160,72 +160,72 @@
     "endLine": 26
   },
   {
-    "outputFile": "CodeSystem-KemkesKPSPCS.json",
-    "fshName": "KemkesKPSPCS",
+    "outputFile": "CodeSystem-KemkesKPSP.json",
+    "fshName": "KemkesKPSP",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-KemkesKPSP.fsh",
     "startLine": 1,
     "endLine": 28
   },
   {
-    "outputFile": "CodeSystem-KemkesLocationTypeCS.json",
-    "fshName": "KemkesLocationTypeCS",
+    "outputFile": "CodeSystem-KemkesLocationType.json",
+    "fshName": "KemkesLocationType",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-KemkesLocationType.fsh",
     "startLine": 1,
     "endLine": 70
   },
   {
-    "outputFile": "CodeSystem-KemkesLocationUpgradeClassCS.json",
-    "fshName": "KemkesLocationUpgradeClassCS",
+    "outputFile": "CodeSystem-KemkesLocationUpgradeClass.json",
+    "fshName": "KemkesLocationUpgradeClass",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-KemkesLocationUpgradeClass.fsh",
     "startLine": 1,
     "endLine": 28
   },
   {
-    "outputFile": "CodeSystem-KemkesMedicationFormCS.json",
-    "fshName": "KemkesMedicationFormCS",
+    "outputFile": "CodeSystem-KemkesMedicationForm.json",
+    "fshName": "KemkesMedicationForm",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-KemkesMedicationForm.fsh",
     "startLine": 1,
     "endLine": 123
   },
   {
-    "outputFile": "CodeSystem-KemkesMedicationTypeCS.json",
-    "fshName": "KemkesMedicationTypeCS",
+    "outputFile": "CodeSystem-KemkesMedicationType.json",
+    "fshName": "KemkesMedicationType",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-KemkesMedicationType.fsh",
     "startLine": 1,
     "endLine": 27
   },
   {
-    "outputFile": "CodeSystem-KemkesObservationInterpretationCS.json",
-    "fshName": "KemkesObservationInterpretationCS",
+    "outputFile": "CodeSystem-KemkesObservationInterpretation.json",
+    "fshName": "KemkesObservationInterpretation",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-KemkesObservationInterpretation.fsh",
     "startLine": 1,
     "endLine": 26
   },
   {
-    "outputFile": "CodeSystem-KemkesOrganizationTypeCS.json",
-    "fshName": "KemkesOrganizationTypeCS",
+    "outputFile": "CodeSystem-KemkesOrganizationType.json",
+    "fshName": "KemkesOrganizationType",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-KemkesOrganizationType.fsh",
     "startLine": 1,
     "endLine": 73
   },
   {
-    "outputFile": "CodeSystem-KemkesPrevTBTreatmentCS.json",
-    "fshName": "KemkesPrevTBTreatmentCS",
+    "outputFile": "CodeSystem-KemkesPrevTBTreatment.json",
+    "fshName": "KemkesPrevTBTreatment",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-KemkesPrevTBTreatment.fsh",
     "startLine": 1,
     "endLine": 32
   },
   {
-    "outputFile": "CodeSystem-KemkesSmallestLogisticUnitCS.json",
-    "fshName": "KemkesSmallestLogisticUnitCS",
+    "outputFile": "CodeSystem-KemkesSmallestLogisticUnit.json",
+    "fshName": "KemkesSmallestLogisticUnit",
     "fshType": "CodeSystem",
     "fshFile": "CodeSystem-KemkesSmallestLogisticUnit.fsh",
     "startLine": 1,
@@ -244,16 +244,16 @@
     "fshName": "IDCoreEncounter",
     "fshType": "Instance",
     "fshFile": "Profile-IDCoreEncounter.fsh",
-    "startLine": 85,
-    "endLine": 105
+    "startLine": 93,
+    "endLine": 113
   },
   {
     "outputFile": "Encounter-IDCoreEncounterEMER.json",
     "fshName": "IDCoreEncounterEMER",
     "fshType": "Instance",
     "fshFile": "Profile-IDCoreEncounterEMER.fsh",
-    "startLine": 12,
-    "endLine": 32
+    "startLine": 13,
+    "endLine": 33
   },
   {
     "outputFile": "Encounter-IDCoreEncounterIMP.json",
@@ -269,7 +269,7 @@
     "fshType": "Extension",
     "fshFile": "Extension-EncounterLocation.fsh",
     "startLine": 1,
-    "endLine": 18
+    "endLine": 30
   },
   {
     "outputFile": "StructureDefinition-IDCoreCondition.json",
@@ -284,8 +284,8 @@
     "fshName": "IDCoreEncounter",
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreEncounter.fsh",
-    "startLine": 1,
-    "endLine": 78
+    "startLine": 3,
+    "endLine": 86
   },
   {
     "outputFile": "StructureDefinition-IDCoreEncounterEMER.json",
@@ -293,7 +293,7 @@
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreEncounterEMER.fsh",
     "startLine": 1,
-    "endLine": 5
+    "endLine": 6
   },
   {
     "outputFile": "StructureDefinition-IDCoreEncounterIMP.json",
@@ -344,28 +344,36 @@
     "endLine": 20
   },
   {
-    "outputFile": "ValueSet-EncounterLocationServiceClassInpatientVS.json",
-    "fshName": "EncounterLocationServiceClassInpatientVS",
+    "outputFile": "ValueSet-EncounterLocationServiceClassExtension.json",
+    "fshName": "EncounterLocationServiceClassExtension",
+    "fshType": "ValueSet",
+    "fshFile": "ValueSet-EncounterLocationServiceClassExtension.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "ValueSet-EncounterLocationServiceClassInpatient.json",
+    "fshName": "EncounterLocationServiceClassInpatient",
     "fshType": "ValueSet",
     "fshFile": "ValueSet-EncounterLocationServiceClass-Inpatient.fsh",
     "startLine": 1,
-    "endLine": 4
+    "endLine": 5
   },
   {
-    "outputFile": "ValueSet-EncounterLocationServiceClassOutpatientVS.json",
-    "fshName": "EncounterLocationServiceClassOutpatientVS",
+    "outputFile": "ValueSet-EncounterLocationServiceClassOutpatient.json",
+    "fshName": "EncounterLocationServiceClassOutpatient",
     "fshType": "ValueSet",
     "fshFile": "ValueSet-EncounterLocationServiceClass-Outpatient.fsh",
     "startLine": 1,
-    "endLine": 4
+    "endLine": 5
   },
   {
-    "outputFile": "ValueSet-EncounterLocationUpgradeClassVS.json",
-    "fshName": "EncounterLocationUpgradeClassVS",
+    "outputFile": "ValueSet-EncounterLocationUpgradeClass.json",
+    "fshName": "EncounterLocationUpgradeClass",
     "fshType": "ValueSet",
     "fshFile": "ValueSet-EncounterLocationEncounterLocationUpgradeClass.fsh",
     "startLine": 1,
-    "endLine": 4
+    "endLine": 5
   },
   {
     "outputFile": "ValueSet-Observation.interpretation.json",
@@ -373,7 +381,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSet-ObservationInterpretation.fsh",
     "startLine": 4,
-    "endLine": 102
+    "endLine": 93
   },
   {
     "outputFile": "ValueSet-Observation.valueCodeableConcept.json",
@@ -389,7 +397,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSet-ObservationValueCodeableConceptSpecific.fsh",
     "startLine": 1,
-    "endLine": 55
+    "endLine": 54
   },
   {
     "outputFile": "ValueSet-ObservationBodySite.json",
@@ -397,7 +405,7 @@
     "fshType": "ValueSet",
     "fshFile": "ValueSet-ObservationBodySite.fsh",
     "startLine": 1,
-    "endLine": 40830
+    "endLine": 5
   },
   {
     "outputFile": "ValueSet-Observationcode.json",

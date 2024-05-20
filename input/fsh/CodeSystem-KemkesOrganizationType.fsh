@@ -1,4 +1,4 @@
-CodeSystem: KemkesOrganizationTypeCS
+CodeSystem: KemkesOrganizationType
 Title: "Terminology Kemkes organization type CodeSystem"
 Description: "Terminology Kemkes organization type CodeSystem"
 * ^language = #Indonesia

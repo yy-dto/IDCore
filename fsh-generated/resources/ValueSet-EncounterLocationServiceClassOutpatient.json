@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "active",
-  "name": "EncounterLocationServiceClassOutpatientVS",
-  "id": "EncounterLocationServiceClassOutpatientVS",
+  "name": "EncounterLocationServiceClassOutpatient",
+  "id": "EncounterLocationServiceClassOutpatient",
   "title": "Encounter Location ServiceClass-Outpatient",
   "description": "A set of codes, specifying location ServiceClass for outpatient patient.",
-  "url": "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassOutpatientVS",
+  "url": "http://terminology.kemkes.go.id/ValueSet/locationServiceClass-Outpatient",
   "compose": {
     "include": [
       {

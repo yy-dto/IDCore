@@ -34,6 +34,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/EncounterLocationServiceClassExtension"
+        },
+        "name": "Encounter Location Extension",
+        "description": "A set of codes, specifying location extension valueset.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/EncounterLocation"
         },
         "name": "Encounter Location Extention",
@@ -58,7 +66,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/EncounterLocationServiceClassInpatientVS"
+          "reference": "ValueSet/EncounterLocationServiceClassInpatient"
         },
         "name": "Encounter Location ServiceClass-Inpatient",
         "description": "A set of codes, specifying location ServiceClass for inpatient patient.",
@@ -66,7 +74,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/EncounterLocationServiceClassOutpatientVS"
+          "reference": "ValueSet/EncounterLocationServiceClassOutpatient"
         },
         "name": "Encounter Location ServiceClass-Outpatient",
         "description": "A set of codes, specifying location ServiceClass for outpatient patient.",
@@ -74,7 +82,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/EncounterLocationUpgradeClassVS"
+          "reference": "ValueSet/EncounterLocationUpgradeClass"
         },
         "name": "Encounter Location Upgrade Class",
         "description": "A set of codes, specifying location UpgradeClass.",
@@ -307,7 +315,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/KemkesKPSPCS"
+          "reference": "CodeSystem/KemkesKPSP"
         },
         "name": "Terminology Kemkes kpsp CodeSystem",
         "description": "Terminology Kemkes kpsp CodeSystem",
@@ -315,7 +323,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/KemkesLocationUpgradeClassCS"
+          "reference": "CodeSystem/KemkesLocationUpgradeClass"
         },
         "name": "Terminology Kemkes location upgrade class CodeSystem",
         "description": "Terminology Kemkes location upgrade class CodeSystem",
@@ -323,7 +331,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/KemkesLocationTypeCS"
+          "reference": "CodeSystem/KemkesLocationType"
         },
         "name": "Terminology Kemkes location-type CodeSystem",
         "description": "Terminology Kemkes location-type CodeSystem",
@@ -331,7 +339,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/KemkesMedicationFormCS"
+          "reference": "CodeSystem/KemkesMedicationForm"
         },
         "name": "Terminology Kemkes medication form CodeSystem",
         "description": "Terminology Kemkes medication form CodeSystem",
@@ -339,7 +347,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/KemkesMedicationTypeCS"
+          "reference": "CodeSystem/KemkesMedicationType"
         },
         "name": "Terminology Kemkes medication type CodeSystem",
         "description": "Terminology Kemkes medication type CodeSystem",
@@ -347,7 +355,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/KemkesObservationInterpretationCS"
+          "reference": "CodeSystem/KemkesObservationInterpretation"
         },
         "name": "Terminology Kemkes ObservationInterpretation CodeSystem",
         "description": "Terminology Kemkes Observation Interpretation CodeSystem",
@@ -355,7 +363,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/KemkesOrganizationTypeCS"
+          "reference": "CodeSystem/KemkesOrganizationType"
         },
         "name": "Terminology Kemkes organization type CodeSystem",
         "description": "Terminology Kemkes organization type CodeSystem",
@@ -363,7 +371,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/KemkesPrevTBTreatmentCS"
+          "reference": "CodeSystem/KemkesPrevTBTreatment"
         },
         "name": "Terminology Kemkes prev-tb-treatment CodeSystem",
         "description": "Terminology Kemkes prev-tb-treatment CodeSystem",
@@ -371,7 +379,7 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/KemkesSmallestLogisticUnitCS"
+          "reference": "CodeSystem/KemkesSmallestLogisticUnit"
         },
         "name": "Terminology Kemkes smallest logistic unit CodeSystem",
         "description": "Terminology Kemkes smallest logistic unit CodeSystem",
@@ -546,14 +554,6 @@
       {
         "code": "path-resource",
         "value": "input/includes"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/resources/valuset/*"
-      },
-      {
-        "code": "path-resource",
-        "value": "input/resources/codesystem/*"
       },
       {
         "code": "path-resource",

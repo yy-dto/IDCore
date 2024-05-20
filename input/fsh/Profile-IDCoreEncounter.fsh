@@ -1,7 +1,12 @@
+Alias: $encounter-location = https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation
+
 Profile: IDCoreEncounter
 Parent: Encounter
 Description: "ID Core Encounter profile"
 * ^url = "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
+* location ^extension[0].url = "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation"
+* location ^extension[0].extension[0].url = "value"
+* location ^extension[0].extension[+].url = "upgradeClassIndicator"
 * identifier 1..*
 * status 1..1
 * statusHistory 0..*
@@ -42,12 +47,15 @@ Description: "ID Core Encounter profile"
 * hospitalization.specialArrangement 0..*
 * hospitalization.destination 0..1
 * hospitalization.dischargeDisposition 0..1
-* location 0..*
-* location.extension contains https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation named encounterLocation 0..1
+* location 1..*
 * location.location 1..1
 * location.status 0..1
 * location.physicalType 0..1
 * location.period 0..1
+* extension contains
+    $encounter-location named encounterlocation 0..*
+* extension[encounterlocation] ^extension[0].url = "value"
+* extension[encounterlocation] ^extension[+].url = "upgradeClassIndicator"
 * serviceProvider 1..1
 * partOf 0..1
 * status from EncounterStatus
@@ -89,11 +97,11 @@ Usage: #example
 * class = $v3-ActCode#IMP "inpatient encounter"
 * identifier.system = "http://sys-ids.kemkes.go.id/encounter/10085103"
 * identifier.value = "10085103"
-* location.extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass"
-* location.extension.extension[+].url = "value"
-* location.extension.extension[=].valueCodeableConcept = $locationServiceClass-Inpatient#1 "Kelas 1"
-* location.extension.extension[+].url = "upgradeClassIndicator"
-* location.extension.extension[=].valueCodeableConcept = $locationUpgradeClass#kelas-tetap "Kelas Tetap Perawatan"
+* location.extension[0].url = "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass"
+* location.extension[0].extension[+].url = "value"
+* location.extension[0].extension[=].valueCodeableConcept = $locationServiceClass-Inpatient#1 "Kelas 1"
+* location.extension[0].extension[+].url = "upgradeClassIndicator"
+* location.extension[0].extension[=].valueCodeableConcept = $locationUpgradeClass#kelas-tetap "Kelas Tetap Perawatan"
 * location.location = Reference(Location/b29038d4-9ef0-4eb3-a2e9-3c02df668b07) "Bed 2, Ruang 210, Bangsal Rawat Inap Kelas 1, Layanan Penyakit Dalam, Lantai 2, Gedung Utama"
 * participant.individual = Reference(Practitioner/N10000001) "Dokter Bronsig"
 * participant.type = $v3-ParticipationType#ATND "attender"

@@ -1,4 +1,4 @@
-CodeSystem: KemkesLocationTypeCS
+CodeSystem: KemkesLocationType
 Title: "Terminology Kemkes location-type CodeSystem"
 Description: "Terminology Kemkes location-type CodeSystem"
 * ^language = #Indonesia

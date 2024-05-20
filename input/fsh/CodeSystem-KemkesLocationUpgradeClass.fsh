@@ -1,4 +1,4 @@
-CodeSystem: KemkesLocationUpgradeClassCS
+CodeSystem: KemkesLocationUpgradeClass
 Title: "Terminology Kemkes location upgrade class CodeSystem"
 Description: "Terminology Kemkes location upgrade class CodeSystem"
 * ^meta.versionId = "2"

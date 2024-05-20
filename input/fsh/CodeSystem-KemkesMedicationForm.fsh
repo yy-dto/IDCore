@@ -1,4 +1,4 @@
-CodeSystem: KemkesMedicationFormCS
+CodeSystem: KemkesMedicationForm
 Title: "Terminology Kemkes medication form CodeSystem"
 Description: "Terminology Kemkes medication form CodeSystem"
 * ^language = #Indonesia

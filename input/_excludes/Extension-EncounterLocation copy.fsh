@@ -15,6 +15,12 @@ Context: Encounter.location
 * extension contains
     serviceClass 1..1 
 * extension[serviceClass] only extension
+* extension[serviceClass] ^slicing.discriminator.type = #value
+* extension[serviceClass] ^slicing.discriminator.path = "url"
+* extension[serviceClass] ^slicing.rules = #open
+* extension[serviceClass].extension ^slicing.discriminator.type = #value
+* extension[serviceClass].extension ^slicing.discriminator.path = "url"
+* extension[serviceClass].extension ^slicing.rules = #open
 * extension[serviceClass].extension contains
     locationServiceClass 1..1 and
     upgradeClassIndicator 1..1

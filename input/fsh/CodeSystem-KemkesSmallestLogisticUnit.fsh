@@ -1,4 +1,4 @@
-CodeSystem: KemkesSmallestLogisticUnitCS
+CodeSystem: KemkesSmallestLogisticUnit
 Title: "Terminology Kemkes smallest logistic unit CodeSystem"
 Description: "Terminology Kemkes smallest logistic unit CodeSystem"
 * ^meta.versionId = "2"

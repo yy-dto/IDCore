@@ -1,4 +1,4 @@
-CodeSystem: KemkesMedicationTypeCS
+CodeSystem: KemkesMedicationType
 Title: "Terminology Kemkes medication type CodeSystem"
 Description: "Terminology Kemkes medication type CodeSystem"
 * ^meta.versionId = "2"

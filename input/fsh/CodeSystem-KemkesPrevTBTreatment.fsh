@@ -1,4 +1,4 @@
-CodeSystem: KemkesPrevTBTreatmentCS
+CodeSystem: KemkesPrevTBTreatment
 Title: "Terminology Kemkes prev-tb-treatment CodeSystem"
 Description: "Terminology Kemkes prev-tb-treatment CodeSystem"
 * ^meta.versionId = "2"

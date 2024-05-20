@@ -1,4 +1,4 @@
-CodeSystem: KemkesObservationInterpretationCS
+CodeSystem: KemkesObservationInterpretation
 Title: "Terminology Kemkes ObservationInterpretation CodeSystem"
 Description: "Terminology Kemkes Observation Interpretation CodeSystem"
 * ^meta.versionId = "2"
