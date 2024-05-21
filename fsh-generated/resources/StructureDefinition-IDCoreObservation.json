@@ -52,7 +52,7 @@
         "path": "Observation.dataAbsentReason",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason"
         }
       },
       {
@@ -108,7 +108,7 @@
         "path": "Observation.component.dataAbsentReason",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/CodeSystem/data-absent-reason"
+          "valueSet": "http://hl7.org/fhir/ValueSet/data-absent-reason"
         }
       },
       {

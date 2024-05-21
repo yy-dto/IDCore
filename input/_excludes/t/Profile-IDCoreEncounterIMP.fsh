@@ -1,13 +1,13 @@
+Alias: $locationServiceClass-Inpatient = http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient
+
 Profile: IDCoreEncounterIMP
 Parent: IDCoreEncounter
 Description: "Encounter profile for inpatient patient"
-* location.extension.extension.valueCodeableConcept from EncounterLocationServiceClassInpatient
-* location.extension.extension.valueCodeableConcept from EncounterLocationUpgradeClass
+* location.extension ^extension[0].url = "value"
+* location.extension ^extension[=].valueCodeableConcept = $locationServiceClass-Inpatient#1
 
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
-Alias: $locationServiceClass-Inpatient = http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient
-Alias: $locationUpgradeClass = http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass
 
 Instance: IDCoreEncounterIMP
 InstanceOf: IDCoreEncounter

@@ -232,86 +232,6 @@
     "endLine": 38
   },
   {
-    "outputFile": "Condition-IDCoreCondition.json",
-    "fshName": "IDCoreCondition",
-    "fshType": "Instance",
-    "fshFile": "Profile-IDCoreCondition.fsh",
-    "startLine": 57,
-    "endLine": 66
-  },
-  {
-    "outputFile": "Encounter-IDCoreEncounter.json",
-    "fshName": "IDCoreEncounter",
-    "fshType": "Instance",
-    "fshFile": "Profile-IDCoreEncounter.fsh",
-    "startLine": 93,
-    "endLine": 113
-  },
-  {
-    "outputFile": "Encounter-IDCoreEncounterEMER.json",
-    "fshName": "IDCoreEncounterEMER",
-    "fshType": "Instance",
-    "fshFile": "Profile-IDCoreEncounterEMER.fsh",
-    "startLine": 13,
-    "endLine": 33
-  },
-  {
-    "outputFile": "Encounter-IDCoreEncounterIMP.json",
-    "fshName": "IDCoreEncounterIMP",
-    "fshType": "Instance",
-    "fshFile": "Profile-IDCoreEncounterIMP.fsh",
-    "startLine": 12,
-    "endLine": 33
-  },
-  {
-    "outputFile": "StructureDefinition-EncounterLocation.json",
-    "fshName": "EncounterLocation",
-    "fshType": "Extension",
-    "fshFile": "Extension-EncounterLocation.fsh",
-    "startLine": 1,
-    "endLine": 30
-  },
-  {
-    "outputFile": "StructureDefinition-IDCoreCondition.json",
-    "fshName": "IDCoreCondition",
-    "fshType": "Profile",
-    "fshFile": "Profile-IDCoreCondition.fsh",
-    "startLine": 15,
-    "endLine": 55
-  },
-  {
-    "outputFile": "StructureDefinition-IDCoreEncounter.json",
-    "fshName": "IDCoreEncounter",
-    "fshType": "Profile",
-    "fshFile": "Profile-IDCoreEncounter.fsh",
-    "startLine": 3,
-    "endLine": 86
-  },
-  {
-    "outputFile": "StructureDefinition-IDCoreEncounterEMER.json",
-    "fshName": "IDCoreEncounterEMER",
-    "fshType": "Profile",
-    "fshFile": "Profile-IDCoreEncounterEMER.fsh",
-    "startLine": 1,
-    "endLine": 6
-  },
-  {
-    "outputFile": "StructureDefinition-IDCoreEncounterIMP.json",
-    "fshName": "IDCoreEncounterIMP",
-    "fshType": "Profile",
-    "fshFile": "Profile-IDCoreEncounterIMP.fsh",
-    "startLine": 1,
-    "endLine": 5
-  },
-  {
-    "outputFile": "StructureDefinition-IDCoreEncounterStatusFinished.json",
-    "fshName": "IDCoreEncounterStatusFinished",
-    "fshType": "Profile",
-    "fshFile": "Profile-IDCoreEncounterStatusFinished.fsh",
-    "startLine": 1,
-    "endLine": 9
-  },
-  {
     "outputFile": "StructureDefinition-IDCoreObservation.json",
     "fshName": "IDCoreObservation",
     "fshType": "Profile",
@@ -324,8 +244,8 @@
     "fshName": "IDCoreObservationVitalSigns",
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreObservationVitalSigns.fsh",
-    "startLine": 12,
-    "endLine": 50
+    "startLine": 13,
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-IDCoreVSBPDiastolic.json",

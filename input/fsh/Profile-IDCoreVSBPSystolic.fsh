@@ -1,4 +1,4 @@
-Alias: $loinc = http://loinc.org
+Alias: $Observation.bodySiteVS = http://terminology.kemkes.go.id/ValueSet/Observation-bodysite
 
 Profile: IDCoreVSBPSystolic
 Parent: IDCoreObservationVitalSigns
@@ -9,6 +9,7 @@ Description: "Profile for systolic blood pressure value."
 * ^status = #active
 * code.coding.code = #8480-6 (exactly)
 * code.coding.display ^short = "Systolic blood pressure"
+* bodySite from $Observation.bodySiteVS
 * value[x] 1..1
 * value[x] only Quantity
 * value[x] obeys sys-ele-1
@@ -24,4 +25,3 @@ Description: "All FHIR elements must have a @value or children"
 * severity = #error
 * expression = "Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450"
 * xpath = "@value|f:*|h:div"
-* source = "http://hl7.org/fhir/StructureDefinition/Element"

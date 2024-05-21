@@ -1,12 +1,12 @@
-Alias: $ObservationCode = http://terminology.kemkes.go.id/ValueSet/Observation-code
-Alias: $Observation.category = http://terminology.hl7.org/ValueSet/v3-ObservationCategory
-Alias: $Observation.dataAbsentReason = http://terminology.hl7.org/CodeSystem/data-absent-reason
-Alias: $Observation.interpretation = http://terminology.kemkes.go.id/ValueSet/Observation.interpretation
-Alias: $ObservationBodySite = http://terminology.kemkes.go.id/ValueSet/Observation-bodysite
-Alias: $Observation.methods = http://hl7.org/fhir/ValueSet/observation-methods
-Alias: $Observation.status = http://hl7.org/fhir/ValueSet/observation-status
-Alias: $Observation.referencerangeType = http://terminology.hl7.org/ValueSet/referencerange-meaning
-Alias: $Observation.referencerangeAppliesTo = http://hl7.org/fhir/ValueSet/referencerange-appliesto
+Alias: $Observation.codeVS = http://terminology.kemkes.go.id/ValueSet/Observation-code
+Alias: $Observation.bodySiteVS = http://terminology.kemkes.go.id/ValueSet/Observation-bodysite
+Alias: $Observation.categoryVS = http://terminology.hl7.org/ValueSet/v3-ObservationCategory
+Alias: $Observation.dataAbsentReasonVS = http://hl7.org/fhir/ValueSet/data-absent-reason
+Alias: $Observation.interpretationVS = http://terminology.kemkes.go.id/ValueSet/Observation.interpretation
+Alias: $Observation.methodsVS = http://hl7.org/fhir/ValueSet/observation-methods
+Alias: $Observation.statusVS = http://hl7.org/fhir/ValueSet/observation-status
+Alias: $Observation.referencerangeTypeVS = http://terminology.hl7.org/ValueSet/referencerange-meaning
+Alias: $Observation.referencerangeAppliesToVS = http://hl7.org/fhir/ValueSet/referencerange-appliesto
 
 Profile: IDCoreObservation
 Parent: Observation
@@ -50,9 +50,9 @@ Description: "ID Core Observation profile"
 * identifier only Identifier 
 * basedOn only Reference(CarePlan or DeviceRequest or ImmunizationRecommendation or MedicationRequest or NutritionOrder or ServiceRequest) 
 * partOf only Reference(MedicationAdministration or MedicationDispense or MedicationStatement or Procedure or Immunization or ImagingStudy) 
-* status from $Observation.status
-* category from $Observation.category
-* code from $ObservationCode
+* status from $Observation.statusVS
+* category from $Observation.categoryVS
+* code from $Observation.codeVS
 * subject only Reference(Patient or Group or Device or Location) 
 * focus only Reference(Resource) 
 * encounter only Reference(Encounter) 
@@ -60,24 +60,24 @@ Description: "ID Core Observation profile"
 * issued only instant 
 * performer only Reference(Practitioner or PractitionerRole or Organization or CareTeam or Patient or RelatedPerson) 
 * value[x] only Quantity or CodeableConcept or string or boolean or integer or Range or Ratio or SampledData or time or dateTime or Period
-* dataAbsentReason from $Observation.dataAbsentReason
-* interpretation from $Observation.interpretation
+* dataAbsentReason from $Observation.dataAbsentReasonVS
+* interpretation from $Observation.interpretationVS
 * note only Annotation 
-* bodySite from $ObservationBodySite
-* method from $Observation.methods
+* bodySite from $Observation.bodySiteVS
+* method from $Observation.methodsVS
 * specimen only Reference(Specimen) 
 * device only Reference(Device or DeviceMetric) 
 * referenceRange only BackboneElement 
 * referenceRange.low only SimpleQuantity 
 * referenceRange.high only SimpleQuantity 
-* referenceRange.type from $Observation.referencerangeType
-* referenceRange.appliesTo from $Observation.referencerangeAppliesTo
+* referenceRange.type from $Observation.referencerangeTypeVS
+* referenceRange.appliesTo from $Observation.referencerangeAppliesToVS
 * referenceRange.age only Range 
 * referenceRange.text only string 
 * hasMember only Reference(Observation or QuestionnaireResponse or MolecularSequence) 
 * derivedFrom only Reference(DocumentReference or ImagingStudy or Media or QuestionnaireResponse or Observation or MolecularSequence) 
 * component only BackboneElement 
-* component.code from $ObservationCode
+* component.code from $Observation.codeVS
 * component.value[x] only Quantity or CodeableConcept or string or boolean or integer or Range or Ratio or SampledData or time or dateTime or Period 
-* component.dataAbsentReason from $Observation.dataAbsentReason
-* component.interpretation from $Observation.interpretation
+* component.dataAbsentReason from $Observation.dataAbsentReasonVS
+* component.interpretation from $Observation.interpretationVS

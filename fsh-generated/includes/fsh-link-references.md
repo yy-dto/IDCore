@@ -1,6 +1,5 @@
 [IDCoreVSBPDiastolic]: StructureDefinition-IDCoreVSBPDiastolic.html
 [EncounterLocationServiceClassExtension]: ValueSet-EncounterLocationServiceClassExtension.html
-[EncounterLocation]: StructureDefinition-EncounterLocation.html
 [EncounterLocationServiceClassInpatient]: CodeSystem-EncounterLocationServiceClassInpatient.html
 [EncounterLocationServiceClassOutpatient]: CodeSystem-EncounterLocationServiceClassOutpatient.html
 [EncounterLocationServiceClassInpatient]: ValueSet-EncounterLocationServiceClassInpatient.html
@@ -9,15 +8,6 @@
 [EncounterLocationUpgradeClass]: CodeSystem-EncounterLocationUpgradeClass.html
 [KemkesICDOMorphologyCS]: CodeSystem-KemkesICDOMorphologyCS.html
 [KemkesICDOTopographyCS]: CodeSystem-KemkesICDOTopographyCS.html
-[IDCoreCondition]: StructureDefinition-IDCoreCondition.html
-[IDCoreCondition]: Condition-IDCoreCondition.html
-[IDCoreEncounter]: StructureDefinition-IDCoreEncounter.html
-[IDCoreEncounter]: Encounter-IDCoreEncounter.html
-[IDCoreEncounterEMER]: StructureDefinition-IDCoreEncounterEMER.html
-[IDCoreEncounterEMER]: Encounter-IDCoreEncounterEMER.html
-[IDCoreEncounterIMP]: StructureDefinition-IDCoreEncounterIMP.html
-[IDCoreEncounterIMP]: Encounter-IDCoreEncounterIMP.html
-[IDCoreEncounterStatusFinished]: StructureDefinition-IDCoreEncounterStatusFinished.html
 [IDCoreObservation]: StructureDefinition-IDCoreObservation.html
 [KemkesCancerMCategoryCS]: CodeSystem-KemkesCancerMCategory.html
 [KemkesCancerNCategory]: CodeSystem-KemkesCancerNCategory.html

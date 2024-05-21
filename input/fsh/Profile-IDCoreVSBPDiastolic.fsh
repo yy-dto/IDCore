@@ -24,4 +24,3 @@ Description: "All FHIR elements must have a @value or children"
 * severity = #error
 * expression = "Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450"
 * xpath = "@value|f:*|h:div"
-* source = "http://hl7.org/fhir/StructureDefinition/Element"

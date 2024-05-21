@@ -37,7 +37,7 @@
           {
             "key": "dias-ele-1",
             "human": "All FHIR elements must have a @value or children",
-            "source": "http://hl7.org/fhir/StructureDefinition/Element",
+            "source": "http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-diastolic",
             "severity": "error",
             "expression": "Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450",
             "xpath": "@value|f:*|h:div"

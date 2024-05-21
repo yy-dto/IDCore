@@ -1,14 +1,13 @@
+Alias: $locationServiceClass-Outpatient = http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient
+
 Profile: IDCoreEncounterEMER
 Parent: IDCoreEncounter
 Description: "Encounter profile for Emergency patient"
-* location.extension 1..1
-* location.extension.extension 1..1
-* location.extension.extension.valueCodeableConcept from EncounterLocationServiceClassOutpatient
+* location.extension ^extension[0].url = "value"
+* location.extension ^extension[0].valueCodeableConcept = $locationServiceClass-Outpatient#reguler
 
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType
-Alias: $locationServiceClass-Outpatient = http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient
-Alias: $locationUpgradeClass = http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass
 
 Instance: IDCoreEncounterEMER
 InstanceOf: IDCoreEncounter

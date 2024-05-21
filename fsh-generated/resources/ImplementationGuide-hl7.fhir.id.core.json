@@ -42,14 +42,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/EncounterLocation"
-        },
-        "name": "Encounter Location Extention",
-        "description": "The administrative code of the address, represented in six levels: province, city/regency, district, village, rt and rw.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/EncounterLocationServiceClassInpatient"
         },
         "name": "Encounter Location ServiceClass Inpatient",
@@ -110,74 +102,6 @@
         },
         "name": "ICD-0 Topography",
         "description": "Created by: Fadhil Muhammad",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IDCoreCondition"
-        },
-        "name": "IDCoreCondition",
-        "description": "ID Core Condition profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Condition/IDCoreCondition"
-        },
-        "name": "IDCoreCondition",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IDCoreEncounter"
-        },
-        "name": "IDCoreEncounter",
-        "description": "ID Core Encounter profile",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Encounter/IDCoreEncounter"
-        },
-        "name": "IDCoreEncounter",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IDCoreEncounterEMER"
-        },
-        "name": "IDCoreEncounterEMER",
-        "description": "Encounter profile for Emergency patient",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Encounter/IDCoreEncounterEMER"
-        },
-        "name": "IDCoreEncounterEMER",
-        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IDCoreEncounterIMP"
-        },
-        "name": "IDCoreEncounterIMP",
-        "description": "Encounter profile for inpatient patient",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "Encounter/IDCoreEncounterIMP"
-        },
-        "name": "IDCoreEncounterIMP",
-        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/IDCoreEncounterStatusFinished"
-        },
-        "name": "IDCoreEncounterStatusFinished",
-        "description": "Encounter profile when the Status is Finished",
         "exampleBoolean": false
       },
       {
