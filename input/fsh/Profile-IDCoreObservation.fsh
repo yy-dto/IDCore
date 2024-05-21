@@ -1,5 +1,5 @@
-Alias: $Observation.codeVS = http://terminology.kemkes.go.id/ValueSet/Observation-code
-Alias: $Observation.bodySiteVS = http://terminology.kemkes.go.id/ValueSet/Observation-bodysite
+Alias: $Observation.codeVS = http://terminology.kemkes.go.id/ValueSet/Observation.code
+Alias: $Observation.bodySiteVS = http://terminology.kemkes.go.id/ValueSet/Observation.bodysite
 Alias: $Observation.categoryVS = http://terminology.hl7.org/ValueSet/v3-ObservationCategory
 Alias: $Observation.dataAbsentReasonVS = http://hl7.org/fhir/ValueSet/data-absent-reason
 Alias: $Observation.interpretationVS = http://terminology.kemkes.go.id/ValueSet/Observation.interpretation

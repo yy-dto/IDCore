@@ -6,6 +6,38 @@
   "status": "active",
   "description": "ID Core Observation profile",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
@@ -34,7 +66,7 @@
         "path": "Observation.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation-code"
+          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation.code"
         }
       },
       {
@@ -68,7 +100,7 @@
         "path": "Observation.bodySite",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation-bodysite"
+          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation.bodysite"
         }
       },
       {
@@ -100,7 +132,7 @@
         "path": "Observation.component.code",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation-code"
+          "valueSet": "http://terminology.kemkes.go.id/ValueSet/Observation.code"
         }
       },
       {

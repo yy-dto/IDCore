@@ -30,8 +30,8 @@ CodeSystem-KemkesPrevTBTreatment.json                    KemkesPrevTBTreatment  
 CodeSystem-KemkesSmallestLogisticUnit.json               KemkesSmallestLogisticUnit                CodeSystem  CodeSystem-KemkesSmallestLogisticUnit.fsh                    1 - 38
 StructureDefinition-IDCoreObservation.json               IDCoreObservation                         Profile     Profile-IDCoreObservation.fsh                                11 - 83
 StructureDefinition-IDCoreObservationVitalSigns.json     IDCoreObservationVitalSigns               Profile     Profile-IDCoreObservationVitalSigns.fsh                      13 - 39
-StructureDefinition-IDCoreVSBPDiastolic.json             IDCoreVSBPDiastolic                       Profile     Profile-IDCoreVSBPDiastolic.fsh                              3 - 20
-StructureDefinition-IDCoreVSBPSystolic.json              IDCoreVSBPSystolic                        Profile     Profile-IDCoreVSBPSystolic.fsh                               3 - 20
+StructureDefinition-IDCoreVSBPDiastolic.json             IDCoreVSBPDiastolic                       Profile     Profile-IDCoreVSBPDiastolic.fsh                              3 - 36
+StructureDefinition-IDCoreVSBPSystolic.json              IDCoreVSBPSystolic                        Profile     Profile-IDCoreVSBPSystolic.fsh                               3 - 36
 ValueSet-EncounterLocationServiceClassExtension.json     EncounterLocationServiceClassExtension    ValueSet    ValueSet-EncounterLocationServiceClassExtension.fsh          1 - 6
 ValueSet-EncounterLocationServiceClassInpatient.json     EncounterLocationServiceClassInpatient    ValueSet    ValueSet-EncounterLocationServiceClass-Inpatient.fsh         1 - 5
 ValueSet-EncounterLocationServiceClassOutpatient.json    EncounterLocationServiceClassOutpatient   ValueSet    ValueSet-EncounterLocationServiceClass-Outpatient.fsh        1 - 5

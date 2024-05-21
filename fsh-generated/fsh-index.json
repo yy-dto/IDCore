@@ -253,7 +253,7 @@
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreVSBPDiastolic.fsh",
     "startLine": 3,
-    "endLine": 20
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-IDCoreVSBPSystolic.json",
@@ -261,7 +261,7 @@
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreVSBPSystolic.fsh",
     "startLine": 3,
-    "endLine": 20
+    "endLine": 36
   },
   {
     "outputFile": "ValueSet-EncounterLocationServiceClassExtension.json",

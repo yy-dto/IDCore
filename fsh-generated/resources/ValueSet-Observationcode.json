@@ -5,7 +5,7 @@
   "id": "Observationcode",
   "title": "Value set specific for Observation Code",
   "description": "Value set specific for Observation Code",
-  "url": "http://terminology.kemkes.go.id/ValueSet/Observation-code",
+  "url": "http://terminology.kemkes.go.id/ValueSet/Observation.code",
   "compose": {
     "include": [
       {

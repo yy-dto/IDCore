@@ -5,12 +5,17 @@
   "id": "ObservationBodySite",
   "title": "Value set specific for Observation BodySite",
   "description": "Value set specific for Observation BodySite",
-  "url": "http://terminology.kemkes.go.id/ValueSet/Observation-bodysite",
+  "url": "http://terminology.kemkes.go.id/ValueSet/Observation.bodysite",
   "compose": {
     "include": [
       {
-        "valueSet": [
-          "http://hl7.org/fhir/ValueSet/body-site"
+        "system": "http://snomed.info/sct",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "442083009"
+          }
         ]
       }
     ]
