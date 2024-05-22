@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KemkesHospitalClassCS"/>
+  <language value="Indonesia"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/HospitalClass</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">A<a name="KemkesHospitalClassCS-A"> </a></td><td>RS Kelas A</td></tr><tr><td style="white-space:nowrap">B<a name="KemkesHospitalClassCS-B"> </a></td><td>RS Kelas B</td></tr><tr><td style="white-space:nowrap">C<a name="KemkesHospitalClassCS-C"> </a></td><td>RS Kelas C</td></tr><tr><td style="white-space:nowrap">D<a name="KemkesHospitalClassCS-D"> </a></td><td>RS Kelas D</td></tr></table></div>
+  </text>
+  <url value="http://terminology.kemkes.go.id/CodeSystem/HospitalClass"/>
+  <version value="0.1.0"/>
+  <name value="KemkesHospitalClassCS"/>
+  <title value="Terminology Kemkes Hospital Class CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-02-05T00:00:00.000Z"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <description value="Terminology Kemkes Hospital Class CodeSystem"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://terminology.kemkes.go.id/ValueSet/HospitalClass"/>
+  <hierarchyMeaning value="is-a"/>
+  <compositional value="false"/>
+  <versionNeeded value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="A"/>
+    <display value="RS Kelas A"/>
+  </concept>
+  <concept>
+    <code value="B"/>
+    <display value="RS Kelas B"/>
+  </concept>
+  <concept>
+    <code value="C"/>
+    <display value="RS Kelas C"/>
+  </concept>
+  <concept>
+    <code value="D"/>
+    <display value="RS Kelas D"/>
+  </concept>
+</CodeSystem>

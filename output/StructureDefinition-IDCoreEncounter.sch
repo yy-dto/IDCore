@@ -14,6 +14,7 @@
     <sch:rule context="f:Encounter">
       <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:period) &gt;= 1">period: minimum cardinality of 'period' is 1</sch:assert>
+      <sch:assert test="count(f:location) &gt;= 1">location: minimum cardinality of 'location' is 1</sch:assert>
       <sch:assert test="count(f:serviceProvider) &gt;= 1">serviceProvider: minimum cardinality of 'serviceProvider' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
@@ -35,7 +36,7 @@
   <sch:pattern>
     <sch:title>f:Encounter/f:location</sch:title>
     <sch:rule context="f:Encounter/f:location">
-      <sch:assert test="count(f:extension[@url = 'https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation']) &lt;= 1">extension with URL = 'https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation']) &gt;= 1">extension with URL = 'https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation': minimum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

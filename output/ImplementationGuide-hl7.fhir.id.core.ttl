@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "IDCore"] ; # 
   fhir:title [ fhir:v "ID Core Implementation Guide"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-02-15T12:08:26+07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-22T17:23:47+07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Thomas Chaidir" ] ;
@@ -40,7 +40,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.3.0" ]
+     fhir:version [ fhir:v "5.5.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -52,7 +52,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "5.1.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -512,14 +512,25 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationAdmitSourceVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterHospitalizationAdmitSourceVS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension> ;
+         fhir:reference [ fhir:v "StructureDefinition/AddressExtension" ]
        ] ;
-       fhir:name [ fhir:v "Admit Source" ] ;
-       fhir:description [ fhir:v "This value set defines a set of codes that can be used to indicate from where the patient came in." ] ;
+       fhir:name [ fhir:v "Address administrative code extension" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreVSBPDiastolic> ;
+         fhir:reference [ fhir:v "StructureDefinition/IDCoreVSBPDiastolic" ]
+       ] ;
+       fhir:name [ fhir:v "Diastolic Blood Pressure" ] ;
+       fhir:description [ fhir:v "Profile for diastolic blood pressure value." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -527,155 +538,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ConditionBodySiteVS> ;
-         fhir:reference [ fhir:v "ValueSet/ConditionBodySiteVS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassExtension> ;
+         fhir:reference [ fhir:v "ValueSet/EncounterLocationServiceClassExtension" ]
        ] ;
-       fhir:name [ fhir:v "Condition BodySite" ] ;
-       fhir:description [ fhir:v "Created by: Fadhil Muhammad" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ConditionCategoryVS> ;
-         fhir:reference [ fhir:v "ValueSet/ConditionCategoryVS" ]
-       ] ;
-       fhir:name [ fhir:v "Condition Category" ] ;
-       fhir:description [ fhir:v "Created by: Fadhil Muhammad" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ConditionClinicalStatusVS> ;
-         fhir:reference [ fhir:v "ValueSet/ConditionClinicalStatusVS" ]
-       ] ;
-       fhir:name [ fhir:v "Condition Clinical Status" ] ;
-       fhir:description [ fhir:v "This defines a set of codes for Condition Clinical Status." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ConditionCodeVS> ;
-         fhir:reference [ fhir:v "ValueSet/ConditionCodeVS" ]
-       ] ;
-       fhir:name [ fhir:v "Condition Code" ] ;
-       fhir:description [ fhir:v "This value set defines set of codes for Condition Code." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ConditionEvidenceCodeVS> ;
-         fhir:reference [ fhir:v "ValueSet/ConditionEvidenceCodeVS" ]
-       ] ;
-       fhir:name [ fhir:v "Condition Evidence Code" ] ;
-       fhir:description [ fhir:v "Created by: Fadhil Muhammad" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ConditionSeverityVS> ;
-         fhir:reference [ fhir:v "ValueSet/ConditionSeverityVS" ]
-       ] ;
-       fhir:name [ fhir:v "Condition Severity" ] ;
-       fhir:description [ fhir:v "Created by: Fadhil Muhammad" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ConditionStageSummaryVS> ;
-         fhir:reference [ fhir:v "ValueSet/ConditionStageSummaryVS" ]
-       ] ;
-       fhir:name [ fhir:v "Condition Stage Summary" ] ;
-       fhir:description [ fhir:v "Created by: Fadhil Muhammad" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ConditionStageTypeVS> ;
-         fhir:reference [ fhir:v "ValueSet/ConditionStageTypeVS" ]
-       ] ;
-       fhir:name [ fhir:v "Condition Stage Type" ] ;
-       fhir:description [ fhir:v "Created by: Fadhil Muhammad" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ConditionVerificationStatusVS> ;
-         fhir:reference [ fhir:v "ValueSet/ConditionVerificationStatusVS" ]
-       ] ;
-       fhir:name [ fhir:v "Condition Verification Status" ] ;
-       fhir:description [ fhir:v "Created by: Fadhil Muhammad" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterDiagnosisUseVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterDiagnosisUseVS" ]
-       ] ;
-       fhir:name [ fhir:v "DiagnosisRole" ] ;
-       fhir:description [ fhir:v "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreDietVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterHospitalizationreDietVS" ]
-       ] ;
-       fhir:name [ fhir:v "Diet" ] ;
-       fhir:description [ fhir:v "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationDischargeDispositionVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterHospitalizationDischargeDispositionVS" ]
-       ] ;
-       fhir:name [ fhir:v "Discharge disposition" ] ;
-       fhir:description [ fhir:v "This value set defines a set of codes that can be used to where the patient left the hospital." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/EncounterClassCS> ;
-         fhir:reference [ fhir:v "CodeSystem/EncounterClassCS" ]
-       ] ;
-       fhir:name [ fhir:v "Encounter Class" ] ;
-       fhir:description [ fhir:v "Local ID encounter Class" ] ;
+       fhir:name [ fhir:v "Encounter Location Extension" ] ;
+       fhir:description [ fhir:v "A set of codes, specifying location extension valueset." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -687,7 +554,6 @@
          fhir:reference [ fhir:v "StructureDefinition/EncounterLocation" ]
        ] ;
        fhir:name [ fhir:v "Encounter Location Extention" ] ;
-       fhir:description [ fhir:v "The administrative code of the address, represented in six levels: province, city/regency, district, village, rt and rw." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -695,8 +561,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/EncounterLocationServiceClassInpatientCS> ;
-         fhir:reference [ fhir:v "CodeSystem/EncounterLocationServiceClassInpatientCS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/EncounterLocationServiceClassInpatient> ;
+         fhir:reference [ fhir:v "CodeSystem/EncounterLocationServiceClassInpatient" ]
        ] ;
        fhir:name [ fhir:v "Encounter Location ServiceClass Inpatient" ] ;
        fhir:description [ fhir:v "Local ID encounter location ServiceClass Inpatient" ] ;
@@ -707,8 +573,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/EncounterLocationServiceClassOutpatientCS> ;
-         fhir:reference [ fhir:v "CodeSystem/EncounterLocationServiceClassOutpatientCS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/EncounterLocationServiceClassOutpatient> ;
+         fhir:reference [ fhir:v "CodeSystem/EncounterLocationServiceClassOutpatient" ]
        ] ;
        fhir:name [ fhir:v "Encounter Location ServiceClass Outpatient" ] ;
        fhir:description [ fhir:v "Local ID encounter location ServiceClass Outpatient" ] ;
@@ -719,8 +585,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassInpatientVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterLocationServiceClassInpatientVS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassInpatient> ;
+         fhir:reference [ fhir:v "ValueSet/EncounterLocationServiceClassInpatient" ]
        ] ;
        fhir:name [ fhir:v "Encounter Location ServiceClass-Inpatient" ] ;
        fhir:description [ fhir:v "A set of codes, specifying location ServiceClass for inpatient patient." ] ;
@@ -731,8 +597,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassOutpatientVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterLocationServiceClassOutpatientVS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassOutpatient> ;
+         fhir:reference [ fhir:v "ValueSet/EncounterLocationServiceClassOutpatient" ]
        ] ;
        fhir:name [ fhir:v "Encounter Location ServiceClass-Outpatient" ] ;
        fhir:description [ fhir:v "A set of codes, specifying location ServiceClass for outpatient patient." ] ;
@@ -743,32 +609,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationStatusVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterLocationStatusVS" ]
-       ] ;
-       fhir:name [ fhir:v "Encounter Location Status" ] ;
-       fhir:description [ fhir:v "The status of the location." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationTypeVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterLocationTypeVS" ]
-       ] ;
-       fhir:name [ fhir:v "Encounter Location Type" ] ;
-       fhir:description [ fhir:v "This example value set defines a set of codes that can be used to indicate the physical form of the Location." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationUpgradeClassVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterLocationUpgradeClassVS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationUpgradeClass> ;
+         fhir:reference [ fhir:v "ValueSet/EncounterLocationUpgradeClass" ]
        ] ;
        fhir:name [ fhir:v "Encounter Location Upgrade Class" ] ;
        fhir:description [ fhir:v "A set of codes, specifying location UpgradeClass." ] ;
@@ -784,30 +626,6 @@
        ] ;
        fhir:name [ fhir:v "Encounter Location UpgradeClass" ] ;
        fhir:description [ fhir:v "Local ID encounter location UpgradeClass" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterTypeVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterTypeVS" ]
-       ] ;
-       fhir:name [ fhir:v "Encounter type" ] ;
-       fhir:description [ fhir:v "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterStatusVS" ]
-       ] ;
-       fhir:name [ fhir:v "EncounterStatus" ] ;
-       fhir:description [ fhir:v "Current state of the encounter." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -946,6 +764,42 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreObservation> ;
+         fhir:reference [ fhir:v "StructureDefinition/IDCoreObservation" ]
+       ] ;
+       fhir:name [ fhir:v "IDCoreObservation" ] ;
+       fhir:description [ fhir:v "ID Core Observation profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/IDCorePatient> ;
+         fhir:reference [ fhir:v "StructureDefinition/IDCorePatient" ]
+       ] ;
+       fhir:name [ fhir:v "IDCorePatient" ] ;
+       fhir:description [ fhir:v "ID Core Patient profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/IDCorePractitioner> ;
+         fhir:reference [ fhir:v "StructureDefinition/IDCorePractitioner" ]
+       ] ;
+       fhir:name [ fhir:v "IDCorePractitioner" ] ;
+       fhir:description [ fhir:v "ID Core Practitioner profile" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
@@ -960,8 +814,8 @@
          fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/41b4aac4-719f-4f8a-a96b-92e493c99b75> ;
-         fhir:reference [ fhir:v "CodeSystem/41b4aac4-719f-4f8a-a96b-92e493c99b75" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesCancerNCategory> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesCancerNCategory" ]
        ] ;
        fhir:name [ fhir:v "Kemkes Cancer N Category" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
@@ -979,89 +833,49 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/CitizenshipStatusExtension> ;
+         fhir:reference [ fhir:v "StructureDefinition/CitizenshipStatusExtension" ]
+       ] ;
+       fhir:name [ fhir:v "Patient citizenship status extension" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/MyPatient> ;
-         fhir:reference [ fhir:v "StructureDefinition/MyPatient" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreVSBPSystolic> ;
+         fhir:reference [ fhir:v "StructureDefinition/IDCoreVSBPSystolic" ]
        ] ;
-       fhir:name [ fhir:v "MyPatient" ] ;
-       fhir:description [ fhir:v "An example profile of the Patient resource." ] ;
+       fhir:name [ fhir:v "Systolic Blood Pressure" ] ;
+       fhir:description [ fhir:v "Profile for systolic blood pressure value." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
+         fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ParticipationTypeVS> ;
-         fhir:reference [ fhir:v "ValueSet/ParticipationTypeVS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesCarePlanCategoryCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesCarePlanCategoryCS" ]
        ] ;
-       fhir:name [ fhir:v "Participant type" ] ;
-       fhir:description [ fhir:v "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter" ] ;
+       fhir:name [ fhir:v "Terminology Kemkes Clinical Term CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes Clinical Speciality CodeSystem" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
+         fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/Patient/PatientExample> ;
-         fhir:reference [ fhir:v "Patient/PatientExample" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesClinicalSpecialityCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesClinicalSpecialityCS" ]
        ] ;
-       fhir:name [ fhir:v "PatientExample" ] ;
-       fhir:description [ fhir:v "An example of a patient with a license to krill." ] ;
-       fhir:example [
-         fhir:v "https://fhir.kemkes.go.id/r4/StructureDefinition/MyPatient"^^xsd:anyURI ;
-         fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/MyPatient>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterReasonCodesVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterReasonCodesVS" ]
-       ] ;
-       fhir:name [ fhir:v "Reason Code" ] ;
-       fhir:description [ fhir:v "This examples value set defines the set of codes that can be used to indicate reasons for an encounter." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterServiceTypeVS" ]
-       ] ;
-       fhir:name [ fhir:v "Service type" ] ;
-       fhir:description [ fhir:v "This value set defines an example set of codes of service-types." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationSpecialArrangementsVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterHospitalizationSpecialArrangementsVS" ]
-       ] ;
-       fhir:name [ fhir:v "Special arrangements" ] ;
-       fhir:description [ fhir:v "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreSpecialCourtesyVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterHospitalizationreSpecialCourtesyVS" ]
-       ] ;
-       fhir:name [ fhir:v "Special courtesy" ] ;
-       fhir:description [ fhir:v "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient." ] ;
+       fhir:name [ fhir:v "Terminology Kemkes Clinical Term CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes Clinical Speciality CodeSystem" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1073,7 +887,223 @@
          fhir:reference [ fhir:v "CodeSystem/KemkesClinicalTermCS" ]
        ] ;
        fhir:name [ fhir:v "Terminology Kemkes Clinical Term CodeSystem" ] ;
-       fhir:description [ fhir:v "Created by: Fadhil Muhammad" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes Clinical Term CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesCompositionSectionCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesCompositionSectionCS" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes composition section CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes composition section CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesCompositionTypeCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesCompositionTypeCS" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes composition type CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes composition type CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesExaminationCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesExaminationCS" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes examination CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes examination CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesHospitalClassCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesHospitalClassCS" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes Hospital Class CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes Hospital Class CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesImmunizationProgramEligibilityCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesImmunizationProgramEligibilityCS" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes immunization program eligibility CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes immunization program eligibility CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesImmunizationReasonCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesImmunizationReasonCS" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes immunization reason CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes immunization reason CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesImmunizationRoutineTimingCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesImmunizationRoutineTimingCS" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes immunization routine timing CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes immunization routine timing CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesImmunizationStatusReasonCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesImmunizationStatusReasonCS" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes immunization statusReason CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes immunization statusReason  CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesImmunizationFundingSourceCS> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesImmunizationFundingSourceCS" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes immunization- funding source CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes immunization- funding source CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesKPSP> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesKPSP" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes kpsp CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes kpsp CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesLocationUpgradeClass> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesLocationUpgradeClass" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes location upgrade class CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes location upgrade class CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesLocationType> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesLocationType" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes location-type CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes location-type CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesMedicationForm> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesMedicationForm" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes medication form CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes medication form CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesMedicationType> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesMedicationType" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes medication type CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes medication type CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesObservationInterpretation> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesObservationInterpretation" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes ObservationInterpretation CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes Observation Interpretation CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesOrganizationType> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesOrganizationType" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes organization type CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes organization type CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesPrevTBTreatment> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesPrevTBTreatment" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes prev-tb-treatment CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes prev-tb-treatment CodeSystem" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/CodeSystem/KemkesSmallestLogisticUnit> ;
+         fhir:reference [ fhir:v "CodeSystem/KemkesSmallestLogisticUnit" ]
+       ] ;
+       fhir:name [ fhir:v "Terminology Kemkes smallest logistic unit CodeSystem" ] ;
+       fhir:description [ fhir:v "Terminology Kemkes smallest logistic unit CodeSystem" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1081,11 +1111,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreAdmitSourceVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterHospitalizationreAdmitSourceVS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ObservationBodySite> ;
+         fhir:reference [ fhir:v "ValueSet/ObservationBodySite" ]
        ] ;
-       fhir:name [ fhir:v "v2 RE-ADMISSION INDICATOR" ] ;
-       fhir:description [ fhir:v "FHIR Value set/code system definition for HL7 v2 table 0092 ( RE-ADMISSION INDICATOR)" ] ;
+       fhir:name [ fhir:v "Value set specific for Observation BodySite" ] ;
+       fhir:description [ fhir:v "Value set specific for Observation BodySite" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1093,11 +1123,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ActPriorityVS> ;
-         fhir:reference [ fhir:v "ValueSet/ActPriorityVS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/Observationcode> ;
+         fhir:reference [ fhir:v "ValueSet/Observationcode" ]
        ] ;
-       fhir:name [ fhir:v "v3 Code System ActPriority" ] ;
-       fhir:description [ fhir:v "A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen." ] ;
+       fhir:name [ fhir:v "Value set specific for Observation Code" ] ;
+       fhir:description [ fhir:v "Value set specific for Observation Code" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1105,11 +1135,47 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS> ;
-         fhir:reference [ fhir:v "ValueSet/EncounterClassVS" ]
+         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/Observation.interpretation> ;
+         fhir:reference [ fhir:v "ValueSet/Observation.interpretation" ]
        ] ;
-       fhir:name [ fhir:v "V3 Value SetActEncounterCode" ] ;
-       fhir:description [ fhir:v "Domain provides codes that qualify the ActEncounterClass (ENC)" ] ;
+       fhir:name [ fhir:v "Value set specific for Observation Code" ] ;
+       fhir:description [ fhir:v "Value set specific for Observation Code" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/Observation.valueCodeableConceptSpecific> ;
+         fhir:reference [ fhir:v "ValueSet/Observation.valueCodeableConceptSpecific" ]
+       ] ;
+       fhir:name [ fhir:v "Value set specific for Observation specific value CodeableConcept" ] ;
+       fhir:description [ fhir:v "Value set specific for Observation specific value CodeableConcept" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/Observation.valueCodeableConcept> ;
+         fhir:reference [ fhir:v "ValueSet/Observation.valueCodeableConcept" ]
+       ] ;
+       fhir:name [ fhir:v "Value set specific for Observation value CodeableConcept" ] ;
+       fhir:description [ fhir:v "Value set specific for Observation value CodeableConcept" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreObservationVitalSigns> ;
+         fhir:reference [ fhir:v "StructureDefinition/IDCoreObservationVitalSigns" ]
+       ] ;
+       fhir:name [ fhir:v "Vital Signs Profile" ] ;
+       fhir:description [ fhir:v "IDCore Vital Signs Profile" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [
@@ -1285,7 +1351,10 @@
        fhir:value [ fhir:v "fsh-generated/resources" ]
      ] [
        fhir:code [ fhir:v "path-pages" ] ;
-       fhir:value [ fhir:v "input/pagecontent" ]
+       fhir:value [ fhir:v "input/pagecontent/valueset" ]
+     ] [
+       fhir:code [ fhir:v "path-pages" ] ;
+       fhir:value [ fhir:v "input/pagecontent/codesystem" ]
      ] [
        fhir:code [ fhir:v "path-pages" ] ;
        fhir:value [ fhir:v "fsh-generated/includes" ]

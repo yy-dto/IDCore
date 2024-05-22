@@ -1,28 +1,28 @@
 {
   "codeSystems" : [
     {
-      "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterLocationServiceClassInpatientCS",
-      "title" : "Encounter Location ServiceClass Inpatient",
-      "description" : "Local ID encounter location ServiceClass Inpatient"
-    },
-    {
-      "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterLocationServiceClassOutpatientCS",
-      "title" : "Encounter Location ServiceClass Outpatient",
-      "description" : "Local ID encounter location ServiceClass Outpatient"
-    },
-    {
       "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "EncounterLocationUpgradeClass",
       "title" : "Encounter Location UpgradeClass",
       "description" : "Local ID encounter location UpgradeClass"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/HospitalClass",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesHospitalClassCS",
+      "title" : "Terminology Kemkes Hospital Class CodeSystem",
+      "description" : "Terminology Kemkes Hospital Class CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesObservationInterpretation",
+      "title" : "Terminology Kemkes ObservationInterpretation CodeSystem",
+      "description" : "Terminology Kemkes Observation Interpretation CodeSystem"
     },
     {
       "url" : "http://terminology.kemkes.go.id/CodeSystem/cancer-m-category",
@@ -49,20 +49,52 @@
       "description" : null
     },
     {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/care-plan-category",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesCarePlanCategoryCS",
+      "title" : "Terminology Kemkes Clinical Term CodeSystem",
+      "description" : "Terminology Kemkes Clinical Speciality CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/clinical-speciality",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesClinicalSpecialityCS",
+      "title" : "Terminology Kemkes Clinical Term CodeSystem",
+      "description" : "Terminology Kemkes Clinical Speciality CodeSystem"
+    },
+    {
       "url" : "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
       "version" : "0.1.0",
       "status" : "active",
       "name" : "KemkesClinicalTermCS",
       "title" : "Terminology Kemkes Clinical Term CodeSystem",
-      "description" : "Created by: Fadhil Muhammad"
+      "description" : "Terminology Kemkes Clinical Term CodeSystem"
     },
     {
-      "url" : "http://terminology.kemkes.go.id/CodeSystem/encounter-class",
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/composition-section",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "EncounterClassCS",
-      "title" : "Encounter Class",
-      "description" : "Local ID encounter Class"
+      "name" : "KemkesCompositionSectionCS",
+      "title" : "Terminology Kemkes composition section CodeSystem",
+      "description" : "Terminology Kemkes composition section CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/composition-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesCompositionTypeCS",
+      "title" : "Terminology Kemkes composition type CodeSystem",
+      "description" : "Terminology Kemkes composition type CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/examination",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesExaminationCS",
+      "title" : "Terminology Kemkes examination CodeSystem",
+      "description" : "Terminology Kemkes examination CodeSystem"
     },
     {
       "url" : "http://terminology.kemkes.go.id/CodeSystem/icd-o-morphology",
@@ -79,6 +111,126 @@
       "name" : "KemkesICDOTopographyCS",
       "title" : "ICD-0 Topography",
       "description" : "Created by: Fadhil Muhammad"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-fundingSource",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesImmunizationFundingSourceCS",
+      "title" : "Terminology Kemkes immunization- funding source CodeSystem",
+      "description" : "Terminology Kemkes immunization- funding source CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-program-eligibility",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesImmunizationProgramEligibilityCS",
+      "title" : "Terminology Kemkes immunization program eligibility CodeSystem",
+      "description" : "Terminology Kemkes immunization program eligibility CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-reason",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesImmunizationReasonCS",
+      "title" : "Terminology Kemkes immunization reason CodeSystem",
+      "description" : "Terminology Kemkes immunization reason CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-routine-timing",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesImmunizationRoutineTimingCS",
+      "title" : "Terminology Kemkes immunization routine timing CodeSystem",
+      "description" : "Terminology Kemkes immunization routine timing CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-statusReason",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesImmunizationStatusReasonCS",
+      "title" : "Terminology Kemkes immunization statusReason CodeSystem",
+      "description" : "Terminology Kemkes immunization statusReason  CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/location-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesLocationType",
+      "title" : "Terminology Kemkes location-type CodeSystem",
+      "description" : "Terminology Kemkes location-type CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterLocationServiceClassInpatient",
+      "title" : "Encounter Location ServiceClass Inpatient",
+      "description" : "Local ID encounter location ServiceClass Inpatient"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterLocationServiceClassOutpatient",
+      "title" : "Encounter Location ServiceClass Outpatient",
+      "description" : "Local ID encounter location ServiceClass Outpatient"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesLocationUpgradeClass",
+      "title" : "Terminology Kemkes location upgrade class CodeSystem",
+      "description" : "Terminology Kemkes location upgrade class CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/medication-form",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesMedicationForm",
+      "title" : "Terminology Kemkes medication form CodeSystem",
+      "description" : "Terminology Kemkes medication form CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/medication-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesMedicationType",
+      "title" : "Terminology Kemkes medication type CodeSystem",
+      "description" : "Terminology Kemkes medication type CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/organization-type",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesOrganizationType",
+      "title" : "Terminology Kemkes organization type CodeSystem",
+      "description" : "Terminology Kemkes organization type CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesPrevTBTreatment",
+      "title" : "Terminology Kemkes prev-tb-treatment CodeSystem",
+      "description" : "Terminology Kemkes prev-tb-treatment CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/smallest-logistic-unit",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesSmallestLogisticUnit",
+      "title" : "Terminology Kemkes smallest logistic unit CodeSystem",
+      "description" : "Terminology Kemkes smallest logistic unit CodeSystem"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/Codesystem/kpsp",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesKPSP",
+      "title" : "Terminology Kemkes kpsp CodeSystem",
+      "description" : "Terminology Kemkes kpsp CodeSystem"
     }
   ]
 }

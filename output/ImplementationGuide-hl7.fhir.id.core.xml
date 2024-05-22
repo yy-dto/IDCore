@@ -10,7 +10,7 @@
   <name value="IDCore"/>
   <title value="ID Core Implementation Guide"/>
   <status value="active"/>
-  <date value="2024-02-15T12:08:26+07:00"/>
+  <date value="2024-05-22T17:23:47+07:00"/>
   <publisher value="Thomas Chaidir"/>
   <contact>
     <name value="Thomas Chaidir"/>
@@ -28,7 +28,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="5.3.0"/>
+    <version value="5.5.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -36,7 +36,7 @@
     </extension>
     <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
     <packageId value="hl7.fhir.uv.extensions.r4"/>
-    <version value="1.0.0"/>
+    <version value="5.1.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -444,13 +444,23 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="ValueSet/EncounterHospitalizationAdmitSourceVS"/>
+        <reference value="StructureDefinition/AddressExtension"/>
       </reference>
-      <name value="Admit Source"/>
-      <description value="This value set defines a set of codes that can be used to indicate from where the patient came in."/>
+      <name value="Address administrative code extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IDCoreVSBPDiastolic"/>
+      </reference>
+      <name value="Diastolic Blood Pressure"/>
+      <description value="Profile for diastolic blood pressure value."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -458,142 +468,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ConditionBodySiteVS"/>
+        <reference value="ValueSet/EncounterLocationServiceClassExtension"/>
       </reference>
-      <name value="Condition BodySite"/>
-      <description value="Created by: Fadhil Muhammad"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConditionCategoryVS"/>
-      </reference>
-      <name value="Condition Category"/>
-      <description value="Created by: Fadhil Muhammad"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConditionClinicalStatusVS"/>
-      </reference>
-      <name value="Condition Clinical Status"/>
-      <description value="This defines a set of codes for Condition Clinical Status."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConditionCodeVS"/>
-      </reference>
-      <name value="Condition Code"/>
-      <description value="This value set defines set of codes for Condition Code."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConditionEvidenceCodeVS"/>
-      </reference>
-      <name value="Condition Evidence Code"/>
-      <description value="Created by: Fadhil Muhammad"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConditionSeverityVS"/>
-      </reference>
-      <name value="Condition Severity"/>
-      <description value="Created by: Fadhil Muhammad"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConditionStageSummaryVS"/>
-      </reference>
-      <name value="Condition Stage Summary"/>
-      <description value="Created by: Fadhil Muhammad"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConditionStageTypeVS"/>
-      </reference>
-      <name value="Condition Stage Type"/>
-      <description value="Created by: Fadhil Muhammad"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ConditionVerificationStatusVS"/>
-      </reference>
-      <name value="Condition Verification Status"/>
-      <description value="Created by: Fadhil Muhammad"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterDiagnosisUseVS"/>
-      </reference>
-      <name value="DiagnosisRole"/>
-      <description value="This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterHospitalizationreDietVS"/>
-      </reference>
-      <name value="Diet"/>
-      <description value="This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterHospitalizationDischargeDispositionVS"/>
-      </reference>
-      <name value="Discharge disposition"/>
-      <description value="This value set defines a set of codes that can be used to where the patient left the hospital."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/EncounterClassCS"/>
-      </reference>
-      <name value="Encounter Class"/>
-      <description value="Local ID encounter Class"/>
+      <name value="Encounter Location Extension"/>
+      <description value="A set of codes, specifying location extension valueset."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -604,7 +482,6 @@
         <reference value="StructureDefinition/EncounterLocation"/>
       </reference>
       <name value="Encounter Location Extention"/>
-      <description value="The administrative code of the address, represented in six levels: province, city/regency, district, village, rt and rw."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -612,7 +489,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/EncounterLocationServiceClassInpatientCS"/>
+        <reference value="CodeSystem/EncounterLocationServiceClassInpatient"/>
       </reference>
       <name value="Encounter Location ServiceClass Inpatient"/>
       <description value="Local ID encounter location ServiceClass Inpatient"/>
@@ -623,7 +500,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/EncounterLocationServiceClassOutpatientCS"/>
+        <reference value="CodeSystem/EncounterLocationServiceClassOutpatient"/>
       </reference>
       <name value="Encounter Location ServiceClass Outpatient"/>
       <description value="Local ID encounter location ServiceClass Outpatient"/>
@@ -634,7 +511,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/EncounterLocationServiceClassInpatientVS"/>
+        <reference value="ValueSet/EncounterLocationServiceClassInpatient"/>
       </reference>
       <name value="Encounter Location ServiceClass-Inpatient"/>
       <description value="A set of codes, specifying location ServiceClass for inpatient patient."/>
@@ -645,7 +522,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/EncounterLocationServiceClassOutpatientVS"/>
+        <reference value="ValueSet/EncounterLocationServiceClassOutpatient"/>
       </reference>
       <name value="Encounter Location ServiceClass-Outpatient"/>
       <description value="A set of codes, specifying location ServiceClass for outpatient patient."/>
@@ -656,29 +533,7 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/EncounterLocationStatusVS"/>
-      </reference>
-      <name value="Encounter Location Status"/>
-      <description value="The status of the location."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterLocationTypeVS"/>
-      </reference>
-      <name value="Encounter Location Type"/>
-      <description value="This example value set defines a set of codes that can be used to indicate the physical form of the Location."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterLocationUpgradeClassVS"/>
+        <reference value="ValueSet/EncounterLocationUpgradeClass"/>
       </reference>
       <name value="Encounter Location Upgrade Class"/>
       <description value="A set of codes, specifying location UpgradeClass."/>
@@ -693,28 +548,6 @@
       </reference>
       <name value="Encounter Location UpgradeClass"/>
       <description value="Local ID encounter location UpgradeClass"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterTypeVS"/>
-      </reference>
-      <name value="Encounter type"/>
-      <description value="This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterStatusVS"/>
-      </reference>
-      <name value="EncounterStatus"/>
-      <description value="Current state of the encounter."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -836,6 +669,39 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IDCoreObservation"/>
+      </reference>
+      <name value="IDCoreObservation"/>
+      <description value="ID Core Observation profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IDCorePatient"/>
+      </reference>
+      <name value="IDCorePatient"/>
+      <description value="ID Core Patient profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IDCorePractitioner"/>
+      </reference>
+      <name value="IDCorePractitioner"/>
+      <description value="ID Core Practitioner profile"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
@@ -849,7 +715,7 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="CodeSystem/41b4aac4-719f-4f8a-a96b-92e493c99b75"/>
+        <reference value="CodeSystem/KemkesCancerNCategory"/>
       </reference>
       <name value="Kemkes Cancer N Category"/>
       <exampleBoolean value="false"/>
@@ -866,79 +732,45 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/CitizenshipStatusExtension"/>
+      </reference>
+      <name value="Patient citizenship status extension"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MyPatient"/>
+        <reference value="StructureDefinition/IDCoreVSBPSystolic"/>
       </reference>
-      <name value="MyPatient"/>
-      <description value="An example profile of the Patient resource."/>
+      <name value="Systolic Blood Pressure"/>
+      <description value="Profile for systolic blood pressure value."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ParticipationTypeVS"/>
+        <reference value="CodeSystem/KemkesCarePlanCategoryCS"/>
       </reference>
-      <name value="Participant type"/>
-      <description value="This value set defines a set of codes that can be used to indicate how an individual participates in an encounter"/>
+      <name value="Terminology Kemkes Clinical Term CodeSystem"/>
+      <description value="Terminology Kemkes Clinical Speciality CodeSystem"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
+        <valueString value="CodeSystem"/>
       </extension>
       <reference>
-        <reference value="Patient/PatientExample"/>
+        <reference value="CodeSystem/KemkesClinicalSpecialityCS"/>
       </reference>
-      <name value="PatientExample"/>
-      <description value="An example of a patient with a license to krill."/>
-      <exampleCanonical value="https://fhir.kemkes.go.id/r4/StructureDefinition/MyPatient"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterReasonCodesVS"/>
-      </reference>
-      <name value="Reason Code"/>
-      <description value="This examples value set defines the set of codes that can be used to indicate reasons for an encounter."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterServiceTypeVS"/>
-      </reference>
-      <name value="Service type"/>
-      <description value="This value set defines an example set of codes of service-types."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterHospitalizationSpecialArrangementsVS"/>
-      </reference>
-      <name value="Special arrangements"/>
-      <description value="This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/EncounterHospitalizationreSpecialCourtesyVS"/>
-      </reference>
-      <name value="Special courtesy"/>
-      <description value="This value set defines a set of codes that can be used to indicate special courtesies provided to the patient."/>
+      <name value="Terminology Kemkes Clinical Term CodeSystem"/>
+      <description value="Terminology Kemkes Clinical Speciality CodeSystem"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -949,7 +781,205 @@
         <reference value="CodeSystem/KemkesClinicalTermCS"/>
       </reference>
       <name value="Terminology Kemkes Clinical Term CodeSystem"/>
-      <description value="Created by: Fadhil Muhammad"/>
+      <description value="Terminology Kemkes Clinical Term CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesCompositionSectionCS"/>
+      </reference>
+      <name value="Terminology Kemkes composition section CodeSystem"/>
+      <description value="Terminology Kemkes composition section CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesCompositionTypeCS"/>
+      </reference>
+      <name value="Terminology Kemkes composition type CodeSystem"/>
+      <description value="Terminology Kemkes composition type CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesExaminationCS"/>
+      </reference>
+      <name value="Terminology Kemkes examination CodeSystem"/>
+      <description value="Terminology Kemkes examination CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesHospitalClassCS"/>
+      </reference>
+      <name value="Terminology Kemkes Hospital Class CodeSystem"/>
+      <description value="Terminology Kemkes Hospital Class CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesImmunizationProgramEligibilityCS"/>
+      </reference>
+      <name value="Terminology Kemkes immunization program eligibility CodeSystem"/>
+      <description value="Terminology Kemkes immunization program eligibility CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesImmunizationReasonCS"/>
+      </reference>
+      <name value="Terminology Kemkes immunization reason CodeSystem"/>
+      <description value="Terminology Kemkes immunization reason CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesImmunizationRoutineTimingCS"/>
+      </reference>
+      <name value="Terminology Kemkes immunization routine timing CodeSystem"/>
+      <description value="Terminology Kemkes immunization routine timing CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesImmunizationStatusReasonCS"/>
+      </reference>
+      <name value="Terminology Kemkes immunization statusReason CodeSystem"/>
+      <description value="Terminology Kemkes immunization statusReason  CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesImmunizationFundingSourceCS"/>
+      </reference>
+      <name value="Terminology Kemkes immunization- funding source CodeSystem"/>
+      <description value="Terminology Kemkes immunization- funding source CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesKPSP"/>
+      </reference>
+      <name value="Terminology Kemkes kpsp CodeSystem"/>
+      <description value="Terminology Kemkes kpsp CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesLocationUpgradeClass"/>
+      </reference>
+      <name value="Terminology Kemkes location upgrade class CodeSystem"/>
+      <description value="Terminology Kemkes location upgrade class CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesLocationType"/>
+      </reference>
+      <name value="Terminology Kemkes location-type CodeSystem"/>
+      <description value="Terminology Kemkes location-type CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesMedicationForm"/>
+      </reference>
+      <name value="Terminology Kemkes medication form CodeSystem"/>
+      <description value="Terminology Kemkes medication form CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesMedicationType"/>
+      </reference>
+      <name value="Terminology Kemkes medication type CodeSystem"/>
+      <description value="Terminology Kemkes medication type CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesObservationInterpretation"/>
+      </reference>
+      <name value="Terminology Kemkes ObservationInterpretation CodeSystem"/>
+      <description value="Terminology Kemkes Observation Interpretation CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesOrganizationType"/>
+      </reference>
+      <name value="Terminology Kemkes organization type CodeSystem"/>
+      <description value="Terminology Kemkes organization type CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesPrevTBTreatment"/>
+      </reference>
+      <name value="Terminology Kemkes prev-tb-treatment CodeSystem"/>
+      <description value="Terminology Kemkes prev-tb-treatment CodeSystem"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/KemkesSmallestLogisticUnit"/>
+      </reference>
+      <name value="Terminology Kemkes smallest logistic unit CodeSystem"/>
+      <description value="Terminology Kemkes smallest logistic unit CodeSystem"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -957,10 +987,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/EncounterHospitalizationreAdmitSourceVS"/>
+        <reference value="ValueSet/ObservationBodySite"/>
       </reference>
-      <name value="v2 RE-ADMISSION INDICATOR"/>
-      <description value="FHIR Value set/code system definition for HL7 v2 table 0092 ( RE-ADMISSION INDICATOR)"/>
+      <name value="Value set specific for Observation BodySite"/>
+      <description value="Value set specific for Observation BodySite"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -968,10 +998,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ActPriorityVS"/>
+        <reference value="ValueSet/Observationcode"/>
       </reference>
-      <name value="v3 Code System ActPriority"/>
-      <description value="A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen."/>
+      <name value="Value set specific for Observation Code"/>
+      <description value="Value set specific for Observation Code"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -979,10 +1009,43 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/EncounterClassVS"/>
+        <reference value="ValueSet/Observation.interpretation"/>
       </reference>
-      <name value="V3 Value SetActEncounterCode"/>
-      <description value="Domain provides codes that qualify the ActEncounterClass (ENC)"/>
+      <name value="Value set specific for Observation Code"/>
+      <description value="Value set specific for Observation Code"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Observation.valueCodeableConceptSpecific"/>
+      </reference>
+      <name value="Value set specific for Observation specific value CodeableConcept"/>
+      <description value="Value set specific for Observation specific value CodeableConcept"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/Observation.valueCodeableConcept"/>
+      </reference>
+      <name value="Value set specific for Observation value CodeableConcept"/>
+      <description value="Value set specific for Observation value CodeableConcept"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/IDCoreObservationVitalSigns"/>
+      </reference>
+      <name value="Vital Signs Profile"/>
+      <description value="IDCore Vital Signs Profile"/>
       <exampleBoolean value="false"/>
     </resource>
     <page>
@@ -1155,7 +1218,11 @@
     </parameter>
     <parameter>
       <code value="path-pages"/>
-      <value value="input/pagecontent"/>
+      <value value="input/pagecontent/valueset"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/pagecontent/codesystem"/>
     </parameter>
     <parameter>
       <code value="path-pages"/>

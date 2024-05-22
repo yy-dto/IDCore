@@ -35,10 +35,4 @@
       <sch:assert test="count(f:end) &lt;= 1">end: maximum cardinality of 'end' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
-  <sch:pattern>
-    <sch:title>f:Encounter/f:location</sch:title>
-    <sch:rule context="f:Encounter/f:location">
-      <sch:assert test="count(f:extension[@url = 'https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation']) &lt;= 1">extension with URL = 'https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation': maximum cardinality of 'extension' is 1</sch:assert>
-    </sch:rule>
-  </sch:pattern>
 </sch:schema>

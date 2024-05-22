@@ -1,0 +1,241 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "AddressExtension",
+  "extension": [
+    {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode",
+      "extension": [
+        {
+          "url": "province",
+          "valueCode": "74"
+        },
+        {
+          "url": "city",
+          "valueCode": "3"
+        },
+        {
+          "url": "district",
+          "valueCode": "26"
+        },
+        {
+          "url": "village",
+          "valueCode": "1008"
+        },
+        {
+          "url": "rw",
+          "valueCode": "1"
+        },
+        {
+          "url": "rt",
+          "valueCode": "1"
+        }
+      ]
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension",
+  "name": "AddressExtension",
+  "title": "Address administrative code extension",
+  "status": "active",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "expression": "Patient.address",
+      "type": "element"
+    },
+    {
+      "expression": "Practitioner.address",
+      "type": "element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Patient address administrative code extention"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 6
+      },
+      {
+        "id": "Extension.extension:province",
+        "path": "Extension.extension",
+        "sliceName": "province",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:province.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:province.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "province"
+      },
+      {
+        "id": "Extension.extension:province.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:city",
+        "path": "Extension.extension",
+        "sliceName": "city",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:city.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:city.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "city"
+      },
+      {
+        "id": "Extension.extension:city.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:district",
+        "path": "Extension.extension",
+        "sliceName": "district",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:district.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:district.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "district"
+      },
+      {
+        "id": "Extension.extension:district.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:village",
+        "path": "Extension.extension",
+        "sliceName": "village",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:village.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:village.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "village"
+      },
+      {
+        "id": "Extension.extension:village.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rw",
+        "path": "Extension.extension",
+        "sliceName": "rw",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:rw.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:rw.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "rw"
+      },
+      {
+        "id": "Extension.extension:rw.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:rt",
+        "path": "Extension.extension",
+        "sliceName": "rt",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:rt.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:rt.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "rt"
+      },
+      {
+        "id": "Extension.extension:rt.value[x]",
+        "path": "Extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

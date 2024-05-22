@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "Observationcode",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <code>http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes</code></li><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a></li><li>Include all codes defined in <a href=\"CodeSystem-KemkesExaminationCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  116312005 (Finding of lower limb)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  116337000 (Oral cavity finding)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  297268004 (Ear, nose and throat finding)</li></ul></div>"
+  },
+  "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.code",
+  "version" : "0.1.0",
+  "name" : "Observationcode",
+  "title" : "Value set specific for Observation Code",
+  "status" : "active",
+  "date" : "2024-05-22T17:23:47+07:00",
+  "publisher" : "Thomas Chaidir",
+  "contact" : [{
+    "name" : "Thomas Chaidir",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://satusehat.kemkes.go.id/"
+    }]
+  }],
+  "description" : "Value set specific for Observation Code",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes"
+    },
+    {
+      "system" : "http://loinc.org"
+    },
+    {
+      "system" : "http://terminology.kemkes.go.id/CodeSystem/clinical-term"
+    },
+    {
+      "system" : "http://terminology.kemkes.go.id/CodeSystem/examination"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "116312005"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "116337000"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "297268004"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,964 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KemkesExaminationCS",
+  "language" : "Indonesia",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/examination</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">24589-4<a name=\"KemkesExaminationCS-24589-4\"> </a></td><td>MR Brain W contrast IV</td></tr><tr><td style=\"white-space:nowrap\">30657-1<a name=\"KemkesExaminationCS-30657-1\"> </a></td><td>MR Brain WO contrast</td></tr><tr><td style=\"white-space:nowrap\">IP099352<a name=\"KemkesExaminationCS-IP099352\"> </a></td><td>defisit neurologis ringan</td></tr><tr><td style=\"white-space:nowrap\">IP099353<a name=\"KemkesExaminationCS-IP099353\"> </a></td><td>defisit neurologis sedang / cukup berat</td></tr><tr><td style=\"white-space:nowrap\">IP099354<a name=\"KemkesExaminationCS-IP099354\"> </a></td><td>defisit neurologis berat</td></tr><tr><td style=\"white-space:nowrap\">IP099355<a name=\"KemkesExaminationCS-IP099355\"> </a></td><td>defisit neurologis sangat berat</td></tr><tr><td style=\"white-space:nowrap\">IP099356<a name=\"KemkesExaminationCS-IP099356\"> </a></td><td>Vasodilator Stress Ekokardiografi</td></tr><tr><td style=\"white-space:nowrap\">IP099357<a name=\"KemkesExaminationCS-IP099357\"> </a></td><td>Dobutamine Stress Ekokardiografi</td></tr><tr><td style=\"white-space:nowrap\">IP099358<a name=\"KemkesExaminationCS-IP099358\"> </a></td><td>Konfirmasi Diagnosis EKG</td></tr><tr><td style=\"white-space:nowrap\">RD0993385<a name=\"KemkesExaminationCS-RD0993385\"> </a></td><td>MR DWI/FLAIR</td></tr><tr><td style=\"white-space:nowrap\">RD0993386<a name=\"KemkesExaminationCS-RD0993386\"> </a></td><td>MR DWI/FLAIR + MR Angiografi</td></tr><tr><td style=\"white-space:nowrap\">RD0993387<a name=\"KemkesExaminationCS-RD0993387\"> </a></td><td>MR DWI/FLAIR + MR Angiografi + MR Perfusi</td></tr><tr><td style=\"white-space:nowrap\">RD0993430<a name=\"KemkesExaminationCS-RD0993430\"> </a></td><td>Dobutamine Stress MRI</td></tr><tr><td style=\"white-space:nowrap\">RD0993431<a name=\"KemkesExaminationCS-RD0993431\"> </a></td><td>Vasodilator Stress MRI</td></tr><tr><td style=\"white-space:nowrap\">X099080<a name=\"KemkesExaminationCS-X099080\"> </a></td><td>Titer Anti-ABO</td></tr><tr><td style=\"white-space:nowrap\">X099081<a name=\"KemkesExaminationCS-X099081\"> </a></td><td>Sugar Water Test/Sucrose Water Test</td></tr><tr><td style=\"white-space:nowrap\">X099082<a name=\"KemkesExaminationCS-X099082\"> </a></td><td>Badan inklusi Hb H</td></tr><tr><td style=\"white-space:nowrap\">X099083<a name=\"KemkesExaminationCS-X099083\"> </a></td><td>Protein C kontrol</td></tr><tr><td style=\"white-space:nowrap\">X099084<a name=\"KemkesExaminationCS-X099084\"> </a></td><td>Protein S kontrol</td></tr><tr><td style=\"white-space:nowrap\">X099085<a name=\"KemkesExaminationCS-X099085\"> </a></td><td>Retraksi bekuan</td></tr><tr><td style=\"white-space:nowrap\">X099086<a name=\"KemkesExaminationCS-X099086\"> </a></td><td>Volume serum</td></tr><tr><td style=\"white-space:nowrap\">X099087<a name=\"KemkesExaminationCS-X099087\"> </a></td><td>Konsistensi bekuan</td></tr><tr><td style=\"white-space:nowrap\">X099088<a name=\"KemkesExaminationCS-X099088\"> </a></td><td>Waktu trombin serial</td></tr><tr><td style=\"white-space:nowrap\">X099089<a name=\"KemkesExaminationCS-X099089\"> </a></td><td>Waktu trombin 20 menit kontrol</td></tr><tr><td style=\"white-space:nowrap\">X099090<a name=\"KemkesExaminationCS-X099090\"> </a></td><td>Waktu trombin 20 menit pasien</td></tr><tr><td style=\"white-space:nowrap\">X099091<a name=\"KemkesExaminationCS-X099091\"> </a></td><td>Waktu trombin 40 menit kontrol</td></tr><tr><td style=\"white-space:nowrap\">X099092<a name=\"KemkesExaminationCS-X099092\"> </a></td><td>Waktu trombin 40 menit pasien</td></tr><tr><td style=\"white-space:nowrap\">X099093<a name=\"KemkesExaminationCS-X099093\"> </a></td><td>Waktu trombin 60 menit kontrol</td></tr><tr><td style=\"white-space:nowrap\">X099094<a name=\"KemkesExaminationCS-X099094\"> </a></td><td>Waktu trombin 60 menit pasien</td></tr><tr><td style=\"white-space:nowrap\">X099095<a name=\"KemkesExaminationCS-X099095\"> </a></td><td>Tes fungsi trombosit P2Y12 Base</td></tr><tr><td style=\"white-space:nowrap\">X099096<a name=\"KemkesExaminationCS-X099096\"> </a></td><td>Immunophenotyping leukemia</td></tr><tr><td style=\"white-space:nowrap\">X099097<a name=\"KemkesExaminationCS-X099097\"> </a></td><td>Immunophenotyping leukemia akut</td></tr><tr><td style=\"white-space:nowrap\">X099098<a name=\"KemkesExaminationCS-X099098\"> </a></td><td>Immunophenotyping leukemia kronis</td></tr><tr><td style=\"white-space:nowrap\">X099099<a name=\"KemkesExaminationCS-X099099\"> </a></td><td>Sel lemak</td></tr><tr><td style=\"white-space:nowrap\">X099100<a name=\"KemkesExaminationCS-X099100\"> </a></td><td>Giant metamielosit</td></tr><tr><td style=\"white-space:nowrap\">X099101<a name=\"KemkesExaminationCS-X099101\"> </a></td><td>Giant stab</td></tr><tr><td style=\"white-space:nowrap\">X099102<a name=\"KemkesExaminationCS-X099102\"> </a></td><td>Hipersegmentasi (&gt; 6)</td></tr><tr><td style=\"white-space:nowrap\">X099103<a name=\"KemkesExaminationCS-X099103\"> </a></td><td>Hipogranulasi</td></tr><tr><td style=\"white-space:nowrap\">X099104<a name=\"KemkesExaminationCS-X099104\"> </a></td><td>Vakuolisasi</td></tr><tr><td style=\"white-space:nowrap\">X099105<a name=\"KemkesExaminationCS-X099105\"> </a></td><td>Anomali Pelger-Huest</td></tr><tr><td style=\"white-space:nowrap\">X099106<a name=\"KemkesExaminationCS-X099106\"> </a></td><td>Karioreksis</td></tr><tr><td style=\"white-space:nowrap\">X099107<a name=\"KemkesExaminationCS-X099107\"> </a></td><td>Sel mitosis</td></tr><tr><td style=\"white-space:nowrap\">X099108<a name=\"KemkesExaminationCS-X099108\"> </a></td><td>Sel tak dikenal</td></tr><tr><td style=\"white-space:nowrap\">X099109<a name=\"KemkesExaminationCS-X099109\"> </a></td><td>Limfosit Abnormal</td></tr><tr><td style=\"white-space:nowrap\">X099110<a name=\"KemkesExaminationCS-X099110\"> </a></td><td>Lain-lain (Hapusan sumsum tulang)</td></tr><tr><td style=\"white-space:nowrap\">X099111<a name=\"KemkesExaminationCS-X099111\"> </a></td><td>Saran</td></tr><tr><td style=\"white-space:nowrap\">X099112<a name=\"KemkesExaminationCS-X099112\"> </a></td><td>Hitung jenis darah</td></tr><tr><td style=\"white-space:nowrap\">X099113<a name=\"KemkesExaminationCS-X099113\"> </a></td><td>Rasio hitung neutrofil-limfosit (NLCR)</td></tr><tr><td style=\"white-space:nowrap\">X099114<a name=\"KemkesExaminationCS-X099114\"> </a></td><td>Agregasi trombosit ADP 1 uM</td></tr><tr><td style=\"white-space:nowrap\">X099115<a name=\"KemkesExaminationCS-X099115\"> </a></td><td>Agregasi trombosit ADP 2 uM</td></tr><tr><td style=\"white-space:nowrap\">X099116<a name=\"KemkesExaminationCS-X099116\"> </a></td><td>Masa laten (Asam arakidonat)</td></tr><tr><td style=\"white-space:nowrap\">X099117<a name=\"KemkesExaminationCS-X099117\"> </a></td><td>Kecepatan agregasi (Asam arakidonat)</td></tr><tr><td style=\"white-space:nowrap\">X099118<a name=\"KemkesExaminationCS-X099118\"> </a></td><td>Index agregasi (Asam arakidonat)</td></tr><tr><td style=\"white-space:nowrap\">X099119<a name=\"KemkesExaminationCS-X099119\"> </a></td><td>Masa laten (Platelet activation factor)</td></tr><tr><td style=\"white-space:nowrap\">X099120<a name=\"KemkesExaminationCS-X099120\"> </a></td><td>Kecepatan agregasi (Platelet activation factor)</td></tr><tr><td style=\"white-space:nowrap\">X099121<a name=\"KemkesExaminationCS-X099121\"> </a></td><td>Index agregasi (Platelet activation factor)</td></tr><tr><td style=\"white-space:nowrap\">X099122<a name=\"KemkesExaminationCS-X099122\"> </a></td><td>% Agregasi (Platelet activation factor)</td></tr><tr><td style=\"white-space:nowrap\">X099123<a name=\"KemkesExaminationCS-X099123\"> </a></td><td>Masa laten</td></tr><tr><td style=\"white-space:nowrap\">X099124<a name=\"KemkesExaminationCS-X099124\"> </a></td><td>Kecepatan agregasi</td></tr><tr><td style=\"white-space:nowrap\">X099125<a name=\"KemkesExaminationCS-X099125\"> </a></td><td>Index agregasi</td></tr><tr><td style=\"white-space:nowrap\">X099126<a name=\"KemkesExaminationCS-X099126\"> </a></td><td>Mixed APTT kontrol</td></tr><tr><td style=\"white-space:nowrap\">X099127<a name=\"KemkesExaminationCS-X099127\"> </a></td><td>Faktor IX kontrol</td></tr><tr><td style=\"white-space:nowrap\">X099128<a name=\"KemkesExaminationCS-X099128\"> </a></td><td>Fakotr VIII kontrol</td></tr><tr><td style=\"white-space:nowrap\">X099129<a name=\"KemkesExaminationCS-X099129\"> </a></td><td>ANA Profile</td></tr><tr><td style=\"white-space:nowrap\">X099130<a name=\"KemkesExaminationCS-X099130\"> </a></td><td>Human MSTN (Myostatin)</td></tr><tr><td style=\"white-space:nowrap\">X099131<a name=\"KemkesExaminationCS-X099131\"> </a></td><td>LE Cell Test</td></tr><tr><td style=\"white-space:nowrap\">X099132<a name=\"KemkesExaminationCS-X099132\"> </a></td><td>CD14</td></tr><tr><td style=\"white-space:nowrap\">X099133<a name=\"KemkesExaminationCS-X099133\"> </a></td><td>CD20</td></tr><tr><td style=\"white-space:nowrap\">X099134<a name=\"KemkesExaminationCS-X099134\"> </a></td><td>CD45 absolut</td></tr><tr><td style=\"white-space:nowrap\">X099135<a name=\"KemkesExaminationCS-X099135\"> </a></td><td>CD 4 - CD 8</td></tr><tr><td style=\"white-space:nowrap\">X099136<a name=\"KemkesExaminationCS-X099136\"> </a></td><td>IgE spesifik ikan</td></tr><tr><td style=\"white-space:nowrap\">X099137<a name=\"KemkesExaminationCS-X099137\"> </a></td><td>Anti RA - 33</td></tr><tr><td style=\"white-space:nowrap\">X099138<a name=\"KemkesExaminationCS-X099138\"> </a></td><td>HIV Western Blot</td></tr><tr><td style=\"white-space:nowrap\">X099139<a name=\"KemkesExaminationCS-X099139\"> </a></td><td>Antigen M. tuberculosis</td></tr><tr><td style=\"white-space:nowrap\">X099140<a name=\"KemkesExaminationCS-X099140\"> </a></td><td>IgG Anti Mycoplasma</td></tr><tr><td style=\"white-space:nowrap\">X099141<a name=\"KemkesExaminationCS-X099141\"> </a></td><td>IgG Anti Mycoplasma</td></tr><tr><td style=\"white-space:nowrap\">X099142<a name=\"KemkesExaminationCS-X099142\"> </a></td><td>IgM Anti Mycoplasma</td></tr><tr><td style=\"white-space:nowrap\">X099143<a name=\"KemkesExaminationCS-X099143\"> </a></td><td>IgM Anti Mycoplasma</td></tr><tr><td style=\"white-space:nowrap\">X099144<a name=\"KemkesExaminationCS-X099144\"> </a></td><td>Antigen Salmonella paratyphi</td></tr><tr><td style=\"white-space:nowrap\">X099145<a name=\"KemkesExaminationCS-X099145\"> </a></td><td>IgA Anti EBV EBNA</td></tr><tr><td style=\"white-space:nowrap\">X099146<a name=\"KemkesExaminationCS-X099146\"> </a></td><td>IgM Anti PGL-1</td></tr><tr><td style=\"white-space:nowrap\">X099147<a name=\"KemkesExaminationCS-X099147\"> </a></td><td>IgG Anti PGL-1</td></tr><tr><td style=\"white-space:nowrap\">X099148<a name=\"KemkesExaminationCS-X099148\"> </a></td><td>Clostridium difficile GDH</td></tr><tr><td style=\"white-space:nowrap\">X099149<a name=\"KemkesExaminationCS-X099149\"> </a></td><td>Antigenemia CMV urine</td></tr><tr><td style=\"white-space:nowrap\">X099150<a name=\"KemkesExaminationCS-X099150\"> </a></td><td>Analisis cairan otak</td></tr><tr><td style=\"white-space:nowrap\">X099151<a name=\"KemkesExaminationCS-X099151\"> </a></td><td>Analisis kimia cairan otak</td></tr><tr><td style=\"white-space:nowrap\">X099152<a name=\"KemkesExaminationCS-X099152\"> </a></td><td>Leukemia phenotyping cairan otak</td></tr><tr><td style=\"white-space:nowrap\">X099153<a name=\"KemkesExaminationCS-X099153\"> </a></td><td>Analisis cairan empedu</td></tr><tr><td style=\"white-space:nowrap\">X099154<a name=\"KemkesExaminationCS-X099154\"> </a></td><td>Sel lain cairan empedu</td></tr><tr><td style=\"white-space:nowrap\">X099155<a name=\"KemkesExaminationCS-X099155\"> </a></td><td>Rasio bilirubin cairan empedu</td></tr><tr><td style=\"white-space:nowrap\">X099156<a name=\"KemkesExaminationCS-X099156\"> </a></td><td>Analisis batu empedu</td></tr><tr><td style=\"white-space:nowrap\">X099157<a name=\"KemkesExaminationCS-X099157\"> </a></td><td>Kolesterol batu empedu</td></tr><tr><td style=\"white-space:nowrap\">X099158<a name=\"KemkesExaminationCS-X099158\"> </a></td><td>Bilirubin total batu empedu</td></tr><tr><td style=\"white-space:nowrap\">X099159<a name=\"KemkesExaminationCS-X099159\"> </a></td><td>Kalsium batu empedu</td></tr><tr><td style=\"white-space:nowrap\">X099160<a name=\"KemkesExaminationCS-X099160\"> </a></td><td>Kalsium batu empedu</td></tr><tr><td style=\"white-space:nowrap\">X099161<a name=\"KemkesExaminationCS-X099161\"> </a></td><td>Analisis cairan sendi</td></tr><tr><td style=\"white-space:nowrap\">X099162<a name=\"KemkesExaminationCS-X099162\"> </a></td><td>Analisis cairan tubuh</td></tr><tr><td style=\"white-space:nowrap\">X099163<a name=\"KemkesExaminationCS-X099163\"> </a></td><td>Rasio protein cairan tubuh/serum</td></tr><tr><td style=\"white-space:nowrap\">X099164<a name=\"KemkesExaminationCS-X099164\"> </a></td><td>Pandy's test cairan tubuh</td></tr><tr><td style=\"white-space:nowrap\">X099165<a name=\"KemkesExaminationCS-X099165\"> </a></td><td>Analisa cairan peritoneal dialisis</td></tr><tr><td style=\"white-space:nowrap\">X099166<a name=\"KemkesExaminationCS-X099166\"> </a></td><td>Analisa cairan peritoneal dialisis</td></tr><tr><td style=\"white-space:nowrap\">X099167<a name=\"KemkesExaminationCS-X099167\"> </a></td><td>Analisis cairan perikardial</td></tr><tr><td style=\"white-space:nowrap\">X099168<a name=\"KemkesExaminationCS-X099168\"> </a></td><td>Hitung jenis cairan perikardial</td></tr><tr><td style=\"white-space:nowrap\">X099169<a name=\"KemkesExaminationCS-X099169\"> </a></td><td>Analisis cairan pleura</td></tr><tr><td style=\"white-space:nowrap\">X099170<a name=\"KemkesExaminationCS-X099170\"> </a></td><td>Analisis batu ginjal</td></tr><tr><td style=\"white-space:nowrap\">X099171<a name=\"KemkesExaminationCS-X099171\"> </a></td><td>Bau batu ginjal</td></tr><tr><td style=\"white-space:nowrap\">X099172<a name=\"KemkesExaminationCS-X099172\"> </a></td><td>Kalsium batu ginjal</td></tr><tr><td style=\"white-space:nowrap\">X099173<a name=\"KemkesExaminationCS-X099173\"> </a></td><td>Magnesium batu ginjal</td></tr><tr><td style=\"white-space:nowrap\">X099174<a name=\"KemkesExaminationCS-X099174\"> </a></td><td>Fosfat batu ginjal</td></tr><tr><td style=\"white-space:nowrap\">X099175<a name=\"KemkesExaminationCS-X099175\"> </a></td><td>Amonium batu ginjal</td></tr><tr><td style=\"white-space:nowrap\">X099176<a name=\"KemkesExaminationCS-X099176\"> </a></td><td>Kesimpulan batu ginjal</td></tr><tr><td style=\"white-space:nowrap\">X099177<a name=\"KemkesExaminationCS-X099177\"> </a></td><td>Lama menikah</td></tr><tr><td style=\"white-space:nowrap\">X099178<a name=\"KemkesExaminationCS-X099178\"> </a></td><td>Diperiksa</td></tr><tr><td style=\"white-space:nowrap\">X099179<a name=\"KemkesExaminationCS-X099179\"> </a></td><td>Bau</td></tr><tr><td style=\"white-space:nowrap\">X099180<a name=\"KemkesExaminationCS-X099180\"> </a></td><td>Sel spermiogenesis</td></tr><tr><td style=\"white-space:nowrap\">X099181<a name=\"KemkesExaminationCS-X099181\"> </a></td><td>Akrosomal kecil</td></tr><tr><td style=\"white-space:nowrap\">X099182<a name=\"KemkesExaminationCS-X099182\"> </a></td><td>Akrosomal besar</td></tr><tr><td style=\"white-space:nowrap\">X099183<a name=\"KemkesExaminationCS-X099183\"> </a></td><td>Kesimpulan</td></tr><tr><td style=\"white-space:nowrap\">X099184<a name=\"KemkesExaminationCS-X099184\"> </a></td><td>Direct Mixed Antiglobulin Reaction (Direct MAR)</td></tr><tr><td style=\"white-space:nowrap\">X099185<a name=\"KemkesExaminationCS-X099185\"> </a></td><td>Indirect Mixed Antiglobulin Reaction (Indirect MAR)</td></tr><tr><td style=\"white-space:nowrap\">X099186<a name=\"KemkesExaminationCS-X099186\"> </a></td><td>Uji Fragmentasi DNA</td></tr><tr><td style=\"white-space:nowrap\">X099187<a name=\"KemkesExaminationCS-X099187\"> </a></td><td>Pemeriksaan feses lengkap</td></tr><tr><td style=\"white-space:nowrap\">X099188<a name=\"KemkesExaminationCS-X099188\"> </a></td><td>Pus feses</td></tr><tr><td style=\"white-space:nowrap\">X099189<a name=\"KemkesExaminationCS-X099189\"> </a></td><td>Berminyak</td></tr><tr><td style=\"white-space:nowrap\">X099190<a name=\"KemkesExaminationCS-X099190\"> </a></td><td>Berbusa</td></tr><tr><td style=\"white-space:nowrap\">X099191<a name=\"KemkesExaminationCS-X099191\"> </a></td><td>Bau feses</td></tr><tr><td style=\"white-space:nowrap\">X099192<a name=\"KemkesExaminationCS-X099192\"> </a></td><td>Eritrosit feses</td></tr><tr><td style=\"white-space:nowrap\">X099193<a name=\"KemkesExaminationCS-X099193\"> </a></td><td>Bakteri</td></tr><tr><td style=\"white-space:nowrap\">X099194<a name=\"KemkesExaminationCS-X099194\"> </a></td><td>Sisa makanan</td></tr><tr><td style=\"white-space:nowrap\">X099195<a name=\"KemkesExaminationCS-X099195\"> </a></td><td>Lain-lain</td></tr><tr><td style=\"white-space:nowrap\">X099196<a name=\"KemkesExaminationCS-X099196\"> </a></td><td>Growth Hormone Basal</td></tr><tr><td style=\"white-space:nowrap\">X099197<a name=\"KemkesExaminationCS-X099197\"> </a></td><td>Growth Hormone Exercise</td></tr><tr><td style=\"white-space:nowrap\">X099198<a name=\"KemkesExaminationCS-X099198\"> </a></td><td>Free Light Chain Kappa</td></tr><tr><td style=\"white-space:nowrap\">X099199<a name=\"KemkesExaminationCS-X099199\"> </a></td><td>Free Light Chain Lambda</td></tr><tr><td style=\"white-space:nowrap\">X099200<a name=\"KemkesExaminationCS-X099200\"> </a></td><td>Anti Mullerian Hormone (AMH)</td></tr><tr><td style=\"white-space:nowrap\">X099201<a name=\"KemkesExaminationCS-X099201\"> </a></td><td>Imunofiksasi Light Chain kesimpulan</td></tr><tr><td style=\"white-space:nowrap\">X099202<a name=\"KemkesExaminationCS-X099202\"> </a></td><td>Laktat Dehidrogenase (LDH) baseline</td></tr><tr><td style=\"white-space:nowrap\">X099203<a name=\"KemkesExaminationCS-X099203\"> </a></td><td>Kunkel</td></tr><tr><td style=\"white-space:nowrap\">X099204<a name=\"KemkesExaminationCS-X099204\"> </a></td><td>C peptide 2 jam PP</td></tr><tr><td style=\"white-space:nowrap\">X099205<a name=\"KemkesExaminationCS-X099205\"> </a></td><td>Beta Crosslap (CTx)</td></tr><tr><td style=\"white-space:nowrap\">X099206<a name=\"KemkesExaminationCS-X099206\"> </a></td><td>Status antioksidan total</td></tr><tr><td style=\"white-space:nowrap\">X099207<a name=\"KemkesExaminationCS-X099207\"> </a></td><td>Fetuin A</td></tr><tr><td style=\"white-space:nowrap\">X099208<a name=\"KemkesExaminationCS-X099208\"> </a></td><td>Adrenomedullin (ADM)</td></tr><tr><td style=\"white-space:nowrap\">X099209<a name=\"KemkesExaminationCS-X099209\"> </a></td><td>Sel blas urine</td></tr><tr><td style=\"white-space:nowrap\">X099210<a name=\"KemkesExaminationCS-X099210\"> </a></td><td>Fosfatase alkali baseline</td></tr><tr><td style=\"white-space:nowrap\">X099211<a name=\"KemkesExaminationCS-X099211\"> </a></td><td>Amilase pankreatik</td></tr><tr><td style=\"white-space:nowrap\">X099212<a name=\"KemkesExaminationCS-X099212\"> </a></td><td>Kolinesterase baseline</td></tr><tr><td style=\"white-space:nowrap\">X099213<a name=\"KemkesExaminationCS-X099213\"> </a></td><td>Mikrofilaria</td></tr><tr><td style=\"white-space:nowrap\">X099214<a name=\"KemkesExaminationCS-X099214\"> </a></td><td>Pewarnaan bakteri tahan asam kulit</td></tr><tr><td style=\"white-space:nowrap\">X099215<a name=\"KemkesExaminationCS-X099215\"> </a></td><td>Lactobacillus</td></tr><tr><td style=\"white-space:nowrap\">X099216<a name=\"KemkesExaminationCS-X099216\"> </a></td><td>Morbiluncus</td></tr><tr><td style=\"white-space:nowrap\">X099217<a name=\"KemkesExaminationCS-X099217\"> </a></td><td>Gardnerella</td></tr><tr><td style=\"white-space:nowrap\">X099218<a name=\"KemkesExaminationCS-X099218\"> </a></td><td>Biakan Shigella feses</td></tr><tr><td style=\"white-space:nowrap\">X099219<a name=\"KemkesExaminationCS-X099219\"> </a></td><td>Kapreomisin 2,5 μg/ml (Uji resistansi)</td></tr><tr><td style=\"white-space:nowrap\">X099220<a name=\"KemkesExaminationCS-X099220\"> </a></td><td>Kapreomisin 40,0 μg/ml (Uji resistansi)</td></tr><tr><td style=\"white-space:nowrap\">X099221<a name=\"KemkesExaminationCS-X099221\"> </a></td><td>Ravuconazole (Uji resistansi)</td></tr><tr><td style=\"white-space:nowrap\">X099222<a name=\"KemkesExaminationCS-X099222\"> </a></td><td>Ciclopirox (Uji resistansi)</td></tr><tr><td style=\"white-space:nowrap\">X099223<a name=\"KemkesExaminationCS-X099223\"> </a></td><td>Gen N dan Orf 1ab SARS CoV-2 RNA (TCM)</td></tr><tr><td style=\"white-space:nowrap\">X099224<a name=\"KemkesExaminationCS-X099224\"> </a></td><td>H1N1 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099225<a name=\"KemkesExaminationCS-X099225\"> </a></td><td>HPV 40 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099226<a name=\"KemkesExaminationCS-X099226\"> </a></td><td>HPV 43 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099227<a name=\"KemkesExaminationCS-X099227\"> </a></td><td>HPV 54 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099228<a name=\"KemkesExaminationCS-X099228\"> </a></td><td>HPV 61 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099229<a name=\"KemkesExaminationCS-X099229\"> </a></td><td>HPV 62 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099230<a name=\"KemkesExaminationCS-X099230\"> </a></td><td>HPV 71 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099231<a name=\"KemkesExaminationCS-X099231\"> </a></td><td>HPV 72 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099232<a name=\"KemkesExaminationCS-X099232\"> </a></td><td>HPV 81 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099233<a name=\"KemkesExaminationCS-X099233\"> </a></td><td>HPV 83 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099234<a name=\"KemkesExaminationCS-X099234\"> </a></td><td>HPV 84 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099235<a name=\"KemkesExaminationCS-X099235\"> </a></td><td>HPV 85 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099236<a name=\"KemkesExaminationCS-X099236\"> </a></td><td>HPV 89 (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099237<a name=\"KemkesExaminationCS-X099237\"> </a></td><td>Influenza virus A (H3N2) (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099238<a name=\"KemkesExaminationCS-X099238\"> </a></td><td>Metapneumovirus (subtypes A and B) (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099239<a name=\"KemkesExaminationCS-X099239\"> </a></td><td>Poliovirus (PCR)</td></tr><tr><td style=\"white-space:nowrap\">X099240<a name=\"KemkesExaminationCS-X099240\"> </a></td><td>5p15 deletion (Cri-du-chat)</td></tr><tr><td style=\"white-space:nowrap\">X099241<a name=\"KemkesExaminationCS-X099241\"> </a></td><td>Tes IVA</td></tr><tr><td style=\"white-space:nowrap\">X099242<a name=\"KemkesExaminationCS-X099242\"> </a></td><td>CT urografi nonkontras</td></tr><tr><td style=\"white-space:nowrap\">X099243<a name=\"KemkesExaminationCS-X099243\"> </a></td><td>Guidance angioplasti balon transluminal arteri perifer</td></tr><tr><td style=\"white-space:nowrap\">X099244<a name=\"KemkesExaminationCS-X099244\"> </a></td><td>Guidance angioplasti balon transluminal ginjal atau arteri viseral lain</td></tr><tr><td style=\"white-space:nowrap\">X099245<a name=\"KemkesExaminationCS-X099245\"> </a></td><td>Guidance angioplasti balon transluminal vena</td></tr><tr><td style=\"white-space:nowrap\">X099246<a name=\"KemkesExaminationCS-X099246\"> </a></td><td>Guidance percutaneous transhepatic biliary drainage dengan monitoring kontras</td></tr><tr><td style=\"white-space:nowrap\">X099247<a name=\"KemkesExaminationCS-X099247\"> </a></td><td>MR abdomen atas dinamik dengan kontras</td></tr><tr><td style=\"white-space:nowrap\">X099248<a name=\"KemkesExaminationCS-X099248\"> </a></td><td>MR abdomen atas dinamik nonkontras</td></tr><tr><td style=\"white-space:nowrap\">X099249<a name=\"KemkesExaminationCS-X099249\"> </a></td><td>MR cochlea dan DTI dengan kontras</td></tr><tr><td style=\"white-space:nowrap\">X099250<a name=\"KemkesExaminationCS-X099250\"> </a></td><td>MR cochlea dan DTI nonkontras</td></tr><tr><td style=\"white-space:nowrap\">X099251<a name=\"KemkesExaminationCS-X099251\"> </a></td><td>MR DTI kontras</td></tr><tr><td style=\"white-space:nowrap\">X099252<a name=\"KemkesExaminationCS-X099252\"> </a></td><td>MR DTI nonkontras</td></tr><tr><td style=\"white-space:nowrap\">X099253<a name=\"KemkesExaminationCS-X099253\"> </a></td><td>MR whole abdomen dynamic dengan kontras IV</td></tr><tr><td style=\"white-space:nowrap\">X099254<a name=\"KemkesExaminationCS-X099254\"> </a></td><td>MR whole abdomen dynamic nonkontras</td></tr><tr><td style=\"white-space:nowrap\">X099255<a name=\"KemkesExaminationCS-X099255\"> </a></td><td>MR whole spine dengan kontras</td></tr><tr><td style=\"white-space:nowrap\">X099256<a name=\"KemkesExaminationCS-X099256\"> </a></td><td>MRCP dynamic nonkontras</td></tr><tr><td style=\"white-space:nowrap\">X099257<a name=\"KemkesExaminationCS-X099257\"> </a></td><td>MRCP dynamic nonkontras diikuti dengan kontras IV</td></tr><tr><td style=\"white-space:nowrap\">X099258<a name=\"KemkesExaminationCS-X099258\"> </a></td><td>RF epididimografi</td></tr><tr><td style=\"white-space:nowrap\">X099259<a name=\"KemkesExaminationCS-X099259\"> </a></td><td>RF genitografi</td></tr><tr><td style=\"white-space:nowrap\">X099260<a name=\"KemkesExaminationCS-X099260\"> </a></td><td>RF guidance pemasangan alat pacu jantung</td></tr><tr><td style=\"white-space:nowrap\">X099261<a name=\"KemkesExaminationCS-X099261\"> </a></td><td>RF ventrikulografi jantung</td></tr><tr><td style=\"white-space:nowrap\">X099262<a name=\"KemkesExaminationCS-X099262\"> </a></td><td>US doppler superfisial</td></tr><tr><td style=\"white-space:nowrap\">X099263<a name=\"KemkesExaminationCS-X099263\"> </a></td><td>US genu bilateral dengan kontras</td></tr><tr><td style=\"white-space:nowrap\">X099264<a name=\"KemkesExaminationCS-X099264\"> </a></td><td>US genu dengan kontras</td></tr><tr><td style=\"white-space:nowrap\">X099265<a name=\"KemkesExaminationCS-X099265\"> </a></td><td>US kanalis spinalis dan isi</td></tr><tr><td style=\"white-space:nowrap\">X099266<a name=\"KemkesExaminationCS-X099266\"> </a></td><td>US muskuloskeletal ipsilateral</td></tr><tr><td style=\"white-space:nowrap\">X099267<a name=\"KemkesExaminationCS-X099267\"> </a></td><td>US muskuloskeletal superfisial</td></tr><tr><td style=\"white-space:nowrap\">X099268<a name=\"KemkesExaminationCS-X099268\"> </a></td><td>XR schedel AP dan lateral nonkontras</td></tr><tr><td style=\"white-space:nowrap\">X099269<a name=\"KemkesExaminationCS-X099269\"> </a></td><td>XR thorakolumbal AP, lateral, oblique kanan dan kiri</td></tr><tr><td style=\"white-space:nowrap\">X099270<a name=\"KemkesExaminationCS-X099270\"> </a></td><td>XR thorakolumbal oblique</td></tr><tr><td style=\"white-space:nowrap\">X099274<a name=\"KemkesExaminationCS-X099274\"> </a></td><td>Kontras MRI Brain + MR Perfusi</td></tr><tr><td style=\"white-space:nowrap\">X099275<a name=\"KemkesExaminationCS-X099275\"> </a></td><td>Kontras MRI Brain + MR Perfusi + MRS</td></tr><tr><td style=\"white-space:nowrap\">X099276<a name=\"KemkesExaminationCS-X099276\"> </a></td><td>Kontras MRI Brain + MRA +MRV</td></tr><tr><td style=\"white-space:nowrap\">X099277<a name=\"KemkesExaminationCS-X099277\"> </a></td><td>Kontras MRI Brain + MRS</td></tr><tr><td style=\"white-space:nowrap\">X099278<a name=\"KemkesExaminationCS-X099278\"> </a></td><td>Kontras MRI Brain +MRV</td></tr><tr><td style=\"white-space:nowrap\">X099379<a name=\"KemkesExaminationCS-X099379\"> </a></td><td>Pemeriksaaan TCM XDR</td></tr><tr><td style=\"white-space:nowrap\">X099380<a name=\"KemkesExaminationCS-X099380\"> </a></td><td>Line Probe Assay (LPA) Lini 1</td></tr><tr><td style=\"white-space:nowrap\">X099381<a name=\"KemkesExaminationCS-X099381\"> </a></td><td>Line Probe Assay (LPA) Lini 2</td></tr><tr><td style=\"white-space:nowrap\">X099383<a name=\"KemkesExaminationCS-X099383\"> </a></td><td>Pemeriksaan Paket Standar Kepekaan</td></tr><tr><td style=\"white-space:nowrap\">X099386<a name=\"KemkesExaminationCS-X099386\"> </a></td><td>Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) BTA</td></tr><tr><td style=\"white-space:nowrap\">X099387<a name=\"KemkesExaminationCS-X099387\"> </a></td><td>Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) biakan</td></tr><tr><td style=\"white-space:nowrap\">X099388<a name=\"KemkesExaminationCS-X099388\"> </a></td><td>Biakan TB</td></tr><tr><td style=\"white-space:nowrap\">X099389<a name=\"KemkesExaminationCS-X099389\"> </a></td><td>Hasil Uji Metode LJ</td></tr><tr><td style=\"white-space:nowrap\">X099390<a name=\"KemkesExaminationCS-X099390\"> </a></td><td>Hasil Uji Metode MGIT</td></tr><tr><td style=\"white-space:nowrap\">X099391<a name=\"KemkesExaminationCS-X099391\"> </a></td><td>H Dosis Rendah</td></tr><tr><td style=\"white-space:nowrap\">X099392<a name=\"KemkesExaminationCS-X099392\"> </a></td><td>FQ Dosis Rendah</td></tr><tr><td style=\"white-space:nowrap\">X099770<a name=\"KemkesExaminationCS-X099770\"> </a></td><td>Rifampisin sensitive</td></tr><tr><td style=\"white-space:nowrap\">X099771<a name=\"KemkesExaminationCS-X099771\"> </a></td><td>Rifampisin resistan</td></tr><tr><td style=\"white-space:nowrap\">X099772<a name=\"KemkesExaminationCS-X099772\"> </a></td><td>Rifampisin indeterminate</td></tr><tr><td style=\"white-space:nowrap\">X099773<a name=\"KemkesExaminationCS-X099773\"> </a></td><td>Indeterminate (IDT)</td></tr><tr><td style=\"white-space:nowrap\">X099774<a name=\"KemkesExaminationCS-X099774\"> </a></td><td>Ress Inffered (RI)</td></tr><tr><td style=\"white-space:nowrap\">X099775<a name=\"KemkesExaminationCS-X099775\"> </a></td><td>Moxifloxacin DT (Mfx DT)</td></tr><tr><td style=\"white-space:nowrap\">X099776<a name=\"KemkesExaminationCS-X099776\"> </a></td><td>H High Dosage [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style=\"white-space:nowrap\">X099777<a name=\"KemkesExaminationCS-X099777\"> </a></td><td>H - SLID - capreomycin [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style=\"white-space:nowrap\">X099778<a name=\"KemkesExaminationCS-X099778\"> </a></td><td>Moxifloxacin High Dosage [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style=\"white-space:nowrap\">X099779<a name=\"KemkesExaminationCS-X099779\"> </a></td><td>Delamanid [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style=\"white-space:nowrap\">X099780<a name=\"KemkesExaminationCS-X099780\"> </a></td><td>Bedaquiline [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style=\"white-space:nowrap\">X099781<a name=\"KemkesExaminationCS-X099781\"> </a></td><td>Hasil Valid</td></tr></table></div>"
+  },
+  "url" : "http://terminology.kemkes.go.id/CodeSystem/examination",
+  "version" : "0.1.0",
+  "name" : "KemkesExaminationCS",
+  "title" : "Terminology Kemkes examination CodeSystem",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-02-05T00:00:00.000Z",
+  "publisher" : "Thomas Chaidir",
+  "contact" : [{
+    "name" : "Thomas Chaidir",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://satusehat.kemkes.go.id/"
+    }]
+  }],
+  "description" : "Terminology Kemkes examination CodeSystem",
+  "caseSensitive" : true,
+  "valueSet" : "http://terminology.kemkes.go.id/ValueSet/examination",
+  "hierarchyMeaning" : "is-a",
+  "compositional" : false,
+  "versionNeeded" : true,
+  "content" : "complete",
+  "count" : 233,
+  "concept" : [{
+    "code" : "24589-4",
+    "display" : "MR Brain W contrast IV"
+  },
+  {
+    "code" : "30657-1",
+    "display" : "MR Brain WO contrast"
+  },
+  {
+    "code" : "IP099352",
+    "display" : "defisit neurologis ringan"
+  },
+  {
+    "code" : "IP099353",
+    "display" : "defisit neurologis sedang / cukup berat"
+  },
+  {
+    "code" : "IP099354",
+    "display" : "defisit neurologis berat"
+  },
+  {
+    "code" : "IP099355",
+    "display" : "defisit neurologis sangat berat"
+  },
+  {
+    "code" : "IP099356",
+    "display" : "Vasodilator Stress Ekokardiografi"
+  },
+  {
+    "code" : "IP099357",
+    "display" : "Dobutamine Stress Ekokardiografi"
+  },
+  {
+    "code" : "IP099358",
+    "display" : "Konfirmasi Diagnosis EKG"
+  },
+  {
+    "code" : "RD0993385",
+    "display" : "MR DWI/FLAIR"
+  },
+  {
+    "code" : "RD0993386",
+    "display" : "MR DWI/FLAIR + MR Angiografi"
+  },
+  {
+    "code" : "RD0993387",
+    "display" : "MR DWI/FLAIR + MR Angiografi + MR Perfusi"
+  },
+  {
+    "code" : "RD0993430",
+    "display" : "Dobutamine Stress MRI"
+  },
+  {
+    "code" : "RD0993431",
+    "display" : "Vasodilator Stress MRI"
+  },
+  {
+    "code" : "X099080",
+    "display" : "Titer Anti-ABO"
+  },
+  {
+    "code" : "X099081",
+    "display" : "Sugar Water Test/Sucrose Water Test"
+  },
+  {
+    "code" : "X099082",
+    "display" : "Badan inklusi Hb H"
+  },
+  {
+    "code" : "X099083",
+    "display" : "Protein C kontrol"
+  },
+  {
+    "code" : "X099084",
+    "display" : "Protein S kontrol"
+  },
+  {
+    "code" : "X099085",
+    "display" : "Retraksi bekuan"
+  },
+  {
+    "code" : "X099086",
+    "display" : "Volume serum"
+  },
+  {
+    "code" : "X099087",
+    "display" : "Konsistensi bekuan"
+  },
+  {
+    "code" : "X099088",
+    "display" : "Waktu trombin serial"
+  },
+  {
+    "code" : "X099089",
+    "display" : "Waktu trombin 20 menit kontrol"
+  },
+  {
+    "code" : "X099090",
+    "display" : "Waktu trombin 20 menit pasien"
+  },
+  {
+    "code" : "X099091",
+    "display" : "Waktu trombin 40 menit kontrol"
+  },
+  {
+    "code" : "X099092",
+    "display" : "Waktu trombin 40 menit pasien"
+  },
+  {
+    "code" : "X099093",
+    "display" : "Waktu trombin 60 menit kontrol"
+  },
+  {
+    "code" : "X099094",
+    "display" : "Waktu trombin 60 menit pasien"
+  },
+  {
+    "code" : "X099095",
+    "display" : "Tes fungsi trombosit P2Y12 Base"
+  },
+  {
+    "code" : "X099096",
+    "display" : "Immunophenotyping leukemia"
+  },
+  {
+    "code" : "X099097",
+    "display" : "Immunophenotyping leukemia akut"
+  },
+  {
+    "code" : "X099098",
+    "display" : "Immunophenotyping leukemia kronis"
+  },
+  {
+    "code" : "X099099",
+    "display" : "Sel lemak"
+  },
+  {
+    "code" : "X099100",
+    "display" : "Giant metamielosit"
+  },
+  {
+    "code" : "X099101",
+    "display" : "Giant stab"
+  },
+  {
+    "code" : "X099102",
+    "display" : "Hipersegmentasi (> 6)"
+  },
+  {
+    "code" : "X099103",
+    "display" : "Hipogranulasi"
+  },
+  {
+    "code" : "X099104",
+    "display" : "Vakuolisasi"
+  },
+  {
+    "code" : "X099105",
+    "display" : "Anomali Pelger-Huest"
+  },
+  {
+    "code" : "X099106",
+    "display" : "Karioreksis"
+  },
+  {
+    "code" : "X099107",
+    "display" : "Sel mitosis"
+  },
+  {
+    "code" : "X099108",
+    "display" : "Sel tak dikenal"
+  },
+  {
+    "code" : "X099109",
+    "display" : "Limfosit Abnormal"
+  },
+  {
+    "code" : "X099110",
+    "display" : "Lain-lain (Hapusan sumsum tulang)"
+  },
+  {
+    "code" : "X099111",
+    "display" : "Saran"
+  },
+  {
+    "code" : "X099112",
+    "display" : "Hitung jenis darah"
+  },
+  {
+    "code" : "X099113",
+    "display" : "Rasio hitung neutrofil-limfosit (NLCR)"
+  },
+  {
+    "code" : "X099114",
+    "display" : "Agregasi trombosit ADP 1 uM"
+  },
+  {
+    "code" : "X099115",
+    "display" : "Agregasi trombosit ADP 2 uM"
+  },
+  {
+    "code" : "X099116",
+    "display" : "Masa laten (Asam arakidonat)"
+  },
+  {
+    "code" : "X099117",
+    "display" : "Kecepatan agregasi (Asam arakidonat)"
+  },
+  {
+    "code" : "X099118",
+    "display" : "Index agregasi (Asam arakidonat)"
+  },
+  {
+    "code" : "X099119",
+    "display" : "Masa laten (Platelet activation factor)"
+  },
+  {
+    "code" : "X099120",
+    "display" : "Kecepatan agregasi (Platelet activation factor)"
+  },
+  {
+    "code" : "X099121",
+    "display" : "Index agregasi (Platelet activation factor)"
+  },
+  {
+    "code" : "X099122",
+    "display" : "% Agregasi (Platelet activation factor)"
+  },
+  {
+    "code" : "X099123",
+    "display" : "Masa laten"
+  },
+  {
+    "code" : "X099124",
+    "display" : "Kecepatan agregasi"
+  },
+  {
+    "code" : "X099125",
+    "display" : "Index agregasi"
+  },
+  {
+    "code" : "X099126",
+    "display" : "Mixed APTT kontrol"
+  },
+  {
+    "code" : "X099127",
+    "display" : "Faktor IX kontrol"
+  },
+  {
+    "code" : "X099128",
+    "display" : "Fakotr VIII kontrol"
+  },
+  {
+    "code" : "X099129",
+    "display" : "ANA Profile"
+  },
+  {
+    "code" : "X099130",
+    "display" : "Human MSTN (Myostatin)"
+  },
+  {
+    "code" : "X099131",
+    "display" : "LE Cell Test"
+  },
+  {
+    "code" : "X099132",
+    "display" : "CD14"
+  },
+  {
+    "code" : "X099133",
+    "display" : "CD20"
+  },
+  {
+    "code" : "X099134",
+    "display" : "CD45 absolut"
+  },
+  {
+    "code" : "X099135",
+    "display" : "CD 4 - CD 8"
+  },
+  {
+    "code" : "X099136",
+    "display" : "IgE spesifik ikan"
+  },
+  {
+    "code" : "X099137",
+    "display" : "Anti RA - 33"
+  },
+  {
+    "code" : "X099138",
+    "display" : "HIV Western Blot"
+  },
+  {
+    "code" : "X099139",
+    "display" : "Antigen M. tuberculosis"
+  },
+  {
+    "code" : "X099140",
+    "display" : "IgG Anti Mycoplasma"
+  },
+  {
+    "code" : "X099141",
+    "display" : "IgG Anti Mycoplasma"
+  },
+  {
+    "code" : "X099142",
+    "display" : "IgM Anti Mycoplasma"
+  },
+  {
+    "code" : "X099143",
+    "display" : "IgM Anti Mycoplasma"
+  },
+  {
+    "code" : "X099144",
+    "display" : "Antigen Salmonella paratyphi"
+  },
+  {
+    "code" : "X099145",
+    "display" : "IgA Anti EBV EBNA"
+  },
+  {
+    "code" : "X099146",
+    "display" : "IgM Anti PGL-1"
+  },
+  {
+    "code" : "X099147",
+    "display" : "IgG Anti PGL-1"
+  },
+  {
+    "code" : "X099148",
+    "display" : "Clostridium difficile GDH"
+  },
+  {
+    "code" : "X099149",
+    "display" : "Antigenemia CMV urine"
+  },
+  {
+    "code" : "X099150",
+    "display" : "Analisis cairan otak"
+  },
+  {
+    "code" : "X099151",
+    "display" : "Analisis kimia cairan otak"
+  },
+  {
+    "code" : "X099152",
+    "display" : "Leukemia phenotyping cairan otak"
+  },
+  {
+    "code" : "X099153",
+    "display" : "Analisis cairan empedu"
+  },
+  {
+    "code" : "X099154",
+    "display" : "Sel lain cairan empedu"
+  },
+  {
+    "code" : "X099155",
+    "display" : "Rasio bilirubin cairan empedu"
+  },
+  {
+    "code" : "X099156",
+    "display" : "Analisis batu empedu"
+  },
+  {
+    "code" : "X099157",
+    "display" : "Kolesterol batu empedu"
+  },
+  {
+    "code" : "X099158",
+    "display" : "Bilirubin total batu empedu"
+  },
+  {
+    "code" : "X099159",
+    "display" : "Kalsium batu empedu"
+  },
+  {
+    "code" : "X099160",
+    "display" : "Kalsium batu empedu"
+  },
+  {
+    "code" : "X099161",
+    "display" : "Analisis cairan sendi"
+  },
+  {
+    "code" : "X099162",
+    "display" : "Analisis cairan tubuh"
+  },
+  {
+    "code" : "X099163",
+    "display" : "Rasio protein cairan tubuh/serum"
+  },
+  {
+    "code" : "X099164",
+    "display" : "Pandy's test cairan tubuh"
+  },
+  {
+    "code" : "X099165",
+    "display" : "Analisa cairan peritoneal dialisis"
+  },
+  {
+    "code" : "X099166",
+    "display" : "Analisa cairan peritoneal dialisis"
+  },
+  {
+    "code" : "X099167",
+    "display" : "Analisis cairan perikardial"
+  },
+  {
+    "code" : "X099168",
+    "display" : "Hitung jenis cairan perikardial"
+  },
+  {
+    "code" : "X099169",
+    "display" : "Analisis cairan pleura"
+  },
+  {
+    "code" : "X099170",
+    "display" : "Analisis batu ginjal"
+  },
+  {
+    "code" : "X099171",
+    "display" : "Bau batu ginjal"
+  },
+  {
+    "code" : "X099172",
+    "display" : "Kalsium batu ginjal"
+  },
+  {
+    "code" : "X099173",
+    "display" : "Magnesium batu ginjal"
+  },
+  {
+    "code" : "X099174",
+    "display" : "Fosfat batu ginjal"
+  },
+  {
+    "code" : "X099175",
+    "display" : "Amonium batu ginjal"
+  },
+  {
+    "code" : "X099176",
+    "display" : "Kesimpulan batu ginjal"
+  },
+  {
+    "code" : "X099177",
+    "display" : "Lama menikah"
+  },
+  {
+    "code" : "X099178",
+    "display" : "Diperiksa"
+  },
+  {
+    "code" : "X099179",
+    "display" : "Bau"
+  },
+  {
+    "code" : "X099180",
+    "display" : "Sel spermiogenesis"
+  },
+  {
+    "code" : "X099181",
+    "display" : "Akrosomal kecil"
+  },
+  {
+    "code" : "X099182",
+    "display" : "Akrosomal besar"
+  },
+  {
+    "code" : "X099183",
+    "display" : "Kesimpulan"
+  },
+  {
+    "code" : "X099184",
+    "display" : "Direct Mixed Antiglobulin Reaction (Direct MAR)"
+  },
+  {
+    "code" : "X099185",
+    "display" : "Indirect Mixed Antiglobulin Reaction (Indirect MAR)"
+  },
+  {
+    "code" : "X099186",
+    "display" : "Uji Fragmentasi DNA"
+  },
+  {
+    "code" : "X099187",
+    "display" : "Pemeriksaan feses lengkap"
+  },
+  {
+    "code" : "X099188",
+    "display" : "Pus feses"
+  },
+  {
+    "code" : "X099189",
+    "display" : "Berminyak"
+  },
+  {
+    "code" : "X099190",
+    "display" : "Berbusa"
+  },
+  {
+    "code" : "X099191",
+    "display" : "Bau feses"
+  },
+  {
+    "code" : "X099192",
+    "display" : "Eritrosit feses"
+  },
+  {
+    "code" : "X099193",
+    "display" : "Bakteri"
+  },
+  {
+    "code" : "X099194",
+    "display" : "Sisa makanan"
+  },
+  {
+    "code" : "X099195",
+    "display" : "Lain-lain"
+  },
+  {
+    "code" : "X099196",
+    "display" : "Growth Hormone Basal"
+  },
+  {
+    "code" : "X099197",
+    "display" : "Growth Hormone Exercise"
+  },
+  {
+    "code" : "X099198",
+    "display" : "Free Light Chain Kappa"
+  },
+  {
+    "code" : "X099199",
+    "display" : "Free Light Chain Lambda"
+  },
+  {
+    "code" : "X099200",
+    "display" : "Anti Mullerian Hormone (AMH)"
+  },
+  {
+    "code" : "X099201",
+    "display" : "Imunofiksasi Light Chain kesimpulan"
+  },
+  {
+    "code" : "X099202",
+    "display" : "Laktat Dehidrogenase (LDH) baseline"
+  },
+  {
+    "code" : "X099203",
+    "display" : "Kunkel"
+  },
+  {
+    "code" : "X099204",
+    "display" : "C peptide 2 jam PP"
+  },
+  {
+    "code" : "X099205",
+    "display" : "Beta Crosslap (CTx)"
+  },
+  {
+    "code" : "X099206",
+    "display" : "Status antioksidan total"
+  },
+  {
+    "code" : "X099207",
+    "display" : "Fetuin A"
+  },
+  {
+    "code" : "X099208",
+    "display" : "Adrenomedullin (ADM)"
+  },
+  {
+    "code" : "X099209",
+    "display" : "Sel blas urine"
+  },
+  {
+    "code" : "X099210",
+    "display" : "Fosfatase alkali baseline"
+  },
+  {
+    "code" : "X099211",
+    "display" : "Amilase pankreatik"
+  },
+  {
+    "code" : "X099212",
+    "display" : "Kolinesterase baseline"
+  },
+  {
+    "code" : "X099213",
+    "display" : "Mikrofilaria"
+  },
+  {
+    "code" : "X099214",
+    "display" : "Pewarnaan bakteri tahan asam kulit"
+  },
+  {
+    "code" : "X099215",
+    "display" : "Lactobacillus"
+  },
+  {
+    "code" : "X099216",
+    "display" : "Morbiluncus"
+  },
+  {
+    "code" : "X099217",
+    "display" : "Gardnerella"
+  },
+  {
+    "code" : "X099218",
+    "display" : "Biakan Shigella feses"
+  },
+  {
+    "code" : "X099219",
+    "display" : "Kapreomisin 2,5 μg/ml (Uji resistansi)"
+  },
+  {
+    "code" : "X099220",
+    "display" : "Kapreomisin 40,0 μg/ml (Uji resistansi)"
+  },
+  {
+    "code" : "X099221",
+    "display" : "Ravuconazole (Uji resistansi)"
+  },
+  {
+    "code" : "X099222",
+    "display" : "Ciclopirox (Uji resistansi)"
+  },
+  {
+    "code" : "X099223",
+    "display" : "Gen N dan Orf 1ab SARS CoV-2 RNA (TCM)"
+  },
+  {
+    "code" : "X099224",
+    "display" : "H1N1 (PCR)"
+  },
+  {
+    "code" : "X099225",
+    "display" : "HPV 40 (PCR)"
+  },
+  {
+    "code" : "X099226",
+    "display" : "HPV 43 (PCR)"
+  },
+  {
+    "code" : "X099227",
+    "display" : "HPV 54 (PCR)"
+  },
+  {
+    "code" : "X099228",
+    "display" : "HPV 61 (PCR)"
+  },
+  {
+    "code" : "X099229",
+    "display" : "HPV 62 (PCR)"
+  },
+  {
+    "code" : "X099230",
+    "display" : "HPV 71 (PCR)"
+  },
+  {
+    "code" : "X099231",
+    "display" : "HPV 72 (PCR)"
+  },
+  {
+    "code" : "X099232",
+    "display" : "HPV 81 (PCR)"
+  },
+  {
+    "code" : "X099233",
+    "display" : "HPV 83 (PCR)"
+  },
+  {
+    "code" : "X099234",
+    "display" : "HPV 84 (PCR)"
+  },
+  {
+    "code" : "X099235",
+    "display" : "HPV 85 (PCR)"
+  },
+  {
+    "code" : "X099236",
+    "display" : "HPV 89 (PCR)"
+  },
+  {
+    "code" : "X099237",
+    "display" : "Influenza virus A (H3N2) (PCR)"
+  },
+  {
+    "code" : "X099238",
+    "display" : "Metapneumovirus (subtypes A and B) (PCR)"
+  },
+  {
+    "code" : "X099239",
+    "display" : "Poliovirus (PCR)"
+  },
+  {
+    "code" : "X099240",
+    "display" : "5p15 deletion (Cri-du-chat)"
+  },
+  {
+    "code" : "X099241",
+    "display" : "Tes IVA"
+  },
+  {
+    "code" : "X099242",
+    "display" : "CT urografi nonkontras"
+  },
+  {
+    "code" : "X099243",
+    "display" : "Guidance angioplasti balon transluminal arteri perifer"
+  },
+  {
+    "code" : "X099244",
+    "display" : "Guidance angioplasti balon transluminal ginjal atau arteri viseral lain"
+  },
+  {
+    "code" : "X099245",
+    "display" : "Guidance angioplasti balon transluminal vena"
+  },
+  {
+    "code" : "X099246",
+    "display" : "Guidance percutaneous transhepatic biliary drainage dengan monitoring kontras"
+  },
+  {
+    "code" : "X099247",
+    "display" : "MR abdomen atas dinamik dengan kontras"
+  },
+  {
+    "code" : "X099248",
+    "display" : "MR abdomen atas dinamik nonkontras"
+  },
+  {
+    "code" : "X099249",
+    "display" : "MR cochlea dan DTI dengan kontras"
+  },
+  {
+    "code" : "X099250",
+    "display" : "MR cochlea dan DTI nonkontras"
+  },
+  {
+    "code" : "X099251",
+    "display" : "MR DTI kontras"
+  },
+  {
+    "code" : "X099252",
+    "display" : "MR DTI nonkontras"
+  },
+  {
+    "code" : "X099253",
+    "display" : "MR whole abdomen dynamic dengan kontras IV"
+  },
+  {
+    "code" : "X099254",
+    "display" : "MR whole abdomen dynamic nonkontras"
+  },
+  {
+    "code" : "X099255",
+    "display" : "MR whole spine dengan kontras"
+  },
+  {
+    "code" : "X099256",
+    "display" : "MRCP dynamic nonkontras"
+  },
+  {
+    "code" : "X099257",
+    "display" : "MRCP dynamic nonkontras diikuti dengan kontras IV"
+  },
+  {
+    "code" : "X099258",
+    "display" : "RF epididimografi"
+  },
+  {
+    "code" : "X099259",
+    "display" : "RF genitografi"
+  },
+  {
+    "code" : "X099260",
+    "display" : "RF guidance pemasangan alat pacu jantung"
+  },
+  {
+    "code" : "X099261",
+    "display" : "RF ventrikulografi jantung"
+  },
+  {
+    "code" : "X099262",
+    "display" : "US doppler superfisial"
+  },
+  {
+    "code" : "X099263",
+    "display" : "US genu bilateral dengan kontras"
+  },
+  {
+    "code" : "X099264",
+    "display" : "US genu dengan kontras"
+  },
+  {
+    "code" : "X099265",
+    "display" : "US kanalis spinalis dan isi"
+  },
+  {
+    "code" : "X099266",
+    "display" : "US muskuloskeletal ipsilateral"
+  },
+  {
+    "code" : "X099267",
+    "display" : "US muskuloskeletal superfisial"
+  },
+  {
+    "code" : "X099268",
+    "display" : "XR schedel AP dan lateral nonkontras"
+  },
+  {
+    "code" : "X099269",
+    "display" : "XR thorakolumbal AP, lateral, oblique kanan dan kiri"
+  },
+  {
+    "code" : "X099270",
+    "display" : "XR thorakolumbal oblique"
+  },
+  {
+    "code" : "X099274",
+    "display" : "Kontras MRI Brain + MR Perfusi"
+  },
+  {
+    "code" : "X099275",
+    "display" : "Kontras MRI Brain + MR Perfusi + MRS"
+  },
+  {
+    "code" : "X099276",
+    "display" : "Kontras MRI Brain + MRA +MRV"
+  },
+  {
+    "code" : "X099277",
+    "display" : "Kontras MRI Brain + MRS"
+  },
+  {
+    "code" : "X099278",
+    "display" : "Kontras MRI Brain +MRV"
+  },
+  {
+    "code" : "X099379",
+    "display" : "Pemeriksaaan TCM XDR"
+  },
+  {
+    "code" : "X099380",
+    "display" : "Line Probe Assay (LPA) Lini 1"
+  },
+  {
+    "code" : "X099381",
+    "display" : "Line Probe Assay (LPA) Lini 2"
+  },
+  {
+    "code" : "X099383",
+    "display" : "Pemeriksaan Paket Standar Kepekaan"
+  },
+  {
+    "code" : "X099386",
+    "display" : "Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) BTA"
+  },
+  {
+    "code" : "X099387",
+    "display" : "Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) biakan"
+  },
+  {
+    "code" : "X099388",
+    "display" : "Biakan TB"
+  },
+  {
+    "code" : "X099389",
+    "display" : "Hasil Uji Metode LJ"
+  },
+  {
+    "code" : "X099390",
+    "display" : "Hasil Uji Metode MGIT"
+  },
+  {
+    "code" : "X099391",
+    "display" : "H Dosis Rendah"
+  },
+  {
+    "code" : "X099392",
+    "display" : "FQ Dosis Rendah"
+  },
+  {
+    "code" : "X099770",
+    "display" : "Rifampisin sensitive"
+  },
+  {
+    "code" : "X099771",
+    "display" : "Rifampisin resistan"
+  },
+  {
+    "code" : "X099772",
+    "display" : "Rifampisin indeterminate"
+  },
+  {
+    "code" : "X099773",
+    "display" : "Indeterminate (IDT)"
+  },
+  {
+    "code" : "X099774",
+    "display" : "Ress Inffered (RI)"
+  },
+  {
+    "code" : "X099775",
+    "display" : "Moxifloxacin DT (Mfx DT)"
+  },
+  {
+    "code" : "X099776",
+    "display" : "H High Dosage [Susceptibility] by Method for Slow-growing mycobacteria"
+  },
+  {
+    "code" : "X099777",
+    "display" : "H - SLID - capreomycin [Susceptibility] by Method for Slow-growing mycobacteria"
+  },
+  {
+    "code" : "X099778",
+    "display" : "Moxifloxacin High Dosage [Susceptibility] by Method for Slow-growing mycobacteria"
+  },
+  {
+    "code" : "X099779",
+    "display" : "Delamanid [Susceptibility] by Method for Slow-growing mycobacteria"
+  },
+  {
+    "code" : "X099780",
+    "display" : "Bedaquiline [Susceptibility] by Method for Slow-growing mycobacteria"
+  },
+  {
+    "code" : "X099781",
+    "display" : "Hasil Valid"
+  }]
+}

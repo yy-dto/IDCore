@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EncounterLocationUpgradeClass"] ; # 
   fhir:title [ fhir:v "Encounter Location UpgradeClass"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-02-15T12:08:26+07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-22T17:23:47+07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Thomas Chaidir" ] ;

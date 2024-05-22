@@ -4,6 +4,125 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension",
+      "title": "Address administrative code extension",
+      "types": [
+        "code",
+        "code",
+        "code",
+        "code",
+        "code",
+        "code",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/CitizenshipStatusExtension",
+      "title": "Patient citizenship status extension",
+      "types": [
+        "code",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
       "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation",
       "title": "Encounter Location Extention",
       "types": [
@@ -113,6 +232,12 @@
     }
   ],
   "profiles": {
+    "Observation": [
+      {
+        "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreObservation",
+        "title": "IDCoreObservation"
+      }
+    ],
     "Condition": [
       {
         "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreCondition",
@@ -139,8 +264,14 @@
     ],
     "Patient": [
       {
-        "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/MyPatient",
-        "title": "MyPatient"
+        "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCorePatient",
+        "title": "IDCorePatient"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCorePractitioner",
+        "title": "IDCorePractitioner"
       }
     ]
   },
@@ -156,6 +287,12 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
       "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
@@ -180,11 +317,34 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension": [
+      "Patient.address",
+      "Practitioner.address"
+    ],
+    "https://fhir.kemkes.go.id/r4/StructureDefinition/CitizenshipStatusExtension": [
+      "Patient",
+      "Practitioner"
+    ],
     "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation": [
       "Encounter.location"
     ],
     "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass": [
-      "Encounter.location"
+      "Encounter.location",
+      "StructureDefinition",
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode": [
+      "StructureDefinition",
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "https://fhir.kemkes.go.id/r4/StructureDefinition/citizenshipStatus": [
+      "StructureDefinition"
+    ],
+    "value": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
     ]
   }
 }

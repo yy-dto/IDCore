@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Terminology Kemkes examination CodeSystem - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.37"}
+    h3,h4,h5,h6{--heading-prefix:"5.37"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Terminology Kemkes examination CodeSystem</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-KemkesExaminationCS.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-KemkesExaminationCS.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-KemkesExaminationCS.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Terminology Kemkes examination CodeSystem
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.kemkes.go.id/CodeSystem/examination<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.kemkes.go.id/CodeSystem/examination"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.kemkes.go.id/CodeSystem/examination|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2024-02-05
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">KemkesExaminationCS</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>Terminology Kemkes examination CodeSystem</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="ValueSet-Observationcode.html">Observationcode</a></li>
+ <li><a href="ValueSet-Observation.interpretation.html">Observation.interpretation</a></li>
+ <li><a href="ValueSet-Observation.valueCodeableConceptSpecific.html">Observation.valueCodeableConceptSpecific</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/examination</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">24589-4<a name="KemkesExaminationCS-24589-4"> </a></td><td>MR Brain W contrast IV</td></tr><tr><td style="white-space:nowrap">30657-1<a name="KemkesExaminationCS-30657-1"> </a></td><td>MR Brain WO contrast</td></tr><tr><td style="white-space:nowrap">IP099352<a name="KemkesExaminationCS-IP099352"> </a></td><td>defisit neurologis ringan</td></tr><tr><td style="white-space:nowrap">IP099353<a name="KemkesExaminationCS-IP099353"> </a></td><td>defisit neurologis sedang / cukup berat</td></tr><tr><td style="white-space:nowrap">IP099354<a name="KemkesExaminationCS-IP099354"> </a></td><td>defisit neurologis berat</td></tr><tr><td style="white-space:nowrap">IP099355<a name="KemkesExaminationCS-IP099355"> </a></td><td>defisit neurologis sangat berat</td></tr><tr><td style="white-space:nowrap">IP099356<a name="KemkesExaminationCS-IP099356"> </a></td><td>Vasodilator Stress Ekokardiografi</td></tr><tr><td style="white-space:nowrap">IP099357<a name="KemkesExaminationCS-IP099357"> </a></td><td>Dobutamine Stress Ekokardiografi</td></tr><tr><td style="white-space:nowrap">IP099358<a name="KemkesExaminationCS-IP099358"> </a></td><td>Konfirmasi Diagnosis EKG</td></tr><tr><td style="white-space:nowrap">RD0993385<a name="KemkesExaminationCS-RD0993385"> </a></td><td>MR DWI/FLAIR</td></tr><tr><td style="white-space:nowrap">RD0993386<a name="KemkesExaminationCS-RD0993386"> </a></td><td>MR DWI/FLAIR + MR Angiografi</td></tr><tr><td style="white-space:nowrap">RD0993387<a name="KemkesExaminationCS-RD0993387"> </a></td><td>MR DWI/FLAIR + MR Angiografi + MR Perfusi</td></tr><tr><td style="white-space:nowrap">RD0993430<a name="KemkesExaminationCS-RD0993430"> </a></td><td>Dobutamine Stress MRI</td></tr><tr><td style="white-space:nowrap">RD0993431<a name="KemkesExaminationCS-RD0993431"> </a></td><td>Vasodilator Stress MRI</td></tr><tr><td style="white-space:nowrap">X099080<a name="KemkesExaminationCS-X099080"> </a></td><td>Titer Anti-ABO</td></tr><tr><td style="white-space:nowrap">X099081<a name="KemkesExaminationCS-X099081"> </a></td><td>Sugar Water Test/Sucrose Water Test</td></tr><tr><td style="white-space:nowrap">X099082<a name="KemkesExaminationCS-X099082"> </a></td><td>Badan inklusi Hb H</td></tr><tr><td style="white-space:nowrap">X099083<a name="KemkesExaminationCS-X099083"> </a></td><td>Protein C kontrol</td></tr><tr><td style="white-space:nowrap">X099084<a name="KemkesExaminationCS-X099084"> </a></td><td>Protein S kontrol</td></tr><tr><td style="white-space:nowrap">X099085<a name="KemkesExaminationCS-X099085"> </a></td><td>Retraksi bekuan</td></tr><tr><td style="white-space:nowrap">X099086<a name="KemkesExaminationCS-X099086"> </a></td><td>Volume serum</td></tr><tr><td style="white-space:nowrap">X099087<a name="KemkesExaminationCS-X099087"> </a></td><td>Konsistensi bekuan</td></tr><tr><td style="white-space:nowrap">X099088<a name="KemkesExaminationCS-X099088"> </a></td><td>Waktu trombin serial</td></tr><tr><td style="white-space:nowrap">X099089<a name="KemkesExaminationCS-X099089"> </a></td><td>Waktu trombin 20 menit kontrol</td></tr><tr><td style="white-space:nowrap">X099090<a name="KemkesExaminationCS-X099090"> </a></td><td>Waktu trombin 20 menit pasien</td></tr><tr><td style="white-space:nowrap">X099091<a name="KemkesExaminationCS-X099091"> </a></td><td>Waktu trombin 40 menit kontrol</td></tr><tr><td style="white-space:nowrap">X099092<a name="KemkesExaminationCS-X099092"> </a></td><td>Waktu trombin 40 menit pasien</td></tr><tr><td style="white-space:nowrap">X099093<a name="KemkesExaminationCS-X099093"> </a></td><td>Waktu trombin 60 menit kontrol</td></tr><tr><td style="white-space:nowrap">X099094<a name="KemkesExaminationCS-X099094"> </a></td><td>Waktu trombin 60 menit pasien</td></tr><tr><td style="white-space:nowrap">X099095<a name="KemkesExaminationCS-X099095"> </a></td><td>Tes fungsi trombosit P2Y12 Base</td></tr><tr><td style="white-space:nowrap">X099096<a name="KemkesExaminationCS-X099096"> </a></td><td>Immunophenotyping leukemia</td></tr><tr><td style="white-space:nowrap">X099097<a name="KemkesExaminationCS-X099097"> </a></td><td>Immunophenotyping leukemia akut</td></tr><tr><td style="white-space:nowrap">X099098<a name="KemkesExaminationCS-X099098"> </a></td><td>Immunophenotyping leukemia kronis</td></tr><tr><td style="white-space:nowrap">X099099<a name="KemkesExaminationCS-X099099"> </a></td><td>Sel lemak</td></tr><tr><td style="white-space:nowrap">X099100<a name="KemkesExaminationCS-X099100"> </a></td><td>Giant metamielosit</td></tr><tr><td style="white-space:nowrap">X099101<a name="KemkesExaminationCS-X099101"> </a></td><td>Giant stab</td></tr><tr><td style="white-space:nowrap">X099102<a name="KemkesExaminationCS-X099102"> </a></td><td>Hipersegmentasi (&gt; 6)</td></tr><tr><td style="white-space:nowrap">X099103<a name="KemkesExaminationCS-X099103"> </a></td><td>Hipogranulasi</td></tr><tr><td style="white-space:nowrap">X099104<a name="KemkesExaminationCS-X099104"> </a></td><td>Vakuolisasi</td></tr><tr><td style="white-space:nowrap">X099105<a name="KemkesExaminationCS-X099105"> </a></td><td>Anomali Pelger-Huest</td></tr><tr><td style="white-space:nowrap">X099106<a name="KemkesExaminationCS-X099106"> </a></td><td>Karioreksis</td></tr><tr><td style="white-space:nowrap">X099107<a name="KemkesExaminationCS-X099107"> </a></td><td>Sel mitosis</td></tr><tr><td style="white-space:nowrap">X099108<a name="KemkesExaminationCS-X099108"> </a></td><td>Sel tak dikenal</td></tr><tr><td style="white-space:nowrap">X099109<a name="KemkesExaminationCS-X099109"> </a></td><td>Limfosit Abnormal</td></tr><tr><td style="white-space:nowrap">X099110<a name="KemkesExaminationCS-X099110"> </a></td><td>Lain-lain (Hapusan sumsum tulang)</td></tr><tr><td style="white-space:nowrap">X099111<a name="KemkesExaminationCS-X099111"> </a></td><td>Saran</td></tr><tr><td style="white-space:nowrap">X099112<a name="KemkesExaminationCS-X099112"> </a></td><td>Hitung jenis darah</td></tr><tr><td style="white-space:nowrap">X099113<a name="KemkesExaminationCS-X099113"> </a></td><td>Rasio hitung neutrofil-limfosit (NLCR)</td></tr><tr><td style="white-space:nowrap">X099114<a name="KemkesExaminationCS-X099114"> </a></td><td>Agregasi trombosit ADP 1 uM</td></tr><tr><td style="white-space:nowrap">X099115<a name="KemkesExaminationCS-X099115"> </a></td><td>Agregasi trombosit ADP 2 uM</td></tr><tr><td style="white-space:nowrap">X099116<a name="KemkesExaminationCS-X099116"> </a></td><td>Masa laten (Asam arakidonat)</td></tr><tr><td style="white-space:nowrap">X099117<a name="KemkesExaminationCS-X099117"> </a></td><td>Kecepatan agregasi (Asam arakidonat)</td></tr><tr><td style="white-space:nowrap">X099118<a name="KemkesExaminationCS-X099118"> </a></td><td>Index agregasi (Asam arakidonat)</td></tr><tr><td style="white-space:nowrap">X099119<a name="KemkesExaminationCS-X099119"> </a></td><td>Masa laten (Platelet activation factor)</td></tr><tr><td style="white-space:nowrap">X099120<a name="KemkesExaminationCS-X099120"> </a></td><td>Kecepatan agregasi (Platelet activation factor)</td></tr><tr><td style="white-space:nowrap">X099121<a name="KemkesExaminationCS-X099121"> </a></td><td>Index agregasi (Platelet activation factor)</td></tr><tr><td style="white-space:nowrap">X099122<a name="KemkesExaminationCS-X099122"> </a></td><td>% Agregasi (Platelet activation factor)</td></tr><tr><td style="white-space:nowrap">X099123<a name="KemkesExaminationCS-X099123"> </a></td><td>Masa laten</td></tr><tr><td style="white-space:nowrap">X099124<a name="KemkesExaminationCS-X099124"> </a></td><td>Kecepatan agregasi</td></tr><tr><td style="white-space:nowrap">X099125<a name="KemkesExaminationCS-X099125"> </a></td><td>Index agregasi</td></tr><tr><td style="white-space:nowrap">X099126<a name="KemkesExaminationCS-X099126"> </a></td><td>Mixed APTT kontrol</td></tr><tr><td style="white-space:nowrap">X099127<a name="KemkesExaminationCS-X099127"> </a></td><td>Faktor IX kontrol</td></tr><tr><td style="white-space:nowrap">X099128<a name="KemkesExaminationCS-X099128"> </a></td><td>Fakotr VIII kontrol</td></tr><tr><td style="white-space:nowrap">X099129<a name="KemkesExaminationCS-X099129"> </a></td><td>ANA Profile</td></tr><tr><td style="white-space:nowrap">X099130<a name="KemkesExaminationCS-X099130"> </a></td><td>Human MSTN (Myostatin)</td></tr><tr><td style="white-space:nowrap">X099131<a name="KemkesExaminationCS-X099131"> </a></td><td>LE Cell Test</td></tr><tr><td style="white-space:nowrap">X099132<a name="KemkesExaminationCS-X099132"> </a></td><td>CD14</td></tr><tr><td style="white-space:nowrap">X099133<a name="KemkesExaminationCS-X099133"> </a></td><td>CD20</td></tr><tr><td style="white-space:nowrap">X099134<a name="KemkesExaminationCS-X099134"> </a></td><td>CD45 absolut</td></tr><tr><td style="white-space:nowrap">X099135<a name="KemkesExaminationCS-X099135"> </a></td><td>CD 4 - CD 8</td></tr><tr><td style="white-space:nowrap">X099136<a name="KemkesExaminationCS-X099136"> </a></td><td>IgE spesifik ikan</td></tr><tr><td style="white-space:nowrap">X099137<a name="KemkesExaminationCS-X099137"> </a></td><td>Anti RA - 33</td></tr><tr><td style="white-space:nowrap">X099138<a name="KemkesExaminationCS-X099138"> </a></td><td>HIV Western Blot</td></tr><tr><td style="white-space:nowrap">X099139<a name="KemkesExaminationCS-X099139"> </a></td><td>Antigen M. tuberculosis</td></tr><tr><td style="white-space:nowrap">X099140<a name="KemkesExaminationCS-X099140"> </a></td><td>IgG Anti Mycoplasma</td></tr><tr><td style="white-space:nowrap">X099141<a name="KemkesExaminationCS-X099141"> </a></td><td>IgG Anti Mycoplasma</td></tr><tr><td style="white-space:nowrap">X099142<a name="KemkesExaminationCS-X099142"> </a></td><td>IgM Anti Mycoplasma</td></tr><tr><td style="white-space:nowrap">X099143<a name="KemkesExaminationCS-X099143"> </a></td><td>IgM Anti Mycoplasma</td></tr><tr><td style="white-space:nowrap">X099144<a name="KemkesExaminationCS-X099144"> </a></td><td>Antigen Salmonella paratyphi</td></tr><tr><td style="white-space:nowrap">X099145<a name="KemkesExaminationCS-X099145"> </a></td><td>IgA Anti EBV EBNA</td></tr><tr><td style="white-space:nowrap">X099146<a name="KemkesExaminationCS-X099146"> </a></td><td>IgM Anti PGL-1</td></tr><tr><td style="white-space:nowrap">X099147<a name="KemkesExaminationCS-X099147"> </a></td><td>IgG Anti PGL-1</td></tr><tr><td style="white-space:nowrap">X099148<a name="KemkesExaminationCS-X099148"> </a></td><td>Clostridium difficile GDH</td></tr><tr><td style="white-space:nowrap">X099149<a name="KemkesExaminationCS-X099149"> </a></td><td>Antigenemia CMV urine</td></tr><tr><td style="white-space:nowrap">X099150<a name="KemkesExaminationCS-X099150"> </a></td><td>Analisis cairan otak</td></tr><tr><td style="white-space:nowrap">X099151<a name="KemkesExaminationCS-X099151"> </a></td><td>Analisis kimia cairan otak</td></tr><tr><td style="white-space:nowrap">X099152<a name="KemkesExaminationCS-X099152"> </a></td><td>Leukemia phenotyping cairan otak</td></tr><tr><td style="white-space:nowrap">X099153<a name="KemkesExaminationCS-X099153"> </a></td><td>Analisis cairan empedu</td></tr><tr><td style="white-space:nowrap">X099154<a name="KemkesExaminationCS-X099154"> </a></td><td>Sel lain cairan empedu</td></tr><tr><td style="white-space:nowrap">X099155<a name="KemkesExaminationCS-X099155"> </a></td><td>Rasio bilirubin cairan empedu</td></tr><tr><td style="white-space:nowrap">X099156<a name="KemkesExaminationCS-X099156"> </a></td><td>Analisis batu empedu</td></tr><tr><td style="white-space:nowrap">X099157<a name="KemkesExaminationCS-X099157"> </a></td><td>Kolesterol batu empedu</td></tr><tr><td style="white-space:nowrap">X099158<a name="KemkesExaminationCS-X099158"> </a></td><td>Bilirubin total batu empedu</td></tr><tr><td style="white-space:nowrap">X099159<a name="KemkesExaminationCS-X099159"> </a></td><td>Kalsium batu empedu</td></tr><tr><td style="white-space:nowrap">X099160<a name="KemkesExaminationCS-X099160"> </a></td><td>Kalsium batu empedu</td></tr><tr><td style="white-space:nowrap">X099161<a name="KemkesExaminationCS-X099161"> </a></td><td>Analisis cairan sendi</td></tr><tr><td style="white-space:nowrap">X099162<a name="KemkesExaminationCS-X099162"> </a></td><td>Analisis cairan tubuh</td></tr><tr><td style="white-space:nowrap">X099163<a name="KemkesExaminationCS-X099163"> </a></td><td>Rasio protein cairan tubuh/serum</td></tr><tr><td style="white-space:nowrap">X099164<a name="KemkesExaminationCS-X099164"> </a></td><td>Pandy's test cairan tubuh</td></tr><tr><td style="white-space:nowrap">X099165<a name="KemkesExaminationCS-X099165"> </a></td><td>Analisa cairan peritoneal dialisis</td></tr><tr><td style="white-space:nowrap">X099166<a name="KemkesExaminationCS-X099166"> </a></td><td>Analisa cairan peritoneal dialisis</td></tr><tr><td style="white-space:nowrap">X099167<a name="KemkesExaminationCS-X099167"> </a></td><td>Analisis cairan perikardial</td></tr><tr><td style="white-space:nowrap">X099168<a name="KemkesExaminationCS-X099168"> </a></td><td>Hitung jenis cairan perikardial</td></tr><tr><td style="white-space:nowrap">X099169<a name="KemkesExaminationCS-X099169"> </a></td><td>Analisis cairan pleura</td></tr><tr><td style="white-space:nowrap">X099170<a name="KemkesExaminationCS-X099170"> </a></td><td>Analisis batu ginjal</td></tr><tr><td style="white-space:nowrap">X099171<a name="KemkesExaminationCS-X099171"> </a></td><td>Bau batu ginjal</td></tr><tr><td style="white-space:nowrap">X099172<a name="KemkesExaminationCS-X099172"> </a></td><td>Kalsium batu ginjal</td></tr><tr><td style="white-space:nowrap">X099173<a name="KemkesExaminationCS-X099173"> </a></td><td>Magnesium batu ginjal</td></tr><tr><td style="white-space:nowrap">X099174<a name="KemkesExaminationCS-X099174"> </a></td><td>Fosfat batu ginjal</td></tr><tr><td style="white-space:nowrap">X099175<a name="KemkesExaminationCS-X099175"> </a></td><td>Amonium batu ginjal</td></tr><tr><td style="white-space:nowrap">X099176<a name="KemkesExaminationCS-X099176"> </a></td><td>Kesimpulan batu ginjal</td></tr><tr><td style="white-space:nowrap">X099177<a name="KemkesExaminationCS-X099177"> </a></td><td>Lama menikah</td></tr><tr><td style="white-space:nowrap">X099178<a name="KemkesExaminationCS-X099178"> </a></td><td>Diperiksa</td></tr><tr><td style="white-space:nowrap">X099179<a name="KemkesExaminationCS-X099179"> </a></td><td>Bau</td></tr><tr><td style="white-space:nowrap">X099180<a name="KemkesExaminationCS-X099180"> </a></td><td>Sel spermiogenesis</td></tr><tr><td style="white-space:nowrap">X099181<a name="KemkesExaminationCS-X099181"> </a></td><td>Akrosomal kecil</td></tr><tr><td style="white-space:nowrap">X099182<a name="KemkesExaminationCS-X099182"> </a></td><td>Akrosomal besar</td></tr><tr><td style="white-space:nowrap">X099183<a name="KemkesExaminationCS-X099183"> </a></td><td>Kesimpulan</td></tr><tr><td style="white-space:nowrap">X099184<a name="KemkesExaminationCS-X099184"> </a></td><td>Direct Mixed Antiglobulin Reaction (Direct MAR)</td></tr><tr><td style="white-space:nowrap">X099185<a name="KemkesExaminationCS-X099185"> </a></td><td>Indirect Mixed Antiglobulin Reaction (Indirect MAR)</td></tr><tr><td style="white-space:nowrap">X099186<a name="KemkesExaminationCS-X099186"> </a></td><td>Uji Fragmentasi DNA</td></tr><tr><td style="white-space:nowrap">X099187<a name="KemkesExaminationCS-X099187"> </a></td><td>Pemeriksaan feses lengkap</td></tr><tr><td style="white-space:nowrap">X099188<a name="KemkesExaminationCS-X099188"> </a></td><td>Pus feses</td></tr><tr><td style="white-space:nowrap">X099189<a name="KemkesExaminationCS-X099189"> </a></td><td>Berminyak</td></tr><tr><td style="white-space:nowrap">X099190<a name="KemkesExaminationCS-X099190"> </a></td><td>Berbusa</td></tr><tr><td style="white-space:nowrap">X099191<a name="KemkesExaminationCS-X099191"> </a></td><td>Bau feses</td></tr><tr><td style="white-space:nowrap">X099192<a name="KemkesExaminationCS-X099192"> </a></td><td>Eritrosit feses</td></tr><tr><td style="white-space:nowrap">X099193<a name="KemkesExaminationCS-X099193"> </a></td><td>Bakteri</td></tr><tr><td style="white-space:nowrap">X099194<a name="KemkesExaminationCS-X099194"> </a></td><td>Sisa makanan</td></tr><tr><td style="white-space:nowrap">X099195<a name="KemkesExaminationCS-X099195"> </a></td><td>Lain-lain</td></tr><tr><td style="white-space:nowrap">X099196<a name="KemkesExaminationCS-X099196"> </a></td><td>Growth Hormone Basal</td></tr><tr><td style="white-space:nowrap">X099197<a name="KemkesExaminationCS-X099197"> </a></td><td>Growth Hormone Exercise</td></tr><tr><td style="white-space:nowrap">X099198<a name="KemkesExaminationCS-X099198"> </a></td><td>Free Light Chain Kappa</td></tr><tr><td style="white-space:nowrap">X099199<a name="KemkesExaminationCS-X099199"> </a></td><td>Free Light Chain Lambda</td></tr><tr><td style="white-space:nowrap">X099200<a name="KemkesExaminationCS-X099200"> </a></td><td>Anti Mullerian Hormone (AMH)</td></tr><tr><td style="white-space:nowrap">X099201<a name="KemkesExaminationCS-X099201"> </a></td><td>Imunofiksasi Light Chain kesimpulan</td></tr><tr><td style="white-space:nowrap">X099202<a name="KemkesExaminationCS-X099202"> </a></td><td>Laktat Dehidrogenase (LDH) baseline</td></tr><tr><td style="white-space:nowrap">X099203<a name="KemkesExaminationCS-X099203"> </a></td><td>Kunkel</td></tr><tr><td style="white-space:nowrap">X099204<a name="KemkesExaminationCS-X099204"> </a></td><td>C peptide 2 jam PP</td></tr><tr><td style="white-space:nowrap">X099205<a name="KemkesExaminationCS-X099205"> </a></td><td>Beta Crosslap (CTx)</td></tr><tr><td style="white-space:nowrap">X099206<a name="KemkesExaminationCS-X099206"> </a></td><td>Status antioksidan total</td></tr><tr><td style="white-space:nowrap">X099207<a name="KemkesExaminationCS-X099207"> </a></td><td>Fetuin A</td></tr><tr><td style="white-space:nowrap">X099208<a name="KemkesExaminationCS-X099208"> </a></td><td>Adrenomedullin (ADM)</td></tr><tr><td style="white-space:nowrap">X099209<a name="KemkesExaminationCS-X099209"> </a></td><td>Sel blas urine</td></tr><tr><td style="white-space:nowrap">X099210<a name="KemkesExaminationCS-X099210"> </a></td><td>Fosfatase alkali baseline</td></tr><tr><td style="white-space:nowrap">X099211<a name="KemkesExaminationCS-X099211"> </a></td><td>Amilase pankreatik</td></tr><tr><td style="white-space:nowrap">X099212<a name="KemkesExaminationCS-X099212"> </a></td><td>Kolinesterase baseline</td></tr><tr><td style="white-space:nowrap">X099213<a name="KemkesExaminationCS-X099213"> </a></td><td>Mikrofilaria</td></tr><tr><td style="white-space:nowrap">X099214<a name="KemkesExaminationCS-X099214"> </a></td><td>Pewarnaan bakteri tahan asam kulit</td></tr><tr><td style="white-space:nowrap">X099215<a name="KemkesExaminationCS-X099215"> </a></td><td>Lactobacillus</td></tr><tr><td style="white-space:nowrap">X099216<a name="KemkesExaminationCS-X099216"> </a></td><td>Morbiluncus</td></tr><tr><td style="white-space:nowrap">X099217<a name="KemkesExaminationCS-X099217"> </a></td><td>Gardnerella</td></tr><tr><td style="white-space:nowrap">X099218<a name="KemkesExaminationCS-X099218"> </a></td><td>Biakan Shigella feses</td></tr><tr><td style="white-space:nowrap">X099219<a name="KemkesExaminationCS-X099219"> </a></td><td>Kapreomisin 2,5 &mu;g/ml (Uji resistansi)</td></tr><tr><td style="white-space:nowrap">X099220<a name="KemkesExaminationCS-X099220"> </a></td><td>Kapreomisin 40,0 &mu;g/ml (Uji resistansi)</td></tr><tr><td style="white-space:nowrap">X099221<a name="KemkesExaminationCS-X099221"> </a></td><td>Ravuconazole (Uji resistansi)</td></tr><tr><td style="white-space:nowrap">X099222<a name="KemkesExaminationCS-X099222"> </a></td><td>Ciclopirox (Uji resistansi)</td></tr><tr><td style="white-space:nowrap">X099223<a name="KemkesExaminationCS-X099223"> </a></td><td>Gen N dan Orf 1ab SARS CoV-2 RNA (TCM)</td></tr><tr><td style="white-space:nowrap">X099224<a name="KemkesExaminationCS-X099224"> </a></td><td>H1N1 (PCR)</td></tr><tr><td style="white-space:nowrap">X099225<a name="KemkesExaminationCS-X099225"> </a></td><td>HPV 40 (PCR)</td></tr><tr><td style="white-space:nowrap">X099226<a name="KemkesExaminationCS-X099226"> </a></td><td>HPV 43 (PCR)</td></tr><tr><td style="white-space:nowrap">X099227<a name="KemkesExaminationCS-X099227"> </a></td><td>HPV 54 (PCR)</td></tr><tr><td style="white-space:nowrap">X099228<a name="KemkesExaminationCS-X099228"> </a></td><td>HPV 61 (PCR)</td></tr><tr><td style="white-space:nowrap">X099229<a name="KemkesExaminationCS-X099229"> </a></td><td>HPV 62 (PCR)</td></tr><tr><td style="white-space:nowrap">X099230<a name="KemkesExaminationCS-X099230"> </a></td><td>HPV 71 (PCR)</td></tr><tr><td style="white-space:nowrap">X099231<a name="KemkesExaminationCS-X099231"> </a></td><td>HPV 72 (PCR)</td></tr><tr><td style="white-space:nowrap">X099232<a name="KemkesExaminationCS-X099232"> </a></td><td>HPV 81 (PCR)</td></tr><tr><td style="white-space:nowrap">X099233<a name="KemkesExaminationCS-X099233"> </a></td><td>HPV 83 (PCR)</td></tr><tr><td style="white-space:nowrap">X099234<a name="KemkesExaminationCS-X099234"> </a></td><td>HPV 84 (PCR)</td></tr><tr><td style="white-space:nowrap">X099235<a name="KemkesExaminationCS-X099235"> </a></td><td>HPV 85 (PCR)</td></tr><tr><td style="white-space:nowrap">X099236<a name="KemkesExaminationCS-X099236"> </a></td><td>HPV 89 (PCR)</td></tr><tr><td style="white-space:nowrap">X099237<a name="KemkesExaminationCS-X099237"> </a></td><td>Influenza virus A (H3N2) (PCR)</td></tr><tr><td style="white-space:nowrap">X099238<a name="KemkesExaminationCS-X099238"> </a></td><td>Metapneumovirus (subtypes A and B) (PCR)</td></tr><tr><td style="white-space:nowrap">X099239<a name="KemkesExaminationCS-X099239"> </a></td><td>Poliovirus (PCR)</td></tr><tr><td style="white-space:nowrap">X099240<a name="KemkesExaminationCS-X099240"> </a></td><td>5p15 deletion (Cri-du-chat)</td></tr><tr><td style="white-space:nowrap">X099241<a name="KemkesExaminationCS-X099241"> </a></td><td>Tes IVA</td></tr><tr><td style="white-space:nowrap">X099242<a name="KemkesExaminationCS-X099242"> </a></td><td>CT urografi nonkontras</td></tr><tr><td style="white-space:nowrap">X099243<a name="KemkesExaminationCS-X099243"> </a></td><td>Guidance angioplasti balon transluminal arteri perifer</td></tr><tr><td style="white-space:nowrap">X099244<a name="KemkesExaminationCS-X099244"> </a></td><td>Guidance angioplasti balon transluminal ginjal atau arteri viseral lain</td></tr><tr><td style="white-space:nowrap">X099245<a name="KemkesExaminationCS-X099245"> </a></td><td>Guidance angioplasti balon transluminal vena</td></tr><tr><td style="white-space:nowrap">X099246<a name="KemkesExaminationCS-X099246"> </a></td><td>Guidance percutaneous transhepatic biliary drainage dengan monitoring kontras</td></tr><tr><td style="white-space:nowrap">X099247<a name="KemkesExaminationCS-X099247"> </a></td><td>MR abdomen atas dinamik dengan kontras</td></tr><tr><td style="white-space:nowrap">X099248<a name="KemkesExaminationCS-X099248"> </a></td><td>MR abdomen atas dinamik nonkontras</td></tr><tr><td style="white-space:nowrap">X099249<a name="KemkesExaminationCS-X099249"> </a></td><td>MR cochlea dan DTI dengan kontras</td></tr><tr><td style="white-space:nowrap">X099250<a name="KemkesExaminationCS-X099250"> </a></td><td>MR cochlea dan DTI nonkontras</td></tr><tr><td style="white-space:nowrap">X099251<a name="KemkesExaminationCS-X099251"> </a></td><td>MR DTI kontras</td></tr><tr><td style="white-space:nowrap">X099252<a name="KemkesExaminationCS-X099252"> </a></td><td>MR DTI nonkontras</td></tr><tr><td style="white-space:nowrap">X099253<a name="KemkesExaminationCS-X099253"> </a></td><td>MR whole abdomen dynamic dengan kontras IV</td></tr><tr><td style="white-space:nowrap">X099254<a name="KemkesExaminationCS-X099254"> </a></td><td>MR whole abdomen dynamic nonkontras</td></tr><tr><td style="white-space:nowrap">X099255<a name="KemkesExaminationCS-X099255"> </a></td><td>MR whole spine dengan kontras</td></tr><tr><td style="white-space:nowrap">X099256<a name="KemkesExaminationCS-X099256"> </a></td><td>MRCP dynamic nonkontras</td></tr><tr><td style="white-space:nowrap">X099257<a name="KemkesExaminationCS-X099257"> </a></td><td>MRCP dynamic nonkontras diikuti dengan kontras IV</td></tr><tr><td style="white-space:nowrap">X099258<a name="KemkesExaminationCS-X099258"> </a></td><td>RF epididimografi</td></tr><tr><td style="white-space:nowrap">X099259<a name="KemkesExaminationCS-X099259"> </a></td><td>RF genitografi</td></tr><tr><td style="white-space:nowrap">X099260<a name="KemkesExaminationCS-X099260"> </a></td><td>RF guidance pemasangan alat pacu jantung</td></tr><tr><td style="white-space:nowrap">X099261<a name="KemkesExaminationCS-X099261"> </a></td><td>RF ventrikulografi jantung</td></tr><tr><td style="white-space:nowrap">X099262<a name="KemkesExaminationCS-X099262"> </a></td><td>US doppler superfisial</td></tr><tr><td style="white-space:nowrap">X099263<a name="KemkesExaminationCS-X099263"> </a></td><td>US genu bilateral dengan kontras</td></tr><tr><td style="white-space:nowrap">X099264<a name="KemkesExaminationCS-X099264"> </a></td><td>US genu dengan kontras</td></tr><tr><td style="white-space:nowrap">X099265<a name="KemkesExaminationCS-X099265"> </a></td><td>US kanalis spinalis dan isi</td></tr><tr><td style="white-space:nowrap">X099266<a name="KemkesExaminationCS-X099266"> </a></td><td>US muskuloskeletal ipsilateral</td></tr><tr><td style="white-space:nowrap">X099267<a name="KemkesExaminationCS-X099267"> </a></td><td>US muskuloskeletal superfisial</td></tr><tr><td style="white-space:nowrap">X099268<a name="KemkesExaminationCS-X099268"> </a></td><td>XR schedel AP dan lateral nonkontras</td></tr><tr><td style="white-space:nowrap">X099269<a name="KemkesExaminationCS-X099269"> </a></td><td>XR thorakolumbal AP, lateral, oblique kanan dan kiri</td></tr><tr><td style="white-space:nowrap">X099270<a name="KemkesExaminationCS-X099270"> </a></td><td>XR thorakolumbal oblique</td></tr><tr><td style="white-space:nowrap">X099274<a name="KemkesExaminationCS-X099274"> </a></td><td>Kontras MRI Brain + MR Perfusi</td></tr><tr><td style="white-space:nowrap">X099275<a name="KemkesExaminationCS-X099275"> </a></td><td>Kontras MRI Brain + MR Perfusi + MRS</td></tr><tr><td style="white-space:nowrap">X099276<a name="KemkesExaminationCS-X099276"> </a></td><td>Kontras MRI Brain + MRA +MRV</td></tr><tr><td style="white-space:nowrap">X099277<a name="KemkesExaminationCS-X099277"> </a></td><td>Kontras MRI Brain + MRS</td></tr><tr><td style="white-space:nowrap">X099278<a name="KemkesExaminationCS-X099278"> </a></td><td>Kontras MRI Brain +MRV</td></tr><tr><td style="white-space:nowrap">X099379<a name="KemkesExaminationCS-X099379"> </a></td><td>Pemeriksaaan TCM XDR</td></tr><tr><td style="white-space:nowrap">X099380<a name="KemkesExaminationCS-X099380"> </a></td><td>Line Probe Assay (LPA) Lini 1</td></tr><tr><td style="white-space:nowrap">X099381<a name="KemkesExaminationCS-X099381"> </a></td><td>Line Probe Assay (LPA) Lini 2</td></tr><tr><td style="white-space:nowrap">X099383<a name="KemkesExaminationCS-X099383"> </a></td><td>Pemeriksaan Paket Standar Kepekaan</td></tr><tr><td style="white-space:nowrap">X099386<a name="KemkesExaminationCS-X099386"> </a></td><td>Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) BTA</td></tr><tr><td style="white-space:nowrap">X099387<a name="KemkesExaminationCS-X099387"> </a></td><td>Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) biakan</td></tr><tr><td style="white-space:nowrap">X099388<a name="KemkesExaminationCS-X099388"> </a></td><td>Biakan TB</td></tr><tr><td style="white-space:nowrap">X099389<a name="KemkesExaminationCS-X099389"> </a></td><td>Hasil Uji Metode LJ</td></tr><tr><td style="white-space:nowrap">X099390<a name="KemkesExaminationCS-X099390"> </a></td><td>Hasil Uji Metode MGIT</td></tr><tr><td style="white-space:nowrap">X099391<a name="KemkesExaminationCS-X099391"> </a></td><td>H Dosis Rendah</td></tr><tr><td style="white-space:nowrap">X099392<a name="KemkesExaminationCS-X099392"> </a></td><td>FQ Dosis Rendah</td></tr><tr><td style="white-space:nowrap">X099770<a name="KemkesExaminationCS-X099770"> </a></td><td>Rifampisin sensitive</td></tr><tr><td style="white-space:nowrap">X099771<a name="KemkesExaminationCS-X099771"> </a></td><td>Rifampisin resistan</td></tr><tr><td style="white-space:nowrap">X099772<a name="KemkesExaminationCS-X099772"> </a></td><td>Rifampisin indeterminate</td></tr><tr><td style="white-space:nowrap">X099773<a name="KemkesExaminationCS-X099773"> </a></td><td>Indeterminate (IDT)</td></tr><tr><td style="white-space:nowrap">X099774<a name="KemkesExaminationCS-X099774"> </a></td><td>Ress Inffered (RI)</td></tr><tr><td style="white-space:nowrap">X099775<a name="KemkesExaminationCS-X099775"> </a></td><td>Moxifloxacin DT (Mfx DT)</td></tr><tr><td style="white-space:nowrap">X099776<a name="KemkesExaminationCS-X099776"> </a></td><td>H High Dosage [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style="white-space:nowrap">X099777<a name="KemkesExaminationCS-X099777"> </a></td><td>H - SLID - capreomycin [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style="white-space:nowrap">X099778<a name="KemkesExaminationCS-X099778"> </a></td><td>Moxifloxacin High Dosage [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style="white-space:nowrap">X099779<a name="KemkesExaminationCS-X099779"> </a></td><td>Delamanid [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style="white-space:nowrap">X099780<a name="KemkesExaminationCS-X099780"> </a></td><td>Bedaquiline [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style="white-space:nowrap">X099781<a name="KemkesExaminationCS-X099781"> </a></td><td>Hasil Valid</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">Thomas Chaidir</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 22, 2024 17:23+0700">2024-05-22</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

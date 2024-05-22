@@ -26,6 +26,7 @@
     }]
   }],
   "caseSensitive" : true,
+  "valueSet" : "http://terminology.kemkes.go.id/ValueSet/cancer-t-category",
   "hierarchyMeaning" : "is-a",
   "compositional" : false,
   "versionNeeded" : true,

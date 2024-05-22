@@ -1,201 +1,87 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.bodySite",
+      "url" : "http://terminology.kemkes.go.id/ValueSet/EncounterLocationServiceClassExtension",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "ConditionBodySiteVS",
-      "title" : "Condition BodySite",
-      "description" : "Created by: Fadhil Muhammad",
+      "name" : "EncounterLocationServiceClassExtension",
+      "title" : "Encounter Location Extension",
+      "description" : "A set of codes, specifying location extension valueset.",
       "systems" : [
+        "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
+        "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"
+      ]
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.bodysite",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ObservationBodySite",
+      "title" : "Value set specific for Observation BodySite",
+      "description" : "Value set specific for Observation BodySite",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.code",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "Observationcode",
+      "title" : "Value set specific for Observation Code",
+      "description" : "Value set specific for Observation Code",
+      "systems" : [
+        "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "http://loinc.org",
+        "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.interpretation",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "Observation.interpretation",
+      "title" : "Value set specific for Observation Code",
+      "description" : "Value set specific for Observation Code",
+      "systems" : [
+        "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.valueCodeableConcept",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "Observation.valueCodeableConcept",
+      "title" : "Value set specific for Observation value CodeableConcept",
+      "description" : "Value set specific for Observation value CodeableConcept",
+      "systems" : [
+        "http://loinc.org",
         "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
         "http://snomed.info/sct"
       ]
     },
     {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.category",
+      "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.valueCodeableConceptSpecific",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "ConditionCategoryVS",
-      "title" : "Condition Category",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"]
-    },
-    {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.evidence.code",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionEvidenceCodeVS",
-      "title" : "Condition Evidence Code",
-      "description" : "Created by: Fadhil Muhammad",
+      "name" : "Observation.valueCodeableConceptSpecific",
+      "title" : "Value set specific for Observation specific value CodeableConcept",
+      "description" : "Value set specific for Observation specific value CodeableConcept",
       "systems" : [
-        "http://hl7.org/fhir/sid/icd-10",
+        "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "http://loinc.org",
         "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
         "http://snomed.info/sct"
       ]
     },
     {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.severity",
+      "url" : "http://terminology.kemkes.go.id/ValueSet/locationServiceClass-Inpatient",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "ConditionSeverityVS",
-      "title" : "Condition Severity",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.stage.summary",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionStageSummaryVS",
-      "title" : "Condition Stage Summary",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.stage.type",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionStageTypeVS",
-      "title" : "Condition Stage Type",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : ["http://snomed.info/sct"]
-    },
-    {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.verificationStatus",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionVerificationStatusVS",
-      "title" : "Condition Verification Status",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ActPriorityVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ActPriorityVS",
-      "title" : "v3 Code System ActPriority",
-      "description" : "A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ConditionClinicalStatusVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionClinicalStatusVS",
-      "title" : "Condition Clinical Status",
-      "description" : "This defines a set of codes for Condition Clinical Status.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ConditionCodeVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionCodeVS",
-      "title" : "Condition Code",
-      "description" : "This value set defines set of codes for Condition Code.",
-      "systems" : [
-        "http://terminology.kemkes.go.id/CodeSystem/cancer-m-category",
-        "http://snomed.info/sct/900000000000207008/version/20221231",
-        "http://terminology.kemkes.go.id/CodeSystem/icd-o-morphology",
-        "http://hl7.org/fhir/sid/icd-10",
-        "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "http://terminology.kemkes.go.id/CodeSystem/cancer-n-category",
-        "http://terminology.kemkes.go.id/CodeSystem/icd-o-topography",
-        "http://terminology.kemkes.go.id/CodeSystem/cancer-t-category"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterClassVS",
-      "title" : "V3 Value SetActEncounterCode",
-      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "http://terminology.kemkes.go.id/CodeSystem/encounter-class"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterDiagnosisUseVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterDiagnosisUseVS",
-      "title" : "DiagnosisRole",
-      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationAdmitSourceVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterHospitalizationAdmitSourceVS",
-      "title" : "Admit Source",
-      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
-      "systems" : [
-        "http://hl7.org/fhir/sid/icd-10",
-        "http://terminology.hl7.org/CodeSystem/admit-source"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationDischargeDispositionVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterHospitalizationDischargeDispositionVS",
-      "title" : "Discharge disposition",
-      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationSpecialArrangementsVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterHospitalizationSpecialArrangementsVS",
-      "title" : "Special arrangements",
-      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreAdmitSourceVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterHospitalizationreAdmitSourceVS",
-      "title" : "v2 RE-ADMISSION INDICATOR",
-      "description" : "FHIR Value set/code system definition for HL7 v2 table 0092 ( RE-ADMISSION INDICATOR)",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreDietVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterHospitalizationreDietVS",
-      "title" : "Diet",
-      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreSpecialCourtesyVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterHospitalizationreSpecialCourtesyVS",
-      "title" : "Special courtesy",
-      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassInpatientVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterLocationServiceClassInpatientVS",
+      "name" : "EncounterLocationServiceClassInpatient",
       "title" : "Encounter Location ServiceClass-Inpatient",
       "description" : "A set of codes, specifying location ServiceClass for inpatient patient.",
       "systems" : [
@@ -203,10 +89,10 @@
       ]
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassOutpatientVS",
+      "url" : "http://terminology.kemkes.go.id/ValueSet/locationServiceClass-Outpatient",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "EncounterLocationServiceClassOutpatientVS",
+      "name" : "EncounterLocationServiceClassOutpatient",
       "title" : "Encounter Location ServiceClass-Outpatient",
       "description" : "A set of codes, specifying location ServiceClass for outpatient patient.",
       "systems" : [
@@ -214,82 +100,14 @@
       ]
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationStatusVS",
+      "url" : "http://terminology.kemkes.go.id/ValueSet/locationUpgradeClass",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "EncounterLocationStatusVS",
-      "title" : "Encounter Location Status",
-      "description" : "The status of the location.",
-      "systems" : ["http://hl7.org/fhir/encounter-location-status"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationTypeVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterLocationTypeVS",
-      "title" : "Encounter Location Type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/location-physical-type"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationUpgradeClassVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterLocationUpgradeClassVS",
+      "name" : "EncounterLocationUpgradeClass",
       "title" : "Encounter Location Upgrade Class",
       "description" : "A set of codes, specifying location UpgradeClass.",
       "systems" : [
         "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterReasonCodesVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterReasonCodesVS",
-      "title" : "Reason Code",
-      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
-      "systems" : ["http://hl7.org/fhir/sid/icd-10"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterServiceTypeVS",
-      "title" : "Service type",
-      "description" : "This value set defines an example set of codes of service-types.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterStatusVS",
-      "title" : "EncounterStatus",
-      "description" : "Current state of the encounter.",
-      "systems" : ["http://hl7.org/fhir/encounter-status"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterTypeVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterTypeVS",
-      "title" : "Encounter type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ParticipationTypeVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ParticipationTypeVS",
-      "title" : "Participant type",
-      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/participant-type",
-        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
       ]
     }
   ]

@@ -8,7 +8,7 @@
   </meta>
   <language value="Indonesia"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">AL000001<a name="KemkesClinicalTermCS-AL000001"> </a></td><td>Rumput bermuda</td></tr><tr><td style="white-space:nowrap">AL000002<a name="KemkesClinicalTermCS-AL000002"> </a></td><td>Rumput timotius</td></tr><tr><td style="white-space:nowrap">AL000003<a name="KemkesClinicalTermCS-AL000003"> </a></td><td>Akasia</td></tr><tr><td style="white-space:nowrap">AL000004<a name="KemkesClinicalTermCS-AL000004"> </a></td><td>Minyak kelapa sawit</td></tr><tr><td style="white-space:nowrap">AL000005<a name="KemkesClinicalTermCS-AL000005"> </a></td><td>Tungau debu</td></tr><tr><td style="white-space:nowrap">AL000006<a name="KemkesClinicalTermCS-AL000006"> </a></td><td>Tungau bahan pangan</td></tr><tr><td style="white-space:nowrap">AL000007<a name="KemkesClinicalTermCS-AL000007"> </a></td><td>Tungau Perabotan Rumah</td></tr><tr><td style="white-space:nowrap">AL000008<a name="KemkesClinicalTermCS-AL000008"> </a></td><td>Tungau tepung, beras</td></tr><tr><td style="white-space:nowrap">AL000009<a name="KemkesClinicalTermCS-AL000009"> </a></td><td>Kapuk</td></tr><tr><td style="white-space:nowrap">AL000010<a name="KemkesClinicalTermCS-AL000010"> </a></td><td>Racun lebah madu</td></tr><tr><td style="white-space:nowrap">AL000011<a name="KemkesClinicalTermCS-AL000011"> </a></td><td>Kecoa jerman</td></tr><tr><td style="white-space:nowrap">AL000012<a name="KemkesClinicalTermCS-AL000012"> </a></td><td>Candida albicans</td></tr><tr><td style="white-space:nowrap">AL000013<a name="KemkesClinicalTermCS-AL000013"> </a></td><td>Tepung terigu</td></tr><tr><td style="white-space:nowrap">AL000014<a name="KemkesClinicalTermCS-AL000014"> </a></td><td>Ragi</td></tr><tr><td style="white-space:nowrap">AL000015<a name="KemkesClinicalTermCS-AL000015"> </a></td><td>Ikan kod</td></tr><tr><td style="white-space:nowrap">AL000016<a name="KemkesClinicalTermCS-AL000016"> </a></td><td>Salmon</td></tr><tr><td style="white-space:nowrap">AL000017<a name="KemkesClinicalTermCS-AL000017"> </a></td><td>Daging bebek</td></tr><tr><td style="white-space:nowrap">AL000018<a name="KemkesClinicalTermCS-AL000018"> </a></td><td>Daging sapi</td></tr><tr><td style="white-space:nowrap">AL000019<a name="KemkesClinicalTermCS-AL000019"> </a></td><td>Daging ayam</td></tr><tr><td style="white-space:nowrap">AL000020<a name="KemkesClinicalTermCS-AL000020"> </a></td><td>Daging domba</td></tr><tr><td style="white-space:nowrap">AL000021<a name="KemkesClinicalTermCS-AL000021"> </a></td><td>Keju cheedar</td></tr><tr><td style="white-space:nowrap">AL000022<a name="KemkesClinicalTermCS-AL000022"> </a></td><td>Kopi</td></tr><tr><td style="white-space:nowrap">AL000023<a name="KemkesClinicalTermCS-AL000023"> </a></td><td>Nasi putih</td></tr><tr><td style="white-space:nowrap">AL000024<a name="KemkesClinicalTermCS-AL000024"> </a></td><td>Kuning telur</td></tr><tr><td style="white-space:nowrap">AL000025<a name="KemkesClinicalTermCS-AL000025"> </a></td><td>Kerang</td></tr><tr><td style="white-space:nowrap">AL000026<a name="KemkesClinicalTermCS-AL000026"> </a></td><td>Kacang merah</td></tr><tr><td style="white-space:nowrap">AL000027<a name="KemkesClinicalTermCS-AL000027"> </a></td><td>Kacang hijau</td></tr><tr><td style="white-space:nowrap">AL000028<a name="KemkesClinicalTermCS-AL000028"> </a></td><td>Bulu ayam</td></tr><tr><td style="white-space:nowrap">AL000029<a name="KemkesClinicalTermCS-AL000029"> </a></td><td>Kacang polong</td></tr><tr><td style="white-space:nowrap">AL000030<a name="KemkesClinicalTermCS-AL000030"> </a></td><td>Tepung gandum</td></tr><tr><td style="white-space:nowrap">AL000031<a name="KemkesClinicalTermCS-AL000031"> </a></td><td>Makerel</td></tr><tr><td style="white-space:nowrap">AL000032<a name="KemkesClinicalTermCS-AL000032"> </a></td><td>Kerang simping</td></tr><tr><td style="white-space:nowrap">AL000033<a name="KemkesClinicalTermCS-AL000033"> </a></td><td>Susu kambing</td></tr><tr><td style="white-space:nowrap">AL000034<a name="KemkesClinicalTermCS-AL000034"> </a></td><td>Paprika</td></tr><tr><td style="white-space:nowrap">AL000035<a name="KemkesClinicalTermCS-AL000035"> </a></td><td>Kubis</td></tr><tr><td style="white-space:nowrap">AL000036<a name="KemkesClinicalTermCS-AL000036"> </a></td><td>Adas</td></tr><tr><td style="white-space:nowrap">AL000037<a name="KemkesClinicalTermCS-AL000037"> </a></td><td>Selada</td></tr><tr><td style="white-space:nowrap">AL000038<a name="KemkesClinicalTermCS-AL000038"> </a></td><td>Labu</td></tr><tr><td style="white-space:nowrap">AL000039<a name="KemkesClinicalTermCS-AL000039"> </a></td><td>Lobak</td></tr><tr><td style="white-space:nowrap">AL000040<a name="KemkesClinicalTermCS-AL000040"> </a></td><td>Timun jepang/Zucchini</td></tr><tr><td style="white-space:nowrap">AL000041<a name="KemkesClinicalTermCS-AL000041"> </a></td><td>Gandum kuda/buckwheat</td></tr><tr><td style="white-space:nowrap">AL000042<a name="KemkesClinicalTermCS-AL000042"> </a></td><td>Sarden</td></tr><tr><td style="white-space:nowrap">AL000043<a name="KemkesClinicalTermCS-AL000043"> </a></td><td>Debu rumah</td></tr><tr><td style="white-space:nowrap">PR000001<a name="KemkesClinicalTermCS-PR000001"> </a></td><td>Prognosis baik</td></tr><tr><td style="white-space:nowrap">PR000002<a name="KemkesClinicalTermCS-PR000002"> </a></td><td>Prognosis dubia et bonam / cenderung baik</td></tr><tr><td style="white-space:nowrap">PR000003<a name="KemkesClinicalTermCS-PR000003"> </a></td><td>Prognosis dubia et malam / cenderung tidak baik</td></tr><tr><td style="white-space:nowrap">PR000004<a name="KemkesClinicalTermCS-PR000004"> </a></td><td>Prognosis tidak baik</td></tr><tr><td style="white-space:nowrap">OI000001<a name="KemkesClinicalTermCS-OI000001"> </a></td><td>Gizi Buruk</td></tr><tr><td style="white-space:nowrap">OI000002<a name="KemkesClinicalTermCS-OI000002"> </a></td><td>Gizi Kurang</td></tr><tr><td style="white-space:nowrap">OI000003<a name="KemkesClinicalTermCS-OI000003"> </a></td><td>Gizi Baik</td></tr><tr><td style="white-space:nowrap">OI000004<a name="KemkesClinicalTermCS-OI000004"> </a></td><td>Risiko Gizi Lebih</td></tr><tr><td style="white-space:nowrap">OI000005<a name="KemkesClinicalTermCS-OI000005"> </a></td><td>Gizi Lebih</td></tr><tr><td style="white-space:nowrap">OI000006<a name="KemkesClinicalTermCS-OI000006"> </a></td><td>Obesitas</td></tr><tr><td style="white-space:nowrap">OI000007<a name="KemkesClinicalTermCS-OI000007"> </a></td><td>Berat Badan Sangat Kurang</td></tr><tr><td style="white-space:nowrap">OI000008<a name="KemkesClinicalTermCS-OI000008"> </a></td><td>Berat Badan Kurang</td></tr><tr><td style="white-space:nowrap">OI000009<a name="KemkesClinicalTermCS-OI000009"> </a></td><td>Berat Badan Normal</td></tr><tr><td style="white-space:nowrap">OI000010<a name="KemkesClinicalTermCS-OI000010"> </a></td><td>Risiko Berat Badan Lebih</td></tr><tr><td style="white-space:nowrap">OI000011<a name="KemkesClinicalTermCS-OI000011"> </a></td><td>Sangat Pendek</td></tr><tr><td style="white-space:nowrap">OI000012<a name="KemkesClinicalTermCS-OI000012"> </a></td><td>Pendek</td></tr><tr><td style="white-space:nowrap">OI000013<a name="KemkesClinicalTermCS-OI000013"> </a></td><td>Normal</td></tr><tr><td style="white-space:nowrap">OI000014<a name="KemkesClinicalTermCS-OI000014"> </a></td><td>Tinggi</td></tr><tr><td style="white-space:nowrap">OI000015<a name="KemkesClinicalTermCS-OI000015"> </a></td><td>Normocephaly</td></tr><tr><td style="white-space:nowrap">OI000016<a name="KemkesClinicalTermCS-OI000016"> </a></td><td>Sesuai Usia</td></tr><tr><td style="white-space:nowrap">OI000017<a name="KemkesClinicalTermCS-OI000017"> </a></td><td>Tidak Sesuai Usia</td></tr><tr><td style="white-space:nowrap">OI000018<a name="KemkesClinicalTermCS-OI000018"> </a></td><td>Kurang Energi Kronis (KEK)</td></tr><tr><td style="white-space:nowrap">OC000001<a name="KemkesClinicalTermCS-OC000001"> </a></td><td>Jarak kehamilan</td></tr><tr><td style="white-space:nowrap">OC000002<a name="KemkesClinicalTermCS-OC000002"> </a></td><td>Kepala Terhadap PAP</td></tr><tr><td style="white-space:nowrap">OC000003<a name="KemkesClinicalTermCS-OC000003"> </a></td><td>Jumlah Janin</td></tr><tr><td style="white-space:nowrap">OC000004<a name="KemkesClinicalTermCS-OC000004"> </a></td><td>Letak Janin (USG)</td></tr><tr><td style="white-space:nowrap">OC000005<a name="KemkesClinicalTermCS-OC000005"> </a></td><td>Indeks Berat Badan menurut Panjang Badan (z-score)</td></tr><tr><td style="white-space:nowrap">OC000006<a name="KemkesClinicalTermCS-OC000006"> </a></td><td>Indeks Berat Badan menurut Tinggi Badan (z-score)</td></tr><tr><td style="white-space:nowrap">OC000007<a name="KemkesClinicalTermCS-OC000007"> </a></td><td>Lama Perawatan</td></tr><tr><td style="white-space:nowrap">OC000008<a name="KemkesClinicalTermCS-OC000008"> </a></td><td>Status Pertumbuhan dan Perkembangan</td></tr><tr><td style="white-space:nowrap">OC000009<a name="KemkesClinicalTermCS-OC000009"> </a></td><td>Mendapatkan Makanan Pendamping ASI (MPASI)</td></tr><tr><td style="white-space:nowrap">OC000010<a name="KemkesClinicalTermCS-OC000010"> </a></td><td>Indeks Massa Tubuh Sebelum Hamil</td></tr><tr><td style="white-space:nowrap">OC000011<a name="KemkesClinicalTermCS-OC000011"> </a></td><td>Target Kenaikan Berat Badan</td></tr><tr><td style="white-space:nowrap">OC000012<a name="KemkesClinicalTermCS-OC000012"> </a></td><td>Kenaikan Berat Badan Adekuat</td></tr><tr><td style="white-space:nowrap">OC000013<a name="KemkesClinicalTermCS-OC000013"> </a></td><td>Penolong Persalinan</td></tr><tr><td style="white-space:nowrap">OC000014<a name="KemkesClinicalTermCS-OC000014"> </a></td><td>Memiliki Buku KIA</td></tr><tr><td style="white-space:nowrap">OC000015<a name="KemkesClinicalTermCS-OC000015"> </a></td><td>Konseling Perawatan Bayi Baru Lahir</td></tr><tr><td style="white-space:nowrap">OC000016<a name="KemkesClinicalTermCS-OC000016"> </a></td><td>Waktu Inisiasi Menyusui Dini</td></tr><tr><td style="white-space:nowrap">OC000017<a name="KemkesClinicalTermCS-OC000017"> </a></td><td>Produksi ASI</td></tr><tr><td style="white-space:nowrap">OC000018<a name="KemkesClinicalTermCS-OC000018"> </a></td><td>Onset Kala III</td></tr><tr><td style="white-space:nowrap">OC000019<a name="KemkesClinicalTermCS-OC000019"> </a></td><td>Onset Kala IV</td></tr><tr><td style="white-space:nowrap">OC000020<a name="KemkesClinicalTermCS-OC000020"> </a></td><td>Tanda Infeksi Perineum</td></tr><tr><td style="white-space:nowrap">OC000021<a name="KemkesClinicalTermCS-OC000021"> </a></td><td>WHODAS 2.0 Subacute ADL Score</td></tr><tr><td style="white-space:nowrap">OC000022<a name="KemkesClinicalTermCS-OC000022"> </a></td><td>WHODAS 2.0 Chronic ADL Score</td></tr><tr><td style="white-space:nowrap">OC000023<a name="KemkesClinicalTermCS-OC000023"> </a></td><td/></tr><tr><td style="white-space:nowrap">OC000024<a name="KemkesClinicalTermCS-OC000024"> </a></td><td>Kondisi Payudara</td></tr><tr><td style="white-space:nowrap">OC000025<a name="KemkesClinicalTermCS-OC000025"> </a></td><td>Tanda Infeksi Luka Jahitan Sectio Caesaria</td></tr><tr><td style="white-space:nowrap">OC000026<a name="KemkesClinicalTermCS-OC000026"> </a></td><td>Masa terjadi Kematian Ibu</td></tr><tr><td style="white-space:nowrap">OC000027<a name="KemkesClinicalTermCS-OC000027"> </a></td><td>Masa terjadi Kematian Anak</td></tr><tr><td style="white-space:nowrap">OC000028<a name="KemkesClinicalTermCS-OC000028"> </a></td><td>Jenis Tempat Tinggal</td></tr><tr><td style="white-space:nowrap">OC000029<a name="KemkesClinicalTermCS-OC000029"> </a></td><td>Urutan ke (untuk bayi kembar)</td></tr><tr><td style="white-space:nowrap">OV000001<a name="KemkesClinicalTermCS-OV000001"> </a></td><td>Masuk panggul</td></tr><tr><td style="white-space:nowrap">OV000002<a name="KemkesClinicalTermCS-OV000002"> </a></td><td>Belum masuk panggul</td></tr><tr><td style="white-space:nowrap">OV000003<a name="KemkesClinicalTermCS-OV000003"> </a></td><td>Presentasi Kepala</td></tr><tr><td style="white-space:nowrap">OV000004<a name="KemkesClinicalTermCS-OV000004"> </a></td><td>Presentasi Bokong</td></tr><tr><td style="white-space:nowrap">OV000005<a name="KemkesClinicalTermCS-OV000005"> </a></td><td>Letak Lintang</td></tr><tr><td style="white-space:nowrap">OV000006<a name="KemkesClinicalTermCS-OV000006"> </a></td><td>Intrauteri</td></tr><tr><td style="white-space:nowrap">OV000007<a name="KemkesClinicalTermCS-OV000007"> </a></td><td>Ekstrauteri</td></tr><tr><td style="white-space:nowrap">OV000008<a name="KemkesClinicalTermCS-OV000008"> </a></td><td>5–9 kg</td></tr><tr><td style="white-space:nowrap">OV000009<a name="KemkesClinicalTermCS-OV000009"> </a></td><td>7–11.5 kg</td></tr><tr><td style="white-space:nowrap">OV000010<a name="KemkesClinicalTermCS-OV000010"> </a></td><td>11.5–16 kg</td></tr><tr><td style="white-space:nowrap">OV000011<a name="KemkesClinicalTermCS-OV000011"> </a></td><td>12.5–18 kg</td></tr><tr><td style="white-space:nowrap">OV000012<a name="KemkesClinicalTermCS-OV000012"> </a></td><td>Dukun</td></tr><tr><td style="white-space:nowrap">OV000013<a name="KemkesClinicalTermCS-OV000013"> </a></td><td>Lebih dari Lima</td></tr><tr><td style="white-space:nowrap">OV000014<a name="KemkesClinicalTermCS-OV000014"> </a></td><td>Kurang dari 1 Jam</td></tr><tr><td style="white-space:nowrap">OV000015<a name="KemkesClinicalTermCS-OV000015"> </a></td><td>Lebih dari 1 Jam</td></tr><tr><td style="white-space:nowrap">OV000016<a name="KemkesClinicalTermCS-OV000016"> </a></td><td>Produksi ASI ada</td></tr><tr><td style="white-space:nowrap">OV000017<a name="KemkesClinicalTermCS-OV000017"> </a></td><td>Produksi ASI ada tapi sedikit</td></tr><tr><td style="white-space:nowrap">OV000018<a name="KemkesClinicalTermCS-OV000018"> </a></td><td>Produksi ASI tidak ada</td></tr><tr><td style="white-space:nowrap">OV000019<a name="KemkesClinicalTermCS-OV000019"> </a></td><td>Frekuensi his</td></tr><tr><td style="white-space:nowrap">OV000020<a name="KemkesClinicalTermCS-OV000020"> </a></td><td>Intensitas his</td></tr><tr><td style="white-space:nowrap">OV000021<a name="KemkesClinicalTermCS-OV000021"> </a></td><td>Durasi lama his</td></tr><tr><td style="white-space:nowrap">OV000022<a name="KemkesClinicalTermCS-OV000022"> </a></td><td>Interval his</td></tr><tr><td style="white-space:nowrap">OV000023<a name="KemkesClinicalTermCS-OV000023"> </a></td><td>Datangnya his</td></tr><tr><td style="white-space:nowrap">OV000024<a name="KemkesClinicalTermCS-OV000024"> </a></td><td>Lokia berbau normal</td></tr><tr><td style="white-space:nowrap">OV000025<a name="KemkesClinicalTermCS-OV000025"> </a></td><td>Lokia berbau amis/busuk</td></tr><tr><td style="white-space:nowrap">OV000026<a name="KemkesClinicalTermCS-OV000026"> </a></td><td>Laceration of perineum during delivery involving vaginal mucosa and perineal skin</td></tr><tr><td style="white-space:nowrap">OV000027<a name="KemkesClinicalTermCS-OV000027"> </a></td><td>Laceration of perineum during delivery involving perineum muscles</td></tr><tr><td style="white-space:nowrap">OV000028<a name="KemkesClinicalTermCS-OV000028"> </a></td><td>Laceration of perineum during delivery involving anal epithelium</td></tr><tr><td style="white-space:nowrap">OI000019<a name="KemkesClinicalTermCS-OI000019"> </a></td><td>Mild to No Pain</td></tr><tr><td style="white-space:nowrap">OI000020<a name="KemkesClinicalTermCS-OI000020"> </a></td><td>Mild to Moderate Pain</td></tr><tr><td style="white-space:nowrap">OI000021<a name="KemkesClinicalTermCS-OI000021"> </a></td><td>7 - 11 (Risiko rendah)</td></tr><tr><td style="white-space:nowrap">OI000022<a name="KemkesClinicalTermCS-OI000022"> </a></td><td>&gt; 12 (Risiko tinggi)</td></tr><tr><td style="white-space:nowrap">OI000023<a name="KemkesClinicalTermCS-OI000023"> </a></td><td>0 - 89 (Risiko rendah)</td></tr><tr><td style="white-space:nowrap">OI000024<a name="KemkesClinicalTermCS-OI000024"> </a></td><td>&gt; 90 (Risiko tinggi)</td></tr><tr><td style="white-space:nowrap">OI000025<a name="KemkesClinicalTermCS-OI000025"> </a></td><td>Tidak Normal</td></tr><tr><td style="white-space:nowrap">OI000026<a name="KemkesClinicalTermCS-OI000026"> </a></td><td>0 - 24 (Risiko rendah)</td></tr><tr><td style="white-space:nowrap">OI000027<a name="KemkesClinicalTermCS-OI000027"> </a></td><td>25 - 44 (Risiko sedang)</td></tr><tr><td style="white-space:nowrap">OI000028<a name="KemkesClinicalTermCS-OI000028"> </a></td><td>≥ 45 (Risiko tinggi)</td></tr><tr><td style="white-space:nowrap">OC000030<a name="KemkesClinicalTermCS-OC000030"> </a></td><td>Berat saat meninggal</td></tr><tr><td style="white-space:nowrap">OC000031<a name="KemkesClinicalTermCS-OC000031"> </a></td><td>Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)</td></tr><tr><td style="white-space:nowrap">OC000032<a name="KemkesClinicalTermCS-OC000032"> </a></td><td>Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)</td></tr><tr><td style="white-space:nowrap">OC000033<a name="KemkesClinicalTermCS-OC000033"> </a></td><td>Dugaan Sebab Kematian</td></tr><tr><td style="white-space:nowrap">OC000034<a name="KemkesClinicalTermCS-OC000034"> </a></td><td>Surat Pengantar Rujukan</td></tr><tr><td style="white-space:nowrap">OC000035<a name="KemkesClinicalTermCS-OC000035"> </a></td><td>Humpty Dumpty Scale</td></tr><tr><td style="white-space:nowrap">OC000036<a name="KemkesClinicalTermCS-OC000036"> </a></td><td>Edmonson Psychiatric Fall Risk Assessment</td></tr><tr><td style="white-space:nowrap">OC000037<a name="KemkesClinicalTermCS-OC000037"> </a></td><td>Jenis Tempat Bersalin</td></tr><tr><td style="white-space:nowrap">OV000047<a name="KemkesClinicalTermCS-OV000047"> </a></td><td>Tidak ada maserasi</td></tr><tr><td style="white-space:nowrap">OV000048<a name="KemkesClinicalTermCS-OV000048"> </a></td><td>Maserasi Tingkat Satu</td></tr><tr><td style="white-space:nowrap">OV000049<a name="KemkesClinicalTermCS-OV000049"> </a></td><td>Maserasi Tingkat Dua</td></tr><tr><td style="white-space:nowrap">OV000050<a name="KemkesClinicalTermCS-OV000050"> </a></td><td>Maserasi Tingkat Tiga</td></tr><tr><td style="white-space:nowrap">OV000051<a name="KemkesClinicalTermCS-OV000051"> </a></td><td>Belum Tahu Ada Tidaknya Maserasi</td></tr><tr><td style="white-space:nowrap">OV000052<a name="KemkesClinicalTermCS-OV000052"> </a></td><td>Sesuai</td></tr><tr><td style="white-space:nowrap">OV000053<a name="KemkesClinicalTermCS-OV000053"> </a></td><td>Tidak Sesuai</td></tr><tr><td style="white-space:nowrap">OC000055<a name="KemkesClinicalTermCS-OC000055"> </a></td><td>Kriteria Pasien yang dilakukan Rencana Pemulangan</td></tr><tr><td style="white-space:nowrap">OV000072<a name="KemkesClinicalTermCS-OV000072"> </a></td><td>Pasien dengan perawatan berkelanjutan atau panjang</td></tr><tr><td style="white-space:nowrap">OV000073<a name="KemkesClinicalTermCS-OV000073"> </a></td><td>Tidak masuk kriteria</td></tr><tr><td style="white-space:nowrap">OC000056<a name="KemkesClinicalTermCS-OC000056"> </a></td><td>Skor Total Debris Indeks</td></tr><tr><td style="white-space:nowrap">OC000057<a name="KemkesClinicalTermCS-OC000057"> </a></td><td>Skor Total Kalkulus Indeks</td></tr><tr><td style="white-space:nowrap">OC000058<a name="KemkesClinicalTermCS-OC000058"> </a></td><td>Skor Total Oral Hygiene Index Simplified (OHIS)</td></tr><tr><td style="white-space:nowrap">OC000059<a name="KemkesClinicalTermCS-OC000059"> </a></td><td>Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OC000060<a name="KemkesClinicalTermCS-OC000060"> </a></td><td>Kondisi Gigi dan Mulut Lainnya</td></tr><tr><td style="white-space:nowrap">OC000061<a name="KemkesClinicalTermCS-OC000061"> </a></td><td>Pemeriksaan Odontogram</td></tr><tr><td style="white-space:nowrap">OV000074<a name="KemkesClinicalTermCS-OV000074"> </a></td><td>Tidak ada Torus Palatinus</td></tr><tr><td style="white-space:nowrap">OV000075<a name="KemkesClinicalTermCS-OV000075"> </a></td><td>Torus Palatinus Kecil</td></tr><tr><td style="white-space:nowrap">OV000076<a name="KemkesClinicalTermCS-OV000076"> </a></td><td>Torus Palatinus Sedang</td></tr><tr><td style="white-space:nowrap">OV000077<a name="KemkesClinicalTermCS-OV000077"> </a></td><td>Torus Palatinus Besar</td></tr><tr><td style="white-space:nowrap">OV000078<a name="KemkesClinicalTermCS-OV000078"> </a></td><td>Multiple Torus Palatinus</td></tr><tr><td style="white-space:nowrap">OV000079<a name="KemkesClinicalTermCS-OV000079"> </a></td><td>Tidak ada Torus Mandibularis</td></tr><tr><td style="white-space:nowrap">OV000080<a name="KemkesClinicalTermCS-OV000080"> </a></td><td>Torus Mandibularis Sisi Kiri</td></tr><tr><td style="white-space:nowrap">OV000081<a name="KemkesClinicalTermCS-OV000081"> </a></td><td>Torus Mandibularis Sisi Kanan</td></tr><tr><td style="white-space:nowrap">OV000082<a name="KemkesClinicalTermCS-OV000082"> </a></td><td>Torus Mandibularis pada Kedua Sisi</td></tr><tr><td style="white-space:nowrap">OV000083<a name="KemkesClinicalTermCS-OV000083"> </a></td><td>Palatum Dalam</td></tr><tr><td style="white-space:nowrap">OV000084<a name="KemkesClinicalTermCS-OV000084"> </a></td><td>Palatum Sedang</td></tr><tr><td style="white-space:nowrap">OV000085<a name="KemkesClinicalTermCS-OV000085"> </a></td><td>Palatum Rendah</td></tr><tr><td style="white-space:nowrap">OV000086<a name="KemkesClinicalTermCS-OV000086"> </a></td><td>Tidak Ada Diastema</td></tr><tr><td style="white-space:nowrap">OV000087<a name="KemkesClinicalTermCS-OV000087"> </a></td><td>Ada Diastema</td></tr><tr><td style="white-space:nowrap">OV000088<a name="KemkesClinicalTermCS-OV000088"> </a></td><td>Tidak Ada Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OV000089<a name="KemkesClinicalTermCS-OV000089"> </a></td><td>Ada Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OV000090<a name="KemkesClinicalTermCS-OV000090"> </a></td><td>Gigi tidak ada/ tidak diketahui</td></tr><tr><td style="white-space:nowrap">OV000091<a name="KemkesClinicalTermCS-OV000091"> </a></td><td>Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OV000092<a name="KemkesClinicalTermCS-OV000092"> </a></td><td>Gigi Non-Vital</td></tr><tr><td style="white-space:nowrap">OV000093<a name="KemkesClinicalTermCS-OV000093"> </a></td><td>Sisa Akar</td></tr><tr><td style="white-space:nowrap">OV000094<a name="KemkesClinicalTermCS-OV000094"> </a></td><td>Metal Bridge</td></tr><tr><td style="white-space:nowrap">OV000095<a name="KemkesClinicalTermCS-OV000095"> </a></td><td>Porcelain Bridge</td></tr><tr><td style="white-space:nowrap">OV000096<a name="KemkesClinicalTermCS-OV000096"> </a></td><td>Frame</td></tr><tr><td style="white-space:nowrap">OI000029<a name="KemkesClinicalTermCS-OI000029"> </a></td><td>Kondisi Gigi Baik</td></tr><tr><td style="white-space:nowrap">OI000030<a name="KemkesClinicalTermCS-OI000030"> </a></td><td>Kondisi Gigi Cukup Baik</td></tr><tr><td style="white-space:nowrap">OI000031<a name="KemkesClinicalTermCS-OI000031"> </a></td><td>Kondisi Gigi Buruk</td></tr><tr><td style="white-space:nowrap">OV000097<a name="KemkesClinicalTermCS-OV000097"> </a></td><td>Terdapat debris pada 1/3 permukaan servikal gigi atau dijumpai stain ekstrinsik</td></tr><tr><td style="white-space:nowrap">OV000098<a name="KemkesClinicalTermCS-OV000098"> </a></td><td>Terdapat debris pada 1/3 – 2/3 permukaan gigi</td></tr><tr><td style="white-space:nowrap">OV000099<a name="KemkesClinicalTermCS-OV000099"> </a></td><td>Terdapat debris pada &gt; 2/3 permukaan gigi</td></tr><tr><td style="white-space:nowrap">OV000100<a name="KemkesClinicalTermCS-OV000100"> </a></td><td>Terdapat kalkulus supragingiva pada 1/3 permukaan servikal gigi tanpa kalkulus subgingiva</td></tr><tr><td style="white-space:nowrap">OV000101<a name="KemkesClinicalTermCS-OV000101"> </a></td><td>Terdapat kalkulus supragingiva pada 1/3 – 2/3 permukaan gigi dan/atau terdapat kalkulus subgingiva berupa titik-titik yang tidak melingkari leher gigi</td></tr><tr><td style="white-space:nowrap">OV000102<a name="KemkesClinicalTermCS-OV000102"> </a></td><td>Terdapat kalkulus supragingiva pada &gt; 2/3 permukaan gigi dan/atau terdapat kalkulus subgingiva yang melingkari leher gigi</td></tr><tr><td style="white-space:nowrap">OC000062<a name="KemkesClinicalTermCS-OC000062"> </a></td><td>Debris Indeks</td></tr><tr><td style="white-space:nowrap">OC000063<a name="KemkesClinicalTermCS-OC000063"> </a></td><td>Kalkulus Indeks</td></tr><tr><td style="white-space:nowrap">OV000112<a name="KemkesClinicalTermCS-OV000112"> </a></td><td>Diberikan ASI Eksklusif</td></tr><tr><td style="white-space:nowrap">OV000113<a name="KemkesClinicalTermCS-OV000113"> </a></td><td>Tidak Diberikan ASI Eksklusif</td></tr><tr><td style="white-space:nowrap">OV000169<a name="KemkesClinicalTermCS-OV000169"> </a></td><td>Sendiri</td></tr><tr><td style="white-space:nowrap">OV000170<a name="KemkesClinicalTermCS-OV000170"> </a></td><td>Dukun</td></tr><tr><td style="white-space:nowrap">grup1-icdmm<a name="KemkesClinicalTermCS-grup1-icdmm"> </a></td><td>Kehamilan dengan komplikasi abortus</td></tr><tr><td style="white-space:nowrap">grup2-icdmm<a name="KemkesClinicalTermCS-grup2-icdmm"> </a></td><td>Hipertensi dalam kehamilan, persalinan atau nifas</td></tr><tr><td style="white-space:nowrap">grup3-icdmm<a name="KemkesClinicalTermCS-grup3-icdmm"> </a></td><td>Perdarahan obstetrik</td></tr><tr><td style="white-space:nowrap">grup4-icdmm<a name="KemkesClinicalTermCS-grup4-icdmm"> </a></td><td>Infeksi terkait kehamilan</td></tr><tr><td style="white-space:nowrap">grup5-icdmm<a name="KemkesClinicalTermCS-grup5-icdmm"> </a></td><td>Komplikasi obstetrik lain</td></tr><tr><td style="white-space:nowrap">grup6-icdmm<a name="KemkesClinicalTermCS-grup6-icdmm"> </a></td><td>Komplikasi manajemen yang tidak terantisipasi</td></tr><tr><td style="white-space:nowrap">grup7-icdmm<a name="KemkesClinicalTermCS-grup7-icdmm"> </a></td><td>Komplikasi non obstetrik</td></tr><tr><td style="white-space:nowrap">grup8-icdmm<a name="KemkesClinicalTermCS-grup8-icdmm"> </a></td><td>Penyebab dasar tidak diketahui</td></tr><tr><td style="white-space:nowrap">grup9-icdmm<a name="KemkesClinicalTermCS-grup9-icdmm"> </a></td><td>Ko insiden</td></tr><tr><td style="white-space:nowrap">ED000001<a name="KemkesClinicalTermCS-ED000001"> </a></td><td>Edukasi Prognosis</td></tr><tr><td style="white-space:nowrap">ED000002<a name="KemkesClinicalTermCS-ED000002"> </a></td><td>Edukasi terkait Alternatif Tindakan dan Resikonya</td></tr><tr><td style="white-space:nowrap">ED000003<a name="KemkesClinicalTermCS-ED000003"> </a></td><td/></tr><tr><td style="white-space:nowrap">ED000004<a name="KemkesClinicalTermCS-ED000004"> </a></td><td/></tr><tr><td style="white-space:nowrap">ED000005<a name="KemkesClinicalTermCS-ED000005"> </a></td><td/></tr><tr><td style="white-space:nowrap">ED000006<a name="KemkesClinicalTermCS-ED000006"> </a></td><td/></tr><tr><td style="white-space:nowrap">ED000007<a name="KemkesClinicalTermCS-ED000007"> </a></td><td/></tr><tr><td style="white-space:nowrap">ED000008<a name="KemkesClinicalTermCS-ED000008"> </a></td><td>Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas</td></tr><tr><td style="white-space:nowrap">ED000009<a name="KemkesClinicalTermCS-ED000009"> </a></td><td>Edukasi IMD dan ASI Eksklusif</td></tr><tr><td style="white-space:nowrap">ED000010<a name="KemkesClinicalTermCS-ED000010"> </a></td><td>Edukasi PHBS</td></tr><tr><td style="white-space:nowrap">ED000011<a name="KemkesClinicalTermCS-ED000011"> </a></td><td>Edukasi KB pasca salin</td></tr><tr><td style="white-space:nowrap">ED000012<a name="KemkesClinicalTermCS-ED000012"> </a></td><td>Edukasi lainnya</td></tr><tr><td style="white-space:nowrap">PC000001<a name="KemkesClinicalTermCS-PC000001"> </a></td><td>Perawatan Tali Pusat</td></tr><tr><td style="white-space:nowrap">PC000002<a name="KemkesClinicalTermCS-PC000002"> </a></td><td>Pemberian Salep Antibiotik Mata</td></tr><tr><td style="white-space:nowrap">PC000003<a name="KemkesClinicalTermCS-PC000003"> </a></td><td>Manajemen Terpadu Bayi Muda (MTBM)</td></tr><tr><td style="white-space:nowrap">PC000004<a name="KemkesClinicalTermCS-PC000004"> </a></td><td>KB Pasca Persalinan</td></tr><tr><td style="white-space:nowrap">TL000001<a name="KemkesClinicalTermCS-TL000001"> </a></td><td>Rawat inap</td></tr><tr><td style="white-space:nowrap">FO000001<a name="KemkesClinicalTermCS-FO000001"> </a></td><td>MT Lokal</td></tr><tr><td style="white-space:nowrap">FO000002<a name="KemkesClinicalTermCS-FO000002"> </a></td><td>MT Pabrikan</td></tr><tr><td style="white-space:nowrap">LO000001<a name="KemkesClinicalTermCS-LO000001"> </a></td><td>Puskesmas</td></tr><tr><td style="white-space:nowrap">LO000002<a name="KemkesClinicalTermCS-LO000002"> </a></td><td>Rumah Sakit</td></tr><tr><td style="white-space:nowrap">LO000003<a name="KemkesClinicalTermCS-LO000003"> </a></td><td>Klinik</td></tr><tr><td style="white-space:nowrap">LO000004<a name="KemkesClinicalTermCS-LO000004"> </a></td><td>Rumah</td></tr><tr><td style="white-space:nowrap">SU000001<a name="KemkesClinicalTermCS-SU000001"> </a></td><td>Keluarga</td></tr><tr><td style="white-space:nowrap">SU000002<a name="KemkesClinicalTermCS-SU000002"> </a></td><td>Tenaga kesehatan</td></tr><tr><td style="white-space:nowrap">SU000003<a name="KemkesClinicalTermCS-SU000003"> </a></td><td>Lainnya</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">AL000001<a name="KemkesClinicalTermCS-AL000001"> </a></td><td>Rumput bermuda</td></tr><tr><td style="white-space:nowrap">AL000002<a name="KemkesClinicalTermCS-AL000002"> </a></td><td>Rumput timotius</td></tr><tr><td style="white-space:nowrap">AL000003<a name="KemkesClinicalTermCS-AL000003"> </a></td><td>Akasia</td></tr><tr><td style="white-space:nowrap">AL000004<a name="KemkesClinicalTermCS-AL000004"> </a></td><td>Minyak kelapa sawit</td></tr><tr><td style="white-space:nowrap">AL000005<a name="KemkesClinicalTermCS-AL000005"> </a></td><td>Tungau debu</td></tr><tr><td style="white-space:nowrap">AL000006<a name="KemkesClinicalTermCS-AL000006"> </a></td><td>Tungau bahan pangan</td></tr><tr><td style="white-space:nowrap">AL000007<a name="KemkesClinicalTermCS-AL000007"> </a></td><td>Tungau Perabotan Rumah</td></tr><tr><td style="white-space:nowrap">AL000008<a name="KemkesClinicalTermCS-AL000008"> </a></td><td>Tungau tepung, beras</td></tr><tr><td style="white-space:nowrap">AL000009<a name="KemkesClinicalTermCS-AL000009"> </a></td><td>Kapuk</td></tr><tr><td style="white-space:nowrap">AL000010<a name="KemkesClinicalTermCS-AL000010"> </a></td><td>Racun lebah madu</td></tr><tr><td style="white-space:nowrap">AL000011<a name="KemkesClinicalTermCS-AL000011"> </a></td><td>Kecoa jerman</td></tr><tr><td style="white-space:nowrap">AL000012<a name="KemkesClinicalTermCS-AL000012"> </a></td><td>Candida albicans</td></tr><tr><td style="white-space:nowrap">AL000013<a name="KemkesClinicalTermCS-AL000013"> </a></td><td>Tepung terigu</td></tr><tr><td style="white-space:nowrap">AL000014<a name="KemkesClinicalTermCS-AL000014"> </a></td><td>Ragi</td></tr><tr><td style="white-space:nowrap">AL000015<a name="KemkesClinicalTermCS-AL000015"> </a></td><td>Ikan kod</td></tr><tr><td style="white-space:nowrap">AL000016<a name="KemkesClinicalTermCS-AL000016"> </a></td><td>Salmon</td></tr><tr><td style="white-space:nowrap">AL000017<a name="KemkesClinicalTermCS-AL000017"> </a></td><td>Daging bebek</td></tr><tr><td style="white-space:nowrap">AL000018<a name="KemkesClinicalTermCS-AL000018"> </a></td><td>Daging sapi</td></tr><tr><td style="white-space:nowrap">AL000019<a name="KemkesClinicalTermCS-AL000019"> </a></td><td>Daging ayam</td></tr><tr><td style="white-space:nowrap">AL000020<a name="KemkesClinicalTermCS-AL000020"> </a></td><td>Daging domba </td></tr><tr><td style="white-space:nowrap">AL000021<a name="KemkesClinicalTermCS-AL000021"> </a></td><td>Keju cheedar</td></tr><tr><td style="white-space:nowrap">AL000022<a name="KemkesClinicalTermCS-AL000022"> </a></td><td>Kopi</td></tr><tr><td style="white-space:nowrap">AL000023<a name="KemkesClinicalTermCS-AL000023"> </a></td><td>Nasi putih</td></tr><tr><td style="white-space:nowrap">AL000024<a name="KemkesClinicalTermCS-AL000024"> </a></td><td>Kuning telur </td></tr><tr><td style="white-space:nowrap">AL000025<a name="KemkesClinicalTermCS-AL000025"> </a></td><td>Kerang </td></tr><tr><td style="white-space:nowrap">AL000026<a name="KemkesClinicalTermCS-AL000026"> </a></td><td>Kacang merah</td></tr><tr><td style="white-space:nowrap">AL000027<a name="KemkesClinicalTermCS-AL000027"> </a></td><td>Kacang hijau</td></tr><tr><td style="white-space:nowrap">AL000028<a name="KemkesClinicalTermCS-AL000028"> </a></td><td>Bulu ayam</td></tr><tr><td style="white-space:nowrap">AL000029<a name="KemkesClinicalTermCS-AL000029"> </a></td><td>Kacang polong</td></tr><tr><td style="white-space:nowrap">AL000030<a name="KemkesClinicalTermCS-AL000030"> </a></td><td>Tepung gandum</td></tr><tr><td style="white-space:nowrap">AL000031<a name="KemkesClinicalTermCS-AL000031"> </a></td><td>Makerel</td></tr><tr><td style="white-space:nowrap">AL000032<a name="KemkesClinicalTermCS-AL000032"> </a></td><td>Kerang simping</td></tr><tr><td style="white-space:nowrap">AL000033<a name="KemkesClinicalTermCS-AL000033"> </a></td><td>Susu kambing</td></tr><tr><td style="white-space:nowrap">AL000034<a name="KemkesClinicalTermCS-AL000034"> </a></td><td>Paprika</td></tr><tr><td style="white-space:nowrap">AL000035<a name="KemkesClinicalTermCS-AL000035"> </a></td><td>Kubis</td></tr><tr><td style="white-space:nowrap">AL000036<a name="KemkesClinicalTermCS-AL000036"> </a></td><td>Adas</td></tr><tr><td style="white-space:nowrap">AL000037<a name="KemkesClinicalTermCS-AL000037"> </a></td><td>Selada</td></tr><tr><td style="white-space:nowrap">AL000038<a name="KemkesClinicalTermCS-AL000038"> </a></td><td>Labu</td></tr><tr><td style="white-space:nowrap">AL000039<a name="KemkesClinicalTermCS-AL000039"> </a></td><td>Lobak</td></tr><tr><td style="white-space:nowrap">AL000040<a name="KemkesClinicalTermCS-AL000040"> </a></td><td>Timun jepang/Zucchini</td></tr><tr><td style="white-space:nowrap">AL000041<a name="KemkesClinicalTermCS-AL000041"> </a></td><td>Gandum kuda/buckwheat</td></tr><tr><td style="white-space:nowrap">AL000042<a name="KemkesClinicalTermCS-AL000042"> </a></td><td>Sarden</td></tr><tr><td style="white-space:nowrap">AL000043<a name="KemkesClinicalTermCS-AL000043"> </a></td><td>Debu rumah</td></tr><tr><td style="white-space:nowrap">CB000001<a name="KemkesClinicalTermCS-CB000001"> </a></td><td>Tidak ada metastasis jauh</td></tr><tr><td style="white-space:nowrap">CB000002<a name="KemkesClinicalTermCS-CB000002"> </a></td><td>Metastasis jauh tidak diketahui</td></tr><tr><td style="white-space:nowrap">CB000003<a name="KemkesClinicalTermCS-CB000003"> </a></td><td>Lateralitas tidak diketahui</td></tr><tr><td style="white-space:nowrap">CC000001<a name="KemkesClinicalTermCS-CC000001"> </a></td><td>Dada terasa tidak nyaman</td></tr><tr><td style="white-space:nowrap">CC000002<a name="KemkesClinicalTermCS-CC000002"> </a></td><td>Nyeri dada lebih lama dari 20 menit</td></tr><tr><td style="white-space:nowrap">CC000003<a name="KemkesClinicalTermCS-CC000003"> </a></td><td>TNM tidak dapat diaplikasikan</td></tr><tr><td style="white-space:nowrap">CC000004<a name="KemkesClinicalTermCS-CC000004"> </a></td><td>Organ dan KGB sekitar</td></tr><tr><td style="white-space:nowrap">CC000005<a name="KemkesClinicalTermCS-CC000005"> </a></td><td>Perluasan tumor sebelum terapi tidak diketahui</td></tr><tr><td style="white-space:nowrap">CC000007<a name="KemkesClinicalTermCS-CC000007"> </a></td><td>Malnutrisi pada penyakit akut</td></tr><tr><td style="white-space:nowrap">CC000008<a name="KemkesClinicalTermCS-CC000008"> </a></td><td>Malnutrisi pada anak (tidak terkait penyakit)</td></tr><tr><td style="white-space:nowrap">CC000009<a name="KemkesClinicalTermCS-CC000009"> </a></td><td>Malnutrisi pada anak (terkait penyakit)</td></tr><tr><td style="white-space:nowrap">CC000010<a name="KemkesClinicalTermCS-CC000010"> </a></td><td>Keterbatasan/ ketidakpatuhan dalam menjalankan rekomendasi diet</td></tr><tr><td style="white-space:nowrap">CC000019<a name="KemkesClinicalTermCS-CC000019"> </a></td><td>Riwayat diare</td></tr><tr><td style="white-space:nowrap">CC000020<a name="KemkesClinicalTermCS-CC000020"> </a></td><td>Riwayat infeksi saluran pernapasan akut</td></tr><tr><td style="white-space:nowrap">CC000021<a name="KemkesClinicalTermCS-CC000021"> </a></td><td>Riwayat kecacingan</td></tr><tr><td style="white-space:nowrap">CC000022<a name="KemkesClinicalTermCS-CC000022"> </a></td><td>Riwayat defisiensi vitamin A</td></tr><tr><td style="white-space:nowrap">CC000023<a name="KemkesClinicalTermCS-CC000023"> </a></td><td>Riwayat xeroftalmia</td></tr><tr><td style="white-space:nowrap">CC000024<a name="KemkesClinicalTermCS-CC000024"> </a></td><td>Nyeri dada pertama kali dengan aktivitas ringan</td></tr><tr><td style="white-space:nowrap">CE000001<a name="KemkesClinicalTermCS-CE000001"> </a></td><td>Basis diagnosis berdasarkan operasi/otopsi tanpa histologi</td></tr><tr><td style="white-space:nowrap">CE000002<a name="KemkesClinicalTermCS-CE000002"> </a></td><td>Basis diagnosis berdasarkan otopsi dengan histologi</td></tr><tr><td style="white-space:nowrap">CE000003<a name="KemkesClinicalTermCS-CE000003"> </a></td><td>Basis diagnosis tidak diketahui</td></tr><tr><td style="white-space:nowrap">CS000001<a name="KemkesClinicalTermCS-CS000001"> </a></td><td>Stadium tumor tidak diaplikasikan</td></tr><tr><td style="white-space:nowrap">CS000002<a name="KemkesClinicalTermCS-CS000002"> </a></td><td>Stadium tumor tidak diketahui</td></tr><tr><td style="white-space:nowrap">ED000001<a name="KemkesClinicalTermCS-ED000001"> </a></td><td>Edukasi Prognosis</td></tr><tr><td style="white-space:nowrap">ED000002<a name="KemkesClinicalTermCS-ED000002"> </a></td><td>Edukasi terkait Alternatif Tindakan dan Resikonya</td></tr><tr><td style="white-space:nowrap">ED000003<a name="KemkesClinicalTermCS-ED000003"> </a></td><td>Edukasi Rehabilitasi Medis</td></tr><tr><td style="white-space:nowrap">ED000004<a name="KemkesClinicalTermCS-ED000004"> </a></td><td>Edukasi Manajemen Nyeri</td></tr><tr><td style="white-space:nowrap">ED000005<a name="KemkesClinicalTermCS-ED000005"> </a></td><td>Edukasi Gizi</td></tr><tr><td style="white-space:nowrap">ED000006<a name="KemkesClinicalTermCS-ED000006"> </a></td><td>Edukasi Cuci Tangan</td></tr><tr><td style="white-space:nowrap">ED000007<a name="KemkesClinicalTermCS-ED000007"> </a></td><td>Edukasi Penggunaan Alat Medis</td></tr><tr><td style="white-space:nowrap">ED000008<a name="KemkesClinicalTermCS-ED000008"> </a></td><td>Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas</td></tr><tr><td style="white-space:nowrap">ED000009<a name="KemkesClinicalTermCS-ED000009"> </a></td><td>Edukasi IMD dan ASI Eksklusif</td></tr><tr><td style="white-space:nowrap">ED000010<a name="KemkesClinicalTermCS-ED000010"> </a></td><td>Edukasi PHBS</td></tr><tr><td style="white-space:nowrap">ED000011<a name="KemkesClinicalTermCS-ED000011"> </a></td><td>Edukasi KB pasca salin</td></tr><tr><td style="white-space:nowrap">ED000012<a name="KemkesClinicalTermCS-ED000012"> </a></td><td>Edukasi lainnya</td></tr><tr><td style="white-space:nowrap">ED000013<a name="KemkesClinicalTermCS-ED000013"> </a></td><td>Edukasi Pencegahan Anemia</td></tr><tr><td style="white-space:nowrap">EHA000001<a name="KemkesClinicalTermCS-EHA000001"> </a></td><td>Kader/ Komunitas</td></tr><tr><td style="white-space:nowrap">EHA000002<a name="KemkesClinicalTermCS-EHA000002"> </a></td><td>Datang sendiri</td></tr><tr><td style="white-space:nowrap">EHA000003<a name="KemkesClinicalTermCS-EHA000003"> </a></td><td>Kegiatan ACF</td></tr><tr><td style="white-space:nowrap">EHA000004<a name="KemkesClinicalTermCS-EHA000004"> </a></td><td>Skrining TBC DM</td></tr><tr><td style="white-space:nowrap">EHA000005<a name="KemkesClinicalTermCS-EHA000005"> </a></td><td>Pemadanan Data BPJS</td></tr><tr><td style="white-space:nowrap">FO000001<a name="KemkesClinicalTermCS-FO000001"> </a></td><td>MT Lokal</td></tr><tr><td style="white-space:nowrap">FO000002<a name="KemkesClinicalTermCS-FO000002"> </a></td><td>MT Pabrikan</td></tr><tr><td style="white-space:nowrap">grup1-icdmm<a name="KemkesClinicalTermCS-grup1-icdmm"> </a></td><td>Kehamilan dengan komplikasi abortus</td></tr><tr><td style="white-space:nowrap">grup2-icdmm<a name="KemkesClinicalTermCS-grup2-icdmm"> </a></td><td>Hipertensi dalam kehamilan, persalinan atau nifas</td></tr><tr><td style="white-space:nowrap">grup3-icdmm<a name="KemkesClinicalTermCS-grup3-icdmm"> </a></td><td>Perdarahan obstetrik</td></tr><tr><td style="white-space:nowrap">grup4-icdmm<a name="KemkesClinicalTermCS-grup4-icdmm"> </a></td><td>Infeksi terkait kehamilan</td></tr><tr><td style="white-space:nowrap">grup5-icdmm<a name="KemkesClinicalTermCS-grup5-icdmm"> </a></td><td>Komplikasi obstetrik lain</td></tr><tr><td style="white-space:nowrap">grup6-icdmm<a name="KemkesClinicalTermCS-grup6-icdmm"> </a></td><td>Komplikasi manajemen yang tidak terantisipasi</td></tr><tr><td style="white-space:nowrap">grup7-icdmm<a name="KemkesClinicalTermCS-grup7-icdmm"> </a></td><td>Komplikasi non obstetrik</td></tr><tr><td style="white-space:nowrap">grup8-icdmm<a name="KemkesClinicalTermCS-grup8-icdmm"> </a></td><td>Penyebab dasar tidak diketahui</td></tr><tr><td style="white-space:nowrap">grup9-icdmm<a name="KemkesClinicalTermCS-grup9-icdmm"> </a></td><td>Ko insiden</td></tr><tr><td style="white-space:nowrap">LO000001<a name="KemkesClinicalTermCS-LO000001"> </a></td><td>Puskesmas</td></tr><tr><td style="white-space:nowrap">LO000002<a name="KemkesClinicalTermCS-LO000002"> </a></td><td>Rumah Sakit</td></tr><tr><td style="white-space:nowrap">LO000003<a name="KemkesClinicalTermCS-LO000003"> </a></td><td>Klinik</td></tr><tr><td style="white-space:nowrap">LO000004<a name="KemkesClinicalTermCS-LO000004"> </a></td><td>Rumah</td></tr><tr><td style="white-space:nowrap">OC000001<a name="KemkesClinicalTermCS-OC000001"> </a></td><td>Jarak kehamilan</td></tr><tr><td style="white-space:nowrap">OC000002<a name="KemkesClinicalTermCS-OC000002"> </a></td><td>Trial lens axis</td></tr><tr><td style="white-space:nowrap">OC000003<a name="KemkesClinicalTermCS-OC000003"> </a></td><td>Pemeriksaan lanjutan jika dinyatakan buta</td></tr><tr><td style="white-space:nowrap">OC000005<a name="KemkesClinicalTermCS-OC000005"> </a></td><td>Indeks Berat Badan menurut Panjang Badan (z-score)</td></tr><tr><td style="white-space:nowrap">OC000006<a name="KemkesClinicalTermCS-OC000006"> </a></td><td>Indeks Berat Badan menurut Tinggi Badan (z-score)</td></tr><tr><td style="white-space:nowrap">OC000007<a name="KemkesClinicalTermCS-OC000007"> </a></td><td>Lama Perawatan</td></tr><tr><td style="white-space:nowrap">OC000008<a name="KemkesClinicalTermCS-OC000008"> </a></td><td>Status Pertumbuhan dan Perkembangan</td></tr><tr><td style="white-space:nowrap">OC000009<a name="KemkesClinicalTermCS-OC000009"> </a></td><td>Mendapatkan Makanan Pendamping ASI (MPASI)</td></tr><tr><td style="white-space:nowrap">OC000010<a name="KemkesClinicalTermCS-OC000010"> </a></td><td>Indeks Massa Tubuh Sebelum Hamil</td></tr><tr><td style="white-space:nowrap">OC000011<a name="KemkesClinicalTermCS-OC000011"> </a></td><td>Target Kenaikan Berat Badan</td></tr><tr><td style="white-space:nowrap">OC000012<a name="KemkesClinicalTermCS-OC000012"> </a></td><td>Kenaikan Berat Badan Adekuat</td></tr><tr><td style="white-space:nowrap">OC000013<a name="KemkesClinicalTermCS-OC000013"> </a></td><td>Penolong Persalinan</td></tr><tr><td style="white-space:nowrap">OC000014<a name="KemkesClinicalTermCS-OC000014"> </a></td><td>Memiliki Buku KIA</td></tr><tr><td style="white-space:nowrap">OC000015<a name="KemkesClinicalTermCS-OC000015"> </a></td><td>Konseling Perawatan Bayi Baru Lahir</td></tr><tr><td style="white-space:nowrap">OC000016<a name="KemkesClinicalTermCS-OC000016"> </a></td><td>Waktu Inisiasi Menyusui Dini</td></tr><tr><td style="white-space:nowrap">OC000017<a name="KemkesClinicalTermCS-OC000017"> </a></td><td>Produksi ASI</td></tr><tr><td style="white-space:nowrap">OC000018<a name="KemkesClinicalTermCS-OC000018"> </a></td><td>Onset Kala III</td></tr><tr><td style="white-space:nowrap">OC000019<a name="KemkesClinicalTermCS-OC000019"> </a></td><td>Onset Kala IV</td></tr><tr><td style="white-space:nowrap">OC000020<a name="KemkesClinicalTermCS-OC000020"> </a></td><td>Tanda Infeksi Perineum</td></tr><tr><td style="white-space:nowrap">OC000021<a name="KemkesClinicalTermCS-OC000021"> </a></td><td>WHODAS 2.0 Subacute ADL Score</td></tr><tr><td style="white-space:nowrap">OC000022<a name="KemkesClinicalTermCS-OC000022"> </a></td><td>WHODAS 2.0 Chronic ADL Score</td></tr><tr><td style="white-space:nowrap">OC000023<a name="KemkesClinicalTermCS-OC000023"> </a></td><td>Penyebab nyeri</td></tr><tr><td style="white-space:nowrap">OC000024<a name="KemkesClinicalTermCS-OC000024"> </a></td><td>Kondisi Payudara</td></tr><tr><td style="white-space:nowrap">OC000025<a name="KemkesClinicalTermCS-OC000025"> </a></td><td>Tanda Infeksi Luka Jahitan Sectio Caesaria</td></tr><tr><td style="white-space:nowrap">OC000026<a name="KemkesClinicalTermCS-OC000026"> </a></td><td>Masa terjadi Kematian Ibu</td></tr><tr><td style="white-space:nowrap">OC000027<a name="KemkesClinicalTermCS-OC000027"> </a></td><td>Masa terjadi Kematian Anak</td></tr><tr><td style="white-space:nowrap">OC000030<a name="KemkesClinicalTermCS-OC000030"> </a></td><td>Berat saat meninggal</td></tr><tr><td style="white-space:nowrap">OC000031<a name="KemkesClinicalTermCS-OC000031"> </a></td><td>Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)</td></tr><tr><td style="white-space:nowrap">OC000032<a name="KemkesClinicalTermCS-OC000032"> </a></td><td>Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)</td></tr><tr><td style="white-space:nowrap">OC000033<a name="KemkesClinicalTermCS-OC000033"> </a></td><td>Dugaan Sebab Kematian</td></tr><tr><td style="white-space:nowrap">OC000034<a name="KemkesClinicalTermCS-OC000034"> </a></td><td>Surat Pengantar Rujukan</td></tr><tr><td style="white-space:nowrap">OC000035<a name="KemkesClinicalTermCS-OC000035"> </a></td><td>Humpty Dumpty Scale</td></tr><tr><td style="white-space:nowrap">OC000036<a name="KemkesClinicalTermCS-OC000036"> </a></td><td>Edmonson Psychiatric Fall Risk Assessment</td></tr><tr><td style="white-space:nowrap">OC000037<a name="KemkesClinicalTermCS-OC000037"> </a></td><td>Jenis Tempat Bersalin</td></tr><tr><td style="white-space:nowrap">OC000055<a name="KemkesClinicalTermCS-OC000055"> </a></td><td>Kriteria Pasien yang dilakukan Rencana Pemulangan</td></tr><tr><td style="white-space:nowrap">OC000056<a name="KemkesClinicalTermCS-OC000056"> </a></td><td>Skor Total Debris Indeks</td></tr><tr><td style="white-space:nowrap">OC000057<a name="KemkesClinicalTermCS-OC000057"> </a></td><td>Skor Total Kalkulus Indeks</td></tr><tr><td style="white-space:nowrap">OC000058<a name="KemkesClinicalTermCS-OC000058"> </a></td><td>Skor Total Oral Hygiene Index Simplified (OHIS)</td></tr><tr><td style="white-space:nowrap">OC000059<a name="KemkesClinicalTermCS-OC000059"> </a></td><td>Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OC000060<a name="KemkesClinicalTermCS-OC000060"> </a></td><td>Kondisi Gigi dan Mulut Lainnya</td></tr><tr><td style="white-space:nowrap">OC000061<a name="KemkesClinicalTermCS-OC000061"> </a></td><td>Pemeriksaan Odontogram</td></tr><tr><td style="white-space:nowrap">OC000062<a name="KemkesClinicalTermCS-OC000062"> </a></td><td>Debris Indeks</td></tr><tr><td style="white-space:nowrap">OC000063<a name="KemkesClinicalTermCS-OC000063"> </a></td><td>Kalkulus Indeks</td></tr><tr><td style="white-space:nowrap">OC000078<a name="KemkesClinicalTermCS-OC000078"> </a></td><td>Pemeriksaan tanda dan gejala infeksi</td></tr><tr><td style="white-space:nowrap">OC000079<a name="KemkesClinicalTermCS-OC000079"> </a></td><td>Tes serologis HIV ibu</td></tr><tr><td style="white-space:nowrap">OC000080<a name="KemkesClinicalTermCS-OC000080"> </a></td><td>Efektifitas hisapan bayi</td></tr><tr><td style="white-space:nowrap">OC000081<a name="KemkesClinicalTermCS-OC000081"> </a></td><td>Posisi pelekatan bayi pada puting</td></tr><tr><td style="white-space:nowrap">OC000082<a name="KemkesClinicalTermCS-OC000082"> </a></td><td>Posisi menyusu bayi</td></tr><tr><td style="white-space:nowrap">OC000083<a name="KemkesClinicalTermCS-OC000083"> </a></td><td>Tes serologis HIV anak</td></tr><tr><td style="white-space:nowrap">OC000084<a name="KemkesClinicalTermCS-OC000084"> </a></td><td>Tes virologis HIV anak</td></tr><tr><td style="white-space:nowrap">OC000085<a name="KemkesClinicalTermCS-OC000085"> </a></td><td>Klasifikasi berat badan menurut umur dan/atau masalah pemberian ASI</td></tr><tr><td style="white-space:nowrap">OC000086<a name="KemkesClinicalTermCS-OC000086"> </a></td><td>Klasifikasi Berat Badan Menurut Umur dan/atau Masalah Pemberian Minum</td></tr><tr><td style="white-space:nowrap">OC000087<a name="KemkesClinicalTermCS-OC000087"> </a></td><td>Pemberian Vitamin K pada Bayi Baru Lahir</td></tr><tr><td style="white-space:nowrap">OC000088<a name="KemkesClinicalTermCS-OC000088"> </a></td><td>Pemeriksaan tanda bahaya umum</td></tr><tr><td style="white-space:nowrap">OC000089<a name="KemkesClinicalTermCS-OC000089"> </a></td><td>Klasifikasi status kegawatan</td></tr><tr><td style="white-space:nowrap">OC000090<a name="KemkesClinicalTermCS-OC000090"> </a></td><td>Pemeriksaan tanda dan gejala sukar bernafas</td></tr><tr><td style="white-space:nowrap">OC000091<a name="KemkesClinicalTermCS-OC000091"> </a></td><td>Klasifikasi batuk dan/atau sukar bernapas</td></tr><tr><td style="white-space:nowrap">OC000092<a name="KemkesClinicalTermCS-OC000092"> </a></td><td>Perilaku Parasosial</td></tr><tr><td style="white-space:nowrap">OC000097<a name="KemkesClinicalTermCS-OC000097"> </a></td><td>Pemeriksaan tanda dan gejala diare</td></tr><tr><td style="white-space:nowrap">OC000098<a name="KemkesClinicalTermCS-OC000098"> </a></td><td>Klasifikasi diare</td></tr><tr><td style="white-space:nowrap">OC000099<a name="KemkesClinicalTermCS-OC000099"> </a></td><td>Status daerah endemis malaria</td></tr><tr><td style="white-space:nowrap">OC000100<a name="KemkesClinicalTermCS-OC000100"> </a></td><td>Klasifikasi demam</td></tr><tr><td style="white-space:nowrap">OC000101<a name="KemkesClinicalTermCS-OC000101"> </a></td><td>Pemeriksaan tanda dan gejala campak</td></tr><tr><td style="white-space:nowrap">OC000102<a name="KemkesClinicalTermCS-OC000102"> </a></td><td>Klasifikasi campak</td></tr><tr><td style="white-space:nowrap">OC000103<a name="KemkesClinicalTermCS-OC000103"> </a></td><td>Durasi cairan/nanah keluar dari telinga</td></tr><tr><td style="white-space:nowrap">OC000104<a name="KemkesClinicalTermCS-OC000104"> </a></td><td>Pemeriksaan infeksi dengue</td></tr><tr><td style="white-space:nowrap">OC000105<a name="KemkesClinicalTermCS-OC000105"> </a></td><td>Klasifikasi infeksi dengue</td></tr><tr><td style="white-space:nowrap">OC000106<a name="KemkesClinicalTermCS-OC000106"> </a></td><td>Pemeriksaan tanda dan gejala masalah telinga</td></tr><tr><td style="white-space:nowrap">OC000107<a name="KemkesClinicalTermCS-OC000107"> </a></td><td>Klasifikasi masalah telinga</td></tr><tr><td style="white-space:nowrap">OC000108<a name="KemkesClinicalTermCS-OC000108"> </a></td><td>Klasifikasi status gizi</td></tr><tr><td style="white-space:nowrap">OC000109<a name="KemkesClinicalTermCS-OC000109"> </a></td><td>Klasifikasi status pertumbuhan</td></tr><tr><td style="white-space:nowrap">OC000111<a name="KemkesClinicalTermCS-OC000111"> </a></td><td>Klasifikasi anemia</td></tr><tr><td style="white-space:nowrap">OC000112<a name="KemkesClinicalTermCS-OC000112"> </a></td><td>Durasi sukar bernapas</td></tr><tr><td style="white-space:nowrap">OC000113<a name="KemkesClinicalTermCS-OC000113"> </a></td><td>Durasi diare</td></tr><tr><td style="white-space:nowrap">OC000114<a name="KemkesClinicalTermCS-OC000114"> </a></td><td>Membutuhkan suplemen vitamin A</td></tr><tr><td style="white-space:nowrap">OC000115<a name="KemkesClinicalTermCS-OC000115"> </a></td><td>H Dosis Rendah</td></tr><tr><td style="white-space:nowrap">OC000116<a name="KemkesClinicalTermCS-OC000116"> </a></td><td>FQ Dosis Rendah</td></tr><tr><td style="white-space:nowrap">OC000117<a name="KemkesClinicalTermCS-OC000117"> </a></td><td>Hasil Uji Metode LJ</td></tr><tr><td style="white-space:nowrap">OC000118<a name="KemkesClinicalTermCS-OC000118"> </a></td><td>Hasil Uji Metode MGIT</td></tr><tr><td style="white-space:nowrap">OC000119<a name="KemkesClinicalTermCS-OC000119"> </a></td><td>Hasil Uji Lfx</td></tr><tr><td style="white-space:nowrap">OC000120<a name="KemkesClinicalTermCS-OC000120"> </a></td><td>Hasil Uji Mfx DT</td></tr><tr><td style="white-space:nowrap">OC000121<a name="KemkesClinicalTermCS-OC000121"> </a></td><td>Pemeriksaan tanda dan gejala demam</td></tr><tr><td style="white-space:nowrap">OC000122<a name="KemkesClinicalTermCS-OC000122"> </a></td><td>Carta Prediksi Risiko</td></tr><tr><td style="white-space:nowrap">OC000124<a name="KemkesClinicalTermCS-OC000124"> </a></td><td>Pemeriksaan kebugaran 1000m</td></tr><tr><td style="white-space:nowrap">OC000125<a name="KemkesClinicalTermCS-OC000125"> </a></td><td>Pemeriksaan kebugaran 1600m</td></tr><tr><td style="white-space:nowrap">OC000126<a name="KemkesClinicalTermCS-OC000126"> </a></td><td>Klasifikasi infeksi</td></tr><tr><td style="white-space:nowrap">OC000127<a name="KemkesClinicalTermCS-OC000127"> </a></td><td>Jumlah TTD dikonsumsi dalam satu bulan terakhir</td></tr><tr><td style="white-space:nowrap">OC000128<a name="KemkesClinicalTermCS-OC000128"> </a></td><td>Umur pertama kali timbul kuning</td></tr><tr><td style="white-space:nowrap">OC000129<a name="KemkesClinicalTermCS-OC000129"> </a></td><td>Klasifikasi ikterus</td></tr><tr><td style="white-space:nowrap">OC000130<a name="KemkesClinicalTermCS-OC000130"> </a></td><td>Ada tanda-tanda retensi</td></tr><tr><td style="white-space:nowrap">OC000131<a name="KemkesClinicalTermCS-OC000131"> </a></td><td>Perawakan tampak kurus</td></tr><tr><td style="white-space:nowrap">OC000133<a name="KemkesClinicalTermCS-OC000133"> </a></td><td>Kategori Sasaran Imunisasi COVID-19</td></tr><tr><td style="white-space:nowrap">OC000134<a name="KemkesClinicalTermCS-OC000134"> </a></td><td>Left Ventricular Hypertrophy (LVH) Eksentrik</td></tr><tr><td style="white-space:nowrap">OC000135<a name="KemkesClinicalTermCS-OC000135"> </a></td><td>Status sekolah</td></tr><tr><td style="white-space:nowrap">OC000136<a name="KemkesClinicalTermCS-OC000136"> </a></td><td>Trial lens sferis</td></tr><tr><td style="white-space:nowrap">OC000137<a name="KemkesClinicalTermCS-OC000137"> </a></td><td>Trial lens silinder</td></tr><tr><td style="white-space:nowrap">OC000138<a name="KemkesClinicalTermCS-OC000138"> </a></td><td>Pajanan di rumah tangga/tempat kerja</td></tr><tr><td style="white-space:nowrap">OC000139<a name="KemkesClinicalTermCS-OC000139"> </a></td><td>Waktu terakhir kali ibu diberikan transfusi darah</td></tr><tr><td style="white-space:nowrap">OC000140<a name="KemkesClinicalTermCS-OC000140"> </a></td><td>Ibu konsumsi obat anti tiroid</td></tr><tr><td style="white-space:nowrap">OC000141<a name="KemkesClinicalTermCS-OC000141"> </a></td><td>Ada kelainan bawaan</td></tr><tr><td style="white-space:nowrap">OC000142<a name="KemkesClinicalTermCS-OC000142"> </a></td><td>Wajah mongoloid</td></tr><tr><td style="white-space:nowrap">OC000144<a name="KemkesClinicalTermCS-OC000144"> </a></td><td>Pemeriksaan layanan gizi buruk</td></tr><tr><td style="white-space:nowrap">OC000145<a name="KemkesClinicalTermCS-OC000145"> </a></td><td>Urutan pengiriman sampel</td></tr><tr><td style="white-space:nowrap">OC000146<a name="KemkesClinicalTermCS-OC000146"> </a></td><td>Status pertumbuhan tidak naik (Status T)</td></tr><tr><td style="white-space:nowrap">OC000147<a name="KemkesClinicalTermCS-OC000147"> </a></td><td>Tanda-tanda komplikasi pada balita</td></tr><tr><td style="white-space:nowrap">OC000148<a name="KemkesClinicalTermCS-OC000148"> </a></td><td>Pemeriksaan gangguan konsumsi dan gangguan fisik lainnya</td></tr><tr><td style="white-space:nowrap">OC000149<a name="KemkesClinicalTermCS-OC000149"> </a></td><td>Pekerjaan orang tua</td></tr><tr><td style="white-space:nowrap">OC000150<a name="KemkesClinicalTermCS-OC000150"> </a></td><td>Suspek tuli kongenital</td></tr><tr><td style="white-space:nowrap">OC000151<a name="KemkesClinicalTermCS-OC000151"> </a></td><td>Suspek presbikusis</td></tr><tr><td style="white-space:nowrap">OC000152<a name="KemkesClinicalTermCS-OC000152"> </a></td><td>Suspek retinopati</td></tr><tr><td style="white-space:nowrap">OC000153<a name="KemkesClinicalTermCS-OC000153"> </a></td><td>Ada tanda-tanda defisiensi zat gizi mikro</td></tr><tr><td style="white-space:nowrap">OC000154<a name="KemkesClinicalTermCS-OC000154"> </a></td><td>Shadow test</td></tr><tr><td style="white-space:nowrap">OC000155<a name="KemkesClinicalTermCS-OC000155"> </a></td><td>Gejala klinis risiko anemia</td></tr><tr><td style="white-space:nowrap">OC000156<a name="KemkesClinicalTermCS-OC000156"> </a></td><td>Tindakan pasca fibrinolisis</td></tr><tr><td style="white-space:nowrap">OC000157<a name="KemkesClinicalTermCS-OC000157"> </a></td><td>Jenis Intervensi Koroner Perkutan</td></tr><tr><td style="white-space:nowrap">OC000158<a name="KemkesClinicalTermCS-OC000158"> </a></td><td>Volume balloon</td></tr><tr><td style="white-space:nowrap">OC000159<a name="KemkesClinicalTermCS-OC000159"> </a></td><td>Wake up stroke</td></tr><tr><td style="white-space:nowrap">OC000160<a name="KemkesClinicalTermCS-OC000160"> </a></td><td>Letak Infark</td></tr><tr><td style="white-space:nowrap">OC000161<a name="KemkesClinicalTermCS-OC000161"> </a></td><td>Sisi Infark</td></tr><tr><td style="white-space:nowrap">OC000162<a name="KemkesClinicalTermCS-OC000162"> </a></td><td>Volume Perdarahan</td></tr><tr><td style="white-space:nowrap">OC000163<a name="KemkesClinicalTermCS-OC000163"> </a></td><td>Sumber Perdarahan Infratentorial</td></tr><tr><td style="white-space:nowrap">OC000164<a name="KemkesClinicalTermCS-OC000164"> </a></td><td>Cardiothoracic Ratio (CTR)</td></tr><tr><td style="white-space:nowrap">OC000165<a name="KemkesClinicalTermCS-OC000165"> </a></td><td>Lokasi elevasi segmen ST</td></tr><tr><td style="white-space:nowrap">OC000166<a name="KemkesClinicalTermCS-OC000166"> </a></td><td>Tanggal dan jam onset terberat</td></tr><tr><td style="white-space:nowrap">OC000167<a name="KemkesClinicalTermCS-OC000167"> </a></td><td>Arteri koroner yang terlibat dalam Sindrom Koroner Akut</td></tr><tr><td style="white-space:nowrap">OC000168<a name="KemkesClinicalTermCS-OC000168"> </a></td><td>Klasifikasi Killip</td></tr><tr><td style="white-space:nowrap">OC000169<a name="KemkesClinicalTermCS-OC000169"> </a></td><td>GRACE Score</td></tr><tr><td style="white-space:nowrap">OC000170<a name="KemkesClinicalTermCS-OC000170"> </a></td><td>Riwayat KB Hormonal</td></tr><tr><td style="white-space:nowrap">OC000171<a name="KemkesClinicalTermCS-OC000171"> </a></td><td>Tanggal dan jam wire menembus lesi</td></tr><tr><td style="white-space:nowrap">OC000172<a name="KemkesClinicalTermCS-OC000172"> </a></td><td>Tanggal dan jam mulai dimasukkan obat fibrinolisis</td></tr><tr><td style="white-space:nowrap">OC000173<a name="KemkesClinicalTermCS-OC000173"> </a></td><td>Prediksi Risiko PTM tanpa Pemeriksaan Laboratorium</td></tr><tr><td style="white-space:nowrap">OC000176<a name="KemkesClinicalTermCS-OC000176"> </a></td><td>Pencegahan Sekunder Penyakit Jantung Rematik</td></tr><tr><td style="white-space:nowrap">OC000177<a name="KemkesClinicalTermCS-OC000177"> </a></td><td>Tidak Diketahui Mendapat Obat</td></tr><tr><td style="white-space:nowrap">OC000178<a name="KemkesClinicalTermCS-OC000178"> </a></td><td>Jenis Obat Pencegahan Sekunder PJR</td></tr><tr><td style="white-space:nowrap">OC000179<a name="KemkesClinicalTermCS-OC000179"> </a></td><td>Target Organ Damage Hipertensi</td></tr><tr><td style="white-space:nowrap">OC000180<a name="KemkesClinicalTermCS-OC000180"> </a></td><td>Intensitas Obat Statin</td></tr><tr><td style="white-space:nowrap">OC000181<a name="KemkesClinicalTermCS-OC000181"> </a></td><td>Alberta Stroke Program Early CT score</td></tr><tr><td style="white-space:nowrap">OC000182<a name="KemkesClinicalTermCS-OC000182"> </a></td><td>Time to Recanalization</td></tr><tr><td style="white-space:nowrap">OC000183<a name="KemkesClinicalTermCS-OC000183"> </a></td><td>Thrombolysis in Cerebral Infarction Score</td></tr><tr><td style="white-space:nowrap">OCC000003<a name="KemkesClinicalTermCS-OCC000003"> </a></td><td>Lokasi elevasi segmen ST</td></tr><tr><td style="white-space:nowrap">OCV000001<a name="KemkesClinicalTermCS-OCV000001"> </a></td><td>LBBB baru</td></tr><tr><td style="white-space:nowrap">OCV000003<a name="KemkesClinicalTermCS-OCV000003"> </a></td><td>Tidak ada perubahan akut</td></tr><tr><td style="white-space:nowrap">OCV000004<a name="KemkesClinicalTermCS-OCV000004"> </a></td><td>ST elevasi tidak dapat ditentukan</td></tr><tr><td style="white-space:nowrap">OI000001<a name="KemkesClinicalTermCS-OI000001"> </a></td><td>Gizi Buruk</td></tr><tr><td style="white-space:nowrap">OI000002<a name="KemkesClinicalTermCS-OI000002"> </a></td><td>Gizi Kurang</td></tr><tr><td style="white-space:nowrap">OI000003<a name="KemkesClinicalTermCS-OI000003"> </a></td><td>Gizi Baik</td></tr><tr><td style="white-space:nowrap">OI000004<a name="KemkesClinicalTermCS-OI000004"> </a></td><td>Risiko Gizi Lebih</td></tr><tr><td style="white-space:nowrap">OI000005<a name="KemkesClinicalTermCS-OI000005"> </a></td><td>Gizi Lebih</td></tr><tr><td style="white-space:nowrap">OI000006<a name="KemkesClinicalTermCS-OI000006"> </a></td><td>Obesitas</td></tr><tr><td style="white-space:nowrap">OI000007<a name="KemkesClinicalTermCS-OI000007"> </a></td><td>Berat Badan Sangat Kurang</td></tr><tr><td style="white-space:nowrap">OI000008<a name="KemkesClinicalTermCS-OI000008"> </a></td><td>Berat Badan Kurang</td></tr><tr><td style="white-space:nowrap">OI000009<a name="KemkesClinicalTermCS-OI000009"> </a></td><td>Berat Badan Normal</td></tr><tr><td style="white-space:nowrap">OI000010<a name="KemkesClinicalTermCS-OI000010"> </a></td><td>Risiko Berat Badan Lebih</td></tr><tr><td style="white-space:nowrap">OI000011<a name="KemkesClinicalTermCS-OI000011"> </a></td><td>Sangat Pendek</td></tr><tr><td style="white-space:nowrap">OI000012<a name="KemkesClinicalTermCS-OI000012"> </a></td><td>Pendek</td></tr><tr><td style="white-space:nowrap">OI000013<a name="KemkesClinicalTermCS-OI000013"> </a></td><td>Normal</td></tr><tr><td style="white-space:nowrap">OI000014<a name="KemkesClinicalTermCS-OI000014"> </a></td><td>Tinggi</td></tr><tr><td style="white-space:nowrap">OI000015<a name="KemkesClinicalTermCS-OI000015"> </a></td><td>Normocephaly</td></tr><tr><td style="white-space:nowrap">OI000016<a name="KemkesClinicalTermCS-OI000016"> </a></td><td>Sesuai Usia</td></tr><tr><td style="white-space:nowrap">OI000017<a name="KemkesClinicalTermCS-OI000017"> </a></td><td>Tidak Sesuai Usia</td></tr><tr><td style="white-space:nowrap">OI000018<a name="KemkesClinicalTermCS-OI000018"> </a></td><td>Kurang Energi Kronis (KEK) </td></tr><tr><td style="white-space:nowrap">OI000019<a name="KemkesClinicalTermCS-OI000019"> </a></td><td>Mild to No Pain</td></tr><tr><td style="white-space:nowrap">OI000020<a name="KemkesClinicalTermCS-OI000020"> </a></td><td>Mild to Moderate Pain</td></tr><tr><td style="white-space:nowrap">OI000021<a name="KemkesClinicalTermCS-OI000021"> </a></td><td>7 - 11 (Risiko rendah)</td></tr><tr><td style="white-space:nowrap">OI000022<a name="KemkesClinicalTermCS-OI000022"> </a></td><td>&gt; 12 (Risiko tinggi)</td></tr><tr><td style="white-space:nowrap">OI000023<a name="KemkesClinicalTermCS-OI000023"> </a></td><td>0 - 89 (Risiko rendah)</td></tr><tr><td style="white-space:nowrap">OI000024<a name="KemkesClinicalTermCS-OI000024"> </a></td><td>&gt; 90 (Risiko tinggi)</td></tr><tr><td style="white-space:nowrap">OI000025<a name="KemkesClinicalTermCS-OI000025"> </a></td><td>Tidak Normal</td></tr><tr><td style="white-space:nowrap">OI000026<a name="KemkesClinicalTermCS-OI000026"> </a></td><td>0 - 24 (Risiko rendah)</td></tr><tr><td style="white-space:nowrap">OI000027<a name="KemkesClinicalTermCS-OI000027"> </a></td><td>25 - 44 (Risiko sedang)</td></tr><tr><td style="white-space:nowrap">OI000028<a name="KemkesClinicalTermCS-OI000028"> </a></td><td>≥ 45 (Risiko tinggi)</td></tr><tr><td style="white-space:nowrap">OI000029<a name="KemkesClinicalTermCS-OI000029"> </a></td><td>Kondisi Gigi Baik</td></tr><tr><td style="white-space:nowrap">OI000030<a name="KemkesClinicalTermCS-OI000030"> </a></td><td>Kondisi Gigi Cukup Baik</td></tr><tr><td style="white-space:nowrap">OI000031<a name="KemkesClinicalTermCS-OI000031"> </a></td><td>Kondisi Gigi Buruk</td></tr><tr><td style="white-space:nowrap">OI000032<a name="KemkesClinicalTermCS-OI000032"> </a></td><td>Anemia ringan</td></tr><tr><td style="white-space:nowrap">OI000033<a name="KemkesClinicalTermCS-OI000033"> </a></td><td>Anemia sedang</td></tr><tr><td style="white-space:nowrap">OI000034<a name="KemkesClinicalTermCS-OI000034"> </a></td><td>Anemia berat</td></tr><tr><td style="white-space:nowrap">OI000035<a name="KemkesClinicalTermCS-OI000035"> </a></td><td>Risiko Kurang Energi Kronis (KEK)</td></tr><tr><td style="white-space:nowrap">OI000036<a name="KemkesClinicalTermCS-OI000036"> </a></td><td>Tingkat kebugaran jasmani baik</td></tr><tr><td style="white-space:nowrap">OI000037<a name="KemkesClinicalTermCS-OI000037"> </a></td><td>Tingkat kebugaran jasmani cukup</td></tr><tr><td style="white-space:nowrap">OI000038<a name="KemkesClinicalTermCS-OI000038"> </a></td><td>Tingkat kebugaran jasmani kurang</td></tr><tr><td style="white-space:nowrap">OI000039<a name="KemkesClinicalTermCS-OI000039"> </a></td><td>Borderline</td></tr><tr><td style="white-space:nowrap">OI000040<a name="KemkesClinicalTermCS-OI000040"> </a></td><td>Tekanan darah optimal</td></tr><tr><td style="white-space:nowrap">OI000041<a name="KemkesClinicalTermCS-OI000041"> </a></td><td>Tekanan darah normal tinggi</td></tr><tr><td style="white-space:nowrap">OI000042<a name="KemkesClinicalTermCS-OI000042"> </a></td><td>Hipertensi derajat 3</td></tr><tr><td style="white-space:nowrap">OI000043<a name="KemkesClinicalTermCS-OI000043"> </a></td><td>LDL mendekati optimal</td></tr><tr><td style="white-space:nowrap">OI000044<a name="KemkesClinicalTermCS-OI000044"> </a></td><td>Kelainan organik</td></tr><tr><td style="white-space:nowrap">OI000045<a name="KemkesClinicalTermCS-OI000045"> </a></td><td>Ketergantungan Ringan</td></tr><tr><td style="white-space:nowrap">OI000046<a name="KemkesClinicalTermCS-OI000046"> </a></td><td>Ketergantungan Sedang</td></tr><tr><td style="white-space:nowrap">OI000047<a name="KemkesClinicalTermCS-OI000047"> </a></td><td>Ketergantungan Berat</td></tr><tr><td style="white-space:nowrap">OI000048<a name="KemkesClinicalTermCS-OI000048"> </a></td><td>Ketergantungan Total</td></tr><tr><td style="white-space:nowrap">OM000001<a name="KemkesClinicalTermCS-OM000001"> </a></td><td>LJ</td></tr><tr><td style="white-space:nowrap">OM000002<a name="KemkesClinicalTermCS-OM000002"> </a></td><td>MGIT</td></tr><tr><td style="white-space:nowrap">OV000003<a name="KemkesClinicalTermCS-OV000003"> </a></td><td>Restriksi berat</td></tr><tr><td style="white-space:nowrap">OV000005<a name="KemkesClinicalTermCS-OV000005"> </a></td><td>Letak Lintang</td></tr><tr><td style="white-space:nowrap">OV000006<a name="KemkesClinicalTermCS-OV000006"> </a></td><td>Intrauteri</td></tr><tr><td style="white-space:nowrap">OV000007<a name="KemkesClinicalTermCS-OV000007"> </a></td><td>Ekstrauteri</td></tr><tr><td style="white-space:nowrap">OV000008<a name="KemkesClinicalTermCS-OV000008"> </a></td><td>5–9 kg</td></tr><tr><td style="white-space:nowrap">OV000009<a name="KemkesClinicalTermCS-OV000009"> </a></td><td>7–11.5 kg</td></tr><tr><td style="white-space:nowrap">OV000010<a name="KemkesClinicalTermCS-OV000010"> </a></td><td>11.5–16 kg</td></tr><tr><td style="white-space:nowrap">OV000011<a name="KemkesClinicalTermCS-OV000011"> </a></td><td>12.5–18 kg</td></tr><tr><td style="white-space:nowrap">OV000012<a name="KemkesClinicalTermCS-OV000012"> </a></td><td>Dukun</td></tr><tr><td style="white-space:nowrap">OV000013<a name="KemkesClinicalTermCS-OV000013"> </a></td><td>Lebih dari Lima</td></tr><tr><td style="white-space:nowrap">OV000014<a name="KemkesClinicalTermCS-OV000014"> </a></td><td>Kurang dari 1 Jam</td></tr><tr><td style="white-space:nowrap">OV000015<a name="KemkesClinicalTermCS-OV000015"> </a></td><td>Lebih dari 1 Jam</td></tr><tr><td style="white-space:nowrap">OV000016<a name="KemkesClinicalTermCS-OV000016"> </a></td><td>Produksi ASI ada</td></tr><tr><td style="white-space:nowrap">OV000017<a name="KemkesClinicalTermCS-OV000017"> </a></td><td>Produksi ASI ada tapi sedikit</td></tr><tr><td style="white-space:nowrap">OV000018<a name="KemkesClinicalTermCS-OV000018"> </a></td><td>Produksi ASI tidak ada</td></tr><tr><td style="white-space:nowrap">OV000019<a name="KemkesClinicalTermCS-OV000019"> </a></td><td>Frekuensi his</td></tr><tr><td style="white-space:nowrap">OV000020<a name="KemkesClinicalTermCS-OV000020"> </a></td><td>Intensitas his</td></tr><tr><td style="white-space:nowrap">OV000021<a name="KemkesClinicalTermCS-OV000021"> </a></td><td>Durasi lama his</td></tr><tr><td style="white-space:nowrap">OV000022<a name="KemkesClinicalTermCS-OV000022"> </a></td><td>Interval his</td></tr><tr><td style="white-space:nowrap">OV000023<a name="KemkesClinicalTermCS-OV000023"> </a></td><td>Datangnya his</td></tr><tr><td style="white-space:nowrap">OV000024<a name="KemkesClinicalTermCS-OV000024"> </a></td><td>Lokia berbau normal</td></tr><tr><td style="white-space:nowrap">OV000025<a name="KemkesClinicalTermCS-OV000025"> </a></td><td>Lokia berbau amis/busuk</td></tr><tr><td style="white-space:nowrap">OV000026<a name="KemkesClinicalTermCS-OV000026"> </a></td><td>Laceration of perineum during delivery involving vaginal mucosa and perineal skin</td></tr><tr><td style="white-space:nowrap">OV000027<a name="KemkesClinicalTermCS-OV000027"> </a></td><td>Laceration of perineum during delivery involving perineum muscles</td></tr><tr><td style="white-space:nowrap">OV000028<a name="KemkesClinicalTermCS-OV000028"> </a></td><td>Laceration of perineum during delivery involving anal epithelium</td></tr><tr><td style="white-space:nowrap">OV000047<a name="KemkesClinicalTermCS-OV000047"> </a></td><td>Tidak ada maserasi</td></tr><tr><td style="white-space:nowrap">OV000048<a name="KemkesClinicalTermCS-OV000048"> </a></td><td>Maserasi Tingkat Satu</td></tr><tr><td style="white-space:nowrap">OV000049<a name="KemkesClinicalTermCS-OV000049"> </a></td><td>Maserasi Tingkat Dua</td></tr><tr><td style="white-space:nowrap">OV000050<a name="KemkesClinicalTermCS-OV000050"> </a></td><td>Maserasi Tingkat Tiga</td></tr><tr><td style="white-space:nowrap">OV000051<a name="KemkesClinicalTermCS-OV000051"> </a></td><td>Belum Tahu Ada Tidaknya Maserasi</td></tr><tr><td style="white-space:nowrap">OV000052<a name="KemkesClinicalTermCS-OV000052"> </a></td><td>Sesuai</td></tr><tr><td style="white-space:nowrap">OV000053<a name="KemkesClinicalTermCS-OV000053"> </a></td><td>Tidak Sesuai</td></tr><tr><td style="white-space:nowrap">OV000072<a name="KemkesClinicalTermCS-OV000072"> </a></td><td>Pasien dengan perawatan berkelanjutan atau panjang</td></tr><tr><td style="white-space:nowrap">OV000073<a name="KemkesClinicalTermCS-OV000073"> </a></td><td>Tidak masuk kriteria</td></tr><tr><td style="white-space:nowrap">OV000074<a name="KemkesClinicalTermCS-OV000074"> </a></td><td>Tidak ada Torus Palatinus</td></tr><tr><td style="white-space:nowrap">OV000075<a name="KemkesClinicalTermCS-OV000075"> </a></td><td>Torus Palatinus Kecil</td></tr><tr><td style="white-space:nowrap">OV000076<a name="KemkesClinicalTermCS-OV000076"> </a></td><td>Torus Palatinus Sedang</td></tr><tr><td style="white-space:nowrap">OV000077<a name="KemkesClinicalTermCS-OV000077"> </a></td><td>Torus Palatinus Besar</td></tr><tr><td style="white-space:nowrap">OV000078<a name="KemkesClinicalTermCS-OV000078"> </a></td><td>Multiple Torus Palatinus</td></tr><tr><td style="white-space:nowrap">OV000079<a name="KemkesClinicalTermCS-OV000079"> </a></td><td>Tidak ada Torus Mandibularis</td></tr><tr><td style="white-space:nowrap">OV000080<a name="KemkesClinicalTermCS-OV000080"> </a></td><td>Torus Mandibularis Sisi Kiri</td></tr><tr><td style="white-space:nowrap">OV000081<a name="KemkesClinicalTermCS-OV000081"> </a></td><td>Torus Mandibularis Sisi Kanan</td></tr><tr><td style="white-space:nowrap">OV000082<a name="KemkesClinicalTermCS-OV000082"> </a></td><td>Torus Mandibularis pada Kedua Sisi</td></tr><tr><td style="white-space:nowrap">OV000083<a name="KemkesClinicalTermCS-OV000083"> </a></td><td>Palatum Dalam</td></tr><tr><td style="white-space:nowrap">OV000084<a name="KemkesClinicalTermCS-OV000084"> </a></td><td>Palatum Sedang</td></tr><tr><td style="white-space:nowrap">OV000085<a name="KemkesClinicalTermCS-OV000085"> </a></td><td>Palatum Rendah</td></tr><tr><td style="white-space:nowrap">OV000086<a name="KemkesClinicalTermCS-OV000086"> </a></td><td>Tidak Ada Diastema</td></tr><tr><td style="white-space:nowrap">OV000087<a name="KemkesClinicalTermCS-OV000087"> </a></td><td>Ada Diastema</td></tr><tr><td style="white-space:nowrap">OV000088<a name="KemkesClinicalTermCS-OV000088"> </a></td><td>Tidak Ada Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OV000089<a name="KemkesClinicalTermCS-OV000089"> </a></td><td>Ada Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OV000090<a name="KemkesClinicalTermCS-OV000090"> </a></td><td>Gigi tidak ada/ tidak diketahui</td></tr><tr><td style="white-space:nowrap">OV000091<a name="KemkesClinicalTermCS-OV000091"> </a></td><td>Gigi Anomali</td></tr><tr><td style="white-space:nowrap">OV000092<a name="KemkesClinicalTermCS-OV000092"> </a></td><td>Gigi Non-Vital</td></tr><tr><td style="white-space:nowrap">OV000093<a name="KemkesClinicalTermCS-OV000093"> </a></td><td>Sisa Akar</td></tr><tr><td style="white-space:nowrap">OV000094<a name="KemkesClinicalTermCS-OV000094"> </a></td><td>Metal Bridge</td></tr><tr><td style="white-space:nowrap">OV000095<a name="KemkesClinicalTermCS-OV000095"> </a></td><td>Porcelain Bridge</td></tr><tr><td style="white-space:nowrap">OV000096<a name="KemkesClinicalTermCS-OV000096"> </a></td><td>Frame</td></tr><tr><td style="white-space:nowrap">OV000097<a name="KemkesClinicalTermCS-OV000097"> </a></td><td>Terdapat debris pada 1/3 permukaan servikal gigi atau dijumpai stain ekstrinsik</td></tr><tr><td style="white-space:nowrap">OV000098<a name="KemkesClinicalTermCS-OV000098"> </a></td><td>Terdapat debris pada 1/3 – 2/3 permukaan gigi</td></tr><tr><td style="white-space:nowrap">OV000099<a name="KemkesClinicalTermCS-OV000099"> </a></td><td>Terdapat debris pada &gt; 2/3 permukaan gigi</td></tr><tr><td style="white-space:nowrap">OV000100<a name="KemkesClinicalTermCS-OV000100"> </a></td><td>Terdapat kalkulus supragingiva pada 1/3 permukaan servikal gigi tanpa kalkulus subgingiva</td></tr><tr><td style="white-space:nowrap">OV000101<a name="KemkesClinicalTermCS-OV000101"> </a></td><td>Terdapat kalkulus supragingiva pada 1/3 – 2/3 permukaan gigi dan/atau terdapat kalkulus subgingiva berupa titik-titik yang tidak melingkari leher gigi</td></tr><tr><td style="white-space:nowrap">OV000102<a name="KemkesClinicalTermCS-OV000102"> </a></td><td>Terdapat kalkulus supragingiva pada &gt; 2/3 permukaan gigi dan/atau terdapat kalkulus subgingiva yang melingkari leher gigi</td></tr><tr><td style="white-space:nowrap">OV000112<a name="KemkesClinicalTermCS-OV000112"> </a></td><td>Diberikan ASI Eksklusif</td></tr><tr><td style="white-space:nowrap">OV000113<a name="KemkesClinicalTermCS-OV000113"> </a></td><td>Tidak Diberikan ASI Eksklusif</td></tr><tr><td style="white-space:nowrap">OV000124<a name="KemkesClinicalTermCS-OV000124"> </a></td><td>Bayi tidak mau mengisap</td></tr><tr><td style="white-space:nowrap">OV000125<a name="KemkesClinicalTermCS-OV000125"> </a></td><td>Suhu tubuh &gt;37,5°C</td></tr><tr><td style="white-space:nowrap">OV000126<a name="KemkesClinicalTermCS-OV000126"> </a></td><td>Suhu tubuh &lt;36,5°C</td></tr><tr><td style="white-space:nowrap">OV000127<a name="KemkesClinicalTermCS-OV000127"> </a></td><td>Bayi bergerak atas kemauan sendiri</td></tr><tr><td style="white-space:nowrap">OV000128<a name="KemkesClinicalTermCS-OV000128"> </a></td><td>Bayi bergerak hanya ketika dirangsang</td></tr><tr><td style="white-space:nowrap">OV000129<a name="KemkesClinicalTermCS-OV000129"> </a></td><td>Demam mungkin bukan dengue</td></tr><tr><td style="white-space:nowrap">OV000130<a name="KemkesClinicalTermCS-OV000130"> </a></td><td>Mata bernanah banyak</td></tr><tr><td style="white-space:nowrap">OV000131<a name="KemkesClinicalTermCS-OV000131"> </a></td><td>Mata bernanah sedikit</td></tr><tr><td style="white-space:nowrap">OV000132<a name="KemkesClinicalTermCS-OV000132"> </a></td><td>Pusar kemerahan</td></tr><tr><td style="white-space:nowrap">OV000133<a name="KemkesClinicalTermCS-OV000133"> </a></td><td>Perbedaan saturasi oksigen &gt;3%</td></tr><tr><td style="white-space:nowrap">OV000134<a name="KemkesClinicalTermCS-OV000134"> </a></td><td>Infeksi bakteri berat</td></tr><tr><td style="white-space:nowrap">OV000135<a name="KemkesClinicalTermCS-OV000135"> </a></td><td>Infeksi bakteri lokal</td></tr><tr><td style="white-space:nowrap">OV000136<a name="KemkesClinicalTermCS-OV000136"> </a></td><td>Mungkin bukan infeksi</td></tr><tr><td style="white-space:nowrap">OV000137<a name="KemkesClinicalTermCS-OV000137"> </a></td><td>Penyakit sangat berat</td></tr><tr><td style="white-space:nowrap">OV000138<a name="KemkesClinicalTermCS-OV000138"> </a></td><td>Normocephaly</td></tr><tr><td style="white-space:nowrap">OV000145<a name="KemkesClinicalTermCS-OV000145"> </a></td><td>Malaria positive</td></tr><tr><td style="white-space:nowrap">OV000146<a name="KemkesClinicalTermCS-OV000146"> </a></td><td>Malaria negative</td></tr><tr><td style="white-space:nowrap">OV000160<a name="KemkesClinicalTermCS-OV000160"> </a></td><td>Demam &lt;39°C</td></tr><tr><td style="white-space:nowrap">OV000161<a name="KemkesClinicalTermCS-OV000161"> </a></td><td>Demam ≥39°C</td></tr><tr><td style="white-space:nowrap">OV000163<a name="KemkesClinicalTermCS-OV000163"> </a></td><td>Kemerahan anggota tubuh</td></tr><tr><td style="white-space:nowrap">OV000166<a name="KemkesClinicalTermCS-OV000166"> </a></td><td>Persistent inconsolable screaming</td></tr><tr><td style="white-space:nowrap">OV000167<a name="KemkesClinicalTermCS-OV000167"> </a></td><td>Bayi tidak BAB 48 jam setelah lahir</td></tr><tr><td style="white-space:nowrap">OV000169<a name="KemkesClinicalTermCS-OV000169"> </a></td><td>Sendiri</td></tr><tr><td style="white-space:nowrap">OV000170<a name="KemkesClinicalTermCS-OV000170"> </a></td><td>Dukun</td></tr><tr><td style="white-space:nowrap">OV000171<a name="KemkesClinicalTermCS-OV000171"> </a></td><td>Rewel</td></tr><tr><td style="white-space:nowrap">OV000172<a name="KemkesClinicalTermCS-OV000172"> </a></td><td>Perdarahan lain</td></tr><tr><td style="white-space:nowrap">OV000173<a name="KemkesClinicalTermCS-OV000173"> </a></td><td>Perdarahan pada lokasi penyuntikan</td></tr><tr><td style="white-space:nowrap">OV000174<a name="KemkesClinicalTermCS-OV000174"> </a></td><td>Timbul kuning pada hari pertama (&lt;24 jam) setelah lahir</td></tr><tr><td style="white-space:nowrap">OV000175<a name="KemkesClinicalTermCS-OV000175"> </a></td><td>Timbul kuning pada umur &gt;24 jam sampai dengan umur 14 hari</td></tr><tr><td style="white-space:nowrap">OV000176<a name="KemkesClinicalTermCS-OV000176"> </a></td><td>Timbul kuning pada umur &gt;14 hari</td></tr><tr><td style="white-space:nowrap">OV000177<a name="KemkesClinicalTermCS-OV000177"> </a></td><td>Kuning sampai telapak tangan</td></tr><tr><td style="white-space:nowrap">OV000178<a name="KemkesClinicalTermCS-OV000178"> </a></td><td>Kuning sampai telapak kaki</td></tr><tr><td style="white-space:nowrap">OV000179<a name="KemkesClinicalTermCS-OV000179"> </a></td><td>Ikterus berat</td></tr><tr><td style="white-space:nowrap">OV000180<a name="KemkesClinicalTermCS-OV000180"> </a></td><td>Tidak ada ikterus</td></tr><tr><td style="white-space:nowrap">OV000181<a name="KemkesClinicalTermCS-OV000181"> </a></td><td>Cubitan kulit perut kembalinya sangat lambat</td></tr><tr><td style="white-space:nowrap">OV000182<a name="KemkesClinicalTermCS-OV000182"> </a></td><td>Cubitan kulit perut kembalinya lambat</td></tr><tr><td style="white-space:nowrap">OV000183<a name="KemkesClinicalTermCS-OV000183"> </a></td><td>Cubitan kulit perut kembali segera</td></tr><tr><td style="white-space:nowrap">OV000184<a name="KemkesClinicalTermCS-OV000184"> </a></td><td>Diare dehidrasi berat</td></tr><tr><td style="white-space:nowrap">OV000185<a name="KemkesClinicalTermCS-OV000185"> </a></td><td>Diare dehidrasi ringan/sedang</td></tr><tr><td style="white-space:nowrap">OV000186<a name="KemkesClinicalTermCS-OV000186"> </a></td><td>Diare tanpa dehidrasi</td></tr><tr><td style="white-space:nowrap">OV000187<a name="KemkesClinicalTermCS-OV000187"> </a></td><td>Terpajan HIV: mungkin infeksi HIV</td></tr><tr><td style="white-space:nowrap">OV000188<a name="KemkesClinicalTermCS-OV000188"> </a></td><td>Infeksi HIV tidak diketahui</td></tr><tr><td style="white-space:nowrap">OV000189<a name="KemkesClinicalTermCS-OV000189"> </a></td><td>Bukan infeksi HIV</td></tr><tr><td style="white-space:nowrap">OV000190<a name="KemkesClinicalTermCS-OV000190"> </a></td><td>&lt; 2 kg (umur &lt; 7 hari)</td></tr><tr><td style="white-space:nowrap">OV000191<a name="KemkesClinicalTermCS-OV000191"> </a></td><td>Rendah &lt; -2 SD</td></tr><tr><td style="white-space:nowrap">OV000192<a name="KemkesClinicalTermCS-OV000192"> </a></td><td>Tidak rendah ≥ -2 SD</td></tr><tr><td style="white-space:nowrap">OV000193<a name="KemkesClinicalTermCS-OV000193"> </a></td><td>Posisi menyusu bayi benar</td></tr><tr><td style="white-space:nowrap">OV000194<a name="KemkesClinicalTermCS-OV000194"> </a></td><td>Posisi menyusu bayi salah</td></tr><tr><td style="white-space:nowrap">OV000195<a name="KemkesClinicalTermCS-OV000195"> </a></td><td>Tidak melekat sama sekali</td></tr><tr><td style="white-space:nowrap">OV000196<a name="KemkesClinicalTermCS-OV000196"> </a></td><td>Tidak melekat dengan baik</td></tr><tr><td style="white-space:nowrap">OV000197<a name="KemkesClinicalTermCS-OV000197"> </a></td><td>Melekat dengan baik</td></tr><tr><td style="white-space:nowrap">OV000198<a name="KemkesClinicalTermCS-OV000198"> </a></td><td>Tidak mengisap sama sekali</td></tr><tr><td style="white-space:nowrap">OV000199<a name="KemkesClinicalTermCS-OV000199"> </a></td><td>Tidak mengisap dengan efektif</td></tr><tr><td style="white-space:nowrap">OV000200<a name="KemkesClinicalTermCS-OV000200"> </a></td><td>Mengisap dengan efektif</td></tr><tr><td style="white-space:nowrap">OV000201<a name="KemkesClinicalTermCS-OV000201"> </a></td><td>Berat badan sangat rendah menurut umur</td></tr><tr><td style="white-space:nowrap">OV000202<a name="KemkesClinicalTermCS-OV000202"> </a></td><td>Berat badan rendah menurut umur dan/atau masalah pemberian ASI</td></tr><tr><td style="white-space:nowrap">OV000203<a name="KemkesClinicalTermCS-OV000203"> </a></td><td>Berat badan tidak rendah menurut umur dan tidak ada masalah pemberian ASI</td></tr><tr><td style="white-space:nowrap">OV000204<a name="KemkesClinicalTermCS-OV000204"> </a></td><td>Berat badan rendah menurut umur dan/atau masalah pemberian minum</td></tr><tr><td style="white-space:nowrap">OV000205<a name="KemkesClinicalTermCS-OV000205"> </a></td><td>Berat badan tidak rendah menurut umur dan tidak ada masalah pemberian minum</td></tr><tr><td style="white-space:nowrap">OV000206<a name="KemkesClinicalTermCS-OV000206"> </a></td><td>Anak tidak bisa minum atau menyusu</td></tr><tr><td style="white-space:nowrap">OV000207<a name="KemkesClinicalTermCS-OV000207"> </a></td><td>Anak memuntahkan semua makanan dan minuman</td></tr><tr><td style="white-space:nowrap">OV000208<a name="KemkesClinicalTermCS-OV000208"> </a></td><td>Anak tidak dapat ditenangkan</td></tr><tr><td style="white-space:nowrap">OV000209<a name="KemkesClinicalTermCS-OV000209"> </a></td><td>Pandangan mata kosong</td></tr><tr><td style="white-space:nowrap">OV000210<a name="KemkesClinicalTermCS-OV000210"> </a></td><td>Mata tidak terbuka</td></tr><tr><td style="white-space:nowrap">OV000211<a name="KemkesClinicalTermCS-OV000211"> </a></td><td>Anak mencari posisi paling nyaman dan menolak berbaring</td></tr><tr><td style="white-space:nowrap">OV000212<a name="KemkesClinicalTermCS-OV000212"> </a></td><td>Anak malas minum</td></tr><tr><td style="white-space:nowrap">OV000213<a name="KemkesClinicalTermCS-OV000213"> </a></td><td>Anak minum dengan lahap</td></tr><tr><td style="white-space:nowrap">OV000214<a name="KemkesClinicalTermCS-OV000214"> </a></td><td>Diare dehidrasi berat</td></tr><tr><td style="white-space:nowrap">OV000215<a name="KemkesClinicalTermCS-OV000215"> </a></td><td>Diare dehidrasi ringan/sedang</td></tr><tr><td style="white-space:nowrap">OV000216<a name="KemkesClinicalTermCS-OV000216"> </a></td><td>Anak menangis melengking</td></tr><tr><td style="white-space:nowrap">OV000217<a name="KemkesClinicalTermCS-OV000217"> </a></td><td>Diare persisten berat</td></tr><tr><td style="white-space:nowrap">OV000218<a name="KemkesClinicalTermCS-OV000218"> </a></td><td>Diare persisten</td></tr><tr><td style="white-space:nowrap">OV000219<a name="KemkesClinicalTermCS-OV000219"> </a></td><td>Daerah endemis tinggi</td></tr><tr><td style="white-space:nowrap">OV000220<a name="KemkesClinicalTermCS-OV000220"> </a></td><td>Daerah endemis rendah</td></tr><tr><td style="white-space:nowrap">OV000221<a name="KemkesClinicalTermCS-OV000221"> </a></td><td>Daerah non endemis</td></tr><tr><td style="white-space:nowrap">OV000222<a name="KemkesClinicalTermCS-OV000222"> </a></td><td>Ada penyebab lain dari demam</td></tr><tr><td style="white-space:nowrap">OV000223<a name="KemkesClinicalTermCS-OV000223"> </a></td><td>Penyakit berat dengan demam</td></tr><tr><td style="white-space:nowrap">OV000224<a name="KemkesClinicalTermCS-OV000224"> </a></td><td>Demam mungkin bukan malaria</td></tr><tr><td style="white-space:nowrap">OV000225<a name="KemkesClinicalTermCS-OV000225"> </a></td><td>Penyakit berat dengan demam</td></tr><tr><td style="white-space:nowrap">OV000226<a name="KemkesClinicalTermCS-OV000226"> </a></td><td>Demam bukan malaria</td></tr><tr><td style="white-space:nowrap">OV000227<a name="KemkesClinicalTermCS-OV000227"> </a></td><td>Ada luka di mulut tidak dalam atau luas</td></tr><tr><td style="white-space:nowrap">OV000228<a name="KemkesClinicalTermCS-OV000228"> </a></td><td>Ada luka di mulut dalam atau luas</td></tr><tr><td style="white-space:nowrap">OV000229<a name="KemkesClinicalTermCS-OV000229"> </a></td><td>Campak dengan komplikasi berat</td></tr><tr><td style="white-space:nowrap">OV000230<a name="KemkesClinicalTermCS-OV000230"> </a></td><td>Campak dengan komplikasi pada mata</td></tr><tr><td style="white-space:nowrap">OV000231<a name="KemkesClinicalTermCS-OV000231"> </a></td><td>Campak dengan komplikasi pada mulut</td></tr><tr><td style="white-space:nowrap">OV000232<a name="KemkesClinicalTermCS-OV000232"> </a></td><td>Campak dengan komplikasi pada mata dan mulut</td></tr><tr><td style="white-space:nowrap">OV000233<a name="KemkesClinicalTermCS-OV000233"> </a></td><td>Kaki/ tangan tampak pucat</td></tr><tr><td style="white-space:nowrap">OV000234<a name="KemkesClinicalTermCS-OV000234"> </a></td><td>Waktu pengisian kapiler &gt;2 detik</td></tr><tr><td style="white-space:nowrap">OV000235<a name="KemkesClinicalTermCS-OV000235"> </a></td><td>Nyeri tekan perut kanan atas</td></tr><tr><td style="white-space:nowrap">OV000236<a name="KemkesClinicalTermCS-OV000236"> </a></td><td>Ada pembesaran hepar &gt;2 cm</td></tr><tr><td style="white-space:nowrap">OV000241<a name="KemkesClinicalTermCS-OV000241"> </a></td><td>Infeksi telinga akut</td></tr><tr><td style="white-space:nowrap">OV000242<a name="KemkesClinicalTermCS-OV000242"> </a></td><td>Tidak ada infeksi telinga</td></tr><tr><td style="white-space:nowrap">OV000243<a name="KemkesClinicalTermCS-OV000243"> </a></td><td>BB/PB (TB): &lt;-3 SD</td></tr><tr><td style="white-space:nowrap">OV000244<a name="KemkesClinicalTermCS-OV000244"> </a></td><td>BB/PB (TB): -3 SD - &lt; -2 SD</td></tr><tr><td style="white-space:nowrap">OV000245<a name="KemkesClinicalTermCS-OV000245"> </a></td><td>BB/PB (TB): -2 SD - 1 SD</td></tr><tr><td style="white-space:nowrap">OV000246<a name="KemkesClinicalTermCS-OV000246"> </a></td><td>BB/PB (TB): &gt; 1 SD - 2 SD</td></tr><tr><td style="white-space:nowrap">OV000247<a name="KemkesClinicalTermCS-OV000247"> </a></td><td>BB/PB (TB): &gt; 2 SD - 3 SD</td></tr><tr><td style="white-space:nowrap">OV000248<a name="KemkesClinicalTermCS-OV000248"> </a></td><td>BB/PB (TB): &gt; 3 SD</td></tr><tr><td style="white-space:nowrap">OV000249<a name="KemkesClinicalTermCS-OV000249"> </a></td><td>LiLA &lt; 11,5 cm</td></tr><tr><td style="white-space:nowrap">OV000250<a name="KemkesClinicalTermCS-OV000250"> </a></td><td>LiLA 11,5 cm - 12,5 cm</td></tr><tr><td style="white-space:nowrap">OV000251<a name="KemkesClinicalTermCS-OV000251"> </a></td><td>LiLA ≥ 12,5 cm</td></tr><tr><td style="white-space:nowrap">OV000252<a name="KemkesClinicalTermCS-OV000252"> </a></td><td>Ada tanda-tanda komplikasi medis</td></tr><tr><td style="white-space:nowrap">OV000253<a name="KemkesClinicalTermCS-OV000253"> </a></td><td>Terlalu lemah untuk menyusu</td></tr><tr><td style="white-space:nowrap">OV000254<a name="KemkesClinicalTermCS-OV000254"> </a></td><td>Gizi buruk dengan komplikasi berat</td></tr><tr><td style="white-space:nowrap">OV000255<a name="KemkesClinicalTermCS-OV000255"> </a></td><td>Gizi buruk tanpa komplikasi</td></tr><tr><td style="white-space:nowrap">OV000258<a name="KemkesClinicalTermCS-OV000258"> </a></td><td>Risiko Gizi Lebih</td></tr><tr><td style="white-space:nowrap">OV000265<a name="KemkesClinicalTermCS-OV000265"> </a></td><td>Sangat pendek</td></tr><tr><td style="white-space:nowrap">OV000266<a name="KemkesClinicalTermCS-OV000266"> </a></td><td>Pendek</td></tr><tr><td style="white-space:nowrap">OV000272<a name="KemkesClinicalTermCS-OV000272"> </a></td><td>Anemia berat</td></tr><tr><td style="white-space:nowrap">OV000273<a name="KemkesClinicalTermCS-OV000273"> </a></td><td>Demam tinggi terus menerus</td></tr><tr><td style="white-space:nowrap">OV000274<a name="KemkesClinicalTermCS-OV000274"> </a></td><td>Badan teraba dingin</td></tr><tr><td style="white-space:nowrap">OV000275<a name="KemkesClinicalTermCS-OV000275"> </a></td><td>Muntah terus menerus</td></tr><tr><td style="white-space:nowrap">OV000276<a name="KemkesClinicalTermCS-OV000276"> </a></td><td>BAK terakhir ≥6 jam</td></tr><tr><td style="white-space:nowrap">OV000277<a name="KemkesClinicalTermCS-OV000277"> </a></td><td>BAK terakhir &lt;6 jam</td></tr><tr><td style="white-space:nowrap">OV000278<a name="KemkesClinicalTermCS-OV000278"> </a></td><td>Ada rasa penuh di telinga</td></tr><tr><td style="white-space:nowrap">OV000279<a name="KemkesClinicalTermCS-OV000279"> </a></td><td>Influenza A virus unsubtype</td></tr><tr><td style="white-space:nowrap">OV000280<a name="KemkesClinicalTermCS-OV000280"> </a></td><td>Influenza B virus lineage not determined</td></tr><tr><td style="white-space:nowrap">OV000281<a name="KemkesClinicalTermCS-OV000281"> </a></td><td>Ada kotoran keluar pada lubang tidak normal di sekitar anus</td></tr><tr><td style="white-space:nowrap">OV000282<a name="KemkesClinicalTermCS-OV000282"> </a></td><td>Pusar kemerahan meluas sampai dinding perut &gt;1 cm</td></tr><tr><td style="white-space:nowrap">OV000283<a name="KemkesClinicalTermCS-OV000283"> </a></td><td>Imunisasi lengkap</td></tr><tr><td style="white-space:nowrap">OV000285<a name="KemkesClinicalTermCS-OV000285"> </a></td><td>Penyandang immunocompromised sedang-berat (orang yang mengalami gangguan sistem imun)</td></tr><tr><td style="white-space:nowrap">OV000286<a name="KemkesClinicalTermCS-OV000286"> </a></td><td>Dewasa dengan komorbid</td></tr><tr><td style="white-space:nowrap">OV000287<a name="KemkesClinicalTermCS-OV000287"> </a></td><td>Pneumonia berat</td></tr><tr><td style="white-space:nowrap">OV000288<a name="KemkesClinicalTermCS-OV000288"> </a></td><td>Batuk bukan pneumonia</td></tr><tr><td style="white-space:nowrap">OV000289<a name="KemkesClinicalTermCS-OV000289"> </a></td><td>Infeksi telinga kronis</td></tr><tr><td style="white-space:nowrap">OV000290<a name="KemkesClinicalTermCS-OV000290"> </a></td><td>Ada nanah/ lendir</td></tr><tr><td style="white-space:nowrap">OV000291<a name="KemkesClinicalTermCS-OV000291"> </a></td><td>Ada bercak darah</td></tr><tr><td style="white-space:nowrap">OV000292<a name="KemkesClinicalTermCS-OV000292"> </a></td><td>Ada air liur</td></tr><tr><td style="white-space:nowrap">OV000294<a name="KemkesClinicalTermCS-OV000294"> </a></td><td>Masalah asupan yang tidak adekuat</td></tr><tr><td style="white-space:nowrap">OV000295<a name="KemkesClinicalTermCS-OV000295"> </a></td><td>Masalah absorpsi</td></tr><tr><td style="white-space:nowrap">OV000296<a name="KemkesClinicalTermCS-OV000296"> </a></td><td>Masalah peningkatan kebutuhan kalori</td></tr><tr><td style="white-space:nowrap">OV000297<a name="KemkesClinicalTermCS-OV000297"> </a></td><td>Demam &gt; 38,5 C</td></tr><tr><td style="white-space:nowrap">OV000298<a name="KemkesClinicalTermCS-OV000298"> </a></td><td>Risiko malnutrisi rendah</td></tr><tr><td style="white-space:nowrap">OV000299<a name="KemkesClinicalTermCS-OV000299"> </a></td><td>Risiko malnutrisi sedang</td></tr><tr><td style="white-space:nowrap">OV000300<a name="KemkesClinicalTermCS-OV000300"> </a></td><td>Risiko malnutrisi tinggi</td></tr><tr><td style="white-space:nowrap">OV000301<a name="KemkesClinicalTermCS-OV000301"> </a></td><td>Memiliki diagnosis kanker &gt;5 tahun yang lalu</td></tr><tr><td style="white-space:nowrap">OV000302<a name="KemkesClinicalTermCS-OV000302"> </a></td><td>Memiliki diagnosis kanker &lt;5 tahun yang lalu</td></tr><tr><td style="white-space:nowrap">OV000303<a name="KemkesClinicalTermCS-OV000303"> </a></td><td>Tidak pernah didiagnosis menderita kanker</td></tr><tr><td style="white-space:nowrap">OV000304<a name="KemkesClinicalTermCS-OV000304"> </a></td><td>Curiga Serumen</td></tr><tr><td style="white-space:nowrap">OV000305<a name="KemkesClinicalTermCS-OV000305"> </a></td><td>Naik adekuat</td></tr><tr><td style="white-space:nowrap">OV000306<a name="KemkesClinicalTermCS-OV000306"> </a></td><td>Tidak Adekuat</td></tr><tr><td style="white-space:nowrap">OV000307<a name="KemkesClinicalTermCS-OV000307"> </a></td><td>Formula 75</td></tr><tr><td style="white-space:nowrap">OV000308<a name="KemkesClinicalTermCS-OV000308"> </a></td><td>Formula 100</td></tr><tr><td style="white-space:nowrap">OV000309<a name="KemkesClinicalTermCS-OV000309"> </a></td><td>ReSoMal (Rehydration Solution for Malnutrition)</td></tr><tr><td style="white-space:nowrap">OV000310<a name="KemkesClinicalTermCS-OV000310"> </a></td><td>1 kapsul biru</td></tr><tr><td style="white-space:nowrap">OV000311<a name="KemkesClinicalTermCS-OV000311"> </a></td><td>1/2 kapsul biru</td></tr><tr><td style="white-space:nowrap">OV000314<a name="KemkesClinicalTermCS-OV000314"> </a></td><td>Curiga OMSK (otitis media supuratif kronik)</td></tr><tr><td style="white-space:nowrap">OV000316<a name="KemkesClinicalTermCS-OV000316"> </a></td><td>Dilakukan monitoring penyakit penyerta/ penyulit</td></tr><tr><td style="white-space:nowrap">OV000318<a name="KemkesClinicalTermCS-OV000318"> </a></td><td>Dilakukan stimulasi tumbuh kembang</td></tr><tr><td style="white-space:nowrap">OV000319<a name="KemkesClinicalTermCS-OV000319"> </a></td><td>Sekolah</td></tr><tr><td style="white-space:nowrap">OV000320<a name="KemkesClinicalTermCS-OV000320"> </a></td><td>Tidak sekolah</td></tr><tr><td style="white-space:nowrap">OV000321<a name="KemkesClinicalTermCS-OV000321"> </a></td><td>Sangat pucat</td></tr><tr><td style="white-space:nowrap">OV000322<a name="KemkesClinicalTermCS-OV000322"> </a></td><td>Tidak pucat</td></tr><tr><td style="white-space:nowrap">OV000323<a name="KemkesClinicalTermCS-OV000323"> </a></td><td>Susunan gigi depan tidak teratur</td></tr><tr><td style="white-space:nowrap">OV000324<a name="KemkesClinicalTermCS-OV000324"> </a></td><td>Gigi berlubang</td></tr><tr><td style="white-space:nowrap">OV000325<a name="KemkesClinicalTermCS-OV000325"> </a></td><td>Pelayan Publik</td></tr><tr><td style="white-space:nowrap">OV000326<a name="KemkesClinicalTermCS-OV000326"> </a></td><td>Diplomat</td></tr><tr><td style="white-space:nowrap">OV000327<a name="KemkesClinicalTermCS-OV000327"> </a></td><td>Gotong Royong</td></tr><tr><td style="white-space:nowrap">OV000328<a name="KemkesClinicalTermCS-OV000328"> </a></td><td>BUMD</td></tr><tr><td style="white-space:nowrap">OV000329<a name="KemkesClinicalTermCS-OV000329"> </a></td><td>BUMN</td></tr><tr><td style="white-space:nowrap">OV000330<a name="KemkesClinicalTermCS-OV000330"> </a></td><td>Disabilitas Lainnya</td></tr><tr><td style="white-space:nowrap">OV000331<a name="KemkesClinicalTermCS-OV000331"> </a></td><td>Disabilitas Mental</td></tr><tr><td style="white-space:nowrap">OV000332<a name="KemkesClinicalTermCS-OV000332"> </a></td><td>Ibu Menyusui</td></tr><tr><td style="white-space:nowrap">OV000333<a name="KemkesClinicalTermCS-OV000333"> </a></td><td>Masyarakat Lainnya</td></tr><tr><td style="white-space:nowrap">OV000334<a name="KemkesClinicalTermCS-OV000334"> </a></td><td>Masyarakat Umum</td></tr><tr><td style="white-space:nowrap">OV000335<a name="KemkesClinicalTermCS-OV000335"> </a></td><td>Pariwisata</td></tr><tr><td style="white-space:nowrap">OV000336<a name="KemkesClinicalTermCS-OV000336"> </a></td><td>Pedagang Pasar</td></tr><tr><td style="white-space:nowrap">OV000337<a name="KemkesClinicalTermCS-OV000337"> </a></td><td>Pegawai Pemerintah</td></tr><tr><td style="white-space:nowrap">OV000338<a name="KemkesClinicalTermCS-OV000338"> </a></td><td>Pejabat Negara</td></tr><tr><td style="white-space:nowrap">OV000339<a name="KemkesClinicalTermCS-OV000339"> </a></td><td>Pelayan Publik</td></tr><tr><td style="white-space:nowrap">OV000340<a name="KemkesClinicalTermCS-OV000340"> </a></td><td>Pendamping Disabilitas</td></tr><tr><td style="white-space:nowrap">OV000341<a name="KemkesClinicalTermCS-OV000341"> </a></td><td>Pendidik</td></tr><tr><td style="white-space:nowrap">OV000342<a name="KemkesClinicalTermCS-OV000342"> </a></td><td>Penyuluh Agama</td></tr><tr><td style="white-space:nowrap">OV000343<a name="KemkesClinicalTermCS-OV000343"> </a></td><td>Pra-Lansia</td></tr><tr><td style="white-space:nowrap">OV000344<a name="KemkesClinicalTermCS-OV000344"> </a></td><td>Transportasi Publik</td></tr><tr><td style="white-space:nowrap">OV000345<a name="KemkesClinicalTermCS-OV000345"> </a></td><td>Wakil Rakyat</td></tr><tr><td style="white-space:nowrap">OV000346<a name="KemkesClinicalTermCS-OV000346"> </a></td><td>WNA(PNA/OI)</td></tr><tr><td style="white-space:nowrap">OV000349<a name="KemkesClinicalTermCS-OV000349"> </a></td><td>Suara nafas vesikular meningkat</td></tr><tr><td style="white-space:nowrap">OV000350<a name="KemkesClinicalTermCS-OV000350"> </a></td><td>Suara nafas vesikular melemah</td></tr><tr><td style="white-space:nowrap">OV000351<a name="KemkesClinicalTermCS-OV000351"> </a></td><td>Positif (HPV tipe onkogenik lain)</td></tr><tr><td style="white-space:nowrap">OV000352<a name="KemkesClinicalTermCS-OV000352"> </a></td><td>Positif (HPV tipe 16/18/52)</td></tr><tr><td style="white-space:nowrap">OV000354<a name="KemkesClinicalTermCS-OV000354"> </a></td><td>Tidak ada keluarga yang terdiagnosis kanker</td></tr><tr><td style="white-space:nowrap">OV000355<a name="KemkesClinicalTermCS-OV000355"> </a></td><td>Kelopak mata bawah dalam pucat</td></tr><tr><td style="white-space:nowrap">OV000356<a name="KemkesClinicalTermCS-OV000356"> </a></td><td>Bibir tampak pucat</td></tr><tr><td style="white-space:nowrap">OV000357<a name="KemkesClinicalTermCS-OV000357"> </a></td><td>Telapak tangan tampak pucat</td></tr><tr><td style="white-space:nowrap">OV000358<a name="KemkesClinicalTermCS-OV000358"> </a></td><td>Disabilitas netra</td></tr><tr><td style="white-space:nowrap">OV000359<a name="KemkesClinicalTermCS-OV000359"> </a></td><td>Disabilitas rungu</td></tr><tr><td style="white-space:nowrap">OV000360<a name="KemkesClinicalTermCS-OV000360"> </a></td><td>Disabilitas wicara</td></tr><tr><td style="white-space:nowrap">OV000361<a name="KemkesClinicalTermCS-OV000361"> </a></td><td>Akibat stroke</td></tr><tr><td style="white-space:nowrap">OV000362<a name="KemkesClinicalTermCS-OV000362"> </a></td><td>Akibat kusta</td></tr><tr><td style="white-space:nowrap">OV000363<a name="KemkesClinicalTermCS-OV000363"> </a></td><td>Disabilitas grahita</td></tr><tr><td style="white-space:nowrap">OV000364<a name="KemkesClinicalTermCS-OV000364"> </a></td><td>Heartline Pusat Jantung Nasional Harapan Kita (PJNHK)</td></tr><tr><td style="white-space:nowrap">OV000365<a name="KemkesClinicalTermCS-OV000365"> </a></td><td>Tanpa konfirmasi</td></tr><tr><td style="white-space:nowrap">OV000366<a name="KemkesClinicalTermCS-OV000366"> </a></td><td>Tidak dilakukan reperfusi</td></tr><tr><td style="white-space:nowrap">OV000367<a name="KemkesClinicalTermCS-OV000367"> </a></td><td>Subkorteks</td></tr><tr><td style="white-space:nowrap">OV000368<a name="KemkesClinicalTermCS-OV000368"> </a></td><td>LBBB baru</td></tr><tr><td style="white-space:nowrap">OV000369<a name="KemkesClinicalTermCS-OV000369"> </a></td><td>Tidak ada perubahan akut</td></tr><tr><td style="white-space:nowrap">OV000370<a name="KemkesClinicalTermCS-OV000370"> </a></td><td>ST elevasi tidak dapat ditentukan</td></tr><tr><td style="white-space:nowrap">OV000371<a name="KemkesClinicalTermCS-OV000371"> </a></td><td>Terjadi Multiple Perdarahan</td></tr><tr><td style="white-space:nowrap">OV000372<a name="KemkesClinicalTermCS-OV000372"> </a></td><td>Tidak Terjadi Multiple Perdarahan</td></tr><tr><td style="white-space:nowrap">OV000373<a name="KemkesClinicalTermCS-OV000373"> </a></td><td>Tidak ada tanda klinis gagal jantung</td></tr><tr><td style="white-space:nowrap">OV000374<a name="KemkesClinicalTermCS-OV000374"> </a></td><td>Tidak dapat diaplikasikan / tidak tersedia</td></tr><tr><td style="white-space:nowrap">OV000375<a name="KemkesClinicalTermCS-OV000375"> </a></td><td>Respon iskemia positif</td></tr><tr><td style="white-space:nowrap">OV000376<a name="KemkesClinicalTermCS-OV000376"> </a></td><td>Respon iskemia negatif</td></tr><tr><td style="white-space:nowrap">OV000377<a name="KemkesClinicalTermCS-OV000377"> </a></td><td>&lt;5%</td></tr><tr><td style="white-space:nowrap">OV000378<a name="KemkesClinicalTermCS-OV000378"> </a></td><td>5% to &lt; 10%</td></tr><tr><td style="white-space:nowrap">OV000379<a name="KemkesClinicalTermCS-OV000379"> </a></td><td>10% to &lt; 20%</td></tr><tr><td style="white-space:nowrap">OV000380<a name="KemkesClinicalTermCS-OV000380"> </a></td><td>20% to &lt; 30%</td></tr><tr><td style="white-space:nowrap">OV000381<a name="KemkesClinicalTermCS-OV000381"> </a></td><td>&gt;= 30%</td></tr><tr><td style="white-space:nowrap">OV000388<a name="KemkesClinicalTermCS-OV000388"> </a></td><td>Penurunan berat badan ≤5%</td></tr><tr><td style="white-space:nowrap">OV000389<a name="KemkesClinicalTermCS-OV000389"> </a></td><td>Penurunan berat badan &gt;5 - 10%</td></tr><tr><td style="white-space:nowrap">OV000390<a name="KemkesClinicalTermCS-OV000390"> </a></td><td>Penurunan berat badan &gt;10 - 20%</td></tr><tr><td style="white-space:nowrap">OV000391<a name="KemkesClinicalTermCS-OV000391"> </a></td><td>Penurunan berat badan &gt; 20%</td></tr><tr><td style="white-space:nowrap">OV000401<a name="KemkesClinicalTermCS-OV000401"> </a></td><td>Benzatin Penicillin G (BPG) intramuskular</td></tr><tr><td style="white-space:nowrap">OV000402<a name="KemkesClinicalTermCS-OV000402"> </a></td><td>Penicillin oral</td></tr><tr><td style="white-space:nowrap">OV000403<a name="KemkesClinicalTermCS-OV000403"> </a></td><td>Erythromycin oral</td></tr><tr><td style="white-space:nowrap">OV000404<a name="KemkesClinicalTermCS-OV000404"> </a></td><td>Tidak sama sekali</td></tr><tr><td style="white-space:nowrap">OV000405<a name="KemkesClinicalTermCS-OV000405"> </a></td><td>Iya dan tidak teratur</td></tr><tr><td style="white-space:nowrap">OV000406<a name="KemkesClinicalTermCS-OV000406"> </a></td><td>Iya dan teratur</td></tr><tr><td style="white-space:nowrap">OV000407<a name="KemkesClinicalTermCS-OV000407"> </a></td><td>Statin Intensitas Tinggi</td></tr><tr><td style="white-space:nowrap">OV000408<a name="KemkesClinicalTermCS-OV000408"> </a></td><td>Statin Intensitas Sedang</td></tr><tr><td style="white-space:nowrap">OV000409<a name="KemkesClinicalTermCS-OV000409"> </a></td><td>Statin Intensitas Rendah</td></tr><tr><td style="white-space:nowrap">OV000410<a name="KemkesClinicalTermCS-OV000410"> </a></td><td>Grade 0</td></tr><tr><td style="white-space:nowrap">OV000411<a name="KemkesClinicalTermCS-OV000411"> </a></td><td>Grade 2a</td></tr><tr><td style="white-space:nowrap">OV000412<a name="KemkesClinicalTermCS-OV000412"> </a></td><td>Grade 2b</td></tr><tr><td style="white-space:nowrap">PC000001<a name="KemkesClinicalTermCS-PC000001"> </a></td><td>Perawatan Tali Pusat </td></tr><tr><td style="white-space:nowrap">PC000002<a name="KemkesClinicalTermCS-PC000002"> </a></td><td>Pemberian Salep Antibiotik Mata</td></tr><tr><td style="white-space:nowrap">PC000003<a name="KemkesClinicalTermCS-PC000003"> </a></td><td>Manajemen Terpadu Bayi Muda (MTBM)</td></tr><tr><td style="white-space:nowrap">PC000004<a name="KemkesClinicalTermCS-PC000004"> </a></td><td>KB Pasca Persalinan</td></tr><tr><td style="white-space:nowrap">PC000012<a name="KemkesClinicalTermCS-PC000012"> </a></td><td>Terapi tidak diketahui</td></tr><tr><td style="white-space:nowrap">PC000013<a name="KemkesClinicalTermCS-PC000013"> </a></td><td>Riwayat tes HIV ibu</td></tr><tr><td style="white-space:nowrap">PC000014<a name="KemkesClinicalTermCS-PC000014"> </a></td><td>Riwayat tes HIV anak</td></tr><tr><td style="white-space:nowrap">PC000015<a name="KemkesClinicalTermCS-PC000015"> </a></td><td>Point of Care Testing HB Meter</td></tr><tr><td style="white-space:nowrap">PC000016<a name="KemkesClinicalTermCS-PC000016"> </a></td><td>Riwayat transfusi darah ibu</td></tr><tr><td style="white-space:nowrap">PR000001<a name="KemkesClinicalTermCS-PR000001"> </a></td><td>Prognosis baik</td></tr><tr><td style="white-space:nowrap">PR000002<a name="KemkesClinicalTermCS-PR000002"> </a></td><td>Prognosis dubia et bonam / cenderung baik</td></tr><tr><td style="white-space:nowrap">PR000003<a name="KemkesClinicalTermCS-PR000003"> </a></td><td>Prognosis dubia et malam / cenderung tidak baik</td></tr><tr><td style="white-space:nowrap">PR000004<a name="KemkesClinicalTermCS-PR000004"> </a></td><td>Prognosis tidak baik</td></tr><tr><td style="white-space:nowrap">QRI000001<a name="KemkesClinicalTermCS-QRI000001"> </a></td><td>Terduga TBC SO</td></tr><tr><td style="white-space:nowrap">QRI000002<a name="KemkesClinicalTermCS-QRI000002"> </a></td><td>Terduga TBC RO</td></tr><tr><td style="white-space:nowrap">QRI000003<a name="KemkesClinicalTermCS-QRI000003"> </a></td><td>Ada</td></tr><tr><td style="white-space:nowrap">QRI000004<a name="KemkesClinicalTermCS-QRI000004"> </a></td><td>Tidak ada</td></tr><tr><td style="white-space:nowrap">QRI000005<a name="KemkesClinicalTermCS-QRI000005"> </a></td><td>Sereal, akar, dan umbi</td></tr><tr><td style="white-space:nowrap">QRI000007<a name="KemkesClinicalTermCS-QRI000007"> </a></td><td>Susu dan produk olahannya</td></tr><tr><td style="white-space:nowrap">QRI000008<a name="KemkesClinicalTermCS-QRI000008"> </a></td><td>Daging dan/atau ikan</td></tr><tr><td style="white-space:nowrap">QRI000010<a name="KemkesClinicalTermCS-QRI000010"> </a></td><td>Buah dan sayur sumber vitamin A</td></tr><tr><td style="white-space:nowrap">QRI000011<a name="KemkesClinicalTermCS-QRI000011"> </a></td><td>Buah dan sayur lainnya</td></tr><tr><td style="white-space:nowrap">QRI000012<a name="KemkesClinicalTermCS-QRI000012"> </a></td><td>Kehamilan KEK</td></tr><tr><td style="white-space:nowrap">QRI000013<a name="KemkesClinicalTermCS-QRI000013"> </a></td><td>Kehamilan Non KEK</td></tr><tr><td style="white-space:nowrap">QRI000014<a name="KemkesClinicalTermCS-QRI000014"> </a></td><td>Tidak</td></tr><tr><td style="white-space:nowrap">QRI000015<a name="KemkesClinicalTermCS-QRI000015"> </a></td><td>Ya, tidak setiap hari</td></tr><tr><td style="white-space:nowrap">QRI000016<a name="KemkesClinicalTermCS-QRI000016"> </a></td><td>Ya, setiap hari</td></tr><tr><td style="white-space:nowrap">QRI000017<a name="KemkesClinicalTermCS-QRI000017"> </a></td><td>Memiliki tempat kerja mengandung zat karsinogenik</td></tr><tr><td style="white-space:nowrap">QRI000018<a name="KemkesClinicalTermCS-QRI000018"> </a></td><td>Tidak yakin memiliki tempat kerja mengandung zat karsinogenik</td></tr><tr><td style="white-space:nowrap">QRI000019<a name="KemkesClinicalTermCS-QRI000019"> </a></td><td>Tidak memiliki tempat kerja mengandung zat karsinogenik</td></tr><tr><td style="white-space:nowrap">QRI000020<a name="KemkesClinicalTermCS-QRI000020"> </a></td><td>Memiliki riwayat keluarga kanker kolorektal generasi pertama</td></tr><tr><td style="white-space:nowrap">QRI000021<a name="KemkesClinicalTermCS-QRI000021"> </a></td><td>Tidak memiliki riwayat keluarga kanker kolorektal generasi pertama</td></tr><tr><td style="white-space:nowrap">QRI000022<a name="KemkesClinicalTermCS-QRI000022"> </a></td><td>Perokok aktif (dalam 1 tahun ini masih merokok)</td></tr><tr><td style="white-space:nowrap">QRI000023<a name="KemkesClinicalTermCS-QRI000023"> </a></td><td>Perokok/bekas perokok berhenti &lt;10 tahun lalu</td></tr><tr><td style="white-space:nowrap">QRI000024<a name="KemkesClinicalTermCS-QRI000024"> </a></td><td>Memiliki tempat tinggal berpotensi tinggi</td></tr><tr><td style="white-space:nowrap">QRI000025<a name="KemkesClinicalTermCS-QRI000025"> </a></td><td>Tidak yakin memiliki tempat tinggal berpotensi tinggi</td></tr><tr><td style="white-space:nowrap">QRI000026<a name="KemkesClinicalTermCS-QRI000026"> </a></td><td>Tidak memiliki tempat tinggal berpotensi tinggi</td></tr><tr><td style="white-space:nowrap">QRI000027<a name="KemkesClinicalTermCS-QRI000027"> </a></td><td>Memiliki lingkungan dalam rumah yang tidak sehat</td></tr><tr><td style="white-space:nowrap">QRI000029<a name="KemkesClinicalTermCS-QRI000029"> </a></td><td>Memiliki lingkungan dalam rumah yang sehat</td></tr><tr><td style="white-space:nowrap">QRI000032<a name="KemkesClinicalTermCS-QRI000032"> </a></td><td>Memiliki diagnosis kanker &gt;5 tahun yang lalu</td></tr><tr><td style="white-space:nowrap">QRI000033<a name="KemkesClinicalTermCS-QRI000033"> </a></td><td>Memiliki diagnosis kanker &lt;5 tahun yang lalu</td></tr><tr><td style="white-space:nowrap">QRI000034<a name="KemkesClinicalTermCS-QRI000034"> </a></td><td>Tidak pernah didiagnosis menderita kanker</td></tr><tr><td style="white-space:nowrap">QRI000035<a name="KemkesClinicalTermCS-QRI000035"> </a></td><td>Memiliki keluarga yang terdiagnosis kanker lain</td></tr><tr><td style="white-space:nowrap">QRI000036<a name="KemkesClinicalTermCS-QRI000036"> </a></td><td>Tidak ada keluarga yang terdiagnosis kanker</td></tr><tr><td style="white-space:nowrap">QRI000037<a name="KemkesClinicalTermCS-QRI000037"> </a></td><td>Pre Hospitalization</td></tr><tr><td style="white-space:nowrap">QRI000039<a name="KemkesClinicalTermCS-QRI000039"> </a></td><td>Kamar Penuh</td></tr><tr><td style="white-space:nowrap">QRI000040<a name="KemkesClinicalTermCS-QRI000040"> </a></td><td>Kamar Tidak Tersedia</td></tr><tr><td style="white-space:nowrap">QRI000041<a name="KemkesClinicalTermCS-QRI000041"> </a></td><td>Atas Permintaan Sendiri (APS)</td></tr><tr><td style="white-space:nowrap">QRI000042<a name="KemkesClinicalTermCS-QRI000042"> </a></td><td>Post Hospitalization</td></tr><tr><td style="white-space:nowrap">QRII000001<a name="KemkesClinicalTermCS-QRII000001"> </a></td><td>Penyandang immunocompromised (12 - &lt;60 tahun)</td></tr><tr><td style="white-space:nowrap">QRII000002<a name="KemkesClinicalTermCS-QRII000002"> </a></td><td>Kanker aktif (pengobatan imunosupresif aktif untuk tumor atau keganasan hematologi (termasuk leukemia, limfoma, dan mieloma), atau dalam waktu 12 bulan setelah mengakhiri pengobatan)</td></tr><tr><td style="white-space:nowrap">QRII000003<a name="KemkesClinicalTermCS-QRII000003"> </a></td><td>Pasien yang mengalami imunodefisiensi dan secara aktif mendapatkan obat imunosupresan</td></tr><tr><td style="white-space:nowrap">QRII000004<a name="KemkesClinicalTermCS-QRII000004"> </a></td><td>ODHA dengan CD4 &lt;200 sel/μl dengan salah satu/lebih kondisi berikut: infeksi oportunistik, tidak sedang menjalani pengobatan HIV, atau viral load yang terdeteksi</td></tr><tr><td style="white-space:nowrap">QRII000005<a name="KemkesClinicalTermCS-QRII000005"> </a></td><td>Tidak Diketahui Mendapat Obat</td></tr><tr><td style="white-space:nowrap">QRII000006<a name="KemkesClinicalTermCS-QRII000006"> </a></td><td>Mendapat Obat Statin Intensitas Tinggi</td></tr><tr><td style="white-space:nowrap">QRII000007<a name="KemkesClinicalTermCS-QRII000007"> </a></td><td>Mendapat Obat Statin Intensitas Moderate</td></tr><tr><td style="white-space:nowrap">QRII000008<a name="KemkesClinicalTermCS-QRII000008"> </a></td><td>Mendapat Obat Statin Intensitas Rendah</td></tr><tr><td style="white-space:nowrap">QRII000009<a name="KemkesClinicalTermCS-QRII000009"> </a></td><td>Optimal Medical Therapy (OMT)</td></tr><tr><td style="white-space:nowrap">QRII000010<a name="KemkesClinicalTermCS-QRII000010"> </a></td><td>Tidak sama sekali</td></tr><tr><td style="white-space:nowrap">QRII000011<a name="KemkesClinicalTermCS-QRII000011"> </a></td><td>Iya dan tidak teratur</td></tr><tr><td style="white-space:nowrap">QRII000012<a name="KemkesClinicalTermCS-QRII000012"> </a></td><td>Iya dan teratur</td></tr><tr><td style="white-space:nowrap">QRII000013<a name="KemkesClinicalTermCS-QRII000013"> </a></td><td>Benzatin Penicillin G (BPG) intramuskular</td></tr><tr><td style="white-space:nowrap">QRII000014<a name="KemkesClinicalTermCS-QRII000014"> </a></td><td>Penicillin oral</td></tr><tr><td style="white-space:nowrap">QRII000015<a name="KemkesClinicalTermCS-QRII000015"> </a></td><td>Erythromycin oral</td></tr><tr><td style="white-space:nowrap">SC000001<a name="KemkesClinicalTermCS-SC000001"> </a></td><td>Spesimen Rusak</td></tr><tr><td style="white-space:nowrap">SRC000011<a name="KemkesClinicalTermCS-SRC000011"> </a></td><td>Pemeriksaaan TCM XDR</td></tr><tr><td style="white-space:nowrap">SRC000012<a name="KemkesClinicalTermCS-SRC000012"> </a></td><td>Pemeriksaaan LPA lini 1</td></tr><tr><td style="white-space:nowrap">SRC000013<a name="KemkesClinicalTermCS-SRC000013"> </a></td><td>Pemeriksaaan LPA lini 2</td></tr><tr><td style="white-space:nowrap">SRC000014<a name="KemkesClinicalTermCS-SRC000014"> </a></td><td>Pemeriksaan Paket Standar Kepekaan</td></tr><tr><td style="white-space:nowrap">SRR000007<a name="KemkesClinicalTermCS-SRR000007"> </a></td><td>Pemeriksaan Diagnosis</td></tr><tr><td style="white-space:nowrap">SRR000008<a name="KemkesClinicalTermCS-SRR000008"> </a></td><td>Follow Up</td></tr><tr><td style="white-space:nowrap">SRR000009<a name="KemkesClinicalTermCS-SRR000009"> </a></td><td>Pemeriksaan Ulang</td></tr><tr><td style="white-space:nowrap">SRR000010<a name="KemkesClinicalTermCS-SRR000010"> </a></td><td>Akhir Pengobatan</td></tr><tr><td style="white-space:nowrap">SRR000011<a name="KemkesClinicalTermCS-SRR000011"> </a></td><td>Monitoring rutin</td></tr><tr><td style="white-space:nowrap">SRR000012<a name="KemkesClinicalTermCS-SRR000012"> </a></td><td>PPIA</td></tr><tr><td style="white-space:nowrap">ST000001<a name="KemkesClinicalTermCS-ST000001"> </a></td><td>Sputum Pagi</td></tr><tr><td style="white-space:nowrap">ST000002<a name="KemkesClinicalTermCS-ST000002"> </a></td><td>Sputum Sewaktu</td></tr><tr><td style="white-space:nowrap">SU000001<a name="KemkesClinicalTermCS-SU000001"> </a></td><td>Keluarga</td></tr><tr><td style="white-space:nowrap">SU000002<a name="KemkesClinicalTermCS-SU000002"> </a></td><td>Tenaga kesehatan</td></tr><tr><td style="white-space:nowrap">SU000003<a name="KemkesClinicalTermCS-SU000003"> </a></td><td>Lainnya</td></tr><tr><td style="white-space:nowrap">TL000001<a name="KemkesClinicalTermCS-TL000001"> </a></td><td>Rawat inap</td></tr><tr><td style="white-space:nowrap">X099379<a name="KemkesClinicalTermCS-X099379"> </a></td><td>Pemeriksaaan TCM XDR</td></tr><tr><td style="white-space:nowrap">X099380<a name="KemkesClinicalTermCS-X099380"> </a></td><td>Line Probe Assay (LPA) Lini 1</td></tr><tr><td style="white-space:nowrap">X099381<a name="KemkesClinicalTermCS-X099381"> </a></td><td>Line Probe Assay (LPA) Lini 2</td></tr><tr><td style="white-space:nowrap">X099383<a name="KemkesClinicalTermCS-X099383"> </a></td><td>Pemeriksaan Paket Standar Kepekaan</td></tr><tr><td style="white-space:nowrap">X099384<a name="KemkesClinicalTermCS-X099384"> </a></td><td>Pemeriksaan paket standar kepekaan (H - SLID - capreomycin)</td></tr><tr><td style="white-space:nowrap">X099385<a name="KemkesClinicalTermCS-X099385"> </a></td><td>Pemeriksaan paket standar kepekaan (H Dosis Tingsi)</td></tr><tr><td style="white-space:nowrap">X099386<a name="KemkesClinicalTermCS-X099386"> </a></td><td>Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) BTA</td></tr><tr><td style="white-space:nowrap">X099387<a name="KemkesClinicalTermCS-X099387"> </a></td><td>Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) biakan</td></tr><tr><td style="white-space:nowrap">X099388<a name="KemkesClinicalTermCS-X099388"> </a></td><td>Biakan TB</td></tr><tr><td style="white-space:nowrap">X099389<a name="KemkesClinicalTermCS-X099389"> </a></td><td>Hasil Uji Metode LJ</td></tr><tr><td style="white-space:nowrap">X099390<a name="KemkesClinicalTermCS-X099390"> </a></td><td>Hasil Uji Metode MGIT</td></tr><tr><td style="white-space:nowrap">X099391<a name="KemkesClinicalTermCS-X099391"> </a></td><td>H Dosis Rendah</td></tr><tr><td style="white-space:nowrap">X099392<a name="KemkesClinicalTermCS-X099392"> </a></td><td>FQ Dosis Rendah</td></tr><tr><td style="white-space:nowrap">X099393<a name="KemkesClinicalTermCS-X099393"> </a></td><td>Hasil Uji Lfx</td></tr><tr><td style="white-space:nowrap">X099394<a name="KemkesClinicalTermCS-X099394"> </a></td><td>Hasil Uji Mfx DT</td></tr><tr><td style="white-space:nowrap">X099770<a name="KemkesClinicalTermCS-X099770"> </a></td><td>Rifampisin sensitive</td></tr><tr><td style="white-space:nowrap">X099771<a name="KemkesClinicalTermCS-X099771"> </a></td><td>Rifampisin resistan</td></tr><tr><td style="white-space:nowrap">X099772<a name="KemkesClinicalTermCS-X099772"> </a></td><td>Rifampisin indeterminate</td></tr><tr><td style="white-space:nowrap">X099773<a name="KemkesClinicalTermCS-X099773"> </a></td><td>Indeterminate (IDT)</td></tr><tr><td style="white-space:nowrap">X099774<a name="KemkesClinicalTermCS-X099774"> </a></td><td>Ress Inffered (RI)</td></tr><tr><td style="white-space:nowrap">X099775<a name="KemkesClinicalTermCS-X099775"> </a></td><td>Moxifloxacin DT (Mfx DT)</td></tr><tr><td style="white-space:nowrap">X099776<a name="KemkesClinicalTermCS-X099776"> </a></td><td>H High Dosage [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style="white-space:nowrap">X099777<a name="KemkesClinicalTermCS-X099777"> </a></td><td>H - SLID - capreomycin [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style="white-space:nowrap">X099778<a name="KemkesClinicalTermCS-X099778"> </a></td><td>Moxifloxacin High Dosage [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style="white-space:nowrap">X099779<a name="KemkesClinicalTermCS-X099779"> </a></td><td>Delamanid [Susceptibility] by Method for Slow-growing mycobacteria</td></tr><tr><td style="white-space:nowrap">X099780<a name="KemkesClinicalTermCS-X099780"> </a></td><td>Bedaquiline [Susceptibility] by Method for Slow-growing mycobacteria</td></tr></table></div>
   </text>
   <url value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
   <version value="0.1.0"/>
@@ -16,7 +16,7 @@
   <title value="Terminology Kemkes Clinical Term CodeSystem"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-11-02T09:00:48.000Z"/>
+  <date value="2024-02-05T00:00:00.000Z"/>
   <publisher value="Thomas Chaidir"/>
   <contact>
     <name value="Thomas Chaidir"/>
@@ -25,14 +25,14 @@
       <value value="https://satusehat.kemkes.go.id/"/>
     </telecom>
   </contact>
-  <description value="Created by: Fadhil Muhammad"/>
+  <description value="Terminology Kemkes Clinical Term CodeSystem"/>
   <caseSensitive value="true"/>
-  <valueSet value="http://terminology.kemkes.go.id/CodeSystem/clinical-term?vs"/>
+  <valueSet value="http://terminology.kemkes.go.id/ValueSet/clinical-term"/>
   <hierarchyMeaning value="is-a"/>
   <compositional value="false"/>
   <versionNeeded value="true"/>
   <content value="complete"/>
-  <count value="229"/>
+  <count value="689"/>
   <concept>
     <code value="AL000001"/>
     <display value="Rumput bermuda"/>
@@ -111,7 +111,7 @@
   </concept>
   <concept>
     <code value="AL000020"/>
-    <display value="Daging domba"/>
+    <display value="Daging domba "/>
   </concept>
   <concept>
     <code value="AL000021"/>
@@ -127,11 +127,11 @@
   </concept>
   <concept>
     <code value="AL000024"/>
-    <display value="Kuning telur"/>
+    <display value="Kuning telur "/>
   </concept>
   <concept>
     <code value="AL000025"/>
-    <display value="Kerang"/>
+    <display value="Kerang "/>
   </concept>
   <concept>
     <code value="AL000026"/>
@@ -206,92 +206,228 @@
     <display value="Debu rumah"/>
   </concept>
   <concept>
-    <code value="PR000001"/>
-    <display value="Prognosis baik"/>
+    <code value="CB000001"/>
+    <display value="Tidak ada metastasis jauh"/>
   </concept>
   <concept>
-    <code value="PR000002"/>
-    <display value="Prognosis dubia et bonam / cenderung baik"/>
+    <code value="CB000002"/>
+    <display value="Metastasis jauh tidak diketahui"/>
   </concept>
   <concept>
-    <code value="PR000003"/>
-    <display value="Prognosis dubia et malam / cenderung tidak baik"/>
+    <code value="CB000003"/>
+    <display value="Lateralitas tidak diketahui"/>
   </concept>
   <concept>
-    <code value="PR000004"/>
-    <display value="Prognosis tidak baik"/>
+    <code value="CC000001"/>
+    <display value="Dada terasa tidak nyaman"/>
   </concept>
   <concept>
-    <code value="OI000001"/>
-    <display value="Gizi Buruk"/>
+    <code value="CC000002"/>
+    <display value="Nyeri dada lebih lama dari 20 menit"/>
   </concept>
   <concept>
-    <code value="OI000002"/>
-    <display value="Gizi Kurang"/>
+    <code value="CC000003"/>
+    <display value="TNM tidak dapat diaplikasikan"/>
   </concept>
   <concept>
-    <code value="OI000003"/>
-    <display value="Gizi Baik"/>
+    <code value="CC000004"/>
+    <display value="Organ dan KGB sekitar"/>
   </concept>
   <concept>
-    <code value="OI000004"/>
-    <display value="Risiko Gizi Lebih"/>
+    <code value="CC000005"/>
+    <display value="Perluasan tumor sebelum terapi tidak diketahui"/>
   </concept>
   <concept>
-    <code value="OI000005"/>
-    <display value="Gizi Lebih"/>
+    <code value="CC000007"/>
+    <display value="Malnutrisi pada penyakit akut"/>
   </concept>
   <concept>
-    <code value="OI000006"/>
-    <display value="Obesitas"/>
+    <code value="CC000008"/>
+    <display value="Malnutrisi pada anak (tidak terkait penyakit)"/>
   </concept>
   <concept>
-    <code value="OI000007"/>
-    <display value="Berat Badan Sangat Kurang"/>
+    <code value="CC000009"/>
+    <display value="Malnutrisi pada anak (terkait penyakit)"/>
   </concept>
   <concept>
-    <code value="OI000008"/>
-    <display value="Berat Badan Kurang"/>
+    <code value="CC000010"/>
+    <display value="Keterbatasan/ ketidakpatuhan dalam menjalankan rekomendasi diet"/>
   </concept>
   <concept>
-    <code value="OI000009"/>
-    <display value="Berat Badan Normal"/>
+    <code value="CC000019"/>
+    <display value="Riwayat diare"/>
   </concept>
   <concept>
-    <code value="OI000010"/>
-    <display value="Risiko Berat Badan Lebih"/>
+    <code value="CC000020"/>
+    <display value="Riwayat infeksi saluran pernapasan akut"/>
   </concept>
   <concept>
-    <code value="OI000011"/>
-    <display value="Sangat Pendek"/>
+    <code value="CC000021"/>
+    <display value="Riwayat kecacingan"/>
   </concept>
   <concept>
-    <code value="OI000012"/>
-    <display value="Pendek"/>
+    <code value="CC000022"/>
+    <display value="Riwayat defisiensi vitamin A"/>
   </concept>
   <concept>
-    <code value="OI000013"/>
-    <display value="Normal"/>
+    <code value="CC000023"/>
+    <display value="Riwayat xeroftalmia"/>
   </concept>
   <concept>
-    <code value="OI000014"/>
-    <display value="Tinggi"/>
+    <code value="CC000024"/>
+    <display value="Nyeri dada pertama kali dengan aktivitas ringan"/>
   </concept>
   <concept>
-    <code value="OI000015"/>
-    <display value="Normocephaly"/>
+    <code value="CE000001"/>
+    <display value="Basis diagnosis berdasarkan operasi/otopsi tanpa histologi"/>
   </concept>
   <concept>
-    <code value="OI000016"/>
-    <display value="Sesuai Usia"/>
+    <code value="CE000002"/>
+    <display value="Basis diagnosis berdasarkan otopsi dengan histologi"/>
   </concept>
   <concept>
-    <code value="OI000017"/>
-    <display value="Tidak Sesuai Usia"/>
+    <code value="CE000003"/>
+    <display value="Basis diagnosis tidak diketahui"/>
   </concept>
   <concept>
-    <code value="OI000018"/>
-    <display value="Kurang Energi Kronis (KEK)"/>
+    <code value="CS000001"/>
+    <display value="Stadium tumor tidak diaplikasikan"/>
+  </concept>
+  <concept>
+    <code value="CS000002"/>
+    <display value="Stadium tumor tidak diketahui"/>
+  </concept>
+  <concept>
+    <code value="ED000001"/>
+    <display value="Edukasi Prognosis"/>
+  </concept>
+  <concept>
+    <code value="ED000002"/>
+    <display value="Edukasi terkait Alternatif Tindakan dan Resikonya"/>
+  </concept>
+  <concept>
+    <code value="ED000003"/>
+    <display value="Edukasi Rehabilitasi Medis"/>
+  </concept>
+  <concept>
+    <code value="ED000004"/>
+    <display value="Edukasi Manajemen Nyeri"/>
+  </concept>
+  <concept>
+    <code value="ED000005"/>
+    <display value="Edukasi Gizi"/>
+  </concept>
+  <concept>
+    <code value="ED000006"/>
+    <display value="Edukasi Cuci Tangan"/>
+  </concept>
+  <concept>
+    <code value="ED000007"/>
+    <display value="Edukasi Penggunaan Alat Medis"/>
+  </concept>
+  <concept>
+    <code value="ED000008"/>
+    <display value="Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas"/>
+  </concept>
+  <concept>
+    <code value="ED000009"/>
+    <display value="Edukasi IMD dan ASI Eksklusif"/>
+  </concept>
+  <concept>
+    <code value="ED000010"/>
+    <display value="Edukasi PHBS"/>
+  </concept>
+  <concept>
+    <code value="ED000011"/>
+    <display value="Edukasi KB pasca salin"/>
+  </concept>
+  <concept>
+    <code value="ED000012"/>
+    <display value="Edukasi lainnya"/>
+  </concept>
+  <concept>
+    <code value="ED000013"/>
+    <display value="Edukasi Pencegahan Anemia"/>
+  </concept>
+  <concept>
+    <code value="EHA000001"/>
+    <display value="Kader/ Komunitas"/>
+  </concept>
+  <concept>
+    <code value="EHA000002"/>
+    <display value="Datang sendiri"/>
+  </concept>
+  <concept>
+    <code value="EHA000003"/>
+    <display value="Kegiatan ACF"/>
+  </concept>
+  <concept>
+    <code value="EHA000004"/>
+    <display value="Skrining TBC DM"/>
+  </concept>
+  <concept>
+    <code value="EHA000005"/>
+    <display value="Pemadanan Data BPJS"/>
+  </concept>
+  <concept>
+    <code value="FO000001"/>
+    <display value="MT Lokal"/>
+  </concept>
+  <concept>
+    <code value="FO000002"/>
+    <display value="MT Pabrikan"/>
+  </concept>
+  <concept>
+    <code value="grup1-icdmm"/>
+    <display value="Kehamilan dengan komplikasi abortus"/>
+  </concept>
+  <concept>
+    <code value="grup2-icdmm"/>
+    <display value="Hipertensi dalam kehamilan, persalinan atau nifas"/>
+  </concept>
+  <concept>
+    <code value="grup3-icdmm"/>
+    <display value="Perdarahan obstetrik"/>
+  </concept>
+  <concept>
+    <code value="grup4-icdmm"/>
+    <display value="Infeksi terkait kehamilan"/>
+  </concept>
+  <concept>
+    <code value="grup5-icdmm"/>
+    <display value="Komplikasi obstetrik lain"/>
+  </concept>
+  <concept>
+    <code value="grup6-icdmm"/>
+    <display value="Komplikasi manajemen yang tidak terantisipasi"/>
+  </concept>
+  <concept>
+    <code value="grup7-icdmm"/>
+    <display value="Komplikasi non obstetrik"/>
+  </concept>
+  <concept>
+    <code value="grup8-icdmm"/>
+    <display value="Penyebab dasar tidak diketahui"/>
+  </concept>
+  <concept>
+    <code value="grup9-icdmm"/>
+    <display value="Ko insiden"/>
+  </concept>
+  <concept>
+    <code value="LO000001"/>
+    <display value="Puskesmas"/>
+  </concept>
+  <concept>
+    <code value="LO000002"/>
+    <display value="Rumah Sakit"/>
+  </concept>
+  <concept>
+    <code value="LO000003"/>
+    <display value="Klinik"/>
+  </concept>
+  <concept>
+    <code value="LO000004"/>
+    <display value="Rumah"/>
   </concept>
   <concept>
     <code value="OC000001"/>
@@ -299,15 +435,11 @@
   </concept>
   <concept>
     <code value="OC000002"/>
-    <display value="Kepala Terhadap PAP"/>
+    <display value="Trial lens axis"/>
   </concept>
   <concept>
     <code value="OC000003"/>
-    <display value="Jumlah Janin"/>
-  </concept>
-  <concept>
-    <code value="OC000004"/>
-    <display value="Letak Janin (USG)"/>
+    <display value="Pemeriksaan lanjutan jika dinyatakan buta"/>
   </concept>
   <concept>
     <code value="OC000005"/>
@@ -383,6 +515,7 @@
   </concept>
   <concept>
     <code value="OC000023"/>
+    <display value="Penyebab nyeri"/>
   </concept>
   <concept>
     <code value="OC000024"/>
@@ -401,28 +534,676 @@
     <display value="Masa terjadi Kematian Anak"/>
   </concept>
   <concept>
-    <code value="OC000028"/>
-    <display value="Jenis Tempat Tinggal"/>
+    <code value="OC000030"/>
+    <display value="Berat saat meninggal"/>
   </concept>
   <concept>
-    <code value="OC000029"/>
-    <display value="Urutan ke (untuk bayi kembar)"/>
+    <code value="OC000031"/>
+    <display value="Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)"/>
   </concept>
   <concept>
-    <code value="OV000001"/>
-    <display value="Masuk panggul"/>
+    <code value="OC000032"/>
+    <display value="Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)"/>
   </concept>
   <concept>
-    <code value="OV000002"/>
-    <display value="Belum masuk panggul"/>
+    <code value="OC000033"/>
+    <display value="Dugaan Sebab Kematian"/>
+  </concept>
+  <concept>
+    <code value="OC000034"/>
+    <display value="Surat Pengantar Rujukan"/>
+  </concept>
+  <concept>
+    <code value="OC000035"/>
+    <display value="Humpty Dumpty Scale"/>
+  </concept>
+  <concept>
+    <code value="OC000036"/>
+    <display value="Edmonson Psychiatric Fall Risk Assessment"/>
+  </concept>
+  <concept>
+    <code value="OC000037"/>
+    <display value="Jenis Tempat Bersalin"/>
+  </concept>
+  <concept>
+    <code value="OC000055"/>
+    <display value="Kriteria Pasien yang dilakukan Rencana Pemulangan"/>
+  </concept>
+  <concept>
+    <code value="OC000056"/>
+    <display value="Skor Total Debris Indeks"/>
+  </concept>
+  <concept>
+    <code value="OC000057"/>
+    <display value="Skor Total Kalkulus Indeks"/>
+  </concept>
+  <concept>
+    <code value="OC000058"/>
+    <display value="Skor Total Oral Hygiene Index Simplified (OHIS)"/>
+  </concept>
+  <concept>
+    <code value="OC000059"/>
+    <display value="Gigi Anomali"/>
+  </concept>
+  <concept>
+    <code value="OC000060"/>
+    <display value="Kondisi Gigi dan Mulut Lainnya"/>
+  </concept>
+  <concept>
+    <code value="OC000061"/>
+    <display value="Pemeriksaan Odontogram"/>
+  </concept>
+  <concept>
+    <code value="OC000062"/>
+    <display value="Debris Indeks"/>
+  </concept>
+  <concept>
+    <code value="OC000063"/>
+    <display value="Kalkulus Indeks"/>
+  </concept>
+  <concept>
+    <code value="OC000078"/>
+    <display value="Pemeriksaan tanda dan gejala infeksi"/>
+  </concept>
+  <concept>
+    <code value="OC000079"/>
+    <display value="Tes serologis HIV ibu"/>
+  </concept>
+  <concept>
+    <code value="OC000080"/>
+    <display value="Efektifitas hisapan bayi"/>
+  </concept>
+  <concept>
+    <code value="OC000081"/>
+    <display value="Posisi pelekatan bayi pada puting"/>
+  </concept>
+  <concept>
+    <code value="OC000082"/>
+    <display value="Posisi menyusu bayi"/>
+  </concept>
+  <concept>
+    <code value="OC000083"/>
+    <display value="Tes serologis HIV anak"/>
+  </concept>
+  <concept>
+    <code value="OC000084"/>
+    <display value="Tes virologis HIV anak"/>
+  </concept>
+  <concept>
+    <code value="OC000085"/>
+    <display value="Klasifikasi berat badan menurut umur dan/atau masalah pemberian ASI"/>
+  </concept>
+  <concept>
+    <code value="OC000086"/>
+    <display value="Klasifikasi Berat Badan Menurut Umur dan/atau Masalah Pemberian Minum"/>
+  </concept>
+  <concept>
+    <code value="OC000087"/>
+    <display value="Pemberian Vitamin K pada Bayi Baru Lahir"/>
+  </concept>
+  <concept>
+    <code value="OC000088"/>
+    <display value="Pemeriksaan tanda bahaya umum"/>
+  </concept>
+  <concept>
+    <code value="OC000089"/>
+    <display value="Klasifikasi status kegawatan"/>
+  </concept>
+  <concept>
+    <code value="OC000090"/>
+    <display value="Pemeriksaan tanda dan gejala sukar bernafas"/>
+  </concept>
+  <concept>
+    <code value="OC000091"/>
+    <display value="Klasifikasi batuk dan/atau sukar bernapas"/>
+  </concept>
+  <concept>
+    <code value="OC000092"/>
+    <display value="Perilaku Parasosial"/>
+  </concept>
+  <concept>
+    <code value="OC000097"/>
+    <display value="Pemeriksaan tanda dan gejala diare"/>
+  </concept>
+  <concept>
+    <code value="OC000098"/>
+    <display value="Klasifikasi diare"/>
+  </concept>
+  <concept>
+    <code value="OC000099"/>
+    <display value="Status daerah endemis malaria"/>
+  </concept>
+  <concept>
+    <code value="OC000100"/>
+    <display value="Klasifikasi demam"/>
+  </concept>
+  <concept>
+    <code value="OC000101"/>
+    <display value="Pemeriksaan tanda dan gejala campak"/>
+  </concept>
+  <concept>
+    <code value="OC000102"/>
+    <display value="Klasifikasi campak"/>
+  </concept>
+  <concept>
+    <code value="OC000103"/>
+    <display value="Durasi cairan/nanah keluar dari telinga"/>
+  </concept>
+  <concept>
+    <code value="OC000104"/>
+    <display value="Pemeriksaan infeksi dengue"/>
+  </concept>
+  <concept>
+    <code value="OC000105"/>
+    <display value="Klasifikasi infeksi dengue"/>
+  </concept>
+  <concept>
+    <code value="OC000106"/>
+    <display value="Pemeriksaan tanda dan gejala masalah telinga"/>
+  </concept>
+  <concept>
+    <code value="OC000107"/>
+    <display value="Klasifikasi masalah telinga"/>
+  </concept>
+  <concept>
+    <code value="OC000108"/>
+    <display value="Klasifikasi status gizi"/>
+  </concept>
+  <concept>
+    <code value="OC000109"/>
+    <display value="Klasifikasi status pertumbuhan"/>
+  </concept>
+  <concept>
+    <code value="OC000111"/>
+    <display value="Klasifikasi anemia"/>
+  </concept>
+  <concept>
+    <code value="OC000112"/>
+    <display value="Durasi sukar bernapas"/>
+  </concept>
+  <concept>
+    <code value="OC000113"/>
+    <display value="Durasi diare"/>
+  </concept>
+  <concept>
+    <code value="OC000114"/>
+    <display value="Membutuhkan suplemen vitamin A"/>
+  </concept>
+  <concept>
+    <code value="OC000115"/>
+    <display value="H Dosis Rendah"/>
+  </concept>
+  <concept>
+    <code value="OC000116"/>
+    <display value="FQ Dosis Rendah"/>
+  </concept>
+  <concept>
+    <code value="OC000117"/>
+    <display value="Hasil Uji Metode LJ"/>
+  </concept>
+  <concept>
+    <code value="OC000118"/>
+    <display value="Hasil Uji Metode MGIT"/>
+  </concept>
+  <concept>
+    <code value="OC000119"/>
+    <display value="Hasil Uji Lfx"/>
+  </concept>
+  <concept>
+    <code value="OC000120"/>
+    <display value="Hasil Uji Mfx DT"/>
+  </concept>
+  <concept>
+    <code value="OC000121"/>
+    <display value="Pemeriksaan tanda dan gejala demam"/>
+  </concept>
+  <concept>
+    <code value="OC000122"/>
+    <display value="Carta Prediksi Risiko"/>
+  </concept>
+  <concept>
+    <code value="OC000124"/>
+    <display value="Pemeriksaan kebugaran 1000m"/>
+  </concept>
+  <concept>
+    <code value="OC000125"/>
+    <display value="Pemeriksaan kebugaran 1600m"/>
+  </concept>
+  <concept>
+    <code value="OC000126"/>
+    <display value="Klasifikasi infeksi"/>
+  </concept>
+  <concept>
+    <code value="OC000127"/>
+    <display value="Jumlah TTD dikonsumsi dalam satu bulan terakhir"/>
+  </concept>
+  <concept>
+    <code value="OC000128"/>
+    <display value="Umur pertama kali timbul kuning"/>
+  </concept>
+  <concept>
+    <code value="OC000129"/>
+    <display value="Klasifikasi ikterus"/>
+  </concept>
+  <concept>
+    <code value="OC000130"/>
+    <display value="Ada tanda-tanda retensi"/>
+  </concept>
+  <concept>
+    <code value="OC000131"/>
+    <display value="Perawakan tampak kurus"/>
+  </concept>
+  <concept>
+    <code value="OC000133"/>
+    <display value="Kategori Sasaran Imunisasi COVID-19"/>
+  </concept>
+  <concept>
+    <code value="OC000134"/>
+    <display value="Left Ventricular Hypertrophy (LVH) Eksentrik"/>
+  </concept>
+  <concept>
+    <code value="OC000135"/>
+    <display value="Status sekolah"/>
+  </concept>
+  <concept>
+    <code value="OC000136"/>
+    <display value="Trial lens sferis"/>
+  </concept>
+  <concept>
+    <code value="OC000137"/>
+    <display value="Trial lens silinder"/>
+  </concept>
+  <concept>
+    <code value="OC000138"/>
+    <display value="Pajanan di rumah tangga/tempat kerja"/>
+  </concept>
+  <concept>
+    <code value="OC000139"/>
+    <display value="Waktu terakhir kali ibu diberikan transfusi darah"/>
+  </concept>
+  <concept>
+    <code value="OC000140"/>
+    <display value="Ibu konsumsi obat anti tiroid"/>
+  </concept>
+  <concept>
+    <code value="OC000141"/>
+    <display value="Ada kelainan bawaan"/>
+  </concept>
+  <concept>
+    <code value="OC000142"/>
+    <display value="Wajah mongoloid"/>
+  </concept>
+  <concept>
+    <code value="OC000144"/>
+    <display value="Pemeriksaan layanan gizi buruk"/>
+  </concept>
+  <concept>
+    <code value="OC000145"/>
+    <display value="Urutan pengiriman sampel"/>
+  </concept>
+  <concept>
+    <code value="OC000146"/>
+    <display value="Status pertumbuhan tidak naik (Status T)"/>
+  </concept>
+  <concept>
+    <code value="OC000147"/>
+    <display value="Tanda-tanda komplikasi pada balita"/>
+  </concept>
+  <concept>
+    <code value="OC000148"/>
+    <display value="Pemeriksaan gangguan konsumsi dan gangguan fisik lainnya"/>
+  </concept>
+  <concept>
+    <code value="OC000149"/>
+    <display value="Pekerjaan orang tua"/>
+  </concept>
+  <concept>
+    <code value="OC000150"/>
+    <display value="Suspek tuli kongenital"/>
+  </concept>
+  <concept>
+    <code value="OC000151"/>
+    <display value="Suspek presbikusis"/>
+  </concept>
+  <concept>
+    <code value="OC000152"/>
+    <display value="Suspek retinopati"/>
+  </concept>
+  <concept>
+    <code value="OC000153"/>
+    <display value="Ada tanda-tanda defisiensi zat gizi mikro"/>
+  </concept>
+  <concept>
+    <code value="OC000154"/>
+    <display value="Shadow test"/>
+  </concept>
+  <concept>
+    <code value="OC000155"/>
+    <display value="Gejala klinis risiko anemia"/>
+  </concept>
+  <concept>
+    <code value="OC000156"/>
+    <display value="Tindakan pasca fibrinolisis"/>
+  </concept>
+  <concept>
+    <code value="OC000157"/>
+    <display value="Jenis Intervensi Koroner Perkutan"/>
+  </concept>
+  <concept>
+    <code value="OC000158"/>
+    <display value="Volume balloon"/>
+  </concept>
+  <concept>
+    <code value="OC000159"/>
+    <display value="Wake up stroke"/>
+  </concept>
+  <concept>
+    <code value="OC000160"/>
+    <display value="Letak Infark"/>
+  </concept>
+  <concept>
+    <code value="OC000161"/>
+    <display value="Sisi Infark"/>
+  </concept>
+  <concept>
+    <code value="OC000162"/>
+    <display value="Volume Perdarahan"/>
+  </concept>
+  <concept>
+    <code value="OC000163"/>
+    <display value="Sumber Perdarahan Infratentorial"/>
+  </concept>
+  <concept>
+    <code value="OC000164"/>
+    <display value="Cardiothoracic Ratio (CTR)"/>
+  </concept>
+  <concept>
+    <code value="OC000165"/>
+    <display value="Lokasi elevasi segmen ST"/>
+  </concept>
+  <concept>
+    <code value="OC000166"/>
+    <display value="Tanggal dan jam onset terberat"/>
+  </concept>
+  <concept>
+    <code value="OC000167"/>
+    <display value="Arteri koroner yang terlibat dalam Sindrom Koroner Akut"/>
+  </concept>
+  <concept>
+    <code value="OC000168"/>
+    <display value="Klasifikasi Killip"/>
+  </concept>
+  <concept>
+    <code value="OC000169"/>
+    <display value="GRACE Score"/>
+  </concept>
+  <concept>
+    <code value="OC000170"/>
+    <display value="Riwayat KB Hormonal"/>
+  </concept>
+  <concept>
+    <code value="OC000171"/>
+    <display value="Tanggal dan jam wire menembus lesi"/>
+  </concept>
+  <concept>
+    <code value="OC000172"/>
+    <display value="Tanggal dan jam mulai dimasukkan obat fibrinolisis"/>
+  </concept>
+  <concept>
+    <code value="OC000173"/>
+    <display value="Prediksi Risiko PTM tanpa Pemeriksaan Laboratorium"/>
+  </concept>
+  <concept>
+    <code value="OC000176"/>
+    <display value="Pencegahan Sekunder Penyakit Jantung Rematik"/>
+  </concept>
+  <concept>
+    <code value="OC000177"/>
+    <display value="Tidak Diketahui Mendapat Obat"/>
+  </concept>
+  <concept>
+    <code value="OC000178"/>
+    <display value="Jenis Obat Pencegahan Sekunder PJR"/>
+  </concept>
+  <concept>
+    <code value="OC000179"/>
+    <display value="Target Organ Damage Hipertensi"/>
+  </concept>
+  <concept>
+    <code value="OC000180"/>
+    <display value="Intensitas Obat Statin"/>
+  </concept>
+  <concept>
+    <code value="OC000181"/>
+    <display value="Alberta Stroke Program Early CT score"/>
+  </concept>
+  <concept>
+    <code value="OC000182"/>
+    <display value="Time to Recanalization"/>
+  </concept>
+  <concept>
+    <code value="OC000183"/>
+    <display value="Thrombolysis in Cerebral Infarction Score"/>
+  </concept>
+  <concept>
+    <code value="OCC000003"/>
+    <display value="Lokasi elevasi segmen ST"/>
+  </concept>
+  <concept>
+    <code value="OCV000001"/>
+    <display value="LBBB baru"/>
+  </concept>
+  <concept>
+    <code value="OCV000003"/>
+    <display value="Tidak ada perubahan akut"/>
+  </concept>
+  <concept>
+    <code value="OCV000004"/>
+    <display value="ST elevasi tidak dapat ditentukan"/>
+  </concept>
+  <concept>
+    <code value="OI000001"/>
+    <display value="Gizi Buruk"/>
+  </concept>
+  <concept>
+    <code value="OI000002"/>
+    <display value="Gizi Kurang"/>
+  </concept>
+  <concept>
+    <code value="OI000003"/>
+    <display value="Gizi Baik"/>
+  </concept>
+  <concept>
+    <code value="OI000004"/>
+    <display value="Risiko Gizi Lebih"/>
+  </concept>
+  <concept>
+    <code value="OI000005"/>
+    <display value="Gizi Lebih"/>
+  </concept>
+  <concept>
+    <code value="OI000006"/>
+    <display value="Obesitas"/>
+  </concept>
+  <concept>
+    <code value="OI000007"/>
+    <display value="Berat Badan Sangat Kurang"/>
+  </concept>
+  <concept>
+    <code value="OI000008"/>
+    <display value="Berat Badan Kurang"/>
+  </concept>
+  <concept>
+    <code value="OI000009"/>
+    <display value="Berat Badan Normal"/>
+  </concept>
+  <concept>
+    <code value="OI000010"/>
+    <display value="Risiko Berat Badan Lebih"/>
+  </concept>
+  <concept>
+    <code value="OI000011"/>
+    <display value="Sangat Pendek"/>
+  </concept>
+  <concept>
+    <code value="OI000012"/>
+    <display value="Pendek"/>
+  </concept>
+  <concept>
+    <code value="OI000013"/>
+    <display value="Normal"/>
+  </concept>
+  <concept>
+    <code value="OI000014"/>
+    <display value="Tinggi"/>
+  </concept>
+  <concept>
+    <code value="OI000015"/>
+    <display value="Normocephaly"/>
+  </concept>
+  <concept>
+    <code value="OI000016"/>
+    <display value="Sesuai Usia"/>
+  </concept>
+  <concept>
+    <code value="OI000017"/>
+    <display value="Tidak Sesuai Usia"/>
+  </concept>
+  <concept>
+    <code value="OI000018"/>
+    <display value="Kurang Energi Kronis (KEK) "/>
+  </concept>
+  <concept>
+    <code value="OI000019"/>
+    <display value="Mild to No Pain"/>
+  </concept>
+  <concept>
+    <code value="OI000020"/>
+    <display value="Mild to Moderate Pain"/>
+  </concept>
+  <concept>
+    <code value="OI000021"/>
+    <display value="7 - 11 (Risiko rendah)"/>
+  </concept>
+  <concept>
+    <code value="OI000022"/>
+    <display value="&gt; 12 (Risiko tinggi)"/>
+  </concept>
+  <concept>
+    <code value="OI000023"/>
+    <display value="0 - 89 (Risiko rendah)"/>
+  </concept>
+  <concept>
+    <code value="OI000024"/>
+    <display value="&gt; 90 (Risiko tinggi)"/>
+  </concept>
+  <concept>
+    <code value="OI000025"/>
+    <display value="Tidak Normal"/>
+  </concept>
+  <concept>
+    <code value="OI000026"/>
+    <display value="0 - 24 (Risiko rendah)"/>
+  </concept>
+  <concept>
+    <code value="OI000027"/>
+    <display value="25 - 44 (Risiko sedang)"/>
+  </concept>
+  <concept>
+    <code value="OI000028"/>
+    <display value="≥ 45 (Risiko tinggi)"/>
+  </concept>
+  <concept>
+    <code value="OI000029"/>
+    <display value="Kondisi Gigi Baik"/>
+  </concept>
+  <concept>
+    <code value="OI000030"/>
+    <display value="Kondisi Gigi Cukup Baik"/>
+  </concept>
+  <concept>
+    <code value="OI000031"/>
+    <display value="Kondisi Gigi Buruk"/>
+  </concept>
+  <concept>
+    <code value="OI000032"/>
+    <display value="Anemia ringan"/>
+  </concept>
+  <concept>
+    <code value="OI000033"/>
+    <display value="Anemia sedang"/>
+  </concept>
+  <concept>
+    <code value="OI000034"/>
+    <display value="Anemia berat"/>
+  </concept>
+  <concept>
+    <code value="OI000035"/>
+    <display value="Risiko Kurang Energi Kronis (KEK)"/>
+  </concept>
+  <concept>
+    <code value="OI000036"/>
+    <display value="Tingkat kebugaran jasmani baik"/>
+  </concept>
+  <concept>
+    <code value="OI000037"/>
+    <display value="Tingkat kebugaran jasmani cukup"/>
+  </concept>
+  <concept>
+    <code value="OI000038"/>
+    <display value="Tingkat kebugaran jasmani kurang"/>
+  </concept>
+  <concept>
+    <code value="OI000039"/>
+    <display value="Borderline"/>
+  </concept>
+  <concept>
+    <code value="OI000040"/>
+    <display value="Tekanan darah optimal"/>
+  </concept>
+  <concept>
+    <code value="OI000041"/>
+    <display value="Tekanan darah normal tinggi"/>
+  </concept>
+  <concept>
+    <code value="OI000042"/>
+    <display value="Hipertensi derajat 3"/>
+  </concept>
+  <concept>
+    <code value="OI000043"/>
+    <display value="LDL mendekati optimal"/>
+  </concept>
+  <concept>
+    <code value="OI000044"/>
+    <display value="Kelainan organik"/>
+  </concept>
+  <concept>
+    <code value="OI000045"/>
+    <display value="Ketergantungan Ringan"/>
+  </concept>
+  <concept>
+    <code value="OI000046"/>
+    <display value="Ketergantungan Sedang"/>
+  </concept>
+  <concept>
+    <code value="OI000047"/>
+    <display value="Ketergantungan Berat"/>
+  </concept>
+  <concept>
+    <code value="OI000048"/>
+    <display value="Ketergantungan Total"/>
+  </concept>
+  <concept>
+    <code value="OM000001"/>
+    <display value="LJ"/>
+  </concept>
+  <concept>
+    <code value="OM000002"/>
+    <display value="MGIT"/>
   </concept>
   <concept>
     <code value="OV000003"/>
-    <display value="Presentasi Kepala"/>
-  </concept>
-  <concept>
-    <code value="OV000004"/>
-    <display value="Presentasi Bokong"/>
+    <display value="Restriksi berat"/>
   </concept>
   <concept>
     <code value="OV000005"/>
@@ -521,78 +1302,6 @@
     <display value="Laceration of perineum during delivery involving anal epithelium"/>
   </concept>
   <concept>
-    <code value="OI000019"/>
-    <display value="Mild to No Pain"/>
-  </concept>
-  <concept>
-    <code value="OI000020"/>
-    <display value="Mild to Moderate Pain"/>
-  </concept>
-  <concept>
-    <code value="OI000021"/>
-    <display value="7 - 11 (Risiko rendah)"/>
-  </concept>
-  <concept>
-    <code value="OI000022"/>
-    <display value="&gt; 12 (Risiko tinggi)"/>
-  </concept>
-  <concept>
-    <code value="OI000023"/>
-    <display value="0 - 89 (Risiko rendah)"/>
-  </concept>
-  <concept>
-    <code value="OI000024"/>
-    <display value="&gt; 90 (Risiko tinggi)"/>
-  </concept>
-  <concept>
-    <code value="OI000025"/>
-    <display value="Tidak Normal"/>
-  </concept>
-  <concept>
-    <code value="OI000026"/>
-    <display value="0 - 24 (Risiko rendah)"/>
-  </concept>
-  <concept>
-    <code value="OI000027"/>
-    <display value="25 - 44 (Risiko sedang)"/>
-  </concept>
-  <concept>
-    <code value="OI000028"/>
-    <display value="≥ 45 (Risiko tinggi)"/>
-  </concept>
-  <concept>
-    <code value="OC000030"/>
-    <display value="Berat saat meninggal"/>
-  </concept>
-  <concept>
-    <code value="OC000031"/>
-    <display value="Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)"/>
-  </concept>
-  <concept>
-    <code value="OC000032"/>
-    <display value="Kondisi ibu sebelum janin meninggal (Penyulit Obstetrik)"/>
-  </concept>
-  <concept>
-    <code value="OC000033"/>
-    <display value="Dugaan Sebab Kematian"/>
-  </concept>
-  <concept>
-    <code value="OC000034"/>
-    <display value="Surat Pengantar Rujukan"/>
-  </concept>
-  <concept>
-    <code value="OC000035"/>
-    <display value="Humpty Dumpty Scale"/>
-  </concept>
-  <concept>
-    <code value="OC000036"/>
-    <display value="Edmonson Psychiatric Fall Risk Assessment"/>
-  </concept>
-  <concept>
-    <code value="OC000037"/>
-    <display value="Jenis Tempat Bersalin"/>
-  </concept>
-  <concept>
     <code value="OV000047"/>
     <display value="Tidak ada maserasi"/>
   </concept>
@@ -621,40 +1330,12 @@
     <display value="Tidak Sesuai"/>
   </concept>
   <concept>
-    <code value="OC000055"/>
-    <display value="Kriteria Pasien yang dilakukan Rencana Pemulangan"/>
-  </concept>
-  <concept>
     <code value="OV000072"/>
     <display value="Pasien dengan perawatan berkelanjutan atau panjang"/>
   </concept>
   <concept>
     <code value="OV000073"/>
     <display value="Tidak masuk kriteria"/>
-  </concept>
-  <concept>
-    <code value="OC000056"/>
-    <display value="Skor Total Debris Indeks"/>
-  </concept>
-  <concept>
-    <code value="OC000057"/>
-    <display value="Skor Total Kalkulus Indeks"/>
-  </concept>
-  <concept>
-    <code value="OC000058"/>
-    <display value="Skor Total Oral Hygiene Index Simplified (OHIS)"/>
-  </concept>
-  <concept>
-    <code value="OC000059"/>
-    <display value="Gigi Anomali"/>
-  </concept>
-  <concept>
-    <code value="OC000060"/>
-    <display value="Kondisi Gigi dan Mulut Lainnya"/>
-  </concept>
-  <concept>
-    <code value="OC000061"/>
-    <display value="Pemeriksaan Odontogram"/>
   </concept>
   <concept>
     <code value="OV000074"/>
@@ -749,18 +1430,6 @@
     <display value="Frame"/>
   </concept>
   <concept>
-    <code value="OI000029"/>
-    <display value="Kondisi Gigi Baik"/>
-  </concept>
-  <concept>
-    <code value="OI000030"/>
-    <display value="Kondisi Gigi Cukup Baik"/>
-  </concept>
-  <concept>
-    <code value="OI000031"/>
-    <display value="Kondisi Gigi Buruk"/>
-  </concept>
-  <concept>
     <code value="OV000097"/>
     <display value="Terdapat debris pada 1/3 permukaan servikal gigi atau dijumpai stain ekstrinsik"/>
   </concept>
@@ -785,20 +1454,100 @@
     <display value="Terdapat kalkulus supragingiva pada &gt; 2/3 permukaan gigi dan/atau terdapat kalkulus subgingiva yang melingkari leher gigi"/>
   </concept>
   <concept>
-    <code value="OC000062"/>
-    <display value="Debris Indeks"/>
-  </concept>
-  <concept>
-    <code value="OC000063"/>
-    <display value="Kalkulus Indeks"/>
-  </concept>
-  <concept>
     <code value="OV000112"/>
     <display value="Diberikan ASI Eksklusif"/>
   </concept>
   <concept>
     <code value="OV000113"/>
     <display value="Tidak Diberikan ASI Eksklusif"/>
+  </concept>
+  <concept>
+    <code value="OV000124"/>
+    <display value="Bayi tidak mau mengisap"/>
+  </concept>
+  <concept>
+    <code value="OV000125"/>
+    <display value="Suhu tubuh &gt;37,5°C"/>
+  </concept>
+  <concept>
+    <code value="OV000126"/>
+    <display value="Suhu tubuh &lt;36,5°C"/>
+  </concept>
+  <concept>
+    <code value="OV000127"/>
+    <display value="Bayi bergerak atas kemauan sendiri"/>
+  </concept>
+  <concept>
+    <code value="OV000128"/>
+    <display value="Bayi bergerak hanya ketika dirangsang"/>
+  </concept>
+  <concept>
+    <code value="OV000129"/>
+    <display value="Demam mungkin bukan dengue"/>
+  </concept>
+  <concept>
+    <code value="OV000130"/>
+    <display value="Mata bernanah banyak"/>
+  </concept>
+  <concept>
+    <code value="OV000131"/>
+    <display value="Mata bernanah sedikit"/>
+  </concept>
+  <concept>
+    <code value="OV000132"/>
+    <display value="Pusar kemerahan"/>
+  </concept>
+  <concept>
+    <code value="OV000133"/>
+    <display value="Perbedaan saturasi oksigen &gt;3%"/>
+  </concept>
+  <concept>
+    <code value="OV000134"/>
+    <display value="Infeksi bakteri berat"/>
+  </concept>
+  <concept>
+    <code value="OV000135"/>
+    <display value="Infeksi bakteri lokal"/>
+  </concept>
+  <concept>
+    <code value="OV000136"/>
+    <display value="Mungkin bukan infeksi"/>
+  </concept>
+  <concept>
+    <code value="OV000137"/>
+    <display value="Penyakit sangat berat"/>
+  </concept>
+  <concept>
+    <code value="OV000138"/>
+    <display value="Normocephaly"/>
+  </concept>
+  <concept>
+    <code value="OV000145"/>
+    <display value="Malaria positive"/>
+  </concept>
+  <concept>
+    <code value="OV000146"/>
+    <display value="Malaria negative"/>
+  </concept>
+  <concept>
+    <code value="OV000160"/>
+    <display value="Demam &lt;39°C"/>
+  </concept>
+  <concept>
+    <code value="OV000161"/>
+    <display value="Demam ≥39°C"/>
+  </concept>
+  <concept>
+    <code value="OV000163"/>
+    <display value="Kemerahan anggota tubuh"/>
+  </concept>
+  <concept>
+    <code value="OV000166"/>
+    <display value="Persistent inconsolable screaming"/>
+  </concept>
+  <concept>
+    <code value="OV000167"/>
+    <display value="Bayi tidak BAB 48 jam setelah lahir"/>
   </concept>
   <concept>
     <code value="OV000169"/>
@@ -809,87 +1558,812 @@
     <display value="Dukun"/>
   </concept>
   <concept>
-    <code value="grup1-icdmm"/>
-    <display value="Kehamilan dengan komplikasi abortus"/>
+    <code value="OV000171"/>
+    <display value="Rewel"/>
   </concept>
   <concept>
-    <code value="grup2-icdmm"/>
-    <display value="Hipertensi dalam kehamilan, persalinan atau nifas"/>
+    <code value="OV000172"/>
+    <display value="Perdarahan lain"/>
   </concept>
   <concept>
-    <code value="grup3-icdmm"/>
-    <display value="Perdarahan obstetrik"/>
+    <code value="OV000173"/>
+    <display value="Perdarahan pada lokasi penyuntikan"/>
   </concept>
   <concept>
-    <code value="grup4-icdmm"/>
-    <display value="Infeksi terkait kehamilan"/>
+    <code value="OV000174"/>
+    <display value="Timbul kuning pada hari pertama (&lt;24 jam) setelah lahir"/>
   </concept>
   <concept>
-    <code value="grup5-icdmm"/>
-    <display value="Komplikasi obstetrik lain"/>
+    <code value="OV000175"/>
+    <display value="Timbul kuning pada umur &gt;24 jam sampai dengan umur 14 hari"/>
   </concept>
   <concept>
-    <code value="grup6-icdmm"/>
-    <display value="Komplikasi manajemen yang tidak terantisipasi"/>
+    <code value="OV000176"/>
+    <display value="Timbul kuning pada umur &gt;14 hari"/>
   </concept>
   <concept>
-    <code value="grup7-icdmm"/>
-    <display value="Komplikasi non obstetrik"/>
+    <code value="OV000177"/>
+    <display value="Kuning sampai telapak tangan"/>
   </concept>
   <concept>
-    <code value="grup8-icdmm"/>
-    <display value="Penyebab dasar tidak diketahui"/>
+    <code value="OV000178"/>
+    <display value="Kuning sampai telapak kaki"/>
   </concept>
   <concept>
-    <code value="grup9-icdmm"/>
-    <display value="Ko insiden"/>
+    <code value="OV000179"/>
+    <display value="Ikterus berat"/>
   </concept>
   <concept>
-    <code value="ED000001"/>
-    <display value="Edukasi Prognosis"/>
+    <code value="OV000180"/>
+    <display value="Tidak ada ikterus"/>
   </concept>
   <concept>
-    <code value="ED000002"/>
-    <display value="Edukasi terkait Alternatif Tindakan dan Resikonya"/>
+    <code value="OV000181"/>
+    <display value="Cubitan kulit perut kembalinya sangat lambat"/>
   </concept>
   <concept>
-    <code value="ED000003"/>
+    <code value="OV000182"/>
+    <display value="Cubitan kulit perut kembalinya lambat"/>
   </concept>
   <concept>
-    <code value="ED000004"/>
+    <code value="OV000183"/>
+    <display value="Cubitan kulit perut kembali segera"/>
   </concept>
   <concept>
-    <code value="ED000005"/>
+    <code value="OV000184"/>
+    <display value="Diare dehidrasi berat"/>
   </concept>
   <concept>
-    <code value="ED000006"/>
+    <code value="OV000185"/>
+    <display value="Diare dehidrasi ringan/sedang"/>
   </concept>
   <concept>
-    <code value="ED000007"/>
+    <code value="OV000186"/>
+    <display value="Diare tanpa dehidrasi"/>
   </concept>
   <concept>
-    <code value="ED000008"/>
-    <display value="Edukasi Tanda Bahaya Kehamilan, Bersalin dan Nifas"/>
+    <code value="OV000187"/>
+    <display value="Terpajan HIV: mungkin infeksi HIV"/>
   </concept>
   <concept>
-    <code value="ED000009"/>
-    <display value="Edukasi IMD dan ASI Eksklusif"/>
+    <code value="OV000188"/>
+    <display value="Infeksi HIV tidak diketahui"/>
   </concept>
   <concept>
-    <code value="ED000010"/>
-    <display value="Edukasi PHBS"/>
+    <code value="OV000189"/>
+    <display value="Bukan infeksi HIV"/>
   </concept>
   <concept>
-    <code value="ED000011"/>
-    <display value="Edukasi KB pasca salin"/>
+    <code value="OV000190"/>
+    <display value="&lt; 2 kg (umur &lt; 7 hari)"/>
   </concept>
   <concept>
-    <code value="ED000012"/>
-    <display value="Edukasi lainnya"/>
+    <code value="OV000191"/>
+    <display value="Rendah &lt; -2 SD"/>
+  </concept>
+  <concept>
+    <code value="OV000192"/>
+    <display value="Tidak rendah ≥ -2 SD"/>
+  </concept>
+  <concept>
+    <code value="OV000193"/>
+    <display value="Posisi menyusu bayi benar"/>
+  </concept>
+  <concept>
+    <code value="OV000194"/>
+    <display value="Posisi menyusu bayi salah"/>
+  </concept>
+  <concept>
+    <code value="OV000195"/>
+    <display value="Tidak melekat sama sekali"/>
+  </concept>
+  <concept>
+    <code value="OV000196"/>
+    <display value="Tidak melekat dengan baik"/>
+  </concept>
+  <concept>
+    <code value="OV000197"/>
+    <display value="Melekat dengan baik"/>
+  </concept>
+  <concept>
+    <code value="OV000198"/>
+    <display value="Tidak mengisap sama sekali"/>
+  </concept>
+  <concept>
+    <code value="OV000199"/>
+    <display value="Tidak mengisap dengan efektif"/>
+  </concept>
+  <concept>
+    <code value="OV000200"/>
+    <display value="Mengisap dengan efektif"/>
+  </concept>
+  <concept>
+    <code value="OV000201"/>
+    <display value="Berat badan sangat rendah menurut umur"/>
+  </concept>
+  <concept>
+    <code value="OV000202"/>
+    <display value="Berat badan rendah menurut umur dan/atau masalah pemberian ASI"/>
+  </concept>
+  <concept>
+    <code value="OV000203"/>
+    <display value="Berat badan tidak rendah menurut umur dan tidak ada masalah pemberian ASI"/>
+  </concept>
+  <concept>
+    <code value="OV000204"/>
+    <display value="Berat badan rendah menurut umur dan/atau masalah pemberian minum"/>
+  </concept>
+  <concept>
+    <code value="OV000205"/>
+    <display value="Berat badan tidak rendah menurut umur dan tidak ada masalah pemberian minum"/>
+  </concept>
+  <concept>
+    <code value="OV000206"/>
+    <display value="Anak tidak bisa minum atau menyusu"/>
+  </concept>
+  <concept>
+    <code value="OV000207"/>
+    <display value="Anak memuntahkan semua makanan dan minuman"/>
+  </concept>
+  <concept>
+    <code value="OV000208"/>
+    <display value="Anak tidak dapat ditenangkan"/>
+  </concept>
+  <concept>
+    <code value="OV000209"/>
+    <display value="Pandangan mata kosong"/>
+  </concept>
+  <concept>
+    <code value="OV000210"/>
+    <display value="Mata tidak terbuka"/>
+  </concept>
+  <concept>
+    <code value="OV000211"/>
+    <display value="Anak mencari posisi paling nyaman dan menolak berbaring"/>
+  </concept>
+  <concept>
+    <code value="OV000212"/>
+    <display value="Anak malas minum"/>
+  </concept>
+  <concept>
+    <code value="OV000213"/>
+    <display value="Anak minum dengan lahap"/>
+  </concept>
+  <concept>
+    <code value="OV000214"/>
+    <display value="Diare dehidrasi berat"/>
+  </concept>
+  <concept>
+    <code value="OV000215"/>
+    <display value="Diare dehidrasi ringan/sedang"/>
+  </concept>
+  <concept>
+    <code value="OV000216"/>
+    <display value="Anak menangis melengking"/>
+  </concept>
+  <concept>
+    <code value="OV000217"/>
+    <display value="Diare persisten berat"/>
+  </concept>
+  <concept>
+    <code value="OV000218"/>
+    <display value="Diare persisten"/>
+  </concept>
+  <concept>
+    <code value="OV000219"/>
+    <display value="Daerah endemis tinggi"/>
+  </concept>
+  <concept>
+    <code value="OV000220"/>
+    <display value="Daerah endemis rendah"/>
+  </concept>
+  <concept>
+    <code value="OV000221"/>
+    <display value="Daerah non endemis"/>
+  </concept>
+  <concept>
+    <code value="OV000222"/>
+    <display value="Ada penyebab lain dari demam"/>
+  </concept>
+  <concept>
+    <code value="OV000223"/>
+    <display value="Penyakit berat dengan demam"/>
+  </concept>
+  <concept>
+    <code value="OV000224"/>
+    <display value="Demam mungkin bukan malaria"/>
+  </concept>
+  <concept>
+    <code value="OV000225"/>
+    <display value="Penyakit berat dengan demam"/>
+  </concept>
+  <concept>
+    <code value="OV000226"/>
+    <display value="Demam bukan malaria"/>
+  </concept>
+  <concept>
+    <code value="OV000227"/>
+    <display value="Ada luka di mulut tidak dalam atau luas"/>
+  </concept>
+  <concept>
+    <code value="OV000228"/>
+    <display value="Ada luka di mulut dalam atau luas"/>
+  </concept>
+  <concept>
+    <code value="OV000229"/>
+    <display value="Campak dengan komplikasi berat"/>
+  </concept>
+  <concept>
+    <code value="OV000230"/>
+    <display value="Campak dengan komplikasi pada mata"/>
+  </concept>
+  <concept>
+    <code value="OV000231"/>
+    <display value="Campak dengan komplikasi pada mulut"/>
+  </concept>
+  <concept>
+    <code value="OV000232"/>
+    <display value="Campak dengan komplikasi pada mata dan mulut"/>
+  </concept>
+  <concept>
+    <code value="OV000233"/>
+    <display value="Kaki/ tangan tampak pucat"/>
+  </concept>
+  <concept>
+    <code value="OV000234"/>
+    <display value="Waktu pengisian kapiler &gt;2 detik"/>
+  </concept>
+  <concept>
+    <code value="OV000235"/>
+    <display value="Nyeri tekan perut kanan atas"/>
+  </concept>
+  <concept>
+    <code value="OV000236"/>
+    <display value="Ada pembesaran hepar &gt;2 cm"/>
+  </concept>
+  <concept>
+    <code value="OV000241"/>
+    <display value="Infeksi telinga akut"/>
+  </concept>
+  <concept>
+    <code value="OV000242"/>
+    <display value="Tidak ada infeksi telinga"/>
+  </concept>
+  <concept>
+    <code value="OV000243"/>
+    <display value="BB/PB (TB): &lt;-3 SD"/>
+  </concept>
+  <concept>
+    <code value="OV000244"/>
+    <display value="BB/PB (TB): -3 SD - &lt; -2 SD"/>
+  </concept>
+  <concept>
+    <code value="OV000245"/>
+    <display value="BB/PB (TB): -2 SD - 1 SD"/>
+  </concept>
+  <concept>
+    <code value="OV000246"/>
+    <display value="BB/PB (TB): &gt; 1 SD - 2 SD"/>
+  </concept>
+  <concept>
+    <code value="OV000247"/>
+    <display value="BB/PB (TB): &gt; 2 SD - 3 SD"/>
+  </concept>
+  <concept>
+    <code value="OV000248"/>
+    <display value="BB/PB (TB): &gt; 3 SD"/>
+  </concept>
+  <concept>
+    <code value="OV000249"/>
+    <display value="LiLA &lt; 11,5 cm"/>
+  </concept>
+  <concept>
+    <code value="OV000250"/>
+    <display value="LiLA 11,5 cm - 12,5 cm"/>
+  </concept>
+  <concept>
+    <code value="OV000251"/>
+    <display value="LiLA ≥ 12,5 cm"/>
+  </concept>
+  <concept>
+    <code value="OV000252"/>
+    <display value="Ada tanda-tanda komplikasi medis"/>
+  </concept>
+  <concept>
+    <code value="OV000253"/>
+    <display value="Terlalu lemah untuk menyusu"/>
+  </concept>
+  <concept>
+    <code value="OV000254"/>
+    <display value="Gizi buruk dengan komplikasi berat"/>
+  </concept>
+  <concept>
+    <code value="OV000255"/>
+    <display value="Gizi buruk tanpa komplikasi"/>
+  </concept>
+  <concept>
+    <code value="OV000258"/>
+    <display value="Risiko Gizi Lebih"/>
+  </concept>
+  <concept>
+    <code value="OV000265"/>
+    <display value="Sangat pendek"/>
+  </concept>
+  <concept>
+    <code value="OV000266"/>
+    <display value="Pendek"/>
+  </concept>
+  <concept>
+    <code value="OV000272"/>
+    <display value="Anemia berat"/>
+  </concept>
+  <concept>
+    <code value="OV000273"/>
+    <display value="Demam tinggi terus menerus"/>
+  </concept>
+  <concept>
+    <code value="OV000274"/>
+    <display value="Badan teraba dingin"/>
+  </concept>
+  <concept>
+    <code value="OV000275"/>
+    <display value="Muntah terus menerus"/>
+  </concept>
+  <concept>
+    <code value="OV000276"/>
+    <display value="BAK terakhir ≥6 jam"/>
+  </concept>
+  <concept>
+    <code value="OV000277"/>
+    <display value="BAK terakhir &lt;6 jam"/>
+  </concept>
+  <concept>
+    <code value="OV000278"/>
+    <display value="Ada rasa penuh di telinga"/>
+  </concept>
+  <concept>
+    <code value="OV000279"/>
+    <display value="Influenza A virus unsubtype"/>
+  </concept>
+  <concept>
+    <code value="OV000280"/>
+    <display value="Influenza B virus lineage not determined"/>
+  </concept>
+  <concept>
+    <code value="OV000281"/>
+    <display value="Ada kotoran keluar pada lubang tidak normal di sekitar anus"/>
+  </concept>
+  <concept>
+    <code value="OV000282"/>
+    <display value="Pusar kemerahan meluas sampai dinding perut &gt;1 cm"/>
+  </concept>
+  <concept>
+    <code value="OV000283"/>
+    <display value="Imunisasi lengkap"/>
+  </concept>
+  <concept>
+    <code value="OV000285"/>
+    <display value="Penyandang immunocompromised sedang-berat (orang yang mengalami gangguan sistem imun)"/>
+  </concept>
+  <concept>
+    <code value="OV000286"/>
+    <display value="Dewasa dengan komorbid"/>
+  </concept>
+  <concept>
+    <code value="OV000287"/>
+    <display value="Pneumonia berat"/>
+  </concept>
+  <concept>
+    <code value="OV000288"/>
+    <display value="Batuk bukan pneumonia"/>
+  </concept>
+  <concept>
+    <code value="OV000289"/>
+    <display value="Infeksi telinga kronis"/>
+  </concept>
+  <concept>
+    <code value="OV000290"/>
+    <display value="Ada nanah/ lendir"/>
+  </concept>
+  <concept>
+    <code value="OV000291"/>
+    <display value="Ada bercak darah"/>
+  </concept>
+  <concept>
+    <code value="OV000292"/>
+    <display value="Ada air liur"/>
+  </concept>
+  <concept>
+    <code value="OV000294"/>
+    <display value="Masalah asupan yang tidak adekuat"/>
+  </concept>
+  <concept>
+    <code value="OV000295"/>
+    <display value="Masalah absorpsi"/>
+  </concept>
+  <concept>
+    <code value="OV000296"/>
+    <display value="Masalah peningkatan kebutuhan kalori"/>
+  </concept>
+  <concept>
+    <code value="OV000297"/>
+    <display value="Demam &gt; 38,5 C"/>
+  </concept>
+  <concept>
+    <code value="OV000298"/>
+    <display value="Risiko malnutrisi rendah"/>
+  </concept>
+  <concept>
+    <code value="OV000299"/>
+    <display value="Risiko malnutrisi sedang"/>
+  </concept>
+  <concept>
+    <code value="OV000300"/>
+    <display value="Risiko malnutrisi tinggi"/>
+  </concept>
+  <concept>
+    <code value="OV000301"/>
+    <display value="Memiliki diagnosis kanker &gt;5 tahun yang lalu"/>
+  </concept>
+  <concept>
+    <code value="OV000302"/>
+    <display value="Memiliki diagnosis kanker &lt;5 tahun yang lalu"/>
+  </concept>
+  <concept>
+    <code value="OV000303"/>
+    <display value="Tidak pernah didiagnosis menderita kanker"/>
+  </concept>
+  <concept>
+    <code value="OV000304"/>
+    <display value="Curiga Serumen"/>
+  </concept>
+  <concept>
+    <code value="OV000305"/>
+    <display value="Naik adekuat"/>
+  </concept>
+  <concept>
+    <code value="OV000306"/>
+    <display value="Tidak Adekuat"/>
+  </concept>
+  <concept>
+    <code value="OV000307"/>
+    <display value="Formula 75"/>
+  </concept>
+  <concept>
+    <code value="OV000308"/>
+    <display value="Formula 100"/>
+  </concept>
+  <concept>
+    <code value="OV000309"/>
+    <display value="ReSoMal (Rehydration Solution for Malnutrition)"/>
+  </concept>
+  <concept>
+    <code value="OV000310"/>
+    <display value="1 kapsul biru"/>
+  </concept>
+  <concept>
+    <code value="OV000311"/>
+    <display value="1/2 kapsul biru"/>
+  </concept>
+  <concept>
+    <code value="OV000314"/>
+    <display value="Curiga OMSK (otitis media supuratif kronik)"/>
+  </concept>
+  <concept>
+    <code value="OV000316"/>
+    <display value="Dilakukan monitoring penyakit penyerta/ penyulit"/>
+  </concept>
+  <concept>
+    <code value="OV000318"/>
+    <display value="Dilakukan stimulasi tumbuh kembang"/>
+  </concept>
+  <concept>
+    <code value="OV000319"/>
+    <display value="Sekolah"/>
+  </concept>
+  <concept>
+    <code value="OV000320"/>
+    <display value="Tidak sekolah"/>
+  </concept>
+  <concept>
+    <code value="OV000321"/>
+    <display value="Sangat pucat"/>
+  </concept>
+  <concept>
+    <code value="OV000322"/>
+    <display value="Tidak pucat"/>
+  </concept>
+  <concept>
+    <code value="OV000323"/>
+    <display value="Susunan gigi depan tidak teratur"/>
+  </concept>
+  <concept>
+    <code value="OV000324"/>
+    <display value="Gigi berlubang"/>
+  </concept>
+  <concept>
+    <code value="OV000325"/>
+    <display value="Pelayan Publik"/>
+  </concept>
+  <concept>
+    <code value="OV000326"/>
+    <display value="Diplomat"/>
+  </concept>
+  <concept>
+    <code value="OV000327"/>
+    <display value="Gotong Royong"/>
+  </concept>
+  <concept>
+    <code value="OV000328"/>
+    <display value="BUMD"/>
+  </concept>
+  <concept>
+    <code value="OV000329"/>
+    <display value="BUMN"/>
+  </concept>
+  <concept>
+    <code value="OV000330"/>
+    <display value="Disabilitas Lainnya"/>
+  </concept>
+  <concept>
+    <code value="OV000331"/>
+    <display value="Disabilitas Mental"/>
+  </concept>
+  <concept>
+    <code value="OV000332"/>
+    <display value="Ibu Menyusui"/>
+  </concept>
+  <concept>
+    <code value="OV000333"/>
+    <display value="Masyarakat Lainnya"/>
+  </concept>
+  <concept>
+    <code value="OV000334"/>
+    <display value="Masyarakat Umum"/>
+  </concept>
+  <concept>
+    <code value="OV000335"/>
+    <display value="Pariwisata"/>
+  </concept>
+  <concept>
+    <code value="OV000336"/>
+    <display value="Pedagang Pasar"/>
+  </concept>
+  <concept>
+    <code value="OV000337"/>
+    <display value="Pegawai Pemerintah"/>
+  </concept>
+  <concept>
+    <code value="OV000338"/>
+    <display value="Pejabat Negara"/>
+  </concept>
+  <concept>
+    <code value="OV000339"/>
+    <display value="Pelayan Publik"/>
+  </concept>
+  <concept>
+    <code value="OV000340"/>
+    <display value="Pendamping Disabilitas"/>
+  </concept>
+  <concept>
+    <code value="OV000341"/>
+    <display value="Pendidik"/>
+  </concept>
+  <concept>
+    <code value="OV000342"/>
+    <display value="Penyuluh Agama"/>
+  </concept>
+  <concept>
+    <code value="OV000343"/>
+    <display value="Pra-Lansia"/>
+  </concept>
+  <concept>
+    <code value="OV000344"/>
+    <display value="Transportasi Publik"/>
+  </concept>
+  <concept>
+    <code value="OV000345"/>
+    <display value="Wakil Rakyat"/>
+  </concept>
+  <concept>
+    <code value="OV000346"/>
+    <display value="WNA(PNA/OI)"/>
+  </concept>
+  <concept>
+    <code value="OV000349"/>
+    <display value="Suara nafas vesikular meningkat"/>
+  </concept>
+  <concept>
+    <code value="OV000350"/>
+    <display value="Suara nafas vesikular melemah"/>
+  </concept>
+  <concept>
+    <code value="OV000351"/>
+    <display value="Positif (HPV tipe onkogenik lain)"/>
+  </concept>
+  <concept>
+    <code value="OV000352"/>
+    <display value="Positif (HPV tipe 16/18/52)"/>
+  </concept>
+  <concept>
+    <code value="OV000354"/>
+    <display value="Tidak ada keluarga yang terdiagnosis kanker"/>
+  </concept>
+  <concept>
+    <code value="OV000355"/>
+    <display value="Kelopak mata bawah dalam pucat"/>
+  </concept>
+  <concept>
+    <code value="OV000356"/>
+    <display value="Bibir tampak pucat"/>
+  </concept>
+  <concept>
+    <code value="OV000357"/>
+    <display value="Telapak tangan tampak pucat"/>
+  </concept>
+  <concept>
+    <code value="OV000358"/>
+    <display value="Disabilitas netra"/>
+  </concept>
+  <concept>
+    <code value="OV000359"/>
+    <display value="Disabilitas rungu"/>
+  </concept>
+  <concept>
+    <code value="OV000360"/>
+    <display value="Disabilitas wicara"/>
+  </concept>
+  <concept>
+    <code value="OV000361"/>
+    <display value="Akibat stroke"/>
+  </concept>
+  <concept>
+    <code value="OV000362"/>
+    <display value="Akibat kusta"/>
+  </concept>
+  <concept>
+    <code value="OV000363"/>
+    <display value="Disabilitas grahita"/>
+  </concept>
+  <concept>
+    <code value="OV000364"/>
+    <display value="Heartline Pusat Jantung Nasional Harapan Kita (PJNHK)"/>
+  </concept>
+  <concept>
+    <code value="OV000365"/>
+    <display value="Tanpa konfirmasi"/>
+  </concept>
+  <concept>
+    <code value="OV000366"/>
+    <display value="Tidak dilakukan reperfusi"/>
+  </concept>
+  <concept>
+    <code value="OV000367"/>
+    <display value="Subkorteks"/>
+  </concept>
+  <concept>
+    <code value="OV000368"/>
+    <display value="LBBB baru"/>
+  </concept>
+  <concept>
+    <code value="OV000369"/>
+    <display value="Tidak ada perubahan akut"/>
+  </concept>
+  <concept>
+    <code value="OV000370"/>
+    <display value="ST elevasi tidak dapat ditentukan"/>
+  </concept>
+  <concept>
+    <code value="OV000371"/>
+    <display value="Terjadi Multiple Perdarahan"/>
+  </concept>
+  <concept>
+    <code value="OV000372"/>
+    <display value="Tidak Terjadi Multiple Perdarahan"/>
+  </concept>
+  <concept>
+    <code value="OV000373"/>
+    <display value="Tidak ada tanda klinis gagal jantung"/>
+  </concept>
+  <concept>
+    <code value="OV000374"/>
+    <display value="Tidak dapat diaplikasikan / tidak tersedia"/>
+  </concept>
+  <concept>
+    <code value="OV000375"/>
+    <display value="Respon iskemia positif"/>
+  </concept>
+  <concept>
+    <code value="OV000376"/>
+    <display value="Respon iskemia negatif"/>
+  </concept>
+  <concept>
+    <code value="OV000377"/>
+    <display value="&lt;5%"/>
+  </concept>
+  <concept>
+    <code value="OV000378"/>
+    <display value="5% to &lt; 10%"/>
+  </concept>
+  <concept>
+    <code value="OV000379"/>
+    <display value="10% to &lt; 20%"/>
+  </concept>
+  <concept>
+    <code value="OV000380"/>
+    <display value="20% to &lt; 30%"/>
+  </concept>
+  <concept>
+    <code value="OV000381"/>
+    <display value="&gt;= 30%"/>
+  </concept>
+  <concept>
+    <code value="OV000388"/>
+    <display value="Penurunan berat badan ≤5%"/>
+  </concept>
+  <concept>
+    <code value="OV000389"/>
+    <display value="Penurunan berat badan &gt;5 - 10%"/>
+  </concept>
+  <concept>
+    <code value="OV000390"/>
+    <display value="Penurunan berat badan &gt;10 - 20%"/>
+  </concept>
+  <concept>
+    <code value="OV000391"/>
+    <display value="Penurunan berat badan &gt; 20%"/>
+  </concept>
+  <concept>
+    <code value="OV000401"/>
+    <display value="Benzatin Penicillin G (BPG) intramuskular"/>
+  </concept>
+  <concept>
+    <code value="OV000402"/>
+    <display value="Penicillin oral"/>
+  </concept>
+  <concept>
+    <code value="OV000403"/>
+    <display value="Erythromycin oral"/>
+  </concept>
+  <concept>
+    <code value="OV000404"/>
+    <display value="Tidak sama sekali"/>
+  </concept>
+  <concept>
+    <code value="OV000405"/>
+    <display value="Iya dan tidak teratur"/>
+  </concept>
+  <concept>
+    <code value="OV000406"/>
+    <display value="Iya dan teratur"/>
+  </concept>
+  <concept>
+    <code value="OV000407"/>
+    <display value="Statin Intensitas Tinggi"/>
+  </concept>
+  <concept>
+    <code value="OV000408"/>
+    <display value="Statin Intensitas Sedang"/>
+  </concept>
+  <concept>
+    <code value="OV000409"/>
+    <display value="Statin Intensitas Rendah"/>
+  </concept>
+  <concept>
+    <code value="OV000410"/>
+    <display value="Grade 0"/>
+  </concept>
+  <concept>
+    <code value="OV000411"/>
+    <display value="Grade 2a"/>
+  </concept>
+  <concept>
+    <code value="OV000412"/>
+    <display value="Grade 2b"/>
   </concept>
   <concept>
     <code value="PC000001"/>
-    <display value="Perawatan Tali Pusat"/>
+    <display value="Perawatan Tali Pusat "/>
   </concept>
   <concept>
     <code value="PC000002"/>
@@ -904,32 +2378,296 @@
     <display value="KB Pasca Persalinan"/>
   </concept>
   <concept>
-    <code value="TL000001"/>
-    <display value="Rawat inap"/>
+    <code value="PC000012"/>
+    <display value="Terapi tidak diketahui"/>
   </concept>
   <concept>
-    <code value="FO000001"/>
-    <display value="MT Lokal"/>
+    <code value="PC000013"/>
+    <display value="Riwayat tes HIV ibu"/>
   </concept>
   <concept>
-    <code value="FO000002"/>
-    <display value="MT Pabrikan"/>
+    <code value="PC000014"/>
+    <display value="Riwayat tes HIV anak"/>
   </concept>
   <concept>
-    <code value="LO000001"/>
-    <display value="Puskesmas"/>
+    <code value="PC000015"/>
+    <display value="Point of Care Testing HB Meter"/>
   </concept>
   <concept>
-    <code value="LO000002"/>
-    <display value="Rumah Sakit"/>
+    <code value="PC000016"/>
+    <display value="Riwayat transfusi darah ibu"/>
   </concept>
   <concept>
-    <code value="LO000003"/>
-    <display value="Klinik"/>
+    <code value="PR000001"/>
+    <display value="Prognosis baik"/>
   </concept>
   <concept>
-    <code value="LO000004"/>
-    <display value="Rumah"/>
+    <code value="PR000002"/>
+    <display value="Prognosis dubia et bonam / cenderung baik"/>
+  </concept>
+  <concept>
+    <code value="PR000003"/>
+    <display value="Prognosis dubia et malam / cenderung tidak baik"/>
+  </concept>
+  <concept>
+    <code value="PR000004"/>
+    <display value="Prognosis tidak baik"/>
+  </concept>
+  <concept>
+    <code value="QRI000001"/>
+    <display value="Terduga TBC SO"/>
+  </concept>
+  <concept>
+    <code value="QRI000002"/>
+    <display value="Terduga TBC RO"/>
+  </concept>
+  <concept>
+    <code value="QRI000003"/>
+    <display value="Ada"/>
+  </concept>
+  <concept>
+    <code value="QRI000004"/>
+    <display value="Tidak ada"/>
+  </concept>
+  <concept>
+    <code value="QRI000005"/>
+    <display value="Sereal, akar, dan umbi"/>
+  </concept>
+  <concept>
+    <code value="QRI000007"/>
+    <display value="Susu dan produk olahannya"/>
+  </concept>
+  <concept>
+    <code value="QRI000008"/>
+    <display value="Daging dan/atau ikan"/>
+  </concept>
+  <concept>
+    <code value="QRI000010"/>
+    <display value="Buah dan sayur sumber vitamin A"/>
+  </concept>
+  <concept>
+    <code value="QRI000011"/>
+    <display value="Buah dan sayur lainnya"/>
+  </concept>
+  <concept>
+    <code value="QRI000012"/>
+    <display value="Kehamilan KEK"/>
+  </concept>
+  <concept>
+    <code value="QRI000013"/>
+    <display value="Kehamilan Non KEK"/>
+  </concept>
+  <concept>
+    <code value="QRI000014"/>
+    <display value="Tidak"/>
+  </concept>
+  <concept>
+    <code value="QRI000015"/>
+    <display value="Ya, tidak setiap hari"/>
+  </concept>
+  <concept>
+    <code value="QRI000016"/>
+    <display value="Ya, setiap hari"/>
+  </concept>
+  <concept>
+    <code value="QRI000017"/>
+    <display value="Memiliki tempat kerja mengandung zat karsinogenik"/>
+  </concept>
+  <concept>
+    <code value="QRI000018"/>
+    <display value="Tidak yakin memiliki tempat kerja mengandung zat karsinogenik"/>
+  </concept>
+  <concept>
+    <code value="QRI000019"/>
+    <display value="Tidak memiliki tempat kerja mengandung zat karsinogenik"/>
+  </concept>
+  <concept>
+    <code value="QRI000020"/>
+    <display value="Memiliki riwayat keluarga kanker kolorektal generasi pertama"/>
+  </concept>
+  <concept>
+    <code value="QRI000021"/>
+    <display value="Tidak memiliki riwayat keluarga kanker kolorektal generasi pertama"/>
+  </concept>
+  <concept>
+    <code value="QRI000022"/>
+    <display value="Perokok aktif (dalam 1 tahun ini masih merokok)"/>
+  </concept>
+  <concept>
+    <code value="QRI000023"/>
+    <display value="Perokok/bekas perokok berhenti &lt;10 tahun lalu"/>
+  </concept>
+  <concept>
+    <code value="QRI000024"/>
+    <display value="Memiliki tempat tinggal berpotensi tinggi"/>
+  </concept>
+  <concept>
+    <code value="QRI000025"/>
+    <display value="Tidak yakin memiliki tempat tinggal berpotensi tinggi"/>
+  </concept>
+  <concept>
+    <code value="QRI000026"/>
+    <display value="Tidak memiliki tempat tinggal berpotensi tinggi"/>
+  </concept>
+  <concept>
+    <code value="QRI000027"/>
+    <display value="Memiliki lingkungan dalam rumah yang tidak sehat"/>
+  </concept>
+  <concept>
+    <code value="QRI000029"/>
+    <display value="Memiliki lingkungan dalam rumah yang sehat"/>
+  </concept>
+  <concept>
+    <code value="QRI000032"/>
+    <display value="Memiliki diagnosis kanker &gt;5 tahun yang lalu"/>
+  </concept>
+  <concept>
+    <code value="QRI000033"/>
+    <display value="Memiliki diagnosis kanker &lt;5 tahun yang lalu"/>
+  </concept>
+  <concept>
+    <code value="QRI000034"/>
+    <display value="Tidak pernah didiagnosis menderita kanker"/>
+  </concept>
+  <concept>
+    <code value="QRI000035"/>
+    <display value="Memiliki keluarga yang terdiagnosis kanker lain"/>
+  </concept>
+  <concept>
+    <code value="QRI000036"/>
+    <display value="Tidak ada keluarga yang terdiagnosis kanker"/>
+  </concept>
+  <concept>
+    <code value="QRI000037"/>
+    <display value="Pre Hospitalization"/>
+  </concept>
+  <concept>
+    <code value="QRI000039"/>
+    <display value="Kamar Penuh"/>
+  </concept>
+  <concept>
+    <code value="QRI000040"/>
+    <display value="Kamar Tidak Tersedia"/>
+  </concept>
+  <concept>
+    <code value="QRI000041"/>
+    <display value="Atas Permintaan Sendiri (APS)"/>
+  </concept>
+  <concept>
+    <code value="QRI000042"/>
+    <display value="Post Hospitalization"/>
+  </concept>
+  <concept>
+    <code value="QRII000001"/>
+    <display value="Penyandang immunocompromised (12 - &lt;60 tahun)"/>
+  </concept>
+  <concept>
+    <code value="QRII000002"/>
+    <display value="Kanker aktif (pengobatan imunosupresif aktif untuk tumor atau keganasan hematologi (termasuk leukemia, limfoma, dan mieloma), atau dalam waktu 12 bulan setelah mengakhiri pengobatan)"/>
+  </concept>
+  <concept>
+    <code value="QRII000003"/>
+    <display value="Pasien yang mengalami imunodefisiensi dan secara aktif mendapatkan obat imunosupresan"/>
+  </concept>
+  <concept>
+    <code value="QRII000004"/>
+    <display value="ODHA dengan CD4 &lt;200 sel/μl dengan salah satu/lebih kondisi berikut: infeksi oportunistik, tidak sedang menjalani pengobatan HIV, atau viral load yang terdeteksi"/>
+  </concept>
+  <concept>
+    <code value="QRII000005"/>
+    <display value="Tidak Diketahui Mendapat Obat"/>
+  </concept>
+  <concept>
+    <code value="QRII000006"/>
+    <display value="Mendapat Obat Statin Intensitas Tinggi"/>
+  </concept>
+  <concept>
+    <code value="QRII000007"/>
+    <display value="Mendapat Obat Statin Intensitas Moderate"/>
+  </concept>
+  <concept>
+    <code value="QRII000008"/>
+    <display value="Mendapat Obat Statin Intensitas Rendah"/>
+  </concept>
+  <concept>
+    <code value="QRII000009"/>
+    <display value="Optimal Medical Therapy (OMT)"/>
+  </concept>
+  <concept>
+    <code value="QRII000010"/>
+    <display value="Tidak sama sekali"/>
+  </concept>
+  <concept>
+    <code value="QRII000011"/>
+    <display value="Iya dan tidak teratur"/>
+  </concept>
+  <concept>
+    <code value="QRII000012"/>
+    <display value="Iya dan teratur"/>
+  </concept>
+  <concept>
+    <code value="QRII000013"/>
+    <display value="Benzatin Penicillin G (BPG) intramuskular"/>
+  </concept>
+  <concept>
+    <code value="QRII000014"/>
+    <display value="Penicillin oral"/>
+  </concept>
+  <concept>
+    <code value="QRII000015"/>
+    <display value="Erythromycin oral"/>
+  </concept>
+  <concept>
+    <code value="SC000001"/>
+    <display value="Spesimen Rusak"/>
+  </concept>
+  <concept>
+    <code value="SRC000011"/>
+    <display value="Pemeriksaaan TCM XDR"/>
+  </concept>
+  <concept>
+    <code value="SRC000012"/>
+    <display value="Pemeriksaaan LPA lini 1"/>
+  </concept>
+  <concept>
+    <code value="SRC000013"/>
+    <display value="Pemeriksaaan LPA lini 2"/>
+  </concept>
+  <concept>
+    <code value="SRC000014"/>
+    <display value="Pemeriksaan Paket Standar Kepekaan"/>
+  </concept>
+  <concept>
+    <code value="SRR000007"/>
+    <display value="Pemeriksaan Diagnosis"/>
+  </concept>
+  <concept>
+    <code value="SRR000008"/>
+    <display value="Follow Up"/>
+  </concept>
+  <concept>
+    <code value="SRR000009"/>
+    <display value="Pemeriksaan Ulang"/>
+  </concept>
+  <concept>
+    <code value="SRR000010"/>
+    <display value="Akhir Pengobatan"/>
+  </concept>
+  <concept>
+    <code value="SRR000011"/>
+    <display value="Monitoring rutin"/>
+  </concept>
+  <concept>
+    <code value="SRR000012"/>
+    <display value="PPIA"/>
+  </concept>
+  <concept>
+    <code value="ST000001"/>
+    <display value="Sputum Pagi"/>
+  </concept>
+  <concept>
+    <code value="ST000002"/>
+    <display value="Sputum Sewaktu"/>
   </concept>
   <concept>
     <code value="SU000001"/>
@@ -942,5 +2680,113 @@
   <concept>
     <code value="SU000003"/>
     <display value="Lainnya"/>
+  </concept>
+  <concept>
+    <code value="TL000001"/>
+    <display value="Rawat inap"/>
+  </concept>
+  <concept>
+    <code value="X099379"/>
+    <display value="Pemeriksaaan TCM XDR"/>
+  </concept>
+  <concept>
+    <code value="X099380"/>
+    <display value="Line Probe Assay (LPA) Lini 1"/>
+  </concept>
+  <concept>
+    <code value="X099381"/>
+    <display value="Line Probe Assay (LPA) Lini 2"/>
+  </concept>
+  <concept>
+    <code value="X099383"/>
+    <display value="Pemeriksaan Paket Standar Kepekaan"/>
+  </concept>
+  <concept>
+    <code value="X099384"/>
+    <display value="Pemeriksaan paket standar kepekaan (H - SLID - capreomycin)"/>
+  </concept>
+  <concept>
+    <code value="X099385"/>
+    <display value="Pemeriksaan paket standar kepekaan (H Dosis Tingsi)"/>
+  </concept>
+  <concept>
+    <code value="X099386"/>
+    <display value="Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) BTA"/>
+  </concept>
+  <concept>
+    <code value="X099387"/>
+    <display value="Pemeriksaan Dahak Follow Up BTA dan Biakan Pasien TBC RO (Bulan 1-12) biakan"/>
+  </concept>
+  <concept>
+    <code value="X099388"/>
+    <display value="Biakan TB"/>
+  </concept>
+  <concept>
+    <code value="X099389"/>
+    <display value="Hasil Uji Metode LJ"/>
+  </concept>
+  <concept>
+    <code value="X099390"/>
+    <display value="Hasil Uji Metode MGIT"/>
+  </concept>
+  <concept>
+    <code value="X099391"/>
+    <display value="H Dosis Rendah"/>
+  </concept>
+  <concept>
+    <code value="X099392"/>
+    <display value="FQ Dosis Rendah"/>
+  </concept>
+  <concept>
+    <code value="X099393"/>
+    <display value="Hasil Uji Lfx"/>
+  </concept>
+  <concept>
+    <code value="X099394"/>
+    <display value="Hasil Uji Mfx DT"/>
+  </concept>
+  <concept>
+    <code value="X099770"/>
+    <display value="Rifampisin sensitive"/>
+  </concept>
+  <concept>
+    <code value="X099771"/>
+    <display value="Rifampisin resistan"/>
+  </concept>
+  <concept>
+    <code value="X099772"/>
+    <display value="Rifampisin indeterminate"/>
+  </concept>
+  <concept>
+    <code value="X099773"/>
+    <display value="Indeterminate (IDT)"/>
+  </concept>
+  <concept>
+    <code value="X099774"/>
+    <display value="Ress Inffered (RI)"/>
+  </concept>
+  <concept>
+    <code value="X099775"/>
+    <display value="Moxifloxacin DT (Mfx DT)"/>
+  </concept>
+  <concept>
+    <code value="X099776"/>
+    <display value="H High Dosage [Susceptibility] by Method for Slow-growing mycobacteria"/>
+  </concept>
+  <concept>
+    <code value="X099777"/>
+    <display value="H - SLID - capreomycin [Susceptibility] by Method for Slow-growing mycobacteria"/>
+  </concept>
+  <concept>
+    <code value="X099778"/>
+    <display value="Moxifloxacin High Dosage [Susceptibility] by Method for Slow-growing mycobacteria"/>
+  </concept>
+  <concept>
+    <code value="X099779"/>
+    <display value="Delamanid [Susceptibility] by Method for Slow-growing mycobacteria"/>
+  </concept>
+  <concept>
+    <code value="X099780"/>
+    <display value="Bedaquiline [Susceptibility] by Method for Slow-growing mycobacteria"/>
   </concept>
 </CodeSystem>

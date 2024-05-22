@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "IDCoreEncounterStatusFinished"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-02-15T12:08:26+07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-22T17:23:47+07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Thomas Chaidir" ] ;
@@ -484,8 +484,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS>
+           fhir:v "http://hl7.org/fhir/ValueSet/encounter-status"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/encounter-status>
          ]
        ] ;
        fhir:mapping ( [
@@ -681,8 +681,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS>
+           fhir:v "http://hl7.org/fhir/ValueSet/encounter-status"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/encounter-status>
          ]
        ] ;
        fhir:mapping ( [
@@ -905,8 +905,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS>
+           fhir:v "http://terminology.hl7.org/ValueSet/encounter-class"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/encounter-class>
          ]
        ] ;
        fhir:mapping ( [
@@ -1098,8 +1098,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS>
+           fhir:v "http://terminology.hl7.org/ValueSet/encounter-class"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/encounter-class>
          ]
        ] ;
        fhir:mapping ( [
@@ -1323,8 +1323,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterTypeVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterTypeVS>
+           fhir:v "http://terminology.hl7.org/ValueSet/encounter-type"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/encounter-type>
          ]
        ] ;
        fhir:mapping ( [
@@ -1371,8 +1371,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS>
+           fhir:v "http://hl7.org/fhir/ValueSet/service-type"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/service-type>
          ]
        ] ;
        fhir:mapping ( [
@@ -1416,8 +1416,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/ActPriorityVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ActPriorityVS>
+           fhir:v "http://terminology.hl7.org/ValueSet/v3-ActPriority"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v3-ActPriority>
          ]
        ] ;
        fhir:mapping ( [
@@ -1754,8 +1754,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/ParticipationTypeVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/ParticipationTypeVS>
+           fhir:v "http://terminology.hl7.org/ValueSet/v3-ParticipationType"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v3-ParticipationType>
          ]
        ] ;
        fhir:mapping ( [
@@ -2163,8 +2163,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterReasonCodesVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterReasonCodesVS>
+           fhir:v "http://hl7.org/fhir/ValueSet/encounter-reason"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/ValueSet/encounter-reason>
          ]
        ] ;
        fhir:mapping ( [
@@ -2197,8 +2197,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreCondition"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreCondition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Condition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
          ] [
            fhir:v "http://hl7.org/fhir/StructureDefinition/Procedure"^^xsd:anyURI ;
            fhir:link <http://hl7.org/fhir/StructureDefinition/Procedure>
@@ -2401,8 +2401,8 @@
        fhir:type ( [
          fhir:code [ fhir:v "Reference"^^xsd:anyURI ] ;
          fhir:targetProfile ( [
-           fhir:v "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreCondition"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreCondition>
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Condition"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Condition>
          ] )
        ] ) ;
        fhir:constraint ( [
@@ -2462,8 +2462,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterDiagnosisUseVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterDiagnosisUseVS>
+           fhir:v "http://terminology.hl7.org/ValueSet/diagnosis-role"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/diagnosis-role>
          ]
        ] ;
        fhir:mapping ( [
@@ -2793,8 +2793,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationAdmitSourceVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationAdmitSourceVS>
+           fhir:v "http://terminology.hl7.org/ValueSet/encounter-admit-source"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/encounter-admit-source>
          ]
        ] ;
        fhir:mapping ( [
@@ -2835,8 +2835,8 @@
        fhir:binding [
          fhir:strength [ fhir:v "required" ] ;
          fhir:valueSet [
-           fhir:v "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreAdmitSourceVS"^^xsd:anyURI ;
-           fhir:link <https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreAdmitSourceVS>
+           fhir:v "http://terminology.hl7.org/ValueSet/v2-0092"^^xsd:anyURI ;
+           fhir:link <http://terminology.hl7.org/ValueSet/v2-0092>
          ]
        ] ;
        fhir:mapping ( [
@@ -3080,11 +3080,36 @@
        ] )
      ] [
        fhir:id [ fhir:v "Encounter.location" ] ;
+       fhir:extension ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "reguler" ]
+             ] [
+               fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "1" ]
+             ] )
+           ]
+         ] [
+           fhir:url [ fhir:v "upgradeClassIndicator"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:CodeableConcept ;
+             fhir:coding ( [
+               fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"^^xsd:anyURI ] ;
+               fhir:code [ fhir:v "kelas-tetap" ]
+             ] )
+           ]
+         ] ) ;
+         fhir:url [ fhir:v "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass"^^xsd:anyURI ]
+       ] ) ;
        fhir:path [ fhir:v "Encounter.location" ] ;
        fhir:short [ fhir:v "List of locations where the patient has been" ] ;
        fhir:definition [ fhir:v "List of locations where  the patient has been during this encounter." ] ;
        fhir:comment [ fhir:v "Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type \"kind\" such as \"client's home\" and an encounter.class = \"virtual\"." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Encounter.location" ] ;
@@ -3150,7 +3175,7 @@
        ] ;
        fhir:short [ fhir:v "Extension" ] ;
        fhir:definition [ fhir:v "An Extension" ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Element.extension" ] ;
@@ -3184,13 +3209,13 @@
        fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
        fhir:isSummary [ fhir:v "false"^^xsd:boolean ]
      ] [
-       fhir:id [ fhir:v "Encounter.location.extension:encounterLocation" ] ;
+       fhir:id [ fhir:v "Encounter.location.extension:encounterlocation" ] ;
        fhir:path [ fhir:v "Encounter.location.extension" ] ;
-       fhir:sliceName [ fhir:v "encounterLocation" ] ;
+       fhir:sliceName [ fhir:v "encounterlocation" ] ;
        fhir:short [ fhir:v "Encounter Location Extention" ] ;
-       fhir:definition [ fhir:v "The administrative code of the address, represented in six levels: province, city/regency, district, village, rt and rw." ] ;
-       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
-       fhir:max [ fhir:v "1" ] ;
+       fhir:definition [ fhir:v "An Extension" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
        fhir:base [
          fhir:path [ fhir:v "Element.extension" ] ;
          fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;

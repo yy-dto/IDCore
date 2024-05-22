@@ -1,0 +1,35 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IDCoreEncounterIMP",
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounterIMP",
+  "name": "IDCoreEncounterIMP",
+  "status": "active",
+  "description": "Encounter profile for inpatient patient",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.location.extension",
+        "extension": [
+          {
+            "url": "value",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "1",
+                  "system": "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "Encounter.location.extension"
+      }
+    ]
+  }
+}

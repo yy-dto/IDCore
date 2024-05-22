@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KemkesMedicationForm"/>
+  <language value="Indonesia"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/medication-form</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">BS001<a name="KemkesMedicationForm-BS001"> </a></td><td>Aerosol Foam</td></tr><tr><td style="white-space:nowrap">BS002<a name="KemkesMedicationForm-BS002"> </a></td><td>Aerosol Metered Dose</td></tr><tr><td style="white-space:nowrap">BS003<a name="KemkesMedicationForm-BS003"> </a></td><td>Aerosol Spray</td></tr><tr><td style="white-space:nowrap">BS004<a name="KemkesMedicationForm-BS004"> </a></td><td>Oral Spray</td></tr><tr><td style="white-space:nowrap">BS005<a name="KemkesMedicationForm-BS005"> </a></td><td>Buscal Spray</td></tr><tr><td style="white-space:nowrap">BS006<a name="KemkesMedicationForm-BS006"> </a></td><td>Transdermal Spray</td></tr><tr><td style="white-space:nowrap">BS007<a name="KemkesMedicationForm-BS007"> </a></td><td>Topical Spray</td></tr><tr><td style="white-space:nowrap">BS008<a name="KemkesMedicationForm-BS008"> </a></td><td>Serbuk Spray</td></tr><tr><td style="white-space:nowrap">BS009<a name="KemkesMedicationForm-BS009"> </a></td><td>Eliksir</td></tr><tr><td style="white-space:nowrap">BS010<a name="KemkesMedicationForm-BS010"> </a></td><td>Emulsi</td></tr><tr><td style="white-space:nowrap">BS011<a name="KemkesMedicationForm-BS011"> </a></td><td>Enema</td></tr><tr><td style="white-space:nowrap">BS012<a name="KemkesMedicationForm-BS012"> </a></td><td>Gas</td></tr><tr><td style="white-space:nowrap">BS013<a name="KemkesMedicationForm-BS013"> </a></td><td>Gel</td></tr><tr><td style="white-space:nowrap">BS014<a name="KemkesMedicationForm-BS014"> </a></td><td>Gel Mata</td></tr><tr><td style="white-space:nowrap">BS015<a name="KemkesMedicationForm-BS015"> </a></td><td>Granul Effervescent</td></tr><tr><td style="white-space:nowrap">BS016<a name="KemkesMedicationForm-BS016"> </a></td><td>Granula</td></tr><tr><td style="white-space:nowrap">BS017<a name="KemkesMedicationForm-BS017"> </a></td><td>Intra Uterine Device (IUD)</td></tr><tr><td style="white-space:nowrap">BS018<a name="KemkesMedicationForm-BS018"> </a></td><td>Implant</td></tr><tr><td style="white-space:nowrap">BS019<a name="KemkesMedicationForm-BS019"> </a></td><td>Kapsul</td></tr><tr><td style="white-space:nowrap">BS020<a name="KemkesMedicationForm-BS020"> </a></td><td>Kapsul Lunak</td></tr><tr><td style="white-space:nowrap">BS021<a name="KemkesMedicationForm-BS021"> </a></td><td>Kapsul Pelepasan Lambat</td></tr><tr><td style="white-space:nowrap">BS022<a name="KemkesMedicationForm-BS022"> </a></td><td>Kaplet</td></tr><tr><td style="white-space:nowrap">BS023<a name="KemkesMedicationForm-BS023"> </a></td><td>Kaplet Salut Selaput</td></tr><tr><td style="white-space:nowrap">BS024<a name="KemkesMedicationForm-BS024"> </a></td><td>Kaplet Salut Enterik</td></tr><tr><td style="white-space:nowrap">BS025<a name="KemkesMedicationForm-BS025"> </a></td><td>Kaplet Salut Gula</td></tr><tr><td style="white-space:nowrap">BS026<a name="KemkesMedicationForm-BS026"> </a></td><td>Kaplet Pelepasan Lambat</td></tr><tr><td style="white-space:nowrap">BS027<a name="KemkesMedicationForm-BS027"> </a></td><td>Kaplet Pelepasan Cepat</td></tr><tr><td style="white-space:nowrap">BS028<a name="KemkesMedicationForm-BS028"> </a></td><td>Kaplet Kunyah</td></tr><tr><td style="white-space:nowrap">BS029<a name="KemkesMedicationForm-BS029"> </a></td><td>Kaplet Kunyah Salut Selaput</td></tr><tr><td style="white-space:nowrap">BS030<a name="KemkesMedicationForm-BS030"> </a></td><td>Krim</td></tr><tr><td style="white-space:nowrap">BS031<a name="KemkesMedicationForm-BS031"> </a></td><td>Krim Lemak</td></tr><tr><td style="white-space:nowrap">BS032<a name="KemkesMedicationForm-BS032"> </a></td><td>Larutan</td></tr><tr><td style="white-space:nowrap">BS033<a name="KemkesMedicationForm-BS033"> </a></td><td>Larutan Inhalasi</td></tr><tr><td style="white-space:nowrap">BS034<a name="KemkesMedicationForm-BS034"> </a></td><td>Larutan Injeksi</td></tr><tr><td style="white-space:nowrap">BS035<a name="KemkesMedicationForm-BS035"> </a></td><td>Infus</td></tr><tr><td style="white-space:nowrap">BS036<a name="KemkesMedicationForm-BS036"> </a></td><td>Obat Kumur</td></tr><tr><td style="white-space:nowrap">BS037<a name="KemkesMedicationForm-BS037"> </a></td><td>Ovula</td></tr><tr><td style="white-space:nowrap">BS038<a name="KemkesMedicationForm-BS038"> </a></td><td>Pasta</td></tr><tr><td style="white-space:nowrap">BS039<a name="KemkesMedicationForm-BS039"> </a></td><td>Pil</td></tr><tr><td style="white-space:nowrap">BS040<a name="KemkesMedicationForm-BS040"> </a></td><td>Patch</td></tr><tr><td style="white-space:nowrap">BS041<a name="KemkesMedicationForm-BS041"> </a></td><td>Pessary</td></tr><tr><td style="white-space:nowrap">BS042<a name="KemkesMedicationForm-BS042"> </a></td><td>Salep</td></tr><tr><td style="white-space:nowrap">BS043<a name="KemkesMedicationForm-BS043"> </a></td><td>Salep Mata</td></tr><tr><td style="white-space:nowrap">BS044<a name="KemkesMedicationForm-BS044"> </a></td><td>Sampo</td></tr><tr><td style="white-space:nowrap">BS045<a name="KemkesMedicationForm-BS045"> </a></td><td>Semprot Hidung</td></tr><tr><td style="white-space:nowrap">BS046<a name="KemkesMedicationForm-BS046"> </a></td><td>Serbuk Aerosol</td></tr><tr><td style="white-space:nowrap">BS047<a name="KemkesMedicationForm-BS047"> </a></td><td>Serbuk Oral</td></tr><tr><td style="white-space:nowrap">BS048<a name="KemkesMedicationForm-BS048"> </a></td><td>Serbuk Inhaler</td></tr><tr><td style="white-space:nowrap">BS049<a name="KemkesMedicationForm-BS049"> </a></td><td>Serbuk Injeksi</td></tr><tr><td style="white-space:nowrap">BS050<a name="KemkesMedicationForm-BS050"> </a></td><td>Serbuk Injeksi Liofilisasi</td></tr><tr><td style="white-space:nowrap">BS051<a name="KemkesMedicationForm-BS051"> </a></td><td>Serbuk Infus</td></tr><tr><td style="white-space:nowrap">BS052<a name="KemkesMedicationForm-BS052"> </a></td><td>Serbuk Obat Luar / Serbuk Tabur</td></tr><tr><td style="white-space:nowrap">BS053<a name="KemkesMedicationForm-BS053"> </a></td><td>Serbuk Steril</td></tr><tr><td style="white-space:nowrap">BS054<a name="KemkesMedicationForm-BS054"> </a></td><td>Serbuk Effervescent</td></tr><tr><td style="white-space:nowrap">BS055<a name="KemkesMedicationForm-BS055"> </a></td><td>Sirup</td></tr><tr><td style="white-space:nowrap">BS056<a name="KemkesMedicationForm-BS056"> </a></td><td>Sirup Kering</td></tr><tr><td style="white-space:nowrap">BS057<a name="KemkesMedicationForm-BS057"> </a></td><td>Sirup Kering Pelepasan Lambat</td></tr><tr><td style="white-space:nowrap">BS058<a name="KemkesMedicationForm-BS058"> </a></td><td>Subdermal Implants</td></tr><tr><td style="white-space:nowrap">BS059<a name="KemkesMedicationForm-BS059"> </a></td><td>Supositoria</td></tr><tr><td style="white-space:nowrap">BS060<a name="KemkesMedicationForm-BS060"> </a></td><td>Suspensi</td></tr><tr><td style="white-space:nowrap">BS061<a name="KemkesMedicationForm-BS061"> </a></td><td>Suspensi Injeksi</td></tr><tr><td style="white-space:nowrap">BS062<a name="KemkesMedicationForm-BS062"> </a></td><td>Suspensi / Cairan Obat Luar</td></tr><tr><td style="white-space:nowrap">BS063<a name="KemkesMedicationForm-BS063"> </a></td><td>Cairan Steril</td></tr><tr><td style="white-space:nowrap">BS064<a name="KemkesMedicationForm-BS064"> </a></td><td>Cairan Mata</td></tr><tr><td style="white-space:nowrap">BS065<a name="KemkesMedicationForm-BS065"> </a></td><td>Cairan Diagnostik</td></tr><tr><td style="white-space:nowrap">BS066<a name="KemkesMedicationForm-BS066"> </a></td><td>Tablet</td></tr><tr><td style="white-space:nowrap">BS067<a name="KemkesMedicationForm-BS067"> </a></td><td>Tablet Effervescent</td></tr><tr><td style="white-space:nowrap">BS068<a name="KemkesMedicationForm-BS068"> </a></td><td>Tablet Hisap</td></tr><tr><td style="white-space:nowrap">BS069<a name="KemkesMedicationForm-BS069"> </a></td><td>Tablet Kunyah</td></tr><tr><td style="white-space:nowrap">BS070<a name="KemkesMedicationForm-BS070"> </a></td><td>Tablet Pelepasan Cepat</td></tr><tr><td style="white-space:nowrap">BS071<a name="KemkesMedicationForm-BS071"> </a></td><td>Tablet Pelepasan Lambat</td></tr><tr><td style="white-space:nowrap">BS072<a name="KemkesMedicationForm-BS072"> </a></td><td>Tablet Disintegrasi Oral</td></tr><tr><td style="white-space:nowrap">BS073<a name="KemkesMedicationForm-BS073"> </a></td><td>Tablet Dispersibel</td></tr><tr><td style="white-space:nowrap">BS074<a name="KemkesMedicationForm-BS074"> </a></td><td>Tablet Cepat Larut</td></tr><tr><td style="white-space:nowrap">BS075<a name="KemkesMedicationForm-BS075"> </a></td><td>Tablet Salut Gula</td></tr><tr><td style="white-space:nowrap">BS076<a name="KemkesMedicationForm-BS076"> </a></td><td>Tablet Salut Enterik</td></tr><tr><td style="white-space:nowrap">BS077<a name="KemkesMedicationForm-BS077"> </a></td><td>Tablet Salut Selaput</td></tr><tr><td style="white-space:nowrap">BS078<a name="KemkesMedicationForm-BS078"> </a></td><td>Tablet Sublingual</td></tr><tr><td style="white-space:nowrap">BS079<a name="KemkesMedicationForm-BS079"> </a></td><td>Tablet Sublingual Pelepasan Lambat</td></tr><tr><td style="white-space:nowrap">BS080<a name="KemkesMedicationForm-BS080"> </a></td><td>Tablet Vaginal</td></tr><tr><td style="white-space:nowrap">BS081<a name="KemkesMedicationForm-BS081"> </a></td><td>Tablet Lapis</td></tr><tr><td style="white-space:nowrap">BS082<a name="KemkesMedicationForm-BS082"> </a></td><td>Tablet Lapis Lepas Lambat</td></tr><tr><td style="white-space:nowrap">BS083<a name="KemkesMedicationForm-BS083"> </a></td><td>Chewing Gum</td></tr><tr><td style="white-space:nowrap">BS084<a name="KemkesMedicationForm-BS084"> </a></td><td>Tetes Mata</td></tr><tr><td style="white-space:nowrap">BS085<a name="KemkesMedicationForm-BS085"> </a></td><td>Tetes Hidung</td></tr><tr><td style="white-space:nowrap">BS086<a name="KemkesMedicationForm-BS086"> </a></td><td>Tetes Telinga</td></tr><tr><td style="white-space:nowrap">BS087<a name="KemkesMedicationForm-BS087"> </a></td><td>Tetes Oral (Oral Drops)</td></tr><tr><td style="white-space:nowrap">BS088<a name="KemkesMedicationForm-BS088"> </a></td><td>Tetes Mata Dan Telinga</td></tr><tr><td style="white-space:nowrap">BS089<a name="KemkesMedicationForm-BS089"> </a></td><td>Transdermal</td></tr><tr><td style="white-space:nowrap">BS090<a name="KemkesMedicationForm-BS090"> </a></td><td>Transdermal Urethral</td></tr><tr><td style="white-space:nowrap">BS091<a name="KemkesMedicationForm-BS091"> </a></td><td>Tulle/Plester Obat</td></tr><tr><td style="white-space:nowrap">BS092<a name="KemkesMedicationForm-BS092"> </a></td><td>Vaginal Cream</td></tr><tr><td style="white-space:nowrap">BS093<a name="KemkesMedicationForm-BS093"> </a></td><td>Vaginal Gel</td></tr><tr><td style="white-space:nowrap">BS094<a name="KemkesMedicationForm-BS094"> </a></td><td>Vaginal Douche</td></tr><tr><td style="white-space:nowrap">BS095<a name="KemkesMedicationForm-BS095"> </a></td><td>Vaginal Ring</td></tr><tr><td style="white-space:nowrap">BS096<a name="KemkesMedicationForm-BS096"> </a></td><td>Vaginal Tissue</td></tr><tr><td style="white-space:nowrap">BS097<a name="KemkesMedicationForm-BS097"> </a></td><td>Suspensi Inhalasi</td></tr><tr><td style="white-space:nowrap">MF000001<a name="KemkesMedicationForm-MF000001"> </a></td><td>Orodispersible Film</td></tr><tr><td style="white-space:nowrap">NC<a name="KemkesMedicationForm-NC"> </a></td><td>Non-compound </td></tr><tr><td style="white-space:nowrap">SD<a name="KemkesMedicationForm-SD"> </a></td><td>Gives of such doses</td></tr><tr><td style="white-space:nowrap">EP<a name="KemkesMedicationForm-EP"> </a></td><td>Divide into equal parts</td></tr></table></div>
+  </text>
+  <url value="http://terminology.kemkes.go.id/CodeSystem/medication-form"/>
+  <version value="0.1.0"/>
+  <name value="KemkesMedicationForm"/>
+  <title value="Terminology Kemkes medication form CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-02-05T00:00:00.000Z"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <description value="Terminology Kemkes medication form CodeSystem"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://terminology.kemkes.go.id/ValueSet/medication-form"/>
+  <hierarchyMeaning value="is-a"/>
+  <compositional value="false"/>
+  <versionNeeded value="true"/>
+  <content value="complete"/>
+  <count value="101"/>
+  <concept>
+    <code value="BS001"/>
+    <display value="Aerosol Foam"/>
+  </concept>
+  <concept>
+    <code value="BS002"/>
+    <display value="Aerosol Metered Dose"/>
+  </concept>
+  <concept>
+    <code value="BS003"/>
+    <display value="Aerosol Spray"/>
+  </concept>
+  <concept>
+    <code value="BS004"/>
+    <display value="Oral Spray"/>
+  </concept>
+  <concept>
+    <code value="BS005"/>
+    <display value="Buscal Spray"/>
+  </concept>
+  <concept>
+    <code value="BS006"/>
+    <display value="Transdermal Spray"/>
+  </concept>
+  <concept>
+    <code value="BS007"/>
+    <display value="Topical Spray"/>
+  </concept>
+  <concept>
+    <code value="BS008"/>
+    <display value="Serbuk Spray"/>
+  </concept>
+  <concept>
+    <code value="BS009"/>
+    <display value="Eliksir"/>
+  </concept>
+  <concept>
+    <code value="BS010"/>
+    <display value="Emulsi"/>
+  </concept>
+  <concept>
+    <code value="BS011"/>
+    <display value="Enema"/>
+  </concept>
+  <concept>
+    <code value="BS012"/>
+    <display value="Gas"/>
+  </concept>
+  <concept>
+    <code value="BS013"/>
+    <display value="Gel"/>
+  </concept>
+  <concept>
+    <code value="BS014"/>
+    <display value="Gel Mata"/>
+  </concept>
+  <concept>
+    <code value="BS015"/>
+    <display value="Granul Effervescent"/>
+  </concept>
+  <concept>
+    <code value="BS016"/>
+    <display value="Granula"/>
+  </concept>
+  <concept>
+    <code value="BS017"/>
+    <display value="Intra Uterine Device (IUD)"/>
+  </concept>
+  <concept>
+    <code value="BS018"/>
+    <display value="Implant"/>
+  </concept>
+  <concept>
+    <code value="BS019"/>
+    <display value="Kapsul"/>
+  </concept>
+  <concept>
+    <code value="BS020"/>
+    <display value="Kapsul Lunak"/>
+  </concept>
+  <concept>
+    <code value="BS021"/>
+    <display value="Kapsul Pelepasan Lambat"/>
+  </concept>
+  <concept>
+    <code value="BS022"/>
+    <display value="Kaplet"/>
+  </concept>
+  <concept>
+    <code value="BS023"/>
+    <display value="Kaplet Salut Selaput"/>
+  </concept>
+  <concept>
+    <code value="BS024"/>
+    <display value="Kaplet Salut Enterik"/>
+  </concept>
+  <concept>
+    <code value="BS025"/>
+    <display value="Kaplet Salut Gula"/>
+  </concept>
+  <concept>
+    <code value="BS026"/>
+    <display value="Kaplet Pelepasan Lambat"/>
+  </concept>
+  <concept>
+    <code value="BS027"/>
+    <display value="Kaplet Pelepasan Cepat"/>
+  </concept>
+  <concept>
+    <code value="BS028"/>
+    <display value="Kaplet Kunyah"/>
+  </concept>
+  <concept>
+    <code value="BS029"/>
+    <display value="Kaplet Kunyah Salut Selaput"/>
+  </concept>
+  <concept>
+    <code value="BS030"/>
+    <display value="Krim"/>
+  </concept>
+  <concept>
+    <code value="BS031"/>
+    <display value="Krim Lemak"/>
+  </concept>
+  <concept>
+    <code value="BS032"/>
+    <display value="Larutan"/>
+  </concept>
+  <concept>
+    <code value="BS033"/>
+    <display value="Larutan Inhalasi"/>
+  </concept>
+  <concept>
+    <code value="BS034"/>
+    <display value="Larutan Injeksi"/>
+  </concept>
+  <concept>
+    <code value="BS035"/>
+    <display value="Infus"/>
+  </concept>
+  <concept>
+    <code value="BS036"/>
+    <display value="Obat Kumur"/>
+  </concept>
+  <concept>
+    <code value="BS037"/>
+    <display value="Ovula"/>
+  </concept>
+  <concept>
+    <code value="BS038"/>
+    <display value="Pasta"/>
+  </concept>
+  <concept>
+    <code value="BS039"/>
+    <display value="Pil"/>
+  </concept>
+  <concept>
+    <code value="BS040"/>
+    <display value="Patch"/>
+  </concept>
+  <concept>
+    <code value="BS041"/>
+    <display value="Pessary"/>
+  </concept>
+  <concept>
+    <code value="BS042"/>
+    <display value="Salep"/>
+  </concept>
+  <concept>
+    <code value="BS043"/>
+    <display value="Salep Mata"/>
+  </concept>
+  <concept>
+    <code value="BS044"/>
+    <display value="Sampo"/>
+  </concept>
+  <concept>
+    <code value="BS045"/>
+    <display value="Semprot Hidung"/>
+  </concept>
+  <concept>
+    <code value="BS046"/>
+    <display value="Serbuk Aerosol"/>
+  </concept>
+  <concept>
+    <code value="BS047"/>
+    <display value="Serbuk Oral"/>
+  </concept>
+  <concept>
+    <code value="BS048"/>
+    <display value="Serbuk Inhaler"/>
+  </concept>
+  <concept>
+    <code value="BS049"/>
+    <display value="Serbuk Injeksi"/>
+  </concept>
+  <concept>
+    <code value="BS050"/>
+    <display value="Serbuk Injeksi Liofilisasi"/>
+  </concept>
+  <concept>
+    <code value="BS051"/>
+    <display value="Serbuk Infus"/>
+  </concept>
+  <concept>
+    <code value="BS052"/>
+    <display value="Serbuk Obat Luar / Serbuk Tabur"/>
+  </concept>
+  <concept>
+    <code value="BS053"/>
+    <display value="Serbuk Steril"/>
+  </concept>
+  <concept>
+    <code value="BS054"/>
+    <display value="Serbuk Effervescent"/>
+  </concept>
+  <concept>
+    <code value="BS055"/>
+    <display value="Sirup"/>
+  </concept>
+  <concept>
+    <code value="BS056"/>
+    <display value="Sirup Kering"/>
+  </concept>
+  <concept>
+    <code value="BS057"/>
+    <display value="Sirup Kering Pelepasan Lambat"/>
+  </concept>
+  <concept>
+    <code value="BS058"/>
+    <display value="Subdermal Implants"/>
+  </concept>
+  <concept>
+    <code value="BS059"/>
+    <display value="Supositoria"/>
+  </concept>
+  <concept>
+    <code value="BS060"/>
+    <display value="Suspensi"/>
+  </concept>
+  <concept>
+    <code value="BS061"/>
+    <display value="Suspensi Injeksi"/>
+  </concept>
+  <concept>
+    <code value="BS062"/>
+    <display value="Suspensi / Cairan Obat Luar"/>
+  </concept>
+  <concept>
+    <code value="BS063"/>
+    <display value="Cairan Steril"/>
+  </concept>
+  <concept>
+    <code value="BS064"/>
+    <display value="Cairan Mata"/>
+  </concept>
+  <concept>
+    <code value="BS065"/>
+    <display value="Cairan Diagnostik"/>
+  </concept>
+  <concept>
+    <code value="BS066"/>
+    <display value="Tablet"/>
+  </concept>
+  <concept>
+    <code value="BS067"/>
+    <display value="Tablet Effervescent"/>
+  </concept>
+  <concept>
+    <code value="BS068"/>
+    <display value="Tablet Hisap"/>
+  </concept>
+  <concept>
+    <code value="BS069"/>
+    <display value="Tablet Kunyah"/>
+  </concept>
+  <concept>
+    <code value="BS070"/>
+    <display value="Tablet Pelepasan Cepat"/>
+  </concept>
+  <concept>
+    <code value="BS071"/>
+    <display value="Tablet Pelepasan Lambat"/>
+  </concept>
+  <concept>
+    <code value="BS072"/>
+    <display value="Tablet Disintegrasi Oral"/>
+  </concept>
+  <concept>
+    <code value="BS073"/>
+    <display value="Tablet Dispersibel"/>
+  </concept>
+  <concept>
+    <code value="BS074"/>
+    <display value="Tablet Cepat Larut"/>
+  </concept>
+  <concept>
+    <code value="BS075"/>
+    <display value="Tablet Salut Gula"/>
+  </concept>
+  <concept>
+    <code value="BS076"/>
+    <display value="Tablet Salut Enterik"/>
+  </concept>
+  <concept>
+    <code value="BS077"/>
+    <display value="Tablet Salut Selaput"/>
+  </concept>
+  <concept>
+    <code value="BS078"/>
+    <display value="Tablet Sublingual"/>
+  </concept>
+  <concept>
+    <code value="BS079"/>
+    <display value="Tablet Sublingual Pelepasan Lambat"/>
+  </concept>
+  <concept>
+    <code value="BS080"/>
+    <display value="Tablet Vaginal"/>
+  </concept>
+  <concept>
+    <code value="BS081"/>
+    <display value="Tablet Lapis"/>
+  </concept>
+  <concept>
+    <code value="BS082"/>
+    <display value="Tablet Lapis Lepas Lambat"/>
+  </concept>
+  <concept>
+    <code value="BS083"/>
+    <display value="Chewing Gum"/>
+  </concept>
+  <concept>
+    <code value="BS084"/>
+    <display value="Tetes Mata"/>
+  </concept>
+  <concept>
+    <code value="BS085"/>
+    <display value="Tetes Hidung"/>
+  </concept>
+  <concept>
+    <code value="BS086"/>
+    <display value="Tetes Telinga"/>
+  </concept>
+  <concept>
+    <code value="BS087"/>
+    <display value="Tetes Oral (Oral Drops)"/>
+  </concept>
+  <concept>
+    <code value="BS088"/>
+    <display value="Tetes Mata Dan Telinga"/>
+  </concept>
+  <concept>
+    <code value="BS089"/>
+    <display value="Transdermal"/>
+  </concept>
+  <concept>
+    <code value="BS090"/>
+    <display value="Transdermal Urethral"/>
+  </concept>
+  <concept>
+    <code value="BS091"/>
+    <display value="Tulle/Plester Obat"/>
+  </concept>
+  <concept>
+    <code value="BS092"/>
+    <display value="Vaginal Cream"/>
+  </concept>
+  <concept>
+    <code value="BS093"/>
+    <display value="Vaginal Gel"/>
+  </concept>
+  <concept>
+    <code value="BS094"/>
+    <display value="Vaginal Douche"/>
+  </concept>
+  <concept>
+    <code value="BS095"/>
+    <display value="Vaginal Ring"/>
+  </concept>
+  <concept>
+    <code value="BS096"/>
+    <display value="Vaginal Tissue"/>
+  </concept>
+  <concept>
+    <code value="BS097"/>
+    <display value="Suspensi Inhalasi"/>
+  </concept>
+  <concept>
+    <code value="MF000001"/>
+    <display value="Orodispersible Film"/>
+  </concept>
+  <concept>
+    <code value="NC"/>
+    <display value="Non-compound "/>
+  </concept>
+  <concept>
+    <code value="SD"/>
+    <display value="Gives of such doses"/>
+  </concept>
+  <concept>
+    <code value="EP"/>
+    <display value="Divide into equal parts"/>
+  </concept>
+</CodeSystem>

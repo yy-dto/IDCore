@@ -1,95 +1,34 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.bodySite",
-      "version" : "0.1.0",
+      "url" : "http://hl7.org/fhir/ValueSet/address-type",
+      "version" : "4.0.1",
       "status" : "active",
-      "name" : "ConditionBodySiteVS",
-      "title" : "Condition BodySite",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : [
-        "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "http://snomed.info/sct"
-      ],
+      "name" : "AddressType",
+      "title" : "AddressType",
+      "description" : "The type of an address (physical / postal).",
+      "systems" : ["http://hl7.org/fhir/address-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.69"],
+      "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
     },
     {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.category",
-      "version" : "0.1.0",
+      "url" : "http://hl7.org/fhir/ValueSet/address-use",
+      "version" : "4.0.1",
       "status" : "active",
-      "name" : "ConditionCategoryVS",
-      "title" : "Condition Category",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "name" : "AddressUse",
+      "title" : "AddressUse",
+      "description" : "The use of an address.",
+      "systems" : ["http://hl7.org/fhir/address-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.67"],
+      "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
-    },
-    {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.evidence.code",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionEvidenceCodeVS",
-      "title" : "Condition Evidence Code",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : [
-        "http://hl7.org/fhir/sid/icd-10",
-        "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "http://snomed.info/sct"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
-    },
-    {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.severity",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionSeverityVS",
-      "title" : "Condition Severity",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
-    },
-    {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.stage.summary",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionStageSummaryVS",
-      "title" : "Condition Stage Summary",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
-    },
-    {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.stage.type",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionStageTypeVS",
-      "title" : "Condition Stage Type",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : ["http://snomed.info/sct"],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
-    },
-    {
-      "url" : "http://dto.kemkes.go.id//VS/Condition.verificationStatus",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionVerificationStatusVS",
-      "title" : "Condition Verification Status",
-      "description" : "Created by: Fadhil Muhammad",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -103,7 +42,81 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/DiagnosisSeverity",
+      "title" : "Condition/Diagnosis Severity",
+      "description" : "Preferred value set for Condition/Diagnosis severity grading.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.168"],
+      "sources" : ["2.16.840.1.113883.4.642.3.168"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStage",
+      "title" : "Condition Stage",
+      "description" : "Example value set for stages of cancer and other conditions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.170"],
+      "sources" : ["2.16.840.1.113883.4.642.3.170"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ConditionStageType",
+      "title" : "Condition Stage Type",
+      "description" : "Example value set for the type of stages of cancer and other conditions",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.171"],
+      "sources" : ["2.16.840.1.113883.4.642.3.171"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.5"],
+      "sources" : ["2.16.840.1.113883.4.642.3.5"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
@@ -117,10 +130,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.255"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
       "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
@@ -136,10 +149,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.259"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
       "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
@@ -153,10 +166,27 @@
       "sources" : ["2.16.840.1.113883.4.642.3.262"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
       "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
@@ -172,10 +202,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.253"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
       "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
@@ -192,10 +222,57 @@
       "sources" : ["2.16.840.1.113883.4.642.3.252"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
       "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -209,12 +286,17 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
       "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
       "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition",
-      "StructureDefinition-MyPatient.html" : "MyPatient"
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -228,7 +310,7 @@
       "sources" : ["2.16.840.1.113883.4.642.3.423"],
       "uses" : {
       },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
@@ -244,10 +326,24 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
       "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ManifestationAndSymptomCodes",
+      "title" : "Manifestation and Symptom Codes",
+      "description" : "Example value set for Manifestation and Symptom codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.169"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/marital-status",
@@ -264,7 +360,57 @@
       "sources" : ["2.16.840.1.113883.4.642.3.29"],
       "uses" : {
       },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "systems" : ["http://hl7.org/fhir/observation-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.400"],
+      "sources" : ["2.16.840.1.113883.4.642.3.400"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "VitalSigns",
+      "title" : "Vital Signs",
+      "description" : "This value set indicates the allowed vital sign result types.   The LOINC code for Vitals Signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4).",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.62"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -278,181 +424,381 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1130"],
       "uses" : {
       },
-      "StructureDefinition-MyPatient.html" : "MyPatient"
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ActPriorityVS",
-      "version" : "0.1.0",
+      "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+      "version" : "4.0.1",
       "status" : "active",
-      "name" : "ActPriorityVS",
-      "title" : "v3 Code System ActPriority",
-      "description" : "A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+      "oids" : ["2.16.840.1.113883.4.642.3.59"],
+      "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure"
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ConditionClinicalStatusVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionClinicalStatusVS",
-      "title" : "Condition Clinical Status",
-      "description" : "This defines a set of codes for Condition Clinical Status.",
+      "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeAppliesToCodes",
+      "title" : "Observation Reference Range Applies To Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-Race",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.407"],
+      "sources" : ["2.16.840.1.113883.4.642.3.407"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/condition-category",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-category"],
+      "oids" : ["2.16.840.1.113883.4.642.3.162"],
+      "sources" : ["2.16.840.1.113883.4.642.3.162"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/condition-clinical",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
       "systems" : ["http://terminology.hl7.org/CodeSystem/condition-clinical"],
+      "oids" : ["2.16.840.1.113883.4.642.3.164"],
+      "sources" : ["2.16.840.1.113883.4.642.3.164"],
       "uses" : {
       },
       "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ConditionCodeVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ConditionCodeVS",
-      "title" : "Condition Code",
-      "description" : "This value set defines set of codes for Condition Code.",
-      "systems" : [
-        "http://terminology.kemkes.go.id/CodeSystem/cancer-m-category",
-        "http://snomed.info/sct/900000000000207008/version/20221231",
-        "http://terminology.kemkes.go.id/CodeSystem/icd-o-morphology",
-        "http://hl7.org/fhir/sid/icd-10",
-        "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
-        "http://terminology.kemkes.go.id/CodeSystem/cancer-n-category",
-        "http://terminology.kemkes.go.id/CodeSystem/icd-o-topography",
-        "http://terminology.kemkes.go.id/CodeSystem/cancer-t-category"
-      ],
+      "url" : "http://terminology.hl7.org/ValueSet/condition-ver-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/condition-ver-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.166"],
+      "sources" : ["2.16.840.1.113883.4.642.3.166"],
       "uses" : {
       },
       "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterClassVS",
-      "title" : "V3 Value SetActEncounterCode",
-      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-        "http://terminology.kemkes.go.id/CodeSystem/encounter-class"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterDiagnosisUseVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterDiagnosisUseVS",
+      "url" : "http://terminology.hl7.org/ValueSet/diagnosis-role",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
       "title" : "DiagnosisRole",
       "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
       "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
       "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationAdmitSourceVS",
+      "url" : "http://terminology.hl7.org/ValueSet/encounter-admit-source",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/encounter-class",
+      "version" : "2.0.0",
+      "status" : "draft",
+      "name" : "EncounterClass",
+      "title" : "Encounter class",
+      "description" : "This value set defines a set of codes that can be used to indicate the class of encounter: a specific code indicating class of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/encounter-type",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : "Encounter type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.248"],
+      "sources" : ["2.16.840.1.113883.4.642.3.248"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/referencerange-meaning",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/referencerange-meaning"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.397"],
+      "sources" : ["2.16.840.1.113883.4.642.3.397"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ObservationCategory",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ObservationCategory",
+      "title" : "ObservationCategory",
+      "description" : "High level observation categories for the general type of observation being made.\r\n\r\n*Steward:* OO WG",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationCategory"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.2.222"],
+      "sources" : ["2.16.840.1.113883.4.642.2.222"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ParticipationType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ParticipationType",
+      "title" : "ParticipationType",
+      "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
+      "oids" : ["2.16.840.1.113883.1.11.10901"],
+      "sources" : ["2.16.840.1.113883.1.11.10901"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/ValueSet/EncounterLocationServiceClassExtension",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "EncounterHospitalizationAdmitSourceVS",
-      "title" : "Admit Source",
-      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "name" : "EncounterLocationServiceClassExtension",
+      "title" : "Encounter Location Extension",
+      "description" : "A set of codes, specifying location extension valueset.",
       "systems" : [
-        "http://hl7.org/fhir/sid/icd-10",
-        "http://terminology.hl7.org/CodeSystem/admit-source"
+        "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
+        "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"
+      ]
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.bodysite",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "ObservationBodySite",
+      "title" : "Value set specific for Observation BodySite",
+      "description" : "Value set specific for Observation BodySite",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.code",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "Observationcode",
+      "title" : "Value set specific for Observation Code",
+      "description" : "Value set specific for Observation Code",
+      "systems" : [
+        "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "http://loinc.org",
+        "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "http://fhir.org/guides/who/anc-cds/CodeSystem/anc-custom-codes",
+        "http://snomed.info/sct"
       ],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationDischargeDispositionVS",
+      "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.interpretation",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "EncounterHospitalizationDischargeDispositionVS",
-      "title" : "Discharge disposition",
-      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "name" : "Observation.interpretation",
+      "title" : "Value set specific for Observation Code",
+      "description" : "Value set specific for Observation Code",
       "systems" : [
-        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationSpecialArrangementsVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterHospitalizationSpecialArrangementsVS",
-      "title" : "Special arrangements",
-      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreAdmitSourceVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterHospitalizationreAdmitSourceVS",
-      "title" : "v2 RE-ADMISSION INDICATOR",
-      "description" : "FHIR Value set/code system definition for HL7 v2 table 0092 ( RE-ADMISSION INDICATOR)",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+        "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation",
+        "http://snomed.info/sct"
+      ],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreDietVS",
+      "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.valueCodeableConcept",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "EncounterHospitalizationreDietVS",
-      "title" : "Diet",
-      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreSpecialCourtesyVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterHospitalizationreSpecialCourtesyVS",
-      "title" : "Special courtesy",
-      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "name" : "Observation.valueCodeableConcept",
+      "title" : "Value set specific for Observation value CodeableConcept",
+      "description" : "Value set specific for Observation value CodeableConcept",
       "systems" : [
-        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
-        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+        "http://loinc.org",
+        "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "http://snomed.info/sct"
       ]
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassInpatientVS",
+      "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.valueCodeableConceptSpecific",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "EncounterLocationServiceClassInpatientVS",
+      "name" : "Observation.valueCodeableConceptSpecific",
+      "title" : "Value set specific for Observation specific value CodeableConcept",
+      "description" : "Value set specific for Observation specific value CodeableConcept",
+      "systems" : [
+        "http://terminology.kemkes.go.id/CodeSystem/examination",
+        "http://loinc.org",
+        "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
+        "http://snomed.info/sct"
+      ]
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/ValueSet/locationServiceClass-Inpatient",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "EncounterLocationServiceClassInpatient",
       "title" : "Encounter Location ServiceClass-Inpatient",
       "description" : "A set of codes, specifying location ServiceClass for inpatient patient.",
       "systems" : [
         "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"
-      ]
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterLocation.html" : "Encounter Location Extention",
+      "ValueSet-EncounterLocationServiceClassExtension.html" : "Encounter Location Extension"
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassOutpatientVS",
+      "url" : "http://terminology.kemkes.go.id/ValueSet/locationServiceClass-Outpatient",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "EncounterLocationServiceClassOutpatientVS",
+      "name" : "EncounterLocationServiceClassOutpatient",
       "title" : "Encounter Location ServiceClass-Outpatient",
       "description" : "A set of codes, specifying location ServiceClass for outpatient patient.",
       "systems" : [
@@ -460,34 +806,13 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
-      "StructureDefinition-EncounterLocation.html" : "Encounter Location Extention"
+      "ValueSet-EncounterLocationServiceClassExtension.html" : "Encounter Location Extension"
     },
     {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationStatusVS",
+      "url" : "http://terminology.kemkes.go.id/ValueSet/locationUpgradeClass",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "EncounterLocationStatusVS",
-      "title" : "Encounter Location Status",
-      "description" : "The status of the location.",
-      "systems" : ["http://hl7.org/fhir/encounter-location-status"]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationTypeVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterLocationTypeVS",
-      "title" : "Encounter Location Type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/location-physical-type"
-      ]
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationUpgradeClassVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterLocationUpgradeClassVS",
+      "name" : "EncounterLocationUpgradeClass",
       "title" : "Encounter Location Upgrade Class",
       "description" : "A set of codes, specifying location UpgradeClass.",
       "systems" : [
@@ -495,85 +820,7 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP"
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterReasonCodesVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterReasonCodesVS",
-      "title" : "Reason Code",
-      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
-      "systems" : ["http://hl7.org/fhir/sid/icd-10"],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterServiceTypeVS",
-      "title" : "Service type",
-      "description" : "This value set defines an example set of codes of service-types.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterStatusVS",
-      "title" : "EncounterStatus",
-      "description" : "Current state of the encounter.",
-      "systems" : ["http://hl7.org/fhir/encounter-status"],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterTypeVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "EncounterTypeVS",
-      "title" : "Encounter type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
-      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
-    },
-    {
-      "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ParticipationTypeVS",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "ParticipationTypeVS",
-      "title" : "Participant type",
-      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter",
-      "systems" : [
-        "http://terminology.hl7.org/CodeSystem/participant-type",
-        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
-      ],
-      "uses" : {
-      },
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER"
+      "StructureDefinition-EncounterLocation.html" : "Encounter Location Extention"
     }
   ]
 }

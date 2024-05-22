@@ -26,6 +26,7 @@
     </telecom>
   </contact>
   <caseSensitive value="true"/>
+  <valueSet value="http://terminology.kemkes.go.id/ValueSet/cancer-t-category"/>
   <hierarchyMeaning value="is-a"/>
   <compositional value="false"/>
   <versionNeeded value="true"/>

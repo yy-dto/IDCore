@@ -1,0 +1,35 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IDCoreEncounterEMER",
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounterEMER",
+  "name": "IDCoreEncounterEMER",
+  "status": "active",
+  "description": "Encounter profile for Emergency patient",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Encounter",
+  "baseDefinition": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Encounter.location.extension",
+        "extension": [
+          {
+            "url": "value",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "reguler",
+                  "system": "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"
+                }
+              ]
+            }
+          }
+        ],
+        "path": "Encounter.location.extension"
+      }
+    ]
+  }
+}

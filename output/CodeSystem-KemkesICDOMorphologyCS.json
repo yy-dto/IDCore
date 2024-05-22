@@ -15,6 +15,7 @@
   "name" : "KemkesICDOMorphologyCS",
   "title" : "ICD-0 Morphology",
   "status" : "active",
+  "experimental" : false,
   "date" : "2024-02-05T00:00:00.000Z",
   "publisher" : "Thomas Chaidir",
   "contact" : [{
@@ -26,6 +27,7 @@
   }],
   "description" : "Created by: Fadhil Muhammad",
   "caseSensitive" : false,
+  "valueSet" : "http://terminology.kemkes.go.id/ValueSet/icd-o-morphology",
   "hierarchyMeaning" : "is-a",
   "compositional" : false,
   "versionNeeded" : false,

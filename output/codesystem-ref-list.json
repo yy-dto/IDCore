@@ -1,18 +1,6 @@
 {
   "codeSystems" : [
     {
-      "url" : "http://hl7.org/fhir/encounter-location-status",
-      "version" : "4.0.1",
-      "status" : "draft",
-      "name" : "EncounterLocationStatus",
-      "title" : "EncounterLocationStatus",
-      "description" : "The status of the location.",
-      "oids" : ["2.16.840.1.113883.4.642.4.263"],
-      "uses" : {
-      },
-      "ValueSet-EncounterLocationStatusVS.html" : "Encounter Location Status"
-    },
-    {
       "url" : "http://hl7.org/fhir/encounter-status",
       "version" : "4.0.1",
       "status" : "draft",
@@ -22,22 +10,34 @@
       "oids" : ["2.16.840.1.113883.4.642.4.247"],
       "uses" : {
       },
-      "ValueSet-EncounterStatusVS.html" : "EncounterStatus"
+      "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus"
     },
     {
-      "url" : "http://hl7.org/fhir/sid/icd-10",
-      "version" : "2.1.1",
-      "status" : "retired",
-      "name" : "Icd10",
-      "title" : "ICD-10",
-      "description" : "International Classification of Diseases revision 10 (ICD 10)",
-      "oids" : ["2.16.840.1.113883.6.3"],
+      "url" : "http://hl7.org/fhir/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.401"],
       "uses" : {
       },
-      "ValueSet-ConditionEvidenceCodeVS.html" : "Condition Evidence Code",
-      "ValueSet-EncounterHospitalizationAdmitSourceVS.html" : "Admit Source",
-      "ValueSet-EncounterReasonCodesVS.html" : "Reason Code",
-      "ValueSet-ConditionCodeVS.html" : "Condition Code"
+      "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-Observation.valueCodeableConcept.html" : "Value set specific for Observation value CodeableConcept",
+      "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs",
+      "ValueSet-Observation.valueCodeableConceptSpecific.html" : "Value set specific for Observation specific value CodeableConcept",
+      "ValueSet-Observationcode.html" : "Value set specific for Observation Code"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -49,15 +49,23 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-ConditionStageTypeVS.html" : "Condition Stage Type",
-      "ValueSet-ConditionStageSummaryVS.html" : "Condition Stage Summary",
-      "ValueSet-ConditionBodySiteVS.html" : "Condition BodySite",
-      "ValueSet-ConditionEvidenceCodeVS.html" : "Condition Evidence Code",
-      "ValueSet-ConditionSeverityVS.html" : "Condition Severity"
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "ValueSet-ObservationBodySite.html" : "Value set specific for Observation BodySite",
+      "ValueSet-Observation.valueCodeableConcept.html" : "Value set specific for Observation value CodeableConcept",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "ValueSet-Observationcode.html" : "Value set specific for Observation Code",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "ValueSet-Observation.interpretation.html" : "Value set specific for Observation Code",
+      "ValueSet-Observation.valueCodeableConceptSpecific.html" : "Value set specific for Observation specific value CodeableConcept"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
-      "version" : "0.1.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "AdmitSource",
       "title" : "Admit source",
@@ -65,11 +73,11 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1092"],
       "uses" : {
       },
-      "ValueSet-EncounterHospitalizationAdmitSourceVS.html" : "Admit Source"
+      "http://terminology.hl7.org/5.5.0/ValueSet-encounter-admit-source.html" : "Admit source"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
-      "version" : "0.5.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "ConditionCategoryCodes",
       "title" : "Condition Category Codes",
@@ -77,11 +85,11 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1073"],
       "uses" : {
       },
-      "ValueSet-ConditionCategoryVS.html" : "Condition Category"
+      "http://terminology.hl7.org/5.5.0/ValueSet-condition-category.html" : "Condition Category Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
-      "version" : "2.0.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ConditionClinicalStatusCodes",
       "title" : "Condition Clinical Status Codes",
@@ -89,11 +97,11 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1074"],
       "uses" : {
       },
-      "ValueSet-ConditionClinicalStatusVS.html" : "Condition Clinical Status"
+      "http://terminology.hl7.org/5.5.0/ValueSet-condition-clinical.html" : "Condition Clinical Status Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-      "version" : "1.0.0",
+      "version" : "2.0.0",
       "status" : "draft",
       "name" : "ConditionVerificationStatus",
       "title" : "ConditionVerificationStatus",
@@ -101,11 +109,23 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1075"],
       "uses" : {
       },
-      "ValueSet-ConditionVerificationStatusVS.html" : "Condition Verification Status"
+      "http://terminology.hl7.org/5.5.0/ValueSet-condition-ver-status.html" : "ConditionVerificationStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
-      "version" : "0.1.1",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "DiagnosisRole",
       "title" : "Diagnosis Role",
@@ -113,47 +133,11 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1054"],
       "uses" : {
       },
-      "ValueSet-EncounterDiagnosisUseVS.html" : "DiagnosisRole"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/diet",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "Diet",
-      "title" : "Diet",
-      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1091"],
-      "uses" : {
-      },
-      "ValueSet-EncounterHospitalizationreDietVS.html" : "Diet"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "DischargeDisposition",
-      "title" : "Discharge disposition",
-      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1093"],
-      "uses" : {
-      },
-      "ValueSet-EncounterHospitalizationDischargeDispositionVS.html" : "Discharge disposition"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
-      "version" : "0.1.0",
-      "status" : "draft",
-      "name" : "SpecialArrangements",
-      "title" : "Special arrangements",
-      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1090"],
-      "uses" : {
-      },
-      "ValueSet-EncounterHospitalizationSpecialArrangementsVS.html" : "Special arrangements"
+      "http://terminology.hl7.org/5.5.0/ValueSet-diagnosis-role.html" : "DiagnosisRole"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/encounter-type",
-      "version" : "0.1.0",
+      "version" : "1.0.0",
       "status" : "draft",
       "name" : "EncounterType",
       "title" : "Encounter type",
@@ -161,35 +145,23 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1088"],
       "uses" : {
       },
-      "ValueSet-EncounterTypeVS.html" : "Encounter type"
+      "http://terminology.hl7.org/5.5.0/ValueSet-encounter-type.html" : "Encounter type"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+      "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
       "version" : "1.0.0",
       "status" : "draft",
-      "name" : "LocationType",
-      "title" : "Location type",
-      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1108"],
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1124"],
       "uses" : {
       },
-      "ValueSet-EncounterLocationTypeVS.html" : "Encounter Location Type"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
-      "version" : "0.5.0",
-      "status" : "draft",
-      "name" : "ParticipantType",
-      "title" : "Participant type",
-      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
-      "oids" : ["2.16.840.1.113883.4.642.1.1089"],
-      "uses" : {
-      },
-      "ValueSet-ParticipationTypeVS.html" : "Participant type"
+      "http://terminology.hl7.org/5.5.0/ValueSet-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/service-type",
-      "version" : "0.1.0",
+      "version" : "1.1.0",
       "status" : "draft",
       "name" : "ServiceType",
       "title" : "Service type",
@@ -197,11 +169,11 @@
       "oids" : ["2.16.840.1.113883.4.642.1.1145"],
       "uses" : {
       },
-      "ValueSet-EncounterServiceTypeVS.html" : "Service type"
+      "http://hl7.org/fhir/R4/valueset-service-type.html" : "Service type"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
-      "version" : "2.1.0",
+      "version" : "2.0.0",
       "status" : "active",
       "name" : "ReAdmissionIndicator",
       "title" : "re-admissionIndicator",
@@ -209,11 +181,11 @@
       "oids" : ["2.16.840.1.113883.18.36"],
       "uses" : {
       },
-      "ValueSet-EncounterHospitalizationreAdmitSourceVS.html" : "v2 RE-ADMISSION INDICATOR"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
-      "version" : "8.0.1",
+      "version" : "9.0.0",
       "status" : "active",
       "name" : "ActCode",
       "title" : "ActCode",
@@ -221,11 +193,11 @@
       "oids" : ["2.16.840.1.113883.5.4"],
       "uses" : {
       },
-      "ValueSet-EncounterClassVS.html" : "V3 Value SetActEncounterCode"
+      "http://terminology.hl7.org/5.5.0/ValueSet-encounter-class.html" : "Encounter class"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
-      "version" : "2.1.0",
+      "version" : "3.0.0",
       "status" : "active",
       "name" : "ActPriority",
       "title" : "ActPriority",
@@ -233,35 +205,23 @@
       "oids" : ["2.16.840.1.113883.5.7"],
       "uses" : {
       },
-      "ValueSet-ActPriorityVS.html" : "v3 Code System ActPriority"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ActPriority.html" : "ActPriority"
     },
     {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
-      "version" : "2.1.0",
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationCategory",
+      "version" : "3.0.0",
       "status" : "active",
-      "name" : "EncounterSpecialCourtesy",
-      "title" : "EncounterSpecialCourtesy",
-      "description" : "**** MISSING DESCRIPTION ****",
-      "oids" : ["2.16.840.1.113883.5.40"],
+      "name" : "ObservationCategory",
+      "title" : "ObservationCategory",
+      "description" : "High level observation categories for the general type of observation being made.\r\n\r\nURL: http://hl7-fhir.github.io/valueset-observation-category.html\r\n\r\nThis is an inline code system http://hl7.org/fhir/observation-category.",
+      "oids" : ["2.16.840.1.113883.4.642.1.222"],
       "uses" : {
       },
-      "ValueSet-EncounterHospitalizationreSpecialCourtesyVS.html" : "Special courtesy"
-    },
-    {
-      "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
-      "version" : "2.1.0",
-      "status" : "active",
-      "name" : "NullFlavor",
-      "title" : "NullFlavor",
-      "description" : "A collection of codes specifying why a valid value is not present.",
-      "oids" : ["2.16.840.1.113883.5.1008"],
-      "uses" : {
-      },
-      "ValueSet-EncounterHospitalizationreSpecialCourtesyVS.html" : "Special courtesy"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ObservationCategory.html" : "ObservationCategory"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
-      "version" : "4.0.0",
+      "version" : "5.0.0",
       "status" : "active",
       "name" : "ParticipationType",
       "title" : "ParticipationType",
@@ -269,40 +229,18 @@
       "oids" : ["2.16.840.1.113883.5.90"],
       "uses" : {
       },
-      "ValueSet-ParticipationTypeVS.html" : "Participant type"
+      "http://terminology.hl7.org/5.5.0/ValueSet-v3-ParticipationType.html" : "ParticipationType"
     },
     {
-      "url" : "http://terminology.kemkes.go.id/CodeSystem/cancer-m-category",
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "KemkesCancerMCategoryCS",
-      "title" : "Kemkes Cancer M Category",
-      "description" : null,
+      "name" : "KemkesObservationInterpretation",
+      "title" : "Terminology Kemkes ObservationInterpretation CodeSystem",
+      "description" : "Terminology Kemkes Observation Interpretation CodeSystem",
       "uses" : {
       },
-      "ValueSet-ConditionCodeVS.html" : "Condition Code"
-    },
-    {
-      "url" : "http://terminology.kemkes.go.id/CodeSystem/cancer-n-category",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "KemkesCancerNCategory",
-      "title" : "Kemkes Cancer N Category",
-      "description" : null,
-      "uses" : {
-      },
-      "ValueSet-ConditionCodeVS.html" : "Condition Code"
-    },
-    {
-      "url" : "http://terminology.kemkes.go.id/CodeSystem/cancer-t-category",
-      "version" : "0.1.0",
-      "status" : "active",
-      "name" : "KemkesCancerTCategoryCS",
-      "title" : "Kemkes Cancer T Category",
-      "description" : null,
-      "uses" : {
-      },
-      "ValueSet-ConditionCodeVS.html" : "Condition Code"
+      "ValueSet-Observation.interpretation.html" : "Value set specific for Observation Code"
     },
     {
       "url" : "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
@@ -310,45 +248,59 @@
       "status" : "active",
       "name" : "KemkesClinicalTermCS",
       "title" : "Terminology Kemkes Clinical Term CodeSystem",
-      "description" : "Created by: Fadhil Muhammad",
+      "description" : "Terminology Kemkes Clinical Term CodeSystem",
       "uses" : {
       },
-      "ValueSet-ConditionBodySiteVS.html" : "Condition BodySite",
-      "ValueSet-ConditionEvidenceCodeVS.html" : "Condition Evidence Code",
-      "ValueSet-ConditionCodeVS.html" : "Condition Code"
+      "ValueSet-Observation.valueCodeableConcept.html" : "Value set specific for Observation value CodeableConcept",
+      "ValueSet-Observation.interpretation.html" : "Value set specific for Observation Code",
+      "ValueSet-Observation.valueCodeableConceptSpecific.html" : "Value set specific for Observation specific value CodeableConcept",
+      "ValueSet-Observationcode.html" : "Value set specific for Observation Code"
     },
     {
-      "url" : "http://terminology.kemkes.go.id/CodeSystem/encounter-class",
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/examination",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "EncounterClassCS",
-      "title" : "Encounter Class",
-      "description" : "Local ID encounter Class",
+      "name" : "KemkesExaminationCS",
+      "title" : "Terminology Kemkes examination CodeSystem",
+      "description" : "Terminology Kemkes examination CodeSystem",
       "uses" : {
       },
-      "ValueSet-EncounterClassVS.html" : "V3 Value SetActEncounterCode"
+      "ValueSet-Observation.interpretation.html" : "Value set specific for Observation Code",
+      "ValueSet-Observation.valueCodeableConceptSpecific.html" : "Value set specific for Observation specific value CodeableConcept",
+      "ValueSet-Observationcode.html" : "Value set specific for Observation Code"
     },
     {
-      "url" : "http://terminology.kemkes.go.id/CodeSystem/icd-o-morphology",
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "KemkesICDOMorphologyCS",
-      "title" : "ICD-0 Morphology",
-      "description" : "Created by: Fadhil Muhammad",
+      "name" : "EncounterLocationServiceClassInpatient",
+      "title" : "Encounter Location ServiceClass Inpatient",
+      "description" : "Local ID encounter location ServiceClass Inpatient",
       "uses" : {
       },
-      "ValueSet-ConditionCodeVS.html" : "Condition Code"
+      "ValueSet-EncounterLocationServiceClassInpatient.html" : "Encounter Location ServiceClass-Inpatient"
     },
     {
-      "url" : "http://terminology.kemkes.go.id/CodeSystem/icd-o-topography",
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient",
       "version" : "0.1.0",
       "status" : "active",
-      "name" : "KemkesICDOTopographyCS",
-      "title" : "ICD-0 Topography",
-      "description" : "Created by: Fadhil Muhammad",
+      "name" : "EncounterLocationServiceClassOutpatient",
+      "title" : "Encounter Location ServiceClass Outpatient",
+      "description" : "Local ID encounter location ServiceClass Outpatient",
       "uses" : {
       },
-      "ValueSet-ConditionCodeVS.html" : "Condition Code"
+      "ValueSet-EncounterLocationServiceClassOutpatient.html" : "Encounter Location ServiceClass-Outpatient"
+    },
+    {
+      "url" : "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "KemkesLocationUpgradeClass",
+      "title" : "Terminology Kemkes location upgrade class CodeSystem",
+      "description" : "Terminology Kemkes location upgrade class CodeSystem",
+      "uses" : {
+      },
+      "ValueSet-EncounterLocationUpgradeClass.html" : "Encounter Location Upgrade Class"
     }
   ]
 }

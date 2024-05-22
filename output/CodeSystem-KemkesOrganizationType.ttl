@@ -1,0 +1,198 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/KemkesOrganizationType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "KemkesOrganizationType"] ; # 
+  fhir:language [ fhir:v "Indonesia"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/organization-type</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">EHA000004<a name=\"KemkesOrganizationType-EHA000004\"> </a></td><td>Skrining TBC DM</td></tr><tr><td style=\"white-space:nowrap\">OT000001<a name=\"KemkesOrganizationType-OT000001\"> </a></td><td>Polindes</td></tr><tr><td style=\"white-space:nowrap\">OT000002<a name=\"KemkesOrganizationType-OT000002\"> </a></td><td>Pustu</td></tr><tr><td style=\"white-space:nowrap\">OT000003<a name=\"KemkesOrganizationType-OT000003\"> </a></td><td>RS ODHA</td></tr><tr><td style=\"white-space:nowrap\">OT000004<a name=\"KemkesOrganizationType-OT000004\"> </a></td><td>Bidan Praktek Mandiri</td></tr><tr><td style=\"white-space:nowrap\">OT000005<a name=\"KemkesOrganizationType-OT000005\"> </a></td><td>Rumah Dukun</td></tr><tr><td style=\"white-space:nowrap\">OT000006<a name=\"KemkesOrganizationType-OT000006\"> </a></td><td>Rumah Sakit Pemerintah</td></tr><tr><td style=\"white-space:nowrap\">OT000007<a name=\"KemkesOrganizationType-OT000007\"> </a></td><td>Rumah Sakit Swasta</td></tr><tr><td style=\"white-space:nowrap\">OT000008<a name=\"KemkesOrganizationType-OT000008\"> </a></td><td>Rumah Bersalin</td></tr><tr><td style=\"white-space:nowrap\">OT000009<a name=\"KemkesOrganizationType-OT000009\"> </a></td><td>Balai Kesehatan Paru Masyarakat</td></tr><tr><td style=\"white-space:nowrap\">OT000010<a name=\"KemkesOrganizationType-OT000010\"> </a></td><td>Klinik Medis Utama</td></tr><tr><td style=\"white-space:nowrap\">OT000011<a name=\"KemkesOrganizationType-OT000011\"> </a></td><td>Klinik Medis Pratama</td></tr><tr><td style=\"white-space:nowrap\">OT000012<a name=\"KemkesOrganizationType-OT000012\"> </a></td><td>Dokter Praktik Mandiri</td></tr><tr><td style=\"white-space:nowrap\">OT000013<a name=\"KemkesOrganizationType-OT000013\"> </a></td><td>Bidan Praktik Mandiri</td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"KemkesOrganizationType-101\"> </a></td><td>Tempat Praktik Mandiri Tenaga Kesehatan</td></tr><tr><td style=\"white-space:nowrap\">102<a name=\"KemkesOrganizationType-102\"> </a></td><td>Pusat Kesehatan Masyarakat</td></tr><tr><td style=\"white-space:nowrap\">103<a name=\"KemkesOrganizationType-103\"> </a></td><td>Klinik</td></tr><tr><td style=\"white-space:nowrap\">104<a name=\"KemkesOrganizationType-104\"> </a></td><td>Rumah Sakit</td></tr><tr><td style=\"white-space:nowrap\">105<a name=\"KemkesOrganizationType-105\"> </a></td><td>Apotek</td></tr><tr><td style=\"white-space:nowrap\">106<a name=\"KemkesOrganizationType-106\"> </a></td><td>Unit Transfusi Darah</td></tr><tr><td style=\"white-space:nowrap\">107<a name=\"KemkesOrganizationType-107\"> </a></td><td>Laboratorium Kesehatan</td></tr><tr><td style=\"white-space:nowrap\">108<a name=\"KemkesOrganizationType-108\"> </a></td><td>Optikal</td></tr><tr><td style=\"white-space:nowrap\">109<a name=\"KemkesOrganizationType-109\"> </a></td><td>Fasilitas Pelayanan Kedokteran untuk Kepentingan Hukum</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"KemkesOrganizationType-110\"> </a></td><td>Fasilitas Pelayanan Kesehatan Tradisional</td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"KemkesOrganizationType-111\"> </a></td><td>Balai Kesehatan</td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"KemkesOrganizationType-112\"> </a></td><td>Fasilitas Pelayanan Kesehatan Lainnya</td></tr><tr><td style=\"white-space:nowrap\">113<a name=\"KemkesOrganizationType-113\"> </a></td><td>Industri Farmasi</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"KemkesOrganizationType-114\"> </a></td><td>Industri Alkes</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"KemkesOrganizationType-115\"> </a></td><td>Industri PKRT</td></tr><tr><td style=\"white-space:nowrap\">116<a name=\"KemkesOrganizationType-116\"> </a></td><td>Industri Kosmetika</td></tr><tr><td style=\"white-space:nowrap\">117<a name=\"KemkesOrganizationType-117\"> </a></td><td>Industri Obat Tradisional</td></tr><tr><td style=\"white-space:nowrap\">118<a name=\"KemkesOrganizationType-118\"> </a></td><td>Usaha Kecil &amp; Mikro Obat Tradisional</td></tr><tr><td style=\"white-space:nowrap\">119<a name=\"KemkesOrganizationType-119\"> </a></td><td>Industri Rumah Tangga Pangan</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"KemkesOrganizationType-120\"> </a></td><td>Industri Rumah Tangga Alkes PKRT</td></tr><tr><td style=\"white-space:nowrap\">121<a name=\"KemkesOrganizationType-121\"> </a></td><td>Pedagang Besar Farmasi</td></tr><tr><td style=\"white-space:nowrap\">122<a name=\"KemkesOrganizationType-122\"> </a></td><td>Penyalur Alkes PKRT</td></tr><tr><td style=\"white-space:nowrap\">123<a name=\"KemkesOrganizationType-123\"> </a></td><td>Toko Obat</td></tr><tr><td style=\"white-space:nowrap\">124<a name=\"KemkesOrganizationType-124\"> </a></td><td>Toko Alkes PKRT</td></tr><tr><td style=\"white-space:nowrap\">125<a name=\"KemkesOrganizationType-125\"> </a></td><td>Rumah Duka</td></tr><tr><td style=\"white-space:nowrap\">126<a name=\"KemkesOrganizationType-126\"> </a></td><td>Institusi Pendidikan Tenaga Kesehatan</td></tr><tr><td style=\"white-space:nowrap\">127<a name=\"KemkesOrganizationType-127\"> </a></td><td>Institusi Diklat dan Pengembangan SDMK</td></tr><tr><td style=\"white-space:nowrap\">128<a name=\"KemkesOrganizationType-128\"> </a></td><td>Institusi Pendidikan Lainnya</td></tr><tr><td style=\"white-space:nowrap\">129<a name=\"KemkesOrganizationType-129\"> </a></td><td>Dinas Kesehatan</td></tr><tr><td style=\"white-space:nowrap\">130<a name=\"KemkesOrganizationType-130\"> </a></td><td>Posyandu Prima</td></tr><tr><td style=\"white-space:nowrap\">131<a name=\"KemkesOrganizationType-131\"> </a></td><td>Posyandu</td></tr><tr><td style=\"white-space:nowrap\">132<a name=\"KemkesOrganizationType-132\"> </a></td><td>Sentra Vaksinasi / Pos Imunisasi Lainnya</td></tr><tr><td style=\"white-space:nowrap\">133<a name=\"KemkesOrganizationType-133\"> </a></td><td>Sekolah</td></tr><tr><td style=\"white-space:nowrap\">134<a name=\"KemkesOrganizationType-134\"> </a></td><td>Kantor Kesehatan Pelabuhan</td></tr><tr><td style=\"white-space:nowrap\">135<a name=\"KemkesOrganizationType-135\"> </a></td><td>Instalasi Farmasi</td></tr><tr><td style=\"white-space:nowrap\">136<a name=\"KemkesOrganizationType-136\"> </a></td><td>Sarana Pembuangan Limbah Medis</td></tr><tr><td style=\"white-space:nowrap\">137<a name=\"KemkesOrganizationType-137\"> </a></td><td>Asuransi / Unit Pembiayaan</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/organization-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "KemkesOrganizationType"] ; # 
+  fhir:title [ fhir:v "Terminology Kemkes organization type CodeSystem"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-05T00:00:00.000Z"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Thomas Chaidir" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Terminology Kemkes organization type CodeSystem"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.kemkes.go.id/ValueSet/organization-type"^^xsd:anyURI ;
+     fhir:link <http://terminology.kemkes.go.id/ValueSet/organization-type>
+  ] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:versionNeeded [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "51"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "EHA000004" ] ;
+     fhir:display [ fhir:v "Skrining TBC DM" ]
+  ] [
+     fhir:code [ fhir:v "OT000001" ] ;
+     fhir:display [ fhir:v "Polindes" ]
+  ] [
+     fhir:code [ fhir:v "OT000002" ] ;
+     fhir:display [ fhir:v "Pustu" ]
+  ] [
+     fhir:code [ fhir:v "OT000003" ] ;
+     fhir:display [ fhir:v "RS ODHA" ]
+  ] [
+     fhir:code [ fhir:v "OT000004" ] ;
+     fhir:display [ fhir:v "Bidan Praktek Mandiri" ]
+  ] [
+     fhir:code [ fhir:v "OT000005" ] ;
+     fhir:display [ fhir:v "Rumah Dukun" ]
+  ] [
+     fhir:code [ fhir:v "OT000006" ] ;
+     fhir:display [ fhir:v "Rumah Sakit Pemerintah" ]
+  ] [
+     fhir:code [ fhir:v "OT000007" ] ;
+     fhir:display [ fhir:v "Rumah Sakit Swasta" ]
+  ] [
+     fhir:code [ fhir:v "OT000008" ] ;
+     fhir:display [ fhir:v "Rumah Bersalin" ]
+  ] [
+     fhir:code [ fhir:v "OT000009" ] ;
+     fhir:display [ fhir:v "Balai Kesehatan Paru Masyarakat" ]
+  ] [
+     fhir:code [ fhir:v "OT000010" ] ;
+     fhir:display [ fhir:v "Klinik Medis Utama" ]
+  ] [
+     fhir:code [ fhir:v "OT000011" ] ;
+     fhir:display [ fhir:v "Klinik Medis Pratama" ]
+  ] [
+     fhir:code [ fhir:v "OT000012" ] ;
+     fhir:display [ fhir:v "Dokter Praktik Mandiri" ]
+  ] [
+     fhir:code [ fhir:v "OT000013" ] ;
+     fhir:display [ fhir:v "Bidan Praktik Mandiri" ]
+  ] [
+     fhir:code [ fhir:v "101" ] ;
+     fhir:display [ fhir:v "Tempat Praktik Mandiri Tenaga Kesehatan" ]
+  ] [
+     fhir:code [ fhir:v "102" ] ;
+     fhir:display [ fhir:v "Pusat Kesehatan Masyarakat" ]
+  ] [
+     fhir:code [ fhir:v "103" ] ;
+     fhir:display [ fhir:v "Klinik" ]
+  ] [
+     fhir:code [ fhir:v "104" ] ;
+     fhir:display [ fhir:v "Rumah Sakit" ]
+  ] [
+     fhir:code [ fhir:v "105" ] ;
+     fhir:display [ fhir:v "Apotek" ]
+  ] [
+     fhir:code [ fhir:v "106" ] ;
+     fhir:display [ fhir:v "Unit Transfusi Darah" ]
+  ] [
+     fhir:code [ fhir:v "107" ] ;
+     fhir:display [ fhir:v "Laboratorium Kesehatan" ]
+  ] [
+     fhir:code [ fhir:v "108" ] ;
+     fhir:display [ fhir:v "Optikal" ]
+  ] [
+     fhir:code [ fhir:v "109" ] ;
+     fhir:display [ fhir:v "Fasilitas Pelayanan Kedokteran untuk Kepentingan Hukum" ]
+  ] [
+     fhir:code [ fhir:v "110" ] ;
+     fhir:display [ fhir:v "Fasilitas Pelayanan Kesehatan Tradisional" ]
+  ] [
+     fhir:code [ fhir:v "111" ] ;
+     fhir:display [ fhir:v "Balai Kesehatan" ]
+  ] [
+     fhir:code [ fhir:v "112" ] ;
+     fhir:display [ fhir:v "Fasilitas Pelayanan Kesehatan Lainnya" ]
+  ] [
+     fhir:code [ fhir:v "113" ] ;
+     fhir:display [ fhir:v "Industri Farmasi" ]
+  ] [
+     fhir:code [ fhir:v "114" ] ;
+     fhir:display [ fhir:v "Industri Alkes" ]
+  ] [
+     fhir:code [ fhir:v "115" ] ;
+     fhir:display [ fhir:v "Industri PKRT" ]
+  ] [
+     fhir:code [ fhir:v "116" ] ;
+     fhir:display [ fhir:v "Industri Kosmetika" ]
+  ] [
+     fhir:code [ fhir:v "117" ] ;
+     fhir:display [ fhir:v "Industri Obat Tradisional" ]
+  ] [
+     fhir:code [ fhir:v "118" ] ;
+     fhir:display [ fhir:v "Usaha Kecil & Mikro Obat Tradisional" ]
+  ] [
+     fhir:code [ fhir:v "119" ] ;
+     fhir:display [ fhir:v "Industri Rumah Tangga Pangan" ]
+  ] [
+     fhir:code [ fhir:v "120" ] ;
+     fhir:display [ fhir:v "Industri Rumah Tangga Alkes PKRT" ]
+  ] [
+     fhir:code [ fhir:v "121" ] ;
+     fhir:display [ fhir:v "Pedagang Besar Farmasi" ]
+  ] [
+     fhir:code [ fhir:v "122" ] ;
+     fhir:display [ fhir:v "Penyalur Alkes PKRT" ]
+  ] [
+     fhir:code [ fhir:v "123" ] ;
+     fhir:display [ fhir:v "Toko Obat" ]
+  ] [
+     fhir:code [ fhir:v "124" ] ;
+     fhir:display [ fhir:v "Toko Alkes PKRT" ]
+  ] [
+     fhir:code [ fhir:v "125" ] ;
+     fhir:display [ fhir:v "Rumah Duka" ]
+  ] [
+     fhir:code [ fhir:v "126" ] ;
+     fhir:display [ fhir:v "Institusi Pendidikan Tenaga Kesehatan" ]
+  ] [
+     fhir:code [ fhir:v "127" ] ;
+     fhir:display [ fhir:v "Institusi Diklat dan Pengembangan SDMK" ]
+  ] [
+     fhir:code [ fhir:v "128" ] ;
+     fhir:display [ fhir:v "Institusi Pendidikan Lainnya" ]
+  ] [
+     fhir:code [ fhir:v "129" ] ;
+     fhir:display [ fhir:v "Dinas Kesehatan" ]
+  ] [
+     fhir:code [ fhir:v "130" ] ;
+     fhir:display [ fhir:v "Posyandu Prima" ]
+  ] [
+     fhir:code [ fhir:v "131" ] ;
+     fhir:display [ fhir:v "Posyandu" ]
+  ] [
+     fhir:code [ fhir:v "132" ] ;
+     fhir:display [ fhir:v "Sentra Vaksinasi / Pos Imunisasi Lainnya" ]
+  ] [
+     fhir:code [ fhir:v "133" ] ;
+     fhir:display [ fhir:v "Sekolah" ]
+  ] [
+     fhir:code [ fhir:v "134" ] ;
+     fhir:display [ fhir:v "Kantor Kesehatan Pelabuhan" ]
+  ] [
+     fhir:code [ fhir:v "135" ] ;
+     fhir:display [ fhir:v "Instalasi Farmasi" ]
+  ] [
+     fhir:code [ fhir:v "136" ] ;
+     fhir:display [ fhir:v "Sarana Pembuangan Limbah Medis" ]
+  ] [
+     fhir:code [ fhir:v "137" ] ;
+     fhir:display [ fhir:v "Asuransi / Unit Pembiayaan" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

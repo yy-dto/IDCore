@@ -11,7 +11,7 @@
   <name value="KemkesCancerMCategoryCS"/>
   <title value="Kemkes Cancer M Category"/>
   <status value="active"/>
-  <experimental value="true"/>
+  <experimental value="false"/>
   <date value="2024-02-05T00:00:00.000Z"/>
   <publisher value="Thomas Chaidir"/>
   <contact>
@@ -22,6 +22,7 @@
     </telecom>
   </contact>
   <caseSensitive value="true"/>
+  <valueSet value="http://terminology.kemkes.go.id/ValueSet/cancer-m-category"/>
   <hierarchyMeaning value="is-a"/>
   <compositional value="false"/>
   <versionNeeded value="true"/>

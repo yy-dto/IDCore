@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="KemkesCarePlanCategoryCS"/>
+  <meta>
+    <versionId value="2"/>
+    <lastUpdated value="2023-11-09T13:31:14.515+07:00"/>
+  </meta>
+  <language value="Indonesia"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/care-plan-category</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CP000001<a name="KemkesCarePlanCategoryCS-CP000001"> </a></td><td>Tatalaksana weight faltering</td></tr><tr><td style="white-space:nowrap">CP000002<a name="KemkesCarePlanCategoryCS-CP000002"> </a></td><td>Tatalaksana gizi kurang</td></tr><tr><td style="white-space:nowrap">CP000003<a name="KemkesCarePlanCategoryCS-CP000003"> </a></td><td>Tatalaksana gizi buruk</td></tr></table></div>
+  </text>
+  <url value="http://terminology.kemkes.go.id/CodeSystem/care-plan-category"/>
+  <version value="0.1.0"/>
+  <name value="KemkesCarePlanCategoryCS"/>
+  <title value="Terminology Kemkes Clinical Term CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-02-05T00:00:00.000Z"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <description value="Terminology Kemkes Clinical Speciality CodeSystem"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://terminology.kemkes.go.id/ValueSet/care-plan-category"/>
+  <hierarchyMeaning value="is-a"/>
+  <compositional value="false"/>
+  <versionNeeded value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="CP000001"/>
+    <display value="Tatalaksana weight faltering"/>
+  </concept>
+  <concept>
+    <code value="CP000002"/>
+    <display value="Tatalaksana gizi kurang"/>
+  </concept>
+  <concept>
+    <code value="CP000003"/>
+    <display value="Tatalaksana gizi buruk"/>
+  </concept>
+</CodeSystem>

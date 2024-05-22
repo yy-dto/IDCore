@@ -18,6 +18,7 @@
   fhir:name [ fhir:v "KemkesICDOTopographyCS"] ; # 
   fhir:title [ fhir:v "ICD-0 Topography"] ; # 
   fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2024-02-05T00:00:00.000Z"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
   fhir:contact ( [
@@ -29,6 +30,10 @@
   ] ) ; # 
   fhir:description [ fhir:v "Created by: Fadhil Muhammad"] ; # 
   fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.kemkes.go.id/ValueSet/icd-o-morphology"^^xsd:anyURI ;
+     fhir:link <http://terminology.kemkes.go.id/ValueSet/icd-o-morphology>
+  ] ; # 
   fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
   fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:versionNeeded [ fhir:v "false"^^xsd:boolean] ; # 

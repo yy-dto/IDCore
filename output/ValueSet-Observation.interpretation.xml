@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="Observation.interpretation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000001">OI000001</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000002">OI000002</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000003">OI000003</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000004">OI000004</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000005">OI000005</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000006">OI000006</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000007">OI000007</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000008">OI000008</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000009">OI000009</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000010">OI000010</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000011">OI000011</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000012">OI000012</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000013">OI000013</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000014">OI000014</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000015">OI000015</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000016">OI000016</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000017">OI000017</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000018">OI000018</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000019">OI000019</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000020">OI000020</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000021">OI000021</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000022">OI000022</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000023">OI000023</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000024">OI000024</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000025">OI000025</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000026">OI000026</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000027">OI000027</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000028">OI000028</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000029">OI000029</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000030">OI000030</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000031">OI000031</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000032">OI000032</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000033">OI000033</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000034">OI000034</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000035">OI000035</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000036">OI000036</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000037">OI000037</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000038">OI000038</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000039">OI000039</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000040">OI000040</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000041">OI000041</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000042">OI000042</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000043">OI000043</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000044">OI000044</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000045">OI000045</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000046">OI000046</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000047">OI000047</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OI000048">OI000048</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000298">OV000298</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000299">OV000299</a></li><li>Include codes from <a href="CodeSystem-KemkesClinicalTermCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href="CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000300">OV000300</a></li><li>Include codes from <a href="CodeSystem-KemkesExaminationCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href="CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-X099770">X099770</a></li><li>Include codes from <a href="CodeSystem-KemkesExaminationCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href="CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-X099771">X099771</a></li><li>Include codes from <a href="CodeSystem-KemkesExaminationCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href="CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-X099772">X099772</a></li><li>Include codes from <a href="CodeSystem-KemkesExaminationCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href="CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-IP099352">IP099352</a></li><li>Include codes from <a href="CodeSystem-KemkesExaminationCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href="CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-IP099353">IP099353</a></li><li>Include codes from <a href="CodeSystem-KemkesExaminationCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href="CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-IP099354">IP099354</a></li><li>Include codes from <a href="CodeSystem-KemkesExaminationCS.html"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href="CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-IP099355">IP099355</a></li><li>Include codes from <a href="CodeSystem-KemkesObservationInterpretation.html"><code>http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation</code></a> where concept  is-a  <a href="CodeSystem-KemkesObservationInterpretation.html#KemkesObservationInterpretation-BMI-SevereUnder">BMI-SevereUnder</a></li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  827069000 (Hypertension stage 1)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  827068008 (Hypertension stage 2)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  56218007 (Systolic hypertension)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  248311001 (Centripetal obesity)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  73211009 (Diabetes mellitus)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  45089002 (Normal vision)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  397543001 (Mild visual impairment (disorder))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  397542006 (Moderate visual impairment (disorder))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  397541004 (Severe visual impairment (disorder))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  274572000 (Loss of vision of right eye)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  23986001 (Glaucoma)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  248325000 (Undernourished)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  248324001 (Well nourished)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  414915002 (Obese (finding))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  2004005 (Normal blood pressure)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  255330009 (BP rise)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  860635002 (No anemia present)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  714628002 (Prediabetes)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  39021009 (Disorder of refraction)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  260305007 (+1)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  260306008 (+2)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  260307004 (+3)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  260308009 (+4)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  263865001 (Scanty)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  264605009 (+5)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  272069004 (Positive integer)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  76948002 (Severe pain)</li></ul></div>
+  </text>
+  <url value="http://terminology.kemkes.go.id/ValueSet/Observation.interpretation"/>
+  <version value="0.1.0"/>
+  <name value="Observation.interpretation"/>
+  <title value="Value set specific for Observation Code"/>
+  <status value="active"/>
+  <date value="2024-05-22T17:23:47+07:00"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <description value="Value set specific for Observation Code"/>
+  <compose>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000003"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000004"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000005"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000006"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000007"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000008"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000010"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000011"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000012"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000013"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000014"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000015"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000016"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000017"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000018"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000019"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000020"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000021"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000022"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000023"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000024"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000025"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000026"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000027"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000028"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000029"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000030"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000031"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000032"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000033"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000034"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000035"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000036"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000037"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000038"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000039"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000040"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000041"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000042"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000043"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000044"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000045"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000046"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000047"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OI000048"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OV000298"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OV000299"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/clinical-term"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="OV000300"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/examination"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="X099770"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/examination"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="X099771"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/examination"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="X099772"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/examination"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="IP099352"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/examination"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="IP099353"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/examination"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="IP099354"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/examination"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="IP099355"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="BMI-SevereUnder"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="827069000"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="827068008"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="56218007"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="248311001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="73211009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="45089002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="397543001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="397542006"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="397541004"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="274572000"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="23986001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="248325000"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="248324001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="414915002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="2004005"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="255330009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="860635002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="714628002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="39021009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="260305007"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="260306008"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="260307004"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="260308009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="263865001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="264605009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="272069004"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="76948002"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

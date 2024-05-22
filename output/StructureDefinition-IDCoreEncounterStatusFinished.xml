@@ -19,7 +19,7 @@
   <version value="0.1.0"/>
   <name value="IDCoreEncounterStatusFinished"/>
   <status value="active"/>
-  <date value="2024-02-15T12:08:26+07:00"/>
+  <date value="2024-05-22T17:23:47+07:00"/>
   <publisher value="Thomas Chaidir"/>
   <contact>
     <name value="Thomas Chaidir"/>
@@ -449,7 +449,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-status"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -632,7 +632,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-status"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -838,7 +838,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/encounter-class"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -1016,7 +1016,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/encounter-class"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -1223,7 +1223,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterTypeVS"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/encounter-type"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -1268,7 +1268,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/service-type"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -1309,7 +1309,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/ActPriorityVS"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActPriority"/>
       </binding>
       <mapping>
         <identity value="w5"/>
@@ -1622,7 +1622,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/ParticipationTypeVS"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v3-ParticipationType"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -2005,7 +2005,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterReasonCodesVS"/>
+        <valueSet value="http://hl7.org/fhir/ValueSet/encounter-reason"/>
       </binding>
       <mapping>
         <identity value="workflow"/>
@@ -2040,7 +2040,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreCondition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Procedure"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/Observation"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
@@ -2226,7 +2226,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreCondition"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/Condition"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2281,7 +2281,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterDiagnosisUseVS"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/diagnosis-role"/>
       </binding>
       <mapping>
         <identity value="rim"/>
@@ -2576,7 +2576,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationAdmitSourceVS"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/encounter-admit-source"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2613,7 +2613,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreAdmitSourceVS"/>
+        <valueSet value="http://terminology.hl7.org/ValueSet/v2-0092"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2826,11 +2826,33 @@
       </mapping>
     </element>
     <element id="Encounter.location">
+      <extension url="https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass">
+        <extension url="value">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"/>
+              <code value="reguler"/>
+            </coding>
+            <coding>
+              <system value="http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"/>
+              <code value="1"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <extension url="upgradeClassIndicator">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"/>
+              <code value="kelas-tetap"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+      </extension>
       <path value="Encounter.location"/>
       <short value="List of locations where the patient has been"/>
       <definition value="List of locations where  the patient has been during this encounter."/>
       <comment value="Virtual encounters can be recorded in the Encounter by specifying a location reference to a location of type &quot;kind&quot; such as &quot;client's home&quot; and an encounter.class = &quot;virtual&quot;."/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="*"/>
       <base>
         <path value="Encounter.location"/>
@@ -2892,7 +2914,7 @@
       </slicing>
       <short value="Extension"/>
       <definition value="An Extension"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="*"/>
       <base>
         <path value="Element.extension"/>
@@ -2921,13 +2943,13 @@
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-    <element id="Encounter.location.extension:encounterLocation">
+    <element id="Encounter.location.extension:encounterlocation">
       <path value="Encounter.location.extension"/>
-      <sliceName value="encounterLocation"/>
+      <sliceName value="encounterlocation"/>
       <short value="Encounter Location Extention"/>
-      <definition value="The administrative code of the address, represented in six levels: province, city/regency, district, village, rt and rw."/>
-      <min value="0"/>
-      <max value="1"/>
+      <definition value="An Extension"/>
+      <min value="1"/>
+      <max value="*"/>
       <base>
         <path value="Element.extension"/>
         <min value="0"/>

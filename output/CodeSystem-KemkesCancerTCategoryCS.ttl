@@ -33,6 +33,10 @@
      ] )
   ] ) ; # 
   fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.kemkes.go.id/ValueSet/cancer-t-category"^^xsd:anyURI ;
+     fhir:link <http://terminology.kemkes.go.id/ValueSet/cancer-t-category>
+  ] ; # 
   fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
   fhir:compositional [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:versionNeeded [ fhir:v "true"^^xsd:boolean] ; # 

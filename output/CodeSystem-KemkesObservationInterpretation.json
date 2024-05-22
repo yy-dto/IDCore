@@ -1,0 +1,44 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "KemkesObservationInterpretation",
+  "meta" : {
+    "versionId" : "2",
+    "lastUpdated" : "2023-11-09T13:31:14.515+07:00"
+  },
+  "language" : "Indonesia",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">BMI-Normal<a name=\"KemkesObservationInterpretation-BMI-Normal\"> </a></td><td>Normal weight</td></tr><tr><td style=\"white-space:nowrap\">BMI-SevereUnder<a name=\"KemkesObservationInterpretation-BMI-SevereUnder\"> </a></td><td>Severely Underweight</td></tr></table></div>"
+  },
+  "url" : "http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation",
+  "version" : "0.1.0",
+  "name" : "KemkesObservationInterpretation",
+  "title" : "Terminology Kemkes ObservationInterpretation CodeSystem",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-02-05T00:00:00.000Z",
+  "publisher" : "Thomas Chaidir",
+  "contact" : [{
+    "name" : "Thomas Chaidir",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://satusehat.kemkes.go.id/"
+    }]
+  }],
+  "description" : "Terminology Kemkes Observation Interpretation CodeSystem",
+  "caseSensitive" : true,
+  "valueSet" : "http://terminology.kemkes.go.id/ValueSet/ObservationInterpretation",
+  "hierarchyMeaning" : "is-a",
+  "compositional" : false,
+  "versionNeeded" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "BMI-Normal",
+    "display" : "Normal weight"
+  },
+  {
+    "code" : "BMI-SevereUnder",
+    "display" : "Severely Underweight"
+  }]
+}

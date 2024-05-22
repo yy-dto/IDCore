@@ -1,19 +1,5 @@
 [
   {
-    "id" : "EncounterLocationServiceClassInpatientCS",
-    "type" : "CodeSystem",
-    "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
-    "version" : "0.1.0",
-    "name" : "EncounterLocationServiceClassInpatientCS"
-  },
-  {
-    "id" : "EncounterLocationServiceClassOutpatientCS",
-    "type" : "CodeSystem",
-    "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient",
-    "version" : "0.1.0",
-    "name" : "EncounterLocationServiceClassOutpatientCS"
-  },
-  {
     "id" : "EncounterLocationUpgradeClass",
     "type" : "CodeSystem",
     "url" : "hhttp://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
@@ -21,53 +7,18 @@
     "name" : "EncounterLocationUpgradeClass"
   },
   {
-    "id" : "ConditionBodySiteVS",
-    "type" : "ValueSet",
-    "url" : "http://dto.kemkes.go.id//VS/Condition.bodySite",
+    "id" : "KemkesHospitalClassCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/HospitalClass",
     "version" : "0.1.0",
-    "name" : "ConditionBodySiteVS"
+    "name" : "KemkesHospitalClassCS"
   },
   {
-    "id" : "ConditionCategoryVS",
-    "type" : "ValueSet",
-    "url" : "http://dto.kemkes.go.id//VS/Condition.category",
+    "id" : "KemkesObservationInterpretation",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/ObservationInterpretation",
     "version" : "0.1.0",
-    "name" : "ConditionCategoryVS"
-  },
-  {
-    "id" : "ConditionEvidenceCodeVS",
-    "type" : "ValueSet",
-    "url" : "http://dto.kemkes.go.id//VS/Condition.evidence.code",
-    "version" : "0.1.0",
-    "name" : "ConditionEvidenceCodeVS"
-  },
-  {
-    "id" : "ConditionSeverityVS",
-    "type" : "ValueSet",
-    "url" : "http://dto.kemkes.go.id//VS/Condition.severity",
-    "version" : "0.1.0",
-    "name" : "ConditionSeverityVS"
-  },
-  {
-    "id" : "ConditionStageSummaryVS",
-    "type" : "ValueSet",
-    "url" : "http://dto.kemkes.go.id//VS/Condition.stage.summary",
-    "version" : "0.1.0",
-    "name" : "ConditionStageSummaryVS"
-  },
-  {
-    "id" : "ConditionStageTypeVS",
-    "type" : "ValueSet",
-    "url" : "http://dto.kemkes.go.id//VS/Condition.stage.type",
-    "version" : "0.1.0",
-    "name" : "ConditionStageTypeVS"
-  },
-  {
-    "id" : "ConditionVerificationStatusVS",
-    "type" : "ValueSet",
-    "url" : "http://dto.kemkes.go.id//VS/Condition.verificationStatus",
-    "version" : "0.1.0",
-    "name" : "ConditionVerificationStatusVS"
+    "name" : "KemkesObservationInterpretation"
   },
   {
     "id" : "KemkesCancerMCategory",
@@ -77,7 +28,7 @@
     "name" : "KemkesCancerMCategoryCS"
   },
   {
-    "id" : "41b4aac4-719f-4f8a-a96b-92e493c99b75",
+    "id" : "KemkesCancerNCategory",
     "type" : "CodeSystem",
     "url" : "http://terminology.kemkes.go.id/CodeSystem/cancer-n-category",
     "version" : "0.1.0",
@@ -91,6 +42,20 @@
     "name" : "KemkesCancerTCategoryCS"
   },
   {
+    "id" : "KemkesCarePlanCategoryCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/care-plan-category",
+    "version" : "0.1.0",
+    "name" : "KemkesCarePlanCategoryCS"
+  },
+  {
+    "id" : "KemkesClinicalSpecialityCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/clinical-speciality",
+    "version" : "0.1.0",
+    "name" : "KemkesClinicalSpecialityCS"
+  },
+  {
     "id" : "KemkesClinicalTermCS",
     "type" : "CodeSystem",
     "url" : "http://terminology.kemkes.go.id/CodeSystem/clinical-term",
@@ -98,11 +63,25 @@
     "name" : "KemkesClinicalTermCS"
   },
   {
-    "id" : "EncounterClassCS",
+    "id" : "KemkesCompositionSectionCS",
     "type" : "CodeSystem",
-    "url" : "http://terminology.kemkes.go.id/CodeSystem/encounter-class",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/composition-section",
     "version" : "0.1.0",
-    "name" : "EncounterClassCS"
+    "name" : "KemkesCompositionSectionCS"
+  },
+  {
+    "id" : "KemkesCompositionTypeCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/composition-type",
+    "version" : "0.1.0",
+    "name" : "KemkesCompositionTypeCS"
+  },
+  {
+    "id" : "KemkesExaminationCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/examination",
+    "version" : "0.1.0",
+    "name" : "KemkesExaminationCS"
   },
   {
     "id" : "KemkesICDOMorphologyCS",
@@ -119,11 +98,214 @@
     "name" : "KemkesICDOTopographyCS"
   },
   {
+    "id" : "KemkesImmunizationFundingSourceCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-fundingSource",
+    "version" : "0.1.0",
+    "name" : "KemkesImmunizationFundingSourceCS"
+  },
+  {
+    "id" : "KemkesImmunizationProgramEligibilityCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-program-eligibility",
+    "version" : "0.1.0",
+    "name" : "KemkesImmunizationProgramEligibilityCS"
+  },
+  {
+    "id" : "KemkesImmunizationReasonCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-reason",
+    "version" : "0.1.0",
+    "name" : "KemkesImmunizationReasonCS"
+  },
+  {
+    "id" : "KemkesImmunizationRoutineTimingCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-routine-timing",
+    "version" : "0.1.0",
+    "name" : "KemkesImmunizationRoutineTimingCS"
+  },
+  {
+    "id" : "KemkesImmunizationStatusReasonCS",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-statusReason",
+    "version" : "0.1.0",
+    "name" : "KemkesImmunizationStatusReasonCS"
+  },
+  {
+    "id" : "KemkesLocationType",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/location-type",
+    "version" : "0.1.0",
+    "name" : "KemkesLocationType"
+  },
+  {
+    "id" : "EncounterLocationServiceClassInpatient",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationServiceClassInpatient"
+  },
+  {
+    "id" : "EncounterLocationServiceClassOutpatient",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationServiceClassOutpatient"
+  },
+  {
+    "id" : "KemkesLocationUpgradeClass",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
+    "version" : "0.1.0",
+    "name" : "KemkesLocationUpgradeClass"
+  },
+  {
+    "id" : "KemkesMedicationForm",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/medication-form",
+    "version" : "0.1.0",
+    "name" : "KemkesMedicationForm"
+  },
+  {
+    "id" : "KemkesMedicationType",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/medication-type",
+    "version" : "0.1.0",
+    "name" : "KemkesMedicationType"
+  },
+  {
+    "id" : "KemkesOrganizationType",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/organization-type",
+    "version" : "0.1.0",
+    "name" : "KemkesOrganizationType"
+  },
+  {
+    "id" : "KemkesPrevTBTreatment",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment",
+    "version" : "0.1.0",
+    "name" : "KemkesPrevTBTreatment"
+  },
+  {
+    "id" : "KemkesSmallestLogisticUnit",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/CodeSystem/smallest-logistic-unit",
+    "version" : "0.1.0",
+    "name" : "KemkesSmallestLogisticUnit"
+  },
+  {
+    "id" : "KemkesKPSP",
+    "type" : "CodeSystem",
+    "url" : "http://terminology.kemkes.go.id/Codesystem/kpsp",
+    "version" : "0.1.0",
+    "name" : "KemkesKPSP"
+  },
+  {
+    "id" : "IDCoreObservationVitalSigns",
+    "type" : "StructureDefinition",
+    "url" : "http://terminology.kemkes.go.id/StructureDefinition/vitalsigns",
+    "version" : "0.1.0",
+    "name" : "IDCoreObservationVitalSigns"
+  },
+  {
+    "id" : "EncounterLocationServiceClassExtension",
+    "type" : "ValueSet",
+    "url" : "http://terminology.kemkes.go.id/ValueSet/EncounterLocationServiceClassExtension",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationServiceClassExtension"
+  },
+  {
+    "id" : "ObservationBodySite",
+    "type" : "ValueSet",
+    "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.bodysite",
+    "version" : "0.1.0",
+    "name" : "ObservationBodySite"
+  },
+  {
+    "id" : "Observationcode",
+    "type" : "ValueSet",
+    "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.code",
+    "version" : "0.1.0",
+    "name" : "Observationcode"
+  },
+  {
+    "id" : "Observation.interpretation",
+    "type" : "ValueSet",
+    "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.interpretation",
+    "version" : "0.1.0",
+    "name" : "Observation.interpretation"
+  },
+  {
+    "id" : "Observation.valueCodeableConcept",
+    "type" : "ValueSet",
+    "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.valueCodeableConcept",
+    "version" : "0.1.0",
+    "name" : "Observation.valueCodeableConcept"
+  },
+  {
+    "id" : "Observation.valueCodeableConceptSpecific",
+    "type" : "ValueSet",
+    "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.valueCodeableConceptSpecific",
+    "version" : "0.1.0",
+    "name" : "Observation.valueCodeableConceptSpecific"
+  },
+  {
+    "id" : "EncounterLocationServiceClassInpatient",
+    "type" : "ValueSet",
+    "url" : "http://terminology.kemkes.go.id/ValueSet/locationServiceClass-Inpatient",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationServiceClassInpatient"
+  },
+  {
+    "id" : "EncounterLocationServiceClassOutpatient",
+    "type" : "ValueSet",
+    "url" : "http://terminology.kemkes.go.id/ValueSet/locationServiceClass-Outpatient",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationServiceClassOutpatient"
+  },
+  {
+    "id" : "EncounterLocationUpgradeClass",
+    "type" : "ValueSet",
+    "url" : "http://terminology.kemkes.go.id/ValueSet/locationUpgradeClass",
+    "version" : "0.1.0",
+    "name" : "EncounterLocationUpgradeClass"
+  },
+  {
+    "id" : "IDCoreVSBPDiastolic",
+    "type" : "StructureDefinition",
+    "url" : "http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-diastolic",
+    "version" : "0.1.0",
+    "name" : "IDCoreVSBPDiastolic"
+  },
+  {
+    "id" : "IDCoreVSBPSystolic",
+    "type" : "StructureDefinition",
+    "url" : "http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-systolic",
+    "version" : "0.1.0",
+    "name" : "IDCoreVSBPSystolic"
+  },
+  {
     "id" : "hl7.fhir.id.core",
     "type" : "ImplementationGuide",
     "url" : "https://fhir.kemkes.go.id/r4/ImplementationGuide/hl7.fhir.id.core",
     "version" : "0.1.0",
     "name" : "IDCore"
+  },
+  {
+    "id" : "AddressExtension",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension",
+    "version" : "0.1.0",
+    "name" : "AddressExtension"
+  },
+  {
+    "id" : "CitizenshipStatusExtension",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/CitizenshipStatusExtension",
+    "version" : "0.1.0",
+    "name" : "CitizenshipStatusExtension"
   },
   {
     "id" : "EncounterLocation",
@@ -168,157 +350,24 @@
     "name" : "IDCoreEncounterStatusFinished"
   },
   {
-    "id" : "MyPatient",
+    "id" : "IDCoreObservation",
     "type" : "StructureDefinition",
-    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/MyPatient",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreObservation",
     "version" : "0.1.0",
-    "name" : "MyPatient"
+    "name" : "IDCoreObservation"
   },
   {
-    "id" : "ActPriorityVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ActPriorityVS",
+    "id" : "IDCorePatient",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCorePatient",
     "version" : "0.1.0",
-    "name" : "ActPriorityVS"
+    "name" : "IDCorePatient"
   },
   {
-    "id" : "ConditionClinicalStatusVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ConditionClinicalStatusVS",
+    "id" : "IDCorePractitioner",
+    "type" : "StructureDefinition",
+    "url" : "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCorePractitioner",
     "version" : "0.1.0",
-    "name" : "ConditionClinicalStatusVS"
-  },
-  {
-    "id" : "ConditionCodeVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ConditionCodeVS",
-    "version" : "0.1.0",
-    "name" : "ConditionCodeVS"
-  },
-  {
-    "id" : "EncounterClassVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterClassVS",
-    "version" : "0.1.0",
-    "name" : "EncounterClassVS"
-  },
-  {
-    "id" : "EncounterDiagnosisUseVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterDiagnosisUseVS",
-    "version" : "0.1.0",
-    "name" : "EncounterDiagnosisUseVS"
-  },
-  {
-    "id" : "EncounterHospitalizationAdmitSourceVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationAdmitSourceVS",
-    "version" : "0.1.0",
-    "name" : "EncounterHospitalizationAdmitSourceVS"
-  },
-  {
-    "id" : "EncounterHospitalizationDischargeDispositionVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationDischargeDispositionVS",
-    "version" : "0.1.0",
-    "name" : "EncounterHospitalizationDischargeDispositionVS"
-  },
-  {
-    "id" : "EncounterHospitalizationSpecialArrangementsVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationSpecialArrangementsVS",
-    "version" : "0.1.0",
-    "name" : "EncounterHospitalizationSpecialArrangementsVS"
-  },
-  {
-    "id" : "EncounterHospitalizationreAdmitSourceVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreAdmitSourceVS",
-    "version" : "0.1.0",
-    "name" : "EncounterHospitalizationreAdmitSourceVS"
-  },
-  {
-    "id" : "EncounterHospitalizationreDietVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreDietVS",
-    "version" : "0.1.0",
-    "name" : "EncounterHospitalizationreDietVS"
-  },
-  {
-    "id" : "EncounterHospitalizationreSpecialCourtesyVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterHospitalizationreSpecialCourtesyVS",
-    "version" : "0.1.0",
-    "name" : "EncounterHospitalizationreSpecialCourtesyVS"
-  },
-  {
-    "id" : "EncounterLocationServiceClassInpatientVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassInpatientVS",
-    "version" : "0.1.0",
-    "name" : "EncounterLocationServiceClassInpatientVS"
-  },
-  {
-    "id" : "EncounterLocationServiceClassOutpatientVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationServiceClassOutpatientVS",
-    "version" : "0.1.0",
-    "name" : "EncounterLocationServiceClassOutpatientVS"
-  },
-  {
-    "id" : "EncounterLocationStatusVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationStatusVS",
-    "version" : "0.1.0",
-    "name" : "EncounterLocationStatusVS"
-  },
-  {
-    "id" : "EncounterLocationTypeVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationTypeVS",
-    "version" : "0.1.0",
-    "name" : "EncounterLocationTypeVS"
-  },
-  {
-    "id" : "EncounterLocationUpgradeClassVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterLocationUpgradeClassVS",
-    "version" : "0.1.0",
-    "name" : "EncounterLocationUpgradeClassVS"
-  },
-  {
-    "id" : "EncounterReasonCodesVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterReasonCodesVS",
-    "version" : "0.1.0",
-    "name" : "EncounterReasonCodesVS"
-  },
-  {
-    "id" : "EncounterServiceTypeVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterServiceTypeVS",
-    "version" : "0.1.0",
-    "name" : "EncounterServiceTypeVS"
-  },
-  {
-    "id" : "EncounterStatusVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterStatusVS",
-    "version" : "0.1.0",
-    "name" : "EncounterStatusVS"
-  },
-  {
-    "id" : "EncounterTypeVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/EncounterTypeVS",
-    "version" : "0.1.0",
-    "name" : "EncounterTypeVS"
-  },
-  {
-    "id" : "ParticipationTypeVS",
-    "type" : "ValueSet",
-    "url" : "https://fhir.kemkes.go.id/r4/ValueSet/ParticipationTypeVS",
-    "version" : "0.1.0",
-    "name" : "ParticipationTypeVS"
+    "name" : "IDCorePractitioner"
   }
 ]

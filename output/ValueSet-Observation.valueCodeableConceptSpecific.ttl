@@ -1,0 +1,385 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/ValueSet/Observation.valueCodeableConceptSpecific> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Observation.valueCodeableConceptSpecific"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17718-0 (Sinus rhythm)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17099-5 (Sinus tachycardia)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17098-7 (Sinus bradycardia)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17091-2 (Left bundle branch block)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17084-7 (Atrial fibrillation)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17099-5 (Sinus tachycardia)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17708-1 (Ventricular tachycardia with pulse)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17074-8 (Ventricular tachycardia-pulseless)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17086-2 (AV block-1st degree)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17087-0 (AV block-2nd degree-type 1)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17088-8 (AV block-2nd degree-type 2)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17089-6 (AV block-3rd degree)</li><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where concept  is-a  LA17093-8 (Paced rhythm)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  118956008 (Morphologically altered structure)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  12738006 (Brain)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  10003008 (Non-specific)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  432504007 (Cerebral infarction (disorder))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  164895002 (ECG: ventricular tachycardia)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  164896001 (ECG: ventricular fibrillation)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  705008001 (Anterior ST segment elevation)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  705012007 (Anterior and lateral ST segment elevation (finding))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  164868007 (ECG: anteroseptal infarction)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  705007006 (Inferior ST segment elevation)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  705010004 (Posterior ST segment elevation (finding))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  261665006 (Unknown)</li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000367\">OV000367</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OCV000001\">OCV000001</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OCV000003\">OCV000003</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OCV000004\">OCV000004</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000368\">OV000368</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000369\">OV000369</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000370\">OV000370</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000401\">OV000401</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000402\">OV000402</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000403\">OV000403</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000407\">OV000407</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000408\">OV000408</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000409\">OV000409</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-X099770\">X099770</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-X099771\">X099771</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-X099772\">X099772</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-X099773\">X099773</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-X099774\">X099774</a></li><li>Include codes from <a href=\"CodeSystem-KemkesExaminationCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-X099770\">X099770</a></li><li>Include codes from <a href=\"CodeSystem-KemkesExaminationCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-X099771\">X099771</a></li><li>Include codes from <a href=\"CodeSystem-KemkesExaminationCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-X099772\">X099772</a></li><li>Include codes from <a href=\"CodeSystem-KemkesExaminationCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-X099773\">X099773</a></li><li>Include codes from <a href=\"CodeSystem-KemkesExaminationCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/examination</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesExaminationCS.html#KemkesExaminationCS-X099774\">X099774</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000371\">OV000371</a></li><li>Include codes from <a href=\"CodeSystem-KemkesClinicalTermCS.html\"><code>http://terminology.kemkes.go.id/CodeSystem/clinical-term</code></a> where concept  is-a  <a href=\"CodeSystem-KemkesClinicalTermCS.html#KemkesClinicalTermCS-OV000372\">OV000372</a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.kemkes.go.id/ValueSet/Observation.valueCodeableConceptSpecific"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Observation.valueCodeableConceptSpecific"] ; # 
+  fhir:title [ fhir:v "Value set specific for Observation specific value CodeableConcept"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-05-22T17:23:47+07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Thomas Chaidir" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Value set specific for Observation specific value CodeableConcept"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17718-0" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17099-5" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17098-7" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17091-2" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17084-7" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17099-5" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17708-1" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17074-8" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17086-2" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17087-0" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17088-8" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17089-6" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "LA17093-8" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "118956008" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "12738006" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "10003008" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "432504007" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "164895002" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "164896001" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "705008001" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "705012007" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "164868007" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "705007006" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "705010004" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "261665006" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000367" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OCV000001" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OCV000003" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OCV000004" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000368" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000369" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000370" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000401" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000402" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000403" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000407" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000408" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000409" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "X099770" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "X099771" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "X099772" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "X099773" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "X099774" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/examination"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "X099770" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/examination"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "X099771" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/examination"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "X099772" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/examination"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "X099773" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/examination"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "X099774" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000371" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/clinical-term"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "OV000372" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

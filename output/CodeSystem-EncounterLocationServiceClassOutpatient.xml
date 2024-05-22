@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="EncounterLocationServiceClassOutpatient"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">reguler<a name="EncounterLocationServiceClassOutpatient-reguler"> </a></td><td>Kelas Reguler</td></tr><tr><td style="white-space:nowrap">eksekutif<a name="EncounterLocationServiceClassOutpatient-eksekutif"> </a></td><td>Kelas Eksekutif</td></tr></table></div>
+  </text>
+  <url value="http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"/>
+  <version value="0.1.0"/>
+  <name value="EncounterLocationServiceClassOutpatient"/>
+  <title value="Encounter Location ServiceClass Outpatient"/>
+  <status value="active"/>
+  <date value="2024-05-22T17:23:47+07:00"/>
+  <publisher value="Thomas Chaidir"/>
+  <contact>
+    <name value="Thomas Chaidir"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+  </contact>
+  <description value="Local ID encounter location ServiceClass Outpatient"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="reguler"/>
+    <display value="Kelas Reguler"/>
+  </concept>
+  <concept>
+    <code value="eksekutif"/>
+    <display value="Kelas Eksekutif"/>
+  </concept>
+</CodeSystem>

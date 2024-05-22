@@ -26,6 +26,13 @@
     "resource": [
       {
         "reference": {
+          "reference": "StructureDefinition/AddressExtension"
+        },
+        "name": "Address administrative code extension",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/IDCoreVSBPDiastolic"
         },
         "name": "Diastolic Blood Pressure",
@@ -38,6 +45,13 @@
         },
         "name": "Encounter Location Extension",
         "description": "A set of codes, specifying location extension valueset.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/EncounterLocation"
+        },
+        "name": "Encounter Location Extention",
         "exampleBoolean": false
       },
       {
@@ -106,10 +120,94 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/IDCoreCondition"
+        },
+        "name": "IDCoreCondition",
+        "description": "ID Core Condition profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/IDCoreCondition"
+        },
+        "name": "IDCoreCondition",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounter"
+        },
+        "name": "IDCoreEncounter",
+        "description": "ID Core Encounter profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/IDCoreEncounter"
+        },
+        "name": "IDCoreEncounter",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounterEMER"
+        },
+        "name": "IDCoreEncounterEMER",
+        "description": "Encounter profile for Emergency patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/IDCoreEncounterEMER"
+        },
+        "name": "IDCoreEncounterEMER",
+        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounterIMP"
+        },
+        "name": "IDCoreEncounterIMP",
+        "description": "Encounter profile for inpatient patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/IDCoreEncounterIMP"
+        },
+        "name": "IDCoreEncounterIMP",
+        "exampleCanonical": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCoreEncounterStatusFinished"
+        },
+        "name": "IDCoreEncounterStatusFinished",
+        "description": "Encounter profile when the Status is Finished",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/IDCoreObservation"
         },
         "name": "IDCoreObservation",
         "description": "ID Core Observation profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCorePatient"
+        },
+        "name": "IDCorePatient",
+        "description": "ID Core Patient profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/IDCorePractitioner"
+        },
+        "name": "IDCorePractitioner",
+        "description": "ID Core Practitioner profile",
         "exampleBoolean": false
       },
       {
@@ -131,6 +229,13 @@
           "reference": "CodeSystem/KemkesCancerTCategoryCS"
         },
         "name": "Kemkes Cancer T Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/CitizenshipStatusExtension"
+        },
+        "name": "Patient citizenship status extension",
         "exampleBoolean": false
       },
       {

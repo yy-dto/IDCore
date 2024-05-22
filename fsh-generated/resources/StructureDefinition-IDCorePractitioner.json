@@ -1,0 +1,154 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "IDCorePractitioner",
+  "extension": [
+    {
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/citizenshipStatus"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/IDCorePractitioner",
+  "identifier": [
+    {
+      "system": "https://fhir.kemkes.go.id/id/nakes-his-number",
+      "use": "official",
+      "value": "P02478375538"
+    },
+    {
+      "system": "https://fhir.kemkes.go.id/id/nik",
+      "use": "official"
+    }
+  ],
+  "name": "IDCorePractitioner",
+  "status": "active",
+  "description": "ID Core Practitioner profile",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.extension",
+        "path": "Practitioner.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Practitioner.extension:citizenshipStatus",
+        "path": "Practitioner.extension",
+        "sliceName": "citizenshipStatus",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.kemkes.go.id/r4/StructureDefinition/CitizenshipStatusExtension"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.active",
+        "path": "Practitioner.active",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.address",
+        "extension": [
+          {
+            "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode"
+          }
+        ],
+        "path": "Practitioner.address"
+      },
+      {
+        "id": "Practitioner.address.extension",
+        "path": "Practitioner.address.extension",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.extension:addressExtension",
+        "path": "Practitioner.address.extension",
+        "sliceName": "addressExtension",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Practitioner.address.use",
+        "path": "Practitioner.address.use",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.line",
+        "path": "Practitioner.address.line",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.city",
+        "path": "Practitioner.address.city",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.address.country",
+        "path": "Practitioner.address.country",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.gender",
+        "path": "Practitioner.gender",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.birthDate",
+        "path": "Practitioner.birthDate",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.period.start",
+        "path": "Practitioner.qualification.period.start",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification.period.end",
+        "path": "Practitioner.qualification.period.end",
+        "min": 1
+      }
+    ]
+  }
+}
