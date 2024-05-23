@@ -1,5 +1,7 @@
 Alias: $IDCoreEncounter = https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreEncounter
+Alias: $Condition-clinicalCS = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $Condition-clinicalVS = http://terminology.hl7.org/ValueSet/condition-clinical
+Alias: $Condition-categoryCS = http://terminology.hl7.org/CodeSystem/condition-category
 Alias: $Condition-categoryVS = http://terminology.hl7.org/ValueSet/condition-category
 Alias: $Condition-code = http://hl7.org/fhir/ValueSet/condition-code
 Alias: $Condition-severity = http://hl7.org/fhir/ValueSet/condition-severity

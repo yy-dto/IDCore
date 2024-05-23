@@ -34,10 +34,10 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-Observation.valueCodeableConcept.html" : "Value set specific for Observation value CodeableConcept",
       "http://hl7.org/fhir/R4/valueset-observation-vitalsignresult.html" : "Vital Signs",
+      "ValueSet-Observationcode.html" : "Value set specific for Observation Code",
       "ValueSet-Observation.valueCodeableConceptSpecific.html" : "Value set specific for Observation specific value CodeableConcept",
-      "ValueSet-Observationcode.html" : "Value set specific for Observation Code"
+      "ValueSet-Observation.valueCodeableConcept.html" : "Value set specific for Observation value CodeableConcept"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -49,19 +49,20 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-      "ValueSet-ObservationBodySite.html" : "Value set specific for Observation BodySite",
-      "ValueSet-Observation.valueCodeableConcept.html" : "Value set specific for Observation value CodeableConcept",
-      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "ValueSet-Observation.interpretation.html" : "Value set specific for Observation Code",
       "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
       "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
       "ValueSet-Observationcode.html" : "Value set specific for Observation Code",
+      "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+      "ValueSet-Observation.valueCodeableConceptSpecific.html" : "Value set specific for Observation specific value CodeableConcept",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-Observation.valueCodeableConcept.html" : "Value set specific for Observation value CodeableConcept",
       "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
-      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-      "ValueSet-Observation.interpretation.html" : "Value set specific for Observation Code",
-      "ValueSet-Observation.valueCodeableConceptSpecific.html" : "Value set specific for Observation specific value CodeableConcept"
+      "ValueSet-ObservationBodySite.html" : "Value set specific for Observation BodySite",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/admit-source",
@@ -251,10 +252,10 @@
       "description" : "Terminology Kemkes Clinical Term CodeSystem",
       "uses" : {
       },
-      "ValueSet-Observation.valueCodeableConcept.html" : "Value set specific for Observation value CodeableConcept",
       "ValueSet-Observation.interpretation.html" : "Value set specific for Observation Code",
+      "ValueSet-Observationcode.html" : "Value set specific for Observation Code",
       "ValueSet-Observation.valueCodeableConceptSpecific.html" : "Value set specific for Observation specific value CodeableConcept",
-      "ValueSet-Observationcode.html" : "Value set specific for Observation Code"
+      "ValueSet-Observation.valueCodeableConcept.html" : "Value set specific for Observation value CodeableConcept"
     },
     {
       "url" : "http://terminology.kemkes.go.id/CodeSystem/examination",
@@ -266,8 +267,8 @@
       "uses" : {
       },
       "ValueSet-Observation.interpretation.html" : "Value set specific for Observation Code",
-      "ValueSet-Observation.valueCodeableConceptSpecific.html" : "Value set specific for Observation specific value CodeableConcept",
-      "ValueSet-Observationcode.html" : "Value set specific for Observation Code"
+      "ValueSet-Observationcode.html" : "Value set specific for Observation Code",
+      "ValueSet-Observation.valueCodeableConceptSpecific.html" : "Value set specific for Observation specific value CodeableConcept"
     },
     {
       "url" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",

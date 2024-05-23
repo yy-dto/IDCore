@@ -1,0 +1,303 @@
+ValueSet: ObservationMethod
+Id: v3-ObservationMethod
+Title: "ObservationMethod"
+Description: """A code that provides additional detail about the means or technique used to ascertain the observation.
+
+*Examples:* Blood pressure measurement method: arterial puncture vs. sphygmomanometer (Riva-Rocci), sitting vs. supine position, etc.
+
+*Constraints:* In all observations the method is already partially specified by the Act.code. In this case, the methodCode NEED NOT be used at all. The methodCode MAY still be used to identify this method more clearly in addition to what is implied from the Act.code. However, an information consumer system or process SHOULD NOT depend on this methodCode information for method detail that is implied by the Act.code.
+
+If the methodCode is used to express method detail that is also implied by the Act.code, the methodCode MUST NOT be in conflict with the implied method of the Act.code."""
+* ^language = #en
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.1.11.14079"
+* ^version = "3.0.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2014-03-26"
+* ^publisher = "Health Level Seven International"
+* ^contact.telecom[0].system = #url
+* ^contact.telecom[=].value = "http://hl7.org"
+* ^contact.telecom[+].system = #email
+* ^contact.telecom[=].value = "hq@HL7.org"
+* ^copyright = "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"
+* $v3-ObservationMethod#0001
+* $v3-ObservationMethod#0002
+* $v3-ObservationMethod#0003
+* $v3-ObservationMethod#0004
+* $v3-ObservationMethod#0005
+* $v3-ObservationMethod#0006
+* $v3-ObservationMethod#0007
+* $v3-ObservationMethod#0008
+* $v3-ObservationMethod#0009
+* $v3-ObservationMethod#0010
+* $v3-ObservationMethod#0011
+* $v3-ObservationMethod#0012
+* $v3-ObservationMethod#0013
+* $v3-ObservationMethod#0014
+* $v3-ObservationMethod#0015
+* $v3-ObservationMethod#0016
+* $v3-ObservationMethod#0017
+* $v3-ObservationMethod#0018
+* $v3-ObservationMethod#0019
+* $v3-ObservationMethod#0020
+* $v3-ObservationMethod#0021
+* $v3-ObservationMethod#0022
+* $v3-ObservationMethod#0023
+* $v3-ObservationMethod#0024
+* $v3-ObservationMethod#0025
+* $v3-ObservationMethod#0026
+* $v3-ObservationMethod#0027
+* $v3-ObservationMethod#0028
+* $v3-ObservationMethod#0029
+* $v3-ObservationMethod#0030
+* $v3-ObservationMethod#0031
+* $v3-ObservationMethod#0032
+* $v3-ObservationMethod#0033
+* $v3-ObservationMethod#0034
+* $v3-ObservationMethod#0035
+* $v3-ObservationMethod#0036
+* $v3-ObservationMethod#0037
+* $v3-ObservationMethod#0038
+* $v3-ObservationMethod#0039
+* $v3-ObservationMethod#0040
+* $v3-ObservationMethod#0041
+* $v3-ObservationMethod#0042
+* $v3-ObservationMethod#0043
+* $v3-ObservationMethod#0044
+* $v3-ObservationMethod#0045
+* $v3-ObservationMethod#0046
+* $v3-ObservationMethod#0047
+* $v3-ObservationMethod#0048
+* $v3-ObservationMethod#0049
+* $v3-ObservationMethod#0050
+* $v3-ObservationMethod#0051
+* $v3-ObservationMethod#0052
+* $v3-ObservationMethod#0053
+* $v3-ObservationMethod#0054
+* $v3-ObservationMethod#0055
+* $v3-ObservationMethod#0056
+* $v3-ObservationMethod#0057
+* $v3-ObservationMethod#0058
+* $v3-ObservationMethod#0059
+* $v3-ObservationMethod#0060
+* $v3-ObservationMethod#0061
+* $v3-ObservationMethod#0062
+* $v3-ObservationMethod#0063
+* $v3-ObservationMethod#0064
+* $v3-ObservationMethod#0065
+* $v3-ObservationMethod#0066
+* $v3-ObservationMethod#0067
+* $v3-ObservationMethod#0068
+* $v3-ObservationMethod#0069
+* $v3-ObservationMethod#0070
+* $v3-ObservationMethod#0071
+* $v3-ObservationMethod#0072
+* $v3-ObservationMethod#0073
+* $v3-ObservationMethod#0074
+* $v3-ObservationMethod#0075
+* $v3-ObservationMethod#0076
+* $v3-ObservationMethod#0077
+* $v3-ObservationMethod#0078
+* $v3-ObservationMethod#0079
+* $v3-ObservationMethod#0080
+* $v3-ObservationMethod#0081
+* $v3-ObservationMethod#0082
+* $v3-ObservationMethod#0083
+* $v3-ObservationMethod#0084
+* $v3-ObservationMethod#0085
+* $v3-ObservationMethod#0086
+* $v3-ObservationMethod#0087
+* $v3-ObservationMethod#0088
+* $v3-ObservationMethod#0089
+* $v3-ObservationMethod#0090
+* $v3-ObservationMethod#0091
+* $v3-ObservationMethod#0092
+* $v3-ObservationMethod#0093
+* $v3-ObservationMethod#0094
+* $v3-ObservationMethod#0095
+* $v3-ObservationMethod#0096
+* $v3-ObservationMethod#0097
+* $v3-ObservationMethod#0098
+* $v3-ObservationMethod#0099
+* $v3-ObservationMethod#0100
+* $v3-ObservationMethod#0101
+* $v3-ObservationMethod#0102
+* $v3-ObservationMethod#0103
+* $v3-ObservationMethod#0104
+* $v3-ObservationMethod#0105
+* $v3-ObservationMethod#0106
+* $v3-ObservationMethod#0107
+* $v3-ObservationMethod#0108
+* $v3-ObservationMethod#0109
+* $v3-ObservationMethod#0110
+* $v3-ObservationMethod#0111
+* $v3-ObservationMethod#0112
+* $v3-ObservationMethod#0113
+* $v3-ObservationMethod#0114
+* $v3-ObservationMethod#0115
+* $v3-ObservationMethod#0116
+* $v3-ObservationMethod#0117
+* $v3-ObservationMethod#0118
+* $v3-ObservationMethod#0119
+* $v3-ObservationMethod#0120
+* $v3-ObservationMethod#0121
+* $v3-ObservationMethod#0122
+* $v3-ObservationMethod#0123
+* $v3-ObservationMethod#0124
+* $v3-ObservationMethod#0125
+* $v3-ObservationMethod#0126
+* $v3-ObservationMethod#0127
+* $v3-ObservationMethod#0128
+* $v3-ObservationMethod#0129
+* $v3-ObservationMethod#0130
+* $v3-ObservationMethod#0131
+* $v3-ObservationMethod#0132
+* $v3-ObservationMethod#0133
+* $v3-ObservationMethod#0134
+* $v3-ObservationMethod#0135
+* $v3-ObservationMethod#0136
+* $v3-ObservationMethod#0137
+* $v3-ObservationMethod#0138
+* $v3-ObservationMethod#0139
+* $v3-ObservationMethod#0140
+* $v3-ObservationMethod#0141
+* $v3-ObservationMethod#0142
+* $v3-ObservationMethod#0143
+* $v3-ObservationMethod#0144
+* $v3-ObservationMethod#0145
+* $v3-ObservationMethod#0146
+* $v3-ObservationMethod#0147
+* $v3-ObservationMethod#0148
+* $v3-ObservationMethod#0149
+* $v3-ObservationMethod#0150
+* $v3-ObservationMethod#0151
+* $v3-ObservationMethod#0152
+* $v3-ObservationMethod#0153
+* $v3-ObservationMethod#0154
+* $v3-ObservationMethod#0155
+* $v3-ObservationMethod#0156
+* $v3-ObservationMethod#0157
+* $v3-ObservationMethod#0158
+* $v3-ObservationMethod#0159
+* $v3-ObservationMethod#0160
+* $v3-ObservationMethod#0161
+* $v3-ObservationMethod#0162
+* $v3-ObservationMethod#0163
+* $v3-ObservationMethod#0164
+* $v3-ObservationMethod#0165
+* $v3-ObservationMethod#0166
+* $v3-ObservationMethod#0167
+* $v3-ObservationMethod#0168
+* $v3-ObservationMethod#0169
+* $v3-ObservationMethod#0170
+* $v3-ObservationMethod#0171
+* $v3-ObservationMethod#0172
+* $v3-ObservationMethod#0173
+* $v3-ObservationMethod#0174
+* $v3-ObservationMethod#0175
+* $v3-ObservationMethod#0176
+* $v3-ObservationMethod#0177
+* $v3-ObservationMethod#0178
+* $v3-ObservationMethod#0179
+* $v3-ObservationMethod#0180
+* $v3-ObservationMethod#0181
+* $v3-ObservationMethod#0182
+* $v3-ObservationMethod#0183
+* $v3-ObservationMethod#0184
+* $v3-ObservationMethod#0185
+* $v3-ObservationMethod#0186
+* $v3-ObservationMethod#0187
+* $v3-ObservationMethod#0188
+* $v3-ObservationMethod#0189
+* $v3-ObservationMethod#0190
+* $v3-ObservationMethod#0191
+* $v3-ObservationMethod#0192
+* $v3-ObservationMethod#0193
+* $v3-ObservationMethod#0194
+* $v3-ObservationMethod#0195
+* $v3-ObservationMethod#0196
+* $v3-ObservationMethod#0197
+* $v3-ObservationMethod#0198
+* $v3-ObservationMethod#0199
+* $v3-ObservationMethod#0200
+* $v3-ObservationMethod#0201
+* $v3-ObservationMethod#0202
+* $v3-ObservationMethod#0203
+* $v3-ObservationMethod#0204
+* $v3-ObservationMethod#0205
+* $v3-ObservationMethod#0206
+* $v3-ObservationMethod#0207
+* $v3-ObservationMethod#0208
+* $v3-ObservationMethod#0209
+* $v3-ObservationMethod#0210
+* $v3-ObservationMethod#0211
+* $v3-ObservationMethod#0212
+* $v3-ObservationMethod#0213
+* $v3-ObservationMethod#0214
+* $v3-ObservationMethod#0215
+* $v3-ObservationMethod#0216
+* $v3-ObservationMethod#0217
+* $v3-ObservationMethod#0218
+* $v3-ObservationMethod#0219
+* $v3-ObservationMethod#0220
+* $v3-ObservationMethod#0221
+* $v3-ObservationMethod#0222
+* $v3-ObservationMethod#0223
+* $v3-ObservationMethod#0224
+* $v3-ObservationMethod#0225
+* $v3-ObservationMethod#0226
+* $v3-ObservationMethod#0227
+* $v3-ObservationMethod#0228
+* $v3-ObservationMethod#0229
+* $v3-ObservationMethod#0230
+* $v3-ObservationMethod#0231
+* $v3-ObservationMethod#0232
+* $v3-ObservationMethod#0233
+* $v3-ObservationMethod#0234
+* $v3-ObservationMethod#0235
+* $v3-ObservationMethod#0236
+* $v3-ObservationMethod#0237
+* $v3-ObservationMethod#0238
+* $v3-ObservationMethod#0239
+* $v3-ObservationMethod#0240
+* $v3-ObservationMethod#0241
+* $v3-ObservationMethod#0242
+* $v3-ObservationMethod#0243
+* $v3-ObservationMethod#0244
+* $v3-ObservationMethod#0245
+* $v3-ObservationMethod#0246
+* $v3-ObservationMethod#0247
+* $v3-ObservationMethod#0248
+* $v3-ObservationMethod#0249
+* $v3-ObservationMethod#0250
+* $v3-ObservationMethod#0251
+* $v3-ObservationMethod#0252
+* $v3-ObservationMethod#0253
+* $v3-ObservationMethod#0254
+* $v3-ObservationMethod#0255
+* $v3-ObservationMethod#0256
+* $v3-ObservationMethod#0257
+* $v3-ObservationMethod#0258
+* $v3-ObservationMethod#0259
+* $v3-ObservationMethod#0260
+* $v3-ObservationMethod#0261
+* $v3-ObservationMethod#0262
+* $v3-ObservationMethod#0263
+* $v3-ObservationMethod#0264
+* $v3-ObservationMethod#0265
+* $v3-ObservationMethod#0266
+* $v3-ObservationMethod#0267
+* $v3-ObservationMethod#0268
+* $v3-ObservationMethod#0269
+* $v3-ObservationMethod#0270
+* $v3-ObservationMethod#0271
+* include codes from valueset XAdverseEventCausalityAssessmentMethods
+* include codes from valueset Tst0272
+* include codes from valueset Tst0275a
+* include codes from valueset Tst0280
+* include codes from valueset DecisionObservationMethod
+* include codes from valueset VerificationMethod
+* include codes from valueset GeneticObservationMethod
+* exclude $v3-ObservationMethod#_VerificationMethod
+* exclude $v3-ObservationMethod#_GeneticObservationMethod

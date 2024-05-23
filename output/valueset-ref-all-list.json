@@ -12,8 +12,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.69"],
       "uses" : {
       },
-      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
-      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient",
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/address-use",
@@ -27,8 +27,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.67"],
       "uses" : {
       },
-      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
-      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient",
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
@@ -42,8 +42,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
-      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
-      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient",
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -55,6 +55,20 @@
       "systems" : ["http://snomed.info/sct"],
       "oids" : ["2.16.840.1.113883.4.642.3.141"],
       "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/condition-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Condition/Problem/DiagnosisCodes",
+      "title" : "Condition/Problem/Diagnosis Codes",
+      "description" : "Example value set for Condition/Problem/Diagnosis codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.161"],
+      "sources" : ["2.16.840.1.113883.4.642.3.161"],
       "uses" : {
       },
       "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition"
@@ -113,10 +127,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.5"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
-      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
       "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
-      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
@@ -130,9 +144,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.255"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -149,9 +163,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.259"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -166,9 +180,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.262"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -183,9 +197,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.261"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -202,9 +216,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.253"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -222,9 +236,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.252"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -239,9 +253,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.246"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -256,8 +270,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
-      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient",
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -271,8 +285,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
-      "StructureDefinition-IDCorePatient.html" : "IDCorePatient"
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient",
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -286,16 +300,16 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
-      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
-      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
-      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
-      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
-      "StructureDefinition-IDCorePatient.html" : "IDCorePatient",
-      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
-      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
       "StructureDefinition-IDCoreCondition.html" : "IDCoreCondition",
+      "StructureDefinition-IDCorePatient.html" : "IDCorePatient",
+      "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCorePractitioner.html" : "IDCorePractitioner",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -326,9 +340,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.328"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -374,10 +388,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.395"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
-      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
       "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
-      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-status",
@@ -391,10 +405,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.400"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
-      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
       "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
-      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
@@ -408,9 +422,9 @@
       "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
+      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
       "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
-      "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile"
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
@@ -438,8 +452,8 @@
       "sources" : ["2.16.840.1.113883.4.642.3.59"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
-      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure"
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
@@ -456,10 +470,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.407"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
-      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
       "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
-      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/service-type",
@@ -473,9 +487,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.518"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -532,9 +546,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.49"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -549,9 +563,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.257"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -564,9 +578,9 @@
       "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -581,9 +595,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.248"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -600,10 +614,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.397"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
-      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
       "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
-      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
@@ -617,9 +631,9 @@
       "sources" : ["2.16.840.1.113883.21.40"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -646,9 +660,9 @@
       "sources" : ["2.16.840.1.113883.1.11.16866"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -665,10 +679,10 @@
       "sources" : ["2.16.840.1.113883.4.642.2.222"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
-      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
       "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
-      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ParticipationType",
@@ -682,9 +696,9 @@
       "sources" : ["2.16.840.1.113883.1.11.10901"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounterEMER.html" : "IDCoreEncounterEMER",
       "StructureDefinition-IDCoreEncounterIMP.html" : "IDCoreEncounterIMP",
+      "StructureDefinition-IDCoreEncounterStatusFinished.html" : "IDCoreEncounterStatusFinished",
       "StructureDefinition-IDCoreEncounter.html" : "IDCoreEncounter"
     },
     {
@@ -709,10 +723,10 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
-      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
       "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
-      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure"
     },
     {
       "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.code",
@@ -747,10 +761,10 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure",
-      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
       "StructureDefinition-IDCoreObservationVitalSigns.html" : "Vital Signs Profile",
-      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation"
+      "StructureDefinition-IDCoreVSBPDiastolic.html" : "Diastolic Blood Pressure",
+      "StructureDefinition-IDCoreObservation.html" : "IDCoreObservation",
+      "StructureDefinition-IDCoreVSBPSystolic.html" : "Systolic Blood Pressure"
     },
     {
       "url" : "http://terminology.kemkes.go.id/ValueSet/Observation.valueCodeableConcept",

@@ -164,10 +164,6 @@ C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\Str
 C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-EncounterLocation.json: line 1, col 33388, Error - The extension https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass could not be found so is not allowed here (STRUCTURE)
 C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-EncounterLocation.json: line 0, col 0, Error - The resource must declare its jurisdiction to match the package id (hl7.fhir.id.core, jurisdiction = urn:iso:std:iso:3166#ID) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#ID "null"') (BUSINESSRULE)
 C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-EncounterLocation.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this extension (BUSINESSRULE)
-C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreCondition.json: line 1, col 65546, Error - Canonical URL 'http://hl7.org/fhir/CodeSystem/condition-code' does not resolve (INVALID)
-C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreCondition.json: line 1, col 96098, Error - Canonical URL 'http://hl7.org/fhir/CodeSystem/condition-code' does not resolve (INVALID)
-C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreCondition.json: line 0, col 0, Warning - The valueSet reference http://hl7.org/fhir/CodeSystem/condition-code on element Condition.code could not be resolved (BUSINESSRULE)
-C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreCondition.json: line 0, col 0, Warning - The valueSet reference http://hl7.org/fhir/CodeSystem/condition-code on element Condition.code could not be resolved (BUSINESSRULE)
 C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreCondition.json: line 0, col 0, Error - The resource must declare its jurisdiction to match the package id (hl7.fhir.id.core, jurisdiction = urn:iso:std:iso:3166#ID) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#ID "null"') (BUSINESSRULE)
 C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreCondition.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreEncounter.json: line 1, col 136295, Error - The extension https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass could not be found so is not allowed here (STRUCTURE)
@@ -266,6 +262,6 @@ C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\Val
 IDCore : Validation Results
 =========================================
 
-err = 148, warn = 99, info = 31
+err = 146, warn = 97, info = 31
 IG Publisher Version: 1.5.8 Out of date - current version is 1.6.9
-Generated Wed May 22 17:28:36 WIB 2024. FHIR version 4.0.1 for hl7.fhir.id.core#0.1.0 (canonical = https://fhir.kemkes.go.id/r4)
+Generated Thu May 23 10:57:17 WIB 2024. FHIR version 4.0.1 for hl7.fhir.id.core#0.1.0 (canonical = https://fhir.kemkes.go.id/r4)

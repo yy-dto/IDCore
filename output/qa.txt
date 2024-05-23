@@ -1,9 +1,9 @@
 ﻿IDCore : Validation Results
 =========================================
 
-err = 148, warn = 99, info = 31
+err = 146, warn = 97, info = 31
 IG Publisher Version: 1.5.8 Out of date - current version is 1.6.9
-Generated Wed May 22 17:28:36 WIB 2024. FHIR version 4.0.1 for hl7.fhir.id.core#0.1.0 (canonical = https://fhir.kemkes.go.id/r4)
+Generated Thu May 23 10:57:17 WIB 2024. FHIR version 4.0.1 for hl7.fhir.id.core#0.1.0 (canonical = https://fhir.kemkes.go.id/r4)
  Build Errors : 877 / 14 / 0
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\CodeSystem-EncounterLocationServiceClassInpatient : 3 / 3 / 2
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\CodeSystem-EncounterLocationServiceClassOutpatient : 2 / 3 / 2
@@ -42,7 +42,7 @@ Generated Wed May 22 17:28:36 WIB 2024. FHIR version 4.0.1 for hl7.fhir.id.core#
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-AddressExtension : 2 / 1 / 1
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-CitizenshipStatusExtension : 2 / 1 / 1
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-EncounterLocation : 2 / 1 / 1
- C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreCondition : 3 / 3 / 1
+ C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreCondition : 1 / 1 / 1
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreEncounter : 3 / 0 / 1
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreEncounterEMER : 4 / 1 / 1
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreEncounterIMP : 4 / 1 / 1
@@ -1159,10 +1159,6 @@ ERROR: StructureDefinition/EncounterLocation: StructureDefinition.extension[0]: 
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.id.core, jurisdiction = urn:iso:std:iso:3166#ID) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#ID "null"')
 WARNING: StructureDefinition.where(url = 'https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation'): The Implementation Guide contains no examples for this extension
 == fsh-generated\resources\StructureDefinition-IDCoreCondition.json ==
-ERROR: StructureDefinition/IDCoreCondition: StructureDefinition.snapshot.element[14].binding.valueSet: Canonical URL 'http://hl7.org/fhir/CodeSystem/condition-code' does not resolve
-ERROR: StructureDefinition/IDCoreCondition: StructureDefinition.differential.element[5].binding.valueSet: Canonical URL 'http://hl7.org/fhir/CodeSystem/condition-code' does not resolve
-WARNING: StructureDefinition/IDCoreCondition: StructureDefinition.differential.element[5].binding: The valueSet reference http://hl7.org/fhir/CodeSystem/condition-code on element Condition.code could not be resolved
-WARNING: StructureDefinition/IDCoreCondition: StructureDefinition.snapshot.element[14].binding: The valueSet reference http://hl7.org/fhir/CodeSystem/condition-code on element Condition.code could not be resolved
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.id.core, jurisdiction = urn:iso:std:iso:3166#ID) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#ID "null"')
 WARNING: StructureDefinition.where(url = 'https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreCondition'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-IDCoreEncounter.json ==
