@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "InvoiceElementPaid",
+  "id": "v3-InvoiceElementPaid",
+  "title": "InvoiceElementPaid",
+  "description": "Total counts and total net amounts paid for all Invoice Groupings that were paid within a time period based on the payment date.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-InvoiceElementPaid",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.17563"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActCode",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "_InvoiceElementPaid"
+          }
+        ]
+      }
+    ],
+    "exclude": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActCode",
+        "concept": [
+          {
+            "code": "_InvoiceElementPaid"
+          }
+        ]
+      }
+    ]
+  }
+}

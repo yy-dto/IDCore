@@ -1,0 +1,132 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "Calendar",
+  "id": "v3-Calendar",
+  "title": "Calendar",
+  "description": "Code system for specifying a type of calendar",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-Calendar",
+  "concept": [
+    {
+      "code": "GREG",
+      "display": "Gregorian",
+      "definition": "The Gregorian calendar is the calendar in effect in most countries of Christian influence since approximately 1582. This calendar superceded the Julian calendar.",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "internalId",
+          "valueCode": "17423"
+        }
+      ]
+    }
+  ],
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.1055"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2019-03-20",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "property": [
+    {
+      "extension": [
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry",
+          "valueCode": "antisymmetric"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity",
+          "valueCode": "transitive"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity",
+          "valueCode": "irreflexive"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind",
+          "valueCode": "Specializes"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName",
+          "valueString": "Generalizes"
+        }
+      ],
+      "code": "Specializes",
+      "description": "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.",
+      "type": "Coding"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry",
+          "valueCode": "antisymmetric"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity",
+          "valueCode": "transitive"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity",
+          "valueCode": "irreflexive"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind",
+          "valueCode": "Generalizes"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName",
+          "valueString": "Specializes"
+        }
+      ],
+      "code": "Generalizes",
+      "description": "Inverse of Specializes.  Only included as a derived relationship.",
+      "type": "Coding"
+    },
+    {
+      "code": "internalId",
+      "uri": "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id",
+      "description": "The internal identifier for the concept in the HL7 Access database repository.",
+      "type": "code"
+    },
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "description": "Designation of a concept's state. Normally is not populated unless the state is retired.",
+      "type": "code"
+    }
+  ],
+  "count": 1
+}

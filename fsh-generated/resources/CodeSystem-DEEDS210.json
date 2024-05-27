@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "not-present",
+  "name": "DEEDS210",
+  "id": "DEEDS210",
+  "title": "DEEDS2.10",
+  "description": "Code for ED Practitioner Role",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/DEEDS210",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.6.102.2.10"
+    }
+  ],
+  "version": "2.0.1",
+  "experimental": false,
+  "date": "2021-11-09T10:00:00+10:00",
+  "publisher": "TBD - External Body",
+  "caseSensitive": true
+}

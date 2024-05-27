@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "not-present",
+  "name": "MeSH",
+  "id": "MeSH",
+  "title": "Medical Subject Headings",
+  "description": "The Medical Subject Headings (MeSH) thesaurus is a controlled and hierarchically-organized vocabulary produced by the National Library of Medicine. It is used for indexing, cataloging, and searching of biomedical and health-related information. MeSH includes the subject headings appearing in MEDLINE/PubMed, the NLM Catalog, and other NLM databases.\n\nMeSH can be downloaded from https://www.nlm.nih.gov/databases/download/mesh.html\n\nMeSH can be browsed here: https://meshb.nlm.nih.gov/search",
+  "url": "https://www.nlm.nih.gov/mesh",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.6.177"
+    }
+  ],
+  "version": "3.0.1",
+  "experimental": false,
+  "date": "2021-06-29T00:00:00-04:00",
+  "publisher": "National Library of Medicine",
+  "contact": [
+    {
+      "name": "National Library of Medicine; 8600 Rockville Pike, Bethesda, MD 20894",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "https://support.nlm.nih.gov/support/create-case/"
+        },
+        {
+          "system": "url",
+          "value": "https://www.nlm.nih.gov/"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true
+}

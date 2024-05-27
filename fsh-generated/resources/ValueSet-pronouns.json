@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PersonalPronouns",
+  "id": "pronouns",
+  "title": "Personal Pronouns",
+  "description": "Codes that indicate the pronouns to be used when communicating with or about an individual.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/pronouns",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.3.3290"
+    }
+  ],
+  "version": "2.0.0",
+  "experimental": false,
+  "date": "2024-03-09T14:36:19-07:00",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "LA29518-0",
+            "display": "he/him/his/his/himself"
+          },
+          {
+            "code": "LA29519-8",
+            "display": "she/her/her/hers/herself"
+          },
+          {
+            "code": "LA29520-6",
+            "display": "they/them/their/theirs/themselves"
+          }
+        ]
+      }
+    ]
+  }
+}

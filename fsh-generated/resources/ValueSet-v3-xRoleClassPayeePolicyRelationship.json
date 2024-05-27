@@ -1,0 +1,126 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "XRoleClassPayeePolicyRelationship",
+  "id": "v3-xRoleClassPayeePolicyRelationship",
+  "title": "x_RoleClassPayeePolicyRelationship",
+  "description": "The specification of the relationship of the Payee to the invoice. Can be used in cases when an insurer is not directly paying the healthcare provider (as payee) but reimbursing the party that paid the invoice/claim.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-xRoleClassPayeePolicyRelationship",
+  "language": "en",
+  "extension": [
+    {
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "Name:Class"
+        },
+        {
+          "url": "value",
+          "valueString": "payeePolicyRelationship"
+        }
+      ],
+      "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-assocConceptProp"
+    },
+    {
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "Name:Role:player:Entity"
+        },
+        {
+          "url": "value",
+          "valueString": "payee&"
+        }
+      ],
+      "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-assocConceptProp"
+    },
+    {
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "Name:Role:scoper:Entity"
+        },
+        {
+          "url": "value",
+          "valueString": "scoping&"
+        }
+      ],
+      "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-assocConceptProp"
+    },
+    {
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "Sort:Entity:playedRole:Role"
+        },
+        {
+          "url": "value",
+          "valueString": "AAAACA___"
+        }
+      ],
+      "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-assocConceptProp"
+    },
+    {
+      "extension": [
+        {
+          "url": "name",
+          "valueString": "Sort:Entity:scopedRole:Role"
+        },
+        {
+          "url": "value",
+          "valueString": "AAAACA___"
+        }
+      ],
+      "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-assocConceptProp"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.19395"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-RoleClass",
+        "concept": [
+          {
+            "code": "COVPTY"
+          },
+          {
+            "code": "GUAR"
+          },
+          {
+            "code": "POLHOLD"
+          },
+          {
+            "code": "PROV"
+          },
+          {
+            "code": "PRS"
+          }
+        ]
+      }
+    ]
+  }
+}

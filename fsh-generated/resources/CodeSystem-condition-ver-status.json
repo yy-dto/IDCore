@@ -1,0 +1,85 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ConditionVerificationStatus",
+  "id": "condition-ver-status",
+  "title": "ConditionVerificationStatus",
+  "description": "The verification status to support or decline the clinical status of the condition or diagnosis.",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/condition-ver-status",
+  "concept": [
+    {
+      "code": "unconfirmed",
+      "display": "Unconfirmed",
+      "definition": "There is not sufficient evidence to assert the presence of the subject's condition.",
+      "concept": [
+        {
+          "code": "provisional",
+          "display": "Provisional",
+          "definition": "This is a tentative diagnosis - still a candidate that is under consideration."
+        },
+        {
+          "code": "differential",
+          "display": "Differential",
+          "definition": "One of a set of potential (and typically mutually exclusive) diagnoses asserted to further guide the diagnostic process and preliminary treatment."
+        }
+      ]
+    },
+    {
+      "code": "confirmed",
+      "display": "Confirmed",
+      "definition": "There is sufficient evidence to assert the presence of the subject's condition."
+    },
+    {
+      "code": "refuted",
+      "display": "Refuted",
+      "definition": "This condition has been ruled out by subsequent diagnostic and clinical evidence."
+    },
+    {
+      "code": "entered-in-error",
+      "display": "Entered in Error",
+      "definition": "The statement was entered in error and is not valid."
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2020-04-09T21:10:28.568+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pc"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.1075"
+    }
+  ],
+  "version": "2.0.0",
+  "experimental": false,
+  "date": "2020-04-09T21:10:28+00:00",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "valueSet": "http://terminology.hl7.org/ValueSet/condition-ver-status",
+  "count": 6
+}

@@ -1,0 +1,66 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SupplyType",
+  "id": "supply-kind",
+  "title": "Supply Type",
+  "description": "This value sets refers to a Category of supply.",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/supply-kind",
+  "concept": [
+    {
+      "code": "central",
+      "display": "Central Supply",
+      "definition": "Supply is stored and requested from central supply."
+    },
+    {
+      "code": "nonstock",
+      "display": "Non-Stock",
+      "definition": "Supply is not onsite and must be requested from an outside vendor using a non-stock requisition."
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2020-04-09T21:10:28.568+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.1192"
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-03-09T14:36:19-07:00",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "valueSet": "http://terminology.hl7.org/ValueSet/supplyrequest-kind",
+  "count": 2
+}

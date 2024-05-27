@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "not-present",
+  "name": "PHOccupationCDCCensus2010",
+  "id": "PHOccupationCDCCensus2010",
+  "title": "Occupation CDC Census 2010",
+  "description": "2010 Occupation coding system used by CDC (NIOSH and NCHS) for coding occupation text. Occupation describes a set of activities or tasks that individuals are paid to perform or, if unpaid, define a person's contribution to a household/family business/community.",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/PHOccupationCDCCensus2010",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.114222.4.5.314"
+    }
+  ],
+  "version": "2.0.1",
+  "experimental": false,
+  "date": "2019-03-20T00:00:00-04:00",
+  "publisher": "TBD - External Body",
+  "caseSensitive": true
+}

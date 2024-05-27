@@ -1,0 +1,96 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "CoverageEligibilityResponseAuthSupportCodes",
+  "id": "coverageeligibilityresponse-ex-auth-support",
+  "title": "CoverageEligibilityResponse Auth Support Codes",
+  "description": "This value set includes CoverageEligibilityResponse Auth Support codes.",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/coverageeligibilityresponse-ex-auth-support",
+  "concept": [
+    {
+      "code": "laborder",
+      "display": "Lab Order",
+      "definition": "A request or authorization for laboratory diagnostic tests."
+    },
+    {
+      "code": "labreport",
+      "display": "Lab Report",
+      "definition": "A report on laboratory diagnostic test(s)."
+    },
+    {
+      "code": "diagnosticimageorder",
+      "display": "Diagnostic Image Order",
+      "definition": "A request or authorization for diagnostic imaging."
+    },
+    {
+      "code": "diagnosticimagereport",
+      "display": "Diagnostic Image Report",
+      "definition": "A report on diagnostic image(s)."
+    },
+    {
+      "code": "professionalreport",
+      "display": "Professional Report",
+      "definition": "A report from a licensed professional regarding the siutation, condition or proposed treatment."
+    },
+    {
+      "code": "accidentreport",
+      "display": "Accident Report",
+      "definition": "A formal accident report as would be filed with police or a simlar official body."
+    },
+    {
+      "code": "model",
+      "display": "Model",
+      "definition": "A physical model of the affected area."
+    },
+    {
+      "code": "picture",
+      "display": "Picture",
+      "definition": "A photograph of the affected area."
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2020-04-09T21:10:28.568+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fm"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.1394"
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-03-09T14:36:19-07:00",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "valueSet": "http://terminology.hl7.org/ValueSet/coverageeligibilityresponse-ex-auth-support",
+  "count": 8
+}

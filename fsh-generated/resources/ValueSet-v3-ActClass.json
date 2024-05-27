@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ActClass",
+  "id": "v3-ActClass",
+  "title": "ActClass",
+  "description": "A code specifying the major type of Act that this Act-instance represents.\n\n*Constraints:* The classCode domain is a tightly controlled vocabulary, not an external or user-defined vocabulary.\n\nEvery Act-instance must have a classCode. If the act class is not further specified, the most general Act.classCode (ACT) is used.\n\nThe Act.classCode must be a generalization of the specific Act concept (e.g., as expressed in Act.code), in other words, the Act concepts conveyed in an Act must be specializations of the Act.classCode. Especially, Act.code is not a \"modifier\" that can alter the meaning of a class code. (See Act.code for contrast.)",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ActClass",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.11527"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "immutable": true,
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActClass"
+      }
+    ]
+  }
+}

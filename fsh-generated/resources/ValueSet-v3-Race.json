@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "Race",
+  "id": "v3-Race",
+  "title": "Race",
+  "description": "In the United States, federal standards for classifying data on race determine the categories used by federal agencies and exert a strong influence on categorization by state and local agencies and private sector organizations. The federal standards do not conceptually define race, and they recognize the absence of an anthropological or scientific basis for racial classification. Instead, the federal standards acknowledge that race is a social-political construct in which an individual's own identification with one more race categories is preferred to observer identification. The standards use a variety of features to define five minimum race categories. Among these features are descent from \"the original peoples\" of a specified region or nation. The minimum race categories are American Indian or Alaska Native, Asian, Black or African American, Native Hawaiian or Other Pacific Islander, and White. The federal standards stipulate that race data need not be limited to the five minimum categories, but any expansion must be collapsible to those categories.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-Race",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.14914"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-Race",
+        "concept": [
+          {
+            "code": "2131-1"
+          }
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-RaceNativeAmerican"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-RaceAsian"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-RaceBlackOrAfricanAmerican"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-RaceHawaiianOrPacificIsland"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-RaceWhite"
+        ]
+      }
+    ]
+  }
+}

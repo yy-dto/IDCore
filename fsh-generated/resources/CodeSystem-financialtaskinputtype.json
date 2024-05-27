@@ -1,0 +1,81 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FinancialTaskInputTypeCodes",
+  "id": "financialtaskinputtype",
+  "title": "Financial Task Input Type Codes",
+  "description": "This value set includes Financial Task Input Type codes.",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/financialtaskinputtype",
+  "concept": [
+    {
+      "code": "include",
+      "display": "Include",
+      "definition": "The name of a resource to include in a selection."
+    },
+    {
+      "code": "exclude",
+      "display": "Exclude",
+      "definition": "The name of a resource to not include in a selection."
+    },
+    {
+      "code": "origresponse",
+      "display": "Original Response",
+      "definition": "A reference to the response resource to the original processing of a resource."
+    },
+    {
+      "code": "reference",
+      "display": "Reference Number",
+      "definition": "A reference value which must be quoted to authorize an action."
+    },
+    {
+      "code": "item",
+      "display": "Item Number",
+      "definition": "The sequence number associated with an item for reprocessing."
+    },
+    {
+      "code": "period",
+      "display": "Period",
+      "definition": "The reference period for the action being requested."
+    },
+    {
+      "code": "status",
+      "display": "Status code",
+      "definition": "The processing status from a check on the processing status of a resource such as the adjudication of a claim."
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2020-04-09T21:10:28.568+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.1392"
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-03-09T14:36:19-07:00",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "valueSet": "http://terminology.hl7.org/ValueSet/financial-taskinputtype",
+  "count": 7
+}

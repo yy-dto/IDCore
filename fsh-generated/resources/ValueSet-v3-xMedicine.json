@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "XMedicine",
+  "id": "v3-xMedicine",
+  "title": "x_Medicine",
+  "description": "A type of Administered Substance that is manufactured from raw organic or inorganic ingredients and used in the course of a patient's therapy.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-xMedicine",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.19668"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-EntityCode",
+        "concept": [
+          {
+            "code": "BLDPRD"
+          }
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-VaccineEntityType"
+        ]
+      }
+    ]
+  }
+}

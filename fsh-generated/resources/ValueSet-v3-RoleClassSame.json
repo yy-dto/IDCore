@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RoleClassSame",
+  "id": "v3-RoleClassSame",
+  "title": "RoleClassSame",
+  "description": "The \"same\" roleclass asserts an identity between playing and scoping entities: that they are in fact instances of the same entity and, in the case of discrepancies (e.g different DOB, gender), that one or both are in error.\n\n*Usage:*\n\nplaying and scoping entities must have same classcode, but need not have identical attributes or values.\n\n*Example:* \n\na provider registry maintains sets of conflicting demographic data for what is reported to be the same individual.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-RoleClassSame",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.20168"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "immutable": true,
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-RoleClass",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "SAME"
+          }
+        ]
+      }
+    ]
+  }
+}

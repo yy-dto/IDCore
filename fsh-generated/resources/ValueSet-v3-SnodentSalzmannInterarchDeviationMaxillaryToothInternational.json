@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SnodentSalzmannInterarchDeviationMaxillaryToothInternational",
+  "id": "v3-SnodentSalzmannInterarchDeviationMaxillaryToothInternational",
+  "title": "SnodentSalzmannInterarchDeviationMaxillaryToothInternational",
+  "description": "The SNODENT identifiers for the teeth in the maxilla assessed for tooth-specific inter-arch deviations as part of calculating the Salzmann Malocclusion Severity Index.\n\nThis value set contains content from SNODENT® Copyright American Dental Association (ADA). All rights reserved. SNODENT is a registered trademark of the ADA.\n\nhttp://www.ada.org/en/member-center/member-benefits/practice-resources/dental-informatics/snodent/licensing-snodent\n\n*Steward:* Attachments WG",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-SnodentSalzmannInterarchDeviationMaxillaryToothInternational",
+  "language": "en",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "att"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.20572"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2019-03-20",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ada.org/snodent",
+        "concept": [
+          {
+            "code": "160840D"
+          },
+          {
+            "code": "160957D"
+          },
+          {
+            "code": "161010D"
+          },
+          {
+            "code": "161132D"
+          },
+          {
+            "code": "161178D"
+          },
+          {
+            "code": "161329D"
+          },
+          {
+            "code": "161546D"
+          },
+          {
+            "code": "161607D"
+          }
+        ]
+      }
+    ]
+  }
+}

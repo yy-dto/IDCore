@@ -1,0 +1,303 @@
+ValueSet: ObservationMethod
+Id: v3-ObservationMethod
+Title: "ObservationMethod"
+Description: """A code that provides additional detail about the means or technique used to ascertain the observation.
+
+*Examples:* Blood pressure measurement method: arterial puncture vs. sphygmomanometer (Riva-Rocci), sitting vs. supine position, etc.
+
+*Constraints:* In all observations the method is already partially specified by the Act.code. In this case, the methodCode NEED NOT be used at all. The methodCode MAY still be used to identify this method more clearly in addition to what is implied from the Act.code. However, an information consumer system or process SHOULD NOT depend on this methodCode information for method detail that is implied by the Act.code.
+
+If the methodCode is used to express method detail that is also implied by the Act.code, the methodCode MUST NOT be in conflict with the implied method of the Act.code."""
+* ^language = #en
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.1.11.14079"
+* ^version = "3.0.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2014-03-26"
+* ^publisher = "Health Level Seven International"
+* ^contact.telecom[0].system = #url
+* ^contact.telecom[=].value = "http://hl7.org"
+* ^contact.telecom[+].system = #email
+* ^contact.telecom[=].value = "hq@HL7.org"
+* ^copyright = "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"
+* ObservationMethod#0001
+* ObservationMethod#0002
+* ObservationMethod#0003
+* ObservationMethod#0004
+* ObservationMethod#0005
+* ObservationMethod#0006
+* ObservationMethod#0007
+* ObservationMethod#0008
+* ObservationMethod#0009
+* ObservationMethod#0010
+* ObservationMethod#0011
+* ObservationMethod#0012
+* ObservationMethod#0013
+* ObservationMethod#0014
+* ObservationMethod#0015
+* ObservationMethod#0016
+* ObservationMethod#0017
+* ObservationMethod#0018
+* ObservationMethod#0019
+* ObservationMethod#0020
+* ObservationMethod#0021
+* ObservationMethod#0022
+* ObservationMethod#0023
+* ObservationMethod#0024
+* ObservationMethod#0025
+* ObservationMethod#0026
+* ObservationMethod#0027
+* ObservationMethod#0028
+* ObservationMethod#0029
+* ObservationMethod#0030
+* ObservationMethod#0031
+* ObservationMethod#0032
+* ObservationMethod#0033
+* ObservationMethod#0034
+* ObservationMethod#0035
+* ObservationMethod#0036
+* ObservationMethod#0037
+* ObservationMethod#0038
+* ObservationMethod#0039
+* ObservationMethod#0040
+* ObservationMethod#0041
+* ObservationMethod#0042
+* ObservationMethod#0043
+* ObservationMethod#0044
+* ObservationMethod#0045
+* ObservationMethod#0046
+* ObservationMethod#0047
+* ObservationMethod#0048
+* ObservationMethod#0049
+* ObservationMethod#0050
+* ObservationMethod#0051
+* ObservationMethod#0052
+* ObservationMethod#0053
+* ObservationMethod#0054
+* ObservationMethod#0055
+* ObservationMethod#0056
+* ObservationMethod#0057
+* ObservationMethod#0058
+* ObservationMethod#0059
+* ObservationMethod#0060
+* ObservationMethod#0061
+* ObservationMethod#0062
+* ObservationMethod#0063
+* ObservationMethod#0064
+* ObservationMethod#0065
+* ObservationMethod#0066
+* ObservationMethod#0067
+* ObservationMethod#0068
+* ObservationMethod#0069
+* ObservationMethod#0070
+* ObservationMethod#0071
+* ObservationMethod#0072
+* ObservationMethod#0073
+* ObservationMethod#0074
+* ObservationMethod#0075
+* ObservationMethod#0076
+* ObservationMethod#0077
+* ObservationMethod#0078
+* ObservationMethod#0079
+* ObservationMethod#0080
+* ObservationMethod#0081
+* ObservationMethod#0082
+* ObservationMethod#0083
+* ObservationMethod#0084
+* ObservationMethod#0085
+* ObservationMethod#0086
+* ObservationMethod#0087
+* ObservationMethod#0088
+* ObservationMethod#0089
+* ObservationMethod#0090
+* ObservationMethod#0091
+* ObservationMethod#0092
+* ObservationMethod#0093
+* ObservationMethod#0094
+* ObservationMethod#0095
+* ObservationMethod#0096
+* ObservationMethod#0097
+* ObservationMethod#0098
+* ObservationMethod#0099
+* ObservationMethod#0100
+* ObservationMethod#0101
+* ObservationMethod#0102
+* ObservationMethod#0103
+* ObservationMethod#0104
+* ObservationMethod#0105
+* ObservationMethod#0106
+* ObservationMethod#0107
+* ObservationMethod#0108
+* ObservationMethod#0109
+* ObservationMethod#0110
+* ObservationMethod#0111
+* ObservationMethod#0112
+* ObservationMethod#0113
+* ObservationMethod#0114
+* ObservationMethod#0115
+* ObservationMethod#0116
+* ObservationMethod#0117
+* ObservationMethod#0118
+* ObservationMethod#0119
+* ObservationMethod#0120
+* ObservationMethod#0121
+* ObservationMethod#0122
+* ObservationMethod#0123
+* ObservationMethod#0124
+* ObservationMethod#0125
+* ObservationMethod#0126
+* ObservationMethod#0127
+* ObservationMethod#0128
+* ObservationMethod#0129
+* ObservationMethod#0130
+* ObservationMethod#0131
+* ObservationMethod#0132
+* ObservationMethod#0133
+* ObservationMethod#0134
+* ObservationMethod#0135
+* ObservationMethod#0136
+* ObservationMethod#0137
+* ObservationMethod#0138
+* ObservationMethod#0139
+* ObservationMethod#0140
+* ObservationMethod#0141
+* ObservationMethod#0142
+* ObservationMethod#0143
+* ObservationMethod#0144
+* ObservationMethod#0145
+* ObservationMethod#0146
+* ObservationMethod#0147
+* ObservationMethod#0148
+* ObservationMethod#0149
+* ObservationMethod#0150
+* ObservationMethod#0151
+* ObservationMethod#0152
+* ObservationMethod#0153
+* ObservationMethod#0154
+* ObservationMethod#0155
+* ObservationMethod#0156
+* ObservationMethod#0157
+* ObservationMethod#0158
+* ObservationMethod#0159
+* ObservationMethod#0160
+* ObservationMethod#0161
+* ObservationMethod#0162
+* ObservationMethod#0163
+* ObservationMethod#0164
+* ObservationMethod#0165
+* ObservationMethod#0166
+* ObservationMethod#0167
+* ObservationMethod#0168
+* ObservationMethod#0169
+* ObservationMethod#0170
+* ObservationMethod#0171
+* ObservationMethod#0172
+* ObservationMethod#0173
+* ObservationMethod#0174
+* ObservationMethod#0175
+* ObservationMethod#0176
+* ObservationMethod#0177
+* ObservationMethod#0178
+* ObservationMethod#0179
+* ObservationMethod#0180
+* ObservationMethod#0181
+* ObservationMethod#0182
+* ObservationMethod#0183
+* ObservationMethod#0184
+* ObservationMethod#0185
+* ObservationMethod#0186
+* ObservationMethod#0187
+* ObservationMethod#0188
+* ObservationMethod#0189
+* ObservationMethod#0190
+* ObservationMethod#0191
+* ObservationMethod#0192
+* ObservationMethod#0193
+* ObservationMethod#0194
+* ObservationMethod#0195
+* ObservationMethod#0196
+* ObservationMethod#0197
+* ObservationMethod#0198
+* ObservationMethod#0199
+* ObservationMethod#0200
+* ObservationMethod#0201
+* ObservationMethod#0202
+* ObservationMethod#0203
+* ObservationMethod#0204
+* ObservationMethod#0205
+* ObservationMethod#0206
+* ObservationMethod#0207
+* ObservationMethod#0208
+* ObservationMethod#0209
+* ObservationMethod#0210
+* ObservationMethod#0211
+* ObservationMethod#0212
+* ObservationMethod#0213
+* ObservationMethod#0214
+* ObservationMethod#0215
+* ObservationMethod#0216
+* ObservationMethod#0217
+* ObservationMethod#0218
+* ObservationMethod#0219
+* ObservationMethod#0220
+* ObservationMethod#0221
+* ObservationMethod#0222
+* ObservationMethod#0223
+* ObservationMethod#0224
+* ObservationMethod#0225
+* ObservationMethod#0226
+* ObservationMethod#0227
+* ObservationMethod#0228
+* ObservationMethod#0229
+* ObservationMethod#0230
+* ObservationMethod#0231
+* ObservationMethod#0232
+* ObservationMethod#0233
+* ObservationMethod#0234
+* ObservationMethod#0235
+* ObservationMethod#0236
+* ObservationMethod#0237
+* ObservationMethod#0238
+* ObservationMethod#0239
+* ObservationMethod#0240
+* ObservationMethod#0241
+* ObservationMethod#0242
+* ObservationMethod#0243
+* ObservationMethod#0244
+* ObservationMethod#0245
+* ObservationMethod#0246
+* ObservationMethod#0247
+* ObservationMethod#0248
+* ObservationMethod#0249
+* ObservationMethod#0250
+* ObservationMethod#0251
+* ObservationMethod#0252
+* ObservationMethod#0253
+* ObservationMethod#0254
+* ObservationMethod#0255
+* ObservationMethod#0256
+* ObservationMethod#0257
+* ObservationMethod#0258
+* ObservationMethod#0259
+* ObservationMethod#0260
+* ObservationMethod#0261
+* ObservationMethod#0262
+* ObservationMethod#0263
+* ObservationMethod#0264
+* ObservationMethod#0265
+* ObservationMethod#0266
+* ObservationMethod#0267
+* ObservationMethod#0268
+* ObservationMethod#0269
+* ObservationMethod#0270
+* ObservationMethod#0271
+* include codes from valueset XAdverseEventCausalityAssessmentMethods
+* include codes from valueset Tst0272
+* include codes from valueset Tst0275a
+* include codes from valueset Tst0280
+* include codes from valueset DecisionObservationMethod
+* include codes from valueset VerificationMethod
+* include codes from valueset GeneticObservationMethod
+* exclude ObservationMethod#_VerificationMethod
+* exclude ObservationMethod#_GeneticObservationMethod

@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "not-present",
+  "name": "IMO",
+  "id": "IMO",
+  "title": "Intelligent Medical Objects",
+  "description": "IMO is a clinical interface terminology, which helps to map diagnostic, procedure and other terminologies to medical concepts and codes.",
+  "url": "http://imohealth.com/ontology/",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.247"
+    }
+  ],
+  "version": "1.0.1",
+  "experimental": false,
+  "date": "2021-06-25T00:00:00-00:00",
+  "publisher": "Intelligent Medical Objects",
+  "contact": [
+    {
+      "name": "Intelligent Medical Objects; Ann Phillips",
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "847.613.6655"
+        },
+        {
+          "system": "email",
+          "value": "support@imohealth.com"
+        },
+        {
+          "system": "url",
+          "value": "https://www.imohealth.com/"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true
+}

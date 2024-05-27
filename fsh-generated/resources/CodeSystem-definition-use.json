@@ -1,0 +1,82 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "DefinitionUseCodes",
+  "id": "definition-use",
+  "title": "Structure Definition Use Codes / Keywords",
+  "description": "Structure Definition Use Codes / Keywords",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/definition-use",
+  "concept": [
+    {
+      "code": "fhir-structure",
+      "display": "FHIR Structure",
+      "definition": "This structure is defined as part of the base FHIR Specification"
+    },
+    {
+      "code": "custom-resource",
+      "display": "Custom Resource",
+      "definition": "This structure is intended to be treated like a FHIR resource (e.g. on the FHIR API)"
+    },
+    {
+      "code": "dam",
+      "display": "Domain Analysis Model",
+      "definition": "This structure captures an analysis of a domain"
+    },
+    {
+      "code": "wire-format",
+      "display": "Wire Format",
+      "definition": "This structure represents and existing structure (e.g. CDA, HL7 v2)"
+    },
+    {
+      "code": "archetype",
+      "display": "Domain Analysis Model",
+      "definition": "This structure captures an analysis of a domain"
+    },
+    {
+      "code": "template",
+      "display": "Template",
+      "definition": "This structure is a template (n.b: 'template' has many meanings)"
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2020-04-09T21:10:28.568+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "fhir"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.1191"
+    }
+  ],
+  "version": "2.0.0",
+  "experimental": false,
+  "date": "2024-03-09T14:36:19-07:00",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "valueSet": "http://terminology.hl7.org/ValueSet/definition-use",
+  "count": 6
+}

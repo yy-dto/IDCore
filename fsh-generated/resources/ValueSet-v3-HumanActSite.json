@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "status": "retired",
+  "name": "HumanActSite",
+  "id": "v3-HumanActSite",
+  "title": "HumanActSite",
+  "description": "An anatomical location on a human which can be the focus of an act.\n\n*OpenIssue:* This value set was approved for **deletion** in November 2008, and was deleted at release \\#762. Subsequently, however, it was found that this deletion caused the legacy software embedded in the RMIM Designer in Visio to fail to show appropriate options for concepts in the subject area of this value set. For that reason, the value set was **re-added in releasse 813 and DEPRECATED from general use** at the same time. This value set should be deleted as soon as it is no longer required to support of the legacy software.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-HumanActSite",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.16538"
+    }
+  ],
+  "version": "2.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActSite",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "_HumanActSite"
+          }
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-Dentition"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-HumanSubstanceAdministrationSite"
+        ]
+      }
+    ],
+    "exclude": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActSite",
+        "concept": [
+          {
+            "code": "_HumanActSite"
+          },
+          {
+            "code": "_HumanSubstanceAdministrationSite"
+          }
+        ]
+      }
+    ]
+  }
+}

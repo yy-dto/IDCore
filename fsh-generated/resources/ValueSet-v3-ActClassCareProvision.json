@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ActClassCareProvision",
+  "id": "v3-ActClassCareProvision",
+  "title": "ActClassCareProvision",
+  "description": "An **Act** that of taking on whole or partial responsibility for, or attention to, safety and well-being of a subject of care.\n\n*Discussion:* A **care provision** event may exist without any other care actions taking place. For example, when a patient is assigned to the care of a particular health professional.\n\nIn **request** (RQO) mood **care provision** communicates a referral, which is a request:\n\n *  from one party (linked as a **participant** of type **author** (AUT)),\n *  to another party (linked as a **participant** of type **performer** (PRF),\n *  to take responsibility for a scope specified by the code attribute,\n *  for an entity (linked as a **participant** of type **subject** (SBJ)).\n\nThe scope of the care for which responsibility is taken is identified by *code* attribute.\n\nIn **event** (EVN) mood **care provision** indicates the effective time interval of a specified scope of responsibility by a **performer** (PRF) or set of **performers** (PRF) for a **subject** (SBJ).\n\n*Examples:*\n\n1.  Referral from GP to a specialist.\n2.  Assignment of a patient or group of patients to the case list of a health professional.\n3.  Assignment of inpatients to the care of particular nurses for a working shift.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ActClassCareProvision",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.20233"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "immutable": true,
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActClass",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "PCPR"
+          }
+        ]
+      }
+    ]
+  }
+}

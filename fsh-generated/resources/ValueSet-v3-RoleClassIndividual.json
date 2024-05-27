@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RoleClassIndividual",
+  "id": "v3-RoleClassIndividual",
+  "title": "RoleClassIndividual",
+  "description": "**Description:** A role played by a party covered under a policy as the policy holder. An individual may be either a person or an organization.\n\n**Note:** The party playing the role of an individual insured is not a claimant in the sense conveyed by the RoleClassCoveredParty CLAIM (claimant). However, a named insured may make a claim under a policy, e.g., a party that is the named insured and policy holder under a comprehensive automobile insurance policy may become the claimant for coverage under that policy if injured in an automobile accident and there is no liable third party. In the case of an individual insured making a claim, a role type code INSCLM (insured claimant) subtypes the class to indicate that an individual insured has filed a claim for a loss.\n\n**Example:** The individual insured under a comprehensive automobile, disability, or property and casualty policy that is the policy holder.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-RoleClassIndividual",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.20141"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "immutable": true,
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-RoleClass",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "INDIV"
+          }
+        ]
+      }
+    ]
+  }
+}

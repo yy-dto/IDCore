@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ActClassJurisdictionalPolicy",
+  "id": "v3-ActClassJurisdictionalPolicy",
+  "title": "ActClassJurisdictionalPolicy",
+  "description": "**Description:**A mandate, regulation, obligation, requirement, rule, or expectation unilaterally imposed by a jurisdiction on:\n\n *  The activity of another party\n *  The behavior of another party\n *  The manner in which an act is executed\n\n**Examples:**A jurisdictional mandate regarding the prescribing and dispensing of a particular medication. A jurisdictional privacy or security regulation dictating the manner in which personal health information is disclosed. A jurisdictional requirement that certain services or health conditions are reported to a monitoring program, e.g., immunizations, methadone treatment, or cancer registries.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ActClassJurisdictionalPolicy",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.20225"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "immutable": true,
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActClass",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "JURISPOL"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "SoftwareSystemTypeCodes",
+  "id": "software-system-type-codes",
+  "title": "Software System Type Codes",
+  "description": "Types of software systems that support knowledge artifact authoring and evaluation (authoring, testing, tooling, evaluation)",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/software-system-type-codes",
+  "concept": [
+    {
+      "code": "authoring",
+      "display": "Authoring",
+      "definition": "A knowledge authoring environment"
+    },
+    {
+      "code": "testing",
+      "display": "Testing",
+      "definition": "A testing environment"
+    },
+    {
+      "code": "tooling",
+      "display": "Tooling",
+      "definition": "Tooling software"
+    },
+    {
+      "code": "evaluation",
+      "display": "Evaluation",
+      "definition": "A knowledge evaluation environment"
+    },
+    {
+      "code": "reporting",
+      "display": "Reporting",
+      "definition": "A quality reporting system"
+    },
+    {
+      "code": "data-capture",
+      "display": "Data Capture",
+      "definition": "A system that performs data-capture as part of a reporting pipeline"
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 3
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-02-16",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "valueSet": "http://terminology.hl7.org/ValueSet/software-system-type",
+  "count": 6
+}

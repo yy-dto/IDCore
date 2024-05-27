@@ -1,0 +1,27 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "not-present",
+  "name": "PeriodicIntervalOfTimeAbbreviation",
+  "id": "v3-PeriodicIntervalOfTimeAbbreviation",
+  "title": "PeriodicIntervalOfTimeAbbreviation",
+  "description": "**** MISSING DESCRIPTION ****",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-PeriodicIntervalOfTimeAbbreviation",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.1021"
+    }
+  ],
+  "version": "2.0.1",
+  "experimental": false,
+  "date": "2017-07-31",
+  "publisher": "Health Level 7",
+  "contact": [
+    {
+      "name": "Health Level Seven"
+    }
+  ],
+  "caseSensitive": true
+}

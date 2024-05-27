@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "not-present",
+  "name": "IcpcHEB",
+  "id": "icpc-HEB",
+  "title": "International Classification of Primary Care 1993 Hebrew",
+  "description": "The International Classification of Primary Care (ICPC). Hebrew Translation, Denmark: World Organisation of Family Doctors, 1993",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/icpc-HEB",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.6.138.7"
+    }
+  ],
+  "version": "2.0.1",
+  "experimental": false,
+  "date": "2021-11-09T10:00:00+10:00",
+  "publisher": "TBD - External Body",
+  "caseSensitive": true
+}

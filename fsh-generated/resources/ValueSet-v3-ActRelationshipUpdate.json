@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "retired",
+  "name": "ActRelationshipUpdate",
+  "id": "v3-ActRelationshipUpdate",
+  "title": "ActRelationshipUpdate",
+  "description": "**Description:** \n\n**Deprecation Comment:** Was mis-named, and a proper representation has been provided. Replaced by value set ActRelationshipCompliesWith.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ActRelationshipUpdate",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.20349"
+    }
+  ],
+  "version": "2.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "immutable": true,
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActRelationshipType",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "COMPLY"
+          }
+        ]
+      }
+    ]
+  }
+}

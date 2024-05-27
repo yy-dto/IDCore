@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ParticipationSubset",
+  "id": "v3-ParticipationSubset",
+  "title": "ParticipationSubset",
+  "description": "Used to indicate that the participation is a filtered subset of the total participations of the same type owned by the Act.\n\nUsed when there is a need to limit the participations to the first, the last, the next or some other filtered subset.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ParticipationSubset",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.19736"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActRelationshipSubset",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "_ParticipationSubset"
+          }
+        ]
+      }
+    ]
+  }
+}

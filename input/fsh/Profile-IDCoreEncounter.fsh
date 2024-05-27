@@ -33,7 +33,7 @@ Description: "ID Core Encounter profile"
 * diagnosis.condition only Reference(Condition)
 * diagnosis.use from DiagnosisRole (required)
 * hospitalization.admitSource from AdmitSource (required)
-* hospitalization.reAdmission from Hl7VSReAdmissionIndicator (required)
+* hospitalization.reAdmission from $Hl7VSReAdmissionIndicator (required)
 * location 1..
 * location ^extension[0].url = "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass"
 * location ^extension[=].extension[0].url = "value"

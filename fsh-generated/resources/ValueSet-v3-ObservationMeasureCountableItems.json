@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationMeasureCountableItems",
+  "id": "v3-ObservationMeasureCountableItems",
+  "title": "ObservationMeasureCountableItems",
+  "description": "A collection of items that can be counted by a quality measure (e.g., patients, encounters, procedures, etc.) for Observation.value used in the HQMF R2 MeasureAttribute class.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ObservationMeasureCountableItems",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.11.83"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2010-03-22",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "71388002"
+          },
+          {
+            "code": "49062001"
+          },
+          {
+            "code": "125676002"
+          },
+          {
+            "code": "389109008"
+          },
+          {
+            "code": "272379006"
+          },
+          {
+            "code": "258700003"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "not-present",
+  "name": "CE",
+  "id": "CE",
+  "title": "CEN ECG diagnostic codes",
+  "description": "CEN ECG diagnostic codes",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/CE",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.6.80"
+    }
+  ],
+  "version": "2.0.1",
+  "experimental": false,
+  "date": "2021-11-09T10:00:00+10:00",
+  "publisher": "TBD - External Body",
+  "caseSensitive": true
+}

@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ActClassCoverage",
+  "id": "v3-ActClassCoverage",
+  "title": "ActClassCoverage",
+  "description": "When used in the EVN mood, this concept means with respect to a covered party:\n\n1.  A health care insurance policy or plan that is contractually binding between two or more parties; or\n2.  A health care program, usually administered by government entities, that provides coverage to persons determined eligible under the terms of the program.\n\n *  When used in the definition (DEF) mood, COV means potential coverage for a patient who may or may not be a covered party.\n *  The concept's meaning is fully specified by the choice of ActCoverageTypeCode (abstract) ActProgramCode or ActInsurancePolicyCode.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ActClassCoverage",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.20208"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "immutable": true,
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActClass",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "COV"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -54,7 +54,7 @@
         "path": "Encounter.class",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/encounter-class"
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/encounter-class"
         }
       },
       {
@@ -62,7 +62,7 @@
         "path": "Encounter.classHistory.class",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/encounter-class"
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/encounter-class"
         }
       },
       {
@@ -70,7 +70,7 @@
         "path": "Encounter.type",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/encounter-type"
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/encounter-type"
         }
       },
       {
@@ -86,7 +86,7 @@
         "path": "Encounter.priority",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ActPriority"
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ActPriority"
         }
       },
       {
@@ -94,7 +94,7 @@
         "path": "Encounter.participant.type",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/v3-ParticipationType"
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ParticipationType"
         }
       },
       {
@@ -137,7 +137,7 @@
         "path": "Encounter.diagnosis.use",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/diagnosis-role"
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/diagnosis-role"
         }
       },
       {
@@ -145,7 +145,7 @@
         "path": "Encounter.hospitalization.admitSource",
         "binding": {
           "strength": "required",
-          "valueSet": "http://terminology.hl7.org/ValueSet/encounter-admit-source"
+          "valueSet": "https://fhir.kemkes.go.id/r4/ValueSet/encounter-admit-source"
         }
       },
       {

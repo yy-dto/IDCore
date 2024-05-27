@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "not-present",
+  "name": "ExternalCodeSystems",
+  "id": "externalCodeSystems",
+  "title": "HL7 Registered External Coding Systems",
+  "description": "External coding systems registered in HL7 with an HL7 OID",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/externalCodeSystems",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.6"
+    }
+  ],
+  "version": "2.0.1",
+  "experimental": false,
+  "date": "2021-11-09T10:00:00+10:00",
+  "publisher": "TBD - External Body",
+  "contact": [
+    {
+      "name": "Health Level Seven"
+    }
+  ],
+  "caseSensitive": true
+}

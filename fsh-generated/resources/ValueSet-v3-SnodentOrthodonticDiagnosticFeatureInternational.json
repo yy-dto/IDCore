@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "SnodentOrthodonticDiagnosticFeatureInternational",
+  "id": "v3-SnodentOrthodonticDiagnosticFeatureInternational",
+  "title": "SnodentOrthodonticDiagnosticFeatureInternational",
+  "description": "The SNODENT identifiers for gross patient findings that inform the course of orthodontic treatment to be performed.\n\nThis value set contains content from SNODENT® Copyright American Dental Association (ADA). All rights reserved. SNODENT is a registered trademark of the ADA.\n\nhttp://www.ada.org/en/member-center/member-benefits/practice-resources/dental-informatics/snodent/licensing-snodent\n\n*Steward:* Attachments WG",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-SnodentOrthodonticDiagnosticFeatureInternational",
+  "language": "en",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "att"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.20564"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2019-03-20",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "http://www.ada.org/snodent",
+        "concept": [
+          {
+            "code": "133426D"
+          },
+          {
+            "code": "157044D"
+          },
+          {
+            "code": "210952D"
+          },
+          {
+            "code": "210953D"
+          },
+          {
+            "code": "210954D"
+          },
+          {
+            "code": "210955D"
+          },
+          {
+            "code": "210956D"
+          },
+          {
+            "code": "210957D"
+          }
+        ]
+      }
+    ]
+  }
+}

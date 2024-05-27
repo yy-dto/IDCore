@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ManufacturerModelNameExample",
+  "id": "v3-ManufacturerModelNameExample",
+  "title": "Manufacturer Model Name Example",
+  "description": "An example value set representing the ManufacturerModelName concept domain used  to convey a coded name for the software used to author content.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ManufacturerModelNameExample",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.11.21014"
+    }
+  ],
+  "version": "2.0.0",
+  "experimental": true,
+  "date": "2022-10-11",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ManufacturerModelNameExample"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "not-present",
+  "name": "PHOccupationalDataForHealthODH",
+  "id": "PHOccupationalDataForHealthODH",
+  "title": "Occupational Data for Health (ODH)",
+  "description": "The concepts representing the values supporting Occupational Data for Health, including Job Supervisory Level or Pay Grade (ODH) code system consists of data elements that describe a person's work information, structured to facilitate individual, population, and public health use; not intended to support billing.).",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/PHOccupationalDataForHealthODH",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.114222.4.5.327"
+    }
+  ],
+  "version": "2.0.1",
+  "experimental": false,
+  "date": "2019-03-20T00:00:00-04:00",
+  "publisher": "TBD - External Body",
+  "caseSensitive": true
+}

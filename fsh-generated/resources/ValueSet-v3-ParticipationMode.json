@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ParticipationMode",
+  "id": "v3-ParticipationMode",
+  "title": "ParticipationMode",
+  "description": "Identifies the primary means by which an Entity participates in an Act.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ParticipationMode",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.16543"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ParticipationMode",
+        "concept": [
+          {
+            "code": "PHYSICAL"
+          },
+          {
+            "code": "REMOTE"
+          }
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-ParticipationModeVerbal"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-ParticipationModeWritten"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-ParticipationModeElectronicData"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-xPhysicalVerbalParticipationMode"
+        ]
+      }
+    ]
+  }
+}

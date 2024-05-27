@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "not-present",
+  "name": "BrazilianProcedureCodesSUS",
+  "id": "v3-brazilianProcedureCodesSUS",
+  "title": "Brazilian Procedure Codes SUS",
+  "description": "Brazilian Procedure Codes used in the National Health System",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-brazilianProcedureCodesSUS",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.2.21.10"
+    }
+  ],
+  "version": "2.0.1",
+  "experimental": false,
+  "date": "2021-11-09T10:00:00+10:00",
+  "publisher": "TBD - External Body",
+  "caseSensitive": true
+}

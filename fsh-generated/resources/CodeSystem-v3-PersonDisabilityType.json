@@ -1,0 +1,268 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "PersonDisabilityType",
+  "id": "v3-PersonDisabilityType",
+  "title": "PersonDisabilityType",
+  "description": "A code identifying a person's disability.",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-PersonDisabilityType",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Vision impaired",
+      "definition": "Vision impaired",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "internalId",
+          "valueCode": "10182"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "display": "Hearing impaired",
+      "definition": "Hearing impaired",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "internalId",
+          "valueCode": "10183"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "display": "Speech impaired",
+      "definition": "Speech impaired",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "internalId",
+          "valueCode": "10184"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "display": "Mentally impaired",
+      "definition": "Mentally impaired",
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "internalId",
+          "valueCode": "10185"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "display": "Mobility impaired",
+      "concept": [
+        {
+          "code": "CB",
+          "display": "Requires crib",
+          "definition": "A crib is required to move the person",
+          "property": [
+            {
+              "code": "status",
+              "valueCode": "active"
+            },
+            {
+              "code": "internalId",
+              "valueCode": "15951"
+            }
+          ]
+        },
+        {
+          "code": "CR",
+          "display": "Requires crutches",
+          "definition": "Person requires crutches to ambulate",
+          "property": [
+            {
+              "code": "status",
+              "valueCode": "active"
+            },
+            {
+              "code": "internalId",
+              "valueCode": "15947"
+            }
+          ]
+        },
+        {
+          "code": "G",
+          "display": "Requires gurney",
+          "definition": "A gurney is required to move the person",
+          "property": [
+            {
+              "code": "status",
+              "valueCode": "active"
+            },
+            {
+              "code": "internalId",
+              "valueCode": "15950"
+            }
+          ]
+        },
+        {
+          "code": "WC",
+          "display": "Requires wheelchair",
+          "definition": "Person requires a wheelchair to be ambulatory",
+          "property": [
+            {
+              "code": "status",
+              "valueCode": "active"
+            },
+            {
+              "code": "internalId",
+              "valueCode": "15949"
+            }
+          ]
+        },
+        {
+          "code": "WK",
+          "display": "Requires walker",
+          "definition": "Person requires a walker to ambulate",
+          "property": [
+            {
+              "code": "status",
+              "valueCode": "active"
+            },
+            {
+              "code": "internalId",
+              "valueCode": "15948"
+            }
+          ]
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "active"
+        },
+        {
+          "code": "internalId",
+          "valueCode": "10186"
+        }
+      ]
+    }
+  ],
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.5.93"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2019-03-20",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "hierarchyMeaning": "is-a",
+  "property": [
+    {
+      "extension": [
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry",
+          "valueCode": "antisymmetric"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity",
+          "valueCode": "transitive"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity",
+          "valueCode": "irreflexive"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind",
+          "valueCode": "Specializes"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName",
+          "valueString": "Generalizes"
+        }
+      ],
+      "code": "Specializes",
+      "description": "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.",
+      "type": "Coding"
+    },
+    {
+      "extension": [
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry",
+          "valueCode": "antisymmetric"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity",
+          "valueCode": "transitive"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity",
+          "valueCode": "irreflexive"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable",
+          "valueBoolean": true
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind",
+          "valueCode": "Generalizes"
+        },
+        {
+          "url": "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName",
+          "valueString": "Specializes"
+        }
+      ],
+      "code": "Generalizes",
+      "description": "Inverse of Specializes.  Only included as a derived relationship.",
+      "type": "Coding"
+    },
+    {
+      "code": "internalId",
+      "uri": "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id",
+      "description": "The internal identifier for the concept in the HL7 Access database repository.",
+      "type": "code"
+    },
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "description": "Designation of a concept's state. Normally is not populated unless the state is retired.",
+      "type": "code"
+    }
+  ],
+  "count": 10
+}

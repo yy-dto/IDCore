@@ -1,0 +1,68 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ChargeItemCode",
+  "id": "chargeitem-billingcodes",
+  "title": "ChargeItemCode",
+  "description": "Example set of codes that can be used for billing purposes.",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/chargeitem-billingcodes",
+  "concept": [
+    {
+      "code": "1100",
+      "display": "Unvorhergesehene Inanspruchnahme",
+      "definition": "From German EBM billing system:\nUnvorhergesehene Inanspruchnahme des Vertragsarztes durch einen Patienten;zwischen 19:00 und 22:00 Uhr;an Samstagen, Sonntagen und gesetzlichen Feiertagen, am 24.12. und 31.12. zwischen 07:00 und 19:00 Uhr."
+    },
+    {
+      "code": "1210",
+      "display": "Notfallpauschale",
+      "definition": "From German EBM billing system:\nNotfallpauschale im organisierten Not(-fall)dienst und für nicht an der vertragsärztlichen Versorgung teilnehmende Ärzte, Institute und Krankenhäuser bei Inanspruchnahme;zwischen 07:00 und 19:00 Uhr."
+    },
+    {
+      "code": "1320",
+      "display": "Grundpauschale",
+      "definition": "From German EBM billing system:\nGrundpauschale für Ärzte, Institute und Krankenhäuser, die zur Erbringung von Leistungen innerhalb mindestens eines der Fachgebiete Anästhesiologie, Frauenheilkunde und Geburtshilfe, Haut- und Geschlechtskrankheiten, Mund-, Kiefer- und Gesichtschirurgie und Humangenetik ermächtigt sind."
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2020-04-09T21:10:28.568+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.1257"
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2020-04-09T21:10:28+00:00",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "valueSet": "http://terminology.hl7.org/ValueSet/chargeitem-billingcodes",
+  "count": 3
+}

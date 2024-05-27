@@ -1,0 +1,65 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "ArtifactIdentifierType",
+  "id": "artifact-identifier-type",
+  "title": "Artifact Identifier Type Codes",
+  "description": "Identifier types for an artifact (e.g. version-independent, version-specific, short-name, endorser, publisher)",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/artifact-identifier-type",
+  "concept": [
+    {
+      "code": "version-independent",
+      "display": "Version Independent",
+      "definition": "The version independent globally unique identifier (guid) for the artifact."
+    },
+    {
+      "code": "version-specific",
+      "display": "Version Specific",
+      "definition": "The version specific globally unique identifier (guid) for the artifact."
+    },
+    {
+      "code": "short-name",
+      "display": "Short Name",
+      "definition": "The short name identifier for the artifact (e.g. CMS104v8)."
+    },
+    {
+      "code": "endorser",
+      "display": "Endorser",
+      "definition": "The version-independent endorser identifier for the artifact (e.g. 0002)."
+    },
+    {
+      "code": "publisher",
+      "display": "Publisher",
+      "definition": "The version-independent publisher identifier for the artifact (e.g. 104)."
+    }
+  ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cqi"
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2024-02-20",
+  "publisher": "HL7 International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "valueSet": "http://terminology.hl7.org/ValueSet/artifact-identifier-type",
+  "count": 5
+}

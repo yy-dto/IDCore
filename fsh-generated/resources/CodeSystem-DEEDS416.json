@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "retired",
+  "content": "not-present",
+  "name": "DEEDS416",
+  "id": "DEEDS416",
+  "title": "DEEDS416",
+  "description": "Glasgow motor component assessment",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/DEEDS416",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.6.102.4.16"
+    }
+  ],
+  "version": "2.0.1",
+  "experimental": false,
+  "date": "2021-11-09T10:00:00+10:00",
+  "publisher": "TBD - External Body",
+  "caseSensitive": true
+}

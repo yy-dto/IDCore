@@ -1,0 +1,49 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ActObservationVerificationType",
+  "id": "v3-ActObservationVerificationType",
+  "title": "ActObservationVerificationType",
+  "description": "Identifies the type of verification investigation being undertaken with respect to the subject of the verification activity.\n\n**Examples:**\n\n1.  Verification of eligibility for coverage under a policy or program - aka enrolled/covered by a policy or program\n2.  Verification of record - e.g., person has record in an immunization registry\n3.  Verification of enumeration - e.g. NPI\n4.  Verification of Board Certification - provider specific\n5.  Verification of Certification - e.g. JAHCO, NCQA, URAC\n6.  Verification of Conformance - e.g. entity use with HIPAA, conformant to the CCHIT EHR system criteria\n7.  Verification of Provider Credentials\n8.  Verification of no adverse findings - e.g. on National Provider Data Bank, Health Integrity Protection Data Base (HIPDB)",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ActObservationVerificationType",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.19794"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActCode",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "_ActObservationVerificationType"
+          }
+        ]
+      }
+    ]
+  }
+}

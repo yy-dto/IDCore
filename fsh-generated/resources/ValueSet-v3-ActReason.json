@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ActReason",
+  "id": "v3-ActReason",
+  "title": "v3 Code System ActReason",
+  "description": " A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.  Examples:\nExample reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ActReason",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "vocab"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2018-08-12",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "immutable": true,
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActReason"
+      }
+    ]
+  }
+}

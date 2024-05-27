@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "PersonalAndLegalRelationshipRoleType",
+  "id": "v3-PersonalAndLegalRelationshipRoleType",
+  "title": "PersonalAndLegalRelationshipRoleType",
+  "description": "A â€˜personal and legalâ€™ relationship records the role of a person in relation to another person, or a person to himself or herself. This value set is to be used when recording relationships based on personal or family ties or through legal assignment of responsibility.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-PersonalAndLegalRelationshipRoleType",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.11.20.12.1"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2023-06-02",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-PersonalRelationshipRoleType"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-ResponsibleParty"
+        ]
+      },
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-RoleCode"
+      }
+    ]
+  }
+}

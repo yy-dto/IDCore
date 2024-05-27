@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ActClassOrganizationalPolicy",
+  "id": "v3-ActClassOrganizationalPolicy",
+  "title": "ActClassOrganizationalPolicy",
+  "description": "**Description:**A mandate, obligation, requirement, rule, or expectation unilaterally imposed by an organization on:\n\n *  The activity of another party\n *  The behavior of another party\n *  The manner in which an act is executed\n\n**Examples:**A clinical or research protocols imposed by a payer, a malpractice insurer, or an institution to which a provider must adhere. A mandate imposed by a denominational institution for a provider to provide or withhold certain information from the patient about treatment options.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-ActClassOrganizationalPolicy",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.20231"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "immutable": true,
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-ActClass",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "is-a",
+            "value": "ORGPOL"
+          }
+        ]
+      }
+    ]
+  }
+}

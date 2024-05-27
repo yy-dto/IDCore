@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AdverseEventClinicalResearchGrades",
+  "id": "adverse-event-clinical-research-grades",
+  "title": "Adverse Event Clinical Research Grades",
+  "description": "Value set of grades used in Adverse Event Clinical Research, especially in Oncology clinical trials",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/adverse-event-clinical-research-grades",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "brr"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.11.21027"
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2023-07-28T19:27:19+00:00",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C41338",
+            "display": "Grade 1 Mild Adverse Event"
+          },
+          {
+            "code": "C41339",
+            "display": "Grade 2 Moderate Adverse Event"
+          },
+          {
+            "code": "C41340",
+            "display": "Grade 3 Severe Adverse Event"
+          },
+          {
+            "code": "C41337",
+            "display": "Grade 4 Life Threatening or Disabling Adverse Event"
+          },
+          {
+            "code": "C48275",
+            "display": "Grade 5 Death Related to Adverse Event"
+          }
+        ]
+      }
+    ]
+  }
+}

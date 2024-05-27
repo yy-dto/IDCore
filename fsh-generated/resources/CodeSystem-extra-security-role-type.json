@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SecurityRoleType",
+  "id": "extra-security-role-type",
+  "title": "Security Role Type",
+  "description": "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/extra-security-role-type",
+  "concept": [
+    {
+      "code": "authserver",
+      "display": "Authorization Server",
+      "definition": "An entity providing authorization services to enable the electronic sharing of health-related information based on resource owner's preapproved permissions. For example, an UMA Authorization Server[UMA]"
+    },
+    {
+      "code": "datacollector",
+      "display": "Data Collector",
+      "definition": "An entity that collects information over which the data subject may have certain rights under policy or law to control that information's management and distribution by data collectors, including the right to access, retrieve, distribute, or delete that information."
+    },
+    {
+      "code": "dataprocessor",
+      "display": "Data Processor",
+      "definition": "An entity that processes collected information over which the data subject may have certain rights under policy or law to control that information's management and distribution by data processors, including the right to access, retrieve, distribute, or delete that information."
+    },
+    {
+      "code": "datasubject",
+      "display": "Data Subject",
+      "definition": "A person whose personal information is collected or processed, and who may have certain rights under policy or law to control that information's management and distribution by data collectors or processors, including the right to access, retrieve, distribute, or delete that information."
+    },
+    {
+      "code": "humanuser",
+      "display": "Human User",
+      "definition": "The human user that has participated."
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2020-04-09T21:10:28.568+00:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "version": "1.0.0",
+  "experimental": true,
+  "date": "2017-02-13",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "count": 5
+}

@@ -1,0 +1,22 @@
+ValueSet: AllergyStatus
+Id: v3-AllergyStatus
+Title: "Allergy Status"
+Description: """The clinical status of an allergy disposition (Clinical Focus)
+
+Used in Program: C-CDA, C-CDA R2.1 2017-06-09 using this value set"""
+* ^language = #en
+* ^identifier.system = "urn:ietf:rfc:3986"
+* ^identifier.value = "urn:oid:2.16.840.1.113883.1.11.20559"
+* ^version = "3.0.0"
+* ^status = #active
+* ^experimental = false
+* ^date = "2019-03-20"
+* ^publisher = "Health Level Seven International"
+* ^contact.telecom[0].system = #url
+* ^contact.telecom[=].value = "http://hl7.org"
+* ^contact.telecom[+].system = #email
+* ^contact.telecom[=].value = "hq@HL7.org"
+* ^copyright = "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"
+* SNOMED_CT_INT#413322009
+* SNOMED_CT_INT#55561003
+* SNOMED_CT_INT#73425007

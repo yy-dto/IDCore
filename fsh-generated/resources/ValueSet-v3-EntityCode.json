@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "EntityCode",
+  "id": "v3-EntityCode",
+  "title": "EntityCode",
+  "description": "A value representing the specific kind of Entity the instance represents.\n\n*Examples:* A medical building, a Doberman Pinscher, a blood collection tube, a tissue biopsy.\n\n*Rationale:* For each Entity, the value for this attribute is drawn from one of several coding systems depending on the Entity classCode, such as living subjects (animal and plant taxonomies), chemical substance (e.g., IUPAC code), organizations, insurance company, government agency, hospital, park, lake, syringe, etc. It is possible that Entity.code may be so fine grained that it represents a single instance. An example is the CDC vaccine manufacturer code, modeled as a concept vocabulary, when in fact each concept refers to a single instance.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-EntityCode",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.16040"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-MaterialEntityClassType"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-PlaceEntityType"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-OrganizationEntityType"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-ResourceGroupEntityType"
+        ]
+      },
+      {
+        "valueSet": [
+          "https://fhir.kemkes.go.id/r4/ValueSet/v3-xAdministeredSubstance"
+        ]
+      }
+    ],
+    "exclude": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-EntityCode",
+        "concept": [
+          {
+            "code": "_OrganizationEntityType"
+          }
+        ]
+      }
+    ]
+  }
+}

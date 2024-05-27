@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "AppropriatenessScore",
+  "id": "appropriateness-score",
+  "title": "Appropriateness Score",
+  "description": "The scoring for appropriateness of an action based upon RAND.",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/appropriateness-score",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "old",
+      "value": "http://hl7.org/fhir/us/qicore/ValueSet/appropriateness-score"
+    }
+  ],
+  "version": "2.0.0",
+  "experimental": false,
+  "date": "2022-10-19",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/appropriateness-score"
+      }
+    ]
+  }
+}

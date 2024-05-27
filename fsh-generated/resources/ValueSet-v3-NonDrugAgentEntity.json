@@ -1,0 +1,95 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "NonDrugAgentEntity",
+  "id": "v3-NonDrugAgentEntity",
+  "title": "NonDrugAgentEntity",
+  "description": "Indicates types of allergy and intolerance agents which are non-drugs. (E.g. foods, latex, etc.)",
+  "url": "https://fhir.kemkes.go.id/r4/ValueSet/v3-NonDrugAgentEntity",
+  "language": "en",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.1.11.19699"
+    }
+  ],
+  "version": "3.0.0",
+  "experimental": false,
+  "date": "2014-03-26",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "compose": {
+    "include": [
+      {
+        "system": "https://fhir.kemkes.go.id/r4/CodeSystem/v3-EntityCode",
+        "concept": [
+          {
+            "code": "NDA01"
+          },
+          {
+            "code": "NDA02"
+          },
+          {
+            "code": "NDA03"
+          },
+          {
+            "code": "NDA04"
+          },
+          {
+            "code": "NDA05"
+          },
+          {
+            "code": "NDA06"
+          },
+          {
+            "code": "NDA07"
+          },
+          {
+            "code": "NDA08"
+          },
+          {
+            "code": "NDA09"
+          },
+          {
+            "code": "NDA10"
+          },
+          {
+            "code": "NDA11"
+          },
+          {
+            "code": "NDA12"
+          },
+          {
+            "code": "NDA13"
+          },
+          {
+            "code": "NDA14"
+          },
+          {
+            "code": "NDA15"
+          },
+          {
+            "code": "NDA16"
+          },
+          {
+            "code": "NDA17"
+          }
+        ]
+      }
+    ]
+  }
+}

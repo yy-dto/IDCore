@@ -1,0 +1,83 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ReferralMethod",
+  "id": "service-referral-method",
+  "title": "ReferralMethod",
+  "description": "The methods of referral can be used when referring to a specific HealthCareService resource.",
+  "url": "https://fhir.kemkes.go.id/r4/CodeSystem/service-referral-method",
+  "concept": [
+    {
+      "code": "fax",
+      "display": "Fax",
+      "definition": "Referrals may be accepted by fax."
+    },
+    {
+      "code": "phone",
+      "display": "Phone",
+      "definition": "Referrals may be accepted over the phone."
+    },
+    {
+      "code": "elec",
+      "display": "Secure Messaging",
+      "definition": "Referrals may be accepted via a secure messaging system. To determine the types of secure messaging systems supported, refer to the identifiers collection. Callers will need to understand the specific identifier system used to know that they are able to transmit messages."
+    },
+    {
+      "code": "semail",
+      "display": "Secure Email",
+      "definition": "Referrals may be accepted via a secure email. To send please encrypt with the services public key."
+    },
+    {
+      "code": "mail",
+      "display": "Mail",
+      "definition": "Referrals may be accepted via regular postage (or hand delivered)."
+    },
+    {
+      "code": "self",
+      "display": "Self-referral",
+      "definition": "Referrals may be accepted via self-referral."
+    }
+  ],
+  "meta": {
+    "lastUpdated": "2020-04-09T21:10:28.568+00:00"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "pa"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    }
+  ],
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.1.1142"
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": false,
+  "date": "2023-09-19T21:10:28+00:00",
+  "publisher": "Health Level Seven International",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org"
+        },
+        {
+          "system": "email",
+          "value": "hq@HL7.org"
+        }
+      ]
+    }
+  ],
+  "copyright": "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "caseSensitive": true,
+  "valueSet": "http://terminology.hl7.org/ValueSet/service-referral-method",
+  "count": 6
+}
