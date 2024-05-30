@@ -6,7 +6,6 @@ Parent: Practitioner
 Description: "ID Core Practitioner profile"
 * ^identifier[0].system = "https://fhir.kemkes.go.id/id/nakes-his-number"
 * ^identifier[=].use = #official
-* ^identifier[=].value = "P02478375538"
 * ^identifier[+].system = "https://fhir.kemkes.go.id/id/nik"
 * ^identifier[=].use = #official
 * ^extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/citizenshipStatus"

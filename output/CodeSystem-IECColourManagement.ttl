@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/IECColourManagement> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "IECColourManagement"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/IECColourManagement</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/IECColourManagement"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "IECColourManagement"] ; # 
+  fhir:title [ fhir:v "IEC 61966-2-1: Colour measurement and management - Part 2-1: Colour management - Default RGB colour space - sRGB"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-01-25T00:00:00-00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "IEC 61966-2-1:1999 is the official specification of sRGB. It provides viewing environment, encoding, and colorimetric details.\r\n\r\nFor more information, please see https://webstore.iec.ch/publication/6168"] ; # 
+  fhir:copyright [ fhir:v "All IEC Publications are protected by the publisher's copyright and no part of any IEC Publication can be reproduced or utilized in any form or by any means (graphic, electronic or mechanical including photocopying) without the written permission of the publisher (please see Copyright on IEC Standards in Database Format). For standards using code components, please see the code components EULA.\r\n\r\nFor more information, see https://www.iec.ch/copyright"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] . # 
+
+# -------------------------------------------------------------------------------------
+

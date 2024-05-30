@@ -15,7 +15,7 @@
   fhir:language [ fhir:v "Indonesia"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/immunization-reason</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">IM-Program<a name=\"KemkesImmunizationReasonCS-IM-Program\"> </a></td><td>Imunisasi Program</td></tr><tr><td style=\"white-space:nowrap\">IM-Rutin<a name=\"KemkesImmunizationReasonCS-IM-Rutin\"> </a></td><td>Imunisasi Program Rutin</td></tr><tr><td style=\"white-space:nowrap\">IM-Dasar<a name=\"KemkesImmunizationReasonCS-IM-Dasar\"> </a></td><td>Imunisasi Program Rutin Dasar</td></tr><tr><td style=\"white-space:nowrap\">IM-Lanjutan<a name=\"KemkesImmunizationReasonCS-IM-Lanjutan\"> </a></td><td>Imunisasi Program Rutin Lanjutan</td></tr><tr><td style=\"white-space:nowrap\">IM-Baduta<a name=\"KemkesImmunizationReasonCS-IM-Baduta\"> </a></td><td>Imunisasi Program Rutin Lanjutan Bawah Dua Tahun</td></tr><tr><td style=\"white-space:nowrap\">IM-SD<a name=\"KemkesImmunizationReasonCS-IM-SD\"> </a></td><td>Imunisasi Program Rutin Lanjutan Sekolah Dasar</td></tr><tr><td style=\"white-space:nowrap\">IM-WUS<a name=\"KemkesImmunizationReasonCS-IM-WUS\"> </a></td><td>Imunisasi Program Rutin Lanjutan Wanita Usia Subur</td></tr><tr><td style=\"white-space:nowrap\">IM-Tambahan<a name=\"KemkesImmunizationReasonCS-IM-Tambahan\"> </a></td><td>Imunisasi Program Tambahan</td></tr><tr><td style=\"white-space:nowrap\">IM-Khusus<a name=\"KemkesImmunizationReasonCS-IM-Khusus\"> </a></td><td>Imunisasi Program Khusus</td></tr><tr><td style=\"white-space:nowrap\">IM-Pilihan<a name=\"KemkesImmunizationReasonCS-IM-Pilihan\"> </a></td><td>Imunisasi Pilihan</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/immunization-reason</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">IM-Program<a name=\"KemkesImmunizationReasonCS-IM-Program\"> </a></td><td>Imunisasi Program</td></tr><tr><td style=\"white-space:nowrap\">IM-Rutin<a name=\"KemkesImmunizationReasonCS-IM-Rutin\"> </a></td><td>Imunisasi Program Rutin</td></tr><tr><td style=\"white-space:nowrap\">IM-Dasar<a name=\"KemkesImmunizationReasonCS-IM-Dasar\"> </a></td><td>Imunisasi Program Rutin Dasar</td></tr><tr><td style=\"white-space:nowrap\">IM-Lanjutan<a name=\"KemkesImmunizationReasonCS-IM-Lanjutan\"> </a></td><td>Imunisasi Program Rutin Lanjutan</td></tr><tr><td style=\"white-space:nowrap\">IM-Baduta<a name=\"KemkesImmunizationReasonCS-IM-Baduta\"> </a></td><td>Imunisasi Program Rutin Lanjutan Bawah Dua Tahun</td></tr><tr><td style=\"white-space:nowrap\">IM-SD<a name=\"KemkesImmunizationReasonCS-IM-SD\"> </a></td><td>Imunisasi Program Rutin Lanjutan Sekolah Dasar</td></tr><tr><td style=\"white-space:nowrap\">IM-WUS<a name=\"KemkesImmunizationReasonCS-IM-WUS\"> </a></td><td>Imunisasi Program Rutin Lanjutan Wanita Usia Subur</td></tr><tr><td style=\"white-space:nowrap\">IM-Tambahan<a name=\"KemkesImmunizationReasonCS-IM-Tambahan\"> </a></td><td>Imunisasi Program Tambahan</td></tr><tr><td style=\"white-space:nowrap\">IM-Khusus<a name=\"KemkesImmunizationReasonCS-IM-Khusus\"> </a></td><td>Imunisasi Program Khusus</td></tr><tr><td style=\"white-space:nowrap\">IM-Pilihan<a name=\"KemkesImmunizationReasonCS-IM-Pilihan\"> </a></td><td>Imunisasi Pilihan</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/immunization-reason"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -24,12 +24,15 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2024-02-05T00:00:00.000Z"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Thomas Chaidir" ] ;
+     fhir:name [ fhir:v "SatuSehat" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Terminology Kemkes immunization reason CodeSystem"] ; # 

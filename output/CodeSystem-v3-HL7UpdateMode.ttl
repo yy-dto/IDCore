@@ -1,0 +1,288 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-HL7UpdateMode> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-HL7UpdateMode"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state.  Normally is not populated unless the state is retired..</td></tr><tr><td>notSelectable</td><td>http://hl7.org/fhir/concept-properties#notSelectable</td><td>boolean</td><td>Indicates that the code is abstract - only intended to be used as a selector for other concepts</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-HL7UpdateMode</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td><td><b>Not Selectable</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">A<a name=\"v3-HL7UpdateMode-A\"> </a></td><td>Add</td><td>**Description:**The item was (or is to be) added, having not been present immediately before. (If it is already present, this may be treated as an error condition.)</td><td>22624</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">AR<a name=\"v3-HL7UpdateMode-AR\"> </a></td><td>Add or Replace</td><td>**Description:**The item was (or is to be) either added or replaced.</td><td>22654</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">D<a name=\"v3-HL7UpdateMode-D\"> </a></td><td>Remove</td><td>**Description:**The item was (or is to be) removed (sometimes referred to as deleted). If the item is part of a collection, delete any matching items.</td><td>10020</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">K<a name=\"v3-HL7UpdateMode-K\"> </a></td><td>Key</td><td>**Description:**This item is part of the identifying information for this object.</td><td>10022</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">N<a name=\"v3-HL7UpdateMode-N\"> </a></td><td>No Change</td><td>**Description:**There was (or is to be) no change to the item. This is primarily used when this element has not changed, but other attributes in the instance have changed.</td><td>22655</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">R<a name=\"v3-HL7UpdateMode-R\"> </a></td><td>Replace</td><td>**Description:**The item existed previously and has (or is to be) revised. (If an item does not already exist, this may be treated as an error condition.)</td><td>10019</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">REF<a name=\"v3-HL7UpdateMode-REF\"> </a></td><td>Reference</td><td>**Description:**This item provides enough information to allow a processing system to locate the full applicable record by identifying the object.</td><td>22623</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">U<a name=\"v3-HL7UpdateMode-U\"> </a></td><td>Unknown</td><td>**Description:**Description:&lt;/b&gt;It is not specified whether or what kind of change has occurred to the item, or whether the item is present as a reference or identifying property.</td><td>22622</td><td>active</td><td/></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">_SetUpdateMode<a name=\"v3-HL7UpdateMode-_SetUpdateMode\"> </a></td><td>SetUpdateMode</td><td>These concepts apply when the element and/or message is updating a set of items.</td><td>21082</td><td>retired</td><td>true</td></tr><tr style=\"background-color: #ffeeee\"><td>2</td><td style=\"white-space:nowrap\">  ESA<a name=\"v3-HL7UpdateMode-ESA\"> </a></td><td>Set Add</td><td>Add the message element to the collection of items on the receiving system that correspond to the message element.</td><td>10025</td><td>retired</td><td/></tr><tr style=\"background-color: #ffeeee\"><td>2</td><td style=\"white-space:nowrap\">  ESAC<a name=\"v3-HL7UpdateMode-ESAC\"> </a></td><td>Set Add or Change</td><td>Change the item on the receiving system that corresponds to this message element; if a matching element does not exist, add a new one created with the values in the message.</td><td>10028</td><td>retired</td><td/></tr><tr style=\"background-color: #ffeeee\"><td>2</td><td style=\"white-space:nowrap\">  ESC<a name=\"v3-HL7UpdateMode-ESC\"> </a></td><td>Set Change</td><td>Change the item on the receiving system that corresponds to this message element; do not process if a matching element does not exist.</td><td>10027</td><td>retired</td><td/></tr><tr style=\"background-color: #ffeeee\"><td>2</td><td style=\"white-space:nowrap\">  ESD<a name=\"v3-HL7UpdateMode-ESD\"> </a></td><td>Set Delete</td><td>Delete the item on the receiving system that corresponds to this message element.</td><td>10026</td><td>retired</td><td/></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">AU<a name=\"v3-HL7UpdateMode-AU\"> </a></td><td>Add or Update</td><td>**Description:** AU: If this item exists, update it with these values. If it does not exist, create it with these values. If the item is part of the collection, update each item that matches this item, and if no items match, add a new item to the collection.</td><td>22621</td><td>retired</td><td/></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">I<a name=\"v3-HL7UpdateMode-I\"> </a></td><td>Ignore</td><td>Ignore this role, it is not relevant to the update.</td><td>10021</td><td>retired</td><td/></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">V<a name=\"v3-HL7UpdateMode-V\"> </a></td><td>Verify</td><td>Verify - this message element must match a value already in the receiving systems database in order to process the message.</td><td>10023</td><td>retired</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-HL7UpdateMode"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.57" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HL7UpdateMode"] ; # 
+  fhir:title [ fhir:v "HL7UpdateMode"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The possible modes of updating that occur when an attribute is received by a system that already contains values for that attribute."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state.  Normally is not populated unless the state is retired.." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "notSelectable" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#notSelectable"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Indicates that the code is abstract - only intended to be used as a selector for other concepts" ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "A" ] ;
+     fhir:display [ fhir:v "Add" ] ;
+     fhir:definition [ fhir:v "**Description:**The item was (or is to be) added, having not been present immediately before. (If it is already present, this may be treated as an error condition.)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22624" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "AR" ] ;
+     fhir:display [ fhir:v "Add or Replace" ] ;
+     fhir:definition [ fhir:v "**Description:**The item was (or is to be) either added or replaced." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22654" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "D" ] ;
+     fhir:display [ fhir:v "Remove" ] ;
+     fhir:definition [ fhir:v "**Description:**The item was (or is to be) removed (sometimes referred to as deleted). If the item is part of a collection, delete any matching items." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10020" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "K" ] ;
+     fhir:display [ fhir:v "Key" ] ;
+     fhir:definition [ fhir:v "**Description:**This item is part of the identifying information for this object." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10022" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "N" ] ;
+     fhir:display [ fhir:v "No Change" ] ;
+     fhir:definition [ fhir:v "**Description:**There was (or is to be) no change to the item. This is primarily used when this element has not changed, but other attributes in the instance have changed." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22655" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "R" ] ;
+     fhir:display [ fhir:v "Replace" ] ;
+     fhir:definition [ fhir:v "**Description:**The item existed previously and has (or is to be) revised. (If an item does not already exist, this may be treated as an error condition.)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10019" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "REF" ] ;
+     fhir:display [ fhir:v "Reference" ] ;
+     fhir:definition [ fhir:v "**Description:**This item provides enough information to allow a processing system to locate the full applicable record by identifying the object." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22623" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "U" ] ;
+     fhir:display [ fhir:v "Unknown" ] ;
+     fhir:definition [ fhir:v "**Description:**Description:</b>It is not specified whether or what kind of change has occurred to the item, or whether the item is present as a reference or identifying property." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22622" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "_SetUpdateMode" ] ;
+     fhir:display [ fhir:v "SetUpdateMode" ] ;
+     fhir:definition [ fhir:v "These concepts apply when the element and/or message is updating a set of items." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21082" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "ESA" ] ;
+       fhir:display [ fhir:v "Set Add" ] ;
+       fhir:definition [ fhir:v "Add the message element to the collection of items on the receiving system that correspond to the message element." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "retired" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10025" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "ESAC" ] ;
+       fhir:display [ fhir:v "Set Add or Change" ] ;
+       fhir:definition [ fhir:v "Change the item on the receiving system that corresponds to this message element; if a matching element does not exist, add a new one created with the values in the message." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "retired" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10028" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "ESC" ] ;
+       fhir:display [ fhir:v "Set Change" ] ;
+       fhir:definition [ fhir:v "Change the item on the receiving system that corresponds to this message element; do not process if a matching element does not exist." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "retired" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10027" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "ESD" ] ;
+       fhir:display [ fhir:v "Set Delete" ] ;
+       fhir:definition [ fhir:v "Delete the item on the receiving system that corresponds to this message element." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "retired" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10026" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "AU" ] ;
+     fhir:display [ fhir:v "Add or Update" ] ;
+     fhir:definition [ fhir:v "**Description:** AU: If this item exists, update it with these values. If it does not exist, create it with these values. If the item is part of the collection, update each item that matches this item, and if no items match, add a new item to the collection." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22621" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "I" ] ;
+     fhir:display [ fhir:v "Ignore" ] ;
+     fhir:definition [ fhir:v "Ignore this role, it is not relevant to the update." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10021" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "V" ] ;
+     fhir:display [ fhir:v "Verify" ] ;
+     fhir:definition [ fhir:v "Verify - this message element must match a value already in the receiving systems database in order to process the message." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10023" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

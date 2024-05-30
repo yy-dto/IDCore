@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="CDPS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/CDPS</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/CDPS"/>
+  <version value="0.1.0"/>
+  <name value="CDPS"/>
+  <title value="Chronic Illness and Disability Payment System (CDPS)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-08-22T00:00:00-00:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="&quot;The Chronic Illness and Disability Payment System (CDPS) is a diagnostic-based risk adjustment model that is widely used to adjust capitated payments for health plans that enroll Medicaid beneficiaries.&#xD;&#xA;&#xD;&#xA;CDPS uses International Classification of Disease (ICD) codes to assign CDPS Categories that indicate illness burden related to major body systems (e.g. cardiovascular) or types of chronic disease (e.g. diabetes). Within each major category is a hierarchy reflecting both the clinical severity of the condition and its expected effect on future costs. Each of the hierarchical CDPS Categories is assigned a CDPS weight. CDPS weights are additive across major categories.&quot;&#xD;&#xA;&#xD;&#xA;&quot;The CDPS model was developed in 2000 using data from seven Fee-for-Service (FFS) Medicaid programs.  The model received major updates in 2009 (using national FFS Medicaid data from 2002-2005) and in 2014 (using additional national FFS Medicaid data from 2011). CDPS has also received regular annual updates to include the most recent ICD and NDC codes.&quot;&#xD;&#xA;&#xD;&#xA;For more information, please visit [https://hwsph.ucsd.edu/research/programs-groups/cdps.html](https://hwsph.ucsd.edu/research/programs-groups/cdps.html)."/>
+  <copyright value="For licensing CDPS including MRX and CDPS+MRx, please contact Subramanian (Subbu) Venkatraman at: [suvenkatraman@ucsd.edu](mailto:suvenkatraman@ucsd.edu)"/>
+  <caseSensitive value="true"/>
+  <content value="not-present"/>
+</CodeSystem>

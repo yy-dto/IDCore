@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/iso639-1> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "iso639-1"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/iso639-1</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/iso639-1"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:1.0.639.1" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Iso6391"] ; # 
+  fhir:title [ fhir:v "ISO 639-1: Codes for the representation of names of languages -- Part 1: Alpha-2 code"] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-11-09T10:00:00+10:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "**Description:** Codes for the Representation of Names of Languages Part 1: Alpha-2 Code. Used as part of the IETF 3066 specification for languages throughout the HL7 specification.\r\n\r\nThis part of ISO 639 provides a code consisting of language code elements comprising two-letter language identifiers for the representation of names of languages. The language identifiers according to this part of ISO 639 were devised originally for use in terminology, lexicography and linguistics, but may be adopted for any application requiring the expression of language in two- letter coded form, especially in computerized systems. The alpha-2 code was devised for practical use for most of the major languages of the world that are not only most frequently represented in the total body of the world's literature, but which also comprise a considerable volume of specialized languages and terminologies. Additional language identifiers are created when it becomes apparent that a significant body of documentation written in specialized languages and terminologies exists. Languages designed exclusively for machine use, such as computer-programming languages, are not included in this code.\r\n\r\nThe code set is available from http://www.iso.org/iso/iso\\_catalogue/catalogue\\_ics/catalogue\\_detail\\_ics.htm? csnumber=22109&ICS1=1&ICS2=140&ICS3=20"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -17,9 +17,9 @@ releaseLabel: ci-build # ci-build | draft | qa-preview | ballot | trial-use | re
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # jurisdiction: urn:iso:std:iso:3166#US "United States of America" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: Thomas Chaidir
+  name: SatuSehat
   url: https://satusehat.kemkes.go.id/
-  # email: test@example.org
+  email: fhir@dto.kemkes.go.id
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
@@ -82,7 +82,7 @@ pages:
 parameters:  # see https://confluence.hl7.org/display/FHIR/Implementation+Guide+Parameters
   path-resource:
     - input/includes
-    - input/fsh/
+#    - input/fsh/
     #- input/resources/valuset/*
     #- input/resources/codesystem/*
     - fsh-generated/resources

@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/pclocd> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "pclocd"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>https://fhir.infoway-inforoute.ca/CodeSystem/pCLOCD</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://fhir.infoway-inforoute.ca/CodeSystem/pCLOCD"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.2.20.5.1" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Pclocd"] ; # 
+  fhir:title [ fhir:v "pan-Canadian LOINC Observation Code Database"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20T00:00:00-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The pan Canadian LOINC Observation Code Database (pCLOCD) is the Canadian version of the LOINC(tm) database. It was created using the LOINC(tm) records and attributes that were constrained for Canadian use and supplemented to specifically meet Canadian requirements. It contains the core LOINC(tm) attributes as required by Regenstrief copyright rules. The LOINC(tm) Component has been customized to meet Canadian requirements and is displayed as the pan Canadian Component Name. This component name is the basis for the pan Canadian Display Name. Core attributes are include both English and Canadian French.\r\n\r\nThis code system contains supplemental \"X\" codes defined in the pCLOCD that do not yet exist in the LOINC code system."] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] . # 
+
+# -------------------------------------------------------------------------------------
+

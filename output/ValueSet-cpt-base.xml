@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="cpt-base"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="CodeSystem-CPT.html"><code>http://www.ama-assn.org/go/cpt</code></a> where modified  =  false and modifier  =  false</li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="vocab"/>
+  </extension>
+  <url value="http://terminology.hl7.org/ValueSet/cpt-base"/>
+  <version value="0.1.0"/>
+  <name value="AmaCPTBaseCodes"/>
+  <title value="AMA CPT Base Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2023-08-05T16:43:13+10:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="All codes in CPT that represent procedure codes (no modifiers allowed - e.g. for Claim.item.productOrService)."/>
+  <immutable value="true"/>
+  <copyright value="CPT © Copyright 2023 American Medical Association. All rights reserved. AMA and CPT are registered trademarks of the American Medical Association."/>
+  <compose>
+    <include>
+      <system value="http://www.ama-assn.org/go/cpt"/>
+      <filter>
+        <property value="modified"/>
+        <op value="="/>
+        <value value="false"/>
+      </filter>
+      <filter>
+        <property value="modifier"/>
+        <op value="="/>
+        <value value="false"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

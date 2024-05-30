@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/media-category> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "media-category"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/media-category</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">image<a name=\"media-category-image\"> </a></td><td>Image</td><td>The media consists of one or more unmoving images, including photographs, computer-generated graphs and charts, and scanned documents</td></tr><tr><td style=\"white-space:nowrap\">video<a name=\"media-category-video\"> </a></td><td>Video</td><td>The media consists of a series of frames that capture a moving image</td></tr><tr><td style=\"white-space:nowrap\">audio<a name=\"media-category-audio\"> </a></td><td>Audio</td><td>The media consists of a sound recording</td></tr><tr><td style=\"white-space:nowrap\">STYLESHEET<a name=\"media-category-STYLESHEET\"> </a></td><td>Stylesheet</td><td>The stylesheet for use</td></tr><tr><td style=\"white-space:nowrap\">WORKFLOW_DEFINITION<a name=\"media-category-WORKFLOW_DEFINITION\"> </a></td><td>Workflow Definitions</td><td>The workflow definition</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/media-category"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.326" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "DigitalMediaCategory"] ; # 
+  fhir:title [ fhir:v "Digital Media Category"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-05-17"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for high level media types - whether the media is an image, video, or audio."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "image" ] ;
+     fhir:display [ fhir:v "Image" ] ;
+     fhir:definition [ fhir:v "The media consists of one or more unmoving images, including photographs, computer-generated graphs and charts, and scanned documents" ]
+  ] [
+     fhir:code [ fhir:v "video" ] ;
+     fhir:display [ fhir:v "Video" ] ;
+     fhir:definition [ fhir:v "The media consists of a series of frames that capture a moving image" ]
+  ] [
+     fhir:code [ fhir:v "audio" ] ;
+     fhir:display [ fhir:v "Audio" ] ;
+     fhir:definition [ fhir:v "The media consists of a sound recording" ]
+  ] [
+     fhir:code [ fhir:v "STYLESHEET" ] ;
+     fhir:display [ fhir:v "Stylesheet" ] ;
+     fhir:definition [ fhir:v "The stylesheet for use" ]
+  ] [
+     fhir:code [ fhir:v "WORKFLOW_DEFINITION" ] ;
+     fhir:display [ fhir:v "Workflow Definitions" ] ;
+     fhir:definition [ fhir:v "The workflow definition" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

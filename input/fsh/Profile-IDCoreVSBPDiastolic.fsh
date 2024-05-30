@@ -36,7 +36,7 @@ Description: "Profile for diastolic blood pressure value."
 * interpretation 1..1
 
 Invariant: dias-ele-1
-Description: "All FHIR elements must have a @value or children"
+Description: "Observation value should be between 0 - 450 #mm[Hg]"
 * severity = #error
 * expression = "Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450"
 * xpath = "@value|f:*|h:div"

@@ -10,8 +10,7 @@
   "identifier": [
     {
       "system": "https://fhir.kemkes.go.id/id/nakes-his-number",
-      "use": "official",
-      "value": "P02478375538"
+      "use": "official"
     },
     {
       "system": "https://fhir.kemkes.go.id/id/nik",

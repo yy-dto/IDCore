@@ -1,0 +1,202 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-EducationLevel> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-EducationLevel"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-EducationLevel</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td style=\"white-space:nowrap\">ASSOC<a name=\"v3-EducationLevel-ASSOC\"> </a></td><td>Associate's or technical degree complete</td><td>Associate's or technical degree complete</td><td>19180</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">BD<a name=\"v3-EducationLevel-BD\"> </a></td><td>College or baccalaureate degree complete</td><td>College or baccalaureate degree complete</td><td>19181</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">ELEM<a name=\"v3-EducationLevel-ELEM\"> </a></td><td>Elementary School</td><td>Elementary School</td><td>19176</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">GD<a name=\"v3-EducationLevel-GD\"> </a></td><td>Graduate or professional Degree complete</td><td>Graduate or professional Degree complete</td><td>19183</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">HS<a name=\"v3-EducationLevel-HS\"> </a></td><td>High School or secondary school degree complete</td><td>High School or secondary school degree complete</td><td>19178</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">PB<a name=\"v3-EducationLevel-PB\"> </a></td><td>Some post-baccalaureate education</td><td>Some post-baccalaureate education</td><td>19182</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">POSTG<a name=\"v3-EducationLevel-POSTG\"> </a></td><td>Doctoral or post graduate education</td><td>Doctoral or post graduate education</td><td>19184</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">SCOL<a name=\"v3-EducationLevel-SCOL\"> </a></td><td>Some College education</td><td>Some College education</td><td>19179</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">SEC<a name=\"v3-EducationLevel-SEC\"> </a></td><td>Some secondary or high school education</td><td>Some secondary or high school education</td><td>19177</td><td>active</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-EducationLevel"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.1077" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EducationLevel"] ; # 
+  fhir:title [ fhir:v "Education Level"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Years of education that a person has completed"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ASSOC" ] ;
+     fhir:display [ fhir:v "Associate's or technical degree complete" ] ;
+     fhir:definition [ fhir:v "Associate's or technical degree complete" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19180" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "BD" ] ;
+     fhir:display [ fhir:v "College or baccalaureate degree complete" ] ;
+     fhir:definition [ fhir:v "College or baccalaureate degree complete" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19181" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ELEM" ] ;
+     fhir:display [ fhir:v "Elementary School" ] ;
+     fhir:definition [ fhir:v "Elementary School" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19176" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "GD" ] ;
+     fhir:display [ fhir:v "Graduate or professional Degree complete" ] ;
+     fhir:definition [ fhir:v "Graduate or professional Degree complete" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19183" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "HS" ] ;
+     fhir:display [ fhir:v "High School or secondary school degree complete" ] ;
+     fhir:definition [ fhir:v "High School or secondary school degree complete" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19178" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "PB" ] ;
+     fhir:display [ fhir:v "Some post-baccalaureate education" ] ;
+     fhir:definition [ fhir:v "Some post-baccalaureate education" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19182" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "POSTG" ] ;
+     fhir:display [ fhir:v "Doctoral or post graduate education" ] ;
+     fhir:definition [ fhir:v "Doctoral or post graduate education" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19184" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "SCOL" ] ;
+     fhir:display [ fhir:v "Some College education" ] ;
+     fhir:definition [ fhir:v "Some College education" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19179" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "SEC" ] ;
+     fhir:display [ fhir:v "Some secondary or high school education" ] ;
+     fhir:definition [ fhir:v "Some secondary or high school education" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19177" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

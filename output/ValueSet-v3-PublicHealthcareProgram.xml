@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="v3-PublicHealthcareProgram"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><ul><li>Include codes from <a href="CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a> where concept  is-a  <a href="CodeSystem-v3-ActCode.html#v3-ActCode-PUBLICPOL">PUBLICPOL</a></li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/ValueSet/v3-PublicHealthcareProgram"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.1.11.19862"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="PublicHealthcareProgram"/>
+  <title value="PublicHealthcareProgram"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2014-03-26"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="**Definition:** A a public or governmental health program with an organized structure for administering and funding coverage of a benefit package for covered parties meeting eligibility criteria, typically related to employment, health and financial status. These programs are established by legislation with provisions for ongoing government oversight. Regulations mandate the structure of the program, the manner in which it is funded and administered, covered benefits, provider types, eligibility criteria and financial participation. A government agency may be charged with implementing the program in accordance to the regulation.&#xD;&#xA;&#xD;&#xA;For example, A Canadian provincial or national health plan such as the BC MSP (British Columbia Medical Services Plan) OHIP (Ontario Health Insurance Plan), NHS (National Health Service). Examples of U.S. government funded health programs include those for maternity case management, behavioral health, and HIV-AIDs, such as the Ryan White program."/>
+  <copyright value="This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="PUBLICPOL"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

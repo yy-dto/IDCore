@@ -15,6 +15,14 @@
     {
       "system": "https://fhir.kemkes.go.id/id/nik",
       "use": "official"
+    },
+    {
+      "system": "https://fhir.kemkes.go.id/id/nik-ibu",
+      "use": "official"
+    },
+    {
+      "system": "https://fhir.kemkes.go.id/id/passport",
+      "use": "official"
     }
   ],
   "name": "IDCorePatient",
@@ -66,11 +74,6 @@
       {
         "id": "Patient.identifier.value",
         "path": "Patient.identifier.value",
-        "min": 1
-      },
-      {
-        "id": "Patient.active",
-        "path": "Patient.active",
         "min": 1
       },
       {

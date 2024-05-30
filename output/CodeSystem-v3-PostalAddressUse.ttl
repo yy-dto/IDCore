@@ -1,0 +1,243 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-PostalAddressUse> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-PostalAddressUse"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state.  Normally is not populated unless the state is retired..</td></tr><tr><td>notSelectable</td><td>http://hl7.org/fhir/concept-properties#notSelectable</td><td>boolean</td><td>Indicates that the code is abstract - only intended to be used as a selector for other concepts</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-PostalAddressUse</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td><td><b>Not Selectable</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">_AddressUse<a name=\"v3-PostalAddressUse-_AddressUse\"> </a></td><td>AddressUse</td><td/><td>21112</td><td>active</td><td>true</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  BAD<a name=\"v3-PostalAddressUse-BAD\"> </a></td><td>bad address</td><td>A flag indicating that the address is bad, in fact, useless.</td><td>10641</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  H<a name=\"v3-PostalAddressUse-H\"> </a></td><td>home address</td><td>A communication address at a home, attempted contacts for business purposes might intrude privacy and chances are one will contact family or other household members instead of the person one wishes to call. Typically used with urgent cases, or if no other contacts are available.</td><td>10628</td><td>active</td><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    HP<a name=\"v3-PostalAddressUse-HP\"> </a></td><td>primary home</td><td>The primary home, to reach a person after business hours.</td><td>10629</td><td>active</td><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    HV<a name=\"v3-PostalAddressUse-HV\"> </a></td><td>vacation home</td><td>A vacation home, to reach a person while on vacation.</td><td>10630</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TMP<a name=\"v3-PostalAddressUse-TMP\"> </a></td><td>temporary address</td><td>A temporary address, may be good for visit or mailing. Note that an address history can provide more detailed information.</td><td>10640</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  WP<a name=\"v3-PostalAddressUse-WP\"> </a></td><td>work place</td><td>An office address. First choice for business related contacts during business hours.</td><td>10631</td><td>active</td><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    DIR<a name=\"v3-PostalAddressUse-DIR\"> </a></td><td>Direct</td><td>Indicates a work place address or telecommunication address that reaches the individual or organization directly without intermediaries. For phones, often referred to as a 'private line'.</td><td>21426</td><td>active</td><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    PUB<a name=\"v3-PostalAddressUse-PUB\"> </a></td><td>Public</td><td>Indicates a work place address or telecommunication address that is a 'standard' address which may reach a reception service, mail-room, or other intermediary prior to the target entity.</td><td>21427</td><td>active</td><td/></tr><tr style=\"background-color: #ffeeee\"><td>2</td><td style=\"white-space:nowrap\">  BIR<a name=\"v3-PostalAddressUse-BIR\"> </a></td><td>birthplace</td><td/><td>12211</td><td>retired</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">PHYS<a name=\"v3-PostalAddressUse-PHYS\"> </a></td><td>physical visit address</td><td>Used primarily to visit an address.</td><td>10638</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">PST<a name=\"v3-PostalAddressUse-PST\"> </a></td><td>postal address</td><td>Used to send mail.</td><td>10639</td><td>active</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-PostalAddressUse"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.1012" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PostalAddressUse"] ; # 
+  fhir:title [ fhir:v "PostalAddressUse"] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "*Deprecation Comment:* This code system was deprecated as of the November 2007 harmonization meeting. The content was folded into AddressUse (2.16.840.1.113883.5.1119), which replaces this code system."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state.  Normally is not populated unless the state is retired.." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "notSelectable" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#notSelectable"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Indicates that the code is abstract - only intended to be used as a selector for other concepts" ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "_AddressUse" ] ;
+     fhir:display [ fhir:v "AddressUse" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21112" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "BAD" ] ;
+       fhir:display [ fhir:v "bad address" ] ;
+       fhir:definition [ fhir:v "A flag indicating that the address is bad, in fact, useless." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10641" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "H" ] ;
+       fhir:display [ fhir:v "home address" ] ;
+       fhir:definition [ fhir:v "A communication address at a home, attempted contacts for business purposes might intrude privacy and chances are one will contact family or other household members instead of the person one wishes to call. Typically used with urgent cases, or if no other contacts are available." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10628" ]
+       ] ) ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "HP" ] ;
+         fhir:display [ fhir:v "primary home" ] ;
+         fhir:definition [ fhir:v "The primary home, to reach a person after business hours." ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "active" ]
+         ] [
+           fhir:code [ fhir:v "internalId" ] ;
+           fhir:value [ fhir:v "10629" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "HV" ] ;
+         fhir:display [ fhir:v "vacation home" ] ;
+         fhir:definition [ fhir:v "A vacation home, to reach a person while on vacation." ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "active" ]
+         ] [
+           fhir:code [ fhir:v "internalId" ] ;
+           fhir:value [ fhir:v "10630" ]
+         ] )
+       ] )
+     ] [
+       fhir:code [ fhir:v "TMP" ] ;
+       fhir:display [ fhir:v "temporary address" ] ;
+       fhir:definition [ fhir:v "A temporary address, may be good for visit or mailing. Note that an address history can provide more detailed information." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10640" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "WP" ] ;
+       fhir:display [ fhir:v "work place" ] ;
+       fhir:definition [ fhir:v "An office address. First choice for business related contacts during business hours." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10631" ]
+       ] ) ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "DIR" ] ;
+         fhir:display [ fhir:v "Direct" ] ;
+         fhir:definition [ fhir:v "Indicates a work place address or telecommunication address that reaches the individual or organization directly without intermediaries. For phones, often referred to as a 'private line'." ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "active" ]
+         ] [
+           fhir:code [ fhir:v "internalId" ] ;
+           fhir:value [ fhir:v "21426" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "PUB" ] ;
+         fhir:display [ fhir:v "Public" ] ;
+         fhir:definition [ fhir:v "Indicates a work place address or telecommunication address that is a 'standard' address which may reach a reception service, mail-room, or other intermediary prior to the target entity." ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "active" ]
+         ] [
+           fhir:code [ fhir:v "internalId" ] ;
+           fhir:value [ fhir:v "21427" ]
+         ] )
+       ] )
+     ] [
+       fhir:code [ fhir:v "BIR" ] ;
+       fhir:display [ fhir:v "birthplace" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "retired" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "12211" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "PHYS" ] ;
+     fhir:display [ fhir:v "physical visit address" ] ;
+     fhir:definition [ fhir:v "Used primarily to visit an address." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10638" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "PST" ] ;
+     fhir:display [ fhir:v "postal address" ] ;
+     fhir:definition [ fhir:v "Used to send mail." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10639" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

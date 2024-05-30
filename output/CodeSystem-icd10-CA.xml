@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="icd10-CA"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://hl7.org/fhir/sid/icd-10-ca</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/sid/icd-10-ca"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.6.94"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="ICD10CA"/>
+  <title value="International Statistical Classification of Diseases and Related Health Problems, 10th Revision, Canada"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-09-24T00:00:00-04:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="ICD-10-CA (International Statistical Classification of Diseases and Related Health Problems, 10th Revision, Canada) was developed by the World Health Organization (WHO) and enhanced by CIHI to meet Canadian morbidity data needs. ICD-10-CA classifies diseases, injuries and causes of death, as well as external causes of injury and poisoning. It also includes conditions and situations that are not diseases but represent risk factors to health, such as occupational and environmental factors, lifestyle and psychosocial circumstances."/>
+  <caseSensitive value="true"/>
+  <content value="not-present"/>
+</CodeSystem>

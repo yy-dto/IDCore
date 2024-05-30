@@ -1,0 +1,353 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-DataOperation> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-DataOperation"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-DataOperation</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">OPERATE<a name=\"v3-DataOperation-OPERATE\"> </a></td><td>operate</td><td>Act on an object or objects.</td><td>22873</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  CREATE<a name=\"v3-DataOperation-CREATE\"> </a></td><td>create</td><td>Fundamental operation in an Information System (IS) that results only in the act of bringing an object into existence. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22874</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  DELETE<a name=\"v3-DataOperation-DELETE\"> </a></td><td>delete</td><td>Fundamental operation in an Information System (IS) that results only in the removal of information about an object from memory or storage. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface.</td><td>22891</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  EXECUTE<a name=\"v3-DataOperation-EXECUTE\"> </a></td><td>execute</td><td>Fundamental operation in an IS that results only in initiating performance of a single or set of programs (i.e., software objects). Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface.</td><td>22892</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  READ<a name=\"v3-DataOperation-READ\"> </a></td><td>read</td><td>Fundamental operation in an Information System (IS) that results only in the flow of information about an object to a subject. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface.</td><td>22875</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  UPDATE<a name=\"v3-DataOperation-UPDATE\"> </a></td><td>revise</td><td>Fundamental operation in an Information System (IS) that results only in the revision or alteration of an object. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface.</td><td>22876</td><td>active</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    APPEND<a name=\"v3-DataOperation-APPEND\"> </a></td><td>append</td><td>Fundamental operation in an Information System (IS) that results only in the addition of information to an object already in existence. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface.</td><td>22877</td><td>active</td></tr><tr><td>3</td><td style=\"white-space:nowrap\">    MODIFYSTATUS<a name=\"v3-DataOperation-MODIFYSTATUS\"> </a></td><td>modify status</td><td>Change the status of an object representing an Act.</td><td>22878</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      ABORT<a name=\"v3-DataOperation-ABORT\"> </a></td><td>abort</td><td>Change the status of an object representing an Act to &quot;aborted&quot;, i.e., terminated prior to the originally intended completion. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22879</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      ACTIVATE<a name=\"v3-DataOperation-ACTIVATE\"> </a></td><td>activate</td><td>Change the status of an object representing an Act to &quot;active&quot;, i.e., so it can be performed or is being performed, for the first time. (Contrast with REACTIVATE.) For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22880</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      CANCEL<a name=\"v3-DataOperation-CANCEL\"> </a></td><td>cancel</td><td>Change the status of an object representing an Act to &quot;cancelled&quot;, i.e., abandoned before activation. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22881</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      COMPLETE<a name=\"v3-DataOperation-COMPLETE\"> </a></td><td>complete</td><td>Change the status of an object representing an Act to &quot;completed&quot;, i.e., terminated normally after all of its constituents have been performed. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22882</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      HOLD<a name=\"v3-DataOperation-HOLD\"> </a></td><td>hold</td><td>Change the status of an object representing an Act to &quot;held&quot;, i.e., put aside an Act that is still in preparatory stages. No action can occur until the Act is released. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22883</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      JUMP<a name=\"v3-DataOperation-JUMP\"> </a></td><td>jump</td><td>Change the status of an object representing an Act to a normal state. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22884</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      NULLIFY<a name=\"v3-DataOperation-NULLIFY\"> </a></td><td>nullify</td><td>Change the status of an object representing an Act to &quot;nullified&quot;, i.e., treat as though it never existed. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22885</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      OBSOLETE<a name=\"v3-DataOperation-OBSOLETE\"> </a></td><td>obsolete</td><td>Change the status of an object representing an Act to &quot;obsolete&quot; when it has been replaced by a new instance. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22886</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      DEPRECATE<a name=\"v3-DataOperation-DEPRECATE\"> </a></td><td>deprecate</td><td>Fundamental operation in HL7 Standards Governance that results only in the addition of deprecation information to an object already in existence without changing the status of the object.  Operation used internally in the maintenance and recordkeeping of HL7 terminology and standards artifacts.</td><td>722877</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      REACTIVATE<a name=\"v3-DataOperation-REACTIVATE\"> </a></td><td>reactivate</td><td>Change the status of a formerly active object representing an Act to &quot;active&quot;, i.e., so it can again be performed or is being performed. (Contrast with ACTIVATE.) For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22887</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      RELEASE<a name=\"v3-DataOperation-RELEASE\"> </a></td><td>release</td><td>Change the status of an object representing an Act so it is no longer &quot;held&quot;, i.e., allow action to occur. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22888</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      RESUME<a name=\"v3-DataOperation-RESUME\"> </a></td><td>resume</td><td>Change the status of a suspended object representing an Act to &quot;active&quot;, i.e., so it can be performed or is being performed. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td><td>22889</td><td>active</td></tr><tr><td>4</td><td style=\"white-space:nowrap\">      SUSPEND<a name=\"v3-DataOperation-SUSPEND\"> </a></td><td>suspend</td><td>Change the status of an object representing an Act to **suspended**, i.e., so it is temporarily not in service.</td><td>22890</td><td>active</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-DataOperation"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.1123" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "DataOperation"] ; # 
+  fhir:title [ fhir:v "DataOperation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "**** MISSING DESCRIPTION ****"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "OPERATE" ] ;
+     fhir:display [ fhir:v "operate" ] ;
+     fhir:definition [ fhir:v "Act on an object or objects." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22873" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "CREATE" ] ;
+       fhir:display [ fhir:v "create" ] ;
+       fhir:definition [ fhir:v "Fundamental operation in an Information System (IS) that results only in the act of bringing an object into existence. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface. For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "22874" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "DELETE" ] ;
+       fhir:display [ fhir:v "delete" ] ;
+       fhir:definition [ fhir:v "Fundamental operation in an Information System (IS) that results only in the removal of information about an object from memory or storage. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface." ] ;
+       fhir:designation ( [
+         fhir:language [ fhir:v "en" ] ;
+         fhir:use [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "preferredForLanguage" ]
+         ] ;
+         fhir:value [ fhir:v "remove" ]
+       ] ) ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "22891" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "EXECUTE" ] ;
+       fhir:display [ fhir:v "execute" ] ;
+       fhir:definition [ fhir:v "Fundamental operation in an IS that results only in initiating performance of a single or set of programs (i.e., software objects). Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "22892" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "READ" ] ;
+       fhir:display [ fhir:v "read" ] ;
+       fhir:definition [ fhir:v "Fundamental operation in an Information System (IS) that results only in the flow of information about an object to a subject. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "22875" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "UPDATE" ] ;
+       fhir:display [ fhir:v "revise" ] ;
+       fhir:definition [ fhir:v "Fundamental operation in an Information System (IS) that results only in the revision or alteration of an object. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface." ] ;
+       fhir:designation ( [
+         fhir:language [ fhir:v "en" ] ;
+         fhir:use [
+           fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "preferredForLanguage" ]
+         ] ;
+         fhir:value [ fhir:v "update" ]
+       ] ) ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "22876" ]
+       ] ) ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "APPEND" ] ;
+         fhir:display [ fhir:v "append" ] ;
+         fhir:definition [ fhir:v "Fundamental operation in an Information System (IS) that results only in the addition of information to an object already in existence. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface." ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "active" ]
+         ] [
+           fhir:code [ fhir:v "internalId" ] ;
+           fhir:value [ fhir:v "22877" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "MODIFYSTATUS" ] ;
+         fhir:display [ fhir:v "modify status" ] ;
+         fhir:definition [ fhir:v "Change the status of an object representing an Act." ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "active" ]
+         ] [
+           fhir:code [ fhir:v "internalId" ] ;
+           fhir:value [ fhir:v "22878" ]
+         ] ) ;
+         fhir:concept ( [
+           fhir:code [ fhir:v "ABORT" ] ;
+           fhir:display [ fhir:v "abort" ] ;
+           fhir:definition [ fhir:v "Change the status of an object representing an Act to \"aborted\", i.e., terminated prior to the originally intended completion. For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22879" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "ACTIVATE" ] ;
+           fhir:display [ fhir:v "activate" ] ;
+           fhir:definition [ fhir:v "Change the status of an object representing an Act to \"active\", i.e., so it can be performed or is being performed, for the first time. (Contrast with REACTIVATE.) For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22880" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "CANCEL" ] ;
+           fhir:display [ fhir:v "cancel" ] ;
+           fhir:definition [ fhir:v "Change the status of an object representing an Act to \"cancelled\", i.e., abandoned before activation. For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22881" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "COMPLETE" ] ;
+           fhir:display [ fhir:v "complete" ] ;
+           fhir:definition [ fhir:v "Change the status of an object representing an Act to \"completed\", i.e., terminated normally after all of its constituents have been performed. For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22882" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "HOLD" ] ;
+           fhir:display [ fhir:v "hold" ] ;
+           fhir:definition [ fhir:v "Change the status of an object representing an Act to \"held\", i.e., put aside an Act that is still in preparatory stages. No action can occur until the Act is released. For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22883" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "JUMP" ] ;
+           fhir:display [ fhir:v "jump" ] ;
+           fhir:definition [ fhir:v "Change the status of an object representing an Act to a normal state. For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22884" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "NULLIFY" ] ;
+           fhir:display [ fhir:v "nullify" ] ;
+           fhir:definition [ fhir:v "Change the status of an object representing an Act to \"nullified\", i.e., treat as though it never existed. For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22885" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "OBSOLETE" ] ;
+           fhir:display [ fhir:v "obsolete" ] ;
+           fhir:definition [ fhir:v "Change the status of an object representing an Act to \"obsolete\" when it has been replaced by a new instance. For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22886" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "DEPRECATE" ] ;
+           fhir:display [ fhir:v "deprecate" ] ;
+           fhir:definition [ fhir:v "Fundamental operation in HL7 Standards Governance that results only in the addition of deprecation information to an object already in existence without changing the status of the object.  Operation used internally in the maintenance and recordkeeping of HL7 terminology and standards artifacts." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "722877" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "REACTIVATE" ] ;
+           fhir:display [ fhir:v "reactivate" ] ;
+           fhir:definition [ fhir:v "Change the status of a formerly active object representing an Act to \"active\", i.e., so it can again be performed or is being performed. (Contrast with ACTIVATE.) For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22887" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "RELEASE" ] ;
+           fhir:display [ fhir:v "release" ] ;
+           fhir:definition [ fhir:v "Change the status of an object representing an Act so it is no longer \"held\", i.e., allow action to occur. For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22888" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "RESUME" ] ;
+           fhir:display [ fhir:v "resume" ] ;
+           fhir:definition [ fhir:v "Change the status of a suspended object representing an Act to \"active\", i.e., so it can be performed or is being performed. For an HL7 Act, the state transitions per the HL7 Reference Information Model." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22889" ]
+           ] )
+         ] [
+           fhir:code [ fhir:v "SUSPEND" ] ;
+           fhir:display [ fhir:v "suspend" ] ;
+           fhir:definition [ fhir:v "Change the status of an object representing an Act to **suspended**, i.e., so it is temporarily not in service." ] ;
+           fhir:property ( [
+             fhir:code [ fhir:v "status" ] ;
+             fhir:value [ fhir:v "active" ]
+           ] [
+             fhir:code [ fhir:v "internalId" ] ;
+             fhir:value [ fhir:v "22890" ]
+           ] )
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

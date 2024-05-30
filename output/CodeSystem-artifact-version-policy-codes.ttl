@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/artifact-version-policy-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "artifact-version-policy-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">metadata<a name=\"artifact-version-policy-codes-metadata\"> </a></td><td>Metadata</td><td>A versioning policy that allows non-substantive changes to the metadata elements of an artifact without requiring a change to the value of the version element.</td></tr><tr><td style=\"white-space:nowrap\">strict<a name=\"artifact-version-policy-codes-strict\"> </a></td><td>Strict</td><td>A versioning policy that indicates that any change to the content of an artifact, including non-substantive and metadata changes, requires a change to the value of the version element of the artifact.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cds" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "trial-use" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ArtifactVersionPolicyCodes"] ; # 
+  fhir:title [ fhir:v "Artifact Version Policy Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-16"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The versioning policy of an artifact (metadata, strict)"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/artifact-version-policy"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/artifact-version-policy>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "metadata" ] ;
+     fhir:display [ fhir:v "Metadata" ] ;
+     fhir:definition [ fhir:v "A versioning policy that allows non-substantive changes to the metadata elements of an artifact without requiring a change to the value of the version element." ]
+  ] [
+     fhir:code [ fhir:v "strict" ] ;
+     fhir:display [ fhir:v "Strict" ] ;
+     fhir:definition [ fhir:v "A versioning policy that indicates that any change to the content of an artifact, including non-substantive and metadata changes, requires a change to the value of the version element of the artifact." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,234 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-ParameterizedDataType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-ParameterizedDataType"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-ParameterizedDataType</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">BAG&lt;T&gt;<a name=\"v3-ParameterizedDataType-BAG.60T.62\"> </a></td><td>Bag</td><td>10763</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">LIST&lt;T&gt;<a name=\"v3-ParameterizedDataType-LIST.60T.62\"> </a></td><td>Sequence</td><td>10762</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">SET&lt;T&gt;<a name=\"v3-ParameterizedDataType-SET.60T.62\"> </a></td><td>Set</td><td>10761</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  EIVL&lt;T&gt;<a name=\"v3-ParameterizedDataType-EIVL.60T.62\"> </a></td><td>Event Related Interval</td><td>10766</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  IVL&lt;T&gt;<a name=\"v3-ParameterizedDataType-IVL.60T.62\"> </a></td><td>Interval</td><td>10764</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PIVL&lt;T&gt;<a name=\"v3-ParameterizedDataType-PIVL.60T.62\"> </a></td><td>Periodic Interval</td><td>10765</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">T<a name=\"v3-ParameterizedDataType-T\"> </a></td><td>Type</td><td>10760</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ANT&lt;T&gt;<a name=\"v3-ParameterizedDataType-ANT.60T.62\"> </a></td><td>Annotated</td><td>10767</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  HXIT&lt;T&gt;<a name=\"v3-ParameterizedDataType-HXIT.60T.62\"> </a></td><td>Historical</td><td>10768</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  NPPD&lt;T&gt;<a name=\"v3-ParameterizedDataType-NPPD.60T.62\"> </a></td><td>Non Parametric Probability Distribution</td><td>10771</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PPD&lt;T&gt;<a name=\"v3-ParameterizedDataType-PPD.60T.62\"> </a></td><td>Parametric Probability Distribution</td><td>10772</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  UVN&lt;T&gt;<a name=\"v3-ParameterizedDataType-UVN.60T.62\"> </a></td><td>Uncertain Value Narrative</td><td>10769</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  UVP&lt;T&gt;<a name=\"v3-ParameterizedDataType-UVP.60T.62\"> </a></td><td>Uncertain Value Probabilistic</td><td>10770</td><td>active</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParameterizedDataType"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.87" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ParameterizedDataType"] ; # 
+  fhir:title [ fhir:v "ParameterizedDataType"] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "**Deprecation Comment:** Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BAG<T>" ] ;
+     fhir:display [ fhir:v "Bag" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10763" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "LIST<T>" ] ;
+     fhir:display [ fhir:v "Sequence" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10762" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "SET<T>" ] ;
+     fhir:display [ fhir:v "Set" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10761" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "EIVL<T>" ] ;
+       fhir:display [ fhir:v "Event Related Interval" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10766" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "IVL<T>" ] ;
+       fhir:display [ fhir:v "Interval" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10764" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "PIVL<T>" ] ;
+       fhir:display [ fhir:v "Periodic Interval" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10765" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "T" ] ;
+     fhir:display [ fhir:v "Type" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10760" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "ANT<T>" ] ;
+       fhir:display [ fhir:v "Annotated" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10767" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "HXIT<T>" ] ;
+       fhir:display [ fhir:v "Historical" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10768" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "NPPD<T>" ] ;
+       fhir:display [ fhir:v "Non Parametric Probability Distribution" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10771" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "PPD<T>" ] ;
+       fhir:display [ fhir:v "Parametric Probability Distribution" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10772" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "UVN<T>" ] ;
+       fhir:display [ fhir:v "Uncertain Value Narrative" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10769" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "UVP<T>" ] ;
+       fhir:display [ fhir:v "Uncertain Value Probabilistic" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10770" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,770 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EntityNamePartQualifier - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.2256"}
+    h3,h4,h5,h6{--heading-prefix:"5.2256"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EntityNamePartQualifier</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-EntityNamePartQualifier.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-EntityNamePartQualifier.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-EntityNamePartQualifier.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: EntityNamePartQualifier
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2019-03-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">EntityNamePartQualifier</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.5.43
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p><em>OpenIssue:</em> Needs description</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="http://hl7.org/fhir/extensions/5.1.0/ValueSet-name-part-qualifier.html">EntityNamePartQualifier</a></li>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-EntityNamePartQualifier.html">EntityNamePartQualifier</a></li>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-OrganizationNamePartQualifier.html">OrganizationNamePartQualifier</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
+<table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+<tr><td>Specializes</td>
+<td>Specializes</td>
+<td></td>
+<td>Coding</td>
+<td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr>
+<tr><td>Generalizes</td>
+<td>Generalizes</td>
+<td></td>
+<td>Coding</td>
+<td>Inverse of Specializes.  Only included as a derived relationship.</td></tr>
+<tr><td>internalId</td>
+<td>internalId</td>
+<td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td>
+<td>code</td>
+<td>The internal identifier for the concept in the HL7 Access database repository.</td></tr>
+<tr><td>status</td>
+<td>status</td>
+<td>http://hl7.org/fhir/concept-properties#status</td>
+<td>code</td>
+<td>Designation of a concept's state.  Normally is not populated unless the state is retired..</td></tr>
+<tr><td>Not Selectable</td>
+<td>notSelectable</td>
+<td>http://hl7.org/fhir/concept-properties#notSelectable</td>
+<td>boolean</td>
+<td>Indicates that the code is abstract - only intended to be used as a selector for other concepts</td></tr>
+<tr><td>Parent</td>
+<td>subsumedBy</td>
+<td>http://hl7.org/fhir/concept-properties#parent</td>
+<td>code</td>
+<td>The concept code of a parent concept</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-EntityNamePartQualifier</code> defines the following codes in a Is-A hierarchy:</p>
+<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td><td><b>Not Selectable</b></td><td><b>Parent</b></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">_OrganizationNamePartQualifier<a name="v3-EntityNamePartQualifier-_OrganizationNamePartQualifier"> </a></td>
+<td>OrganizationNamePartQualifier</td>
+<td></td>
+<td>21072</td>
+<td>active</td>
+<td>true</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;AC<a name="v3-EntityNamePartQualifier-AC"> </a></td>
+<td>academic</td>
+<td><div><p>Indicates that a prefix like "Dr." or a suffix like "M.D." or "Ph.D." is an academic title.</p>
+</div></td>
+<td>10668</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier, _PersonNamePartAffixTypes</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;AD<a name="v3-EntityNamePartQualifier-AD"> </a></td>
+<td>adopted</td>
+<td><div><p>The name the person was given at the time of adoption.</p>
+</div></td>
+<td>21320</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier, _PersonNamePartChangeQualifier</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;BR<a name="v3-EntityNamePartQualifier-BR"> </a></td>
+<td>birth</td>
+<td><div><p>A name that a person had shortly after being born. Usually for family names but may be used to mark given names at birth that may have changed later.</p>
+</div></td>
+<td>10661</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier, _PersonNamePartChangeQualifier</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;CL<a name="v3-EntityNamePartQualifier-CL"> </a></td>
+<td>callme</td>
+<td><div><p>A callme name is (usually a given name) that is preferred when a person is directly addressed.</p>
+</div></td>
+<td>10673</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier, _PersonNamePartMiscQualifier</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;IN<a name="v3-EntityNamePartQualifier-IN"> </a></td>
+<td>initial</td>
+<td><div><p>Indicates that a name part is just an initial. Initials do not imply a trailing period since this would not work with non-Latin scripts. Initials may consist of more than one letter, e.g., "Ph." could stand for "Philippe" or "Th." for "Thomas".</p>
+</div></td>
+<td>17938</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier, _PersonNamePartQualifier</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;LS<a name="v3-EntityNamePartQualifier-LS"> </a></td>
+<td>Legal status</td>
+<td><div><p>For organizations a suffix indicating the legal status, e.g., "Inc.", "Co.", "AG", "GmbH", "B.V." "S.A.", "Ltd." etc.</p>
+</div></td>
+<td>15890</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;NB<a name="v3-EntityNamePartQualifier-NB"> </a></td>
+<td>nobility</td>
+<td><div><p>In Europe and Asia, there are still people with nobility titles (aristocrats). German "von" is generally a nobility title, not a mere voorvoegsel. Others are "Earl of" or "His Majesty King of..." etc. Rarely used nowadays, but some systems do keep track of this.</p>
+</div></td>
+<td>10670</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier, _PersonNamePartAffixTypes</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;PR<a name="v3-EntityNamePartQualifier-PR"> </a></td>
+<td>professional</td>
+<td><div><p>Primarily in the British Imperial culture people tend to have an abbreviation of their professional organization as part of their credential suffices.</p>
+</div></td>
+<td>10669</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier, _PersonNamePartAffixTypes</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;SP<a name="v3-EntityNamePartQualifier-SP"> </a></td>
+<td>spouse</td>
+<td><div><p>The name assumed from the partner in a marital relationship (hence the "SP"). Usually the spouse's family name. Note that no inference about gender can be made from the existence of spouse names.</p>
+</div></td>
+<td>10665</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier, _PersonNamePartChangeQualifier</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;TITLE<a name="v3-EntityNamePartQualifier-TITLE"> </a></td>
+<td>title</td>
+<td><div><p>Indicates that a prefix or a suffix is a title that applies to the whole name, not just the adjacent name part.</p>
+</div></td>
+<td>21462</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier, _PersonNamePartQualifier</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;VV<a name="v3-EntityNamePartQualifier-VV"> </a></td>
+<td>voorvoegsel</td>
+<td><div><p>A Dutch "voorvoegsel" is something like "van" or "de" that might have indicated nobility in the past but no longer so. Similar prefixes exist in other languages such as Spanish, French or Portugese.</p>
+</div></td>
+<td>10667</td>
+<td>active</td>
+<td></td>
+<td>_OrganizationNamePartQualifier, _PersonNamePartAffixTypes</td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">PharmaceuticalEntityNamePartQualifiers<a name="v3-EntityNamePartQualifier-PharmaceuticalEntityNamePartQualifiers"> </a></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td>
+<td><div><p><strong>Description:</strong> Medication Name Parts are a means of specifying a range of acceptable "official" forms of the name of a product. They are used as patterns against which input name strings may be matched for automatic identification of products from input text reports. While they cover the concepts held under "doseForm" or "route" or "strength" the name parts are not the same and do not fit into a controlled vocabulary in the same way. By specifying up to 8 name parts a much larger range of possible names can be generated.</p>
+</div></td>
+<td>22979</td>
+<td>active</td>
+<td>true</td>
+<td></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;CON<a name="v3-EntityNamePartQualifier-CON"> </a></td>
+<td>container name</td>
+<td><div><p><strong>Description:</strong> This refers to the container if present in the medicinal product name.</p>
+<p>EXAMPLES:</p>
+<ul>
+<li>For Optaflu suspension for injection in pre-filled syringe Influenza vaccine (surface antigen, inactivated, prepared in cell culture) (2007/2008 season): pre-filled syringe</li>
+</ul>
+</div></td>
+<td>22985</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;DEV<a name="v3-EntityNamePartQualifier-DEV"> </a></td>
+<td>device name</td>
+<td><div><p><strong>Description:</strong> This refers to the qualifiers in the name for devices and is at the moment mainly applicable to insulins and inhalation products.</p>
+<p>EXAMPLES:</p>
+<ul>
+<li>For the medicinal product Actrapid FlexPen 100 IU/ml Solution for injection Subcutaneous use: FlexPen.</li>
+</ul>
+</div></td>
+<td>22986</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;FLAV<a name="v3-EntityNamePartQualifier-FLAV"> </a></td>
+<td>FlavorName</td>
+<td><div><p><strong>Description:</strong> This refers to a flavor of the medicinal product if present in the medicinal product name.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>For 'CoughCure Linctus Orange Flavor', the flavor part is "Orange"</li>
+<li>For 'Wonderdrug Syrup Cherry Flavor', the flavor part is "Cherry"</li>
+</ul>
+</div></td>
+<td>23314</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;FORMUL<a name="v3-EntityNamePartQualifier-FORMUL"> </a></td>
+<td>FormulationPartName</td>
+<td><div><p><strong>Description:</strong> This refers to the formulation of the medicinal product if present in the medicinal product name.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>For 'SpecialMed Sugar Free Cough Syrup', the formulation name part is "Sugar Free"</li>
+<li>For 'QuickCure Gluten-free Bulk Fibre', the formulation name part is "gluten-free"</li>
+</ul>
+</div></td>
+<td>23312</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;FRM<a name="v3-EntityNamePartQualifier-FRM"> </a></td>
+<td>form name</td>
+<td><div><p><strong>Description:</strong> This refers to the pharmaceutical form/ if present in the medicinal product name.</p>
+<p>EXAMPLES:</p>
+<ul>
+<li>For Agenerase 50 mg soft capsules: Soft Capsules</li>
+<li>For Ludiomil 25mg-Filmtabletten: Filmtabletten</li>
+<li>For Optaflu suspension for injection in pre-filled syringe Influenza vaccine (surface antigen, inactivated, prepared in cell culture) (2007/2008 season): suspension for injection</li>
+</ul>
+</div></td>
+<td>22983</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;INV<a name="v3-EntityNamePartQualifier-INV"> </a></td>
+<td>invented name</td>
+<td><div><p><strong>Description:</strong> This refers to the product name without the trademark or the name of the marketing authorization holder or any other descriptor reflected in the product name and, if appropriate, whether it is intended e.g. for babies, children or adults.</p>
+<p>EXAMPLES:</p>
+<ul>
+<li>Agenerase</li>
+<li>Optaflu</li>
+<li>Ludiomil</li>
+</ul>
+</div></td>
+<td>22980</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;POPUL<a name="v3-EntityNamePartQualifier-POPUL"> </a></td>
+<td>TargetPopulationName</td>
+<td><div><p><strong>Description:</strong> This refers to the target population for the medicinal product if present in the medicinal product name</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>For 'Broncho-Drug 3.5 mg-capsules for children', the target population part is "children"</li>
+<li>For 'Adult Chesty Cough Syrup', the target population part is "adult"</li>
+</ul>
+</div></td>
+<td>23311</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;SCI<a name="v3-EntityNamePartQualifier-SCI"> </a></td>
+<td>scientific name</td>
+<td><div><p><strong>Description:</strong> This refers to the product common or scientific name without the trademark or the name of the marketing authorization holder or any other descriptor reflected in the product name.</p>
+<p>EXAMPLES:</p>
+<ul>
+<li>For Agenerase: N/A</li>
+<li>For Optaflu: Influenza vaccine (surface antigen, inactivated, prepared in cell culture) (2007/2008 season)</li>
+<li>For Ludiomil: N/A</li>
+</ul>
+</div></td>
+<td>22981</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;STR<a name="v3-EntityNamePartQualifier-STR"> </a></td>
+<td>strength name</td>
+<td><div><p><strong>Description:</strong> This refers to the strength if present in the medicinal product name. The use of decimal points should be accommodated if required.</p>
+<p>EXAMPLES:</p>
+<ul>
+<li>For Agenerase 50 mg soft capsules: 50mg</li>
+<li>For Ludiomil 25mg-Filmtabletten: 25 mg</li>
+<li>For Optaflu suspension for injection in pre-filled syringe Influenza vaccine (surface antigen, inactivated, prepared in cell culture) (2007/2008 season): N/A</li>
+</ul>
+</div></td>
+<td>22982</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;TIME<a name="v3-EntityNamePartQualifier-TIME"> </a></td>
+<td>TimeOrPeriodName</td>
+<td><div><p><strong>Description:</strong> This refers to a time or time period that may be specified in the text of the medicinal product name</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>For an influenza vaccine 'Drug-FLU season 2008/2009', the time/period part is "2008/2009 season"</li>
+</ul>
+</div></td>
+<td>23313</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;TMK<a name="v3-EntityNamePartQualifier-TMK"> </a></td>
+<td>trademark name</td>
+<td><div><p><strong>Description:</strong> This refers to trademark/company element if present in the medicinal product name.</p>
+<p>EXAMPLES:</p>
+<ul>
+<li>for Insulin Human Winthrop Comb 15: Winthrop</li>
+</ul>
+</div></td>
+<td>22987</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;USE<a name="v3-EntityNamePartQualifier-USE"> </a></td>
+<td>intended use name</td>
+<td><div><p><strong>Description:</strong> This refers to the intended use if present in the medicinal product name without the trademark or the name of the marketing authorization holder or any other descriptor reflected in the product name.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>For 'Drug-BI Caplets - Heartburn Relief', the intended use part is: "Heartburn Relief"</li>
+<li>For 'Medicine Honey Syrup for Soothing Coughs' the intended use part is "Soothing Coughs"</li>
+</ul>
+</div></td>
+<td>22984</td>
+<td>active</td>
+<td></td>
+<td>PharmaceuticalEntityNamePartQualifiers</td></tr>
+<tr style="background-color: #ffeeee"><td>1</td>
+<td style="white-space:nowrap">_PersonNamePartQualifier<a name="v3-EntityNamePartQualifier-_PersonNamePartQualifier"> </a></td>
+<td>PersonNamePartQualifier</td>
+<td></td>
+<td>21076</td>
+<td>retired</td>
+<td>true</td>
+<td></td></tr>
+<tr style="background-color: #ffeeee"><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;_PersonNamePartAffixTypes<a name="v3-EntityNamePartQualifier-_PersonNamePartAffixTypes"> </a></td>
+<td>PersonNamePartAffixTypes</td>
+<td></td>
+<td>21073</td>
+<td>retired</td>
+<td>true</td>
+<td>_PersonNamePartQualifier</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#v3-EntityNamePartQualifier-AC">AC</a></td>
+<td>academic</td>
+<td colspan="5"></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#v3-EntityNamePartQualifier-NB">NB</a></td>
+<td>nobility</td>
+<td colspan="5"></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#v3-EntityNamePartQualifier-PR">PR</a></td>
+<td>professional</td>
+<td colspan="5"></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#v3-EntityNamePartQualifier-VV">VV</a></td>
+<td>voorvoegsel</td>
+<td colspan="5"></td></tr>
+<tr style="background-color: #ffeeee"><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;_PersonNamePartChangeQualifier<a name="v3-EntityNamePartQualifier-_PersonNamePartChangeQualifier"> </a></td>
+<td>PersonNamePartChangeQualifier</td>
+<td></td>
+<td>21074</td>
+<td>retired</td>
+<td>true</td>
+<td>_PersonNamePartQualifier</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#v3-EntityNamePartQualifier-AD">AD</a></td>
+<td>adopted</td>
+<td colspan="5"></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#v3-EntityNamePartQualifier-BR">BR</a></td>
+<td>birth</td>
+<td colspan="5"></td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#v3-EntityNamePartQualifier-SP">SP</a></td>
+<td>spouse</td>
+<td colspan="5"></td></tr>
+<tr style="background-color: #ffeeee"><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;_PersonNamePartMiscQualifier<a name="v3-EntityNamePartQualifier-_PersonNamePartMiscQualifier"> </a></td>
+<td>PersonNamePartMiscQualifier</td>
+<td></td>
+<td>21075</td>
+<td>retired</td>
+<td>true</td>
+<td>_PersonNamePartQualifier</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;<a href="#v3-EntityNamePartQualifier-CL">CL</a></td>
+<td>callme</td>
+<td colspan="5"></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;<a href="#v3-EntityNamePartQualifier-IN">IN</a></td>
+<td>initial</td>
+<td colspan="5"></td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;<a href="#v3-EntityNamePartQualifier-TITLE">TITLE</a></td>
+<td>title</td>
+<td colspan="5"></td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

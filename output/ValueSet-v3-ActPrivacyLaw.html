@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ActPrivacyLaw - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.253"}
+    h3,h4,h5,h6{--heading-prefix:"5.253"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ActPrivacyLaw</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ActPrivacyLaw.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ActPrivacyLaw.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ActPrivacyLaw.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: ActPrivacyLaw
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/ValueSet/v3-ActPrivacyLaw<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActPrivacyLaw"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActPrivacyLaw|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2014-03-26
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ActPrivacyLaw</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.1.11.20426
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>ActPrivacyLaw codes may be associated with an Act or a Role to indicate the legal provision to which the assignment of an Act.confidentialityCode or Role.confidentialtyCode complies. May be used to further specify rationale for assignment of other ActPrivacyPolicy codes in the US realm, e.g., ETH and 42CFRPart2 can be differentiated from ETH and Title38Part1.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li>Included into <a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-SecurityCategoryObservationValue.html">SecurityCategoryObservationValue</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include codes from<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a> where concept  is-a <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-_ActPrivacyLaw">_ActPrivacyLaw</a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html">codesystem ActCode v9.0.0 (CodeSystem)</a></p><p>This value set contains 14 concepts</p><table class="codes"><tr><td><b>Level</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Inactive</b></td><td><b>Definition</b></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode--ActPrivacyLaw"> </a>1</td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-_ActPrivacyLaw" title="This code is not selectable (''Abstract'')"><i>_ActPrivacyLaw</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>ActPrivacyLaw</td><td/><td><div><p>A jurisdictional mandate, regulation, obligation, requirement, rule, or expectation deeming certain information to be private to an individual or organization, which is imposed on:</p>
+<ul>
+<li>The activity of a governed party</li>
+<li>The behavior of a governed party</li>
+<li>The manner in which an act is executed by a governed party</li>
+</ul>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode--ActGDPRPrivacyLaw"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-_ActGDPRPrivacyLaw" title="This code is not selectable (''Abstract'')"><i>_ActGDPRPrivacyLaw</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>General Data Protection Regulation</td><td/><td><div><p>GDPR is a regulation on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive). Promulgated by the European Parliament and Council of the European Union. Regulation available at L119, 4 May 2016, p. 1-88.</p>
+<p>GDPR privacy policies specifying types of lawful personal data processing based on a controller meeting one or more processing condition such as specified by law, compliance with data controller legal obligations, protection of data subject's vital interests, perform tasks in the public interest, related to legal claims, research and statistics, management of health or social care systems, legitimate interests of controller or third party. Processing sensitive personal data, including genetic, biometric and health data, as well as personal data from which racial and ethnic origin, political opinions, religious or ideological convictions or membership in a union can be attributed to a person, requires meeting at least one sensitive personal processing condition.</p>
+<p>GDPR 'processing' means any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction. Article 4 https://gdpr-info.eu/art-4-gdpr/</p>
+<p><em>Usage Note:</em></p>
+<ul>
+<li>Confidentiality: e.g., U (unrestricted) for anonymized personal information; L (low) for pseudonymized U (unrestricted) for anonymized personal information; M (moderate) for indirectly identifiable information such as test scores and work times; N (normal) for personal information; and R (restricted) for sensitive personal information</li>
+<li>DPR sensitivity [personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation, some of which are defined at Article 4 https://gdpr-info.eu/art-4-gdpr/</li>
+<li>GDPR processing policies and GDPR ConsentDirectiveTypes, such as data subject consent and research consent.</li>
+<li>Other security category codes, such as compartment codes for legitimate relationship,</li>
+<li>Handling instructions including</li>
+<li>Purpose of use stipulated in a GDPR consent or contract restricting processing or related to the scope of the processing policy such as public health, research, and legal obligations</li>
+<li>Obligation policies such as GDPR Information Obligations https://gdpr-info.eu/issues/information-obligations, data minimization and deleting when processing is complete</li>
+<li>Refrain policies such as no relinking</li>
+</ul>
+<p>See Intersoft GDPR at https://gdpr-info.eu/issues/personal-data/ Art. 4 GDPR Definitions https://gdpr-info.eu/art-4-gdpr/ Art. 9 GDPR Processing of special categories of personal data https://gdpr-info.eu/art-9-gdpr/ Relevant Recitals (26) Not applicable to anonymous data (30) Online identifiers for profiling and identification (34) Genetic data (35) Health data (51) Protecting sensitive personal data at Intersoft GDPR briefing papers and navigating tool https://gdpr-info.eu/</p>
+<p>Authorities</p>
+<ul>
+<li>European Data Protection Supervisor - Security Measures for Personal Data Processing (Link)</li>
+<li>Data Protection Authority Isle of Man - Know your data - Mapping the 5 W's (Link)</li>
+<li>Data Protection Authority UK - Key definitions (Link)</li>
+<li>European Commission - What is personal data? (Link)</li>
+<li>European Commission - What personal data is considered sensitive? (Link)</li>
+<li>EU publications - Handbook on European data protection law - Personal data, page 83 (Link)</li>
+</ul>
+<p>Expert contribution A&amp;L Goodbody - The GDPR: A Guide for Businesses - Definition of Personal &amp; Sensitive Data, Page 8 (Link) Bird &amp; Bird - Sensitive data and lawful processing (Link) https://ec.europa.eu/commission/priorities/justice-and-fundamental-rights/data-protection/2018-reform-eu-data-protection-rules_en General Data Protection Regulation https://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1528874672298&amp;uri=CELEX%3A32016R0679 Communication on data protection - guidance on direct application of the GDPR http://eur-lex.europa.eu/legal-content/EN/TXT/?qid=1517578296944&amp;uri=CELEX%3A52018DC0043 Intersoft GDPR briefing papers and navigating tool https://gdpr-info.eu/</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-GDPRCONSENT"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-GDPRCONSENT">GDPRCONSENT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>GDPR Consent</td><td/><td><div><p>Processing of personal data, inclusive of the special categories of data, is lawful only if the data subject has given explicit consent to the processing of his or her personal data, inclusive of the special categories of data, for one or more specific purposes, except where Union or Member State law provide that the prohibition to use the data may not be lifted by the data subject; and for personal data which are manifestly made public by the data subject.</p>
+<p><em>Usage Note:</em> The description is based on the following GDPR provisions: Article 6.1.a https://gdpr-info.eu/art-6-gdpr/ 1Processing shall be lawful only if and to the extent that at least one of the following applies: (a) the data subject has given consent to the processing of his or her personal data for one or more specific purposes. Article 9.1, 9.2a., 9.2.e https://gdpr-info.eu/art-9-gdpr/ 1. Processing of personal data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, and the processing of genetic data, biometric data for the purpose of uniquely identifying a natural person, data concerning health or data concerning a natural person's sex life or sexual orientation shall be prohibited. 2. Paragraph 1 shall not apply if one of the following applies: (a) the data subject has given explicit consent to the processing of those personal data for one or more specified purposes, except where Union or Member State law provide that the prohibition referred to in paragraph 1 may not be lifted by the data subject; and (e) processing relates to personal data which are manifestly made public by the data subject.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode--ActUSPrivacyLaw"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-_ActUSPrivacyLaw">_ActUSPrivacyLaw</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>_ActUSPrivacyLaw</td><td/><td><div><p><em>Definition:</em> A jurisdictional mandate in the U.S. relating to privacy.</p>
+<p><em>Usage Note:</em> ActPrivacyLaw codes may be associated with an Act or a Role to indicate the legal provision to which the assignment of an Act.confidentialityCode or Role.confidentialtyCode complies. May be used to further specify rationale for assignment of other ActPrivacyPolicy codes in the US realm, e.g., ETH and 42CFRPart2 can be differentiated from ETH and Title38Part1.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-42CFRPart2"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-42CFRPart2">42CFRPart2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>42 CFR Part2</td><td/><td><div><p>A code representing 42 CFR Part 2 Confidentiality of Substance Use Disorder Patient Records. 42 CFR Part 2 stipulates the privacy rights of an individual who has applied for or been given diagnosis or treatment for alcohol or drug abuse at a federally assisted program, which includes non-disclosure of health information relating to health care paid for by a federally assisted substance use disorder program without patient consent. https://www.gpo.gov/fdsys/pkg/CFR-2010-title42-vol1/pdf/CFR-2010-title42-vol1-part2.pdf</p>
+<p><em>Usage Note:</em> Used to indicate the legal authority for assigning security labels to governed information. In this case, the collection, access, use, and disclosure of healthcare information is governed by 42 CFR Part 2 Confidentiality of Substance Use Disorder Patient Records https://www.gpo.gov/fdsys/pkg/CFR-2010-title42-vol1/pdf/CFR-2010-title42-vol1-part2.pdf use &quot;42CFRPart2&quot; as the security label policy code.</p>
+<p>Since information governed by a 42 CFR Part 2 has a level of confidentiality protection that is more stringent than the normal level of protection under HIPAA 45 CFR Section 164.506 Uses and disclosures to carry out treatment, payment, or health care operations https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-506.pdf assign the HL7 Confidentiality code &quot;R&quot; (restricted).</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CommonRule"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CommonRule">CommonRule</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>Common Rule</td><td/><td><div><p>A code representing U.S. Federal laws governing research-related privacy policies known as the &quot;Common Rule&quot;. The Common Rule is the U.S. Federal regulations governing the protection of human subjects in research (codified at Subpart A of 45 CFR part 46), which has been adopted by 15 U.S. Federal departments and agencies in an effort to promote uniformity, understanding, and compliance with human subject protections. Existing regulations governing the protection of human subjects in Food and Drug Administration (FDA)-regulated research (21 CFR parts 50, 56, 312, and 812) are separate from the Common Rule but include similar requirements.</p>
+<p><em>Usage Note:</em> Used to indicate the legal authority for assigning security labels to governed information. In this case, where collection, access, use, or disclosure of healthcare information or biospecimen is governed by the Common Rule use &quot;COMMONRULE&quot; as the security label policy code. Information or biospecimen disclosed under the Common Rule are not protected by the HIPAA Privacy Rule. If protected under other laws such as confidentiality provisions under the Common Rule, assign the HL7 Confidentiality code &quot;M&quot; (moderate).</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HIPAAAuth"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HIPAAAuth">HIPAAAuth</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>HIPAA Authorization for Disclosure</td><td/><td><div><p>A code representing U.S. Public Law 104-191 Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule (45 CFR Section 164.508) Uses and disclosures for which an authorization is required https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-508.pdf, which stipulates the process by which a covered entity seeks agreement from an individual to use or disclose protected health information for other purposes, or to authorize another covered entity to disclose protected health information to the requesting covered entity, are termed &quot;authorizations&quot;.</p>
+<p>An &quot;authorization&quot; is required by the Privacy Rule for uses and disclosures of protected health information not otherwise allowed by the Rule. Where the Privacy Rule requires patient authorization, voluntary consent is not sufficient to permit a use or disclosure of protected health information unless it also satisfies the requirements of a valid authorization. An authorization is a detailed document that gives covered entities permission to use protected health information for specified purposes, which are generally other than treatment, payment, or health care operations, or to disclose protected health information to a third party specified by the individual.</p>
+<p>An authorization must specify a number of elements, including a description of the protected health information to be used and disclosed, the person authorized to make the use or disclosure, the person to whom the covered entity may make the disclosure, an expiration date, and, in some cases, the purpose for which the information may be used or disclosed. With limited exceptions, covered entities may not condition treatment or coverage on the individual providing an authorization. https://www.hhs.gov/hipaa/for-professionals/faq/264/what-is-the-difference-between-consent-and-authorization/index.html</p>
+<p><em>Usage Note:</em> Used to indicate the legal authority for assigning security labels to HIPAA governed information. In this case, where use or disclosure of healthcare information is governed by a covered entity's HIPAA Authorization for Disclosure, use &quot;HIPAAAuth&quot; as the security label policy code.</p>
+<p>Information disclosed under a HIPAA Authorization for Disclosure no longer has the level of confidentiality protection afforded under the 45 CFR Section 164.506 - Uses and disclosures to carry out treatment, payment, or health care operations https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-508.pdf, which is considered the &quot;norm&quot;, assign the HL7 Confidentiality code &quot;M&quot; (moderate), which may be protected under other laws such as the Federal Trade Commission privacy and security regulations.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HIPAAConsent"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HIPAAConsent">HIPAAConsent</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>HIPAA Consent</td><td/><td><div><p>A code representing U.S. Public Law 104-191 Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule (45 CFR Section 164.522), which stipulates the process by which a covered entity seeks agreement from an individual regarding how it will use and disclose the individual's protected health information for treatment, payment, and health care operations is termed a &quot;consent&quot;.</p>
+<p>The Privacy Rule permits, but does not require, a covered entity to voluntarily obtain patient consent for uses and disclosures of protected health information for treatment, payment, and health care operations. Covered entities that do so have complete discretion to design a process that best suits their needs. From https://www.hhs.gov/hipaa/for-professionals/faq/264/what-is-the-difference-between-consent-and-authorization/index.html. The provisions relating to consent are largely contained in Section 164.522 Rights to request privacy protection for protected health information https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-522.pdf.</p>
+<p><em>Usage Note:</em> Used to indicate the legal authority for assigning security labels to governed information. In this case, where collection, access, use, or disclosure of healthcare information is governed by 45 CFR Section 164.522 use 'HIPAAConsent' as the security label policy code.</p>
+<p>Since information governed by a 45 CFR Section 164.522 has a level of confidentiality protection that is more stringent than the normal level of protection under HIPAA 45 CFR Section 164.506 Uses and disclosures to carry out treatment, payment, or health care operations https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-506.pdf, assign the HL7 Confidentiality code 'R' (restricted).</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HIPAANOPP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HIPAANOPP">HIPAANOPP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>HIPAA notice of privacy practices</td><td/><td><div><p>A code representing U.S. Public Law 104-191 Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule (45 CFR Section 164.520), which stipulates an individual's right to adequate notice of the uses and disclosures of protected health information that may be made by the covered entity, and of the individual's rights and the covered entity's legal duties with respect to protected health information. Relevant HIPAA Privacy Rule provisions are at Section 164.520 (a) Standard: Notice of privacy practices. https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-520.pdf</p>
+<p><em>Usage Note:</em> Used to indicate the legal authority for assigning security labels to HIPAA governed information. In this case, if collection, access, use, or disclosure of healthcare information is governed by a covered entity's HIPAA Notice of Privacy Practices, use &quot;HIPAANOPP&quot; as the security label policy code.</p>
+<p>Information governed under a HIPAA Notice of Privacy Practices has the level of confidentiality protection afforded under the 45 CFR Section 164.506 - Uses and disclosures to carry out treatment, payment, or health care operations https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-506.pdf , which is considered the &quot;norm&quot;, assign the HL7 Confidentiality code &quot;N&quot; (normal).</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HIPAAPsyNotes"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HIPAAPsyNotes">HIPAAPsyNotes</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>HIPAA psychotherapy notes</td><td/><td><div><p>A code representing U.S. Public Law 104-191 Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule (45 CFR Section 164.508), which stipulates the privacy rights of an individual who is the subject of psychotherapy notes, and requires authorization for certain uses and disclosure of that information.</p>
+<p>Definition of Psychotherapy notes 45 CFR Section 164.501 https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-501.pdf: Psychotherapy notes means notes recorded (in any medium) by a health care provider who is a mental health professional documenting or analyzing the contents of conversation during a private counseling session or a group, joint, or family counseling session and that are separated from the rest of the individual's medical record. Psychotherapy notes excludes medication prescription and monitoring, counseling session start and stop times, the modalities and frequencies of treatment furnished, results of clinical tests, and any summary of the following items: Diagnosis, functional status, the treatment plan, symptoms, prognosis, and progress to date.</p>
+<p>See Section 164.508 Uses and disclosures for which an authorization is required. (2)Authorization required: Psychotherapy notes https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-508.pdf: Notwithstanding any provision of this subpart, other than the transition provisions in Section 164.532, a covered entity must obtain an authorization for any use or disclosure of psychotherapy notes, except: (i) To carry out the following treatment, payment, or health care operations: (A) Use by the originator of the psychotherapy notes for treatment; (B) Use or disclosure by the covered entity for its own training programs in which students, trainees, or practitioners in mental health learn under supervision to practice or improve their skills in group, joint, family, or individual counseling; or (C) Use or disclosure by the covered entity to defend itself in a legal action or other proceeding brought by the individual; and (ii) A use or disclosure that is required by Section 164.502(a)(2)(ii) or permitted by Section 164.512(a); Section 164.512(d) with respect to the oversight of the originator of the psychotherapy notes; Section 164.512(g)(1); Section 164.512(j)(1)(i).</p>
+<p><em>Usage Note:</em> Used to indicate the legal authority for assigning security labels to HIPAA governed information. In this case, the collection, access, use, or disclosure of healthcare information is governed by HIPAA 45 CFR 164.508 (2) Authorization required: Psychotherapy notes https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-506.pdf , use &quot;HIPAAPsyNotes&quot; as the security label policy code.</p>
+<p>Since information governed by a HIPAA 45 CFR 164.508 (2) has a level of confidentiality protection that is more stringent than the normal level of protection under 45 CFR Section 164.506 Uses and disclosures to carry out treatment, payment, or health care operations https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-506.pdf, assign the HL7 Confidentiality code &quot;R&quot; (restricted).</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HIPAAROA"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HIPAAROA">HIPAAROA</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>HIPAA Right of Access</td><td/><td><div><p>A code representing U.S. Public Law 104-191 Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule 45 CFR Section 164.524 Access of individuals to protected health information https://www.govinfo.gov/app/details/CFR-2017-title45-vol1/CFR-2017-title45-vol1-sec164-524, which stipulates that an individual has a right of access to inspect and obtain a copy of protected health information about the individual in a designated record set, for as long as the protected health information is maintained in the designated record set with exceptions stipulated in HIPAA Privacy Rule Section 164.524. Exceptions include psychotherapy notes and information compiled in reasonable anticipation of, or for use in, a civil, criminal, or administrative action or proceeding.</p>
+<p>If an individual's request for access directs the covered entity to transmit the copy of protected health information directly to another person designated by the individual, the covered entity must provide the copy to the person designated by the individual. The individual's request must be in writing, signed by the individual, and clearly identify the designated person and where to send the copy of protected health information.</p>
+<p>For discussion on extent of right, grounds for denial, and documentation requirements see: HHS Individuals' Right under HIPAA to Access their Health Information 45 CFR Section 164.524 https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access/index.html and HHS FAQ on Right of Access vs. HIPAA Authorization https://www.hhs.gov/hipaa/for-professionals/faq/2041/why-depend-on-the-individuals-right/index.html</p>
+<p><em>Usage Note:</em> Used to indicate the legal authority for assigning security labels to governed information. In this case, where collection, access, use, or disclosure of healthcare information is governed under 45 CFR Section 164.5224 use &quot;HIPAAROA&quot; as the security label policy code.</p>
+<p>Information disclosed under a HIPAA 42 CFR Section 164.524 no longer has the level of confidentiality protection afforded under the 45 CFR Section 164.506 - Uses and disclosures to carry out treatment, payment, or health care operations https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-508.pdf, which is considered the &quot;norm&quot;, assign the HL7 Confidentiality code &quot;M&quot; (moderate), which may be protected under other laws such as the Federal Trade Commission privacy and security regulations.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HIPAASelfPay"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HIPAASelfPay">HIPAASelfPay</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>HIPAA self-pay</td><td/><td><div><p>A code representing 45 CFR 164.522 Rights to request privacy protection for protected health information, which is a US Federal law stipulating the privacy rights of an individual to restrict disclosure of information related to health care items or services for which the individual pays out of pocket in full to a health plan or payer.</p>
+<p>See 45 CFR 164.522 https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-522.pdf. (vi) A covered entity must agree to the request of an individual to restrict disclosure of protected health information about the individual to a health plan if: (A) The disclosure is for the purpose of carrying out payment or health care operations and is not otherwise required by law; and (B) The protected health information pertains solely to a health care item or service for which the individual, or person other than the health plan on behalf of the individual, has paid the covered entity in full.</p>
+<p><em>Usage Note:</em> Used to indicate the legal authority for assigning security labels to HIPAA governed information. In this case, the collection, access, use, or disclosure of healthcare information is governed by HIPAA 45 CFR 164.522 https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-522.pdf use &quot;HIPAASelfPay&quot; as the security label policy code.</p>
+<p>Since information governed by a HIPAA 45 CFR 164.522 has a level of confidentiality protection that is more stringent than the normal level of protection under 45 CFR Section 164.506 Uses and disclosures to carry out treatment, payment, or health care operations https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-506.pdf, assign the HL7 Confidentiality code &quot;R&quot; (restricted).</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-Title38Section7332"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-Title38Section7332">Title38Section7332</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>Title 38 Section 7332</td><td/><td><div><p>A code representing Title 38 Section 7332, which is a US Federal law stipulating the privacy rights of veterans diagnosed and treated for substance use disorders, infection with the human immunodeficiency virus, or sickle cell anemia.</p>
+<p>https://www.gpo.gov/fdsys/granule/USCODE-2011-title38/USCODE-2011-title38-partV-chap73-subchapIII-sec7332/content-detail.html . (1) Records of the identity, diagnosis, prognosis, or treatment of any patient or subject which are maintained in connection with the performance of any program or activity (including education, training, treatment, rehabilitation, or research) relating to drug abuse, alcoholism or alcohol abuse, infection with the human immunodeficiency virus, or sickle cell anemia which is carried out by or for the Department under this title shall, except as provided in subsections (e) and (f), be confidential, and (section 5701 of this title to the contrary notwithstanding) such records may be disclosed only for the purposes and under the circumstances expressly authorized under subsection (b). (2) Paragraph (1) prohibits the disclosure to any person or entity other than the patient or subject concerned of the fact that a special written consent is required in order for such records to be disclosed. (b) (1) The content of any record referred to in subsection (a) may be disclosed by the Secretary in accordance with the prior written consent of the patient or subject with respect to whom such record is maintained, but only to such extent, under such circumstances, and for such purposes as may be allowed in regulations prescribed by the Secretary. (2) Whether or not any patient or subject, with respect to whom any given record referred to in subsection (a) is maintained, gives written consent, the content of such record may be disclosed by the Secretary as follows: (A) To medical personnel to the extent necessary to meet a bona fide medical emergency. (B) To qualified personnel for the purpose of conducting scientific research, management audits, financial audits, or program evaluation, but such personnel may not identify, directly or indirectly, any individual patient or subject in any report of such research, audit, or evaluation, or otherwise disclose patient or subject identities in any manner. (C) (i) In the case of any record which is maintained in connection with the performance of any program or activity relating to infection with the human immunodeficiency virus, to a Federal, State, or local public-health authority charged under Federal or State law with the protection of the public health, and to which Federal or State law requires disclosure of such record, if a qualified representative of such authority has made a written request that such record be provided as required pursuant to such law for a purpose authorized by such law. (ii) A person to whom a record is disclosed under this paragraph may not redisclose or use such record for a purpose other than that for which the disclosure was made. (D) If authorized by an appropriate order of a court of competent jurisdiction granted after application showing good cause therefor. In assessing good cause the court shall weigh the public interest and the need for disclosure against the injury to the patient or subject, to the physician-patient relationship, and to the treatment services. Upon the granting of such order, the court, in determining the extent to which any disclosure of all or any part of any record is necessary, shall impose appropriate safeguards against unauthorized disclosure. (E) To an entity described in paragraph (1)(B) of section 5701(k) of this title, but only to the extent authorized by such section. (F) (i) To a representative of a patient who lacks decision-making capacity, when a practitioner deems the content of the given record necessary for that representative to make an informed decision regarding the patient's treatment. (ii) In this subparagraph, the term &quot;representative&quot; means an individual, organization, or other body authorized under section 7331 of this title and its implementing regulations to give informed consent on behalf of a patient who lacks decision-making capacity. (G) To a State controlled substance monitoring program, including a program approved by the Secretary of Health and Human Services under section 399O of the Public Health Service Act (42 U.S.C. 280g-3), to the extent necessary to prevent misuse and diversion of prescription medicines. (H) (i) To a non-Department entity (including private entities and other Federal agencies) for purposes of providing health care, including hospital care, medical services, and extended care services, to Veterans or performing other health care-related activities or functions. (ii) An entity to which a record is disclosed under this subparagraph may not disclose or use such record for a purpose other than that for which the disclosure was made or as permitted by law. (I) To a third party in order to recover or collect reasonable charges for care furnished to, or paid on behalf of, a Veteran in connection with a non-service connected disability as permitted by section 1729 of this title or for a condition for which recovery is authorized or with respect to which the United States is deemed to be a third party beneficiary under the Act entitled 'An Act to provide for the recovery from tortiously liable third persons of the cost of hospital and medical care and treatment furnished by the United States' (Public Law 87-693; 42 U.S.C. 2651 et seq.; commonly known as the 'Federal Medical Care Recovery Act').</p>
+<p><em>Usage Note:</em> Used to indicate the legal authority for assigning security labels to governed information. In this case, where collection, access, use, or disclosure of healthcare information is governed by 38 U.S. Code Section 7332 - Confidentiality of certain medical records https://www.gpo.gov/fdsys/granule/USCODE-2011-title38/USCODE-2011-title38-partV-chap73-subchapIII-sec7332/content-detail.html use &quot;Title38Section7332&quot; as the security label policy code.</p>
+<p>Since information governed by a Title 38 Section 7332 has a level of confidentiality protection that is more stringent than the normal level of protection under HIPAA 45 CFR Section 164.506 Uses and disclosures to carry out treatment, payment, or health care operations https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-506.pdf, assign the HL7 Confidentiality code &quot;R&quot; (restricted).</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-a--HIPAAConsent"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-a.41HIPAAConsent">a) HIPAAConsent</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>HIPAA Consent</td><td>inactive</td><td><div><p>Code retired in December 2019 and replaced by code HIPAAConsent. Originally entered with copy/paste error in code value.</p>
+<p>A code representing U.S. Public Law 104-191 Health Insurance Portability and Accountability Act (HIPAA) Privacy Rule (45 CFR Section 164.522), which stipulates the process by which a covered entity seeks agreement from an individual regarding how it will use and disclose the individual's protected health information for treatment, payment, and health care operations is termed a &quot;consent.&quot; The Privacy Rule permits, but does not require, a covered entity to voluntarily obtain patient consent for uses and disclosures of protected health information for treatment, payment, and health care operations. Covered entities that do so have complete discretion to design a process that best suits their needs. From https://www.hhs.gov/hipaa/for-professionals/faq/264/what-is-the-difference-between-consent-and-authorization/index.html. The provisions relating to consent are largely contained in Section 164.522 Rights to request privacy protection for protected health information https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-522.pdf.</p>
+<p><em>Usage Note:</em> Used to indicate the legal authority for assigning security labels to governed information. In this case, where collection, access, use, or disclosure of healthcare information is governed by 45 CFR Section 164.522 use &quot;HIPAAConsent&quot; as the security label policy code.</p>
+<p>Since information governed by a 45 CFR Section 164.522 has a level of confidentiality protection that is more stringent than the normal level of protection under HIPAA 45 CFR Section 164.506 Uses and disclosures to carry out treatment, payment, or health care operations https://www.gpo.gov/fdsys/pkg/CFR-2017-title45-vol1/pdf/CFR-2017-title45-vol1-sec164-506.pdf, assign the HL7 Confidentiality code &quot;R&quot; (restricted).</p>
+</div></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

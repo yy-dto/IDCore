@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="nanda-i"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://www.nanda.org/</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="http://www.nanda.org/"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.6.20"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="Nanda_I"/>
+  <title value="NANDA International"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-03-20T00:00:00.000-04:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="The NANDA-I classification is a set of nursing diagnoses developed by the NANDA International. This purpose of the terminology is to provide nursing diagnoses used to describe patients’ responses to actual or potential health problems and life processes responses to diseases rather than classifying the conditions of diseases and disorders."/>
+  <copyright value="The NANDA-I terminology is a copyrighted terminology, therefore no part of the  NANDA International Nursing Diagnoses: Definitions and Classification can be reproduced, stored in a retrieval system, or transmitted by any means, electronic, mechanical, photocopying, recording or otherwise without the prior permission of the publisher. "/>
+  <caseSensitive value="false"/>
+  <compositional value="false"/>
+  <versionNeeded value="false"/>
+  <content value="not-present"/>
+</CodeSystem>

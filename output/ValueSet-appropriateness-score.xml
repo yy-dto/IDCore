@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="appropriateness-score"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-appropriateness-score.html"><code>http://terminology.hl7.org/CodeSystem/appropriateness-score</code></a></li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/ValueSet/appropriateness-score"/>
+  <identifier>
+    <use value="old"/>
+    <value value="http://hl7.org/fhir/us/qicore/ValueSet/appropriateness-score"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="AppropriatenessScore"/>
+  <title value="Appropriateness Score"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-10-19"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="The scoring for appropriateness of an action based upon RAND."/>
+  <copyright value="This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/appropriateness-score"/>
+    </include>
+  </compose>
+</ValueSet>

@@ -8,7 +8,7 @@
   </meta>
   <language value="English"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="English" lang="English"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/cancer-n-category</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">N0<a name="KemkesCancerNCategory-N0"> </a></td></tr><tr><td style="white-space:nowrap">N1<a name="KemkesCancerNCategory-N1"> </a></td></tr><tr><td style="white-space:nowrap">N1a<a name="KemkesCancerNCategory-N1a"> </a></td></tr><tr><td style="white-space:nowrap">N1b<a name="KemkesCancerNCategory-N1b"> </a></td></tr><tr><td style="white-space:nowrap">N1c<a name="KemkesCancerNCategory-N1c"> </a></td></tr><tr><td style="white-space:nowrap">N2<a name="KemkesCancerNCategory-N2"> </a></td></tr><tr><td style="white-space:nowrap">N2a<a name="KemkesCancerNCategory-N2a"> </a></td></tr><tr><td style="white-space:nowrap">N2b<a name="KemkesCancerNCategory-N2b"> </a></td></tr><tr><td style="white-space:nowrap">N2c<a name="KemkesCancerNCategory-N2c"> </a></td></tr><tr><td style="white-space:nowrap">N3<a name="KemkesCancerNCategory-N3"> </a></td></tr><tr><td style="white-space:nowrap">N3a<a name="KemkesCancerNCategory-N3a"> </a></td></tr><tr><td style="white-space:nowrap">N3b<a name="KemkesCancerNCategory-N3b"> </a></td></tr><tr><td style="white-space:nowrap">N3c<a name="KemkesCancerNCategory-N3c"> </a></td></tr><tr><td style="white-space:nowrap">NX<a name="KemkesCancerNCategory-NX"> </a></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="English" lang="English"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/cancer-n-category</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">N0<a name="KemkesCancerNCategory-N0"> </a></td></tr><tr><td style="white-space:nowrap">N1<a name="KemkesCancerNCategory-N1"> </a></td></tr><tr><td style="white-space:nowrap">N1a<a name="KemkesCancerNCategory-N1a"> </a></td></tr><tr><td style="white-space:nowrap">N1b<a name="KemkesCancerNCategory-N1b"> </a></td></tr><tr><td style="white-space:nowrap">N1c<a name="KemkesCancerNCategory-N1c"> </a></td></tr><tr><td style="white-space:nowrap">N2<a name="KemkesCancerNCategory-N2"> </a></td></tr><tr><td style="white-space:nowrap">N2a<a name="KemkesCancerNCategory-N2a"> </a></td></tr><tr><td style="white-space:nowrap">N2b<a name="KemkesCancerNCategory-N2b"> </a></td></tr><tr><td style="white-space:nowrap">N2c<a name="KemkesCancerNCategory-N2c"> </a></td></tr><tr><td style="white-space:nowrap">N3<a name="KemkesCancerNCategory-N3"> </a></td></tr><tr><td style="white-space:nowrap">N3a<a name="KemkesCancerNCategory-N3a"> </a></td></tr><tr><td style="white-space:nowrap">N3b<a name="KemkesCancerNCategory-N3b"> </a></td></tr><tr><td style="white-space:nowrap">N3c<a name="KemkesCancerNCategory-N3c"> </a></td></tr><tr><td style="white-space:nowrap">NX<a name="KemkesCancerNCategory-NX"> </a></td></tr></table></div>
   </text>
   <url value="http://terminology.kemkes.go.id/CodeSystem/cancer-n-category"/>
   <version value="0.1.0"/>
@@ -17,12 +17,16 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2024-02-05T00:00:00.000Z"/>
-  <publisher value="Thomas Chaidir"/>
+  <publisher value="SatuSehat"/>
   <contact>
-    <name value="Thomas Chaidir"/>
+    <name value="SatuSehat"/>
     <telecom>
       <system value="url"/>
       <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
     </telecom>
   </contact>
   <caseSensitive value="true"/>

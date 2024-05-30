@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/definition-status> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "definition-status"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/definition-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">draft<a name=\"definition-status-draft\"> </a></td><td>Draft</td><td>The definition is in the design stage and is not yet considered to be &quot;ready for use&quot;.</td></tr><tr><td style=\"white-space:nowrap\">active<a name=\"definition-status-active\"> </a></td><td>Active</td><td>The definition is considered ready for use.</td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"definition-status-withdrawn\"> </a></td><td>Withdrawn</td><td>The definition should no longer be used.</td></tr><tr><td style=\"white-space:nowrap\">unknown<a name=\"definition-status-unknown\"> </a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/definition-status"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1070" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "DefinitionStatus"] ; # 
+  fhir:title [ fhir:v "DefinitionStatus"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2020-04-09T21:10:28+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes identifying the lifecycle stage of a definition."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/definition-status"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/definition-status>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "draft" ] ;
+     fhir:display [ fhir:v "Draft" ] ;
+     fhir:definition [ fhir:v "The definition is in the design stage and is not yet considered to be \"ready for use\"." ]
+  ] [
+     fhir:code [ fhir:v "active" ] ;
+     fhir:display [ fhir:v "Active" ] ;
+     fhir:definition [ fhir:v "The definition is considered ready for use." ]
+  ] [
+     fhir:code [ fhir:v "withdrawn" ] ;
+     fhir:display [ fhir:v "Withdrawn" ] ;
+     fhir:definition [ fhir:v "The definition should no longer be used." ]
+  ] [
+     fhir:code [ fhir:v "unknown" ] ;
+     fhir:display [ fhir:v "Unknown" ] ;
+     fhir:definition [ fhir:v "The authoring/source system does not know which of the status values currently applies for this resource.  Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply,  but the authoring/source system does not know which." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

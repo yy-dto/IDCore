@@ -1,0 +1,176 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-EntityDeterminer> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-EntityDeterminer"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A property that indicates the status of the concept. One of active, experimental, deprecated, or retired.</td></tr><tr><td>deprecationDate</td><td>http://hl7.org/fhir/concept-properties#deprecationDate</td><td>dateTime</td><td>The date at which a concept was deprecated. Concepts that are deprecated but not inactive can still be used, but their use is discouraged.</td></tr><tr><td>Name:Class</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#rim-Class</td><td>code</td><td>The formal name for the class clone under this code</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-EntityDeterminer</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deprecated</b></td><td><b>internalId</b></td><td><b>status</b></td><td><b>deprecationDate</b></td><td><b>Name:Class</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">INSTANCE<a name=\"v3-EntityDeterminer-INSTANCE\"> </a></td><td>specific</td><td><div><p>**Description:**A determiner that specifies that the Entity object represents a particular physical thing (as opposed to a universal, kind, or class of physical thing).</p>\n<p><strong>Discussion:</strong> It does not matter whether an INSTANCE still exists as a whole at the point in time (or process) when we mention it, for example, a drug product lot is an INSTANCE even though it has been portioned out for retail purpose.</p>\n</div></td><td/><td>10881</td><td>active</td><td/><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  GROUP<a name=\"v3-EntityDeterminer-GROUP\"> </a></td><td>specific group</td><td><div><p>A determiner that specifies that the Entity object represents a particular collection of physical things (as opposed to a universal, kind, or class of physical thing). While the collection may resolve to having only a single individual (or even no individuals), the potential should exist for it to cover multiple individuals.</p>\n</div></td><td/><td>23599</td><td>active</td><td/><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">KIND<a name=\"v3-EntityDeterminer-KIND\"> </a></td><td>described</td><td><div><p>**Description:**A determiner that specifies that the Entity object represents a universal, kind or class of physical thing (as opposed to a particular thing).</p>\n</div></td><td/><td>10879</td><td>active</td><td/><td>Kind</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  GROUPKIND<a name=\"v3-EntityDeterminer-GROUPKIND\"> </a></td><td>described group</td><td><div><p>A determiner that specifies that the Entity object represents a universal, kind or class of collections physical things. While the collection may resolve to having only a single individual (or even no individuals), the potential should exist for it to cover multiple individuals.</p>\n</div></td><td/><td>23600</td><td>active</td><td/><td/></tr><tr style=\"background-color: #ffeeee\"><td>2</td><td style=\"white-space:nowrap\">  QUANTIFIED_KIND<a name=\"v3-EntityDeterminer-QUANTIFIED_KIND\"> </a></td><td>described quantified</td><td><div><p>The described quantified determiner indicates that the given Entity is taken as a general description of a specific amount of a thing. For example, QUANTIFIED_KIND of syringe (quantity = 3,) stands for exactly three syringes.</p>\n</div></td><td>Deprecated</td><td>10880</td><td>deprecated</td><td>2008-11-14</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-EntityDeterminer"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.30" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EntityDeterminer"] ; # 
+  fhir:title [ fhir:v "EntityDeterminer"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "EntityDeterminer in natural language grammar is the class of words that comprises articles, demonstrative pronouns, and quantifiers. In the RIM, determiner is a structural code in the Entity class to distinguish whether any given Entity object stands for some, any one, or a specific thing."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "A property that indicates the status of the concept. One of active, experimental, deprecated, or retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "deprecationDate" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#deprecationDate"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The date at which a concept was deprecated. Concepts that are deprecated but not inactive can still be used, but their use is discouraged." ] ;
+     fhir:type [ fhir:v "dateTime" ]
+  ] [
+     fhir:code [ fhir:v "Name:Class" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#rim-Class"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The formal name for the class clone under this code" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "INSTANCE" ] ;
+     fhir:display [ fhir:v "specific" ] ;
+     fhir:definition [ fhir:v "**Description:**A determiner that specifies that the Entity object represents a particular physical thing (as opposed to a universal, kind, or class of physical thing).\r\n\r\n**Discussion:** It does not matter whether an INSTANCE still exists as a whole at the point in time (or process) when we mention it, for example, a drug product lot is an INSTANCE even though it has been portioned out for retail purpose." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10881" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "GROUP" ] ;
+       fhir:display [ fhir:v "specific group" ] ;
+       fhir:definition [ fhir:v "A determiner that specifies that the Entity object represents a particular collection of physical things (as opposed to a universal, kind, or class of physical thing). While the collection may resolve to having only a single individual (or even no individuals), the potential should exist for it to cover multiple individuals." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "23599" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "KIND" ] ;
+     fhir:display [ fhir:v "described" ] ;
+     fhir:definition [ fhir:v "**Description:**A determiner that specifies that the Entity object represents a universal, kind or class of physical thing (as opposed to a particular thing)." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10879" ]
+     ] [
+       fhir:code [ fhir:v "Name:Class" ] ;
+       fhir:value [ fhir:v "Kind" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "GROUPKIND" ] ;
+       fhir:display [ fhir:v "described group" ] ;
+       fhir:definition [ fhir:v "A determiner that specifies that the Entity object represents a universal, kind or class of collections physical things. While the collection may resolve to having only a single individual (or even no individuals), the potential should exist for it to cover multiple individuals." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "23600" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "QUANTIFIED_KIND" ] ;
+       fhir:display [ fhir:v "described quantified" ] ;
+       fhir:definition [ fhir:v "The described quantified determiner indicates that the given Entity is taken as a general description of a specific amount of a thing. For example, QUANTIFIED\\_KIND of syringe (quantity = 3,) stands for exactly three syringes." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "deprecated" ]
+       ] [
+         fhir:code [ fhir:v "deprecationDate" ] ;
+         fhir:value [ fhir:v "2008-11-14"^^xsd:date ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10880" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

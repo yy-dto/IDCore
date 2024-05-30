@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="v3-PeriodicIntervalOfTimeAbbreviation"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-PeriodicIntervalOfTimeAbbreviation</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/v3-PeriodicIntervalOfTimeAbbreviation"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.5.1021"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="PeriodicIntervalOfTimeAbbreviation"/>
+  <title value="PeriodicIntervalOfTimeAbbreviation"/>
+  <status value="retired"/>
+  <experimental value="false"/>
+  <date value="2017-07-31"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="**** MISSING DESCRIPTION ****"/>
+  <caseSensitive value="true"/>
+  <content value="not-present"/>
+</CodeSystem>

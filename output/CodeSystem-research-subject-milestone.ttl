@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/research-subject-milestone> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "research-subject-milestone"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/research-subject-milestone</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">SignedUp<a name=\"research-subject-milestone-SignedUp\"> </a></td><td>Signed up</td><td>A person has expressed an interest in being in a study but has not yet been through any assessment or consent processes.</td></tr><tr><td style=\"white-space:nowrap\">Screened<a name=\"research-subject-milestone-Screened\"> </a></td><td>Screened</td><td>A potential subject has been screened for suitability.</td></tr><tr><td style=\"white-space:nowrap\">Randomized<a name=\"research-subject-milestone-Randomized\"> </a></td><td>Randomized</td><td>A subject has been allocated to an arm of the study.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "brr" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/research-subject-milestone"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.0" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ResearchSubjectMilestone"] ; # 
+  fhir:title [ fhir:v "ResearchSubjectMilestone"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2020-04-09T21:10:28+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Indicates the progression of a study subject through the study milestones."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/research-subject-milestone"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/research-subject-milestone>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "SignedUp" ] ;
+     fhir:display [ fhir:v "Signed up" ] ;
+     fhir:definition [ fhir:v "A person has expressed an interest in being in a study but has not yet been through any assessment or consent processes." ]
+  ] [
+     fhir:code [ fhir:v "Screened" ] ;
+     fhir:display [ fhir:v "Screened" ] ;
+     fhir:definition [ fhir:v "A potential subject has been screened for suitability." ]
+  ] [
+     fhir:code [ fhir:v "Randomized" ] ;
+     fhir:display [ fhir:v "Randomized" ] ;
+     fhir:definition [ fhir:v "A subject has been allocated to an arm of the study." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

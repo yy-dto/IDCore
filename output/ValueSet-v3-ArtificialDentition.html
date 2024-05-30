@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ArtificialDentition - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.512"}
+    h3,h4,h5,h6{--heading-prefix:"5.512"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ArtificialDentition</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ArtificialDentition.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ArtificialDentition.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ArtificialDentition.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: ArtificialDentition
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/ValueSet/v3-ArtificialDentition<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ArtificialDentition"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ArtificialDentition|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2014-03-26
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ArtificialDentition</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.1.11.19345
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Artificial dentition, artificial subsitutes for the natural dentition</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li>Included into <a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-Dentition.html">Dentition</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p>This value set includes codes based on the following rules:</p>
+<ul><li>Include codes from<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html"><code>http://terminology.hl7.org/CodeSystem/v3-Dentition</code></a> where concept  is-a <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-ArtificialDentition">ArtificialDentition</a></li></ul><p>This value set excludes codes based on the following rules:</p>
+<ul><li>Exclude these codes as defined in <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html"><code>http://terminology.hl7.org/CodeSystem/v3-Dentition</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-ArtificialDentition">ArtificialDentition</a></td><td style="color: #cccccc">Artificial dentition</td><td>Artificial dentition, artificial subsitutes for the natural dentition</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html">codesystem Dentition v3.0.0 (CodeSystem)</a></p><p>This value set contains 184 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID10a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID10a">TID10a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>10a</td><td><div><p>Maxillary left lateral incisor abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID10i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID10i">TID10i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>10i</td><td><div><p>Maxillary left lateral incisor implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID10p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID10p">TID10p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>10p</td><td><div><p>Maxillary left lateral incisor prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID10pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID10pd">TID10pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>10pd</td><td><div><p>Maxillary left lateral incisor distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID10pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID10pm">TID10pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>10pm</td><td><div><p>Maxillary left lateral incisor mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID11a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID11a">TID11a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>11a</td><td><div><p>Maxillary left canine abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID11i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID11i">TID11i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>11i</td><td><div><p>Maxillary left canine implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID11p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID11p">TID11p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>11p</td><td><div><p>Maxillary left canine prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID11pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID11pd">TID11pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>11pd</td><td><div><p>Maxillary left canine distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID11pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID11pm">TID11pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>11pm</td><td><div><p>Maxillary left canine mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID12a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID12a">TID12a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>12a</td><td><div><p>Maxillary left first premolar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID12i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID12i">TID12i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>12i</td><td><div><p>Maxillary left first premolar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID12p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID12p">TID12p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>12p</td><td><div><p>Maxillary left first premolar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID12pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID12pd">TID12pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>12pd</td><td><div><p>Maxillary left first premolar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID12pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID12pm">TID12pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>12pm</td><td><div><p>Maxillary left first premolar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID13a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID13a">TID13a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>13a</td><td><div><p>Maxillary left second premolar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID13i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID13i">TID13i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>13i</td><td><div><p>Maxillary left second premolar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID13p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID13p">TID13p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>13p</td><td><div><p>Maxillary left second premolar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID13pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID13pd">TID13pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>13pd</td><td><div><p>Maxillary left second premolar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID13pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID13pm">TID13pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>13pm</td><td><div><p>Maxillary left second premolar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID14a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID14a">TID14a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>14a</td><td><div><p>Maxillary left first molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID14i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID14i">TID14i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>14i</td><td><div><p>Maxillary left first molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID14p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID14p">TID14p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>14p</td><td><div><p>Maxillary left first molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID14pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID14pd">TID14pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>14pd</td><td><div><p>Maxillary left first molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID14pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID14pm">TID14pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>14pm</td><td><div><p>Maxillary left first molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID15a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID15a">TID15a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>15a</td><td><div><p>Maxillary left second molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID15i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID15i">TID15i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>15i</td><td><div><p>Maxillary left second molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID15p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID15p">TID15p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>15p</td><td><div><p>Maxillary left second molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID15pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID15pd">TID15pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>15pd</td><td><div><p>Maxillary left second molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID15pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID15pm">TID15pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>15pm</td><td><div><p>Maxillary left second molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID16a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID16a">TID16a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>16a</td><td><div><p>Maxillary left third molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID16i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID16i">TID16i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>16i</td><td><div><p>Maxillary left third molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID16p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID16p">TID16p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>16p</td><td><div><p>Maxillary left third molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID16pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID16pd">TID16pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>16pd</td><td><div><p>Maxillary left third molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID16pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID16pm">TID16pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>16pm</td><td><div><p>Maxillary left third molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID17a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID17a">TID17a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>17a</td><td><div><p>Mandibular left third molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID17ad"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID17ad">TID17ad</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>17ad</td><td><div><p>Mandibular left third molar abutment distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID17am"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID17am">TID17am</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>17am</td><td><div><p>Mandibular left third molar abutment mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID17i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID17i">TID17i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>17i</td><td><div><p>Mandibular left third molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID17id"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID17id">TID17id</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>17id</td><td><div><p>Mandibular left third molar implant distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID17im"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID17im">TID17im</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>17im</td><td><div><p>Mandibular left third molar implant mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID17p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID17p">TID17p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>17p</td><td><div><p>Mandibular left third molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID17pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID17pd">TID17pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>17pd</td><td><div><p>Mandibular left third molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID17pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID17pm">TID17pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>17pm</td><td><div><p>Mandibular left third molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID18a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID18a">TID18a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>18a</td><td><div><p>Mandibular left second molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID18ad"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID18ad">TID18ad</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>18ad</td><td><div><p>Mandibular left second molar abutment distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID18am"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID18am">TID18am</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>18am</td><td><div><p>Mandibular left second molar abutment mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID18i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID18i">TID18i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>18i</td><td><div><p>Mandibular left second molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID18id"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID18id">TID18id</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>18id</td><td><div><p>Mandibular left second molar implant distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID18im"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID18im">TID18im</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>18im</td><td><div><p>Mandibular left second molar implant mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID18p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID18p">TID18p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>18p</td><td><div><p>Mandibular left second molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID18pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID18pd">TID18pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>18pd</td><td><div><p>Mandibular left second molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID18pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID18pm">TID18pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>18pm</td><td><div><p>Mandibular left second molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID19a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID19a">TID19a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>19a</td><td><div><p>Mandibular left first molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID19ad"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID19ad">TID19ad</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>19ad</td><td><div><p>Mandibular left first molar abutment distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID19am"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID19am">TID19am</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>19am</td><td><div><p>Mandibular left first molar abutment mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID19i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID19i">TID19i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>19i</td><td><div><p>Mandibular left first molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID19id"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID19id">TID19id</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>19id</td><td><div><p>Mandibular left first molar implant distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID19im"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID19im">TID19im</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>19im</td><td><div><p>Mandibular left first molar implant mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID19p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID19p">TID19p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>19p</td><td><div><p>Mandibular left first molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID19pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID19pd">TID19pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>19pd</td><td><div><p>Mandibular left first molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID19pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID19pm">TID19pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>19pm</td><td><div><p>Mandibular left first molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID1a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID1a">TID1a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>1a</td><td><div><p>Maxillary right third molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID1i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID1i">TID1i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>1i</td><td><div><p>Maxillary right third molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID1p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID1p">TID1p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>1p</td><td><div><p>Maxillary right third molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID1pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID1pd">TID1pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>1pd</td><td><div><p>Maxillary right third molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID1pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID1pm">TID1pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>1pm</td><td><div><p>Maxillary right third molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID20a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID20a">TID20a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>20a</td><td><div><p>Mandibular left second premolar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID20i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID20i">TID20i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>20i</td><td><div><p>Mandibular left second premolar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID20p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID20p">TID20p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>20p</td><td><div><p>Mandibular left second premolar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID20pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID20pd">TID20pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>20pd</td><td><div><p>Mandibular left second premolar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID20pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID20pm">TID20pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>20pm</td><td><div><p>Mandibular left second premolar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID21a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID21a">TID21a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>21a</td><td><div><p>Mandibular left first premolar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID21i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID21i">TID21i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>21i</td><td><div><p>Mandibular left first premolar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID21p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID21p">TID21p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>21p</td><td><div><p>Mandibular left first premolar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID21pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID21pd">TID21pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>21pd</td><td><div><p>Mandibular left first premolar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID21pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID21pm">TID21pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>21pm</td><td><div><p>Mandibular left first premolar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID22a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID22a">TID22a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>22a</td><td><div><p>Mandibular left canine abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID22i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID22i">TID22i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>22i</td><td><div><p>Mandibular left canine implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID22p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID22p">TID22p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>22p</td><td><div><p>Mandibular left canine prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID22pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID22pd">TID22pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>22pd</td><td><div><p>Mandibular left canine distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID22pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID22pm">TID22pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>22pm</td><td><div><p>Mandibular left canine mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID23a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID23a">TID23a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>23a</td><td><div><p>Mandibular left lateral incisor abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID23i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID23i">TID23i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>23i</td><td><div><p>Mandibular left lateral incisor implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID23p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID23p">TID23p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>23p</td><td><div><p>Mandibular left lateral incisor prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID23pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID23pd">TID23pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>23pd</td><td><div><p>Mandibular left lateral incisor distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID23pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID23pm">TID23pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>23pm</td><td><div><p>Mandibular left lateral incisor mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID24a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID24a">TID24a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>24a</td><td><div><p>Mandibular left central incisor abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID24i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID24i">TID24i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>24i</td><td><div><p>Mandibular left central incisor implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID24p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID24p">TID24p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>24p</td><td><div><p>Mandibular left central incisor prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID24pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID24pd">TID24pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>24pd</td><td><div><p>Mandibular left central incisor distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID24pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID24pm">TID24pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>24pm</td><td><div><p>Mandibular left central incisor mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID25a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID25a">TID25a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>25a</td><td><div><p>Mandibular right central incisor abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID25i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID25i">TID25i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>25i</td><td><div><p>Mandibular right central incisor implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID25p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID25p">TID25p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>25p</td><td><div><p>Mandibular right central incisor prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID25pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID25pd">TID25pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>25pd</td><td><div><p>Mandibular right central incisor distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID25pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID25pm">TID25pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>25pm</td><td><div><p>Mandibular right central incisor mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID26a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID26a">TID26a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>26a</td><td><div><p>Mandibular right lateral incisor abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID26i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID26i">TID26i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>26i</td><td><div><p>Mandibular right lateral incisor implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID26p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID26p">TID26p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>26p</td><td><div><p>Mandibular right lateral incisor prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID26pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID26pd">TID26pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>26pd</td><td><div><p>Mandibular right lateral incisor distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID26pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID26pm">TID26pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>26pm</td><td><div><p>Mandibular right lateral incisor mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID27a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID27a">TID27a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>27a</td><td><div><p>Mandibular right canine abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID27i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID27i">TID27i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>27i</td><td><div><p>Mandibular right canine implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID27p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID27p">TID27p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>27p</td><td><div><p>Mandibular right canine prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID27pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID27pd">TID27pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>27pd</td><td><div><p>Mandibular right canine distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID27pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID27pm">TID27pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>27pm</td><td><div><p>Mandibular right canine mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID28a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID28a">TID28a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>28a</td><td><div><p>Mandibular right first premolar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID28i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID28i">TID28i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>28i</td><td><div><p>Mandibular right first premolar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID28p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID28p">TID28p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>28p</td><td><div><p>Mandibular right first premolar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID28pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID28pd">TID28pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>28pd</td><td><div><p>Mandibular right first premolar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID28pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID28pm">TID28pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>28pm</td><td><div><p>Mandibular right first premolar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID29a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID29a">TID29a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>29a</td><td><div><p>Mandibular right second premolar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID29i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID29i">TID29i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>29i</td><td><div><p>Mandibular right second premolar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID29p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID29p">TID29p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>29p</td><td><div><p>Mandibular right second premolar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID29pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID29pd">TID29pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>29pd</td><td><div><p>Mandibular right second premolar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID29pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID29pm">TID29pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>29pm</td><td><div><p>Mandibular right second premolar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID2a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID2a">TID2a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>2a</td><td><div><p>Maxillary right second molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID2i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID2i">TID2i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>2i</td><td><div><p>Maxillary right second molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID2p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID2p">TID2p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>2p</td><td><div><p>Maxillary right second molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID2pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID2pd">TID2pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>2pd</td><td><div><p>Maxillary right second molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID2pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID2pm">TID2pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>2pm</td><td><div><p>Maxillary right second molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID30a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID30a">TID30a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>30a</td><td><div><p>Mandibular right first molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID30ad"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID30ad">TID30ad</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>30ad</td><td><div><p>Mandibular right first molar abutment distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID30am"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID30am">TID30am</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>30am</td><td><div><p>Mandibular right first molar abutment mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID30i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID30i">TID30i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>30i</td><td><div><p>Mandibular right first molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID30id"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID30id">TID30id</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>30id</td><td><div><p>Mandibular right first molar implant distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID30im"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID30im">TID30im</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>30im</td><td><div><p>Mandibular right first molar implant mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID30p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID30p">TID30p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>30p</td><td><div><p>Mandibular right first molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID30pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID30pd">TID30pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>30pd</td><td><div><p>Mandibular right first molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID30pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID30pm">TID30pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>30pm</td><td><div><p>Mandibular right first molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID31a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID31a">TID31a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>31a</td><td><div><p>Mandibular right second molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID31ad"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID31ad">TID31ad</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>31ad</td><td><div><p>Mandibular right second molar abutment distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID31am"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID31am">TID31am</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>31am</td><td><div><p>Mandibular right second molar abutment mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID31i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID31i">TID31i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>31i</td><td><div><p>Mandibular right second molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID31id"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID31id">TID31id</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>31id</td><td><div><p>Mandibular right second molar implant distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID31im"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID31im">TID31im</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>31im</td><td><div><p>Mandibular right second molar implant mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID31p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID31p">TID31p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>31p</td><td><div><p>Mandibular right second molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID31pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID31pd">TID31pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>31pd</td><td><div><p>Mandibular right second molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID31pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID31pm">TID31pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>31pm</td><td><div><p>Mandibular right second molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID32a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID32a">TID32a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>32a</td><td><div><p>Mandibular right third molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID32ad"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID32ad">TID32ad</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>32ad</td><td><div><p>Mandibular right third molar abutment distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID32am"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID32am">TID32am</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>32am</td><td><div><p>Mandibular right third molar abutment mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID32i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID32i">TID32i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>32i</td><td><div><p>Mandibular right third molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID32id"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID32id">TID32id</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>32id</td><td><div><p>Mandibular right third molar implant distal hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID32im"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID32im">TID32im</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>32im</td><td><div><p>Mandibular right third molar implant mesial hemisection</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID32p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID32p">TID32p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>32p</td><td><div><p>Mandibular right third molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID32pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID32pd">TID32pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>32pd</td><td><div><p>Mandibular right third molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID32pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID32pm">TID32pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>32pm</td><td><div><p>Mandibular right third molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID3a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID3a">TID3a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>3a</td><td><div><p>Maxillary right first molar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID3i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID3i">TID3i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>3i</td><td><div><p>Maxillary right first molar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID3p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID3p">TID3p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>3p</td><td><div><p>Maxillary right first molar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID3pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID3pd">TID3pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>3pd</td><td><div><p>Maxillary right first molar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID3pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID3pm">TID3pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>3pm</td><td><div><p>Maxillary right first molar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID4a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID4a">TID4a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>4a</td><td><div><p>Maxillary right second premolar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID4i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID4i">TID4i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>4i</td><td><div><p>Maxillary right second premolar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID4p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID4p">TID4p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>4p</td><td><div><p>Maxillary right second premolar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID4pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID4pd">TID4pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>4pd</td><td><div><p>Maxillary right second premolar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID4pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID4pm">TID4pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>4pm</td><td><div><p>Maxillary right second premolar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID5a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID5a">TID5a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>5a</td><td><div><p>Maxillary right first premolar abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID5i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID5i">TID5i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>5i</td><td><div><p>Maxillary right first premolar implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID5p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID5p">TID5p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>5p</td><td><div><p>Maxillary right first premolar prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID5pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID5pd">TID5pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>5pd</td><td><div><p>Maxillary right first premolar distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID5pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID5pm">TID5pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>5pm</td><td><div><p>Maxillary right first premolar mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID6a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID6a">TID6a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>6a</td><td><div><p>Maxillary right canine abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID6i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID6i">TID6i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>6i</td><td><div><p>Maxillary right canine implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID6p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID6p">TID6p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>6p</td><td><div><p>Maxillary right canine prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID6pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID6pd">TID6pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>6pd</td><td><div><p>Maxillary right canine distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID6pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID6pm">TID6pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>6pm</td><td><div><p>Maxillary right canine mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID7a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID7a">TID7a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>7a</td><td><div><p>Maxillary right lateral incisor abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID7i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID7i">TID7i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>7i</td><td><div><p>Maxillary right lateral incisor implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID7p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID7p">TID7p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>7p</td><td><div><p>Maxillary right lateral incisor prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID7pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID7pd">TID7pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>7pd</td><td><div><p>Maxillary right lateral incisor distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID7pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID7pm">TID7pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>7pm</td><td><div><p>Maxillary right lateral incisor mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID8a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID8a">TID8a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>8a</td><td><div><p>Maxillary right central incisor abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID8i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID8i">TID8i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>8i</td><td><div><p>Maxillary right central incisor implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID8p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID8p">TID8p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>8p</td><td><div><p>Maxillary right central incisor prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID8pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID8pd">TID8pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>8pd</td><td><div><p>Maxillary right central incisor distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID8pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID8pm">TID8pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>8pm</td><td><div><p>Maxillary right central incisor mesial prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID9a"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID9a">TID9a</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>9a</td><td><div><p>Maxillary left central incisor abutment</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID9i"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID9i">TID9i</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>9i</td><td><div><p>Maxillary left central incisor implant</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID9p"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID9p">TID9p</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>9p</td><td><div><p>Maxillary left central incisor prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID9pd"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID9pd">TID9pd</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>9pd</td><td><div><p>Maxillary left central incisor distal prosthesis</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Dentition-TID9pm"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Dentition.html#v3-Dentition-TID9pm">TID9pm</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Dentition</td><td>9pm</td><td><div><p>Maxillary left central incisor mesial prosthesis</p>
+</div></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

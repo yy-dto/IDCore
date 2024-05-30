@@ -1,0 +1,88 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/dicom-audit-lifecycle> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "dicom-audit-lifecycle"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"dicom-audit-lifecycle-1\"> </a></td><td>Origination / Creation</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"dicom-audit-lifecycle-2\"> </a></td><td>Import / Copy</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"dicom-audit-lifecycle-3\"> </a></td><td>Amendment</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"dicom-audit-lifecycle-4\"> </a></td><td>Verification</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"dicom-audit-lifecycle-5\"> </a></td><td>Translation</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"dicom-audit-lifecycle-6\"> </a></td><td>Access / Use</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"dicom-audit-lifecycle-7\"> </a></td><td>De-identification</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"dicom-audit-lifecycle-8\"> </a></td><td>Aggregation / summarization / derivation</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"dicom-audit-lifecycle-9\"> </a></td><td>Report</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"dicom-audit-lifecycle-10\"> </a></td><td>Export</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"dicom-audit-lifecycle-11\"> </a></td><td>Disclosure</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"dicom-audit-lifecycle-12\"> </a></td><td>Receipt of disclosure</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"dicom-audit-lifecycle-13\"> </a></td><td>Archiving</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"dicom-audit-lifecycle-14\"> </a></td><td>Logical deletion</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"dicom-audit-lifecycle-15\"> </a></td><td>Permanent erasure / Physical destruction</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/dicom-audit-lifecycle"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "DicomAuditMessageRecordLifecycleEvents"] ; # 
+  fhir:title [ fhir:v "DICOM Audit Message Record Lifecycle Events"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-09T14:36:19-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Attached is vocabulary for the record lifecycle events, as per DICOM Audit Message, "] ; # 
+  fhir:copyright [ fhir:v "These codes are excerpted from Digital Imaging and Communications in Medicine (DICOM) Standard, Part 16: Content Mapping Resource, Copyright © 2011 by the National Electrical Manufacturers Association."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "Origination / Creation" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "Import / Copy" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "Amendment" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "Verification" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "Translation" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "Access / Use" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "De-identification" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "Aggregation / summarization / derivation" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "Report" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "Export" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "Disclosure" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "Receipt of disclosure" ]
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "Archiving" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "Logical deletion" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "Permanent erasure / Physical destruction" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

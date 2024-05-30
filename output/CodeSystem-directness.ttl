@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/directness> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "directness"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/directness</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">low<a name=\"directness-low\"> </a></td><td>Low quality match between observed and intended variable</td><td>Low matching quality between observed and intended variable, so very serious concern      for indirectness in evidence interpretation.</td></tr><tr><td style=\"white-space:nowrap\">moderate<a name=\"directness-moderate\"> </a></td><td>Moderate quality match between observed and intended variable</td><td>Moderate matching quality between observed and intended variable, so serious concern      for indirectness in evidence interpretation.</td></tr><tr><td style=\"white-space:nowrap\">high<a name=\"directness-high\"> </a></td><td>High quality match between observed and intended variable</td><td>High matching quality between observed and intended variable, so little concern      for indirectness in evidence interpretation.</td></tr><tr><td style=\"white-space:nowrap\">exact<a name=\"directness-exact\"> </a></td><td>Exact match between observed and intended variable</td><td>Exact matching quality between observed and intended variable, so no concern for      indirectness in evidence interpretation.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cds" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "0"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/directness"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1459" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EvidenceDirectness"] ; # 
+  fhir:title [ fhir:v "EvidenceDirectness"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2020-04-09T21:10:28+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The quality of how direct the match is."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/directness"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/directness>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "low" ] ;
+     fhir:display [ fhir:v "Low quality match between observed and intended variable" ] ;
+     fhir:definition [ fhir:v "Low matching quality between observed and intended variable, so very serious concern      for indirectness in evidence interpretation." ]
+  ] [
+     fhir:code [ fhir:v "moderate" ] ;
+     fhir:display [ fhir:v "Moderate quality match between observed and intended variable" ] ;
+     fhir:definition [ fhir:v "Moderate matching quality between observed and intended variable, so serious concern      for indirectness in evidence interpretation." ]
+  ] [
+     fhir:code [ fhir:v "high" ] ;
+     fhir:display [ fhir:v "High quality match between observed and intended variable" ] ;
+     fhir:definition [ fhir:v "High matching quality between observed and intended variable, so little concern      for indirectness in evidence interpretation." ]
+  ] [
+     fhir:code [ fhir:v "exact" ] ;
+     fhir:display [ fhir:v "Exact match between observed and intended variable" ] ;
+     fhir:definition [ fhir:v "Exact matching quality between observed and intended variable, so no concern for      indirectness in evidence interpretation." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="MEDRT"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://va.gov/terminology/medrt</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="http://va.gov/terminology/medrt"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.6.345"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MEDRT"/>
+  <title value="Medication Reference Terminology (MED-RT)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-02-16T00:00:00-00:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="Medication Reference Terminology (MED-RT) is the evolutionary successor to the Veterans Health Administration National Drug File – Reference Terminology (VHA NDF-RT). Both are formal ontology representations of medication terminology, pharmacologic classifications, and asserted authoritative relationships between them.&#xD;&#xA;&#xD;&#xA;The MED-RT code system includes relationships between MED-RT concepts and concepts in external code systems, as well as relationships between concepts only in the external code systems. The external code systems that MED-RT references include RxNorm, MeSH, and SNOMED CT US Edition.&#xD;&#xA;&#xD;&#xA;MED-RT can be downloaded from https://evs.nci.nih.gov/ftp1/MED-RT/ &#xD;&#xA;&#xD;&#xA;For more information, please see https://ncit.nci.nih.gov/ncitbrowser/pages/vocabulary.jsf?dictionary=MED-RT"/>
+  <copyright value="MED-RT has no copyright acknowledgement required. However, users must adhere to the UMLS license."/>
+  <caseSensitive value="true"/>
+  <content value="not-present"/>
+</CodeSystem>

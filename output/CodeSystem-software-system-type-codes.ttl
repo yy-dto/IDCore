@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/software-system-type-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "software-system-type-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/software-system-type-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">authoring<a name=\"software-system-type-codes-authoring\"> </a></td><td>Authoring</td><td>A knowledge authoring environment</td></tr><tr><td style=\"white-space:nowrap\">testing<a name=\"software-system-type-codes-testing\"> </a></td><td>Testing</td><td>A testing environment</td></tr><tr><td style=\"white-space:nowrap\">tooling<a name=\"software-system-type-codes-tooling\"> </a></td><td>Tooling</td><td>Tooling software</td></tr><tr><td style=\"white-space:nowrap\">evaluation<a name=\"software-system-type-codes-evaluation\"> </a></td><td>Evaluation</td><td>A knowledge evaluation environment</td></tr><tr><td style=\"white-space:nowrap\">reporting<a name=\"software-system-type-codes-reporting\"> </a></td><td>Reporting</td><td>A quality reporting system</td></tr><tr><td style=\"white-space:nowrap\">data-capture<a name=\"software-system-type-codes-data-capture\"> </a></td><td>Data Capture</td><td>A system that performs data-capture as part of a reporting pipeline</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cds" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "trial-use" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/software-system-type-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SoftwareSystemTypeCodes"] ; # 
+  fhir:title [ fhir:v "Software System Type Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-16"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Types of software systems that support knowledge artifact authoring and evaluation (authoring, testing, tooling, evaluation)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/software-system-type"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/software-system-type>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "authoring" ] ;
+     fhir:display [ fhir:v "Authoring" ] ;
+     fhir:definition [ fhir:v "A knowledge authoring environment" ]
+  ] [
+     fhir:code [ fhir:v "testing" ] ;
+     fhir:display [ fhir:v "Testing" ] ;
+     fhir:definition [ fhir:v "A testing environment" ]
+  ] [
+     fhir:code [ fhir:v "tooling" ] ;
+     fhir:display [ fhir:v "Tooling" ] ;
+     fhir:definition [ fhir:v "Tooling software" ]
+  ] [
+     fhir:code [ fhir:v "evaluation" ] ;
+     fhir:display [ fhir:v "Evaluation" ] ;
+     fhir:definition [ fhir:v "A knowledge evaluation environment" ]
+  ] [
+     fhir:code [ fhir:v "reporting" ] ;
+     fhir:display [ fhir:v "Reporting" ] ;
+     fhir:definition [ fhir:v "A quality reporting system" ]
+  ] [
+     fhir:code [ fhir:v "data-capture" ] ;
+     fhir:display [ fhir:v "Data Capture" ] ;
+     fhir:definition [ fhir:v "A system that performs data-capture as part of a reporting pipeline" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>PrivacyMark - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.1376"}
+    h3,h4,h5,h6{--heading-prefix:"5.1376"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>PrivacyMark</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-v3-PrivacyMark.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-PrivacyMark.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-PrivacyMark.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: PrivacyMark
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/ValueSet/v3-PrivacyMark<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-PrivacyMark"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-PrivacyMark|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2019-03-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">PrivacyMark</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.1.11.20578
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Codes used for human readable marks indicating, e.g., the level of confidentiality protection, an authorized compartment, the integrity, or the handling instruction required by applicable policy. Such markings must be displayed as directed by applicable policy on electronically rendered information content and any electronic transmittal envelope or container; or on hardcopy information and any physical transmittal envelope or container.</p>
+
+<p>Purpose: Supports the selection of the entire PrivacyMark value set with head code for e.g., rules engine policy set purposes.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include codes from<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a> where concept  is-a <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-PrivacyMark">PrivacyMark</a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html">codesystem ActCode v9.0.0 (CodeSystem)</a></p><p>This value set contains 21 concepts</p><table class="codes"><tr><td><b>Level</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-PrivacyMark"> </a>1</td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-PrivacyMark" title="This code is not selectable (''Abstract'')"><i>PrivacyMark</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>privacy mark</td><td><div><p>An abstract code for human readable marks indicating, e.g., the level of confidentiality protection, an authorized compartment, the integrity, or the handling instruction required by applicable policy. Such markings must be displayed as directed by applicable policy on electronically rendered information content and any electronic transmittal envelope or container; or on hardcopy information and any physical transmittal envelope or container.</p>
+<p>Examples of protocols for marking displays on electronic or hardcopy rendered content: Across the top or &quot;banner&quot; of each page ; as a watermark placed diagonally cross each page; at the bottom or &quot;footer&quot; of each page; and may be displayed at the beginning of any portion within the content that required markings different than other portions of the content. The banner or top of page marking typically acts as a &quot;high watermark&quot; by including all of the markings made on any marked portions within the entirety of the information content.</p>
+<p><em>Usage Note:</em> A &quot;Privacy Mark&quot; is a Security Control Observation (SECCONOBS) named tag set as specified by the HL7 Privacy and Security Classification System (HCS). A Privacy Mark Named Tag Set is valued with a Privacy Mark leaf code &quot;tag&quot;, which is a member of the Security Control Observation Value (_SecurityObservationValue) tag set. Related Security Control Observation named tag sets are Purpose of Use, Obligation Policy, and Refrain Policy, each with their own Security Control Observation Value tag sets.</p>
+<p>Foundational standard definitions: ISO 22600-3 Section A.3.4.3 - If present, the privacy-mark is not used for access control. The content of the privacy-mark may be defined by the security policy in force (identified by the security-policy-identifier) which may define a list of values to be used. Alternately, the value may be determined by the originator of the security-label. IEEE Security Glossary Compendium 93- CESG Memorandum No.1 Issue 1.2 Oct 1992 - Human readable word or phrase acting as an indicator of all or part of the security constraints that apply to a document so marked. NOTE: A machine readable representation of a marking.</p>
+<p><em>Comment:</em> While policies requiring creators, processors, custodians, senders or recipients apply, enforce, and persist applicable Privacy Marks may be dictated by a jurisdiction, organization or personal privacy, security, or integrity policy, those required to comply may be governed under different policies, so compliance may need to be enforced through trust contracts. For example, information content marked with GDPR related policies may require adherence by processors or recipients outside of the European Union. For this reason, this code system is likely to evolve with the inclusion of multiple policy domains needing to communicate encoded policies in a standard, interoperable manner.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-ControlledUnclassifiedInformation"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ControlledUnclassifiedInformation" title="This code is not selectable (''Abstract'')"><i>ControlledUnclassifiedInformation</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>ControlledUnclassifiedInformation</td><td><div><p>Information the US Government creates or possesses, or that an entity creates or possesses for or on behalf of the Government, that a law, regulation, or Government-wide policy requires or permits an agency to handle using safeguarding or dissemination controls. However, CUI does not include classified information (see definition above) or information a non-executive branch entity possesses and maintains in its own systems that did not come from, or was not created or possessed by or for, an executive branch agency or an entity acting for an agency. Law, regulation, or Government-wide policy may require or permit safeguarding or dissemination controls in three ways: Requiring or permitting agencies to control or protect the information but providing no specific controls, which makes the information CUI Basic; requiring or permitting agencies to control or protect the information and providing specific controls for doing so, which makes the information CUI Specified; or requiring or permitting agencies to control the information and specifying only some of those controls, which makes the information CUI Specified, but with CUI Basic controls where the authority does not specify. Based on CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html .</p>
+<p><em>Usage Note:</em> Mandatory control marking, which must be displayed on the top portion of each rendered or printed page containing controlled information. Should be displayed at the bottom of each rendered or printed page containing controlled information. Must be displayed on each portion of controlled information at the portion level if portions are uncontrolled unclassified information. Based on CUI Marking Handbook https://www.archives.gov/files/cui/20161206-cui-marking-handbook-v1-1.pdf. For definitions of key terms see CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CONTROLLED"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CONTROLLED">CONTROLLED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>CONTROLLED</td><td><div><p>A displayed mark, required to be rendered as &quot;CONTROLLED&quot;, indicating that the electronic or hardcopy information is protected at the level of the subset of CUI for which the authorizing law, regulation, or Government-wide policy does not set out specific handling or dissemination controls. Agencies handle CUI Basic according to the uniform set of controls set forth in this part and the CUI Registry. CUI Basic differs from CUI Specified (see definition for CUI Specified), and CUI Basic controls apply whenever CUI Specified ones do not cover the involved CUI. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Mandatory control marking, which must be displayed on the top portion of each rendered or printed page containing controlled information. Should be displayed at the bottom of each rendered or printed page containing controlled information. Must be displayed on each portion of controlled information at the portion level if portions are uncontrolled unclassified information. Based on CUI Marking Handbook https://www.archives.gov/files/cui/20161206-cui-marking-handbook-v1-1.pdf.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUI"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUI">CUI</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>CUI</td><td><div><p>A displayed mark, required to be rendered as &quot;CUI&quot;, indicating that the electronic or hardcopy information is protected at the level of the subset of CUI for which the authorizing law, regulation, or Government-wide policy does not set out specific handling or dissemination controls. Agencies handle CUI Basic according to the uniform set of controls set forth in this part and the CUI Registry. CUI Basic differs from CUI Specified (see definition for CUI Specified), and CUI Basic controls apply whenever CUI Specified ones do not cover the involved CUI. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Mandatory control marking, which must be displayed on the top portion of each rendered or printed page containing controlled information. Should be displayed at the bottom of each rendered or printed page containing controlled information. Must be displayed on each portion of controlled information at the portion level if portions are uncontrolled unclassified information. Based on CUI Marking Handbook https://www.archives.gov/files/cui/20161206-cui-marking-handbook-v1-1.pdf.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUIHLTH"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUIHLTH">CUIHLTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>CUI//HLTH</td><td><div><p>A displayed mark, required to be rendered as &quot;CUI//HLTH&quot;, indicating that the electronic or hardcopy information is protected at the level of the subset of CUI for which the authorizing law, regulation, or Government-wide policy does not set out specific handling or dissemination controls. Agencies handle CUI Basic according to the uniform set of controls set forth in this part and the CUI Registry. CUI Basic differs from CUI Specified (see definition for CUI Specified), and CUI Basic controls apply whenever CUI Specified ones do not cover the involved CUI. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Examples of healthcare regulation governing CUI Basic marking include HIPAA Unique Identifier provisions 42 USC 1320d-2 note(b) https://www.govinfo.gov/content/pkg/USCODE-2016-title42/pdf/USCODE-2016-title42-chap7-subchapXI-partC-sec1320d-2.pdf; Title 38 Section 7332 https://www.govinfo.gov/content/pkg/USCODE-2016-title38/pdf/USCODE-2016-title38-partV-chap73-subchapIII-sec7332.pdf; and several sections of 42 CFR Part 2.related to consent and confidentiality, e.g., https://www.govinfo.gov/content/pkg/CFR-2017-title42-vol1/pdf/CFR-2017-title42-vol1-sec2-12.pdf</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUIHLTHP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUIHLTHP">CUIHLTHP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>(CUI//HLTH)</td><td><div><p>A displayed mark, required to be rendered as &quot;(CUI//HLTH)&quot;, indicating that a portion of an electronic or hardcopy information is protected at the level of the subset of CUI for which the authorizing law, regulation, or Government-wide policy does not set out specific handling or dissemination controls. Agencies handle CUI Basic according to the uniform set of controls set forth in this part and the CUI Registry. CUI Basic differs from CUI Specified (see definition for CUI Specified), and CUI Basic controls apply whenever CUI Specified ones do not cover the involved CUI. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Examples of healthcare regulation governing CUI Basic marking include HIPAA Unique Identifier provisions 42 USC 1320d-2 note(b) https://www.govinfo.gov/content/pkg/USCODE-2016-title42/pdf/USCODE-2016-title42-chap7-subchapXI-partC-sec1320d-2.pdf; Title 38 Section 7332 https://www.govinfo.gov/content/pkg/USCODE-2016-title38/pdf/USCODE-2016-title38-partV-chap73-subchapIII-sec7332.pdf; and several sections of 42 CFR Part 2.related to consent and confidentiality, e.g., https://www.govinfo.gov/content/pkg/CFR-2017-title42-vol1/pdf/CFR-2017-title42-vol1-sec2-12.pdf</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUIP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUIP">CUIP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>(CUI)</td><td><div><p>A displayed mark, required to be rendered as &quot;(CUI)&quot;, indicating that a portion of an electronic or hardcopy information is protected at the level of the subset of CUI for which the authorizing law, regulation, or Government-wide policy does not set out specific handling or dissemination controls. Agencies handle CUI Basic according to the uniform set of controls set forth in this part and the CUI Registry. CUI Basic differs from CUI Specified (see definition for CUI Specified), and CUI Basic controls apply whenever CUI Specified ones do not cover the involved CUI. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Examples of healthcare regulation governing CUI Basic marking include HIPAA Unique Identifier provisions 42 USC 1320d-2 note(b) https://www.govinfo.gov/content/pkg/USCODE-2016-title42/pdf/USCODE-2016-title42-chap7-subchapXI-partC-sec1320d-2.pdf; Title 38 Section 7332 https://www.govinfo.gov/content/pkg/USCODE-2016-title38/pdf/USCODE-2016-title38-partV-chap73-subchapIII-sec7332.pdf; and several sections of 42 CFR Part 2.related to consent and confidentiality, e.g., https://www.govinfo.gov/content/pkg/CFR-2017-title42-vol1/pdf/CFR-2017-title42-vol1-sec2-12.pdf</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUIPRVCY"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUIPRVCY">CUIPRVCY</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>CUI//PRVCY</td><td><div><p>A displayed mark, required to be rendered as &quot;CUI//PRVCY&quot;, indicating that the electronic or hardcopy controlled unclassified basic privacy information is private and must be protected at the level of the subset of CUI for which the authorizing law, regulation, or Government-wide policy does not set out specific handling or dissemination controls. Agencies handle CUI Basic according to the uniform set of controls set forth in this part and the CUI Registry. CUI Basic differs from CUI Specified (see definition for CUI Specified), and CUI Basic controls apply whenever CUI Specified ones do not cover the involved CUI. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Examples of privacy regulation governing CUI Basic marking include 20 CFR 401.100 related to SSA disclosure of personal, program, and non-program information. https://www.govinfo.gov/content/pkg/CFR-2017-title20-vol2/pdf/CFR-2017-title20-vol2-sec401-100.pdf.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUIPRVCYP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUIPRVCYP">CUIPRVCYP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>(CUI//PRVCY)</td><td><div><p>A displayed mark, required to be rendered as &quot;(CUI//PRVCY)&quot;, indicating that a portion of an electronic or hardcopy information is protected at the level of the subset of CUI for which the authorizing law, regulation, or Government-wide policy does not set out specific handling or dissemination controls. Agencies handle CUI Basic according to the uniform set of controls set forth in this part and the CUI Registry. CUI Basic differs from CUI Specified (see definition for CUI Specified), and CUI Basic controls apply whenever CUI Specified ones do not cover the involved CUI. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Examples of privacy regulation governing CUI Basic marking include 20 CFR 401.100 related to SSA disclosure of personal, program, and non-program information. https://www.govinfo.gov/content/pkg/CFR-2017-title20-vol2/pdf/CFR-2017-title20-vol2-sec401-100.pdf.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUISP-HLTH"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUISP-HLTH">CUISP-HLTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>CUI//SP-HLTH</td><td><div><p>A displayed mark, required to be rendered as &quot;CUI//SP-HLTH&quot;, indicating that the electronic or hardcopy information is protected at the level of the subset of CUI in which the authorizing law, regulation, or Government-wide policy contains specific handling controls that it requires or permits agencies to use that differ from those for CUI Basic. The CUI Registry indicates which laws, regulations, and Government-wide policies include such specific requirements. CUI Specified controls may be more stringent than, or may simply differ from, those required by CUI Basic; the distinction is that the underlying authority spells out the controls for CUI Specified information and does not for CUI Basic information. CUI Basic controls apply to those aspects of CUI Specified where the authorizing laws, regulations, and Government-wide policies do not provide specific guidance. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Examples of healthcare regulation governing CUI Specified marking include HIPAA Transaction and Code Sets and references the Congressional requirement that HHS promulgate Privacy, and Security rules https://www.govinfo.gov/content/pkg/USCODE-2016-title42/pdf/USCODE-2016-title42-chap7-subchapXI-partC-sec1320d-2.pdf.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUISP-HLTHP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUISP-HLTHP">CUISP-HLTHP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>(CUI//SP-HLTH)</td><td><div><p>A displayed mark, required to be rendered as &quot;(CUI//SP-HLTH)&quot;, indicating that a portion of an electronic or hardcopy information is protected at the level of the subset of CUI for which the authorizing law, regulation, or Government-wide policy does not set out specific handling or dissemination controls. Agencies handle CUI Basic according to the uniform set of controls set forth in this part and the CUI Registry. CUI Basic differs from CUI Specified (see definition for CUI Specified), and CUI Basic controls apply whenever CUI Specified ones do not cover the involved CUI. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Examples of healthcare regulation governing CUI Specified marking include HIPAA Transaction and Code Sets and references the Congressional requirement that HHS promulgate Privacy, and Security rules https://www.govinfo.gov/content/pkg/USCODE-2016-title42/pdf/USCODE-2016-title42-chap7-subchapXI-partC-sec1320d-2.pdf</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUISP-PRVCY"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUISP-PRVCY">CUISP-PRVCY</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>CUI//SP-PRVCY</td><td><div><p>A displayed mark, required to be rendered as &quot;CUI//SP-PRVCY&quot;, indicating that the electronic or hardcopy information is protected at the level of the subset of CUI for which the authorizing law, regulation, or Government-wide policy does not set out specific handling or dissemination controls. Agencies handle CUI Basic according to the uniform set of controls set forth in this part and the CUI Registry. CUI Basic differs from CUI Specified (see definition for CUI Specified), and CUI Basic controls apply whenever CUI Specified ones do not cover the involved CUI. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Examples of privacy regulation governing CUI Specified marking is OMB M-17-12ï‡? This Memorandum sets forth the policy for Federal agencies to prepare for and respond to a breach of personally identifiable information (PII). It includes a framework for assessing and mitigating the risk of harm to individuals potentially affected by a breach, as well as guidance on whether and how to provide notification and services to those individuals. https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-12_0.pdf.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUISP-PRVCYP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUISP-PRVCYP">CUISP-PRVCYP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>(CUI//SP-PRVCY)</td><td><div><p>A displayed mark, required to be rendered as &quot;(CUI//SP-PRVCY)&quot;, indicating that a portion of an electronic or hardcopy information is protected at the level of the subset of CUI for which the authorizing law, regulation, or Government-wide policy does not set out specific handling or dissemination controls. Agencies handle CUI Basic according to the uniform set of controls set forth in this part and the CUI Registry. CUI Basic differs from CUI Specified (see definition for CUI Specified), and CUI Basic controls apply whenever CUI Specified ones do not cover the involved CUI. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html.</p>
+<p><em>Usage Note:</em> Examples of privacy regulation governing CUI Specified marking is OMB M-17-12ï‡? This Memorandum sets forth the policy for Federal agencies to prepare for and respond to a breach of personally identifiable information (PII). It includes a framework for assessing and mitigating the risk of harm to individuals potentially affected by a breach, as well as guidance on whether and how to provide notification and services to those individuals. https://www.whitehouse.gov/sites/whitehouse.gov/files/omb/memoranda/2017/m-17-12_0.pdf.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-UUI"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-UUI">UUI</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>(U)</td><td><div><p>A displayed mark, required to be rendered as &quot;(U)&quot;, indicating that a portion of an electronic or hardcopy information is neither Executive Order 13556 nor classified information authorities cover as protected. Although this information is not controlled or classified, agencies must still handle it in accordance with Federal Information Security Modernization Act (FISMA) requirements. From CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html</p>
+<p><em>Usage Note:</em> Regulatory Source: 32 CFR §  2002.20 Marking. Federal Register Page 63344 63344 (ii) Authorized holders permitted to designate CUI must portion mark both CUI and uncontrolled unclassified portions.</p>
+<p>CUI Marking Handbook https://www.archives.gov/files/cui/20161206-cui-marking-handbook-v1-1.pdf</p>
+<p>CUI Portion Marking: Portion marking of CUI is optional in a fully unclassified document, but is permitted and encouraged to facilitate information sharing and proper handling of the information. Agency heads may approve the required use of CUI Portion marking on all CUI generated within their agency. As such, users should consult their agency CUI policy when creating CUI documents. When CUI Portion Markings are used and a portion does not contain CUI a &quot;U&quot; is placed in parentheses to indicate that the portion contains Uncontrolled Unclassified Information. (Page 14)</p>
+<p>CUI Portion Markings are placed at the beginning of the portion to which they apply and must be used throughout the entire document. They are presented in all capital letters and separated as indicated in this handbook and the CUI Registry. The presence of EVEN ONE item of CUI in a document requires CUI marking of that document. Because of this, CUI Portion Markings can be of great assistance in determining if a document contains CUI and therefore must be marked as such. Remember: When portion markings are used and any portion does not contain CUI, a &quot;(U)&quot; is placed in front of that portion to indicate that it contains Uncontrolled - or non-CUI - Unclassified Information. (Page 15)</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-SecurityLabelMark"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-SecurityLabelMark" title="This code is not selectable (''Abstract'')"><i>SecurityLabelMark</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>Security Label Mark</td><td><div><p>An abstract code for displayed Security Label tags.</p>
+<p><em>Usage Note:</em> These marks may be based on any of the HL7 Security Labeling related codes from various code systems and values sets, which are organized according to the HL7 Privacy and Security Classification System into HL7 Security Observation Type Named Tag Sets and valued with codes associated with the HL7 Security Observation Value Tag Set Names.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-ConfidentialMark"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ConfidentialMark">ConfidentialMark</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>confidential mark</td><td><div><p>A displayed mark rendered as &quot;Confidential&quot;, which indicates to end users that the electronic or hardcopy information they are viewing must be protected at a level of protection as dictated by applicable policy.</p>
+<p>May be used to indicate proprietary or classified information that is, for example, business, intelligence, or project related, e.g., secret ingredients in a therapeutic substance; location of disaster health facilities and providers, or the name of a manufacturer or project contractor. Example use cases include a display to alert authorized business system users that they are viewing additionally protected proprietary and business confidential information deemed proprietary under an applicable jurisdictional or organizational policy.</p>
+<p><em>Usage Note:</em></p>
+<p>The ConfidentialMark (confidential mark) description is based on the HL7 Confidentiality Concept Domain: Types of privacy metadata classifying an IT resource (data, information object, service, or system capability) according to its level of sensitivity, which is based on an analysis of applicable privacy policies and the risk of financial, reputational, or other harm to an individual or entity that could result if made available or disclosed to unauthorized individuals, entities, or processes.</p>
+<p><em>Usage Note:</em> Confidentiality codes may be used in security labels and privacy markings to classify IT resources based on sensitivity to indicate the obligation of a custodian or receiver to ensure that the protected resource is not made available or disclosed to individuals, entities, or processes (security principals) unless authorized per applicable policies. Confidentiality codes may also be used in the clearances of initiators requesting access to protected resources.</p>
+<p>Map: Definition aligns with ISO 7498-2:1989 - Confidentiality is the property that information is not made available or disclosed to unauthorized individuals, entities, or processes.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-COPYMark"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-COPYMark">COPYMark</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>copy of original mark</td><td><div><p>A displayed mark indicating that the electronic or hardcopy information is a copy of an authoritative source for the information. The copy is not considered authoritative but is a duplicate of the authoritative content.</p>
+<p><em>Usage Note:</em> Applicable policy will dictate how the COPY mark will be displayed. Typical renderings include the marking appearing at the top or &quot;banner&quot; of electronic or hardcopy pages, or as watermarks set diagonally across each page.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-DeliverToAddresseeOnlyMark"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-DeliverToAddresseeOnlyMark">DeliverToAddresseeOnlyMark</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>deliver only to addressee mark</td><td><div><p>A displayed mark on an electronic transmission or physical container such as an electronic transmittal wrapper, batch file, message header, or a physical envelop or package indicating that the contents, whether electronic or hardcopy information, must only be delivered to the authorized recipient(s) named in the address.</p>
+<p><em>Usage Note:</em> Required by US 32 CRF Part 2002 for container storing or transmitting CUI.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-RedisclosureProhibitionMark"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-RedisclosureProhibitionMark">RedisclosureProhibitionMark</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>prohibition against redisclosure mark</td><td><div><p>A displayed mark rendered to end users as a prescribed text warning that the electronic or hardcopy information shall not be further disclosed without consent of the subject of the information. For example, in order to warn a recipient of 42 CFR Part 2 information of the redisclosure restrictions, the rule mandates that end users receive a written prohibition against redisclosure unless authorized by patient consent or otherwise permitted by Part 2. See 42 CFR §  2.32 Prohibition on re-disclosure. (a)Notice to accompany disclosure. Each disclosure made with the patient's written consent must be accompanied by one of the following written statements: (1) This information has been disclosed to you from records protected by federal confidentiality rules ( 42 CFR part 2). The federal rules prohibit you from making any further disclosure of information in this record that identifies a patient as having or having had a substance use disorder either directly, by reference to publicly available information, or through verification of such identification by another person unless further disclosure is expressly permitted by the written consent of the individual whose information is being disclosed or as otherwise permitted by 42 CFR part 2. A general authorization for the release of medical or other information is NOT sufficient for this purpose (see §  2.31). The federal rules restrict any use of the information to investigate or prosecute with regard to a crime any patient with a substance use disorder, except as provided at § §  2.12(c)(5) and 2.65; or (2) 42 CFR part 2 prohibits unauthorized disclosure of these records. https://www.law.cornell.edu/cfr/text/42/2.32</p>
+<p><em>Usage Note:</em> Example of marking requirement from SAMHSA FAQ Response to question 13:</p>
+<p>Would a logon or splash page notification on an HIO's portal that contains the Part 2 notice prohibiting redisclosure be sufficient to meet Part 2's requirement that disclosures made with patient consent be accompanied by such a statement?</p>
+<p>No. Part 2 requires each disclosure made with written patient consent to be accompanied by a written statement that the information disclosed is protected by federal law and that the recipient cannot make any further disclosure of it unless permitted by the regulations (42 CFR §  2.32). A logon page is the page where a user logs onto a computer system; a splash page is an introductory page to a web site. A logon or splash page notification on a HIO's portal including the statement as required by §  2.32 would not be sufficient notification regarding prohibitions on redisclosure since it would not accompany a specific disclosure. The notification must be tied to the Part 2 information being disclosed in order to ensure that the recipient of that information knows that specific information is protected by Part 2 and cannot be redisclosed except as authorized by the express written consent of the person to whom it pertains or as otherwise permitted by Part 2. https://www.samhsa.gov/about-us/who-we-are/laws-regulations/confidentiality-regulations-faqs</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-RestrictedConfidentialityMark"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-RestrictedConfidentialityMark">RestrictedConfidentialityMark</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>restricted confidentiality mark</td><td><div><p>A displayed mark rendered to end users as &quot;Restricted Confidentiality&quot;, which indicates that the electronic or hardcopy information they are viewing, must be protected at a restricted level of confidentiality protection as defined by HL7 Confidentiality code &quot;R&quot; (restricted). Examples: Includes information that is additionally protected such as sensitive conditions mental health, HIV, substance abuse, domestic violence, child abuse, genetic disease, and reproductive health; or sensitive demographic information such as a patient's standing as an employee or a celebrity. Use cases include a display to alert authorized EHR users that they are viewing additionally protected health information deemed sensitive by an applicable jurisdictional, organizational, or personal privacy policy.</p>
+<p><em>Usage Note:</em> The definition is based on HL7 Confidentiality code &quot;R&quot; (restricted), which is described as:</p>
+<p>Privacy metadata indicating highly sensitive, potentially stigmatizing information, which presents a high risk to the information subject if disclosed without authorization. May be pre-empted by jurisdictional law, e.g., for public health reporting or emergency treatment. Foundational definitions of Confidentiality: From HL7 Confidentiality Concept Domain: Types of privacy metadata classifying an IT resource (data, information object, service, or system capability) according to its level of sensitivity, which is based on an analysis of applicable privacy policies and the risk of financial, reputational, or other harm to an individual or entity that could result if made available or disclosed to unauthorized individuals, entities, or processes.</p>
+<p>Usage Note from HL7 Confidentiality code &quot;R&quot;: Confidentiality codes may be used in security labels and privacy markings to classify IT resources based on sensitivity to indicate the obligation of a custodian or receiver to ensure that the protected resource is not made available or disclosed to individuals, entities, or processes (security principals) unless authorized per applicable policies. Confidentiality codes may also be used in the clearances of initiators requesting access to protected resources.</p>
+<p>This metadata indicates that the receiver may be obligated to comply with applicable, prevailing (default) jurisdictional privacy law or disclosure authorization.</p>
+<p>Map: Definition aligns with ISO 7498-2:1989 - Confidentiality is the property that information is not made available or disclosed to unauthorized individuals, entities, or processes. Map: Partial Map to ISO 13606-4 Sensitivity Level (3) Clinical Care: Default for normal clinical care access (i.e. most clinical staff directly caring for the patient should be able to access nearly all of the EHR). Maps to normal confidentiality for treatment information but not to ancillary care, payment and operations.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-DRAFTMark"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-DRAFTMark">DRAFTMark</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>Draft Mark</td><td><div><p>A displayed mark indicating that the electronic or hard-copy information is still under development and is not yet considered to be ready for normal use.</p>
+</div></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

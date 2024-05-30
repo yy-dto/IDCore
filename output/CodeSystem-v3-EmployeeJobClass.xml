@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="v3-EmployeeJobClass"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state.  Normally is not populated unless the state is retired..</td></tr><tr><td>notSelectable</td><td>http://hl7.org/fhir/concept-properties#notSelectable</td><td>boolean</td><td>Indicates that the code is abstract - only intended to be used as a selector for other concepts</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-EmployeeJobClass</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td><td><b>Not Selectable</b></td></tr><tr><td style="white-space:nowrap">FT<a name="v3-EmployeeJobClass-FT"> </a></td><td>full-time</td><td><div><p>Employment in which the employee is expected to work at least a standard work week (defined by the US Bureau of Labor Statistics as 35-44 hours per week)</p>
+</div></td><td>16037</td><td>active</td><td/></tr><tr><td style="white-space:nowrap">PT<a name="v3-EmployeeJobClass-PT"> </a></td><td>part-time</td><td><div><p>Employment in which the employee is expected to work less than a standard work week (defined by the US Bureau of Labor Statistics as 35-44 hours per week)</p>
+</div></td><td>16038</td><td>active</td><td/></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap">_EmployeeOccupationCode<a name="v3-EmployeeJobClass-_EmployeeOccupationCode"> </a></td><td>EmployeeOccupationCode</td><td><div><p>Industry and/or jurisdictional classification system for kind-of-work performed by an employee.</p>
+<p>Occupation codes are intended primarily as work descriptions that are suitable for a multitude of public uses e.g., job matching, employment counseling, occupational and career guidance, and labor market information services.</p>
+</div></td><td>21490</td><td>retired</td><td>true</td></tr></table></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/v3-EmployeeJobClass"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.5.1059"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="EmployeeJobClass"/>
+  <title value="EmployeeJobClass"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-03-20"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="A code qualifying the employment in various ways, such as, full-time vs. part time, etc."/>
+  <copyright value="This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"/>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="is-a"/>
+  <content value="complete"/>
+  <property>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry">
+      <valueCode value="antisymmetric"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity">
+      <valueCode value="transitive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity">
+      <valueCode value="irreflexive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind">
+      <valueCode value="Specializes"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName">
+      <valueString value="Generalizes"/>
+    </extension>
+    <code value="Specializes"/>
+    <description value="The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry">
+      <valueCode value="antisymmetric"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity">
+      <valueCode value="transitive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity">
+      <valueCode value="irreflexive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind">
+      <valueCode value="Generalizes"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName">
+      <valueString value="Specializes"/>
+    </extension>
+    <code value="Generalizes"/>
+    <description value="Inverse of Specializes.  Only included as a derived relationship."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <code value="internalId"/>
+    <uri value="http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"/>
+    <description value="The internal identifier for the concept in the HL7 Access database repository."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="Designation of a concept's state.  Normally is not populated unless the state is retired.."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="notSelectable"/>
+    <uri value="http://hl7.org/fhir/concept-properties#notSelectable"/>
+    <description value="Indicates that the code is abstract - only intended to be used as a selector for other concepts"/>
+    <type value="boolean"/>
+  </property>
+  <concept>
+    <code value="FT"/>
+    <display value="full-time"/>
+    <definition value="Employment in which the employee is expected to work at least a standard work week (defined by the US Bureau of Labor Statistics as 35-44 hours per week)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="16037"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="PT"/>
+    <display value="part-time"/>
+    <definition value="Employment in which the employee is expected to work less than a standard work week (defined by the US Bureau of Labor Statistics as 35-44 hours per week)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="16038"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="_EmployeeOccupationCode"/>
+    <display value="EmployeeOccupationCode"/>
+    <definition value="Industry and/or jurisdictional classification system for kind-of-work performed by an employee.&#xD;&#xA;&#xD;&#xA;Occupation codes are intended primarily as work descriptions that are suitable for a multitude of public uses e.g., job matching, employment counseling, occupational and career guidance, and labor market information services."/>
+    <property>
+      <code value="notSelectable"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="retired"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="21490"/>
+    </property>
+  </concept>
+</CodeSystem>

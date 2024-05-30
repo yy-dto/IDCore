@@ -1,0 +1,268 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-HtmlLinkType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-HtmlLinkType"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-HtmlLinkType</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td style=\"white-space:nowrap\">alternate<a name=\"v3-HtmlLinkType-alternate\"> </a></td><td>Designates substitute versions for the document in which the link occurs. When used together with the lang attribute, it implies a translated version of the document. When used together with the media attribute, it implies a version designed for a different medium (or media).</td><td>11018</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">appendix<a name=\"v3-HtmlLinkType-appendix\"> </a></td><td>Refers to a document serving as an appendix in a collection of documents.</td><td>11030</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">bookmark<a name=\"v3-HtmlLinkType-bookmark\"> </a></td><td>Refers to a bookmark. A bookmark is a link to a key entry point within an extended document. The title attribute may be used, for example, to label the bookmark. Note that several bookmarks may be defined in each document.</td><td>11032</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">chapter<a name=\"v3-HtmlLinkType-chapter\"> </a></td><td>Refers to a document serving as a chapter in a collection of documents.</td><td>11027</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">contents<a name=\"v3-HtmlLinkType-contents\"> </a></td><td>Refers to a document serving as a table of contents. Some user agents also support the synonym ToC (from &quot;Table of Contents&quot;).</td><td>11023</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">copyright<a name=\"v3-HtmlLinkType-copyright\"> </a></td><td>Refers to a copyright statement for the current document.</td><td>11026</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">glossary<a name=\"v3-HtmlLinkType-glossary\"> </a></td><td>Refers to a document providing a glossary of terms that pertain to the current document.</td><td>11025</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">help<a name=\"v3-HtmlLinkType-help\"> </a></td><td>Refers to a document offering help (more information, links to other sources of information, etc.).</td><td>11031</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">index<a name=\"v3-HtmlLinkType-index\"> </a></td><td>Refers to a document providing an index for the current document.</td><td>11024</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">next<a name=\"v3-HtmlLinkType-next\"> </a></td><td>Refers to the next document in a linear sequence of documents. User agents may choose to preload the &quot;next&quot; document, to reduce the perceived load time.</td><td>11021</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">prev<a name=\"v3-HtmlLinkType-prev\"> </a></td><td>Refers to the previous document in an ordered series of documents. Some user agents also support the synonym &quot;Previous&quot;.</td><td>11022</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">section<a name=\"v3-HtmlLinkType-section\"> </a></td><td>Refers to a document serving as a section in a collection of documents.</td><td>11028</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">start<a name=\"v3-HtmlLinkType-start\"> </a></td><td>Refers to the first document in a collection of documents. This link type tells search engines which document is considered by the author to be the starting point of the collection.</td><td>11020</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">stylesheet<a name=\"v3-HtmlLinkType-stylesheet\"> </a></td><td>Refers to an external style sheet. See the section on external style sheets for details. This is used together with the link type &quot;Alternate&quot; for user-selectable alternate style sheets.</td><td>11019</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">subsection<a name=\"v3-HtmlLinkType-subsection\"> </a></td><td>Refers to a document serving as a subsection in a collection of documents.</td><td>11029</td><td>active</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-HtmlLinkType"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.58" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HtmlLinkType"] ; # 
+  fhir:title [ fhir:v "HtmlLinkType"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "HtmlLinkType values are drawn from HTML 4.0 and describe the relationship between the current document and the anchor that is the target of the link"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "alternate" ] ;
+     fhir:display [ fhir:v "alternate" ] ;
+     fhir:definition [ fhir:v "Designates substitute versions for the document in which the link occurs. When used together with the lang attribute, it implies a translated version of the document. When used together with the media attribute, it implies a version designed for a different medium (or media)." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11018" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "appendix" ] ;
+     fhir:display [ fhir:v "appendix" ] ;
+     fhir:definition [ fhir:v "Refers to a document serving as an appendix in a collection of documents." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11030" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "bookmark" ] ;
+     fhir:display [ fhir:v "bookmark" ] ;
+     fhir:definition [ fhir:v "Refers to a bookmark. A bookmark is a link to a key entry point within an extended document. The title attribute may be used, for example, to label the bookmark. Note that several bookmarks may be defined in each document." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11032" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "chapter" ] ;
+     fhir:display [ fhir:v "chapter" ] ;
+     fhir:definition [ fhir:v "Refers to a document serving as a chapter in a collection of documents." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11027" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "contents" ] ;
+     fhir:display [ fhir:v "contents" ] ;
+     fhir:definition [ fhir:v "Refers to a document serving as a table of contents. Some user agents also support the synonym ToC (from \"Table of Contents\")." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11023" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "copyright" ] ;
+     fhir:display [ fhir:v "copyright" ] ;
+     fhir:definition [ fhir:v "Refers to a copyright statement for the current document." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11026" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "glossary" ] ;
+     fhir:display [ fhir:v "glossary" ] ;
+     fhir:definition [ fhir:v "Refers to a document providing a glossary of terms that pertain to the current document." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11025" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "help" ] ;
+     fhir:display [ fhir:v "help" ] ;
+     fhir:definition [ fhir:v "Refers to a document offering help (more information, links to other sources of information, etc.)." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11031" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "index" ] ;
+     fhir:display [ fhir:v "index" ] ;
+     fhir:definition [ fhir:v "Refers to a document providing an index for the current document." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11024" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "next" ] ;
+     fhir:display [ fhir:v "next" ] ;
+     fhir:definition [ fhir:v "Refers to the next document in a linear sequence of documents. User agents may choose to preload the \"next\" document, to reduce the perceived load time." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11021" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "prev" ] ;
+     fhir:display [ fhir:v "prev" ] ;
+     fhir:definition [ fhir:v "Refers to the previous document in an ordered series of documents. Some user agents also support the synonym \"Previous\"." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11022" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "section" ] ;
+     fhir:display [ fhir:v "section" ] ;
+     fhir:definition [ fhir:v "Refers to a document serving as a section in a collection of documents." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11028" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "start" ] ;
+     fhir:display [ fhir:v "start" ] ;
+     fhir:definition [ fhir:v "Refers to the first document in a collection of documents. This link type tells search engines which document is considered by the author to be the starting point of the collection." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11020" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "stylesheet" ] ;
+     fhir:display [ fhir:v "stylesheet" ] ;
+     fhir:definition [ fhir:v "Refers to an external style sheet. See the section on external style sheets for details. This is used together with the link type \"Alternate\" for user-selectable alternate style sheets." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11019" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "subsection" ] ;
+     fhir:display [ fhir:v "subsection" ] ;
+     fhir:definition [ fhir:v "Refers to a document serving as a subsection in a collection of documents." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "11029" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

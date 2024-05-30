@@ -11,7 +11,7 @@
   fhir:language [ fhir:v "Indonesia"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/Codesystem/kpsp</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">COM000001<a name=\"KemkesKPSP-COM000001\"> </a></td><td>Form Kematian Ibu</td></tr><tr><td style=\"white-space:nowrap\">COM000002<a name=\"KemkesKPSP-COM000002\"> </a></td><td>Form Lahir Mati</td></tr><tr><td style=\"white-space:nowrap\">COM000003<a name=\"KemkesKPSP-COM000003\"> </a></td><td>Form Lahir Hidup</td></tr><tr><td style=\"white-space:nowrap\">COM000004<a name=\"KemkesKPSP-COM000004\"> </a></td><td>Kuesioner Kasus ILI</td></tr><tr><td style=\"white-space:nowrap\">COM000005<a name=\"KemkesKPSP-COM000005\"> </a></td><td>Kuesioner Kasus SARI</td></tr><tr><td style=\"white-space:nowrap\">COM000006<a name=\"KemkesKPSP-COM000006\"> </a></td><td>Form Skrining PTM</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/Codesystem/kpsp</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">COM000001<a name=\"KemkesKPSP-COM000001\"> </a></td><td>Form Kematian Ibu</td></tr><tr><td style=\"white-space:nowrap\">COM000002<a name=\"KemkesKPSP-COM000002\"> </a></td><td>Form Lahir Mati</td></tr><tr><td style=\"white-space:nowrap\">COM000003<a name=\"KemkesKPSP-COM000003\"> </a></td><td>Form Lahir Hidup</td></tr><tr><td style=\"white-space:nowrap\">COM000004<a name=\"KemkesKPSP-COM000004\"> </a></td><td>Kuesioner Kasus ILI</td></tr><tr><td style=\"white-space:nowrap\">COM000005<a name=\"KemkesKPSP-COM000005\"> </a></td><td>Kuesioner Kasus SARI</td></tr><tr><td style=\"white-space:nowrap\">COM000006<a name=\"KemkesKPSP-COM000006\"> </a></td><td>Form Skrining PTM</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://terminology.kemkes.go.id/Codesystem/kpsp"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -20,12 +20,15 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2024-02-05T00:00:00.000Z"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Thomas Chaidir" ] ;
+     fhir:name [ fhir:v "SatuSehat" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Terminology Kemkes kpsp CodeSystem"] ; # 

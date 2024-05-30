@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/OpenEligibilityTaxonomy> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OpenEligibilityTaxonomy"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/OpenEligibilityTaxonomy</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/OpenEligibilityTaxonomy"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "OpenEligibilityTaxonomy"] ; # 
+  fhir:title [ fhir:v "Open Eligibility Taxonomy"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-21T00:00:00-00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "\"The Open Eligibility Project is a collaborative for a series of standards for the human services sector. The Open Eligibility taxonomy is a simple way to categorize human services and human situations. With these common categories, we, as service providers, navigators, and people in need, can find human services quickly and easily.\"\r\n\r\n\"The Open Eligibility taxonomy consists of two important concepts: Human Services and Human Situations.\r\n\r\nHuman Services are services offered by government or charitable organizations, and include things such as housing, food pantries or counseling services.\r\n\r\nHuman Situations are ways of describing attributes of a person that could help them find programs they are looking for, including examples like: veterans, physical disability or seniors.\"\r\n\r\nFor more information, see [https://support.findhelp.com/hc/en-us/articles/4404055283227-The-Open-Eligibility-Project](https://support.findhelp.com/hc/en-us/articles/4404055283227-The-Open-Eligibility-Project)"] ; # 
+  fhir:copyright [ fhir:v "\"The Open Eligibility Human Services Taxonomy by Aunt Bertha, Inc. is licensed under a Creative Commons Attribution-ShareAlike 3.0 Unported License.\""] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] . # 
+
+# -------------------------------------------------------------------------------------
+

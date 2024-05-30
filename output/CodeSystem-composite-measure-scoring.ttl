@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/composite-measure-scoring> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "composite-measure-scoring"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/composite-measure-scoring</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">opportunity<a name=\"composite-measure-scoring-opportunity\"> </a></td><td>Opportunity</td><td>Opportunity scoring combines the scores from component measures by combining the numerators and denominators for each component.</td></tr><tr><td style=\"white-space:nowrap\">all-or-nothing<a name=\"composite-measure-scoring-all-or-nothing\"> </a></td><td>All-or-nothing</td><td>All-or-nothing scoring includes an individual in the numerator of the composite measure if they are in the numerators of all of the component measures in which they are in the denominator.</td></tr><tr><td style=\"white-space:nowrap\">linear<a name=\"composite-measure-scoring-linear\"> </a></td><td>Linear</td><td>Linear scoring gives an individual a score based on the number of numerators in which they appear.</td></tr><tr><td style=\"white-space:nowrap\">weighted<a name=\"composite-measure-scoring-weighted\"> </a></td><td>Weighted</td><td>Weighted scoring gives an individual a score based on a weighted factor for each component numerator in which they appear.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cqi" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/composite-measure-scoring"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1235" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CompositeMeasureScoring"] ; # 
+  fhir:title [ fhir:v "CompositeMeasureScoring"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2020-04-09T21:10:28+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The composite scoring method of the measure."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/composite-measure-scoring"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/composite-measure-scoring>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "opportunity" ] ;
+     fhir:display [ fhir:v "Opportunity" ] ;
+     fhir:definition [ fhir:v "Opportunity scoring combines the scores from component measures by combining the numerators and denominators for each component." ]
+  ] [
+     fhir:code [ fhir:v "all-or-nothing" ] ;
+     fhir:display [ fhir:v "All-or-nothing" ] ;
+     fhir:definition [ fhir:v "All-or-nothing scoring includes an individual in the numerator of the composite measure if they are in the numerators of all of the component measures in which they are in the denominator." ]
+  ] [
+     fhir:code [ fhir:v "linear" ] ;
+     fhir:display [ fhir:v "Linear" ] ;
+     fhir:definition [ fhir:v "Linear scoring gives an individual a score based on the number of numerators in which they appear." ]
+  ] [
+     fhir:code [ fhir:v "weighted" ] ;
+     fhir:display [ fhir:v "Weighted" ] ;
+     fhir:definition [ fhir:v "Weighted scoring gives an individual a score based on a weighted factor for each component numerator in which they appear." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

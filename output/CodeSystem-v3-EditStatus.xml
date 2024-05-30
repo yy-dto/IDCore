@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="v3-EditStatus"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-EditStatus</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td style="white-space:nowrap">A<a name="v3-EditStatus-A"> </a></td><td>Active</td><td>The item has been reviewed and approved and is now valid for use in HL7 standards and messages.</td><td>11042</td><td>active</td></tr><tr><td style="white-space:nowrap">I<a name="v3-EditStatus-I"> </a></td><td>Inactive</td><td>A previously active item has been retired from use. The item may exist as previously stored data in a database, but no current or new HL7 standards or messges should use this item. The code for an inactive item will not be reused by HL7.</td><td>11044</td><td>active</td></tr><tr><td style="white-space:nowrap">O<a name="v3-EditStatus-O"> </a></td><td>Obsolete</td><td>A previously active item that is scheduled to be retired from use, but for practical reasons can not be immediately inactivated. It is still legal to use an obsolete item in HL7 standards or messages, but those creating new messages should make every effort to use an active concept instead.</td><td>11045</td><td>active</td></tr><tr><td style="white-space:nowrap">P<a name="v3-EditStatus-P"> </a></td><td>Proposed</td><td>The item has been suggested for incorporation but has not been officially approved. The item is not yet legal for use in HL7 standards and messages.</td><td>11041</td><td>active</td></tr><tr><td style="white-space:nowrap">R<a name="v3-EditStatus-R"> </a></td><td>Rejected</td><td>The item has been reviewed and rejected. The item is not legal for use in HL7 standards and messages.</td><td>11043</td><td>active</td></tr></table></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/v3-EditStatus"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.5.35"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="EditStatus"/>
+  <title value="EditStatus"/>
+  <status value="retired"/>
+  <experimental value="false"/>
+  <date value="2019-03-20"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="The status of an entry as it pertains to its review and incorporation into the HL7 domain specification database."/>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="is-a"/>
+  <content value="complete"/>
+  <property>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry">
+      <valueCode value="antisymmetric"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity">
+      <valueCode value="transitive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity">
+      <valueCode value="irreflexive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind">
+      <valueCode value="Specializes"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName">
+      <valueString value="Generalizes"/>
+    </extension>
+    <code value="Specializes"/>
+    <description value="The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry">
+      <valueCode value="antisymmetric"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity">
+      <valueCode value="transitive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity">
+      <valueCode value="irreflexive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind">
+      <valueCode value="Generalizes"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName">
+      <valueString value="Specializes"/>
+    </extension>
+    <code value="Generalizes"/>
+    <description value="Inverse of Specializes.  Only included as a derived relationship."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <code value="internalId"/>
+    <uri value="http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"/>
+    <description value="The internal identifier for the concept in the HL7 Access database repository."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="Designation of a concept's state. Normally is not populated unless the state is retired."/>
+    <type value="code"/>
+  </property>
+  <concept>
+    <code value="A"/>
+    <display value="Active"/>
+    <definition value="The item has been reviewed and approved and is now valid for use in HL7 standards and messages."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="11042"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="I"/>
+    <display value="Inactive"/>
+    <definition value="A previously active item has been retired from use. The item may exist as previously stored data in a database, but no current or new HL7 standards or messges should use this item. The code for an inactive item will not be reused by HL7."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="11044"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="O"/>
+    <display value="Obsolete"/>
+    <definition value="A previously active item that is scheduled to be retired from use, but for practical reasons can not be immediately inactivated. It is still legal to use an obsolete item in HL7 standards or messages, but those creating new messages should make every effort to use an active concept instead."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="11045"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="P"/>
+    <display value="Proposed"/>
+    <definition value="The item has been suggested for incorporation but has not been officially approved. The item is not yet legal for use in HL7 standards and messages."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="11041"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="R"/>
+    <display value="Rejected"/>
+    <definition value="The item has been reviewed and rejected. The item is not legal for use in HL7 standards and messages."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="11043"/>
+    </property>
+  </concept>
+</CodeSystem>

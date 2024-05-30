@@ -8,7 +8,7 @@
   "language" : "Indonesia",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/immunization-program-eligibility</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"KemkesImmunizationProgramEligibilityCS-1\"> </a></td><td>Diverifikasi</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"KemkesImmunizationProgramEligibilityCS-2\"> </a></td><td>Belum diverifikasi</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"KemkesImmunizationProgramEligibilityCS-3\"> </a></td><td>Butuh verifikasi tambahan</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"KemkesImmunizationProgramEligibilityCS-4\"> </a></td><td>Bukan sasaran/duplikasi</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/immunization-program-eligibility</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"KemkesImmunizationProgramEligibilityCS-1\"> </a></td><td>Diverifikasi</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"KemkesImmunizationProgramEligibilityCS-2\"> </a></td><td>Belum diverifikasi</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"KemkesImmunizationProgramEligibilityCS-3\"> </a></td><td>Butuh verifikasi tambahan</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"KemkesImmunizationProgramEligibilityCS-4\"> </a></td><td>Bukan sasaran/duplikasi</td></tr></table></div>"
   },
   "url" : "http://terminology.kemkes.go.id/CodeSystem/immunization-program-eligibility",
   "version" : "0.1.0",
@@ -17,12 +17,16 @@
   "status" : "active",
   "experimental" : false,
   "date" : "2024-02-05T00:00:00.000Z",
-  "publisher" : "Thomas Chaidir",
+  "publisher" : "SatuSehat",
   "contact" : [{
-    "name" : "Thomas Chaidir",
+    "name" : "SatuSehat",
     "telecom" : [{
       "system" : "url",
       "value" : "https://satusehat.kemkes.go.id/"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@dto.kemkes.go.id"
     }]
   }],
   "description" : "Terminology Kemkes immunization program eligibility CodeSystem",

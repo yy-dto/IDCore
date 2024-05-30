@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="csaid"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/csaid</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/csaid"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.6.235"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="Csaid"/>
+  <title value="CAN/CSA-Z795-96"/>
+  <status value="retired"/>
+  <experimental value="false"/>
+  <date value="2019-03-20T00:00:00-04:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="Inactive since 2015.   Nature of injury (NOI) codes, which are part of the Work Injury or Disease Information coding system (CAN/CSA-Z795-96 - R2003).&#xD;&#xA;&#xD;&#xA;The CSA code set includes 3 parts: Nature of injury (NOI), body part (BP), side of body (SB).&#xD;&#xA;&#xD;&#xA;For example:&#xD;&#xA;&#xD;&#xA; *  NOI - Cut or laceration Injury = 03400&#xD;&#xA; *  BP - Upper Arm body part = 31100&#xD;&#xA; *  SOB - Left Side of Body = L&#xD;&#xA;&#xD;&#xA;The Body Part codes are qualified by the Side of Body codes code system, to be more precise in specifying the location of the injury being coded.&#xD;&#xA;&#xD;&#xA;Code set is maintained by the Canadian Standards Association (CSA).&#xD;&#xA;&#xD;&#xA;set is maintained by the Canadian Standards Association (CSA).&#xD;&#xA;&#xD;&#xA;The Canadian Standards Association 5060 Spectrum Way Mississauga, Ontario Canada L4W 5N6&#xD;&#xA;&#xD;&#xA;Phone: (416) 747-4000 1-800-463-6727 Fax: (416) 747-2473"/>
+  <caseSensitive value="true"/>
+  <content value="not-present"/>
+</CodeSystem>

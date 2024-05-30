@@ -9,13 +9,17 @@
   "version" : "0.1.0",
   "name" : "IDCoreEncounterStatusFinished",
   "status" : "active",
-  "date" : "2024-05-23T10:54:59+07:00",
-  "publisher" : "Thomas Chaidir",
+  "date" : "2024-05-29T21:39:03+07:00",
+  "publisher" : "SatuSehat",
   "contact" : [{
-    "name" : "Thomas Chaidir",
+    "name" : "SatuSehat",
     "telecom" : [{
       "system" : "url",
       "value" : "https://satusehat.kemkes.go.id/"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@dto.kemkes.go.id"
     }]
   }],
   "description" : "Encounter profile when the Status is Finished",
@@ -2914,12 +2918,10 @@
           "url" : "value",
           "valueCodeableConcept" : {
             "coding" : [{
-              "system" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient",
-              "code" : "reguler"
+              "system" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"
             },
             {
-              "system" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient",
-              "code" : "1"
+              "system" : "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"
             }]
           }
         },
@@ -2927,8 +2929,7 @@
           "url" : "upgradeClassIndicator",
           "valueCodeableConcept" : {
             "coding" : [{
-              "system" : "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass",
-              "code" : "kelas-tetap"
+              "system" : "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"
             }]
           }
         }],

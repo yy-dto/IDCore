@@ -15,7 +15,6 @@
       <sch:assert test="count(f:extension[@url = 'https://fhir.kemkes.go.id/r4/StructureDefinition/CitizenshipStatusExtension']) &gt;= 1">extension with URL = 'https://fhir.kemkes.go.id/r4/StructureDefinition/CitizenshipStatusExtension': minimum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://fhir.kemkes.go.id/r4/StructureDefinition/CitizenshipStatusExtension']) &lt;= 1">extension with URL = 'https://fhir.kemkes.go.id/r4/StructureDefinition/CitizenshipStatusExtension': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:identifier) &gt;= 2">identifier: minimum cardinality of 'identifier' is 2</sch:assert>
-      <sch:assert test="count(f:active) &gt;= 1">active: minimum cardinality of 'active' is 1</sch:assert>
       <sch:assert test="count(f:name) &gt;= 1">name: minimum cardinality of 'name' is 1</sch:assert>
       <sch:assert test="count(f:gender) &gt;= 1">gender: minimum cardinality of 'gender' is 1</sch:assert>
     </sch:rule>

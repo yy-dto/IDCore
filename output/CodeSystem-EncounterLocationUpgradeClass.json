@@ -10,13 +10,17 @@
   "name" : "EncounterLocationUpgradeClass",
   "title" : "Encounter Location UpgradeClass",
   "status" : "active",
-  "date" : "2024-05-23T10:54:59+07:00",
-  "publisher" : "Thomas Chaidir",
+  "date" : "2024-05-29T21:39:03+07:00",
+  "publisher" : "SatuSehat",
   "contact" : [{
-    "name" : "Thomas Chaidir",
+    "name" : "SatuSehat",
     "telecom" : [{
       "system" : "url",
       "value" : "https://satusehat.kemkes.go.id/"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@dto.kemkes.go.id"
     }]
   }],
   "description" : "Local ID encounter location UpgradeClass",

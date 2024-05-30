@@ -8,7 +8,7 @@
   </meta>
   <language value="Indonesia"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">kelas-tetap<a name="KemkesLocationUpgradeClass-kelas-tetap"> </a></td><td>Kelas Tetap Perawatan</td></tr><tr><td style="white-space:nowrap">naik-kelas<a name="KemkesLocationUpgradeClass-naik-kelas"> </a></td><td>Kenaikan Kelas Perawatan</td></tr><tr><td style="white-space:nowrap">turun-kelas<a name="KemkesLocationUpgradeClass-turun-kelas"> </a></td><td>Penurunan Kelas Perawatan</td></tr><tr><td style="white-space:nowrap">titip-rawat<a name="KemkesLocationUpgradeClass-titip-rawat"> </a></td><td>Titip Kelas Perawatan</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">kelas-tetap<a name="KemkesLocationUpgradeClass-kelas-tetap"> </a></td><td>Kelas Tetap Perawatan</td></tr><tr><td style="white-space:nowrap">naik-kelas<a name="KemkesLocationUpgradeClass-naik-kelas"> </a></td><td>Kenaikan Kelas Perawatan</td></tr><tr><td style="white-space:nowrap">turun-kelas<a name="KemkesLocationUpgradeClass-turun-kelas"> </a></td><td>Penurunan Kelas Perawatan</td></tr><tr><td style="white-space:nowrap">titip-rawat<a name="KemkesLocationUpgradeClass-titip-rawat"> </a></td><td>Titip Kelas Perawatan</td></tr></table></div>
   </text>
   <url value="http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"/>
   <version value="0.1.0"/>
@@ -17,12 +17,16 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2024-02-05T00:00:00.000Z"/>
-  <publisher value="Thomas Chaidir"/>
+  <publisher value="SatuSehat"/>
   <contact>
-    <name value="Thomas Chaidir"/>
+    <name value="SatuSehat"/>
     <telecom>
       <system value="url"/>
       <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
     </telecom>
   </contact>
   <description value="Terminology Kemkes location upgrade class CodeSystem"/>

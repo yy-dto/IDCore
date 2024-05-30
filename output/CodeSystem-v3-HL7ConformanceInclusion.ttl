@@ -1,0 +1,230 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-HL7ConformanceInclusion> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-HL7ConformanceInclusion"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>notSelectable</td><td>http://hl7.org/fhir/concept-properties#notSelectable</td><td>boolean</td><td>Indicates that the code is abstract - only intended to be used as a selector for other concepts</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr><tr><td>synonymCode</td><td>http://hl7.org/fhir/concept-properties#synonym</td><td>code</td><td>An additional concept code that was also attributed to a concept</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-HL7ConformanceInclusion</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>Not Selectable</b></td><td><b>status</b></td><td><b>synonymCode</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">_InclusionNotMandatory<a name=\"v3-HL7ConformanceInclusion-_InclusionNotMandatory\"> </a></td><td>InclusionNotMandatory</td><td>The message element is not mandatory, but its appearance may be constrained by one of the non-mandatory concepts.</td><td>21081</td><td>true</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  NP<a name=\"v3-HL7ConformanceInclusion-NP\"> </a></td><td>Not permitted</td><td>This message element may not appear when the message is communicated.</td><td>10014</td><td/><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  NR<a name=\"v3-HL7ConformanceInclusion-NR\"> </a></td><td>Not required</td><td>The message element may be populated or used by one system sponsor (or profile), but not by another. Each system sponsor or profile is required to state the ability to accept or send the message element as part of a conformance claim.</td><td>10015</td><td/><td>active</td><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    RE<a name=\"v3-HL7ConformanceInclusion-RE\"> </a></td><td>Required may be empty</td><td>Pursuant to a profile or vendor conformance claim, the message element must appear every time the message is communicated, but the value may be communicated as null.</td><td>10016</td><td/><td>active</td><td/></tr><tr><td>3</td><td style=\"white-space:nowrap\">    X<a name=\"v3-HL7ConformanceInclusion-X\"> </a></td><td>Excluded</td><td>Pursuant to a profile or vendor conformance claim, this message element may not appear when the message is communicated.</td><td>10017</td><td/><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  RQ<a name=\"v3-HL7ConformanceInclusion-RQ\"> </a></td><td>Required</td><td>The message element must appear every time the message is communicated, but the value may be communicated as null.</td><td>10013</td><td/><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">M<a name=\"v3-HL7ConformanceInclusion-M\"> </a></td><td>Mandatory</td><td>The message element must appear every time the message is communicated and its value must not be null. This condition is subject to the rules of multiplicity and conditionality. If a non-null default value is defined for the element, a null value may be communicated.</td><td>10011</td><td/><td>active</td><td>R</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">R<a name=\"v3-HL7ConformanceInclusion-R\"> </a></td><td>Mandatory</td><td>The message element must appear every time the message is communicated and its value must not be null. This condition is subject to the rules of multiplicity and conditionality. If a non-null default value is defined for the element, a null value may be communicated.</td><td>10011</td><td/><td>active</td><td>M</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-HL7ConformanceInclusion"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.55" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "HL7ConformanceInclusion"] ; # 
+  fhir:title [ fhir:v "HL7ConformanceInclusion"] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "These concepts represent theconformance requirments defined for including or valuing an element of an HL7 message. The concepts apply equally to conformance profiles defined for Version 2.x messgaes as defined by the Conformance SIG, and to the conformance columns for Version 3 messages as specified in the HMD.\r\n\r\n**Deprecation Comment:** Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "notSelectable" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#notSelectable"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Indicates that the code is abstract - only intended to be used as a selector for other concepts" ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "synonymCode" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#synonym"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "An additional concept code that was also attributed to a concept" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "_InclusionNotMandatory" ] ;
+     fhir:display [ fhir:v "InclusionNotMandatory" ] ;
+     fhir:definition [ fhir:v "The message element is not mandatory, but its appearance may be constrained by one of the non-mandatory concepts." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21081" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "NP" ] ;
+       fhir:display [ fhir:v "Not permitted" ] ;
+       fhir:definition [ fhir:v "This message element may not appear when the message is communicated." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10014" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "NR" ] ;
+       fhir:display [ fhir:v "Not required" ] ;
+       fhir:definition [ fhir:v "The message element may be populated or used by one system sponsor (or profile), but not by another. Each system sponsor or profile is required to state the ability to accept or send the message element as part of a conformance claim." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10015" ]
+       ] ) ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "RE" ] ;
+         fhir:display [ fhir:v "Required may be empty" ] ;
+         fhir:definition [ fhir:v "Pursuant to a profile or vendor conformance claim, the message element must appear every time the message is communicated, but the value may be communicated as null." ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "active" ]
+         ] [
+           fhir:code [ fhir:v "internalId" ] ;
+           fhir:value [ fhir:v "10016" ]
+         ] )
+       ] [
+         fhir:code [ fhir:v "X" ] ;
+         fhir:display [ fhir:v "Excluded" ] ;
+         fhir:definition [ fhir:v "Pursuant to a profile or vendor conformance claim, this message element may not appear when the message is communicated." ] ;
+         fhir:property ( [
+           fhir:code [ fhir:v "status" ] ;
+           fhir:value [ fhir:v "active" ]
+         ] [
+           fhir:code [ fhir:v "internalId" ] ;
+           fhir:value [ fhir:v "10017" ]
+         ] )
+       ] )
+     ] [
+       fhir:code [ fhir:v "RQ" ] ;
+       fhir:display [ fhir:v "Required" ] ;
+       fhir:definition [ fhir:v "The message element must appear every time the message is communicated, but the value may be communicated as null." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10013" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "Mandatory" ] ;
+     fhir:definition [ fhir:v "The message element must appear every time the message is communicated and its value must not be null. This condition is subject to the rules of multiplicity and conditionality. If a non-null default value is defined for the element, a null value may be communicated." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Required - V2.x" ]
+     ] ) ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "synonymCode" ] ;
+       fhir:value [ fhir:v "R" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10011" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "R" ] ;
+     fhir:display [ fhir:v "Mandatory" ] ;
+     fhir:definition [ fhir:v "The message element must appear every time the message is communicated and its value must not be null. This condition is subject to the rules of multiplicity and conditionality. If a non-null default value is defined for the element, a null value may be communicated." ] ;
+     fhir:designation ( [
+       fhir:language [ fhir:v "en" ] ;
+       fhir:use [
+         a sct:900000000000013009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "900000000000013009" ]
+       ] ;
+       fhir:value [ fhir:v "Required - V2.x" ]
+     ] ) ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "synonymCode" ] ;
+       fhir:value [ fhir:v "M" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10011" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

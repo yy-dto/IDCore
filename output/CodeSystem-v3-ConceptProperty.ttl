@@ -1,0 +1,199 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-ConceptProperty> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-ConceptProperty"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>notSelectable</td><td>http://hl7.org/fhir/concept-properties#notSelectable</td><td>boolean</td><td>Indicates that the code is abstract - only intended to be used as a selector for other concepts</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-ConceptProperty</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>Not Selectable</b></td><td><b>status</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">_ValueSetPropertyId<a name=\"v3-ConceptProperty-_ValueSetPropertyId\"> </a></td><td>ValueSetPropertyId</td><td>Property identifiers for a value sets</td><td>22385</td><td>true</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  appliesTo<a name=\"v3-ConceptProperty-appliesTo\"> </a></td><td>applies to</td><td>Entity to which a given value set or concept code applies</td><td>19964</td><td/><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  howApplies<a name=\"v3-ConceptProperty-howApplies\"> </a></td><td>how applies</td><td>Description of how set or code applies</td><td>19965</td><td/><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  openIssue<a name=\"v3-ConceptProperty-openIssue\"> </a></td><td>open issue</td><td>Outstanding issue that still needs resolution</td><td>19966</td><td/><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">conceptStatusQualifier<a name=\"v3-ConceptProperty-conceptStatusQualifier\"> </a></td><td>concept status qualifier</td><td>**Description:** Qualifier value for concept status.</td><td>22625</td><td/><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">inverseRelationship<a name=\"v3-ConceptProperty-inverseRelationship\"> </a></td><td>inverted relationship name</td><td>Name that should be used when the relationship is used in the reverse (target to source) direction. Example: The inverse relationship of hasPart is isPartOf</td><td>19968</td><td/><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">OID<a name=\"v3-ConceptProperty-OID\"> </a></td><td>ISO Object Identifier</td><td>Object identifier assigned to a concept</td><td>19967</td><td/><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">specializedByDomain<a name=\"v3-ConceptProperty-specializedByDomain\"> </a></td><td>specialized by domain</td><td>**Description:**specialized by domain</td><td>22662</td><td/><td>active</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ConceptProperty"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.1087" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ConceptProperty"] ; # 
+  fhir:title [ fhir:v "HL7 Value Set and Coded Concept Property Codes"] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "**Deprecation Comment:** Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "notSelectable" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#notSelectable"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Indicates that the code is abstract - only intended to be used as a selector for other concepts" ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "_ValueSetPropertyId" ] ;
+     fhir:display [ fhir:v "ValueSetPropertyId" ] ;
+     fhir:definition [ fhir:v "Property identifiers for a value sets" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22385" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "appliesTo" ] ;
+       fhir:display [ fhir:v "applies to" ] ;
+       fhir:definition [ fhir:v "Entity to which a given value set or concept code applies" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19964" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "howApplies" ] ;
+       fhir:display [ fhir:v "how applies" ] ;
+       fhir:definition [ fhir:v "Description of how set or code applies" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19965" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "openIssue" ] ;
+       fhir:display [ fhir:v "open issue" ] ;
+       fhir:definition [ fhir:v "Outstanding issue that still needs resolution" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19966" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "conceptStatusQualifier" ] ;
+     fhir:display [ fhir:v "concept status qualifier" ] ;
+     fhir:definition [ fhir:v "**Description:** Qualifier value for concept status." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22625" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "inverseRelationship" ] ;
+     fhir:display [ fhir:v "inverted relationship name" ] ;
+     fhir:definition [ fhir:v "Name that should be used when the relationship is used in the reverse (target to source) direction. Example: The inverse relationship of hasPart is isPartOf" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19968" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "OID" ] ;
+     fhir:display [ fhir:v "ISO Object Identifier" ] ;
+     fhir:definition [ fhir:v "Object identifier assigned to a concept" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19967" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "specializedByDomain" ] ;
+     fhir:display [ fhir:v "specialized by domain" ] ;
+     fhir:definition [ fhir:v "**Description:**specialized by domain" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22662" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

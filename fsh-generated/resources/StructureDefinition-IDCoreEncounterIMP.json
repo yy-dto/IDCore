@@ -21,7 +21,6 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "code": "1",
                   "system": "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"
                 }
               ]

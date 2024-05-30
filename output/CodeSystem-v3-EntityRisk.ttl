@@ -1,0 +1,226 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-EntityRisk> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-EntityRisk"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-EntityRisk</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">AGG<a name=\"v3-EntityRisk-AGG\"> </a></td><td>aggressive</td><td>A danger that can be associated with certain living subjects, including humans.</td><td>10415</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">BIO<a name=\"v3-EntityRisk-BIO\"> </a></td><td>Biological</td><td>The dangers associated with normal biological materials. I.e. potential risk of unknown infections. Routine biological materials from living subjects.</td><td>14074</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">COR<a name=\"v3-EntityRisk-COR\"> </a></td><td>Corrosive</td><td>Material is corrosive and may cause severe injury to skin, mucous membranes and eyes. Avoid any unprotected contact.</td><td>14076</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ESC<a name=\"v3-EntityRisk-ESC\"> </a></td><td>Escape Risk</td><td>The entity is at risk for escaping from containment or control.</td><td>14077</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">IFL<a name=\"v3-EntityRisk-IFL\"> </a></td><td>inflammable</td><td>Material is highly inflammable and in certain mixtures (with air) may lead to explosions. Keep away from fire, sparks and excessive heat.</td><td>10412</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  EXP<a name=\"v3-EntityRisk-EXP\"> </a></td><td>explosive</td><td>Material is an explosive mixture. Keep away from fire, sparks, and heat.</td><td>10413</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">INF<a name=\"v3-EntityRisk-INF\"> </a></td><td>infectious</td><td>Material known to be infectious with human pathogenic microorganisms. Those who handle this material must take precautions for their protection.</td><td>10407</td><td>active</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  BHZ<a name=\"v3-EntityRisk-BHZ\"> </a></td><td>biohazard</td><td>Material contains microorganisms that is an environmental hazard. Must be handled with special care.</td><td>10408</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">INJ<a name=\"v3-EntityRisk-INJ\"> </a></td><td>injury hazard</td><td>Material is solid and sharp (e.g., cannulas). Dispose in hard container.</td><td>10414</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">POI<a name=\"v3-EntityRisk-POI\"> </a></td><td>poison</td><td>Material is poisonous to humans and/or animals. Special care must be taken to avoid incorporation, even of small amounts.</td><td>10410</td><td>active</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">RAD<a name=\"v3-EntityRisk-RAD\"> </a></td><td>radioactive</td><td>Material is a source for ionizing radiation and must be handled with special care to avoid injury of those who handle it and to avoid environmental hazards.</td><td>10409</td><td>active</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-EntityRisk"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.46" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EntityRisk"] ; # 
+  fhir:title [ fhir:v "EntityRisk"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Kinds of risks associated with the handling of the material.."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AGG" ] ;
+     fhir:display [ fhir:v "aggressive" ] ;
+     fhir:definition [ fhir:v "A danger that can be associated with certain living subjects, including humans." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10415" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "BIO" ] ;
+     fhir:display [ fhir:v "Biological" ] ;
+     fhir:definition [ fhir:v "The dangers associated with normal biological materials. I.e. potential risk of unknown infections. Routine biological materials from living subjects." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "14074" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "COR" ] ;
+     fhir:display [ fhir:v "Corrosive" ] ;
+     fhir:definition [ fhir:v "Material is corrosive and may cause severe injury to skin, mucous membranes and eyes. Avoid any unprotected contact." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "14076" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ESC" ] ;
+     fhir:display [ fhir:v "Escape Risk" ] ;
+     fhir:definition [ fhir:v "The entity is at risk for escaping from containment or control." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "14077" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "IFL" ] ;
+     fhir:display [ fhir:v "inflammable" ] ;
+     fhir:definition [ fhir:v "Material is highly inflammable and in certain mixtures (with air) may lead to explosions. Keep away from fire, sparks and excessive heat." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10412" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "EXP" ] ;
+       fhir:display [ fhir:v "explosive" ] ;
+       fhir:definition [ fhir:v "Material is an explosive mixture. Keep away from fire, sparks, and heat." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10413" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "INF" ] ;
+     fhir:display [ fhir:v "infectious" ] ;
+     fhir:definition [ fhir:v "Material known to be infectious with human pathogenic microorganisms. Those who handle this material must take precautions for their protection." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10407" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "BHZ" ] ;
+       fhir:display [ fhir:v "biohazard" ] ;
+       fhir:definition [ fhir:v "Material contains microorganisms that is an environmental hazard. Must be handled with special care." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10408" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "INJ" ] ;
+     fhir:display [ fhir:v "injury hazard" ] ;
+     fhir:definition [ fhir:v "Material is solid and sharp (e.g., cannulas). Dispose in hard container." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10414" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "POI" ] ;
+     fhir:display [ fhir:v "poison" ] ;
+     fhir:definition [ fhir:v "Material is poisonous to humans and/or animals. Special care must be taken to avoid incorporation, even of small amounts." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10410" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "RAD" ] ;
+     fhir:display [ fhir:v "radioactive" ] ;
+     fhir:definition [ fhir:v "Material is a source for ionizing radiation and must be handled with special care to avoid injury of those who handle it and to avoid environmental hazards." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10409" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

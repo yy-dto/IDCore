@@ -12,13 +12,17 @@
   <version value="0.1.0"/>
   <name value="IDCoreEncounterEMER"/>
   <status value="active"/>
-  <date value="2024-05-23T10:54:59+07:00"/>
-  <publisher value="Thomas Chaidir"/>
+  <date value="2024-05-29T21:39:03+07:00"/>
+  <publisher value="SatuSehat"/>
   <contact>
-    <name value="Thomas Chaidir"/>
+    <name value="SatuSehat"/>
     <telecom>
       <system value="url"/>
       <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
     </telecom>
   </contact>
   <description value="Encounter profile for Emergency patient"/>
@@ -2536,11 +2540,9 @@
           <valueCodeableConcept>
             <coding>
               <system value="http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"/>
-              <code value="reguler"/>
             </coding>
             <coding>
               <system value="http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Inpatient"/>
-              <code value="1"/>
             </coding>
           </valueCodeableConcept>
         </extension>
@@ -2548,7 +2550,6 @@
           <valueCodeableConcept>
             <coding>
               <system value="http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"/>
-              <code value="kelas-tetap"/>
             </coding>
           </valueCodeableConcept>
         </extension>

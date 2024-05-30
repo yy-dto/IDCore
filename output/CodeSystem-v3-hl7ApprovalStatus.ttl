@@ -1,0 +1,334 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-hl7ApprovalStatus> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-hl7ApprovalStatus"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A property that indicates the status of the concept. One of active, experimental, deprecated, or retired.</td></tr><tr><td>deprecationDate</td><td>http://hl7.org/fhir/concept-properties#deprecationDate</td><td>dateTime</td><td>The date at which a concept was deprecated. Concepts that are deprecated but not inactive can still be used, but their use is discouraged.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-hl7ApprovalStatus</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deprecated</b></td><td><b>internalId</b></td><td><b>status</b></td><td><b>deprecationDate</b></td></tr><tr><td style=\"white-space:nowrap\">affd<a name=\"v3-hl7ApprovalStatus-affd\"> </a></td><td>affiliate ballot - DSTU</td><td><div><p><strong>Description:</strong> Content that is being presented to an international affiliate for consideration as a realm-specific draft standard for trial use.</p>\n</div></td><td/><td>23125</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">affi<a name=\"v3-hl7ApprovalStatus-affi\"> </a></td><td>affiliate ballot - informative</td><td><div><p><strong>Description:</strong> Content that is being presented to an international affiliate for consideration as a realm-specific informative standard.</p>\n</div></td><td/><td>23126</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">affn<a name=\"v3-hl7ApprovalStatus-affn\"> </a></td><td>affiliate ballot - normative</td><td><div><p><strong>Description:</strong> Content that is being presented to an international affiliate for consideration as a realm-specific normative standard.</p>\n</div></td><td/><td>23124</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">appad<a name=\"v3-hl7ApprovalStatus-appad\"> </a></td><td>approved affiliate DSTU</td><td><div><p><strong>Description:</strong> Content that has passed ballot as a realm-specific draft standard for trial use.</p>\n</div></td><td/><td>23129</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">appai<a name=\"v3-hl7ApprovalStatus-appai\"> </a></td><td>approved affiliate informative</td><td><div><p><strong>Description:</strong> Content that has passed ballot as a realm-specific informative standard.</p>\n</div></td><td/><td>23128</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">appan<a name=\"v3-hl7ApprovalStatus-appan\"> </a></td><td>approved affiliate normative</td><td><div><p><strong>Description:</strong> Content that has passed ballot as a realm-specific normative standard</p>\n</div></td><td/><td>23127</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">appd<a name=\"v3-hl7ApprovalStatus-appd\"> </a></td><td>approved DSTU</td><td><div><p><strong>Description:</strong> Content that has passed ballot as a draft standard for trial use.</p>\n</div></td><td/><td>23123</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">appi<a name=\"v3-hl7ApprovalStatus-appi\"> </a></td><td>approved informative</td><td><div><p><strong>Description:</strong> Content that has passed ballot as a normative standard.</p>\n</div></td><td/><td>23122</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">appn<a name=\"v3-hl7ApprovalStatus-appn\"> </a></td><td>approved normative</td><td><div><p><strong>Description:</strong> Content that has passed ballot as a normative standard.</p>\n</div></td><td/><td>23121</td><td>active</td><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">comi<a name=\"v3-hl7ApprovalStatus-comi\"> </a></td><td>committee ballot - informative</td><td><div><p><strong>Description:</strong> Content prepared by a committee and submitted for internal consideration as an informative standard.</p>\n<p><em><strong>Deprecation Comment</strong></em> No longer supported as ballot statuses within the HL7 Governance and Operations Manual. Use normative or informative variants instead.</p>\n</div></td><td>Deprecated</td><td>23117</td><td>deprecated</td><td>2010-11-23</td></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">comn<a name=\"v3-hl7ApprovalStatus-comn\"> </a></td><td>committee ballot - normative</td><td><div><p><strong>Description:</strong> Content prepared by a committee and submitted for internal consideration as an informative standard.</p>\n<p><em><strong>Deprecation Comment</strong></em> No longer supported as ballot statuses within the HL7 Governance and Operations Manual. Use normative or informative variants instead.</p>\n</div></td><td>Deprecated</td><td>23116</td><td>deprecated</td><td>2010-11-23</td></tr><tr><td style=\"white-space:nowrap\">draft<a name=\"v3-hl7ApprovalStatus-draft\"> </a></td><td>draft</td><td><div><p><strong>Description:</strong> Content that is under development and is not intended to be used.</p>\n</div></td><td/><td>23113</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">loc<a name=\"v3-hl7ApprovalStatus-loc\"> </a></td><td>localized adaptation</td><td><div><p><strong>Description:</strong> Content that represents an adaption of a implementable balloted material to represent the needs or capabilities of a particular installation.</p>\n</div></td><td/><td>23130</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">memd<a name=\"v3-hl7ApprovalStatus-memd\"> </a></td><td>membership ballot - DSTU</td><td><div><p><strong>Description:</strong> Content prepared by a committee and submitted for membership consideration as a draft standard for trial use.</p>\n</div></td><td/><td>23120</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">memi<a name=\"v3-hl7ApprovalStatus-memi\"> </a></td><td>membership ballot - informative</td><td><div><p><strong>Description:</strong> Content prepared by a committee and submitted for membership consideration as an informative standard.</p>\n</div></td><td/><td>23119</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">memn<a name=\"v3-hl7ApprovalStatus-memn\"> </a></td><td>membership ballot - normative</td><td><div><p><strong>Description:</strong> Content prepared by a committee and submitted for membership consideration as a normative standard.</p>\n</div></td><td/><td>23118</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">ns<a name=\"v3-hl7ApprovalStatus-ns\"> </a></td><td>non-standard - available for use</td><td><div><p><strong>Description:</strong> Content developed independently by an organization or individual that is declared to be 'usable' but for which there is no present intention to submit through the standards submission and review process.</p>\n</div></td><td/><td>23114</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">prop<a name=\"v3-hl7ApprovalStatus-prop\"> </a></td><td>proposal</td><td><div><p><strong>Description:</strong> Content submitted to a committee for consideration for future inclusion in the standard.</p>\n</div></td><td/><td>23115</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">ref<a name=\"v3-hl7ApprovalStatus-ref\"> </a></td><td>reference</td><td><div><p><strong>Description:</strong> Content intended to support other content that is subject to approval, but which is not itself subject to formal approval.</p>\n</div></td><td/><td>23251</td><td>active</td><td/></tr><tr><td style=\"white-space:nowrap\">wd<a name=\"v3-hl7ApprovalStatus-wd\"> </a></td><td>withdrawn</td><td><div><p><strong>Description:</strong> Content that represents an item that was at one point a normative or informative standard, but was subsequently withdrawn.</p>\n</div></td><td/><td>23131</td><td>active</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-hl7ApprovalStatus"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.1130" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Hl7ApprovalStatus"] ; # 
+  fhir:title [ fhir:v "HL7ApprovalStatus"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "**Description:** Codes for concepts describing the approval level of HL7 artifacts. This code system reflects the concepts expressed in HL7's Governance & Operations Manual (GOM) past and present."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "A property that indicates the status of the concept. One of active, experimental, deprecated, or retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "deprecationDate" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#deprecationDate"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The date at which a concept was deprecated. Concepts that are deprecated but not inactive can still be used, but their use is discouraged." ] ;
+     fhir:type [ fhir:v "dateTime" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "affd" ] ;
+     fhir:display [ fhir:v "affiliate ballot - DSTU" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that is being presented to an international affiliate for consideration as a realm-specific draft standard for trial use." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23125" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "affi" ] ;
+     fhir:display [ fhir:v "affiliate ballot - informative" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that is being presented to an international affiliate for consideration as a realm-specific informative standard." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23126" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "affn" ] ;
+     fhir:display [ fhir:v "affiliate ballot - normative" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that is being presented to an international affiliate for consideration as a realm-specific normative standard." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23124" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "appad" ] ;
+     fhir:display [ fhir:v "approved affiliate DSTU" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that has passed ballot as a realm-specific draft standard for trial use." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23129" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "appai" ] ;
+     fhir:display [ fhir:v "approved affiliate informative" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that has passed ballot as a realm-specific informative standard." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23128" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "appan" ] ;
+     fhir:display [ fhir:v "approved affiliate normative" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that has passed ballot as a realm-specific normative standard" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23127" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "appd" ] ;
+     fhir:display [ fhir:v "approved DSTU" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that has passed ballot as a draft standard for trial use." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23123" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "appi" ] ;
+     fhir:display [ fhir:v "approved informative" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that has passed ballot as a normative standard." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23122" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "appn" ] ;
+     fhir:display [ fhir:v "approved normative" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that has passed ballot as a normative standard." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23121" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "comi" ] ;
+     fhir:display [ fhir:v "committee ballot - informative" ] ;
+     fhir:definition [ fhir:v "**Description:** Content prepared by a committee and submitted for internal consideration as an informative standard.\r\n\r\n***Deprecation Comment*** No longer supported as ballot statuses within the HL7 Governance and Operations Manual. Use normative or informative variants instead." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] [
+       fhir:code [ fhir:v "deprecationDate" ] ;
+       fhir:value [ fhir:v "2010-11-23"^^xsd:date ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23117" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "comn" ] ;
+     fhir:display [ fhir:v "committee ballot - normative" ] ;
+     fhir:definition [ fhir:v "**Description:** Content prepared by a committee and submitted for internal consideration as an informative standard.\r\n\r\n***Deprecation Comment*** No longer supported as ballot statuses within the HL7 Governance and Operations Manual. Use normative or informative variants instead." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] [
+       fhir:code [ fhir:v "deprecationDate" ] ;
+       fhir:value [ fhir:v "2010-11-23"^^xsd:date ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23116" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "draft" ] ;
+     fhir:display [ fhir:v "draft" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that is under development and is not intended to be used." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23113" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "loc" ] ;
+     fhir:display [ fhir:v "localized adaptation" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that represents an adaption of a implementable balloted material to represent the needs or capabilities of a particular installation." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23130" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "memd" ] ;
+     fhir:display [ fhir:v "membership ballot - DSTU" ] ;
+     fhir:definition [ fhir:v "**Description:** Content prepared by a committee and submitted for membership consideration as a draft standard for trial use." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23120" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "memi" ] ;
+     fhir:display [ fhir:v "membership ballot - informative" ] ;
+     fhir:definition [ fhir:v "**Description:** Content prepared by a committee and submitted for membership consideration as an informative standard." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23119" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "memn" ] ;
+     fhir:display [ fhir:v "membership ballot - normative" ] ;
+     fhir:definition [ fhir:v "**Description:** Content prepared by a committee and submitted for membership consideration as a normative standard." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23118" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ns" ] ;
+     fhir:display [ fhir:v "non-standard - available for use" ] ;
+     fhir:definition [ fhir:v "**Description:** Content developed independently by an organization or individual that is declared to be 'usable' but for which there is no present intention to submit through the standards submission and review process." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23114" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "prop" ] ;
+     fhir:display [ fhir:v "proposal" ] ;
+     fhir:definition [ fhir:v "**Description:** Content submitted to a committee for consideration for future inclusion in the standard." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23115" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ref" ] ;
+     fhir:display [ fhir:v "reference" ] ;
+     fhir:definition [ fhir:v "**Description:** Content intended to support other content that is subject to approval, but which is not itself subject to formal approval." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23251" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "wd" ] ;
+     fhir:display [ fhir:v "withdrawn" ] ;
+     fhir:definition [ fhir:v "**Description:** Content that represents an item that was at one point a normative or informative standard, but was subsequently withdrawn." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23131" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

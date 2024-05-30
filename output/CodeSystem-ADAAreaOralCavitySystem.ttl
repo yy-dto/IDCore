@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/ADAAreaOralCavitySystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ADAAreaOralCavitySystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/ADAAreaOralCavitySystem</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/ADAAreaOralCavitySystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ADAAreaOralCavitySystem"] ; # 
+  fhir:title [ fhir:v "American Dental Association Area of Oral Cavity System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-04-07T00:00:00-00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The Area of Oral Cavity System is accepted and approved by the ADA and is the most commonly used system used by dental professionals in America.\r\n\r\nArea of the oral cavity is designated by a two-digit code.\r\n\r\nThe Area of Oral Cavity System can be found in the ADA Comprehensive ADA Dental Claim Form Completion Instructions (see https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/publications/cdt/v2019adadentalclaimcompletioninstructions_v3_2022feb.pdf). For more information see here: https://www.ada.org/publications/cdt/ada-dental-claim-form. \r\n\r\nA Statement of Understanding (SOU) between ADA and HL7 exists here: http://www.hl7.org/documentcenter/public/mou/ADA%20HL7%20SOU%202021_signed.pdf"] ; # 
+  fhir:copyright [ fhir:v "No official copyright statement is available. For general information see paper form located here : https://www.ada.org/-/media/project/ada-organization/ada/ada-org/files/publications/cdt/v2019adadentalclaimcompletioninstructions_v3_2022feb.pdf"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] . # 
+
+# -------------------------------------------------------------------------------------
+

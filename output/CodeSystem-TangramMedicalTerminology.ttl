@@ -1,0 +1,39 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/TangramMedicalTerminology> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "TangramMedicalTerminology"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://term.omaha.org.cn</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://term.omaha.org.cn"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "TangramMedicalTerminology"] ; # 
+  fhir:title [ fhir:v "OMAHA Tangram Medical Terminology"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2022-04-21T00:00:00-00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "OMAHA Tangram Medical Terminology is an ontology-based medical terminological resource developed by Chinese language. It helps to standardize the expression of Chinese medical terms, and improve the semantic interoperability between different systems. The terminology can be used in electronic health records, decision support systems and digital health researches, providing the functions of mapping, data capture, data mining, data registries, statistical analysis and reasoning etc.\r\n\r\nTangram Medical Terminology is released quarterly using the file name format as Tangram_Medical_Terminology _YYYYMMDD (Example: Tangram _Medical_Terminology _20200120). For more information, please visit http://wiki.omaha.org.cn/pages/viewpage.action?pageId=31425763 \r\n\r\nFor more information, see https://term.omaha.org.cn/."] ; # 
+  fhir:copyright [ fhir:v "Copyright Zhejiang Institute of Medical-care Information Technology (imit), all rights reserved.\r\n\r\nComplete copyright statement can be found here: https://www.omaha.org.cn/index.php?g=&m=article&a=index&id=20&cid=38 \r\n\r\nIntellectual property is reserved to Zhejiang Institute of Medical-care Information Technology (imit).\r\n\r\nTangram Medical Terminology can only be used by institutional members of OMAHA. More information for licensing Tangram Medical Terminology can be found here: https://www.omaha.org.cn/index.php?m=index&a=member&cid=333"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,3521 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-Dentition> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-Dentition"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state.  Normally is not populated unless the state is retired..</td></tr><tr><td>notSelectable</td><td>http://hl7.org/fhir/concept-properties#notSelectable</td><td>boolean</td><td>Indicates that the code is abstract - only intended to be used as a selector for other concepts</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-Dentition</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td><td><b>Not Selectable</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">ArtificialDentition<a name=\"v3-Dentition-ArtificialDentition\"> </a></td><td>Artificial dentition</td><td>Artificial dentition, artificial subsitutes for the natural dentition</td><td>19523</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID10a<a name=\"v3-Dentition-TID10a\"> </a></td><td>10a</td><td>Maxillary left lateral incisor abutment</td><td>19673</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID10i<a name=\"v3-Dentition-TID10i\"> </a></td><td>10i</td><td>Maxillary left lateral incisor implant</td><td>19533</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID10p<a name=\"v3-Dentition-TID10p\"> </a></td><td>10p</td><td>Maxillary left lateral incisor prosthesis</td><td>19596</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID10pd<a name=\"v3-Dentition-TID10pd\"> </a></td><td>10pd</td><td>Maxillary left lateral incisor distal prosthesis</td><td>19597</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID10pm<a name=\"v3-Dentition-TID10pm\"> </a></td><td>10pm</td><td>Maxillary left lateral incisor mesial prosthesis</td><td>19595</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID11a<a name=\"v3-Dentition-TID11a\"> </a></td><td>11a</td><td>Maxillary left canine abutment</td><td>19674</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID11i<a name=\"v3-Dentition-TID11i\"> </a></td><td>11i</td><td>Maxillary left canine implant</td><td>19534</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID11p<a name=\"v3-Dentition-TID11p\"> </a></td><td>11p</td><td>Maxillary left canine prosthesis</td><td>19599</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID11pd<a name=\"v3-Dentition-TID11pd\"> </a></td><td>11pd</td><td>Maxillary left canine distal prosthesis</td><td>19600</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID11pm<a name=\"v3-Dentition-TID11pm\"> </a></td><td>11pm</td><td>Maxillary left canine mesial prosthesis</td><td>19598</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID12a<a name=\"v3-Dentition-TID12a\"> </a></td><td>12a</td><td>Maxillary left first premolar abutment</td><td>19675</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID12i<a name=\"v3-Dentition-TID12i\"> </a></td><td>12i</td><td>Maxillary left first premolar implant</td><td>19535</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID12p<a name=\"v3-Dentition-TID12p\"> </a></td><td>12p</td><td>Maxillary left first premolar prosthesis</td><td>19602</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID12pd<a name=\"v3-Dentition-TID12pd\"> </a></td><td>12pd</td><td>Maxillary left first premolar distal prosthesis</td><td>19603</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID12pm<a name=\"v3-Dentition-TID12pm\"> </a></td><td>12pm</td><td>Maxillary left first premolar mesial prosthesis</td><td>19601</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID13a<a name=\"v3-Dentition-TID13a\"> </a></td><td>13a</td><td>Maxillary left second premolar abutment</td><td>19676</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID13i<a name=\"v3-Dentition-TID13i\"> </a></td><td>13i</td><td>Maxillary left second premolar implant</td><td>19536</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID13p<a name=\"v3-Dentition-TID13p\"> </a></td><td>13p</td><td>Maxillary left second premolar prosthesis</td><td>19605</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID13pd<a name=\"v3-Dentition-TID13pd\"> </a></td><td>13pd</td><td>Maxillary left second premolar distal prosthesis</td><td>19606</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID13pm<a name=\"v3-Dentition-TID13pm\"> </a></td><td>13pm</td><td>Maxillary left second premolar mesial prosthesis</td><td>19604</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID14a<a name=\"v3-Dentition-TID14a\"> </a></td><td>14a</td><td>Maxillary left first molar abutment</td><td>19677</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID14i<a name=\"v3-Dentition-TID14i\"> </a></td><td>14i</td><td>Maxillary left first molar implant</td><td>19537</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID14p<a name=\"v3-Dentition-TID14p\"> </a></td><td>14p</td><td>Maxillary left first molar prosthesis</td><td>19608</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID14pd<a name=\"v3-Dentition-TID14pd\"> </a></td><td>14pd</td><td>Maxillary left first molar distal prosthesis</td><td>19609</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID14pm<a name=\"v3-Dentition-TID14pm\"> </a></td><td>14pm</td><td>Maxillary left first molar mesial prosthesis</td><td>19607</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID15a<a name=\"v3-Dentition-TID15a\"> </a></td><td>15a</td><td>Maxillary left second molar abutment</td><td>19678</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID15i<a name=\"v3-Dentition-TID15i\"> </a></td><td>15i</td><td>Maxillary left second molar implant</td><td>19538</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID15p<a name=\"v3-Dentition-TID15p\"> </a></td><td>15p</td><td>Maxillary left second molar prosthesis</td><td>19611</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID15pd<a name=\"v3-Dentition-TID15pd\"> </a></td><td>15pd</td><td>Maxillary left second molar distal prosthesis</td><td>19612</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID15pm<a name=\"v3-Dentition-TID15pm\"> </a></td><td>15pm</td><td>Maxillary left second molar mesial prosthesis</td><td>19610</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID16a<a name=\"v3-Dentition-TID16a\"> </a></td><td>16a</td><td>Maxillary left third molar abutment</td><td>19679</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID16i<a name=\"v3-Dentition-TID16i\"> </a></td><td>16i</td><td>Maxillary left third molar implant</td><td>19539</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID16p<a name=\"v3-Dentition-TID16p\"> </a></td><td>16p</td><td>Maxillary left third molar prosthesis</td><td>19614</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID16pd<a name=\"v3-Dentition-TID16pd\"> </a></td><td>16pd</td><td>Maxillary left third molar distal prosthesis</td><td>19615</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID16pm<a name=\"v3-Dentition-TID16pm\"> </a></td><td>16pm</td><td>Maxillary left third molar mesial prosthesis</td><td>19613</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17a<a name=\"v3-Dentition-TID17a\"> </a></td><td>17a</td><td>Mandibular left third molar abutment</td><td>19680</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17ad<a name=\"v3-Dentition-TID17ad\"> </a></td><td>17ad</td><td>Mandibular left third molar abutment distal hemisection</td><td>19682</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17am<a name=\"v3-Dentition-TID17am\"> </a></td><td>17am</td><td>Mandibular left third molar abutment mesial hemisection</td><td>19681</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17i<a name=\"v3-Dentition-TID17i\"> </a></td><td>17i</td><td>Mandibular left third molar implant</td><td>19540</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17id<a name=\"v3-Dentition-TID17id\"> </a></td><td>17id</td><td>Mandibular left third molar implant distal hemisection</td><td>19542</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17im<a name=\"v3-Dentition-TID17im\"> </a></td><td>17im</td><td>Mandibular left third molar implant mesial hemisection</td><td>19541</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17p<a name=\"v3-Dentition-TID17p\"> </a></td><td>17p</td><td>Mandibular left third molar prosthesis</td><td>19617</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17pd<a name=\"v3-Dentition-TID17pd\"> </a></td><td>17pd</td><td>Mandibular left third molar distal prosthesis</td><td>19616</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17pm<a name=\"v3-Dentition-TID17pm\"> </a></td><td>17pm</td><td>Mandibular left third molar mesial prosthesis</td><td>19618</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18a<a name=\"v3-Dentition-TID18a\"> </a></td><td>18a</td><td>Mandibular left second molar abutment</td><td>19683</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18ad<a name=\"v3-Dentition-TID18ad\"> </a></td><td>18ad</td><td>Mandibular left second molar abutment distal hemisection</td><td>19685</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18am<a name=\"v3-Dentition-TID18am\"> </a></td><td>18am</td><td>Mandibular left second molar abutment mesial hemisection</td><td>19684</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18i<a name=\"v3-Dentition-TID18i\"> </a></td><td>18i</td><td>Mandibular left second molar implant</td><td>19543</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18id<a name=\"v3-Dentition-TID18id\"> </a></td><td>18id</td><td>Mandibular left second molar implant distal hemisection</td><td>19545</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18im<a name=\"v3-Dentition-TID18im\"> </a></td><td>18im</td><td>Mandibular left second molar implant mesial hemisection</td><td>19544</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18p<a name=\"v3-Dentition-TID18p\"> </a></td><td>18p</td><td>Mandibular left second molar prosthesis</td><td>19620</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18pd<a name=\"v3-Dentition-TID18pd\"> </a></td><td>18pd</td><td>Mandibular left second molar distal prosthesis</td><td>19619</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18pm<a name=\"v3-Dentition-TID18pm\"> </a></td><td>18pm</td><td>Mandibular left second molar mesial prosthesis</td><td>19621</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19a<a name=\"v3-Dentition-TID19a\"> </a></td><td>19a</td><td>Mandibular left first molar abutment</td><td>19686</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19ad<a name=\"v3-Dentition-TID19ad\"> </a></td><td>19ad</td><td>Mandibular left first molar abutment distal hemisection</td><td>19688</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19am<a name=\"v3-Dentition-TID19am\"> </a></td><td>19am</td><td>Mandibular left first molar abutment mesial hemisection</td><td>19687</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19i<a name=\"v3-Dentition-TID19i\"> </a></td><td>19i</td><td>Mandibular left first molar implant</td><td>19546</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19id<a name=\"v3-Dentition-TID19id\"> </a></td><td>19id</td><td>Mandibular left first molar implant distal hemisection</td><td>19548</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19im<a name=\"v3-Dentition-TID19im\"> </a></td><td>19im</td><td>Mandibular left first molar implant mesial hemisection</td><td>19547</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19p<a name=\"v3-Dentition-TID19p\"> </a></td><td>19p</td><td>Mandibular left first molar prosthesis</td><td>19623</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19pd<a name=\"v3-Dentition-TID19pd\"> </a></td><td>19pd</td><td>Mandibular left first molar distal prosthesis</td><td>19622</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19pm<a name=\"v3-Dentition-TID19pm\"> </a></td><td>19pm</td><td>Mandibular left first molar mesial prosthesis</td><td>19624</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID1a<a name=\"v3-Dentition-TID1a\"> </a></td><td>1a</td><td>Maxillary right third molar abutment</td><td>19664</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID1i<a name=\"v3-Dentition-TID1i\"> </a></td><td>1i</td><td>Maxillary right third molar implant</td><td>19524</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID1p<a name=\"v3-Dentition-TID1p\"> </a></td><td>1p</td><td>Maxillary right third molar prosthesis</td><td>19569</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID1pd<a name=\"v3-Dentition-TID1pd\"> </a></td><td>1pd</td><td>Maxillary right third molar distal prosthesis</td><td>19568</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID1pm<a name=\"v3-Dentition-TID1pm\"> </a></td><td>1pm</td><td>Maxillary right third molar mesial prosthesis</td><td>19570</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID20a<a name=\"v3-Dentition-TID20a\"> </a></td><td>20a</td><td>Mandibular left second premolar abutment</td><td>19689</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID20i<a name=\"v3-Dentition-TID20i\"> </a></td><td>20i</td><td>Mandibular left second premolar implant</td><td>19549</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID20p<a name=\"v3-Dentition-TID20p\"> </a></td><td>20p</td><td>Mandibular left second premolar prosthesis</td><td>19626</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID20pd<a name=\"v3-Dentition-TID20pd\"> </a></td><td>20pd</td><td>Mandibular left second premolar distal prosthesis</td><td>19625</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID20pm<a name=\"v3-Dentition-TID20pm\"> </a></td><td>20pm</td><td>Mandibular left second premolar mesial prosthesis</td><td>19627</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID21a<a name=\"v3-Dentition-TID21a\"> </a></td><td>21a</td><td>Mandibular left first premolar abutment</td><td>19690</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID21i<a name=\"v3-Dentition-TID21i\"> </a></td><td>21i</td><td>Mandibular left first premolar implant</td><td>19550</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID21p<a name=\"v3-Dentition-TID21p\"> </a></td><td>21p</td><td>Mandibular left first premolar prosthesis</td><td>19629</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID21pd<a name=\"v3-Dentition-TID21pd\"> </a></td><td>21pd</td><td>Mandibular left first premolar distal prosthesis</td><td>19628</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID21pm<a name=\"v3-Dentition-TID21pm\"> </a></td><td>21pm</td><td>Mandibular left first premolar mesial prosthesis</td><td>19630</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID22a<a name=\"v3-Dentition-TID22a\"> </a></td><td>22a</td><td>Mandibular left canine abutment</td><td>19691</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID22i<a name=\"v3-Dentition-TID22i\"> </a></td><td>22i</td><td>Mandibular left canine implant</td><td>19551</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID22p<a name=\"v3-Dentition-TID22p\"> </a></td><td>22p</td><td>Mandibular left canine prosthesis</td><td>19632</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID22pd<a name=\"v3-Dentition-TID22pd\"> </a></td><td>22pd</td><td>Mandibular left canine distal prosthesis</td><td>19631</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID22pm<a name=\"v3-Dentition-TID22pm\"> </a></td><td>22pm</td><td>Mandibular left canine mesial prosthesis</td><td>19633</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID23a<a name=\"v3-Dentition-TID23a\"> </a></td><td>23a</td><td>Mandibular left lateral incisor abutment</td><td>19692</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID23i<a name=\"v3-Dentition-TID23i\"> </a></td><td>23i</td><td>Mandibular left lateral incisor implant</td><td>19552</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID23p<a name=\"v3-Dentition-TID23p\"> </a></td><td>23p</td><td>Mandibular left lateral incisor prosthesis</td><td>19635</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID23pd<a name=\"v3-Dentition-TID23pd\"> </a></td><td>23pd</td><td>Mandibular left lateral incisor distal prosthesis</td><td>19634</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID23pm<a name=\"v3-Dentition-TID23pm\"> </a></td><td>23pm</td><td>Mandibular left lateral incisor mesial prosthesis</td><td>19636</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID24a<a name=\"v3-Dentition-TID24a\"> </a></td><td>24a</td><td>Mandibular left central incisor abutment</td><td>19693</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID24i<a name=\"v3-Dentition-TID24i\"> </a></td><td>24i</td><td>Mandibular left central incisor implant</td><td>19553</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID24p<a name=\"v3-Dentition-TID24p\"> </a></td><td>24p</td><td>Mandibular left central incisor prosthesis</td><td>19638</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID24pd<a name=\"v3-Dentition-TID24pd\"> </a></td><td>24pd</td><td>Mandibular left central incisor distal prosthesis</td><td>19637</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID24pm<a name=\"v3-Dentition-TID24pm\"> </a></td><td>24pm</td><td>Mandibular left central incisor mesial prosthesis</td><td>19639</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID25a<a name=\"v3-Dentition-TID25a\"> </a></td><td>25a</td><td>Mandibular right central incisor abutment</td><td>19694</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID25i<a name=\"v3-Dentition-TID25i\"> </a></td><td>25i</td><td>Mandibular right central incisor implant</td><td>19554</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID25p<a name=\"v3-Dentition-TID25p\"> </a></td><td>25p</td><td>Mandibular right central incisor prosthesis</td><td>19641</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID25pd<a name=\"v3-Dentition-TID25pd\"> </a></td><td>25pd</td><td>Mandibular right central incisor distal prosthesis</td><td>19642</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID25pm<a name=\"v3-Dentition-TID25pm\"> </a></td><td>25pm</td><td>Mandibular right central incisor mesial prosthesis</td><td>19640</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID26a<a name=\"v3-Dentition-TID26a\"> </a></td><td>26a</td><td>Mandibular right lateral incisor abutment</td><td>19695</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID26i<a name=\"v3-Dentition-TID26i\"> </a></td><td>26i</td><td>Mandibular right lateral incisor implant</td><td>19555</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID26p<a name=\"v3-Dentition-TID26p\"> </a></td><td>26p</td><td>Mandibular right lateral incisor prosthesis</td><td>19644</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID26pd<a name=\"v3-Dentition-TID26pd\"> </a></td><td>26pd</td><td>Mandibular right lateral incisor distal prosthesis</td><td>19645</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID26pm<a name=\"v3-Dentition-TID26pm\"> </a></td><td>26pm</td><td>Mandibular right lateral incisor mesial prosthesis</td><td>19643</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID27a<a name=\"v3-Dentition-TID27a\"> </a></td><td>27a</td><td>Mandibular right canine abutment</td><td>19696</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID27i<a name=\"v3-Dentition-TID27i\"> </a></td><td>27i</td><td>Mandibular right canine implant</td><td>19556</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID27p<a name=\"v3-Dentition-TID27p\"> </a></td><td>27p</td><td>Mandibular right canine prosthesis</td><td>19647</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID27pd<a name=\"v3-Dentition-TID27pd\"> </a></td><td>27pd</td><td>Mandibular right canine distal prosthesis</td><td>19648</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID27pm<a name=\"v3-Dentition-TID27pm\"> </a></td><td>27pm</td><td>Mandibular right canine mesial prosthesis</td><td>19646</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID28a<a name=\"v3-Dentition-TID28a\"> </a></td><td>28a</td><td>Mandibular right first premolar abutment</td><td>19697</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID28i<a name=\"v3-Dentition-TID28i\"> </a></td><td>28i</td><td>Mandibular right first premolar implant</td><td>19557</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID28p<a name=\"v3-Dentition-TID28p\"> </a></td><td>28p</td><td>Mandibular right first premolar prosthesis</td><td>19650</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID28pd<a name=\"v3-Dentition-TID28pd\"> </a></td><td>28pd</td><td>Mandibular right first premolar distal prosthesis</td><td>19651</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID28pm<a name=\"v3-Dentition-TID28pm\"> </a></td><td>28pm</td><td>Mandibular right first premolar mesial prosthesis</td><td>19649</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID29a<a name=\"v3-Dentition-TID29a\"> </a></td><td>29a</td><td>Mandibular right second premolar abutment</td><td>19698</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID29i<a name=\"v3-Dentition-TID29i\"> </a></td><td>29i</td><td>Mandibular right second premolar implant</td><td>19558</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID29p<a name=\"v3-Dentition-TID29p\"> </a></td><td>29p</td><td>Mandibular right second premolar prosthesis</td><td>19653</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID29pd<a name=\"v3-Dentition-TID29pd\"> </a></td><td>29pd</td><td>Mandibular right second premolar distal prosthesis</td><td>19654</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID29pm<a name=\"v3-Dentition-TID29pm\"> </a></td><td>29pm</td><td>Mandibular right second premolar mesial prosthesis</td><td>19652</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID2a<a name=\"v3-Dentition-TID2a\"> </a></td><td>2a</td><td>Maxillary right second molar abutment</td><td>19665</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID2i<a name=\"v3-Dentition-TID2i\"> </a></td><td>2i</td><td>Maxillary right second molar implant</td><td>19525</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID2p<a name=\"v3-Dentition-TID2p\"> </a></td><td>2p</td><td>Maxillary right second molar prosthesis</td><td>19572</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID2pd<a name=\"v3-Dentition-TID2pd\"> </a></td><td>2pd</td><td>Maxillary right second molar distal prosthesis</td><td>19571</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID2pm<a name=\"v3-Dentition-TID2pm\"> </a></td><td>2pm</td><td>Maxillary right second molar mesial prosthesis</td><td>19573</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30a<a name=\"v3-Dentition-TID30a\"> </a></td><td>30a</td><td>Mandibular right first molar abutment</td><td>19699</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30ad<a name=\"v3-Dentition-TID30ad\"> </a></td><td>30ad</td><td>Mandibular right first molar abutment distal hemisection</td><td>19701</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30am<a name=\"v3-Dentition-TID30am\"> </a></td><td>30am</td><td>Mandibular right first molar abutment mesial hemisection</td><td>19700</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30i<a name=\"v3-Dentition-TID30i\"> </a></td><td>30i</td><td>Mandibular right first molar implant</td><td>19559</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30id<a name=\"v3-Dentition-TID30id\"> </a></td><td>30id</td><td>Mandibular right first molar implant distal hemisection</td><td>19561</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30im<a name=\"v3-Dentition-TID30im\"> </a></td><td>30im</td><td>Mandibular right first molar implant mesial hemisection</td><td>19560</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30p<a name=\"v3-Dentition-TID30p\"> </a></td><td>30p</td><td>Mandibular right first molar prosthesis</td><td>19656</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30pd<a name=\"v3-Dentition-TID30pd\"> </a></td><td>30pd</td><td>Mandibular right first molar distal prosthesis</td><td>19657</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30pm<a name=\"v3-Dentition-TID30pm\"> </a></td><td>30pm</td><td>Mandibular right first molar mesial prosthesis</td><td>19655</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31a<a name=\"v3-Dentition-TID31a\"> </a></td><td>31a</td><td>Mandibular right second molar abutment</td><td>19702</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31ad<a name=\"v3-Dentition-TID31ad\"> </a></td><td>31ad</td><td>Mandibular right second molar abutment distal hemisection</td><td>19704</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31am<a name=\"v3-Dentition-TID31am\"> </a></td><td>31am</td><td>Mandibular right second molar abutment mesial hemisection</td><td>19703</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31i<a name=\"v3-Dentition-TID31i\"> </a></td><td>31i</td><td>Mandibular right second molar implant</td><td>19562</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31id<a name=\"v3-Dentition-TID31id\"> </a></td><td>31id</td><td>Mandibular right second molar implant distal hemisection</td><td>19564</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31im<a name=\"v3-Dentition-TID31im\"> </a></td><td>31im</td><td>Mandibular right second molar implant mesial hemisection</td><td>19563</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31p<a name=\"v3-Dentition-TID31p\"> </a></td><td>31p</td><td>Mandibular right second molar prosthesis</td><td>19659</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31pd<a name=\"v3-Dentition-TID31pd\"> </a></td><td>31pd</td><td>Mandibular right second molar distal prosthesis</td><td>19660</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31pm<a name=\"v3-Dentition-TID31pm\"> </a></td><td>31pm</td><td>Mandibular right second molar mesial prosthesis</td><td>19658</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32a<a name=\"v3-Dentition-TID32a\"> </a></td><td>32a</td><td>Mandibular right third molar abutment</td><td>19705</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32ad<a name=\"v3-Dentition-TID32ad\"> </a></td><td>32ad</td><td>Mandibular right third molar abutment distal hemisection</td><td>19707</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32am<a name=\"v3-Dentition-TID32am\"> </a></td><td>32am</td><td>Mandibular right third molar abutment mesial hemisection</td><td>19706</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32i<a name=\"v3-Dentition-TID32i\"> </a></td><td>32i</td><td>Mandibular right third molar implant</td><td>19565</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32id<a name=\"v3-Dentition-TID32id\"> </a></td><td>32id</td><td>Mandibular right third molar implant distal hemisection</td><td>19567</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32im<a name=\"v3-Dentition-TID32im\"> </a></td><td>32im</td><td>Mandibular right third molar implant mesial hemisection</td><td>19566</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32p<a name=\"v3-Dentition-TID32p\"> </a></td><td>32p</td><td>Mandibular right third molar prosthesis</td><td>19662</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32pd<a name=\"v3-Dentition-TID32pd\"> </a></td><td>32pd</td><td>Mandibular right third molar distal prosthesis</td><td>19663</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32pm<a name=\"v3-Dentition-TID32pm\"> </a></td><td>32pm</td><td>Mandibular right third molar mesial prosthesis</td><td>19661</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID3a<a name=\"v3-Dentition-TID3a\"> </a></td><td>3a</td><td>Maxillary right first molar abutment</td><td>19666</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID3i<a name=\"v3-Dentition-TID3i\"> </a></td><td>3i</td><td>Maxillary right first molar implant</td><td>19526</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID3p<a name=\"v3-Dentition-TID3p\"> </a></td><td>3p</td><td>Maxillary right first molar prosthesis</td><td>19575</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID3pd<a name=\"v3-Dentition-TID3pd\"> </a></td><td>3pd</td><td>Maxillary right first molar distal prosthesis</td><td>19574</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID3pm<a name=\"v3-Dentition-TID3pm\"> </a></td><td>3pm</td><td>Maxillary right first molar mesial prosthesis</td><td>19576</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID4a<a name=\"v3-Dentition-TID4a\"> </a></td><td>4a</td><td>Maxillary right second premolar abutment</td><td>19667</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID4i<a name=\"v3-Dentition-TID4i\"> </a></td><td>4i</td><td>Maxillary right second premolar implant</td><td>19527</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID4p<a name=\"v3-Dentition-TID4p\"> </a></td><td>4p</td><td>Maxillary right second premolar prosthesis</td><td>19578</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID4pd<a name=\"v3-Dentition-TID4pd\"> </a></td><td>4pd</td><td>Maxillary right second premolar distal prosthesis</td><td>19577</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID4pm<a name=\"v3-Dentition-TID4pm\"> </a></td><td>4pm</td><td>Maxillary right second premolar mesial prosthesis</td><td>19579</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID5a<a name=\"v3-Dentition-TID5a\"> </a></td><td>5a</td><td>Maxillary right first premolar abutment</td><td>19668</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID5i<a name=\"v3-Dentition-TID5i\"> </a></td><td>5i</td><td>Maxillary right first premolar implant</td><td>19528</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID5p<a name=\"v3-Dentition-TID5p\"> </a></td><td>5p</td><td>Maxillary right first premolar prosthesis</td><td>19581</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID5pd<a name=\"v3-Dentition-TID5pd\"> </a></td><td>5pd</td><td>Maxillary right first premolar distal prosthesis</td><td>19580</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID5pm<a name=\"v3-Dentition-TID5pm\"> </a></td><td>5pm</td><td>Maxillary right first premolar mesial prosthesis</td><td>19582</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID6a<a name=\"v3-Dentition-TID6a\"> </a></td><td>6a</td><td>Maxillary right canine abutment</td><td>19669</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID6i<a name=\"v3-Dentition-TID6i\"> </a></td><td>6i</td><td>Maxillary right canine implant</td><td>19529</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID6p<a name=\"v3-Dentition-TID6p\"> </a></td><td>6p</td><td>Maxillary right canine prosthesis</td><td>19584</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID6pd<a name=\"v3-Dentition-TID6pd\"> </a></td><td>6pd</td><td>Maxillary right canine distal prosthesis</td><td>19583</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID6pm<a name=\"v3-Dentition-TID6pm\"> </a></td><td>6pm</td><td>Maxillary right canine mesial prosthesis</td><td>19585</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID7a<a name=\"v3-Dentition-TID7a\"> </a></td><td>7a</td><td>Maxillary right lateral incisor abutment</td><td>19670</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID7i<a name=\"v3-Dentition-TID7i\"> </a></td><td>7i</td><td>Maxillary right lateral incisor implant</td><td>19530</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID7p<a name=\"v3-Dentition-TID7p\"> </a></td><td>7p</td><td>Maxillary right lateral incisor prosthesis</td><td>19587</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID7pd<a name=\"v3-Dentition-TID7pd\"> </a></td><td>7pd</td><td>Maxillary right lateral incisor distal prosthesis</td><td>19586</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID7pm<a name=\"v3-Dentition-TID7pm\"> </a></td><td>7pm</td><td>Maxillary right lateral incisor mesial prosthesis</td><td>19588</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID8a<a name=\"v3-Dentition-TID8a\"> </a></td><td>8a</td><td>Maxillary right central incisor abutment</td><td>19671</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID8i<a name=\"v3-Dentition-TID8i\"> </a></td><td>8i</td><td>Maxillary right central incisor implant</td><td>19531</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID8p<a name=\"v3-Dentition-TID8p\"> </a></td><td>8p</td><td>Maxillary right central incisor prosthesis</td><td>19590</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID8pd<a name=\"v3-Dentition-TID8pd\"> </a></td><td>8pd</td><td>Maxillary right central incisor distal prosthesis</td><td>19589</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID8pm<a name=\"v3-Dentition-TID8pm\"> </a></td><td>8pm</td><td>Maxillary right central incisor mesial prosthesis</td><td>19591</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID9a<a name=\"v3-Dentition-TID9a\"> </a></td><td>9a</td><td>Maxillary left central incisor abutment</td><td>19672</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID9i<a name=\"v3-Dentition-TID9i\"> </a></td><td>9i</td><td>Maxillary left central incisor implant</td><td>19532</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID9p<a name=\"v3-Dentition-TID9p\"> </a></td><td>9p</td><td>Maxillary left central incisor prosthesis</td><td>19593</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID9pd<a name=\"v3-Dentition-TID9pd\"> </a></td><td>9pd</td><td>Maxillary left central incisor distal prosthesis</td><td>19594</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID9pm<a name=\"v3-Dentition-TID9pm\"> </a></td><td>9pm</td><td>Maxillary left central incisor mesial prosthesis</td><td>19592</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">PermanentDentition<a name=\"v3-Dentition-PermanentDentition\"> </a></td><td>Permanent dentition</td><td>Permanent dentition, the natural teeth of adulthood that replace or are added to the deciduous teeth</td><td>19404</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID1<a name=\"v3-Dentition-TID1\"> </a></td><td>1</td><td>Maxillary right third molar</td><td>19405</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID10<a name=\"v3-Dentition-TID10\"> </a></td><td>10</td><td>Maxillary left lateral incisor</td><td>19414</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID11<a name=\"v3-Dentition-TID11\"> </a></td><td>11</td><td>Maxillary left canine</td><td>19415</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID12<a name=\"v3-Dentition-TID12\"> </a></td><td>12</td><td>Maxillary left first premolar</td><td>19416</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID13<a name=\"v3-Dentition-TID13\"> </a></td><td>13</td><td>Maxillary left second premolar</td><td>19417</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID14<a name=\"v3-Dentition-TID14\"> </a></td><td>14</td><td>Maxillary left first molar</td><td>19418</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID15<a name=\"v3-Dentition-TID15\"> </a></td><td>15</td><td>Maxillary left second molar</td><td>19419</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID16<a name=\"v3-Dentition-TID16\"> </a></td><td>16</td><td>Maxillary left third molar</td><td>19420</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17<a name=\"v3-Dentition-TID17\"> </a></td><td>17</td><td>Mandibular left third molar</td><td>19421</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17d<a name=\"v3-Dentition-TID17d\"> </a></td><td>17d</td><td>Mandibular left third molar distal hemisection</td><td>19423</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17m<a name=\"v3-Dentition-TID17m\"> </a></td><td>17m</td><td>Mandibular left third molar mesial hemisection</td><td>19422</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18<a name=\"v3-Dentition-TID18\"> </a></td><td>18</td><td>Mandibular left second molar</td><td>19424</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18d<a name=\"v3-Dentition-TID18d\"> </a></td><td>18d</td><td>Mandibular left second molar distal hemisection</td><td>19426</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18m<a name=\"v3-Dentition-TID18m\"> </a></td><td>18m</td><td>Mandibular left second molar mesial hemisection</td><td>19425</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19<a name=\"v3-Dentition-TID19\"> </a></td><td>19</td><td>Mandibular left first molar</td><td>19427</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19d<a name=\"v3-Dentition-TID19d\"> </a></td><td>19d</td><td>Mandibular left first molar distal hemisection</td><td>19429</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19m<a name=\"v3-Dentition-TID19m\"> </a></td><td>19m</td><td>Mandibular left first molar mesial hemisection</td><td>19428</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID2<a name=\"v3-Dentition-TID2\"> </a></td><td>2</td><td>Maxillary right second molar</td><td>19406</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID20<a name=\"v3-Dentition-TID20\"> </a></td><td>20</td><td>Mandibular left second premolar</td><td>19430</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID21<a name=\"v3-Dentition-TID21\"> </a></td><td>21</td><td>Mandibular left first premolar</td><td>19431</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID22<a name=\"v3-Dentition-TID22\"> </a></td><td>22</td><td>Mandibular left canine</td><td>19432</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID23<a name=\"v3-Dentition-TID23\"> </a></td><td>23</td><td>Mandibular left lateral incisor</td><td>19433</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID24<a name=\"v3-Dentition-TID24\"> </a></td><td>24</td><td>Mandibular left central incisor</td><td>19434</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID25<a name=\"v3-Dentition-TID25\"> </a></td><td>25</td><td>Mandibular right central incisor</td><td>19435</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID26<a name=\"v3-Dentition-TID26\"> </a></td><td>26</td><td>Mandibular right lateral incisor</td><td>19436</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID27<a name=\"v3-Dentition-TID27\"> </a></td><td>27</td><td>Mandibular right canine</td><td>19437</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID28<a name=\"v3-Dentition-TID28\"> </a></td><td>28</td><td>Mandibular right first premolar</td><td>19438</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID29<a name=\"v3-Dentition-TID29\"> </a></td><td>29</td><td>Mandibular right second premolar</td><td>19439</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID3<a name=\"v3-Dentition-TID3\"> </a></td><td>3</td><td>Maxillary right first molar</td><td>19407</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30<a name=\"v3-Dentition-TID30\"> </a></td><td>30</td><td>Mandibular right first molar</td><td>19440</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30d<a name=\"v3-Dentition-TID30d\"> </a></td><td>30d</td><td>Mandibular right first molar distal hemisection</td><td>19442</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30m<a name=\"v3-Dentition-TID30m\"> </a></td><td>30m</td><td>Mandibular right first molar mesial hemisection</td><td>19441</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31<a name=\"v3-Dentition-TID31\"> </a></td><td>31</td><td>Mandibular right second molar</td><td>19443</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31d<a name=\"v3-Dentition-TID31d\"> </a></td><td>31d</td><td>Mandibular right second molar distal hemisection</td><td>19445</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31m<a name=\"v3-Dentition-TID31m\"> </a></td><td>31m</td><td>Mandibular right second molar mesial hemisection</td><td>19444</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32<a name=\"v3-Dentition-TID32\"> </a></td><td>32</td><td>Mandibular right third molar</td><td>19446</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32d<a name=\"v3-Dentition-TID32d\"> </a></td><td>32d</td><td>Mandibular right third molar distal hemisection</td><td>19448</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32m<a name=\"v3-Dentition-TID32m\"> </a></td><td>32m</td><td>Mandibular right third molar mesial hemisection</td><td>19447</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID4<a name=\"v3-Dentition-TID4\"> </a></td><td>4</td><td>Maxillary right second premolar</td><td>19408</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID5<a name=\"v3-Dentition-TID5\"> </a></td><td>5</td><td>Maxillary right first premolar</td><td>19409</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID6<a name=\"v3-Dentition-TID6\"> </a></td><td>6</td><td>Maxillary right canine</td><td>19410</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID7<a name=\"v3-Dentition-TID7\"> </a></td><td>7</td><td>Maxillary right lateral incisor</td><td>19411</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID8<a name=\"v3-Dentition-TID8\"> </a></td><td>8</td><td>Maxillary right central incisor</td><td>19412</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID9<a name=\"v3-Dentition-TID9\"> </a></td><td>9</td><td>Maxillary left central incisor</td><td>19413</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">PrimaryDentition<a name=\"v3-Dentition-PrimaryDentition\"> </a></td><td>Primary dentition</td><td>Primary dentition, the first teeth to errupt and usually replaced with permanent dentition</td><td>19502</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDA<a name=\"v3-Dentition-TIDA\"> </a></td><td>A</td><td>Maxillary right second primary molar</td><td>19503</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDB<a name=\"v3-Dentition-TIDB\"> </a></td><td>B</td><td>Maxillary right first primary molar</td><td>19504</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDC<a name=\"v3-Dentition-TIDC\"> </a></td><td>C</td><td>Maxillary right primary canine</td><td>19505</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDD<a name=\"v3-Dentition-TIDD\"> </a></td><td>D</td><td>Maxillary right lateral primary incisor</td><td>19506</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDE<a name=\"v3-Dentition-TIDE\"> </a></td><td>E</td><td>Maxillary right central primary incisor</td><td>19507</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDF<a name=\"v3-Dentition-TIDF\"> </a></td><td>F</td><td>Maxillary left central primary incisor</td><td>19508</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDG<a name=\"v3-Dentition-TIDG\"> </a></td><td>G</td><td>Maxillary left lateral primary incisor</td><td>19509</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDH<a name=\"v3-Dentition-TIDH\"> </a></td><td>H</td><td>Maxillary left primary canine</td><td>19510</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDI<a name=\"v3-Dentition-TIDI\"> </a></td><td>I</td><td>Maxillary left first primary molar</td><td>19511</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDJ<a name=\"v3-Dentition-TIDJ\"> </a></td><td>J</td><td>Maxillary left second primary molar</td><td>19512</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDK<a name=\"v3-Dentition-TIDK\"> </a></td><td>K</td><td>Mandibular left second primary molar</td><td>19513</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDL<a name=\"v3-Dentition-TIDL\"> </a></td><td>L</td><td>Mandibular left first primary molar</td><td>19514</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDM<a name=\"v3-Dentition-TIDM\"> </a></td><td>M</td><td>Mandibular left primary canine</td><td>19515</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDN<a name=\"v3-Dentition-TIDN\"> </a></td><td>N</td><td>Mandibular left lateral primary incisor</td><td>19516</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDO<a name=\"v3-Dentition-TIDO\"> </a></td><td>O</td><td>Mandibular left central primary incisor</td><td>19517</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDP<a name=\"v3-Dentition-TIDP\"> </a></td><td>P</td><td>Mandibular right central primary incisor</td><td>19518</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDQ<a name=\"v3-Dentition-TIDQ\"> </a></td><td>Q</td><td>Mandibular right lateral primary incisor</td><td>19519</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDR<a name=\"v3-Dentition-TIDR\"> </a></td><td>R</td><td>Mandibular right primary canine</td><td>19520</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDS<a name=\"v3-Dentition-TIDS\"> </a></td><td>S</td><td>Mandibular right first primary molar</td><td>19521</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDT<a name=\"v3-Dentition-TIDT\"> </a></td><td>T</td><td>Mandibular right second primary molar</td><td>19522</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">SupernumeraryTooth<a name=\"v3-Dentition-SupernumeraryTooth\"> </a></td><td>Supernumerary Tooth</td><td>Supernumerary tooth, any tooth in addition to the normal permanent and primary dentition</td><td>19449</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID10s<a name=\"v3-Dentition-TID10s\"> </a></td><td>10s</td><td>Supernumerary maxillary left lateral incisor</td><td>19459</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID11s<a name=\"v3-Dentition-TID11s\"> </a></td><td>11s</td><td>Supernumerary maxillary left canine</td><td>19460</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID12s<a name=\"v3-Dentition-TID12s\"> </a></td><td>12s</td><td>Supernumerary maxillary left first premolar</td><td>19461</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID13s<a name=\"v3-Dentition-TID13s\"> </a></td><td>13s</td><td>Supernumerary maxillary left second premolar</td><td>19462</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID14s<a name=\"v3-Dentition-TID14s\"> </a></td><td>14s</td><td>Supernumerary maxillary left first molar</td><td>19463</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID15s<a name=\"v3-Dentition-TID15s\"> </a></td><td>15s</td><td>Supernumerary maxillary left second molar</td><td>19464</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID16s<a name=\"v3-Dentition-TID16s\"> </a></td><td>16s</td><td>Supernumerary maxillary left third molar</td><td>19465</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID17s<a name=\"v3-Dentition-TID17s\"> </a></td><td>17s</td><td>Supernumerary mandibular left third molar</td><td>19466</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID18s<a name=\"v3-Dentition-TID18s\"> </a></td><td>18s</td><td>Supernumerary mandibular left second molar</td><td>19467</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID19s<a name=\"v3-Dentition-TID19s\"> </a></td><td>19s</td><td>Supernumerary mandibular left first molar</td><td>19468</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID1s<a name=\"v3-Dentition-TID1s\"> </a></td><td>1s</td><td>Supernumerary maxillary right third molar</td><td>19450</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID20s<a name=\"v3-Dentition-TID20s\"> </a></td><td>20s</td><td>Supernumerary mandibular left second premolar</td><td>19469</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID21s<a name=\"v3-Dentition-TID21s\"> </a></td><td>21s</td><td>Supernumerary mandibular left first premolar</td><td>19470</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID22s<a name=\"v3-Dentition-TID22s\"> </a></td><td>22s</td><td>Supernumerary mandibular left canine</td><td>19471</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID23s<a name=\"v3-Dentition-TID23s\"> </a></td><td>23s</td><td>Supernumerary mandibular left lateral incisor</td><td>19472</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID24s<a name=\"v3-Dentition-TID24s\"> </a></td><td>24s</td><td>Supernumerary mandibular left central incisor</td><td>19473</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID25s<a name=\"v3-Dentition-TID25s\"> </a></td><td>25s</td><td>Supernumerary mandibular right central incisor</td><td>19474</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID26s<a name=\"v3-Dentition-TID26s\"> </a></td><td>26s</td><td>Supernumerary mandibular right lateral incisor</td><td>19475</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID27s<a name=\"v3-Dentition-TID27s\"> </a></td><td>27s</td><td>Supernumerary mandibular right canine</td><td>19476</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID28s<a name=\"v3-Dentition-TID28s\"> </a></td><td>28s</td><td>Supernumerary mandibular right first premolar</td><td>19477</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID29s<a name=\"v3-Dentition-TID29s\"> </a></td><td>29s</td><td>Supernumerary mandibular right second premolar</td><td>19478</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID2s<a name=\"v3-Dentition-TID2s\"> </a></td><td>2s</td><td>Supernumerary maxillary right second molar</td><td>19451</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID30s<a name=\"v3-Dentition-TID30s\"> </a></td><td>30s</td><td>Supernumerary mandibular right first molar</td><td>19479</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID31s<a name=\"v3-Dentition-TID31s\"> </a></td><td>31s</td><td>Supernumerary mandibular right second molar</td><td>19480</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID32s<a name=\"v3-Dentition-TID32s\"> </a></td><td>32s</td><td>Supernumerary mandibular right third molar</td><td>19481</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID3s<a name=\"v3-Dentition-TID3s\"> </a></td><td>3s</td><td>Supernumerary maxillary right first molar</td><td>19452</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID4s<a name=\"v3-Dentition-TID4s\"> </a></td><td>4s</td><td>Supernumerary maxillary right second premolar</td><td>19453</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID5s<a name=\"v3-Dentition-TID5s\"> </a></td><td>5s</td><td>Supernumerary maxillary right first premolar</td><td>19454</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID6s<a name=\"v3-Dentition-TID6s\"> </a></td><td>6s</td><td>Supernumerary maxillary right canine</td><td>19455</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID7s<a name=\"v3-Dentition-TID7s\"> </a></td><td>7s</td><td>Supernumerary maxillary right lateral incisor</td><td>19456</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID8s<a name=\"v3-Dentition-TID8s\"> </a></td><td>8s</td><td>Supernumerary maxillary right central incisor</td><td>19457</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TID9s<a name=\"v3-Dentition-TID9s\"> </a></td><td>9s</td><td>Supernumerary maxillary left central incisor</td><td>19458</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDAs<a name=\"v3-Dentition-TIDAs\"> </a></td><td>As</td><td>Supernumerary maxillary right second primary molar</td><td>19482</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDBs<a name=\"v3-Dentition-TIDBs\"> </a></td><td>Bs</td><td>Supernumerary maxillary right first primary molar</td><td>19483</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDCs<a name=\"v3-Dentition-TIDCs\"> </a></td><td>Cs</td><td>Supernumerary maxillary right primary canine</td><td>19484</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDDs<a name=\"v3-Dentition-TIDDs\"> </a></td><td>Ds</td><td>Supernumerary maxillary right lateral primary incisor</td><td>19485</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDEs<a name=\"v3-Dentition-TIDEs\"> </a></td><td>Es</td><td>Supernumerary maxillary right central primary incisor</td><td>19486</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDFs<a name=\"v3-Dentition-TIDFs\"> </a></td><td>Fs</td><td>Supernumerary maxillary left central primary incisor</td><td>19487</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDGs<a name=\"v3-Dentition-TIDGs\"> </a></td><td>Gs</td><td>Supernumerary maxillary left lateral primary incisor</td><td>19488</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDHs<a name=\"v3-Dentition-TIDHs\"> </a></td><td>Hs</td><td>Supernumerary maxillary left primary canine</td><td>19489</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDIs<a name=\"v3-Dentition-TIDIs\"> </a></td><td>Is</td><td>Supernumerary maxillary left first primary molar</td><td>19490</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDJs<a name=\"v3-Dentition-TIDJs\"> </a></td><td>Js</td><td>Supernumerary maxillary left second primary molar</td><td>19491</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDKs<a name=\"v3-Dentition-TIDKs\"> </a></td><td>Ks</td><td>Supernumerary mandibular left second primary molar</td><td>19492</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDLs<a name=\"v3-Dentition-TIDLs\"> </a></td><td>Ls</td><td>Supernumerary mandibular left first primary molar</td><td>19493</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDMs<a name=\"v3-Dentition-TIDMs\"> </a></td><td>Ms</td><td>Supernumerary mandibular left primary canine</td><td>19494</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDNs<a name=\"v3-Dentition-TIDNs\"> </a></td><td>Ns</td><td>Supernumerary mandibular left lateral primary incisor</td><td>19495</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDOs<a name=\"v3-Dentition-TIDOs\"> </a></td><td>Os</td><td>Supernumerary mandibular left central primary incisor</td><td>19496</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDPs<a name=\"v3-Dentition-TIDPs\"> </a></td><td>Ps</td><td>Supernumerary mandibular right central primary incisor</td><td>19497</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDQs<a name=\"v3-Dentition-TIDQs\"> </a></td><td>Qs</td><td>Supernumerary mandibular right lateral primary incisor</td><td>19498</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDRs<a name=\"v3-Dentition-TIDRs\"> </a></td><td>Rs</td><td>Supernumerary mandibular right primary canine</td><td>19499</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDSs<a name=\"v3-Dentition-TIDSs\"> </a></td><td>Ss</td><td>Supernumerary mandibular right first primary molar</td><td>19500</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  TIDTs<a name=\"v3-Dentition-TIDTs\"> </a></td><td>Ts</td><td>Supernumerary mandibular right second primary molar</td><td>19501</td><td>active</td><td/></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">_ArtificialDentition<a name=\"v3-Dentition-_ArtificialDentition\"> </a></td><td>ArtificialDentition</td><td/><td>21296</td><td>retired</td><td>true</td></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">_Dentition<a name=\"v3-Dentition-_Dentition\"> </a></td><td>Dentition</td><td/><td>21297</td><td>retired</td><td>true</td></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">_PermanentDentition<a name=\"v3-Dentition-_PermanentDentition\"> </a></td><td>PermanentDentition</td><td/><td>21298</td><td>retired</td><td>true</td></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">_PrimaryDentition<a name=\"v3-Dentition-_PrimaryDentition\"> </a></td><td>PrimaryDentition</td><td/><td>21299</td><td>retired</td><td>true</td></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">_SupernumeraryTooth<a name=\"v3-Dentition-_SupernumeraryTooth\"> </a></td><td>SupernumeraryTooth</td><td/><td>21300</td><td>retired</td><td>true</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-Dentition"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.1080" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Dentition"] ; # 
+  fhir:title [ fhir:v "Dentition"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "**** MISSING DESCRIPTION ****"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state.  Normally is not populated unless the state is retired.." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "notSelectable" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#notSelectable"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Indicates that the code is abstract - only intended to be used as a selector for other concepts" ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ArtificialDentition" ] ;
+     fhir:display [ fhir:v "Artificial dentition" ] ;
+     fhir:definition [ fhir:v "Artificial dentition, artificial subsitutes for the natural dentition" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19523" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "TID10a" ] ;
+       fhir:display [ fhir:v "10a" ] ;
+       fhir:definition [ fhir:v "Maxillary left lateral incisor abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19673" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID10i" ] ;
+       fhir:display [ fhir:v "10i" ] ;
+       fhir:definition [ fhir:v "Maxillary left lateral incisor implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19533" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID10p" ] ;
+       fhir:display [ fhir:v "10p" ] ;
+       fhir:definition [ fhir:v "Maxillary left lateral incisor prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19596" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID10pd" ] ;
+       fhir:display [ fhir:v "10pd" ] ;
+       fhir:definition [ fhir:v "Maxillary left lateral incisor distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19597" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID10pm" ] ;
+       fhir:display [ fhir:v "10pm" ] ;
+       fhir:definition [ fhir:v "Maxillary left lateral incisor mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19595" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID11a" ] ;
+       fhir:display [ fhir:v "11a" ] ;
+       fhir:definition [ fhir:v "Maxillary left canine abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19674" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID11i" ] ;
+       fhir:display [ fhir:v "11i" ] ;
+       fhir:definition [ fhir:v "Maxillary left canine implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19534" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID11p" ] ;
+       fhir:display [ fhir:v "11p" ] ;
+       fhir:definition [ fhir:v "Maxillary left canine prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19599" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID11pd" ] ;
+       fhir:display [ fhir:v "11pd" ] ;
+       fhir:definition [ fhir:v "Maxillary left canine distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19600" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID11pm" ] ;
+       fhir:display [ fhir:v "11pm" ] ;
+       fhir:definition [ fhir:v "Maxillary left canine mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19598" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID12a" ] ;
+       fhir:display [ fhir:v "12a" ] ;
+       fhir:definition [ fhir:v "Maxillary left first premolar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19675" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID12i" ] ;
+       fhir:display [ fhir:v "12i" ] ;
+       fhir:definition [ fhir:v "Maxillary left first premolar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19535" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID12p" ] ;
+       fhir:display [ fhir:v "12p" ] ;
+       fhir:definition [ fhir:v "Maxillary left first premolar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19602" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID12pd" ] ;
+       fhir:display [ fhir:v "12pd" ] ;
+       fhir:definition [ fhir:v "Maxillary left first premolar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19603" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID12pm" ] ;
+       fhir:display [ fhir:v "12pm" ] ;
+       fhir:definition [ fhir:v "Maxillary left first premolar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19601" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID13a" ] ;
+       fhir:display [ fhir:v "13a" ] ;
+       fhir:definition [ fhir:v "Maxillary left second premolar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19676" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID13i" ] ;
+       fhir:display [ fhir:v "13i" ] ;
+       fhir:definition [ fhir:v "Maxillary left second premolar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19536" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID13p" ] ;
+       fhir:display [ fhir:v "13p" ] ;
+       fhir:definition [ fhir:v "Maxillary left second premolar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19605" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID13pd" ] ;
+       fhir:display [ fhir:v "13pd" ] ;
+       fhir:definition [ fhir:v "Maxillary left second premolar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19606" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID13pm" ] ;
+       fhir:display [ fhir:v "13pm" ] ;
+       fhir:definition [ fhir:v "Maxillary left second premolar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19604" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID14a" ] ;
+       fhir:display [ fhir:v "14a" ] ;
+       fhir:definition [ fhir:v "Maxillary left first molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19677" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID14i" ] ;
+       fhir:display [ fhir:v "14i" ] ;
+       fhir:definition [ fhir:v "Maxillary left first molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19537" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID14p" ] ;
+       fhir:display [ fhir:v "14p" ] ;
+       fhir:definition [ fhir:v "Maxillary left first molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19608" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID14pd" ] ;
+       fhir:display [ fhir:v "14pd" ] ;
+       fhir:definition [ fhir:v "Maxillary left first molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19609" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID14pm" ] ;
+       fhir:display [ fhir:v "14pm" ] ;
+       fhir:definition [ fhir:v "Maxillary left first molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19607" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID15a" ] ;
+       fhir:display [ fhir:v "15a" ] ;
+       fhir:definition [ fhir:v "Maxillary left second molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19678" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID15i" ] ;
+       fhir:display [ fhir:v "15i" ] ;
+       fhir:definition [ fhir:v "Maxillary left second molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19538" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID15p" ] ;
+       fhir:display [ fhir:v "15p" ] ;
+       fhir:definition [ fhir:v "Maxillary left second molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19611" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID15pd" ] ;
+       fhir:display [ fhir:v "15pd" ] ;
+       fhir:definition [ fhir:v "Maxillary left second molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19612" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID15pm" ] ;
+       fhir:display [ fhir:v "15pm" ] ;
+       fhir:definition [ fhir:v "Maxillary left second molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19610" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID16a" ] ;
+       fhir:display [ fhir:v "16a" ] ;
+       fhir:definition [ fhir:v "Maxillary left third molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19679" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID16i" ] ;
+       fhir:display [ fhir:v "16i" ] ;
+       fhir:definition [ fhir:v "Maxillary left third molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19539" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID16p" ] ;
+       fhir:display [ fhir:v "16p" ] ;
+       fhir:definition [ fhir:v "Maxillary left third molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19614" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID16pd" ] ;
+       fhir:display [ fhir:v "16pd" ] ;
+       fhir:definition [ fhir:v "Maxillary left third molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19615" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID16pm" ] ;
+       fhir:display [ fhir:v "16pm" ] ;
+       fhir:definition [ fhir:v "Maxillary left third molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19613" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17a" ] ;
+       fhir:display [ fhir:v "17a" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19680" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17ad" ] ;
+       fhir:display [ fhir:v "17ad" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar abutment distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19682" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17am" ] ;
+       fhir:display [ fhir:v "17am" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar abutment mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19681" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17i" ] ;
+       fhir:display [ fhir:v "17i" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19540" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17id" ] ;
+       fhir:display [ fhir:v "17id" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar implant distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19542" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17im" ] ;
+       fhir:display [ fhir:v "17im" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar implant mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19541" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17p" ] ;
+       fhir:display [ fhir:v "17p" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19617" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17pd" ] ;
+       fhir:display [ fhir:v "17pd" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19616" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17pm" ] ;
+       fhir:display [ fhir:v "17pm" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19618" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18a" ] ;
+       fhir:display [ fhir:v "18a" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19683" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18ad" ] ;
+       fhir:display [ fhir:v "18ad" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar abutment distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19685" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18am" ] ;
+       fhir:display [ fhir:v "18am" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar abutment mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19684" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18i" ] ;
+       fhir:display [ fhir:v "18i" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19543" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18id" ] ;
+       fhir:display [ fhir:v "18id" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar implant distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19545" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18im" ] ;
+       fhir:display [ fhir:v "18im" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar implant mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19544" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18p" ] ;
+       fhir:display [ fhir:v "18p" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19620" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18pd" ] ;
+       fhir:display [ fhir:v "18pd" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19619" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18pm" ] ;
+       fhir:display [ fhir:v "18pm" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19621" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19a" ] ;
+       fhir:display [ fhir:v "19a" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19686" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19ad" ] ;
+       fhir:display [ fhir:v "19ad" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar abutment distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19688" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19am" ] ;
+       fhir:display [ fhir:v "19am" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar abutment mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19687" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19i" ] ;
+       fhir:display [ fhir:v "19i" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19546" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19id" ] ;
+       fhir:display [ fhir:v "19id" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar implant distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19548" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19im" ] ;
+       fhir:display [ fhir:v "19im" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar implant mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19547" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19p" ] ;
+       fhir:display [ fhir:v "19p" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19623" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19pd" ] ;
+       fhir:display [ fhir:v "19pd" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19622" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19pm" ] ;
+       fhir:display [ fhir:v "19pm" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19624" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID1a" ] ;
+       fhir:display [ fhir:v "1a" ] ;
+       fhir:definition [ fhir:v "Maxillary right third molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19664" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID1i" ] ;
+       fhir:display [ fhir:v "1i" ] ;
+       fhir:definition [ fhir:v "Maxillary right third molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19524" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID1p" ] ;
+       fhir:display [ fhir:v "1p" ] ;
+       fhir:definition [ fhir:v "Maxillary right third molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19569" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID1pd" ] ;
+       fhir:display [ fhir:v "1pd" ] ;
+       fhir:definition [ fhir:v "Maxillary right third molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19568" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID1pm" ] ;
+       fhir:display [ fhir:v "1pm" ] ;
+       fhir:definition [ fhir:v "Maxillary right third molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19570" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID20a" ] ;
+       fhir:display [ fhir:v "20a" ] ;
+       fhir:definition [ fhir:v "Mandibular left second premolar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19689" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID20i" ] ;
+       fhir:display [ fhir:v "20i" ] ;
+       fhir:definition [ fhir:v "Mandibular left second premolar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19549" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID20p" ] ;
+       fhir:display [ fhir:v "20p" ] ;
+       fhir:definition [ fhir:v "Mandibular left second premolar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19626" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID20pd" ] ;
+       fhir:display [ fhir:v "20pd" ] ;
+       fhir:definition [ fhir:v "Mandibular left second premolar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19625" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID20pm" ] ;
+       fhir:display [ fhir:v "20pm" ] ;
+       fhir:definition [ fhir:v "Mandibular left second premolar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19627" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID21a" ] ;
+       fhir:display [ fhir:v "21a" ] ;
+       fhir:definition [ fhir:v "Mandibular left first premolar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19690" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID21i" ] ;
+       fhir:display [ fhir:v "21i" ] ;
+       fhir:definition [ fhir:v "Mandibular left first premolar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19550" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID21p" ] ;
+       fhir:display [ fhir:v "21p" ] ;
+       fhir:definition [ fhir:v "Mandibular left first premolar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19629" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID21pd" ] ;
+       fhir:display [ fhir:v "21pd" ] ;
+       fhir:definition [ fhir:v "Mandibular left first premolar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19628" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID21pm" ] ;
+       fhir:display [ fhir:v "21pm" ] ;
+       fhir:definition [ fhir:v "Mandibular left first premolar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19630" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID22a" ] ;
+       fhir:display [ fhir:v "22a" ] ;
+       fhir:definition [ fhir:v "Mandibular left canine abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19691" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID22i" ] ;
+       fhir:display [ fhir:v "22i" ] ;
+       fhir:definition [ fhir:v "Mandibular left canine implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19551" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID22p" ] ;
+       fhir:display [ fhir:v "22p" ] ;
+       fhir:definition [ fhir:v "Mandibular left canine prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19632" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID22pd" ] ;
+       fhir:display [ fhir:v "22pd" ] ;
+       fhir:definition [ fhir:v "Mandibular left canine distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19631" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID22pm" ] ;
+       fhir:display [ fhir:v "22pm" ] ;
+       fhir:definition [ fhir:v "Mandibular left canine mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19633" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID23a" ] ;
+       fhir:display [ fhir:v "23a" ] ;
+       fhir:definition [ fhir:v "Mandibular left lateral incisor abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19692" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID23i" ] ;
+       fhir:display [ fhir:v "23i" ] ;
+       fhir:definition [ fhir:v "Mandibular left lateral incisor implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19552" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID23p" ] ;
+       fhir:display [ fhir:v "23p" ] ;
+       fhir:definition [ fhir:v "Mandibular left lateral incisor prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19635" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID23pd" ] ;
+       fhir:display [ fhir:v "23pd" ] ;
+       fhir:definition [ fhir:v "Mandibular left lateral incisor distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19634" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID23pm" ] ;
+       fhir:display [ fhir:v "23pm" ] ;
+       fhir:definition [ fhir:v "Mandibular left lateral incisor mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19636" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID24a" ] ;
+       fhir:display [ fhir:v "24a" ] ;
+       fhir:definition [ fhir:v "Mandibular left central incisor abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19693" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID24i" ] ;
+       fhir:display [ fhir:v "24i" ] ;
+       fhir:definition [ fhir:v "Mandibular left central incisor implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19553" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID24p" ] ;
+       fhir:display [ fhir:v "24p" ] ;
+       fhir:definition [ fhir:v "Mandibular left central incisor prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19638" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID24pd" ] ;
+       fhir:display [ fhir:v "24pd" ] ;
+       fhir:definition [ fhir:v "Mandibular left central incisor distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19637" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID24pm" ] ;
+       fhir:display [ fhir:v "24pm" ] ;
+       fhir:definition [ fhir:v "Mandibular left central incisor mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19639" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID25a" ] ;
+       fhir:display [ fhir:v "25a" ] ;
+       fhir:definition [ fhir:v "Mandibular right central incisor abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19694" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID25i" ] ;
+       fhir:display [ fhir:v "25i" ] ;
+       fhir:definition [ fhir:v "Mandibular right central incisor implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19554" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID25p" ] ;
+       fhir:display [ fhir:v "25p" ] ;
+       fhir:definition [ fhir:v "Mandibular right central incisor prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19641" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID25pd" ] ;
+       fhir:display [ fhir:v "25pd" ] ;
+       fhir:definition [ fhir:v "Mandibular right central incisor distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19642" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID25pm" ] ;
+       fhir:display [ fhir:v "25pm" ] ;
+       fhir:definition [ fhir:v "Mandibular right central incisor mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19640" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID26a" ] ;
+       fhir:display [ fhir:v "26a" ] ;
+       fhir:definition [ fhir:v "Mandibular right lateral incisor abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19695" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID26i" ] ;
+       fhir:display [ fhir:v "26i" ] ;
+       fhir:definition [ fhir:v "Mandibular right lateral incisor implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19555" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID26p" ] ;
+       fhir:display [ fhir:v "26p" ] ;
+       fhir:definition [ fhir:v "Mandibular right lateral incisor prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19644" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID26pd" ] ;
+       fhir:display [ fhir:v "26pd" ] ;
+       fhir:definition [ fhir:v "Mandibular right lateral incisor distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19645" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID26pm" ] ;
+       fhir:display [ fhir:v "26pm" ] ;
+       fhir:definition [ fhir:v "Mandibular right lateral incisor mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19643" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID27a" ] ;
+       fhir:display [ fhir:v "27a" ] ;
+       fhir:definition [ fhir:v "Mandibular right canine abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19696" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID27i" ] ;
+       fhir:display [ fhir:v "27i" ] ;
+       fhir:definition [ fhir:v "Mandibular right canine implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19556" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID27p" ] ;
+       fhir:display [ fhir:v "27p" ] ;
+       fhir:definition [ fhir:v "Mandibular right canine prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19647" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID27pd" ] ;
+       fhir:display [ fhir:v "27pd" ] ;
+       fhir:definition [ fhir:v "Mandibular right canine distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19648" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID27pm" ] ;
+       fhir:display [ fhir:v "27pm" ] ;
+       fhir:definition [ fhir:v "Mandibular right canine mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19646" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID28a" ] ;
+       fhir:display [ fhir:v "28a" ] ;
+       fhir:definition [ fhir:v "Mandibular right first premolar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19697" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID28i" ] ;
+       fhir:display [ fhir:v "28i" ] ;
+       fhir:definition [ fhir:v "Mandibular right first premolar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19557" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID28p" ] ;
+       fhir:display [ fhir:v "28p" ] ;
+       fhir:definition [ fhir:v "Mandibular right first premolar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19650" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID28pd" ] ;
+       fhir:display [ fhir:v "28pd" ] ;
+       fhir:definition [ fhir:v "Mandibular right first premolar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19651" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID28pm" ] ;
+       fhir:display [ fhir:v "28pm" ] ;
+       fhir:definition [ fhir:v "Mandibular right first premolar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19649" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID29a" ] ;
+       fhir:display [ fhir:v "29a" ] ;
+       fhir:definition [ fhir:v "Mandibular right second premolar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19698" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID29i" ] ;
+       fhir:display [ fhir:v "29i" ] ;
+       fhir:definition [ fhir:v "Mandibular right second premolar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19558" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID29p" ] ;
+       fhir:display [ fhir:v "29p" ] ;
+       fhir:definition [ fhir:v "Mandibular right second premolar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19653" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID29pd" ] ;
+       fhir:display [ fhir:v "29pd" ] ;
+       fhir:definition [ fhir:v "Mandibular right second premolar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19654" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID29pm" ] ;
+       fhir:display [ fhir:v "29pm" ] ;
+       fhir:definition [ fhir:v "Mandibular right second premolar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19652" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID2a" ] ;
+       fhir:display [ fhir:v "2a" ] ;
+       fhir:definition [ fhir:v "Maxillary right second molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19665" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID2i" ] ;
+       fhir:display [ fhir:v "2i" ] ;
+       fhir:definition [ fhir:v "Maxillary right second molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19525" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID2p" ] ;
+       fhir:display [ fhir:v "2p" ] ;
+       fhir:definition [ fhir:v "Maxillary right second molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19572" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID2pd" ] ;
+       fhir:display [ fhir:v "2pd" ] ;
+       fhir:definition [ fhir:v "Maxillary right second molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19571" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID2pm" ] ;
+       fhir:display [ fhir:v "2pm" ] ;
+       fhir:definition [ fhir:v "Maxillary right second molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19573" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30a" ] ;
+       fhir:display [ fhir:v "30a" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19699" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30ad" ] ;
+       fhir:display [ fhir:v "30ad" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar abutment distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19701" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30am" ] ;
+       fhir:display [ fhir:v "30am" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar abutment mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19700" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30i" ] ;
+       fhir:display [ fhir:v "30i" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19559" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30id" ] ;
+       fhir:display [ fhir:v "30id" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar implant distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19561" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30im" ] ;
+       fhir:display [ fhir:v "30im" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar implant mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19560" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30p" ] ;
+       fhir:display [ fhir:v "30p" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19656" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30pd" ] ;
+       fhir:display [ fhir:v "30pd" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19657" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30pm" ] ;
+       fhir:display [ fhir:v "30pm" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19655" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31a" ] ;
+       fhir:display [ fhir:v "31a" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19702" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31ad" ] ;
+       fhir:display [ fhir:v "31ad" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar abutment distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19704" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31am" ] ;
+       fhir:display [ fhir:v "31am" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar abutment mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19703" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31i" ] ;
+       fhir:display [ fhir:v "31i" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19562" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31id" ] ;
+       fhir:display [ fhir:v "31id" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar implant distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19564" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31im" ] ;
+       fhir:display [ fhir:v "31im" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar implant mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19563" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31p" ] ;
+       fhir:display [ fhir:v "31p" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19659" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31pd" ] ;
+       fhir:display [ fhir:v "31pd" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19660" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31pm" ] ;
+       fhir:display [ fhir:v "31pm" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19658" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32a" ] ;
+       fhir:display [ fhir:v "32a" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19705" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32ad" ] ;
+       fhir:display [ fhir:v "32ad" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar abutment distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19707" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32am" ] ;
+       fhir:display [ fhir:v "32am" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar abutment mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19706" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32i" ] ;
+       fhir:display [ fhir:v "32i" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19565" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32id" ] ;
+       fhir:display [ fhir:v "32id" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar implant distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19567" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32im" ] ;
+       fhir:display [ fhir:v "32im" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar implant mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19566" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32p" ] ;
+       fhir:display [ fhir:v "32p" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19662" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32pd" ] ;
+       fhir:display [ fhir:v "32pd" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19663" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32pm" ] ;
+       fhir:display [ fhir:v "32pm" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19661" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID3a" ] ;
+       fhir:display [ fhir:v "3a" ] ;
+       fhir:definition [ fhir:v "Maxillary right first molar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19666" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID3i" ] ;
+       fhir:display [ fhir:v "3i" ] ;
+       fhir:definition [ fhir:v "Maxillary right first molar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19526" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID3p" ] ;
+       fhir:display [ fhir:v "3p" ] ;
+       fhir:definition [ fhir:v "Maxillary right first molar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19575" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID3pd" ] ;
+       fhir:display [ fhir:v "3pd" ] ;
+       fhir:definition [ fhir:v "Maxillary right first molar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19574" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID3pm" ] ;
+       fhir:display [ fhir:v "3pm" ] ;
+       fhir:definition [ fhir:v "Maxillary right first molar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19576" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID4a" ] ;
+       fhir:display [ fhir:v "4a" ] ;
+       fhir:definition [ fhir:v "Maxillary right second premolar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19667" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID4i" ] ;
+       fhir:display [ fhir:v "4i" ] ;
+       fhir:definition [ fhir:v "Maxillary right second premolar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19527" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID4p" ] ;
+       fhir:display [ fhir:v "4p" ] ;
+       fhir:definition [ fhir:v "Maxillary right second premolar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19578" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID4pd" ] ;
+       fhir:display [ fhir:v "4pd" ] ;
+       fhir:definition [ fhir:v "Maxillary right second premolar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19577" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID4pm" ] ;
+       fhir:display [ fhir:v "4pm" ] ;
+       fhir:definition [ fhir:v "Maxillary right second premolar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19579" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID5a" ] ;
+       fhir:display [ fhir:v "5a" ] ;
+       fhir:definition [ fhir:v "Maxillary right first premolar abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19668" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID5i" ] ;
+       fhir:display [ fhir:v "5i" ] ;
+       fhir:definition [ fhir:v "Maxillary right first premolar implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19528" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID5p" ] ;
+       fhir:display [ fhir:v "5p" ] ;
+       fhir:definition [ fhir:v "Maxillary right first premolar prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19581" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID5pd" ] ;
+       fhir:display [ fhir:v "5pd" ] ;
+       fhir:definition [ fhir:v "Maxillary right first premolar distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19580" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID5pm" ] ;
+       fhir:display [ fhir:v "5pm" ] ;
+       fhir:definition [ fhir:v "Maxillary right first premolar mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19582" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID6a" ] ;
+       fhir:display [ fhir:v "6a" ] ;
+       fhir:definition [ fhir:v "Maxillary right canine abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19669" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID6i" ] ;
+       fhir:display [ fhir:v "6i" ] ;
+       fhir:definition [ fhir:v "Maxillary right canine implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19529" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID6p" ] ;
+       fhir:display [ fhir:v "6p" ] ;
+       fhir:definition [ fhir:v "Maxillary right canine prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19584" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID6pd" ] ;
+       fhir:display [ fhir:v "6pd" ] ;
+       fhir:definition [ fhir:v "Maxillary right canine distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19583" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID6pm" ] ;
+       fhir:display [ fhir:v "6pm" ] ;
+       fhir:definition [ fhir:v "Maxillary right canine mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19585" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID7a" ] ;
+       fhir:display [ fhir:v "7a" ] ;
+       fhir:definition [ fhir:v "Maxillary right lateral incisor abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19670" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID7i" ] ;
+       fhir:display [ fhir:v "7i" ] ;
+       fhir:definition [ fhir:v "Maxillary right lateral incisor implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19530" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID7p" ] ;
+       fhir:display [ fhir:v "7p" ] ;
+       fhir:definition [ fhir:v "Maxillary right lateral incisor prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19587" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID7pd" ] ;
+       fhir:display [ fhir:v "7pd" ] ;
+       fhir:definition [ fhir:v "Maxillary right lateral incisor distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19586" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID7pm" ] ;
+       fhir:display [ fhir:v "7pm" ] ;
+       fhir:definition [ fhir:v "Maxillary right lateral incisor mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19588" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID8a" ] ;
+       fhir:display [ fhir:v "8a" ] ;
+       fhir:definition [ fhir:v "Maxillary right central incisor abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19671" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID8i" ] ;
+       fhir:display [ fhir:v "8i" ] ;
+       fhir:definition [ fhir:v "Maxillary right central incisor implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19531" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID8p" ] ;
+       fhir:display [ fhir:v "8p" ] ;
+       fhir:definition [ fhir:v "Maxillary right central incisor prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19590" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID8pd" ] ;
+       fhir:display [ fhir:v "8pd" ] ;
+       fhir:definition [ fhir:v "Maxillary right central incisor distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19589" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID8pm" ] ;
+       fhir:display [ fhir:v "8pm" ] ;
+       fhir:definition [ fhir:v "Maxillary right central incisor mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19591" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID9a" ] ;
+       fhir:display [ fhir:v "9a" ] ;
+       fhir:definition [ fhir:v "Maxillary left central incisor abutment" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19672" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID9i" ] ;
+       fhir:display [ fhir:v "9i" ] ;
+       fhir:definition [ fhir:v "Maxillary left central incisor implant" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19532" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID9p" ] ;
+       fhir:display [ fhir:v "9p" ] ;
+       fhir:definition [ fhir:v "Maxillary left central incisor prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19593" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID9pd" ] ;
+       fhir:display [ fhir:v "9pd" ] ;
+       fhir:definition [ fhir:v "Maxillary left central incisor distal prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19594" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID9pm" ] ;
+       fhir:display [ fhir:v "9pm" ] ;
+       fhir:definition [ fhir:v "Maxillary left central incisor mesial prosthesis" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19592" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "PermanentDentition" ] ;
+     fhir:display [ fhir:v "Permanent dentition" ] ;
+     fhir:definition [ fhir:v "Permanent dentition, the natural teeth of adulthood that replace or are added to the deciduous teeth" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19404" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "TID1" ] ;
+       fhir:display [ fhir:v "1" ] ;
+       fhir:definition [ fhir:v "Maxillary right third molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19405" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID10" ] ;
+       fhir:display [ fhir:v "10" ] ;
+       fhir:definition [ fhir:v "Maxillary left lateral incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19414" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID11" ] ;
+       fhir:display [ fhir:v "11" ] ;
+       fhir:definition [ fhir:v "Maxillary left canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19415" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID12" ] ;
+       fhir:display [ fhir:v "12" ] ;
+       fhir:definition [ fhir:v "Maxillary left first premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19416" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID13" ] ;
+       fhir:display [ fhir:v "13" ] ;
+       fhir:definition [ fhir:v "Maxillary left second premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19417" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID14" ] ;
+       fhir:display [ fhir:v "14" ] ;
+       fhir:definition [ fhir:v "Maxillary left first molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19418" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID15" ] ;
+       fhir:display [ fhir:v "15" ] ;
+       fhir:definition [ fhir:v "Maxillary left second molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19419" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID16" ] ;
+       fhir:display [ fhir:v "16" ] ;
+       fhir:definition [ fhir:v "Maxillary left third molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19420" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17" ] ;
+       fhir:display [ fhir:v "17" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19421" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17d" ] ;
+       fhir:display [ fhir:v "17d" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19423" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17m" ] ;
+       fhir:display [ fhir:v "17m" ] ;
+       fhir:definition [ fhir:v "Mandibular left third molar mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19422" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18" ] ;
+       fhir:display [ fhir:v "18" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19424" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18d" ] ;
+       fhir:display [ fhir:v "18d" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19426" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18m" ] ;
+       fhir:display [ fhir:v "18m" ] ;
+       fhir:definition [ fhir:v "Mandibular left second molar mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19425" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19" ] ;
+       fhir:display [ fhir:v "19" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19427" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19d" ] ;
+       fhir:display [ fhir:v "19d" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19429" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19m" ] ;
+       fhir:display [ fhir:v "19m" ] ;
+       fhir:definition [ fhir:v "Mandibular left first molar mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19428" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID2" ] ;
+       fhir:display [ fhir:v "2" ] ;
+       fhir:definition [ fhir:v "Maxillary right second molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19406" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID20" ] ;
+       fhir:display [ fhir:v "20" ] ;
+       fhir:definition [ fhir:v "Mandibular left second premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19430" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID21" ] ;
+       fhir:display [ fhir:v "21" ] ;
+       fhir:definition [ fhir:v "Mandibular left first premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19431" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID22" ] ;
+       fhir:display [ fhir:v "22" ] ;
+       fhir:definition [ fhir:v "Mandibular left canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19432" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID23" ] ;
+       fhir:display [ fhir:v "23" ] ;
+       fhir:definition [ fhir:v "Mandibular left lateral incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19433" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID24" ] ;
+       fhir:display [ fhir:v "24" ] ;
+       fhir:definition [ fhir:v "Mandibular left central incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19434" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID25" ] ;
+       fhir:display [ fhir:v "25" ] ;
+       fhir:definition [ fhir:v "Mandibular right central incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19435" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID26" ] ;
+       fhir:display [ fhir:v "26" ] ;
+       fhir:definition [ fhir:v "Mandibular right lateral incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19436" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID27" ] ;
+       fhir:display [ fhir:v "27" ] ;
+       fhir:definition [ fhir:v "Mandibular right canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19437" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID28" ] ;
+       fhir:display [ fhir:v "28" ] ;
+       fhir:definition [ fhir:v "Mandibular right first premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19438" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID29" ] ;
+       fhir:display [ fhir:v "29" ] ;
+       fhir:definition [ fhir:v "Mandibular right second premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19439" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID3" ] ;
+       fhir:display [ fhir:v "3" ] ;
+       fhir:definition [ fhir:v "Maxillary right first molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19407" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30" ] ;
+       fhir:display [ fhir:v "30" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19440" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30d" ] ;
+       fhir:display [ fhir:v "30d" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19442" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30m" ] ;
+       fhir:display [ fhir:v "30m" ] ;
+       fhir:definition [ fhir:v "Mandibular right first molar mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19441" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31" ] ;
+       fhir:display [ fhir:v "31" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19443" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31d" ] ;
+       fhir:display [ fhir:v "31d" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19445" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31m" ] ;
+       fhir:display [ fhir:v "31m" ] ;
+       fhir:definition [ fhir:v "Mandibular right second molar mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19444" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32" ] ;
+       fhir:display [ fhir:v "32" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19446" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32d" ] ;
+       fhir:display [ fhir:v "32d" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar distal hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19448" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32m" ] ;
+       fhir:display [ fhir:v "32m" ] ;
+       fhir:definition [ fhir:v "Mandibular right third molar mesial hemisection" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19447" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID4" ] ;
+       fhir:display [ fhir:v "4" ] ;
+       fhir:definition [ fhir:v "Maxillary right second premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19408" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID5" ] ;
+       fhir:display [ fhir:v "5" ] ;
+       fhir:definition [ fhir:v "Maxillary right first premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19409" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID6" ] ;
+       fhir:display [ fhir:v "6" ] ;
+       fhir:definition [ fhir:v "Maxillary right canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19410" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID7" ] ;
+       fhir:display [ fhir:v "7" ] ;
+       fhir:definition [ fhir:v "Maxillary right lateral incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19411" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID8" ] ;
+       fhir:display [ fhir:v "8" ] ;
+       fhir:definition [ fhir:v "Maxillary right central incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19412" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID9" ] ;
+       fhir:display [ fhir:v "9" ] ;
+       fhir:definition [ fhir:v "Maxillary left central incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19413" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "PrimaryDentition" ] ;
+     fhir:display [ fhir:v "Primary dentition" ] ;
+     fhir:definition [ fhir:v "Primary dentition, the first teeth to errupt and usually replaced with permanent dentition" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19502" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "TIDA" ] ;
+       fhir:display [ fhir:v "A" ] ;
+       fhir:definition [ fhir:v "Maxillary right second primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19503" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDB" ] ;
+       fhir:display [ fhir:v "B" ] ;
+       fhir:definition [ fhir:v "Maxillary right first primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19504" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDC" ] ;
+       fhir:display [ fhir:v "C" ] ;
+       fhir:definition [ fhir:v "Maxillary right primary canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19505" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDD" ] ;
+       fhir:display [ fhir:v "D" ] ;
+       fhir:definition [ fhir:v "Maxillary right lateral primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19506" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDE" ] ;
+       fhir:display [ fhir:v "E" ] ;
+       fhir:definition [ fhir:v "Maxillary right central primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19507" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDF" ] ;
+       fhir:display [ fhir:v "F" ] ;
+       fhir:definition [ fhir:v "Maxillary left central primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19508" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDG" ] ;
+       fhir:display [ fhir:v "G" ] ;
+       fhir:definition [ fhir:v "Maxillary left lateral primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19509" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDH" ] ;
+       fhir:display [ fhir:v "H" ] ;
+       fhir:definition [ fhir:v "Maxillary left primary canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19510" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDI" ] ;
+       fhir:display [ fhir:v "I" ] ;
+       fhir:definition [ fhir:v "Maxillary left first primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19511" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDJ" ] ;
+       fhir:display [ fhir:v "J" ] ;
+       fhir:definition [ fhir:v "Maxillary left second primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19512" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDK" ] ;
+       fhir:display [ fhir:v "K" ] ;
+       fhir:definition [ fhir:v "Mandibular left second primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19513" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDL" ] ;
+       fhir:display [ fhir:v "L" ] ;
+       fhir:definition [ fhir:v "Mandibular left first primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19514" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDM" ] ;
+       fhir:display [ fhir:v "M" ] ;
+       fhir:definition [ fhir:v "Mandibular left primary canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19515" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDN" ] ;
+       fhir:display [ fhir:v "N" ] ;
+       fhir:definition [ fhir:v "Mandibular left lateral primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19516" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDO" ] ;
+       fhir:display [ fhir:v "O" ] ;
+       fhir:definition [ fhir:v "Mandibular left central primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19517" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDP" ] ;
+       fhir:display [ fhir:v "P" ] ;
+       fhir:definition [ fhir:v "Mandibular right central primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19518" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDQ" ] ;
+       fhir:display [ fhir:v "Q" ] ;
+       fhir:definition [ fhir:v "Mandibular right lateral primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19519" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDR" ] ;
+       fhir:display [ fhir:v "R" ] ;
+       fhir:definition [ fhir:v "Mandibular right primary canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19520" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDS" ] ;
+       fhir:display [ fhir:v "S" ] ;
+       fhir:definition [ fhir:v "Mandibular right first primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19521" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDT" ] ;
+       fhir:display [ fhir:v "T" ] ;
+       fhir:definition [ fhir:v "Mandibular right second primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19522" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "SupernumeraryTooth" ] ;
+     fhir:display [ fhir:v "Supernumerary Tooth" ] ;
+     fhir:definition [ fhir:v "Supernumerary tooth, any tooth in addition to the normal permanent and primary dentition" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19449" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "TID10s" ] ;
+       fhir:display [ fhir:v "10s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left lateral incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19459" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID11s" ] ;
+       fhir:display [ fhir:v "11s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19460" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID12s" ] ;
+       fhir:display [ fhir:v "12s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left first premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19461" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID13s" ] ;
+       fhir:display [ fhir:v "13s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left second premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19462" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID14s" ] ;
+       fhir:display [ fhir:v "14s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left first molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19463" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID15s" ] ;
+       fhir:display [ fhir:v "15s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left second molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19464" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID16s" ] ;
+       fhir:display [ fhir:v "16s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left third molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19465" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID17s" ] ;
+       fhir:display [ fhir:v "17s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left third molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19466" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID18s" ] ;
+       fhir:display [ fhir:v "18s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left second molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19467" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID19s" ] ;
+       fhir:display [ fhir:v "19s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left first molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19468" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID1s" ] ;
+       fhir:display [ fhir:v "1s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right third molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19450" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID20s" ] ;
+       fhir:display [ fhir:v "20s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left second premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19469" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID21s" ] ;
+       fhir:display [ fhir:v "21s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left first premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19470" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID22s" ] ;
+       fhir:display [ fhir:v "22s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19471" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID23s" ] ;
+       fhir:display [ fhir:v "23s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left lateral incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19472" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID24s" ] ;
+       fhir:display [ fhir:v "24s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left central incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19473" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID25s" ] ;
+       fhir:display [ fhir:v "25s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right central incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19474" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID26s" ] ;
+       fhir:display [ fhir:v "26s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right lateral incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19475" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID27s" ] ;
+       fhir:display [ fhir:v "27s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19476" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID28s" ] ;
+       fhir:display [ fhir:v "28s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right first premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19477" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID29s" ] ;
+       fhir:display [ fhir:v "29s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right second premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19478" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID2s" ] ;
+       fhir:display [ fhir:v "2s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right second molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19451" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID30s" ] ;
+       fhir:display [ fhir:v "30s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right first molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19479" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID31s" ] ;
+       fhir:display [ fhir:v "31s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right second molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19480" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID32s" ] ;
+       fhir:display [ fhir:v "32s" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right third molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19481" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID3s" ] ;
+       fhir:display [ fhir:v "3s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right first molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19452" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID4s" ] ;
+       fhir:display [ fhir:v "4s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right second premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19453" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID5s" ] ;
+       fhir:display [ fhir:v "5s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right first premolar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19454" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID6s" ] ;
+       fhir:display [ fhir:v "6s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19455" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID7s" ] ;
+       fhir:display [ fhir:v "7s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right lateral incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19456" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID8s" ] ;
+       fhir:display [ fhir:v "8s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right central incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19457" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TID9s" ] ;
+       fhir:display [ fhir:v "9s" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left central incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19458" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDAs" ] ;
+       fhir:display [ fhir:v "As" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right second primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19482" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDBs" ] ;
+       fhir:display [ fhir:v "Bs" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right first primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19483" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDCs" ] ;
+       fhir:display [ fhir:v "Cs" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right primary canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19484" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDDs" ] ;
+       fhir:display [ fhir:v "Ds" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right lateral primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19485" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDEs" ] ;
+       fhir:display [ fhir:v "Es" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary right central primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19486" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDFs" ] ;
+       fhir:display [ fhir:v "Fs" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left central primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19487" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDGs" ] ;
+       fhir:display [ fhir:v "Gs" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left lateral primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19488" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDHs" ] ;
+       fhir:display [ fhir:v "Hs" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left primary canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19489" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDIs" ] ;
+       fhir:display [ fhir:v "Is" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left first primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19490" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDJs" ] ;
+       fhir:display [ fhir:v "Js" ] ;
+       fhir:definition [ fhir:v "Supernumerary maxillary left second primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19491" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDKs" ] ;
+       fhir:display [ fhir:v "Ks" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left second primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19492" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDLs" ] ;
+       fhir:display [ fhir:v "Ls" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left first primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19493" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDMs" ] ;
+       fhir:display [ fhir:v "Ms" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left primary canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19494" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDNs" ] ;
+       fhir:display [ fhir:v "Ns" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left lateral primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19495" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDOs" ] ;
+       fhir:display [ fhir:v "Os" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular left central primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19496" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDPs" ] ;
+       fhir:display [ fhir:v "Ps" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right central primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19497" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDQs" ] ;
+       fhir:display [ fhir:v "Qs" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right lateral primary incisor" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19498" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDRs" ] ;
+       fhir:display [ fhir:v "Rs" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right primary canine" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19499" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDSs" ] ;
+       fhir:display [ fhir:v "Ss" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right first primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19500" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "TIDTs" ] ;
+       fhir:display [ fhir:v "Ts" ] ;
+       fhir:definition [ fhir:v "Supernumerary mandibular right second primary molar" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "19501" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "_ArtificialDentition" ] ;
+     fhir:display [ fhir:v "ArtificialDentition" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21296" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "_Dentition" ] ;
+     fhir:display [ fhir:v "Dentition" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21297" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "_PermanentDentition" ] ;
+     fhir:display [ fhir:v "PermanentDentition" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21298" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "_PrimaryDentition" ] ;
+     fhir:display [ fhir:v "PrimaryDentition" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21299" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "_SupernumeraryTooth" ] ;
+     fhir:display [ fhir:v "SupernumeraryTooth" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21300" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

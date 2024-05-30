@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="v3-ActCoverageAuthorizationConfirmationCode"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a> where concept  is-a  <a href="CodeSystem-v3-ActCode.html#v3-ActCode-_ActCoverageAuthorizationConfirmationCode">_ActCoverageAuthorizationConfirmationCode</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href="CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-v3-ActCode.html#v3-ActCode-_ActCoverageAuthorizationConfirmationCode">_ActCoverageAuthorizationConfirmationCode</a></td><td style="color: #cccccc">ActCoverageAuthorizationConfirmationCode</td><td>Indication of authorization for healthcare service(s) and/or product(s). If authorization is approved, funds are set aside.</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/ValueSet/v3-ActCoverageAuthorizationConfirmationCode"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.1.11.17491"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="ActCoverageAuthorizationConfirmationCode"/>
+  <title value="ActCoverageAuthorizationConfirmationCode"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2014-03-26"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="Indication of authorization for healthcare service(s) and/or product(s). If authorization is approved, funds are set aside."/>
+  <copyright value="This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="_ActCoverageAuthorizationConfirmationCode"/>
+      </filter>
+    </include>
+    <exclude>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <concept>
+        <code value="_ActCoverageAuthorizationConfirmationCode"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>

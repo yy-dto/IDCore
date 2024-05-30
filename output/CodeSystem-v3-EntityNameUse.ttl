@@ -1,0 +1,321 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-EntityNameUse> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-EntityNameUse"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state.  Normally is not populated unless the state is retired..</td></tr><tr><td>notSelectable</td><td>http://hl7.org/fhir/concept-properties#notSelectable</td><td>boolean</td><td>Indicates that the code is abstract - only intended to be used as a selector for other concepts</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-EntityNameUse</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td><td><b>Not Selectable</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">_NameRepresentationUse<a name=\"v3-EntityNameUse-_NameRepresentationUse\"> </a></td><td>NameRepresentationUse</td><td><div><p>Identifies the different representations of a name. The representation may affect how the name is used. (E.g. use of Ideographic for formal communications.)</p>\n</div></td><td>21077</td><td>active</td><td>true</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  ABC<a name=\"v3-EntityNameUse-ABC\"> </a></td><td>Alphabetic</td><td><div><p>Alphabetic transcription of name (Japanese: romaji)</p>\n</div></td><td>15917</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  IDE<a name=\"v3-EntityNameUse-IDE\"> </a></td><td>Ideographic</td><td><div><p>Ideographic representation of name (e.g., Japanese kanji, Chinese characters)</p>\n</div></td><td>15919</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  SYL<a name=\"v3-EntityNameUse-SYL\"> </a></td><td>Syllabic</td><td><div><p>Syllabic transcription of name (e.g., Japanese kana, Korean hangul)</p>\n</div></td><td>15918</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">ASGN<a name=\"v3-EntityNameUse-ASGN\"> </a></td><td>assigned</td><td><div><p>A name assigned to a person. Reasons some organizations assign alternate names may include not knowing the person's name, or to maintain anonymity. Some, but not necessarily all, of the name types that people call &quot;alias&quot; may fit into this category.</p>\n</div></td><td>21358</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">C<a name=\"v3-EntityNameUse-C\"> </a></td><td>License</td><td><div><p>As recorded on a license, record, certificate, etc. (only if different from legal name)</p>\n</div></td><td>10177</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">I<a name=\"v3-EntityNameUse-I\"> </a></td><td>Indigenous/Tribal</td><td><div><p>e.g. Chief Red Cloud</p>\n</div></td><td>10179</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">L<a name=\"v3-EntityNameUse-L\"> </a></td><td>Legal</td><td><div><p>Known as/conventional/the one you use</p>\n</div></td><td>10176</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  OR<a name=\"v3-EntityNameUse-OR\"> </a></td><td>official registry</td><td><div><p>**Definition:**The formal name as registered in an official (government) registry, but which name might not be commonly used. Particularly used in countries with a law system based on Napoleonic law.</p>\n</div></td><td>21637</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">P<a name=\"v3-EntityNameUse-P\"> </a></td><td>pseudonym</td><td><div><p>A self asserted name that the person is using or has used.</p>\n</div></td><td>21321</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  A<a name=\"v3-EntityNameUse-A\"> </a></td><td>Artist/Stage</td><td><div><p>Includes writer's pseudonym, stage name, etc</p>\n</div></td><td>10178</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">R<a name=\"v3-EntityNameUse-R\"> </a></td><td>Religious</td><td><div><p>e.g. Sister Mary Francis, Brother John</p>\n</div></td><td>10180</td><td>active</td><td/></tr><tr><td>1</td><td style=\"white-space:nowrap\">SRCH<a name=\"v3-EntityNameUse-SRCH\"> </a></td><td>search</td><td><div><p>A name intended for use in searching or matching.</p>\n</div></td><td>21363</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  PHON<a name=\"v3-EntityNameUse-PHON\"> </a></td><td>phonetic</td><td><div><p>A name spelled phonetically.</p>\n<p>There are a variety of phonetic spelling algorithms. This code value does not distinguish between these.<em>Discussion:</em></p>\n</div></td><td>21364</td><td>active</td><td/></tr><tr><td>2</td><td style=\"white-space:nowrap\">  SNDX<a name=\"v3-EntityNameUse-SNDX\"> </a></td><td>Soundex</td><td><div><p>A name spelled according to the SoundEx algorithm.</p>\n</div></td><td>21365</td><td>active</td><td/></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">_EntityNameSearchUse<a name=\"v3-EntityNameUse-_EntityNameSearchUse\"> </a></td><td>EntityNameSearchUse</td><td><div><p><strong>Description:</strong> A name intended for use in searching or matching.</p>\n</div></td><td>22618</td><td>retired</td><td>true</td></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">_OrganizationNameUse<a name=\"v3-EntityNameUse-_OrganizationNameUse\"> </a></td><td>OrganizationNameUse</td><td/><td>21078</td><td>retired</td><td>true</td></tr><tr style=\"background-color: #ffeeee\"><td>1</td><td style=\"white-space:nowrap\">_PersonNameUse<a name=\"v3-EntityNameUse-_PersonNameUse\"> </a></td><td>PersonNameUse</td><td><div><p>A code indicating the type of name (e.g. nickname, alias, maiden name, legal, adopted)</p>\n</div></td><td>21079</td><td>retired</td><td>true</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-EntityNameUse"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.45" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EntityNameUse"] ; # 
+  fhir:title [ fhir:v "EntityNameUse"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "**** MISSING DESCRIPTION ****"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state.  Normally is not populated unless the state is retired.." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "notSelectable" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#notSelectable"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Indicates that the code is abstract - only intended to be used as a selector for other concepts" ] ;
+     fhir:type [ fhir:v "boolean" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "_NameRepresentationUse" ] ;
+     fhir:display [ fhir:v "NameRepresentationUse" ] ;
+     fhir:definition [ fhir:v "Identifies the different representations of a name. The representation may affect how the name is used. (E.g. use of Ideographic for formal communications.)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21077" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "ABC" ] ;
+       fhir:display [ fhir:v "Alphabetic" ] ;
+       fhir:definition [ fhir:v "Alphabetic transcription of name (Japanese: romaji)" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "15917" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "IDE" ] ;
+       fhir:display [ fhir:v "Ideographic" ] ;
+       fhir:definition [ fhir:v "Ideographic representation of name (e.g., Japanese kanji, Chinese characters)" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "15919" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "SYL" ] ;
+       fhir:display [ fhir:v "Syllabic" ] ;
+       fhir:definition [ fhir:v "Syllabic transcription of name (e.g., Japanese kana, Korean hangul)" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "15918" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "ASGN" ] ;
+     fhir:display [ fhir:v "assigned" ] ;
+     fhir:definition [ fhir:v "A name assigned to a person. Reasons some organizations assign alternate names may include not knowing the person's name, or to maintain anonymity. Some, but not necessarily all, of the name types that people call \"alias\" may fit into this category." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21358" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "C" ] ;
+     fhir:display [ fhir:v "License" ] ;
+     fhir:definition [ fhir:v "As recorded on a license, record, certificate, etc. (only if different from legal name)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10177" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "I" ] ;
+     fhir:display [ fhir:v "Indigenous/Tribal" ] ;
+     fhir:definition [ fhir:v "e.g. Chief Red Cloud" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10179" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "L" ] ;
+     fhir:display [ fhir:v "Legal" ] ;
+     fhir:definition [ fhir:v "Known as/conventional/the one you use" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10176" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "OR" ] ;
+       fhir:display [ fhir:v "official registry" ] ;
+       fhir:definition [ fhir:v "**Definition:**The formal name as registered in an official (government) registry, but which name might not be commonly used. Particularly used in countries with a law system based on Napoleonic law." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "21637" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "P" ] ;
+     fhir:display [ fhir:v "pseudonym" ] ;
+     fhir:definition [ fhir:v "A self asserted name that the person is using or has used." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21321" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "A" ] ;
+       fhir:display [ fhir:v "Artist/Stage" ] ;
+       fhir:definition [ fhir:v "Includes writer's pseudonym, stage name, etc" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "10178" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "R" ] ;
+     fhir:display [ fhir:v "Religious" ] ;
+     fhir:definition [ fhir:v "e.g. Sister Mary Francis, Brother John" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10180" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "SRCH" ] ;
+     fhir:display [ fhir:v "search" ] ;
+     fhir:definition [ fhir:v "A name intended for use in searching or matching." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21363" ]
+     ] ) ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "PHON" ] ;
+       fhir:display [ fhir:v "phonetic" ] ;
+       fhir:definition [ fhir:v "A name spelled phonetically.\r\n\r\nThere are a variety of phonetic spelling algorithms. This code value does not distinguish between these.*Discussion:*" ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "21364" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "SNDX" ] ;
+       fhir:display [ fhir:v "Soundex" ] ;
+       fhir:definition [ fhir:v "A name spelled according to the SoundEx algorithm." ] ;
+       fhir:property ( [
+         fhir:code [ fhir:v "status" ] ;
+         fhir:value [ fhir:v "active" ]
+       ] [
+         fhir:code [ fhir:v "internalId" ] ;
+         fhir:value [ fhir:v "21365" ]
+       ] )
+     ] )
+  ] [
+     fhir:code [ fhir:v "_EntityNameSearchUse" ] ;
+     fhir:display [ fhir:v "EntityNameSearchUse" ] ;
+     fhir:definition [ fhir:v "**Description:** A name intended for use in searching or matching." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "22618" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "_OrganizationNameUse" ] ;
+     fhir:display [ fhir:v "OrganizationNameUse" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21078" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "_PersonNameUse" ] ;
+     fhir:display [ fhir:v "PersonNameUse" ] ;
+     fhir:definition [ fhir:v "A code indicating the type of name (e.g. nickname, alias, maiden name, legal, adopted)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "notSelectable" ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "retired" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21079" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

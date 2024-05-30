@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/diet> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "diet"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/diet</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">vegetarian<a name=\"diet-vegetarian\"> </a></td><td>Vegetarian</td><td>Food without meat, poultry or seafood.</td></tr><tr><td style=\"white-space:nowrap\">dairy-free<a name=\"diet-dairy-free\"> </a></td><td>Dairy Free</td><td>Excludes dairy products.</td></tr><tr><td style=\"white-space:nowrap\">nut-free<a name=\"diet-nut-free\"> </a></td><td>Nut Free</td><td>Excludes ingredients containing nuts.</td></tr><tr><td style=\"white-space:nowrap\">gluten-free<a name=\"diet-gluten-free\"> </a></td><td>Gluten Free</td><td>Excludes ingredients containing gluten.</td></tr><tr><td style=\"white-space:nowrap\">vegan<a name=\"diet-vegan\"> </a></td><td>Vegan</td><td>Food without meat, poultry, seafood, eggs, dairy products and other animal-derived substances.</td></tr><tr><td style=\"white-space:nowrap\">halal<a name=\"diet-halal\"> </a></td><td>Halal</td><td>Foods that conform to Islamic law.</td></tr><tr><td style=\"white-space:nowrap\">kosher<a name=\"diet-kosher\"> </a></td><td>Kosher</td><td>Foods that conform to Jewish dietary law.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pa" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/diet"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1091" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Diet"] ; # 
+  fhir:title [ fhir:v "Diet"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-09T14:36:19-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/encounter-diet"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/encounter-diet>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "vegetarian" ] ;
+     fhir:display [ fhir:v "Vegetarian" ] ;
+     fhir:definition [ fhir:v "Food without meat, poultry or seafood." ]
+  ] [
+     fhir:code [ fhir:v "dairy-free" ] ;
+     fhir:display [ fhir:v "Dairy Free" ] ;
+     fhir:definition [ fhir:v "Excludes dairy products." ]
+  ] [
+     fhir:code [ fhir:v "nut-free" ] ;
+     fhir:display [ fhir:v "Nut Free" ] ;
+     fhir:definition [ fhir:v "Excludes ingredients containing nuts." ]
+  ] [
+     fhir:code [ fhir:v "gluten-free" ] ;
+     fhir:display [ fhir:v "Gluten Free" ] ;
+     fhir:definition [ fhir:v "Excludes ingredients containing gluten." ]
+  ] [
+     fhir:code [ fhir:v "vegan" ] ;
+     fhir:display [ fhir:v "Vegan" ] ;
+     fhir:definition [ fhir:v "Food without meat, poultry, seafood, eggs, dairy products and other animal-derived substances." ]
+  ] [
+     fhir:code [ fhir:v "halal" ] ;
+     fhir:display [ fhir:v "Halal" ] ;
+     fhir:definition [ fhir:v "Foods that conform to Islamic law." ]
+  ] [
+     fhir:code [ fhir:v "kosher" ] ;
+     fhir:display [ fhir:v "Kosher" ] ;
+     fhir:definition [ fhir:v "Foods that conform to Jewish dietary law." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

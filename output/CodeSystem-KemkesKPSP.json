@@ -4,7 +4,7 @@
   "language" : "Indonesia",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/Codesystem/kpsp</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">COM000001<a name=\"KemkesKPSP-COM000001\"> </a></td><td>Form Kematian Ibu</td></tr><tr><td style=\"white-space:nowrap\">COM000002<a name=\"KemkesKPSP-COM000002\"> </a></td><td>Form Lahir Mati</td></tr><tr><td style=\"white-space:nowrap\">COM000003<a name=\"KemkesKPSP-COM000003\"> </a></td><td>Form Lahir Hidup</td></tr><tr><td style=\"white-space:nowrap\">COM000004<a name=\"KemkesKPSP-COM000004\"> </a></td><td>Kuesioner Kasus ILI</td></tr><tr><td style=\"white-space:nowrap\">COM000005<a name=\"KemkesKPSP-COM000005\"> </a></td><td>Kuesioner Kasus SARI</td></tr><tr><td style=\"white-space:nowrap\">COM000006<a name=\"KemkesKPSP-COM000006\"> </a></td><td>Form Skrining PTM</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/Codesystem/kpsp</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">COM000001<a name=\"KemkesKPSP-COM000001\"> </a></td><td>Form Kematian Ibu</td></tr><tr><td style=\"white-space:nowrap\">COM000002<a name=\"KemkesKPSP-COM000002\"> </a></td><td>Form Lahir Mati</td></tr><tr><td style=\"white-space:nowrap\">COM000003<a name=\"KemkesKPSP-COM000003\"> </a></td><td>Form Lahir Hidup</td></tr><tr><td style=\"white-space:nowrap\">COM000004<a name=\"KemkesKPSP-COM000004\"> </a></td><td>Kuesioner Kasus ILI</td></tr><tr><td style=\"white-space:nowrap\">COM000005<a name=\"KemkesKPSP-COM000005\"> </a></td><td>Kuesioner Kasus SARI</td></tr><tr><td style=\"white-space:nowrap\">COM000006<a name=\"KemkesKPSP-COM000006\"> </a></td><td>Form Skrining PTM</td></tr></table></div>"
   },
   "url" : "http://terminology.kemkes.go.id/Codesystem/kpsp",
   "version" : "0.1.0",
@@ -13,12 +13,16 @@
   "status" : "active",
   "experimental" : false,
   "date" : "2024-02-05T00:00:00.000Z",
-  "publisher" : "Thomas Chaidir",
+  "publisher" : "SatuSehat",
   "contact" : [{
-    "name" : "Thomas Chaidir",
+    "name" : "SatuSehat",
     "telecom" : [{
       "system" : "url",
       "value" : "https://satusehat.kemkes.go.id/"
+    },
+    {
+      "system" : "email",
+      "value" : "fhir@dto.kemkes.go.id"
     }]
   }],
   "description" : "Terminology Kemkes kpsp CodeSystem",

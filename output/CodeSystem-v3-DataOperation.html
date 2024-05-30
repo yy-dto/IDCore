@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>DataOperation - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.2198"}
+    h3,h4,h5,h6{--heading-prefix:"5.2198"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>DataOperation</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-DataOperation.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-DataOperation.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-DataOperation.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: DataOperation
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/CodeSystem/v3-DataOperation<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-DataOperation|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2019-03-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">DataOperation</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.5.1123
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p><strong>** MISSING DESCRIPTION **</strong></p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="http://hl7.org/fhir/R4/valueset-provenance-activity-type.html">ProvenanceActivityType</a></li>
+ <li><a href="http://hl7.org/fhir/R4/valueset-provenance-history-record-activity.html">ProvenanceHistoryRecordActivityCodes</a></li>
+ <li><a href="http://hl7.org/fhir/R4/v3/DataOperation/vs.html">v3.DataOperation</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
+<table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+<tr><td>Specializes</td>
+<td>Specializes</td>
+<td></td>
+<td>Coding</td>
+<td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr>
+<tr><td>Generalizes</td>
+<td>Generalizes</td>
+<td></td>
+<td>Coding</td>
+<td>Inverse of Specializes.  Only included as a derived relationship.</td></tr>
+<tr><td>internalId</td>
+<td>internalId</td>
+<td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td>
+<td>code</td>
+<td>The internal identifier for the concept in the HL7 Access database repository.</td></tr>
+<tr><td>status</td>
+<td>status</td>
+<td>http://hl7.org/fhir/concept-properties#status</td>
+<td>code</td>
+<td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-DataOperation</code> defines the following codes in a Is-A hierarchy:</p>
+<table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td></tr>
+<tr><td>1</td>
+<td style="white-space:nowrap">OPERATE<a name="v3-DataOperation-OPERATE"> </a></td>
+<td>operate</td>
+<td>Act on an object or objects.</td>
+<td>22873</td>
+<td>active</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;CREATE<a name="v3-DataOperation-CREATE"> </a></td>
+<td>create</td>
+<td>Fundamental operation in an Information System (IS) that results only in the act of bringing an object into existence. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22874</td>
+<td>active</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;DELETE<a name="v3-DataOperation-DELETE"> </a></td>
+<td>delete</td>
+<td>Fundamental operation in an Information System (IS) that results only in the removal of information about an object from memory or storage. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface.</td>
+<td>22891</td>
+<td>active</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;EXECUTE<a name="v3-DataOperation-EXECUTE"> </a></td>
+<td>execute</td>
+<td>Fundamental operation in an IS that results only in initiating performance of a single or set of programs (i.e., software objects). Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface.</td>
+<td>22892</td>
+<td>active</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;READ<a name="v3-DataOperation-READ"> </a></td>
+<td>read</td>
+<td>Fundamental operation in an Information System (IS) that results only in the flow of information about an object to a subject. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface.</td>
+<td>22875</td>
+<td>active</td></tr>
+<tr><td>2</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;UPDATE<a name="v3-DataOperation-UPDATE"> </a></td>
+<td>revise</td>
+<td>Fundamental operation in an Information System (IS) that results only in the revision or alteration of an object. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface.</td>
+<td>22876</td>
+<td>active</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;APPEND<a name="v3-DataOperation-APPEND"> </a></td>
+<td>append</td>
+<td>Fundamental operation in an Information System (IS) that results only in the addition of information to an object already in existence. Note: The preceding definition is taken from the HL7 RBAC specification. There is no restriction on how the operation is invoked, e.g., via a user interface.</td>
+<td>22877</td>
+<td>active</td></tr>
+<tr><td>3</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;MODIFYSTATUS<a name="v3-DataOperation-MODIFYSTATUS"> </a></td>
+<td>modify status</td>
+<td>Change the status of an object representing an Act.</td>
+<td>22878</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ABORT<a name="v3-DataOperation-ABORT"> </a></td>
+<td>abort</td>
+<td>Change the status of an object representing an Act to "aborted", i.e., terminated prior to the originally intended completion. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22879</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ACTIVATE<a name="v3-DataOperation-ACTIVATE"> </a></td>
+<td>activate</td>
+<td>Change the status of an object representing an Act to "active", i.e., so it can be performed or is being performed, for the first time. (Contrast with REACTIVATE.) For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22880</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CANCEL<a name="v3-DataOperation-CANCEL"> </a></td>
+<td>cancel</td>
+<td>Change the status of an object representing an Act to "cancelled", i.e., abandoned before activation. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22881</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;COMPLETE<a name="v3-DataOperation-COMPLETE"> </a></td>
+<td>complete</td>
+<td>Change the status of an object representing an Act to "completed", i.e., terminated normally after all of its constituents have been performed. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22882</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HOLD<a name="v3-DataOperation-HOLD"> </a></td>
+<td>hold</td>
+<td>Change the status of an object representing an Act to "held", i.e., put aside an Act that is still in preparatory stages. No action can occur until the Act is released. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22883</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JUMP<a name="v3-DataOperation-JUMP"> </a></td>
+<td>jump</td>
+<td>Change the status of an object representing an Act to a normal state. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22884</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NULLIFY<a name="v3-DataOperation-NULLIFY"> </a></td>
+<td>nullify</td>
+<td>Change the status of an object representing an Act to "nullified", i.e., treat as though it never existed. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22885</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;OBSOLETE<a name="v3-DataOperation-OBSOLETE"> </a></td>
+<td>obsolete</td>
+<td>Change the status of an object representing an Act to "obsolete" when it has been replaced by a new instance. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22886</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DEPRECATE<a name="v3-DataOperation-DEPRECATE"> </a></td>
+<td>deprecate</td>
+<td>Fundamental operation in HL7 Standards Governance that results only in the addition of deprecation information to an object already in existence without changing the status of the object.  Operation used internally in the maintenance and recordkeeping of HL7 terminology and standards artifacts.</td>
+<td>722877</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;REACTIVATE<a name="v3-DataOperation-REACTIVATE"> </a></td>
+<td>reactivate</td>
+<td>Change the status of a formerly active object representing an Act to "active", i.e., so it can again be performed or is being performed. (Contrast with ACTIVATE.) For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22887</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RELEASE<a name="v3-DataOperation-RELEASE"> </a></td>
+<td>release</td>
+<td>Change the status of an object representing an Act so it is no longer "held", i.e., allow action to occur. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22888</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RESUME<a name="v3-DataOperation-RESUME"> </a></td>
+<td>resume</td>
+<td>Change the status of a suspended object representing an Act to "active", i.e., so it can be performed or is being performed. For an HL7 Act, the state transitions per the HL7 Reference Information Model.</td>
+<td>22889</td>
+<td>active</td></tr>
+<tr><td>4</td>
+<td style="white-space:nowrap">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUSPEND<a name="v3-DataOperation-SUSPEND"> </a></td>
+<td>suspend</td>
+<td>Change the status of an object representing an Act to **suspended**, i.e., so it is temporarily not in service.</td>
+<td>22890</td>
+<td>active</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

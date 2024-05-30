@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-lrg> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-lrg"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://www.lrg-sequence.org</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://www.lrg-sequence.org"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.6.283" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Lrg"] ; # 
+  fhir:title [ fhir:v "Locus Reference Genomic Sequences (LRG)"] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-11-09T10:00:00+10:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "In collaboration with NCBI, the European Bioinformatics Institute (EBI) is developing the Locus Reference Genomic Sequences (LRG) database, which is a database of reference sequences.\r\n\r\nLRG is a system for providing a genomic DNA sequence representation of a single gene that is idealized, has a permanent ID (with no versioning), and core content that never changes. LRG is not a nomenclature system. More than one LRG could be created for a region of interest, should that need arise. Additional annotations will be present that may change with time (each item carrying its own date stamp), so that the latest ancillary knowledge about a gene is directly available. In other words, an LRG sequence and its core annotation are not meant to represent current biology knowledge, but to provide a standard for reporting variation in a stable coordinate system. The combination of the LRG plus the updatable-annotation layer will be used to support the biological interpretation of variants.\r\n\r\nLRG identifiers can be used with the HL7 coded data type (code data type that accepts expression data, or a coded expression data type). This coded data type will be gene symbols can be used with the HL7 coded data type. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model, LRG identifiers can be used to as the observation values for Genomic Reference Sequence Identifier (LOINC code: 48013-7).\r\n\r\nLRG is a database that can be used freely by the public."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] . # 
+
+# -------------------------------------------------------------------------------------
+

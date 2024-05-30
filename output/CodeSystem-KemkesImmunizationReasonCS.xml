@@ -8,7 +8,7 @@
   </meta>
   <language value="Indonesia"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/immunization-reason</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">IM-Program<a name="KemkesImmunizationReasonCS-IM-Program"> </a></td><td>Imunisasi Program</td></tr><tr><td style="white-space:nowrap">IM-Rutin<a name="KemkesImmunizationReasonCS-IM-Rutin"> </a></td><td>Imunisasi Program Rutin</td></tr><tr><td style="white-space:nowrap">IM-Dasar<a name="KemkesImmunizationReasonCS-IM-Dasar"> </a></td><td>Imunisasi Program Rutin Dasar</td></tr><tr><td style="white-space:nowrap">IM-Lanjutan<a name="KemkesImmunizationReasonCS-IM-Lanjutan"> </a></td><td>Imunisasi Program Rutin Lanjutan</td></tr><tr><td style="white-space:nowrap">IM-Baduta<a name="KemkesImmunizationReasonCS-IM-Baduta"> </a></td><td>Imunisasi Program Rutin Lanjutan Bawah Dua Tahun</td></tr><tr><td style="white-space:nowrap">IM-SD<a name="KemkesImmunizationReasonCS-IM-SD"> </a></td><td>Imunisasi Program Rutin Lanjutan Sekolah Dasar</td></tr><tr><td style="white-space:nowrap">IM-WUS<a name="KemkesImmunizationReasonCS-IM-WUS"> </a></td><td>Imunisasi Program Rutin Lanjutan Wanita Usia Subur</td></tr><tr><td style="white-space:nowrap">IM-Tambahan<a name="KemkesImmunizationReasonCS-IM-Tambahan"> </a></td><td>Imunisasi Program Tambahan</td></tr><tr><td style="white-space:nowrap">IM-Khusus<a name="KemkesImmunizationReasonCS-IM-Khusus"> </a></td><td>Imunisasi Program Khusus</td></tr><tr><td style="white-space:nowrap">IM-Pilihan<a name="KemkesImmunizationReasonCS-IM-Pilihan"> </a></td><td>Imunisasi Pilihan</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="Indonesia" lang="Indonesia"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/immunization-reason</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">IM-Program<a name="KemkesImmunizationReasonCS-IM-Program"> </a></td><td>Imunisasi Program</td></tr><tr><td style="white-space:nowrap">IM-Rutin<a name="KemkesImmunizationReasonCS-IM-Rutin"> </a></td><td>Imunisasi Program Rutin</td></tr><tr><td style="white-space:nowrap">IM-Dasar<a name="KemkesImmunizationReasonCS-IM-Dasar"> </a></td><td>Imunisasi Program Rutin Dasar</td></tr><tr><td style="white-space:nowrap">IM-Lanjutan<a name="KemkesImmunizationReasonCS-IM-Lanjutan"> </a></td><td>Imunisasi Program Rutin Lanjutan</td></tr><tr><td style="white-space:nowrap">IM-Baduta<a name="KemkesImmunizationReasonCS-IM-Baduta"> </a></td><td>Imunisasi Program Rutin Lanjutan Bawah Dua Tahun</td></tr><tr><td style="white-space:nowrap">IM-SD<a name="KemkesImmunizationReasonCS-IM-SD"> </a></td><td>Imunisasi Program Rutin Lanjutan Sekolah Dasar</td></tr><tr><td style="white-space:nowrap">IM-WUS<a name="KemkesImmunizationReasonCS-IM-WUS"> </a></td><td>Imunisasi Program Rutin Lanjutan Wanita Usia Subur</td></tr><tr><td style="white-space:nowrap">IM-Tambahan<a name="KemkesImmunizationReasonCS-IM-Tambahan"> </a></td><td>Imunisasi Program Tambahan</td></tr><tr><td style="white-space:nowrap">IM-Khusus<a name="KemkesImmunizationReasonCS-IM-Khusus"> </a></td><td>Imunisasi Program Khusus</td></tr><tr><td style="white-space:nowrap">IM-Pilihan<a name="KemkesImmunizationReasonCS-IM-Pilihan"> </a></td><td>Imunisasi Pilihan</td></tr></table></div>
   </text>
   <url value="http://terminology.kemkes.go.id/CodeSystem/immunization-reason"/>
   <version value="0.1.0"/>
@@ -17,12 +17,16 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2024-02-05T00:00:00.000Z"/>
-  <publisher value="Thomas Chaidir"/>
+  <publisher value="SatuSehat"/>
   <contact>
-    <name value="Thomas Chaidir"/>
+    <name value="SatuSehat"/>
     <telecom>
       <system value="url"/>
       <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
     </telecom>
   </contact>
   <description value="Terminology Kemkes immunization reason CodeSystem"/>

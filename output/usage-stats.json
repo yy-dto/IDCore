@@ -276,6 +276,13 @@
     ]
   },
   "usage": {
+    "http://hl7.org/fhir/StructureDefinition/codesystem-concept-comments": [
+      "CodeSystem.concept",
+      "CodeSystem.concept.concept"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/codesystem-properties-mode": [
+      "CodeSystem"
+    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -297,8 +304,30 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"
     ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm": [
+      "CodeSystem",
+      "ValueSet"
+    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
       "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "CodeSystem",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "CodeSystem",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg": [
+      "CodeSystem",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/valueset-extensible": [
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/valueset-steward": [
+      "ValueSet"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
@@ -316,6 +345,27 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "http://terminology.hl7.org/StructureDefinition/ext-mif-assocConceptProp": [
+      "ValueSet"
+    ],
+    "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName": [
+      "CodeSystem.property"
+    ],
+    "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable": [
+      "CodeSystem.property"
+    ],
+    "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity": [
+      "CodeSystem.property"
+    ],
+    "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind": [
+      "CodeSystem.property"
+    ],
+    "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry": [
+      "CodeSystem.property"
+    ],
+    "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity": [
+      "CodeSystem.property"
     ],
     "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension": [
       "Patient.address",

@@ -1,0 +1,1222 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>UTG Specific Concept Properties - JSON Representation - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.2751"}
+    h3,h4,h5,h6{--heading-prefix:"5.2751"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>UTG Specific Concept Properties</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 8" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-utg-concept-properties.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-utg-concept-properties.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-utg-concept-properties.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: UTG Specific Concept Properties - JSON Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2024-03-09
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-utg-concept-properties.json" no-download="true">Raw json</a> | <a href="CodeSystem-utg-concept-properties.json" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
+{
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "utg-concept-properties",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;This code system  defines the following properties for its concepts&lt;/b&gt;&lt;/p&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;URI&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;comment&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#comment&lt;/td&gt;&lt;td&gt;string&lt;/td&gt;&lt;td&gt;VComments and notes on the Domain.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Concepts&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://terminology.hl7.org/CodeSystem/utg-concept-properties&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;comment&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-binding&lt;a name=\&quot;utg-concept-properties-v2-binding\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Binding Code&lt;/td&gt;&lt;td&gt;Coded value identifying the binding realm for those tables that have a binding to a value set.  0=no binding or binding N/A; 1=Example; 2=Representative; 3=Universal; 4=US Realm.&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-cld&lt;a name=\&quot;utg-concept-properties-v2-cld\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 VS CLD Type&lt;/td&gt;&lt;td&gt;Categorization of Content Logical Definition for the V2 value set informing the table, as printed in the V2 ballot.  0=no expansion, 1=all codes, 2=enumerated, 3=V3 vaue set definition, 4=unique intensional definition, 5=non-HL7 value set definition, 6=FHIR value set definition&lt;/td&gt;&lt;td&gt;Used only for value sets informing the coded content of HL7 V2 tables. There are only a few types of value set compose statements for V2, and this code indicates now the exapnsion for puisblishing is to be caclulated.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-cs-oid&lt;a name=\&quot;utg-concept-properties-v2-cs-oid\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Code System OID&lt;/td&gt;&lt;td&gt;OID of the code system associated with the table&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-cs-uri&lt;a name=\&quot;utg-concept-properties-v2-cs-uri\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Code System URI&lt;/td&gt;&lt;td&gt;URI of the code system associated with the table&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-vs-uri&lt;a name=\&quot;utg-concept-properties-v2-vs-uri\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Value Set URI&lt;/td&gt;&lt;td&gt;URI of the value set informing the content of the table&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-table-deprecated&lt;a name=\&quot;utg-concept-properties-v2-table-deprecated\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;deprecated&lt;/td&gt;&lt;td&gt;Indicates that although still being published in the V2 international standard, the table has been deprecated in favor of alternative codes, and will be withdrawn in the future.&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2TblStatus&lt;a name=\&quot;utg-concept-properties-v2TblStatus\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Table Status&lt;/td&gt;&lt;td&gt;Status of the table as published in the V2 ballots. This is different from the concept status, which is the status of the concept representing the table infomration in the V2 Tables code system.&lt;/td&gt;&lt;td&gt;Used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;steward&lt;a name=\&quot;utg-concept-properties-steward\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Steward WorkGroup&lt;/td&gt;&lt;td&gt;Steward Work Group for the concept and its tree of subconcepts.&lt;/td&gt;&lt;td&gt;This is the HL7 Work Group primarily responsible for the content of the artifact.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-table-oid&lt;a name=\&quot;utg-concept-properties-v2-table-oid\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Table OID&lt;/td&gt;&lt;td&gt;OID value for the table object&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-table-type&lt;a name=\&quot;utg-concept-properties-v2-table-type\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Table Type&lt;/td&gt;&lt;td&gt;Type of V2 table, e.g. HL7 or User&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-cs-version&lt;a name=\&quot;utg-concept-properties-v2-cs-version\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Code System Version&lt;/td&gt;&lt;td&gt;Version of the code system informing the table. Note this is a denorm&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-version-tbl-introduced&lt;a name=\&quot;utg-concept-properties-v2-version-tbl-introduced\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;version-tbl-introduced&lt;/td&gt;&lt;td&gt;HL7 V2 version when the V2 Table was introduced&lt;/td&gt;&lt;td&gt;Used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-version-csvs-introduced&lt;a name=\&quot;utg-concept-properties-v2-version-csvs-introduced\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;version-csvs-introduced&lt;/td&gt;&lt;td&gt;HL7 V2 version when the code system and value set were introduced.   This is either the creation date of the V2 code system or value set objects, or the date when the FHIR or V3 or External code system and/or value set were associated to the table.&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;vocab-domain&lt;a name=\&quot;utg-concept-properties-vocab-domain\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Concept Domain&lt;/td&gt;&lt;td&gt;Associated Concept Domain for the table&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-vs-oid&lt;a name=\&quot;utg-concept-properties-v2-vs-oid\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Value Set OID&lt;/td&gt;&lt;td&gt;OID of the value set informing the table&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-where-used&lt;a name=\&quot;utg-concept-properties-v2-where-used\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Field Where Used&lt;/td&gt;&lt;td&gt;String holding the segment and field where the table is bound in the interational standard.&lt;/td&gt;&lt;td&gt;used only in v2-tables.xml&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-classifies-class-code&lt;a name=\&quot;utg-concept-properties-rim-classifies-class-code\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ClassifiesC RIM Class Code&lt;/td&gt;&lt;td&gt;Associates a concept domain with th ActClass code that it is intended to be associated with, ie for late binding, informs the IG devloper which code should be populated in ActClass when a value sset for ActCode is being bound.&lt;/td&gt;&lt;td&gt;used only in concept domains; in the coremif called 'ConceptualSpaceForClassCode'&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-qualified-by&lt;a name=\&quot;utg-concept-properties-rim-qualified-by\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;May Be QualifiedB y&lt;/td&gt;&lt;td&gt;One of the types of concept relationships that implements qualifying relationships&lt;/td&gt;&lt;td&gt;This needs reexamination to see how it is represented in UTG and if it correct; in V3 relationships between concepts in the same code system are represented internal to the system, not as a map.  Note that we have an extension for code systems for 'conceptrelationshipkind'&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-inbound-relationship&lt;a name=\&quot;utg-concept-properties-rim-inbound-relationship\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Act:inboundRelationship:ActRelationship&lt;/td&gt;&lt;td&gt;Name of inboundRelationship from Act to ActReln&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-outbound-relationship&lt;a name=\&quot;utg-concept-properties-rim-outbound-relationship\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Act:outboundRelationship:ActRelationship&lt;/td&gt;&lt;td&gt;Formal name of outboundRelationship from Act to ActReln&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-participation&lt;a name=\&quot;utg-concept-properties-rim-participation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Act:participation:Participation&lt;/td&gt;&lt;td&gt;Name of relationship from Act to Participation&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-ActRelationship-source&lt;a name=\&quot;utg-concept-properties-rim-ActRelationship-source\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:ActRelationship:source:Act&lt;/td&gt;&lt;td&gt;The name of the assciation from ActRelationship to the source Act&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-ActRelationship-target&lt;a name=\&quot;utg-concept-properties-rim-ActRelationship-target\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:ActRelationship:target:Act&lt;/td&gt;&lt;td&gt;The name of the assciation from ActRelationship to the source Act&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Class&lt;a name=\&quot;utg-concept-properties-rim-Class\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Class&lt;/td&gt;&lt;td&gt;The formal name for the class clone under this code&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Entity-played&lt;a name=\&quot;utg-concept-properties-rim-Entity-played\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Entity:playedRole:Role&lt;/td&gt;&lt;td&gt;The name of the relationship from the Entity to the playedRole&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Entity-scoped&lt;a name=\&quot;utg-concept-properties-rim-Entity-scoped\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Entity:scopedRole:Role&lt;/td&gt;&lt;td&gt;The name of the relationship from the Entity to the scopedRole&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Participation-act&lt;a name=\&quot;utg-concept-properties-rim-Participation-act\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Participation:act:Act&lt;/td&gt;&lt;td&gt;The formal name for relationship from Participation to Act&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Participation-role&lt;a name=\&quot;utg-concept-properties-rim-Participation-role\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Participation:role:Role&lt;/td&gt;&lt;td&gt;The name of the relationship from Participation to Role&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Role-inbound&lt;a name=\&quot;utg-concept-properties-rim-Role-inbound\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Role:inboundLink:RoleLink&lt;/td&gt;&lt;td&gt;Name of inboundLink relationship from Role to RoleLink&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Role-outbound&lt;a name=\&quot;utg-concept-properties-rim-Role-outbound\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Role:outboundLink:RoleLink&lt;/td&gt;&lt;td&gt;Name of outboundLink relationship from Role to RoleLink&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Role-participation&lt;a name=\&quot;utg-concept-properties-rim-Role-participation\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Role:participation:Participation&lt;/td&gt;&lt;td&gt;Name of relationship from Role to Participation&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Role-player&lt;a name=\&quot;utg-concept-properties-rim-Role-player\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Role:player:Entity&lt;/td&gt;&lt;td&gt;The name of the relationship from Role to the payer Entity&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Role-scoper&lt;a name=\&quot;utg-concept-properties-rim-Role-scoper\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Name:Role:scoper:Entity&lt;/td&gt;&lt;td&gt;The name of the relationship from Role to the scoper Entity&lt;/td&gt;&lt;td&gt;used only in structural code system content&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v3-cs-oid&lt;a name=\&quot;utg-concept-properties-v3-cs-oid\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OID&lt;/td&gt;&lt;td&gt;Property applies to concepts in the CodeSystem Code System.  The property holds the OID that uniquely identifies the code system represented by this coded concept.&lt;/td&gt;&lt;td&gt;This code system of code systems was retired a long time ago, and should not be in UTG so this property is unnecessary&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;owning-affiliate&lt;a name=\&quot;utg-concept-properties-owning-affiliate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OwningAffiliate&lt;/td&gt;&lt;td&gt;Property defined in V3 tooling, but may not be currently used.&lt;/td&gt;&lt;td&gt;not certain where this came from&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;owning-section&lt;a name=\&quot;utg-concept-properties-owning-section\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OwningSection&lt;/td&gt;&lt;td&gt;Property defined in V3 tooling, but may not be currently used.&lt;/td&gt;&lt;td&gt;not certain where this came from&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;owning-subsection&lt;a name=\&quot;utg-concept-properties-owning-subsection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;OwningSubSection&lt;/td&gt;&lt;td&gt;Property defined in V3 tooling, but may not be currently used.&lt;/td&gt;&lt;td&gt;not certain where this came from&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v3-smaller-than&lt;a name=\&quot;utg-concept-properties-v3-smaller-than\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;SmallerThan&lt;/td&gt;&lt;td&gt;Property defined in V3 tooling, but may not be currently used.&lt;/td&gt;&lt;td&gt;not certain where this came from&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Act-inbound-sort&lt;a name=\&quot;utg-concept-properties-rim-Act-inbound-sort\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sort:Act:inboundRelationship:ActRelationship&lt;/td&gt;&lt;td&gt;Sort key for the inboundRelationship from Act to ActReln; used to publish the RIM&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-act-outbound-sort&lt;a name=\&quot;utg-concept-properties-rim-act-outbound-sort\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sort:Act:outboundRelationship:ActRelationship&lt;/td&gt;&lt;td&gt;Sort key for the outboundRelationship from Act to ActReln; used to publish the RIM&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Act-participation-sort&lt;a name=\&quot;utg-concept-properties-rim-Act-participation-sort\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sort:Act:participation:Participation&lt;/td&gt;&lt;td&gt;Sort key for relationship from Act to Participation; used to publish the RIM&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Entity-played-sort&lt;a name=\&quot;utg-concept-properties-rim-Entity-played-sort\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sort:Entity:playedRole:Role&lt;/td&gt;&lt;td&gt;Sort key for the relationship from the Entity to the playedRole; used to publish the RIM&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Entity-scoped-sort&lt;a name=\&quot;utg-concept-properties-rim-Entity-scoped-sort\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sort:Entity:scopedRole:Role&lt;/td&gt;&lt;td&gt;The sort key for the relationship from the Entity to the scopedRole; used to publish the RIM&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Role-inbound-sort&lt;a name=\&quot;utg-concept-properties-rim-Role-inbound-sort\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sort:Role:inboundLink:RoleLink&lt;/td&gt;&lt;td&gt;Sort key for inboundLink relationship from Role to RoleLink; used to publish the RIM&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Role-outbound-sort&lt;a name=\&quot;utg-concept-properties-rim-Role-outbound-sort\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sort:Role:outboundLink:RoleLink&lt;/td&gt;&lt;td&gt;Sort key for outboundLink relationship from Role to RoleLink; used to publish the RIM&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-Role-participation-sort&lt;a name=\&quot;utg-concept-properties-rim-Role-participation-sort\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Sort:Role:participation:Participation&lt;/td&gt;&lt;td&gt;Sort key for relationship from Role to Participation; used to publish the RIM&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v3-applies-to&lt;a name=\&quot;utg-concept-properties-v3-applies-to\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;appliesTo&lt;/td&gt;&lt;td&gt;Haven't a clue!&lt;/td&gt;&lt;td&gt;used only in ObservationMethod, and appears to link types of tests with equipment, manufacturers, reagents, or organisms.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-conductible&lt;a name=\&quot;utg-concept-properties-rim-conductible\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;conductible&lt;/td&gt;&lt;td&gt;If true, indicates that ActRelationships or Participations of the specified type (and any specializations thereof) will normally conduct. For more usage information, refer to the Core Principles specification.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v3-how-applies&lt;a name=\&quot;utg-concept-properties-v3-how-applies\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;howApplies&lt;/td&gt;&lt;td&gt;Haven't a clue!&lt;/td&gt;&lt;td&gt;used only in ObservationMethod, and appears to link types of tests with equipment, manufacturers, reagents, or organisms.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v3-internal-id&lt;a name=\&quot;utg-concept-properties-v3-internal-id\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;internalId&lt;/td&gt;&lt;td&gt;The internal identifier for the concept in the HL7 Access database repository.&lt;/td&gt;&lt;td&gt;this should not be migrated to UTG&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v3-inverse-relationship&lt;a name=\&quot;utg-concept-properties-v3-inverse-relationship\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;inverseRelationship&lt;/td&gt;&lt;td&gt;Property applies to the ConceptCodeRelationship code system. For each concept, it identifies the name of the inverse relationship.&lt;/td&gt;&lt;td&gt;only used in the code system of contept relationships..  Forgot we had this.   Not sure how it should be modeled in UTG.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-document-characteristic&lt;a name=\&quot;utg-concept-properties-rim-document-characteristic\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;isDocumentCharacteristic&lt;/td&gt;&lt;td&gt;If true, indicates that the Act attribute or association (as represented by a typeCode for eaither ActRelationship or Pareticipation is a descriptor of the document (record) represented by the act object. If false, indicates the property is a descriptor of the action itself, actual, intended, or potential.  Applies to interpretation of attributes and associations with respect to changes in the value of Act.actionNegationInd and Act.moodCode. (See descriptions of these attributes for further discussion.) For example, in an order, the id attribute [isDocumentCharacteristic = true] is an identifier of the record of the order, not an identifier of the intended event.  On the other hand, the code attribute [isDocumentCharacteristic = false] describes a characteristic of the intended event.&lt;/td&gt;&lt;td&gt;This may not behave the same based on the final outcome from the negation project.   Or this may be the impleentation of their recommendations; need to discuss with Rob Hausam.   Clear the this is used as part of RIM documentation.  Note that this is only used in these two structural code systems.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ConceptualSpaceForClassCode&lt;a name=\&quot;utg-concept-properties-ConceptualSpaceForClassCode\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Conceptual Space For ClassCode&lt;/td&gt;&lt;td&gt;This concept domain provides the semantic category space indicates by the identifies Class code.  Used in HL7 V3 RIM.&lt;/td&gt;&lt;td&gt;Only used in the V3 RIM concept domains.  Identifies the class code that should be used in either ActClass or EntityClass when this domain is the terminology constraint for ActCode or EntityCode attribute&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;source&lt;a name=\&quot;utg-concept-properties-source\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Source&lt;/td&gt;&lt;td&gt;Indicaates the etiology of this domain, i.e. which HL7 product family or other area that the domain originally was needed for and triggered its creation.&lt;/td&gt;&lt;td&gt;Current values are v2, v3, cda.  Note the ones for CDA have been added manually.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;openIssue&lt;a name=\&quot;utg-concept-properties-openIssue\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Open Issue&lt;/td&gt;&lt;td&gt;Documents some V3 issue that was never resolved for a particular concept domain.&lt;/td&gt;&lt;td&gt;Currently valued only for the v3 Concept Domains, and reflect open issues to be addressed in various concept domains.  May be used for open issues on particular concepts in code systems later.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;deprecationInfo&lt;a name=\&quot;utg-concept-properties-deprecationInfo\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deprecation Information&lt;/td&gt;&lt;td&gt;Documentation of V3 concept domains that have been deprecated.&lt;/td&gt;&lt;td&gt;Currently valued only for the v3 Concept Domains.   Includes commentary and release IDs when they were deprecated, and possibly replacement information&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingUV-valueSet&lt;a name=\&quot;utg-concept-properties-contextBindingUV-valueSet\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;UV Bound ValueSet&lt;/td&gt;&lt;td&gt;Identifies the Value Set bound to this Concept Domain in the Universal Realm.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingUV-effectiveDate&lt;a name=\&quot;utg-concept-properties-contextBindingUV-effectiveDate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;UV Binding Effective Date&lt;/td&gt;&lt;td&gt;Effective Date of the specified Value Set bound to this Concwpt Domain in the Universal Realm.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingUV-strength&lt;a name=\&quot;utg-concept-properties-contextBindingUV-strength\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;UV Binding Coding Strength&lt;/td&gt;&lt;td&gt;Coding strength for the Universal Realm binding; either CWE or CNE.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingR1-valueSet&lt;a name=\&quot;utg-concept-properties-contextBindingR1-valueSet\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R1 Bound ValueSet&lt;/td&gt;&lt;td&gt;Identifies the Value Set bound to this Concept Domain in the Representative Realm.&lt;/td&gt;&lt;td&gt;R1 Bindings have been implemented in at least one Realm, and are offered for general use as they may be valid in other Realms.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingR1-effectiveDate&lt;a name=\&quot;utg-concept-properties-contextBindingR1-effectiveDate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R1 Binding Effective Date&lt;/td&gt;&lt;td&gt;Effective Date of the specified Value Set bound to this Concept Domain in the Representative Realm.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingR1-strength&lt;a name=\&quot;utg-concept-properties-contextBindingR1-strength\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;R1 Binding Coding Strength&lt;/td&gt;&lt;td&gt;Coding strength for the Representatie binding; either CWE or CNE.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingX1-valueSet&lt;a name=\&quot;utg-concept-properties-contextBindingX1-valueSet\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;X1 Bound ValueSet&lt;/td&gt;&lt;td&gt;Identifies the Value Set bound to this Concept Domain in the Example Realm.&lt;/td&gt;&lt;td&gt;X1 Bindings are used solely for published or educational examples, and are known to be incorrect or invalid content for real world systems.  They should not be used in production systems.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingX1-effectiveDate&lt;a name=\&quot;utg-concept-properties-contextBindingX1-effectiveDate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;X1 Binding Effective Date&lt;/td&gt;&lt;td&gt;Effective Date of the specified Value Set bound to this Concept Domain in the Example Realm.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingX1-strength&lt;a name=\&quot;utg-concept-properties-contextBindingX1-strength\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;X1 Binding Coding Strength&lt;/td&gt;&lt;td&gt;Coding strength for the Example binding; either CWE or CNE.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingC1-valueSet&lt;a name=\&quot;utg-concept-properties-contextBindingC1-valueSet\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;C1 Bound ValueSet&lt;/td&gt;&lt;td&gt;Identifies the Value Set bound to this Concept Domain in the Example Realm.&lt;/td&gt;&lt;td&gt;C1 Bindings are used solely for provisional or draft bindings, and are intended to be removed or updated at some tiem in the future.  In general, C1 bindings may be incorrect or invalid content for real world systems, or may be subject to change without notice.  They should not be used in production systems.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingC1-effectiveDate&lt;a name=\&quot;utg-concept-properties-contextBindingC1-effectiveDate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;C1 Binding Effective Date&lt;/td&gt;&lt;td&gt;Effective Date of the specified Value Set bound to this Concept Domain in the Unclassified Realm.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingC1-strength&lt;a name=\&quot;utg-concept-properties-contextBindingC1-strength\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;C1 Binding Coding Strength&lt;/td&gt;&lt;td&gt;Coding strength for the Example binding; either CWE or CNE.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingUS-valueSet&lt;a name=\&quot;utg-concept-properties-contextBindingUS-valueSet\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;US Bound ValueSet&lt;/td&gt;&lt;td&gt;Identifies the Value Set bound to this Concept Domain in the US (United States of America) Realm.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingUS-effectiveDate&lt;a name=\&quot;utg-concept-properties-contextBindingUS-effectiveDate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;US Binding Effective Date&lt;/td&gt;&lt;td&gt;Effective Date of the specified Value Set bound to this Concwpt Domain in the US Realm.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;contextBindingUS-strength&lt;a name=\&quot;utg-concept-properties-contextBindingUS-strength\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;US Binding Coding Strength&lt;/td&gt;&lt;td&gt;Coding strength for the US Realm binding; either CWE or CNE.&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-assoc-conc-property&lt;a name=\&quot;utg-concept-properties-rim-assoc-conc-property\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Assoc Concpt Property&lt;/td&gt;&lt;td&gt;Formal code of an Associated Concept Property.&lt;/td&gt;&lt;td&gt;Used only in the V3 RIM, and required for Formal Naming.  Also needed for proper operation of RoseTree in display of cormif content.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-assoc-conc-propname&lt;a name=\&quot;utg-concept-properties-rim-assoc-conc-propname\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Assoc Concpt Prop Name&lt;/td&gt;&lt;td&gt;Formal name of an Associated Concept Property.&lt;/td&gt;&lt;td&gt;Used only in the V3 RIM, and required for Formal Naming.  Also needed for proper operation of RoseTree in display of cormif content.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-assoc-conc-propvalue&lt;a name=\&quot;utg-concept-properties-rim-assoc-conc-propvalue\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Assoc Concpt Prop Value&lt;/td&gt;&lt;td&gt;Value of an Associated Concept Property.&lt;/td&gt;&lt;td&gt;Used only in the V3 RIM, and required for Formal Naming.  Also needed for proper operation of RoseTree in display of cormif content.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-concComment&lt;a name=\&quot;utg-concept-properties-v2-concComment\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Concept Comment&lt;/td&gt;&lt;td&gt;String value from the V2 publishing database source holding comments for the concepts for populated tables.  These comments are separate from the concept Definition and the Usage Notes.&lt;/td&gt;&lt;td&gt;used only in Version 2 code systems concepts&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;v2-concCommentAsPub&lt;a name=\&quot;utg-concept-properties-v2-concCommentAsPub\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;V2 Concept Comment As Published&lt;/td&gt;&lt;td&gt;String value from the V2 publishing database source holding comments as published for the concepts for populated tables.  These comments are separate from the concept Definition and the Usage Notes, and may be distinct from the other comments due to publishing requirements.&lt;/td&gt;&lt;td&gt;used only in Version 2 code systems concepts&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;HL7usageNotes&lt;a name=\&quot;utg-concept-properties-HL7usageNotes\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HL7 Concept Usage Notes&lt;/td&gt;&lt;td&gt;String value from the HL7 sources holding the Usage Notes for the concepts for populated tables and code systems.  These  are separate from the concept Definitions and the other comments.&lt;/td&gt;&lt;td&gt;used only in the Version 2 code systems concepts&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;propIsMandatory&lt;a name=\&quot;utg-concept-properties-propIsMandatory\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;RIM Property is Mandatory&lt;/td&gt;&lt;td&gt;Boolean indicating when an attribure of a RIM class attribute is mandatory.&lt;/td&gt;&lt;td&gt;Used as a property of a property, in RIM Class Codes primarily.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;propDefaultValue&lt;a name=\&quot;utg-concept-properties-propDefaultValue\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Default value of RIM Property&lt;/td&gt;&lt;td&gt;String holding an optional default value for a mandatory property.&lt;/td&gt;&lt;td&gt;Used as a property of a property, in RIM Class Codes primarily.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;propDefaultHandling&lt;a name=\&quot;utg-concept-properties-propDefaultHandling\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Default handling of RIM Property&lt;/td&gt;&lt;td&gt;Code value identifying the default handling code of a RIM attribute mandatory property.&lt;/td&gt;&lt;td&gt;Used as a property of a property, in RIM Class Codes primarily.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;rim-ClassifiesClassCode&lt;a name=\&quot;utg-concept-properties-rim-ClassifiesClassCode\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Concept Domain that classifies a RIM Class Code&lt;/td&gt;&lt;td&gt;Code value from a RIM Class such as ActClass or EntityClass which the Domain classifies.&lt;/td&gt;&lt;td&gt;Used as a property of a property, in RIM Class Codes primarily.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;ComponentOf&lt;a name=\&quot;utg-concept-properties-ComponentOf\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Special additional relationship for part relatioships&lt;/td&gt;&lt;td&gt;Code value identifying the code in the codeSystem which this concept is a component of.&lt;/td&gt;&lt;td&gt;Used as a property of a property, in RIM Class Codes primarily.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;MayBeQualifiedBy&lt;a name=\&quot;utg-concept-properties-MayBeQualifiedBy\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Qualifier relationship&lt;/td&gt;&lt;td&gt;Code value identifying another code in the codeSystem which this concept may be qualified by&lt;/td&gt;&lt;td&gt;Used as a property of a property, in RIM Class Codes primarily.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OwningSubSection&lt;a name=\&quot;utg-concept-properties-OwningSubSection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Subsection containment relationship&lt;/td&gt;&lt;td&gt;Used in the V3 publication process, indicates a ballot subsection which encloses this content.&lt;/td&gt;&lt;td&gt;Used as a property of a property, in RIM Class Codes primarily.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OwningSection&lt;a name=\&quot;utg-concept-properties-OwningSection\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Section containment relationship&lt;/td&gt;&lt;td&gt;Used in the V3 publication process, indicates a ballot section which encloses this content.&lt;/td&gt;&lt;td&gt;Used as a property of a property, in RIM Class Codes primarily.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;OwningAffiliate&lt;a name=\&quot;utg-concept-properties-OwningAffiliate\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;HL7 Affiliate Owner&lt;/td&gt;&lt;td&gt;Used in the V3 ballot and publication process to indicate content which is owned by one of the HL7 International Affiliates.&lt;/td&gt;&lt;td&gt;Used as a property of a property, in RIM Class Codes primarily.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DeprecationInfo&lt;a name=\&quot;utg-concept-properties-DeprecationInfo\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Deprecation Informaton&lt;/td&gt;&lt;td&gt;Used to support the capture of comments, remarks, V3 release ID, and other information related to the deprecation of a concept.&lt;/td&gt;&lt;td&gt;Used primarily to hold the imported comments and release version information on deprecated concepts in the V3 coremif.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;SmallerThan&lt;a name=\&quot;utg-concept-properties-SmallerThan\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Smaller Than&lt;/td&gt;&lt;td&gt;Points to another code value in the codeSystem which this concept is smaller than.  Typically used in systems of Ordinal relationship codes, where size or magnitude is the ordering key.&lt;/td&gt;&lt;td&gt;Used as a property of a property, in RIM Class Codes primarily.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "http://terminology.hl7.org/CodeSystem/utg-concept-properties",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "ConceptProperties",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "UTG Specific Concept Properties",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2024-03-09T14:36:19-07:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "SatuSehat",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a>" : "SatuSehat",
+      "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "https://satusehat.kemkes.go.id/"
+        },
+        {
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "email",
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "fhir@dto.kemkes.go.id"
+        }
+      ]
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>" : "A set of concept properties used by UTG to maintain legacy terminology distribution systems",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">copyright</a>" : "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a>" : "comment",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>" : "http://hl7.org/fhir/concept-properties#comment",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>" : "VComments and notes on the Domain.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a>" : "string"
+    }
+  ],
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-binding",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Binding Code",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Coded value identifying the binding realm for those tables that have a binding to a value set.  0=no binding or binding N/A; 1=Example; 2=Representative; 3=Universal; 4=US Realm.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-cld",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 VS CLD Type",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Categorization of Content Logical Definition for the V2 value set informing the table, as printed in the V2 ballot.  0=no expansion, 1=all codes, 2=enumerated, 3=V3 vaue set definition, 4=unique intensional definition, 5=non-HL7 value set definition, 6=FHIR value set definition",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used only for value sets informing the coded content of HL7 V2 tables. There are only a few types of value set compose statements for V2, and this code indicates now the exapnsion for puisblishing is to be caclulated."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-cs-oid",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Code System OID",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "OID of the code system associated with the table",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-cs-uri",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Code System URI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "URI of the code system associated with the table",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-vs-uri",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Value Set URI",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "URI of the value set informing the content of the table",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-table-deprecated",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "deprecated",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Indicates that although still being published in the V2 international standard, the table has been deprecated in favor of alternative codes, and will be withdrawn in the future.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2TblStatus",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Table Status",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Status of the table as published in the V2 ballots. This is different from the concept status, which is the status of the concept representing the table infomration in the V2 Tables code system.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "steward",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Steward WorkGroup",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Steward Work Group for the concept and its tree of subconcepts.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "This is the HL7 Work Group primarily responsible for the content of the artifact."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-table-oid",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Table OID",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "OID value for the table object",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-table-type",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Table Type",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Type of V2 table, e.g. HL7 or User",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-cs-version",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Code System Version",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Version of the code system informing the table. Note this is a denorm",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-version-tbl-introduced",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "version-tbl-introduced",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "HL7 V2 version when the V2 Table was introduced",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-version-csvs-introduced",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "version-csvs-introduced",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "HL7 V2 version when the code system and value set were introduced.   This is either the creation date of the V2 code system or value set objects, or the date when the FHIR or V3 or External code system and/or value set were associated to the table.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "vocab-domain",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Concept Domain",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Associated Concept Domain for the table",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-vs-oid",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Value Set OID",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "OID of the value set informing the table",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-where-used",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Field Where Used",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "String holding the segment and field where the table is bound in the interational standard.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in v2-tables.xml"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-classifies-class-code",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "ClassifiesC RIM Class Code",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Associates a concept domain with th ActClass code that it is intended to be associated with, ie for late binding, informs the IG devloper which code should be populated in ActClass when a value sset for ActCode is being bound.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in concept domains; in the coremif called 'ConceptualSpaceForClassCode'"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-qualified-by",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "May Be QualifiedB y",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "One of the types of concept relationships that implements qualifying relationships",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "This needs reexamination to see how it is represented in UTG and if it correct; in V3 relationships between concepts in the same code system are represented internal to the system, not as a map.  Note that we have an extension for code systems for 'conceptrelationshipkind'"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-inbound-relationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Act:inboundRelationship:ActRelationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Name of inboundRelationship from Act to ActReln",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-outbound-relationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Act:outboundRelationship:ActRelationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Formal name of outboundRelationship from Act to ActReln",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-participation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Act:participation:Participation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Name of relationship from Act to Participation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-ActRelationship-source",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:ActRelationship:source:Act",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The name of the assciation from ActRelationship to the source Act",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-ActRelationship-target",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:ActRelationship:target:Act",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The name of the assciation from ActRelationship to the source Act",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Class",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Class",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The formal name for the class clone under this code",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Entity-played",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Entity:playedRole:Role",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The name of the relationship from the Entity to the playedRole",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Entity-scoped",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Entity:scopedRole:Role",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The name of the relationship from the Entity to the scopedRole",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Participation-act",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Participation:act:Act",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The formal name for relationship from Participation to Act",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Participation-role",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Participation:role:Role",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The name of the relationship from Participation to Role",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Role-inbound",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Role:inboundLink:RoleLink",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Name of inboundLink relationship from Role to RoleLink",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Role-outbound",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Role:outboundLink:RoleLink",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Name of outboundLink relationship from Role to RoleLink",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Role-participation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Role:participation:Participation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Name of relationship from Role to Participation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Role-player",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Role:player:Entity",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The name of the relationship from Role to the payer Entity",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Role-scoper",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Name:Role:scoper:Entity",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The name of the relationship from Role to the scoper Entity",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in structural code system content"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v3-cs-oid",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OID",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Property applies to concepts in the CodeSystem Code System.  The property holds the OID that uniquely identifies the code system represented by this coded concept.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "This code system of code systems was retired a long time ago, and should not be in UTG so this property is unnecessary"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "owning-affiliate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OwningAffiliate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Property defined in V3 tooling, but may not be currently used.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "not certain where this came from"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "owning-section",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OwningSection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Property defined in V3 tooling, but may not be currently used.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "not certain where this came from"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "owning-subsection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "OwningSubSection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Property defined in V3 tooling, but may not be currently used.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "not certain where this came from"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v3-smaller-than",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "SmallerThan",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Property defined in V3 tooling, but may not be currently used.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "not certain where this came from"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Act-inbound-sort",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sort:Act:inboundRelationship:ActRelationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sort key for the inboundRelationship from Act to ActReln; used to publish the RIM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-act-outbound-sort",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sort:Act:outboundRelationship:ActRelationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sort key for the outboundRelationship from Act to ActReln; used to publish the RIM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Act-participation-sort",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sort:Act:participation:Participation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sort key for relationship from Act to Participation; used to publish the RIM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Entity-played-sort",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sort:Entity:playedRole:Role",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sort key for the relationship from the Entity to the playedRole; used to publish the RIM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Entity-scoped-sort",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sort:Entity:scopedRole:Role",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The sort key for the relationship from the Entity to the scopedRole; used to publish the RIM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Role-inbound-sort",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sort:Role:inboundLink:RoleLink",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sort key for inboundLink relationship from Role to RoleLink; used to publish the RIM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Role-outbound-sort",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sort:Role:outboundLink:RoleLink",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sort key for outboundLink relationship from Role to RoleLink; used to publish the RIM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-Role-participation-sort",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Sort:Role:participation:Participation",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Sort key for relationship from Role to Participation; used to publish the RIM"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v3-applies-to",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "appliesTo",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Haven't a clue!",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in ObservationMethod, and appears to link types of tests with equipment, manufacturers, reagents, or organisms."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-conductible",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "conductible",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "If true, indicates that ActRelationships or Participations of the specified type (and any specializations thereof) will normally conduct. For more usage information, refer to the Core Principles specification."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v3-how-applies",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "howApplies",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Haven't a clue!",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in ObservationMethod, and appears to link types of tests with equipment, manufacturers, reagents, or organisms."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v3-internal-id",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "internalId",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "The internal identifier for the concept in the HL7 Access database repository.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "this should not be migrated to UTG"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v3-inverse-relationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "inverseRelationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Property applies to the ConceptCodeRelationship code system. For each concept, it identifies the name of the inverse relationship.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "only used in the code system of contept relationships..  Forgot we had this.   Not sure how it should be modeled in UTG."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-document-characteristic",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "isDocumentCharacteristic",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "If true, indicates that the Act attribute or association (as represented by a typeCode for eaither ActRelationship or Pareticipation is a descriptor of the document (record) represented by the act object. If false, indicates the property is a descriptor of the action itself, actual, intended, or potential.  Applies to interpretation of attributes and associations with respect to changes in the value of Act.actionNegationInd and Act.moodCode. (See descriptions of these attributes for further discussion.) For example, in an order, the id attribute [isDocumentCharacteristic = true] is an identifier of the record of the order, not an identifier of the intended event.  On the other hand, the code attribute [isDocumentCharacteristic = false] describes a characteristic of the intended event.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "This may not behave the same based on the final outcome from the negation project.   Or this may be the impleentation of their recommendations; need to discuss with Rob Hausam.   Clear the this is used as part of RIM documentation.  Note that this is only used in these two structural code systems."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ConceptualSpaceForClassCode",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Conceptual Space For ClassCode",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "This concept domain provides the semantic category space indicates by the identifies Class code.  Used in HL7 V3 RIM.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Only used in the V3 RIM concept domains.  Identifies the class code that should be used in either ActClass or EntityClass when this domain is the terminology constraint for ActCode or EntityCode attribute"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "source",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Source",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Indicaates the etiology of this domain, i.e. which HL7 product family or other area that the domain originally was needed for and triggered its creation.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Current values are v2, v3, cda.  Note the ones for CDA have been added manually."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "openIssue",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Open Issue",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Documents some V3 issue that was never resolved for a particular concept domain.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Currently valued only for the v3 Concept Domains, and reflect open issues to be addressed in various concept domains.  May be used for open issues on particular concepts in code systems later."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "deprecationInfo",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Deprecation Information",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Documentation of V3 concept domains that have been deprecated.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Currently valued only for the v3 Concept Domains.   Includes commentary and release IDs when they were deprecated, and possibly replacement information"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingUV-valueSet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "UV Bound ValueSet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Identifies the Value Set bound to this Concept Domain in the Universal Realm."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingUV-effectiveDate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "UV Binding Effective Date",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Effective Date of the specified Value Set bound to this Concwpt Domain in the Universal Realm."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingUV-strength",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "UV Binding Coding Strength",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Coding strength for the Universal Realm binding; either CWE or CNE."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingR1-valueSet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R1 Bound ValueSet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Identifies the Value Set bound to this Concept Domain in the Representative Realm.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "R1 Bindings have been implemented in at least one Realm, and are offered for general use as they may be valid in other Realms."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingR1-effectiveDate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R1 Binding Effective Date",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Effective Date of the specified Value Set bound to this Concept Domain in the Representative Realm."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingR1-strength",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "R1 Binding Coding Strength",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Coding strength for the Representatie binding; either CWE or CNE."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingX1-valueSet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "X1 Bound ValueSet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Identifies the Value Set bound to this Concept Domain in the Example Realm.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "X1 Bindings are used solely for published or educational examples, and are known to be incorrect or invalid content for real world systems.  They should not be used in production systems."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingX1-effectiveDate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "X1 Binding Effective Date",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Effective Date of the specified Value Set bound to this Concept Domain in the Example Realm."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingX1-strength",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "X1 Binding Coding Strength",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Coding strength for the Example binding; either CWE or CNE."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingC1-valueSet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "C1 Bound ValueSet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Identifies the Value Set bound to this Concept Domain in the Example Realm.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "C1 Bindings are used solely for provisional or draft bindings, and are intended to be removed or updated at some tiem in the future.  In general, C1 bindings may be incorrect or invalid content for real world systems, or may be subject to change without notice.  They should not be used in production systems."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingC1-effectiveDate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "C1 Binding Effective Date",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Effective Date of the specified Value Set bound to this Concept Domain in the Unclassified Realm."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingC1-strength",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "C1 Binding Coding Strength",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Coding strength for the Example binding; either CWE or CNE."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingUS-valueSet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "US Bound ValueSet",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Identifies the Value Set bound to this Concept Domain in the US (United States of America) Realm."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingUS-effectiveDate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "US Binding Effective Date",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Effective Date of the specified Value Set bound to this Concwpt Domain in the US Realm."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "contextBindingUS-strength",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "US Binding Coding Strength",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Coding strength for the US Realm binding; either CWE or CNE."
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-assoc-conc-property",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Assoc Concpt Property",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Formal code of an Associated Concept Property.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used only in the V3 RIM, and required for Formal Naming.  Also needed for proper operation of RoseTree in display of cormif content."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-assoc-conc-propname",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Assoc Concpt Prop Name",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Formal name of an Associated Concept Property.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used only in the V3 RIM, and required for Formal Naming.  Also needed for proper operation of RoseTree in display of cormif content."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-assoc-conc-propvalue",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Assoc Concpt Prop Value",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Value of an Associated Concept Property.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used only in the V3 RIM, and required for Formal Naming.  Also needed for proper operation of RoseTree in display of cormif content."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-concComment",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Concept Comment",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "String value from the V2 publishing database source holding comments for the concepts for populated tables.  These comments are separate from the concept Definition and the Usage Notes.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in Version 2 code systems concepts"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "v2-concCommentAsPub",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "V2 Concept Comment As Published",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "String value from the V2 publishing database source holding comments as published for the concepts for populated tables.  These comments are separate from the concept Definition and the Usage Notes, and may be distinct from the other comments due to publishing requirements.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in Version 2 code systems concepts"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "HL7usageNotes",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HL7 Concept Usage Notes",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "String value from the HL7 sources holding the Usage Notes for the concepts for populated tables and code systems.  These  are separate from the concept Definitions and the other comments.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "used only in the Version 2 code systems concepts"
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "propIsMandatory",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "RIM Property is Mandatory",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Boolean indicating when an attribure of a RIM class attribute is mandatory.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used as a property of a property, in RIM Class Codes primarily."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "propDefaultValue",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Default value of RIM Property",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "String holding an optional default value for a mandatory property.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used as a property of a property, in RIM Class Codes primarily."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "propDefaultHandling",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Default handling of RIM Property",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Code value identifying the default handling code of a RIM attribute mandatory property.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used as a property of a property, in RIM Class Codes primarily."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "rim-ClassifiesClassCode",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Concept Domain that classifies a RIM Class Code",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Code value from a RIM Class such as ActClass or EntityClass which the Domain classifies.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used as a property of a property, in RIM Class Codes primarily."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "ComponentOf",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Special additional relationship for part relatioships",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Code value identifying the code in the codeSystem which this concept is a component of.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used as a property of a property, in RIM Class Codes primarily."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "MayBeQualifiedBy",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Qualifier relationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Code value identifying another code in the codeSystem which this concept may be qualified by",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used as a property of a property, in RIM Class Codes primarily."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OwningSubSection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Subsection containment relationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Used in the V3 publication process, indicates a ballot subsection which encloses this content.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used as a property of a property, in RIM Class Codes primarily."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OwningSection",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Section containment relationship",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Used in the V3 publication process, indicates a ballot section which encloses this content.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used as a property of a property, in RIM Class Codes primarily."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "OwningAffiliate",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "HL7 Affiliate Owner",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Used in the V3 ballot and publication process to indicate content which is owned by one of the HL7 International Affiliates.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used as a property of a property, in RIM Class Codes primarily."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DeprecationInfo",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Deprecation Informaton",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Used to support the capture of comments, remarks, V3 release ID, and other information related to the deprecation of a concept.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used primarily to hold the imported comments and release version information on deprecated concepts in the V3 coremif."
+        }
+      ]
+    },
+    {
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "SmallerThan",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Smaller Than",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Points to another code value in the codeSystem which this concept is smaller than.  Typically used in systems of Ordinal relationship codes, where size or magnitude is the ordering key.",
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>" : [
+        {
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a>" : "comment",
+          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueString</a>" : "Used as a property of a property, in RIM Class Codes primarily."
+        }
+      ]
+    }
+  ]
+}</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

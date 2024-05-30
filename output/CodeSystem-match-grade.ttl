@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/match-grade> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "match-grade"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/match-grade</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">certain<a name=\"match-grade-certain\"> </a></td><td>Certain Match</td><td>This record meets the matching criteria to be automatically considered as a full match.</td></tr><tr><td style=\"white-space:nowrap\">probable<a name=\"match-grade-probable\"> </a></td><td>Probable Match</td><td>This record is a close match, but not a certain match. Additional review (e.g. by a human) may be required before using this as a match.</td></tr><tr><td style=\"white-space:nowrap\">possible<a name=\"match-grade-possible\"> </a></td><td>Possible Match</td><td>This record may be a matching one. Additional review (e.g. by a human) SHOULD be performed before using this as a match.</td></tr><tr><td style=\"white-space:nowrap\">certainly-not<a name=\"match-grade-certainly-not\"> </a></td><td>Certainly Not a Match</td><td>This record is known not to be a match. Note that usually non-matching records are not returned, but in some cases records previously or likely considered as a match may specifically be negated by the matching engine.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/match-grade"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1289" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MatchGrade"] ; # 
+  fhir:title [ fhir:v "MatchGrade"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2020-04-09T21:10:28+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A Master Patient Index (MPI) assessment of whether a candidate patient record is a match or not."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/match-grade"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/match-grade>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "certain" ] ;
+     fhir:display [ fhir:v "Certain Match" ] ;
+     fhir:definition [ fhir:v "This record meets the matching criteria to be automatically considered as a full match." ]
+  ] [
+     fhir:code [ fhir:v "probable" ] ;
+     fhir:display [ fhir:v "Probable Match" ] ;
+     fhir:definition [ fhir:v "This record is a close match, but not a certain match. Additional review (e.g. by a human) may be required before using this as a match." ]
+  ] [
+     fhir:code [ fhir:v "possible" ] ;
+     fhir:display [ fhir:v "Possible Match" ] ;
+     fhir:definition [ fhir:v "This record may be a matching one. Additional review (e.g. by a human) SHOULD be performed before using this as a match." ]
+  ] [
+     fhir:code [ fhir:v "certainly-not" ] ;
+     fhir:display [ fhir:v "Certainly Not a Match" ] ;
+     fhir:definition [ fhir:v "This record is known not to be a match. Note that usually non-matching records are not returned, but in some cases records previously or likely considered as a match may specifically be negated by the matching engine." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -37,10 +37,10 @@ Description: "ID Core Encounter profile"
 * location 1..
 * location ^extension[0].url = "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass"
 * location ^extension[=].extension[0].url = "value"
-* location ^extension[=].extension[=].valueCodeableConcept.coding[0] = $locationServiceClass-Outpatient#reguler
-* location ^extension[=].extension[=].valueCodeableConcept.coding[+] = $locationServiceClass-Inpatient#1
+* location ^extension[=].extension[=].valueCodeableConcept.coding[0].system = $locationServiceClass-Outpatient
+* location ^extension[=].extension[=].valueCodeableConcept.coding[+].system = $locationServiceClass-Inpatient
 * location ^extension[=].extension[+].url = "upgradeClassIndicator"
-* location ^extension[=].extension[=].valueCodeableConcept = $locationUpgradeClass#kelas-tetap
+* location ^extension[=].extension[=].valueCodeableConcept.coding[0].system = $locationUpgradeClass
 * location.extension contains $Encounter.location named encounterlocation 1..*
 * serviceProvider 1..
 

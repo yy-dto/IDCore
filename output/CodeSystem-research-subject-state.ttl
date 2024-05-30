@@ -1,0 +1,110 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/research-subject-state> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "research-subject-state"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ]
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/research-subject-state</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">candidate<a name=\"research-subject-state-candidate\"> </a></td><td>Candidate</td><td><div><p>An identified person that can be considered for inclusion in a study.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">eligible<a name=\"research-subject-state-eligible\"> </a></td><td>Eligible</td><td><div><p>A person that has met the eligibility criteria for inclusion in a study.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">follow-up<a name=\"research-subject-state-follow-up\"> </a></td><td>Follow-up</td><td><div><p>A person is no longer receiving study intervention and/or being evaluated with tests and procedures according to the protocol, but they are being monitored on a protocol-prescribed schedule.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">ineligible<a name=\"research-subject-state-ineligible\"> </a></td><td>Ineligible</td><td><div><p>A person who did not meet one or more criteria required for participation in a study is considered to have failed screening or\nis ineligible for the study.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">not-registered<a name=\"research-subject-state-not-registered\"> </a></td><td>Not Registered</td><td><div><p>A person for whom registration was not completed.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">off-study<a name=\"research-subject-state-off-study\"> </a></td><td>Off-study</td><td><div><p>A person that has ended their participation on a study either because their treatment/observation is complete or through not\nresponding, withdrawal, non-compliance and/or adverse event.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">on-study<a name=\"research-subject-state-on-study\"> </a></td><td>On-study</td><td><div><p>A person that is enrolled or registered on a study.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">on-study-intervention<a name=\"research-subject-state-on-study-intervention\"> </a></td><td>On-study-intervention</td><td><div><p>The person is receiving the treatment or participating in an activity (e.g. yoga, diet, etc.) that the study is evaluating.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">on-study-observation<a name=\"research-subject-state-on-study-observation\"> </a></td><td>On-study-observation</td><td><div><p>The subject is being evaluated via tests and assessments according to the study calendar, but is not receiving any intervention. Note that this state is study-dependent and might not exist in all studies.  A synonym for this is &quot;short-term follow-up&quot;.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">pending-on-study<a name=\"research-subject-state-pending-on-study\"> </a></td><td>Pending on-study</td><td><div><p>A person is pre-registered for a study.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">potential-candidate<a name=\"research-subject-state-potential-candidate\"> </a></td><td>Potential Candidate</td><td><div><p>A person that is potentially eligible for participation in the study.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">screening<a name=\"research-subject-state-screening\"> </a></td><td>Screening</td><td><div><p>A person who is being evaluated for eligibility for a study.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">withdrawn<a name=\"research-subject-state-withdrawn\"> </a></td><td>Withdrawn</td><td><div><p>The person has withdrawn their participation in the study before registration.</p>\n</div></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "brr" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/research-subject-state"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.0" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ResearchSubjectState"] ; # 
+  fhir:title [ fhir:v "ResearchSubjectState"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2020-04-09T21:10:28+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Indicates the progression of a study subject through a study."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/research-subject-state"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/research-subject-state>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "candidate" ] ;
+     fhir:display [ fhir:v "Candidate" ] ;
+     fhir:definition [ fhir:v "An identified person that can be considered for inclusion in a study." ]
+  ] [
+     fhir:code [ fhir:v "eligible" ] ;
+     fhir:display [ fhir:v "Eligible" ] ;
+     fhir:definition [ fhir:v "A person that has met the eligibility criteria for inclusion in a study." ]
+  ] [
+     fhir:code [ fhir:v "follow-up" ] ;
+     fhir:display [ fhir:v "Follow-up" ] ;
+     fhir:definition [ fhir:v "A person is no longer receiving study intervention and/or being evaluated with tests and procedures according to the protocol, but they are being monitored on a protocol-prescribed schedule." ]
+  ] [
+     fhir:code [ fhir:v "ineligible" ] ;
+     fhir:display [ fhir:v "Ineligible" ] ;
+     fhir:definition [ fhir:v "A person who did not meet one or more criteria required for participation in a study is considered to have failed screening or\nis ineligible for the study." ]
+  ] [
+     fhir:code [ fhir:v "not-registered" ] ;
+     fhir:display [ fhir:v "Not Registered" ] ;
+     fhir:definition [ fhir:v "A person for whom registration was not completed." ]
+  ] [
+     fhir:code [ fhir:v "off-study" ] ;
+     fhir:display [ fhir:v "Off-study" ] ;
+     fhir:definition [ fhir:v "A person that has ended their participation on a study either because their treatment/observation is complete or through not\nresponding, withdrawal, non-compliance and/or adverse event." ]
+  ] [
+     fhir:code [ fhir:v "on-study" ] ;
+     fhir:display [ fhir:v "On-study" ] ;
+     fhir:definition [ fhir:v "A person that is enrolled or registered on a study." ]
+  ] [
+     fhir:code [ fhir:v "on-study-intervention" ] ;
+     fhir:display [ fhir:v "On-study-intervention" ] ;
+     fhir:definition [ fhir:v "The person is receiving the treatment or participating in an activity (e.g. yoga, diet, etc.) that the study is evaluating." ]
+  ] [
+     fhir:code [ fhir:v "on-study-observation" ] ;
+     fhir:display [ fhir:v "On-study-observation" ] ;
+     fhir:definition [ fhir:v "The subject is being evaluated via tests and assessments according to the study calendar, but is not receiving any intervention. Note that this state is study-dependent and might not exist in all studies.  A synonym for this is \"short-term follow-up\"." ]
+  ] [
+     fhir:code [ fhir:v "pending-on-study" ] ;
+     fhir:display [ fhir:v "Pending on-study" ] ;
+     fhir:definition [ fhir:v "A person is pre-registered for a study." ]
+  ] [
+     fhir:code [ fhir:v "potential-candidate" ] ;
+     fhir:display [ fhir:v "Potential Candidate" ] ;
+     fhir:definition [ fhir:v "A person that is potentially eligible for participation in the study." ]
+  ] [
+     fhir:code [ fhir:v "screening" ] ;
+     fhir:display [ fhir:v "Screening" ] ;
+     fhir:definition [ fhir:v "A person who is being evaluated for eligibility for a study." ]
+  ] [
+     fhir:code [ fhir:v "withdrawn" ] ;
+     fhir:display [ fhir:v "Withdrawn" ] ;
+     fhir:definition [ fhir:v "The person has withdrawn their participation in the study before registration." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

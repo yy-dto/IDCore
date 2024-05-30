@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/cql-access-modifier> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "cql-access-modifier"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/cql-access-modifier</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">public<a name=\"cql-access-modifier-public\"> </a></td><td>Public</td><td>The component is public, meaning it can be referenced from any CQL Library that references the library in which the component is defined.</td></tr><tr><td style=\"white-space:nowrap\">private<a name=\"cql-access-modifier-private\"> </a></td><td>Private</td><td>The component is private, meaning it can only be referenced within the library in which the declaration is defined.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/cql-access-modifier"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CqlAccessModifier"] ; # 
+  fhir:title [ fhir:v "CQL Access Modifier"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-16"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Access modifiers defined by the Clinical Quality Language (CQL) specification in the [Access Modifiers](https://cql.hl7.org/03-developersguide.html#access-modifiers) topic."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/cql-access-modifier"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/cql-access-modifier>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "public" ] ;
+     fhir:display [ fhir:v "Public" ] ;
+     fhir:definition [ fhir:v "The component is public, meaning it can be referenced from any CQL Library that references the library in which the component is defined." ]
+  ] [
+     fhir:code [ fhir:v "private" ] ;
+     fhir:display [ fhir:v "Private" ] ;
+     fhir:definition [ fhir:v "The component is private, meaning it can only be referenced within the library in which the declaration is defined." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

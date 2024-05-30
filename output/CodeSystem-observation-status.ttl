@@ -1,0 +1,93 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/observation-status> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-status"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>ObservationStatus</h2><div><p>Codes providing the status of an observation.</p>\n</div><p>This code system http://hl7.org/fhir/observation-status defines the following codes:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">registered<a name=\"observation-status-registered\"> </a></td><td>Registered</td><td>The existence of the observation is registered, but there is no result yet available.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">preliminary<a name=\"observation-status-preliminary\"> </a></td><td>Preliminary</td><td>This is an initial or interim observation: data may be incomplete or unverified.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">final<a name=\"observation-status-final\"> </a></td><td>Final</td><td>The observation is complete and there are no further actions needed. Additional information such &quot;released&quot;, &quot;signed&quot;, etc would be represented using [Provenance](provenance.html) which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of `preliminary` until they are all completed and then a status of `final` would be applied.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">amended<a name=\"observation-status-amended\"> </a></td><td>Amended</td><td>Subsequent to being Final, the observation has been modified subsequent.  This includes updates/new information and corrections.</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  corrected<a name=\"observation-status-corrected\"> </a></td><td>Corrected</td><td>Subsequent to being Final, the observation has been modified to correct an error in the test result.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">cancelled<a name=\"observation-status-cancelled\"> </a></td><td>Cancelled</td><td>The observation is unavailable because the measurement was not started or not completed (also sometimes called &quot;aborted&quot;).</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">entered-in-error<a name=\"observation-status-entered-in-error\"> </a></td><td>Entered in Error</td><td>The observation has been withdrawn following previous final release.  This electronic record should never have existed, though it is possible that real-world decisions were based on it. (If real-world activity has occurred, the status should be &quot;cancelled&quot; rather than &quot;entered-in-error&quot;.).</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">unknown<a name=\"observation-status-unknown\"> </a></td><td>Unknown</td><td>The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for &quot;other&quot; - one of the listed statuses is presumed to apply, but the authoring/source system does not know which.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cds" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "normative" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "5"^^xsd:integer ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "4.0.0" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/observation-status"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.4.401" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ObservationStatus"] ; # 
+  fhir:title [ fhir:v "ObservationStatus"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-11-01T09:29:23+11:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes providing the status of an observation."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://hl7.org/fhir/ValueSet/observation-status"^^xsd:anyURI ;
+     fhir:link <http://hl7.org/fhir/ValueSet/observation-status>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "registered" ] ;
+     fhir:display [ fhir:v "Registered" ] ;
+     fhir:definition [ fhir:v "The existence of the observation is registered, but there is no result yet available." ]
+  ] [
+     fhir:code [ fhir:v "preliminary" ] ;
+     fhir:display [ fhir:v "Preliminary" ] ;
+     fhir:definition [ fhir:v "This is an initial or interim observation: data may be incomplete or unverified." ]
+  ] [
+     fhir:code [ fhir:v "final" ] ;
+     fhir:display [ fhir:v "Final" ] ;
+     fhir:definition [ fhir:v "The observation is complete and there are no further actions needed. Additional information such \"released\", \"signed\", etc would be represented using [Provenance](provenance.html) which provides not only the act but also the actors and dates and other related data. These act states would be associated with an observation status of `preliminary` until they are all completed and then a status of `final` would be applied." ]
+  ] [
+     fhir:code [ fhir:v "amended" ] ;
+     fhir:display [ fhir:v "Amended" ] ;
+     fhir:definition [ fhir:v "Subsequent to being Final, the observation has been modified subsequent.  This includes updates/new information and corrections." ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "corrected" ] ;
+       fhir:display [ fhir:v "Corrected" ] ;
+       fhir:definition [ fhir:v "Subsequent to being Final, the observation has been modified to correct an error in the test result." ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "cancelled" ] ;
+     fhir:display [ fhir:v "Cancelled" ] ;
+     fhir:definition [ fhir:v "The observation is unavailable because the measurement was not started or not completed (also sometimes called \"aborted\")." ]
+  ] [
+     fhir:code [ fhir:v "entered-in-error" ] ;
+     fhir:display [ fhir:v "Entered in Error" ] ;
+     fhir:definition [ fhir:v "The observation has been withdrawn following previous final release.  This electronic record should never have existed, though it is possible that real-world decisions were based on it. (If real-world activity has occurred, the status should be \"cancelled\" rather than \"entered-in-error\".)." ]
+  ] [
+     fhir:code [ fhir:v "unknown" ] ;
+     fhir:display [ fhir:v "Unknown" ] ;
+     fhir:definition [ fhir:v "The authoring/source system does not know which of the status values currently applies for this observation. Note: This concept is not to be used for \"other\" - one of the listed statuses is presumed to apply, but the authoring/source system does not know which." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

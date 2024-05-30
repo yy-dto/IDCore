@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Catawba - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.554"}
+    h3,h4,h5,h6{--heading-prefix:"5.554"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Catawba</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-v3-Catawba.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-Catawba.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-Catawba.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Catawba
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/ValueSet/v3-Catawba<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-Catawba"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-Catawba|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2014-03-26
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">Catawba</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.1.11.14972
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p><strong><em>No description</em></strong></p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include codes from<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html"><code>http://terminology.hl7.org/CodeSystem/v3-Race</code></a> where concept  is-a <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1076-9">1076-9</a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html">codesystem Race v4.0.0 (CodeSystem)</a></p><p>This value set contains 70 concepts</p><table class="codes"><tr><td><b>Level</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b> - English (English, en)</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1076-9"> </a>1</td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1076-9">1076-9</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Catawba</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1741-8"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1741-8">1741-8</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Alatna</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1742-6"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1742-6">1742-6</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Alexander</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1743-4"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1743-4">1743-4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Allakaket</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1744-2"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1744-2">1744-2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Alanvik</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1745-9"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1745-9">1745-9</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Anvik</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1746-7"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1746-7">1746-7</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Arctic</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1747-5"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1747-5">1747-5</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Beaver</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1748-3"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1748-3">1748-3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Birch Creek</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1749-1"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1749-1">1749-1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Cantwell</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1750-9"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1750-9">1750-9</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Chalkyitsik</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1751-7"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1751-7">1751-7</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Chickaloon</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1752-5"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1752-5">1752-5</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Chistochina</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1753-3"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1753-3">1753-3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Chitina</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1754-1"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1754-1">1754-1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Circle</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1755-8"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1755-8">1755-8</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Cook Inlet</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1756-6"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1756-6">1756-6</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Copper Center</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1757-4"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1757-4">1757-4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Copper River</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1758-2"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1758-2">1758-2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Dot Lake</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1759-0"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1759-0">1759-0</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Doyon</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1760-8"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1760-8">1760-8</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Eagle</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1761-6"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1761-6">1761-6</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Eklutna</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1762-4"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1762-4">1762-4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Evansville</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1763-2"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1763-2">1763-2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Fort Yukon</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1764-0"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1764-0">1764-0</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Gakona</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1765-7"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1765-7">1765-7</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Galena</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1766-5"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1766-5">1766-5</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Grayling</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1767-3"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1767-3">1767-3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Gulkana</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1768-1"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1768-1">1768-1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Healy Lake</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1769-9"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1769-9">1769-9</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Holy Cross</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1770-7"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1770-7">1770-7</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Hughes</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1771-5"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1771-5">1771-5</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Huslia</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1772-3"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1772-3">1772-3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Iliamna</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1773-1"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1773-1">1773-1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Kaltag</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1774-9"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1774-9">1774-9</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Kluti Kaah</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1775-6"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1775-6">1775-6</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Knik</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1776-4"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1776-4">1776-4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Koyukuk</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1777-2"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1777-2">1777-2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Lake Minchumina</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1778-0"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1778-0">1778-0</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Lime</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1779-8"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1779-8">1779-8</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Mcgrath</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1780-6"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1780-6">1780-6</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Manley Hot Springs</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1781-4"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1781-4">1781-4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Mentasta Lake</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1782-2"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1782-2">1782-2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Minto</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1783-0"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1783-0">1783-0</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Nenana</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1784-8"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1784-8">1784-8</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Nikolai</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1785-5"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1785-5">1785-5</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Ninilchik</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1786-3"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1786-3">1786-3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Nondalton</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1787-1"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1787-1">1787-1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Northway</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1788-9"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1788-9">1788-9</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Nulato</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1789-7"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1789-7">1789-7</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Pedro Bay</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1790-5"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1790-5">1790-5</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Rampart</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1791-3"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1791-3">1791-3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Ruby</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1792-1"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1792-1">1792-1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Salamatof</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1793-9"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1793-9">1793-9</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Seldovia</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1794-7"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1794-7">1794-7</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Slana</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1795-4"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1795-4">1795-4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Shageluk</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1796-2"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1796-2">1796-2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Stevens</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1797-0"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1797-0">1797-0</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Stony River</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1798-8"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1798-8">1798-8</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Takotna</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1799-6"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1799-6">1799-6</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Tanacross</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1800-2"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1800-2">1800-2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Tanaina</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1801-0"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1801-0">1801-0</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Tanana</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1802-8"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1802-8">1802-8</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Tanana Chiefs</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1803-6"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1803-6">1803-6</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Tazlina</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1804-4"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1804-4">1804-4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Telida</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1805-1"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1805-1">1805-1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Tetlin</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1806-9"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1806-9">1806-9</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Tok</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1807-7"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1807-7">1807-7</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Tyonek</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1808-5"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1808-5">1808-5</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Venetie</td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-Race-1809-3"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Race.html#v3-Race-1809-3">1809-3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Race</td><td>Wiseman</td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

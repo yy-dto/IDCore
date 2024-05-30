@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/financialtaskcode> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "financialtaskcode"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/financialtaskcode</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">cancel<a name=\"financialtaskcode-cancel\"> </a></td><td>Cancel</td><td>Cancel or reverse a resource, such as a claim or preauthorization, which is in-process or complete.</td></tr><tr><td style=\"white-space:nowrap\">poll<a name=\"financialtaskcode-poll\"> </a></td><td>Poll</td><td>Retrieve selected or all queued resources or messages.</td></tr><tr><td style=\"white-space:nowrap\">release<a name=\"financialtaskcode-release\"> </a></td><td>Release</td><td>Release any reserved funds or material obligations associated with a resource. For example, any unused but reserved funds or treatment allowance associated with a preauthorization once treatment is complete.</td></tr><tr><td style=\"white-space:nowrap\">reprocess<a name=\"financialtaskcode-reprocess\"> </a></td><td>Reprocess</td><td>Indication that the processing of a resource, such as a claim, for some or all of the required work is now being requested.</td></tr><tr><td style=\"white-space:nowrap\">status<a name=\"financialtaskcode-status\"> </a></td><td>Status check</td><td>Check on the processing status of a resource such as the adjudication of a claim.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/financialtaskcode"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1390" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "FinancialTaskCodes"] ; # 
+  fhir:title [ fhir:v "Financial Task Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-09T14:36:19-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set includes Financial Task codes."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/financial-taskcode"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/financial-taskcode>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "cancel" ] ;
+     fhir:display [ fhir:v "Cancel" ] ;
+     fhir:definition [ fhir:v "Cancel or reverse a resource, such as a claim or preauthorization, which is in-process or complete." ]
+  ] [
+     fhir:code [ fhir:v "poll" ] ;
+     fhir:display [ fhir:v "Poll" ] ;
+     fhir:definition [ fhir:v "Retrieve selected or all queued resources or messages." ]
+  ] [
+     fhir:code [ fhir:v "release" ] ;
+     fhir:display [ fhir:v "Release" ] ;
+     fhir:definition [ fhir:v "Release any reserved funds or material obligations associated with a resource. For example, any unused but reserved funds or treatment allowance associated with a preauthorization once treatment is complete." ]
+  ] [
+     fhir:code [ fhir:v "reprocess" ] ;
+     fhir:display [ fhir:v "Reprocess" ] ;
+     fhir:definition [ fhir:v "Indication that the processing of a resource, such as a claim, for some or all of the required work is now being requested." ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:display [ fhir:v "Status check" ] ;
+     fhir:definition [ fhir:v "Check on the processing status of a resource such as the adjudication of a claim." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

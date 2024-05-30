@@ -1,0 +1,399 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-Currency> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-Currency"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-Currency</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td style=\"white-space:nowrap\">ARS<a name=\"v3-Currency-ARS\"> </a></td><td>Argentine Peso</td><td>Argentine Peso, monetary currency of Argentina</td><td>17389</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">AUD<a name=\"v3-Currency-AUD\"> </a></td><td>Australian Dollar</td><td>Australian Dollar, monetary currency of Australia</td><td>17390</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">BRL<a name=\"v3-Currency-BRL\"> </a></td><td>Brazilian Real</td><td>Brazilian Real, monetary currency of Brazil</td><td>17391</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">CAD<a name=\"v3-Currency-CAD\"> </a></td><td>Canadian Dollar</td><td>Canadian Dollar, monetary currency of Canada</td><td>17392</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">CHF<a name=\"v3-Currency-CHF\"> </a></td><td>Swiss Franc</td><td>Swiss Franc, monetary currency of Switzerland</td><td>17410</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">CLF<a name=\"v3-Currency-CLF\"> </a></td><td>Unidades de Formento</td><td>Unidades de Formento, monetary currency of Chile</td><td>17393</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">CNY<a name=\"v3-Currency-CNY\"> </a></td><td>Yuan Renminbi</td><td>Yuan Renminbi, monetary currency of China</td><td>17394</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">DEM<a name=\"v3-Currency-DEM\"> </a></td><td>Deutsche Mark</td><td>Deutsche Mark, monetary currency of Germany</td><td>17398</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">ESP<a name=\"v3-Currency-ESP\"> </a></td><td>Spanish Peseta</td><td>Spanish Peseta, monetary currency of Spain</td><td>17409</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">EUR<a name=\"v3-Currency-EUR\"> </a></td><td>Euro</td><td>Euro, monetary currency of European Union</td><td>17395</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">FIM<a name=\"v3-Currency-FIM\"> </a></td><td>Markka</td><td>Markka, monetary currency of Finland</td><td>17396</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">FRF<a name=\"v3-Currency-FRF\"> </a></td><td>French Franc</td><td>French Franc, monetary currency of France</td><td>17397</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">GBP<a name=\"v3-Currency-GBP\"> </a></td><td>Pound Sterling</td><td>Pound Sterling, monetary currency of United Kingdom</td><td>17414</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">ILS<a name=\"v3-Currency-ILS\"> </a></td><td>Shekel</td><td>Shekel, monetary currency of Israel</td><td>17400</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">INR<a name=\"v3-Currency-INR\"> </a></td><td>Indian Rupee</td><td>Indian Rupee, monetary currency of India</td><td>17399</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">JPY<a name=\"v3-Currency-JPY\"> </a></td><td>Yen</td><td>Yen, monetary currency of Japan</td><td>17401</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">KRW<a name=\"v3-Currency-KRW\"> </a></td><td>Won</td><td>Won, monetary currency of Korea (South)</td><td>17402</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">MXN<a name=\"v3-Currency-MXN\"> </a></td><td>Mexican Nuevo Peso</td><td>Mexican Nuevo Peso, monetary currency of Mexico</td><td>17403</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">NLG<a name=\"v3-Currency-NLG\"> </a></td><td>Netherlands Guilder</td><td>Netherlands Guilder, monetary currency of Netherlands</td><td>17404</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">NZD<a name=\"v3-Currency-NZD\"> </a></td><td>New Zealand Dollar</td><td>New Zealand Dollar, monetary currency of New Zealand</td><td>17405</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">PHP<a name=\"v3-Currency-PHP\"> </a></td><td>Philippine Peso</td><td>Philippine Peso, monetary currency of Philippines</td><td>17406</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">RUR<a name=\"v3-Currency-RUR\"> </a></td><td>Russian Ruble</td><td>Russian Ruble, monetary currency of Russian Federation</td><td>17407</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">THB<a name=\"v3-Currency-THB\"> </a></td><td>Baht</td><td>Baht, monetary currency of Thailand</td><td>17412</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">TRL<a name=\"v3-Currency-TRL\"> </a></td><td>Lira</td><td>Lira, monetary currency of Turkey</td><td>17413</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">TWD<a name=\"v3-Currency-TWD\"> </a></td><td>Taiwan Dollar</td><td>Taiwan Dollar, monetary currency of Taiwan</td><td>17411</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">USD<a name=\"v3-Currency-USD\"> </a></td><td>US Dollar</td><td>US Dollar, monetary currency of United States</td><td>17415</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">ZAR<a name=\"v3-Currency-ZAR\"> </a></td><td>Rand</td><td>Rand, monetary currency of South Africa</td><td>17408</td><td>active</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-Currency"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.1058" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Currency"] ; # 
+  fhir:title [ fhir:v "Currency"] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The currency unit as defined in ISO 4217.\r\n\r\nCreated prior to ISO ruling on OIDs for ISO code tables defined in ISO standards. Retired. Replaced by 1.0.4217 iso4217."] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "ARS" ] ;
+     fhir:display [ fhir:v "Argentine Peso" ] ;
+     fhir:definition [ fhir:v "Argentine Peso, monetary currency of Argentina" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17389" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "AUD" ] ;
+     fhir:display [ fhir:v "Australian Dollar" ] ;
+     fhir:definition [ fhir:v "Australian Dollar, monetary currency of Australia" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17390" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "BRL" ] ;
+     fhir:display [ fhir:v "Brazilian Real" ] ;
+     fhir:definition [ fhir:v "Brazilian Real, monetary currency of Brazil" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17391" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "CAD" ] ;
+     fhir:display [ fhir:v "Canadian Dollar" ] ;
+     fhir:definition [ fhir:v "Canadian Dollar, monetary currency of Canada" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17392" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "CHF" ] ;
+     fhir:display [ fhir:v "Swiss Franc" ] ;
+     fhir:definition [ fhir:v "Swiss Franc, monetary currency of Switzerland" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17410" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "CLF" ] ;
+     fhir:display [ fhir:v "Unidades de Formento" ] ;
+     fhir:definition [ fhir:v "Unidades de Formento, monetary currency of Chile" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17393" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "CNY" ] ;
+     fhir:display [ fhir:v "Yuan Renminbi" ] ;
+     fhir:definition [ fhir:v "Yuan Renminbi, monetary currency of China" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17394" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DEM" ] ;
+     fhir:display [ fhir:v "Deutsche Mark" ] ;
+     fhir:definition [ fhir:v "Deutsche Mark, monetary currency of Germany" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17398" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ESP" ] ;
+     fhir:display [ fhir:v "Spanish Peseta" ] ;
+     fhir:definition [ fhir:v "Spanish Peseta, monetary currency of Spain" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17409" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "EUR" ] ;
+     fhir:display [ fhir:v "Euro" ] ;
+     fhir:definition [ fhir:v "Euro, monetary currency of European Union" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17395" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "FIM" ] ;
+     fhir:display [ fhir:v "Markka" ] ;
+     fhir:definition [ fhir:v "Markka, monetary currency of Finland" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17396" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "FRF" ] ;
+     fhir:display [ fhir:v "French Franc" ] ;
+     fhir:definition [ fhir:v "French Franc, monetary currency of France" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17397" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "GBP" ] ;
+     fhir:display [ fhir:v "Pound Sterling" ] ;
+     fhir:definition [ fhir:v "Pound Sterling, monetary currency of United Kingdom" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17414" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ILS" ] ;
+     fhir:display [ fhir:v "Shekel" ] ;
+     fhir:definition [ fhir:v "Shekel, monetary currency of Israel" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17400" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "INR" ] ;
+     fhir:display [ fhir:v "Indian Rupee" ] ;
+     fhir:definition [ fhir:v "Indian Rupee, monetary currency of India" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17399" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "JPY" ] ;
+     fhir:display [ fhir:v "Yen" ] ;
+     fhir:definition [ fhir:v "Yen, monetary currency of Japan" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17401" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "KRW" ] ;
+     fhir:display [ fhir:v "Won" ] ;
+     fhir:definition [ fhir:v "Won, monetary currency of Korea (South)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17402" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "MXN" ] ;
+     fhir:display [ fhir:v "Mexican Nuevo Peso" ] ;
+     fhir:definition [ fhir:v "Mexican Nuevo Peso, monetary currency of Mexico" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17403" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NLG" ] ;
+     fhir:display [ fhir:v "Netherlands Guilder" ] ;
+     fhir:definition [ fhir:v "Netherlands Guilder, monetary currency of Netherlands" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17404" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NZD" ] ;
+     fhir:display [ fhir:v "New Zealand Dollar" ] ;
+     fhir:definition [ fhir:v "New Zealand Dollar, monetary currency of New Zealand" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17405" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "PHP" ] ;
+     fhir:display [ fhir:v "Philippine Peso" ] ;
+     fhir:definition [ fhir:v "Philippine Peso, monetary currency of Philippines" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17406" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "RUR" ] ;
+     fhir:display [ fhir:v "Russian Ruble" ] ;
+     fhir:definition [ fhir:v "Russian Ruble, monetary currency of Russian Federation" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17407" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "THB" ] ;
+     fhir:display [ fhir:v "Baht" ] ;
+     fhir:definition [ fhir:v "Baht, monetary currency of Thailand" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17412" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "TRL" ] ;
+     fhir:display [ fhir:v "Lira" ] ;
+     fhir:definition [ fhir:v "Lira, monetary currency of Turkey" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17413" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "TWD" ] ;
+     fhir:display [ fhir:v "Taiwan Dollar" ] ;
+     fhir:definition [ fhir:v "Taiwan Dollar, monetary currency of Taiwan" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17411" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "USD" ] ;
+     fhir:display [ fhir:v "US Dollar" ] ;
+     fhir:definition [ fhir:v "US Dollar, monetary currency of United States" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17415" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ZAR" ] ;
+     fhir:display [ fhir:v "Rand" ] ;
+     fhir:definition [ fhir:v "Rand, monetary currency of South Africa" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "17408" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

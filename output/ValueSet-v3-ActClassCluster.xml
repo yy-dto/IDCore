@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="v3-ActClassCluster"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><ul><li>Include codes from <a href="CodeSystem-v3-ActClass.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActClass</code></a> where concept  is-a  <a href="CodeSystem-v3-ActClass.html#v3-ActClass-CLUSTER">CLUSTER</a></li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/ValueSet/v3-ActClassCluster"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.1.11.20204"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="ActClassCluster"/>
+  <title value="ActClassCluster"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2014-03-26"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="A group of entries within a composition, topic or category that have a logical association with one another.&#xD;&#xA;&#xD;&#xA;The representation of a single observation or action might itself be multi-part. The data might need to be represented as a nested set of values, as a table, list, or as a time series. The Cluster class permits such aggregation within an entry for such compound data.&#xD;&#xA;&#xD;&#xA;Examples include &quot;Haematology investigations&quot; which might include two or more distinct batteries.&#xD;&#xA;&#xD;&#xA;A cluster may contain batteries and/or individual entries"/>
+  <immutable value="true"/>
+  <copyright value="This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActClass"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="CLUSTER"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

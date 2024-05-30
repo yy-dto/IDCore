@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="v3-CalendarCycle"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>notSelectable</td><td>http://hl7.org/fhir/concept-properties#notSelectable</td><td>boolean</td><td>Indicates that the code is abstract - only intended to be used as a selector for other concepts</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A property that indicates the status of the concept. One of active, experimental, deprecated, or retired.</td></tr><tr><td>deprecationDate</td><td>http://hl7.org/fhir/concept-properties#deprecationDate</td><td>dateTime</td><td>The date at which a concept was deprecated. Concepts that are deprecated but not inactive can still be used, but their use is discouraged.</td></tr><tr><td>synonymCode</td><td>http://hl7.org/fhir/concept-properties#synonym</td><td>code</td><td>An additional concept code that was also attributed to a concept</td></tr><tr><td>subsumedBy</td><td>http://hl7.org/fhir/concept-properties#parent</td><td>code</td><td>The concept code of a parent concept</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-CalendarCycle</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td><b>Lvl</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deprecated</b></td><td><b>internalId</b></td><td><b>Not Selectable</b></td><td><b>status</b></td><td><b>deprecationDate</b></td><td><b>synonymCode</b></td><td><b>Parent</b></td></tr><tr style="background-color: #ffeeee"><td>1</td><td style="white-space:nowrap">_CalendarCycleOneLetter<a name="v3-CalendarCycle-_CalendarCycleOneLetter"> </a></td><td>CalendarCycleOneLetter</td><td/><td>Deprecated</td><td>21046</td><td>true</td><td>deprecated</td><td>2013-06-29</td><td/><td/></tr><tr><td>2</td><td style="white-space:nowrap">  CW<a name="v3-CalendarCycle-CW"> </a></td><td>week (continuous)</td><td/><td/><td>10689</td><td/><td>active</td><td/><td>W</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  W<a name="v3-CalendarCycle-W"> </a></td><td>week (continuous)</td><td/><td/><td>10689</td><td/><td>active</td><td/><td>CW</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  CY<a name="v3-CalendarCycle-CY"> </a></td><td>year</td><td/><td/><td>10686</td><td/><td>active</td><td/><td>Y</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  Y<a name="v3-CalendarCycle-Y"> </a></td><td>year</td><td/><td/><td>10686</td><td/><td>active</td><td/><td>CY</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  D<a name="v3-CalendarCycle-D"> </a></td><td>day of the month</td><td/><td/><td>10691</td><td/><td>active</td><td/><td>DM</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  DM<a name="v3-CalendarCycle-DM"> </a></td><td>day of the month</td><td/><td/><td>10691</td><td/><td>active</td><td/><td>D</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  DW<a name="v3-CalendarCycle-DW"> </a></td><td>day of the week (begins with Monday)</td><td/><td/><td>10694</td><td/><td>active</td><td/><td>J</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  J<a name="v3-CalendarCycle-J"> </a></td><td>day of the week (begins with Monday)</td><td/><td/><td>10694</td><td/><td>active</td><td/><td>DW</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  H<a name="v3-CalendarCycle-H"> </a></td><td>hour of the day</td><td/><td/><td>10695</td><td/><td>active</td><td/><td>HD</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  HD<a name="v3-CalendarCycle-HD"> </a></td><td>hour of the day</td><td/><td/><td>10695</td><td/><td>active</td><td/><td>H</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  M<a name="v3-CalendarCycle-M"> </a></td><td>month of the year</td><td/><td/><td>10687</td><td/><td>active</td><td/><td>MY</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  MY<a name="v3-CalendarCycle-MY"> </a></td><td>month of the year</td><td/><td/><td>10687</td><td/><td>active</td><td/><td>M</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  N<a name="v3-CalendarCycle-N"> </a></td><td>minute of the hour</td><td/><td/><td>10697</td><td/><td>active</td><td/><td>NH</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  NH<a name="v3-CalendarCycle-NH"> </a></td><td>minute of the hour</td><td/><td/><td>10697</td><td/><td>active</td><td/><td>N</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  S<a name="v3-CalendarCycle-S"> </a></td><td>second of the minute</td><td/><td/><td>10699</td><td/><td>active</td><td/><td>SN</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  SN<a name="v3-CalendarCycle-SN"> </a></td><td>second of the minute</td><td/><td/><td>10699</td><td/><td>active</td><td/><td>S</td><td>_CalendarCycleOneLetter, _CalendarCycleTwoLetter</td></tr><tr style="background-color: #ffeeee"><td>1</td><td style="white-space:nowrap">_CalendarCycleTwoLetter<a name="v3-CalendarCycle-_CalendarCycleTwoLetter"> </a></td><td>CalendarCycleTwoLetter</td><td/><td>Deprecated</td><td>21047</td><td>true</td><td>deprecated</td><td>2013-06-29</td><td/><td/></tr><tr><td>2</td><td style="white-space:nowrap">  _GregorianCalendarCycle<a name="v3-CalendarCycle-_GregorianCalendarCycle"> </a></td><td>GregorianCalendarCycle</td><td/><td/><td>21048</td><td>true</td><td>active</td><td/><td/><td>_CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  CD<a name="v3-CalendarCycle-CD"> </a></td><td>day (continuous)</td><td/><td/><td>10692</td><td/><td>active</td><td/><td/><td>_CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  CH<a name="v3-CalendarCycle-CH"> </a></td><td>hour (continuous)</td><td/><td/><td>10696</td><td/><td>active</td><td/><td/><td>_CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  CM<a name="v3-CalendarCycle-CM"> </a></td><td>month (continuous)</td><td/><td/><td>10688</td><td/><td>active</td><td/><td/><td>_CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  CN<a name="v3-CalendarCycle-CN"> </a></td><td>minute (continuous)</td><td/><td/><td>10698</td><td/><td>active</td><td/><td/><td>_CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  CS<a name="v3-CalendarCycle-CS"> </a></td><td>second (continuous)</td><td/><td/><td>10700</td><td/><td>active</td><td/><td/><td>_CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  DY<a name="v3-CalendarCycle-DY"> </a></td><td>day of the year</td><td/><td/><td>10693</td><td/><td>active</td><td/><td/><td>_CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  WY<a name="v3-CalendarCycle-WY"> </a></td><td>week of the year</td><td/><td/><td>10690</td><td/><td>active</td><td/><td/><td>_CalendarCycleTwoLetter</td></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-CW">CW</a></td><td>week (continuous)</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-W">W</a></td><td>week (continuous)</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-CY">CY</a></td><td>year</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-Y">Y</a></td><td>year</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-D">D</a></td><td>day of the month</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-DM">DM</a></td><td>day of the month</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-DW">DW</a></td><td>day of the week (begins with Monday)</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-J">J</a></td><td>day of the week (begins with Monday)</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-H">H</a></td><td>hour of the day</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-HD">HD</a></td><td>hour of the day</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-M">M</a></td><td>month of the year</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-MY">MY</a></td><td>month of the year</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-N">N</a></td><td>minute of the hour</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-NH">NH</a></td><td>minute of the hour</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-S">S</a></td><td>second of the minute</td><td colspan="8"/></tr><tr><td>2</td><td style="white-space:nowrap">  <a href="#v3-CalendarCycle-SN">SN</a></td><td>second of the minute</td><td colspan="8"/></tr><tr><td>1</td><td style="white-space:nowrap">WM<a name="v3-CalendarCycle-WM"> </a></td><td>week of the month</td><td>The week with the month's first Thursday in it (analagous to the ISO 8601 definition for week of the year).</td><td/><td>23532</td><td/><td>active</td><td/><td/><td/></tr></table></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/v3-CalendarCycle"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.5.9"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="CalendarCycle"/>
+  <title value="Calendar Cycle Codes"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2019-03-20"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="Calendar cycle identifiers"/>
+  <copyright value="This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"/>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="is-a"/>
+  <content value="complete"/>
+  <property>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry">
+      <valueCode value="antisymmetric"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity">
+      <valueCode value="transitive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity">
+      <valueCode value="irreflexive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind">
+      <valueCode value="Specializes"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName">
+      <valueString value="Generalizes"/>
+    </extension>
+    <code value="Specializes"/>
+    <description value="The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry">
+      <valueCode value="antisymmetric"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity">
+      <valueCode value="transitive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity">
+      <valueCode value="irreflexive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind">
+      <valueCode value="Generalizes"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName">
+      <valueString value="Specializes"/>
+    </extension>
+    <code value="Generalizes"/>
+    <description value="Inverse of Specializes.  Only included as a derived relationship."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <code value="internalId"/>
+    <uri value="http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"/>
+    <description value="The internal identifier for the concept in the HL7 Access database repository."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="notSelectable"/>
+    <uri value="http://hl7.org/fhir/concept-properties#notSelectable"/>
+    <description value="Indicates that the code is abstract - only intended to be used as a selector for other concepts"/>
+    <type value="boolean"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="A property that indicates the status of the concept. One of active, experimental, deprecated, or retired."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="deprecationDate"/>
+    <uri value="http://hl7.org/fhir/concept-properties#deprecationDate"/>
+    <description value="The date at which a concept was deprecated. Concepts that are deprecated but not inactive can still be used, but their use is discouraged."/>
+    <type value="dateTime"/>
+  </property>
+  <property>
+    <code value="synonymCode"/>
+    <uri value="http://hl7.org/fhir/concept-properties#synonym"/>
+    <description value="An additional concept code that was also attributed to a concept"/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="subsumedBy"/>
+    <uri value="http://hl7.org/fhir/concept-properties#parent"/>
+    <description value="The concept code of a parent concept"/>
+    <type value="code"/>
+  </property>
+  <concept>
+    <code value="_CalendarCycleOneLetter"/>
+    <display value="CalendarCycleOneLetter"/>
+    <property>
+      <code value="notSelectable"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="deprecated"/>
+    </property>
+    <property>
+      <code value="deprecationDate"/>
+      <valueDateTime value="2013-06-29"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="21046"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="_CalendarCycleTwoLetter"/>
+    <display value="CalendarCycleTwoLetter"/>
+    <property>
+      <code value="notSelectable"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="deprecated"/>
+    </property>
+    <property>
+      <code value="deprecationDate"/>
+      <valueDateTime value="2013-06-29"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="21047"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="WM"/>
+    <display value="week of the month"/>
+    <definition value="The week with the month's first Thursday in it (analagous to the ISO 8601 definition for week of the year)."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="23532"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CW"/>
+    <display value="week (continuous)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="W"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10689"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="W"/>
+    <display value="week (continuous)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="CW"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10689"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CY"/>
+    <display value="year"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="Y"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10686"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="Y"/>
+    <display value="year"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="CY"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10686"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="D"/>
+    <display value="day of the month"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="DM"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10691"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="DM"/>
+    <display value="day of the month"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="D"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10691"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="DW"/>
+    <display value="day of the week (begins with Monday)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="J"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10694"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="J"/>
+    <display value="day of the week (begins with Monday)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="DW"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10694"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="H"/>
+    <display value="hour of the day"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="HD"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10695"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="HD"/>
+    <display value="hour of the day"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="H"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10695"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="M"/>
+    <display value="month of the year"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="MY"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10687"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="MY"/>
+    <display value="month of the year"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="M"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10687"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="N"/>
+    <display value="minute of the hour"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="NH"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10697"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NH"/>
+    <display value="minute of the hour"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="N"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10697"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="S"/>
+    <display value="second of the minute"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="SN"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10699"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="SN"/>
+    <display value="second of the minute"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="synonymCode"/>
+      <valueCode value="S"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10699"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleOneLetter"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="_GregorianCalendarCycle"/>
+    <display value="GregorianCalendarCycle"/>
+    <property>
+      <code value="notSelectable"/>
+      <valueBoolean value="true"/>
+    </property>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="21048"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CD"/>
+    <display value="day (continuous)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10692"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CH"/>
+    <display value="hour (continuous)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10696"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CM"/>
+    <display value="month (continuous)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10688"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CN"/>
+    <display value="minute (continuous)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10698"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CS"/>
+    <display value="second (continuous)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10700"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="DY"/>
+    <display value="day of the year"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10693"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="WY"/>
+    <display value="week of the year"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10690"/>
+    </property>
+    <property>
+      <code value="subsumedBy"/>
+      <valueCode value="_CalendarCycleTwoLetter"/>
+    </property>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,923 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-ReligiousAffiliation> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-ReligiousAffiliation"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"v3-ReligiousAffiliation-1001\"> </a></td><td>Adventist</td><td>19186</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"v3-ReligiousAffiliation-1002\"> </a></td><td>African Religions</td><td>19187</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"v3-ReligiousAffiliation-1003\"> </a></td><td>Afro-Caribbean Religions</td><td>19188</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1004<a name=\"v3-ReligiousAffiliation-1004\"> </a></td><td>Agnosticism</td><td>19189</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1005<a name=\"v3-ReligiousAffiliation-1005\"> </a></td><td>Anglican</td><td>19190</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1006<a name=\"v3-ReligiousAffiliation-1006\"> </a></td><td>Animism</td><td>19191</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1007<a name=\"v3-ReligiousAffiliation-1007\"> </a></td><td>Atheism</td><td>19192</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1008<a name=\"v3-ReligiousAffiliation-1008\"> </a></td><td>Babi &amp; Baha'I faiths</td><td>19193</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1009<a name=\"v3-ReligiousAffiliation-1009\"> </a></td><td>Baptist</td><td>19194</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1010<a name=\"v3-ReligiousAffiliation-1010\"> </a></td><td>Bon</td><td>19195</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1011<a name=\"v3-ReligiousAffiliation-1011\"> </a></td><td>Cao Dai</td><td>19196</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1012<a name=\"v3-ReligiousAffiliation-1012\"> </a></td><td>Celticism</td><td>19197</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1013<a name=\"v3-ReligiousAffiliation-1013\"> </a></td><td>Christian (non-Catholic, non-specific)</td><td>19198</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1014<a name=\"v3-ReligiousAffiliation-1014\"> </a></td><td>Confucianism</td><td>19199</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1015<a name=\"v3-ReligiousAffiliation-1015\"> </a></td><td>Cyberculture Religions</td><td>19200</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1016<a name=\"v3-ReligiousAffiliation-1016\"> </a></td><td>Divination</td><td>19201</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1017<a name=\"v3-ReligiousAffiliation-1017\"> </a></td><td>Fourth Way</td><td>19202</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1018<a name=\"v3-ReligiousAffiliation-1018\"> </a></td><td>Free Daism</td><td>19203</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1019<a name=\"v3-ReligiousAffiliation-1019\"> </a></td><td>Gnosis</td><td>19204</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1020<a name=\"v3-ReligiousAffiliation-1020\"> </a></td><td>Hinduism</td><td>19205</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1021<a name=\"v3-ReligiousAffiliation-1021\"> </a></td><td>Humanism</td><td>19206</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1022<a name=\"v3-ReligiousAffiliation-1022\"> </a></td><td>Independent</td><td>19207</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1023<a name=\"v3-ReligiousAffiliation-1023\"> </a></td><td>Islam</td><td>19208</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1024<a name=\"v3-ReligiousAffiliation-1024\"> </a></td><td>Jainism</td><td>19209</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1025<a name=\"v3-ReligiousAffiliation-1025\"> </a></td><td>Jehovah's Witnesses</td><td>19210</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1026<a name=\"v3-ReligiousAffiliation-1026\"> </a></td><td>Judaism</td><td>19211</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1027<a name=\"v3-ReligiousAffiliation-1027\"> </a></td><td>Latter Day Saints</td><td>19212</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1028<a name=\"v3-ReligiousAffiliation-1028\"> </a></td><td>Lutheran</td><td>19213</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1029<a name=\"v3-ReligiousAffiliation-1029\"> </a></td><td>Mahayana</td><td>19214</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1030<a name=\"v3-ReligiousAffiliation-1030\"> </a></td><td>Meditation</td><td>19215</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1031<a name=\"v3-ReligiousAffiliation-1031\"> </a></td><td>Messianic Judaism</td><td>19216</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1032<a name=\"v3-ReligiousAffiliation-1032\"> </a></td><td>Mitraism</td><td>19217</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1033<a name=\"v3-ReligiousAffiliation-1033\"> </a></td><td>New Age</td><td>19218</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1034<a name=\"v3-ReligiousAffiliation-1034\"> </a></td><td>non-Roman Catholic</td><td>19219</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1035<a name=\"v3-ReligiousAffiliation-1035\"> </a></td><td>Occult</td><td>19220</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1036<a name=\"v3-ReligiousAffiliation-1036\"> </a></td><td>Orthodox</td><td>19221</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1037<a name=\"v3-ReligiousAffiliation-1037\"> </a></td><td>Paganism</td><td>19222</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1038<a name=\"v3-ReligiousAffiliation-1038\"> </a></td><td>Pentecostal</td><td>19223</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1039<a name=\"v3-ReligiousAffiliation-1039\"> </a></td><td>Process, The</td><td>19224</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1040<a name=\"v3-ReligiousAffiliation-1040\"> </a></td><td>Reformed/Presbyterian</td><td>19225</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1041<a name=\"v3-ReligiousAffiliation-1041\"> </a></td><td>Roman Catholic Church</td><td>19226</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1042<a name=\"v3-ReligiousAffiliation-1042\"> </a></td><td>Satanism</td><td>19227</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1043<a name=\"v3-ReligiousAffiliation-1043\"> </a></td><td>Scientology</td><td>19228</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1044<a name=\"v3-ReligiousAffiliation-1044\"> </a></td><td>Shamanism</td><td>19229</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1045<a name=\"v3-ReligiousAffiliation-1045\"> </a></td><td>Shiite (Islam)</td><td>19230</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1046<a name=\"v3-ReligiousAffiliation-1046\"> </a></td><td>Shinto</td><td>19231</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1047<a name=\"v3-ReligiousAffiliation-1047\"> </a></td><td>Sikism</td><td>19232</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1048<a name=\"v3-ReligiousAffiliation-1048\"> </a></td><td>Spiritualism</td><td>19233</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1049<a name=\"v3-ReligiousAffiliation-1049\"> </a></td><td>Sunni (Islam)</td><td>19234</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1050<a name=\"v3-ReligiousAffiliation-1050\"> </a></td><td>Taoism</td><td>19235</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1051<a name=\"v3-ReligiousAffiliation-1051\"> </a></td><td>Theravada</td><td>19236</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1052<a name=\"v3-ReligiousAffiliation-1052\"> </a></td><td>Unitarian-Universalism</td><td>19237</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1053<a name=\"v3-ReligiousAffiliation-1053\"> </a></td><td>Universal Life Church</td><td>19238</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1054<a name=\"v3-ReligiousAffiliation-1054\"> </a></td><td>Vajrayana (Tibetan)</td><td>19239</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1055<a name=\"v3-ReligiousAffiliation-1055\"> </a></td><td>Veda</td><td>19240</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1056<a name=\"v3-ReligiousAffiliation-1056\"> </a></td><td>Voodoo</td><td>19241</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1057<a name=\"v3-ReligiousAffiliation-1057\"> </a></td><td>Wicca</td><td>19242</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1058<a name=\"v3-ReligiousAffiliation-1058\"> </a></td><td>Yaohushua</td><td>19243</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1059<a name=\"v3-ReligiousAffiliation-1059\"> </a></td><td>Zen Buddhism</td><td>19244</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1060<a name=\"v3-ReligiousAffiliation-1060\"> </a></td><td>Zoroastrianism</td><td>19245</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1061<a name=\"v3-ReligiousAffiliation-1061\"> </a></td><td>Assembly of God</td><td>21466</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1062<a name=\"v3-ReligiousAffiliation-1062\"> </a></td><td>Brethren</td><td>21467</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1063<a name=\"v3-ReligiousAffiliation-1063\"> </a></td><td>Christian Scientist</td><td>21468</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1064<a name=\"v3-ReligiousAffiliation-1064\"> </a></td><td>Church of Christ</td><td>21469</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1065<a name=\"v3-ReligiousAffiliation-1065\"> </a></td><td>Church of God</td><td>21470</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1066<a name=\"v3-ReligiousAffiliation-1066\"> </a></td><td>Congregational</td><td>21471</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1067<a name=\"v3-ReligiousAffiliation-1067\"> </a></td><td>Disciples of Christ</td><td>21472</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1068<a name=\"v3-ReligiousAffiliation-1068\"> </a></td><td>Eastern Orthodox</td><td>21473</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1069<a name=\"v3-ReligiousAffiliation-1069\"> </a></td><td>Episcopalian</td><td>21474</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1070<a name=\"v3-ReligiousAffiliation-1070\"> </a></td><td>Evangelical Covenant</td><td>21475</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1071<a name=\"v3-ReligiousAffiliation-1071\"> </a></td><td>Friends</td><td>21476</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1072<a name=\"v3-ReligiousAffiliation-1072\"> </a></td><td>Full Gospel</td><td>21477</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1073<a name=\"v3-ReligiousAffiliation-1073\"> </a></td><td>Methodist</td><td>21478</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1074<a name=\"v3-ReligiousAffiliation-1074\"> </a></td><td>Native American</td><td>21479</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1075<a name=\"v3-ReligiousAffiliation-1075\"> </a></td><td>Nazarene</td><td>21480</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1076<a name=\"v3-ReligiousAffiliation-1076\"> </a></td><td>Presbyterian</td><td>21481</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1077<a name=\"v3-ReligiousAffiliation-1077\"> </a></td><td>Protestant</td><td>21482</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1078<a name=\"v3-ReligiousAffiliation-1078\"> </a></td><td>Protestant, No Denomination</td><td>21483</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1079<a name=\"v3-ReligiousAffiliation-1079\"> </a></td><td>Reformed</td><td>21484</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1080<a name=\"v3-ReligiousAffiliation-1080\"> </a></td><td>Salvation Army</td><td>21485</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1081<a name=\"v3-ReligiousAffiliation-1081\"> </a></td><td>Unitarian Universalist</td><td>21486</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">1082<a name=\"v3-ReligiousAffiliation-1082\"> </a></td><td>United Church of Christ</td><td>21487</td><td>active</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.1076" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ReligiousAffiliation"] ; # 
+  fhir:title [ fhir:v "Religious Affiliation"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Assigment of spiritual faith affiliation"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1001" ] ;
+     fhir:display [ fhir:v "Adventist" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19186" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1002" ] ;
+     fhir:display [ fhir:v "African Religions" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19187" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1003" ] ;
+     fhir:display [ fhir:v "Afro-Caribbean Religions" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19188" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1004" ] ;
+     fhir:display [ fhir:v "Agnosticism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19189" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1005" ] ;
+     fhir:display [ fhir:v "Anglican" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19190" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1006" ] ;
+     fhir:display [ fhir:v "Animism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19191" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1007" ] ;
+     fhir:display [ fhir:v "Atheism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19192" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1008" ] ;
+     fhir:display [ fhir:v "Babi & Baha'I faiths" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19193" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1009" ] ;
+     fhir:display [ fhir:v "Baptist" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19194" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1010" ] ;
+     fhir:display [ fhir:v "Bon" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19195" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1011" ] ;
+     fhir:display [ fhir:v "Cao Dai" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19196" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1012" ] ;
+     fhir:display [ fhir:v "Celticism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19197" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1013" ] ;
+     fhir:display [ fhir:v "Christian (non-Catholic, non-specific)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19198" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1014" ] ;
+     fhir:display [ fhir:v "Confucianism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19199" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1015" ] ;
+     fhir:display [ fhir:v "Cyberculture Religions" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19200" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1016" ] ;
+     fhir:display [ fhir:v "Divination" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19201" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1017" ] ;
+     fhir:display [ fhir:v "Fourth Way" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19202" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1018" ] ;
+     fhir:display [ fhir:v "Free Daism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19203" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1019" ] ;
+     fhir:display [ fhir:v "Gnosis" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19204" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1020" ] ;
+     fhir:display [ fhir:v "Hinduism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19205" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1021" ] ;
+     fhir:display [ fhir:v "Humanism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19206" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1022" ] ;
+     fhir:display [ fhir:v "Independent" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19207" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1023" ] ;
+     fhir:display [ fhir:v "Islam" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19208" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1024" ] ;
+     fhir:display [ fhir:v "Jainism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19209" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1025" ] ;
+     fhir:display [ fhir:v "Jehovah's Witnesses" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19210" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1026" ] ;
+     fhir:display [ fhir:v "Judaism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19211" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1027" ] ;
+     fhir:display [ fhir:v "Latter Day Saints" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19212" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1028" ] ;
+     fhir:display [ fhir:v "Lutheran" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19213" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1029" ] ;
+     fhir:display [ fhir:v "Mahayana" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19214" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1030" ] ;
+     fhir:display [ fhir:v "Meditation" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19215" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1031" ] ;
+     fhir:display [ fhir:v "Messianic Judaism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19216" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1032" ] ;
+     fhir:display [ fhir:v "Mitraism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19217" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1033" ] ;
+     fhir:display [ fhir:v "New Age" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19218" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1034" ] ;
+     fhir:display [ fhir:v "non-Roman Catholic" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19219" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1035" ] ;
+     fhir:display [ fhir:v "Occult" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19220" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1036" ] ;
+     fhir:display [ fhir:v "Orthodox" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19221" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1037" ] ;
+     fhir:display [ fhir:v "Paganism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19222" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1038" ] ;
+     fhir:display [ fhir:v "Pentecostal" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19223" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1039" ] ;
+     fhir:display [ fhir:v "Process, The" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19224" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1040" ] ;
+     fhir:display [ fhir:v "Reformed/Presbyterian" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19225" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1041" ] ;
+     fhir:display [ fhir:v "Roman Catholic Church" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19226" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1042" ] ;
+     fhir:display [ fhir:v "Satanism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19227" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1043" ] ;
+     fhir:display [ fhir:v "Scientology" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19228" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1044" ] ;
+     fhir:display [ fhir:v "Shamanism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19229" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1045" ] ;
+     fhir:display [ fhir:v "Shiite (Islam)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19230" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1046" ] ;
+     fhir:display [ fhir:v "Shinto" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19231" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1047" ] ;
+     fhir:display [ fhir:v "Sikism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19232" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1048" ] ;
+     fhir:display [ fhir:v "Spiritualism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19233" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1049" ] ;
+     fhir:display [ fhir:v "Sunni (Islam)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19234" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1050" ] ;
+     fhir:display [ fhir:v "Taoism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19235" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1051" ] ;
+     fhir:display [ fhir:v "Theravada" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19236" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1052" ] ;
+     fhir:display [ fhir:v "Unitarian-Universalism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19237" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1053" ] ;
+     fhir:display [ fhir:v "Universal Life Church" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19238" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1054" ] ;
+     fhir:display [ fhir:v "Vajrayana (Tibetan)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19239" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1055" ] ;
+     fhir:display [ fhir:v "Veda" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19240" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1056" ] ;
+     fhir:display [ fhir:v "Voodoo" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19241" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1057" ] ;
+     fhir:display [ fhir:v "Wicca" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19242" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1058" ] ;
+     fhir:display [ fhir:v "Yaohushua" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19243" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1059" ] ;
+     fhir:display [ fhir:v "Zen Buddhism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19244" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1060" ] ;
+     fhir:display [ fhir:v "Zoroastrianism" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "19245" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1061" ] ;
+     fhir:display [ fhir:v "Assembly of God" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21466" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1062" ] ;
+     fhir:display [ fhir:v "Brethren" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21467" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1063" ] ;
+     fhir:display [ fhir:v "Christian Scientist" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21468" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1064" ] ;
+     fhir:display [ fhir:v "Church of Christ" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21469" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1065" ] ;
+     fhir:display [ fhir:v "Church of God" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21470" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1066" ] ;
+     fhir:display [ fhir:v "Congregational" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21471" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1067" ] ;
+     fhir:display [ fhir:v "Disciples of Christ" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21472" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1068" ] ;
+     fhir:display [ fhir:v "Eastern Orthodox" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21473" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1069" ] ;
+     fhir:display [ fhir:v "Episcopalian" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21474" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1070" ] ;
+     fhir:display [ fhir:v "Evangelical Covenant" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21475" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1071" ] ;
+     fhir:display [ fhir:v "Friends" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21476" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1072" ] ;
+     fhir:display [ fhir:v "Full Gospel" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21477" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1073" ] ;
+     fhir:display [ fhir:v "Methodist" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21478" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1074" ] ;
+     fhir:display [ fhir:v "Native American" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21479" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1075" ] ;
+     fhir:display [ fhir:v "Nazarene" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21480" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1076" ] ;
+     fhir:display [ fhir:v "Presbyterian" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21481" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1077" ] ;
+     fhir:display [ fhir:v "Protestant" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21482" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1078" ] ;
+     fhir:display [ fhir:v "Protestant, No Denomination" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21483" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1079" ] ;
+     fhir:display [ fhir:v "Reformed" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21484" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1080" ] ;
+     fhir:display [ fhir:v "Salvation Army" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21485" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1081" ] ;
+     fhir:display [ fhir:v "Unitarian Universalist" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21486" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1082" ] ;
+     fhir:display [ fhir:v "United Church of Christ" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "21487" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

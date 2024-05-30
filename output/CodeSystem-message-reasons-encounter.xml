@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="message-reasons-encounter"/>
+  <meta>
+    <lastUpdated value="2020-04-09T21:10:28.568+00:00"/>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/message-reasons-encounter</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">admit<a name="message-reasons-encounter-admit"> </a></td><td>Admit</td><td>The patient has been admitted.</td></tr><tr><td style="white-space:nowrap">discharge<a name="message-reasons-encounter-discharge"> </a></td><td>Discharge</td><td>The patient has been discharged.</td></tr><tr><td style="white-space:nowrap">absent<a name="message-reasons-encounter-absent"> </a></td><td>Absent</td><td>The patient has temporarily left the institution.</td></tr><tr><td style="white-space:nowrap">return<a name="message-reasons-encounter-return"> </a></td><td>Returned</td><td>The patient has returned from a temporary absence.</td></tr><tr><td style="white-space:nowrap">moved<a name="message-reasons-encounter-moved"> </a></td><td>Moved</td><td>The patient has been moved to a new location.</td></tr><tr><td style="white-space:nowrap">edit<a name="message-reasons-encounter-edit"> </a></td><td>Edit</td><td>Encounter details have been updated (e.g. to correct a coding error).</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="inm"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm">
+    <valueInteger value="1"/>
+  </extension>
+  <url value="http://terminology.hl7.org/CodeSystem/message-reasons-encounter"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.1.1122"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="ExampleMessageReasonCodes"/>
+  <title value="Example Message Reason Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2024-03-09T14:36:19-07:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="Example Message Reasons. These are the set of codes that might be used an updating an encounter using admin-update."/>
+  <copyright value="This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://terminology.hl7.org/ValueSet/message-reason-encounter"/>
+  <content value="complete"/>
+  <concept>
+    <code value="admit"/>
+    <display value="Admit"/>
+    <definition value="The patient has been admitted."/>
+  </concept>
+  <concept>
+    <code value="discharge"/>
+    <display value="Discharge"/>
+    <definition value="The patient has been discharged."/>
+  </concept>
+  <concept>
+    <code value="absent"/>
+    <display value="Absent"/>
+    <definition value="The patient has temporarily left the institution."/>
+  </concept>
+  <concept>
+    <code value="return"/>
+    <display value="Returned"/>
+    <definition value="The patient has returned from a temporary absence."/>
+  </concept>
+  <concept>
+    <code value="moved"/>
+    <display value="Moved"/>
+    <definition value="The patient has been moved to a new location."/>
+  </concept>
+  <concept>
+    <code value="edit"/>
+    <display value="Edit"/>
+    <definition value="Encounter details have been updated (e.g. to correct a coding error)."/>
+  </concept>
+</CodeSystem>

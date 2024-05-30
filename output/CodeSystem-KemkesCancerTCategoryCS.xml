@@ -8,7 +8,7 @@
   </meta>
   <language value="English"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="English" lang="English"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/cancer-t-category</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">T0<a name="KemkesCancerTCategoryCS-T0"> </a></td></tr><tr><td style="white-space:nowrap">T1<a name="KemkesCancerTCategoryCS-T1"> </a></td></tr><tr><td style="white-space:nowrap">T1a<a name="KemkesCancerTCategoryCS-T1a"> </a></td></tr><tr><td style="white-space:nowrap">T1b<a name="KemkesCancerTCategoryCS-T1b"> </a></td></tr><tr><td style="white-space:nowrap">T1c<a name="KemkesCancerTCategoryCS-T1c"> </a></td></tr><tr><td style="white-space:nowrap">T2<a name="KemkesCancerTCategoryCS-T2"> </a></td></tr><tr><td style="white-space:nowrap">T2a<a name="KemkesCancerTCategoryCS-T2a"> </a></td></tr><tr><td style="white-space:nowrap">T2b<a name="KemkesCancerTCategoryCS-T2b"> </a></td></tr><tr><td style="white-space:nowrap">T2c<a name="KemkesCancerTCategoryCS-T2c"> </a></td></tr><tr><td style="white-space:nowrap">T3<a name="KemkesCancerTCategoryCS-T3"> </a></td></tr><tr><td style="white-space:nowrap">T3a<a name="KemkesCancerTCategoryCS-T3a"> </a></td></tr><tr><td style="white-space:nowrap">T3b<a name="KemkesCancerTCategoryCS-T3b"> </a></td></tr><tr><td style="white-space:nowrap">T3c<a name="KemkesCancerTCategoryCS-T3c"> </a></td></tr><tr><td style="white-space:nowrap">T4<a name="KemkesCancerTCategoryCS-T4"> </a></td></tr><tr><td style="white-space:nowrap">T4a<a name="KemkesCancerTCategoryCS-T4a"> </a></td></tr><tr><td style="white-space:nowrap">T4b<a name="KemkesCancerTCategoryCS-T4b"> </a></td></tr><tr><td style="white-space:nowrap">Ta<a name="KemkesCancerTCategoryCS-Ta"> </a></td></tr><tr><td style="white-space:nowrap">Tis<a name="KemkesCancerTCategoryCS-Tis"> </a></td></tr><tr><td style="white-space:nowrap">TX<a name="KemkesCancerTCategoryCS-TX"> </a></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="English" lang="English"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/cancer-t-category</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">T0<a name="KemkesCancerTCategoryCS-T0"> </a></td></tr><tr><td style="white-space:nowrap">T1<a name="KemkesCancerTCategoryCS-T1"> </a></td></tr><tr><td style="white-space:nowrap">T1a<a name="KemkesCancerTCategoryCS-T1a"> </a></td></tr><tr><td style="white-space:nowrap">T1b<a name="KemkesCancerTCategoryCS-T1b"> </a></td></tr><tr><td style="white-space:nowrap">T1c<a name="KemkesCancerTCategoryCS-T1c"> </a></td></tr><tr><td style="white-space:nowrap">T2<a name="KemkesCancerTCategoryCS-T2"> </a></td></tr><tr><td style="white-space:nowrap">T2a<a name="KemkesCancerTCategoryCS-T2a"> </a></td></tr><tr><td style="white-space:nowrap">T2b<a name="KemkesCancerTCategoryCS-T2b"> </a></td></tr><tr><td style="white-space:nowrap">T2c<a name="KemkesCancerTCategoryCS-T2c"> </a></td></tr><tr><td style="white-space:nowrap">T3<a name="KemkesCancerTCategoryCS-T3"> </a></td></tr><tr><td style="white-space:nowrap">T3a<a name="KemkesCancerTCategoryCS-T3a"> </a></td></tr><tr><td style="white-space:nowrap">T3b<a name="KemkesCancerTCategoryCS-T3b"> </a></td></tr><tr><td style="white-space:nowrap">T3c<a name="KemkesCancerTCategoryCS-T3c"> </a></td></tr><tr><td style="white-space:nowrap">T4<a name="KemkesCancerTCategoryCS-T4"> </a></td></tr><tr><td style="white-space:nowrap">T4a<a name="KemkesCancerTCategoryCS-T4a"> </a></td></tr><tr><td style="white-space:nowrap">T4b<a name="KemkesCancerTCategoryCS-T4b"> </a></td></tr><tr><td style="white-space:nowrap">Ta<a name="KemkesCancerTCategoryCS-Ta"> </a></td></tr><tr><td style="white-space:nowrap">Tis<a name="KemkesCancerTCategoryCS-Tis"> </a></td></tr><tr><td style="white-space:nowrap">TX<a name="KemkesCancerTCategoryCS-TX"> </a></td></tr></table></div>
   </text>
   <url value="http://terminology.kemkes.go.id/CodeSystem/cancer-t-category"/>
   <version value="0.1.0"/>
@@ -17,12 +17,16 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2024-02-05T00:00:00.000Z"/>
-  <publisher value="Thomas Chaidir"/>
+  <publisher value="SatuSehat"/>
   <contact>
-    <name value="Thomas Chaidir"/>
+    <name value="SatuSehat"/>
     <telecom>
       <system value="url"/>
       <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
     </telecom>
   </contact>
   <caseSensitive value="true"/>

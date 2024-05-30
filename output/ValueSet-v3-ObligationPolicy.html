@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ObligationPolicy - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.1166"}
+    h3,h4,h5,h6{--heading-prefix:"5.1166"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ObligationPolicy</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ObligationPolicy.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ObligationPolicy.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ObligationPolicy.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: ObligationPolicy
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/ValueSet/v3-ObligationPolicy<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ObligationPolicy"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ObligationPolicy|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2014-03-26
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ObligationPolicy</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.1.11.20445
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Conveys the mandated workflow action that an information custodian, receiver, or user must perform.</p>
+
+<p><strong>Examples:</strong></p>
+
+<ul>
+  <li>encrypt</li>
+</ul>
+
+<p><em>Usage Note:</em> Per OASIS XACML, an obligation is an operation specified in a policy or policy that is performed in conjunction with the enforcement of an access control decision.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li>Included into <a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-SecurityControlObservationValue.html">SecurityControlObservationValue</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include codes from<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a> where concept  is-a <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ObligationPolicy">ObligationPolicy</a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html">codesystem ActCode v9.0.0 (CodeSystem)</a></p><p>This value set contains 33 concepts</p><table class="codes"><tr><td><b>Level</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-ObligationPolicy"> </a>1</td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ObligationPolicy">ObligationPolicy</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>obligation policy</td><td><div><p>Conveys the mandated workflow action that an information custodian, receiver, or user must perform.</p>
+<p><em>Usage Notes:</em> Per ISO 22600-2, ObligationPolicy instances 'are event-triggered and define actions to be performed by manager agent'. Per HL7 Composite Security and Privacy Domain Analysis Model: This value set refers to the action required to receive the permission specified in the privacy rule. Per OASIS XACML, an obligation is an operation specified in a policy or policy that is performed in conjunction with the enforcement of an access control decision.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-ANONY"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ANONY">ANONY</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>anonymize</td><td><div><p>Custodian system must remove any information that could result in identifying the information subject.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-AOD"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AOD">AOD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>accounting of disclosure</td><td><div><p>Custodian system must make available to an information subject upon request an accounting of certain disclosures of the individual's protected health information over a period of time. Policy may dictate that the accounting include information about the information disclosed, the date of disclosure, the identification of the receiver, the purpose of the disclosure, the time in which the disclosing entity must provide a response and the time period for which accountings of disclosure can be requested.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-AUDIT"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AUDIT">AUDIT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>audit</td><td><div><p>Custodian system must monitor systems to ensure that all users are authorized to operate on information objects.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-AUDTR"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AUDTR">AUDTR</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>audit trail</td><td><div><p>Custodian system must monitor and maintain retrievable log for each user and operation on information.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CPLYPOL"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CPLYPOL">CPLYPOL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>comply with policy</td><td><div><p>Custodian security system must retrieve, evaluate, and comply with applicable policies associated with the target information.</p>
+<p><em>Usage Note:</em> CPLYPOL may be used as a security label code to inform senders and receivers of the tagged information to comply with applicable policy without specifying the specific policy type(s).</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CPLYCC"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CPLYCC">CPLYCC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>comply with confidentiality code</td><td><div><p>Custodian security system must retrieve, evaluate, and comply with the information handling directions of the Confidentiality Code associated with an information target.</p>
+<p><em>Usage Note:</em> CPLYCC may be used as a security label code to inform senders and receivers of information tagged with a Confidentiality Code to comply with applicable level of protection required by the assigned confidentiality code.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CPLYCD"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CPLYCD">CPLYCD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>comply with consent directive</td><td><div><p>Custodian security system must retrieve, evaluate, and comply with applicable information subject consent directives.</p>
+<p><em>Usage Note:</em> CPLYCD may be used as a security label code to inform senders and receivers of information tagged with an ActCode_ActPolicyType_ActConsent code or an ActCode_ActPolicyType_ActPrivacyPolicy_ActConsentDirective code to comply with applicable consent directives.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CPLYCUI"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CPLYCUI">CPLYCUI</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>comply with controlled unclassified information policy</td><td><div><p>Custodian security system must retrieve, evaluate, and comply with applicable Controlled Unclassified Information (CUI) policies associated with the target information.</p>
+<p><em>Usage Note:</em> In the US, CPLYCUI may be used as a security label code to inform recipients of information designated by a US Federal Agency as Controlled Unclassified Information (CUI) to comply with the applicable laws, regulations, executive orders, and other guidances, such as included in DURSAs, to persist, mark, and enforce required CUI controls</p>
+<p>Background:</p>
+<p>In accordance with US 32 CFR Part 2002 and US Executive Order 13556 Controlled Unclassified Information, US Federal Agencies and their contractors are charged with classifying and marking certain information they create as Controlled Unclassified Information (CUI).</p>
+<p>The following definitions, which are provided for context, are based on terms defined by the CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html</p>
+<ul>
+<li>CUI is defined as &quot;information in any form that the Government creates or possesses, or that an entity creates or possesses for or on behalf of the Government, that a law, regulation, or Government-wide policy requires or permits an agency to handle using safeguarding or dissemination controls.&quot;</li>
+<li>Designating CUI occurs when an authorized holder, consistent with 32 CFR Part 2002 and the CUI Registry, determines that a specific item of information falls into a CUI category or subcategory.</li>
+<li>The designating agency is the executive branch agency that designates or approves the designation of a specific item of information as CUI.</li>
+<li>The authorized holder who designates the CUI must make recipients aware of the information's CUI status when disseminating that information.</li>
+<li>• Disseminating occurs when authorized holders provide access, transmit, or transfer CUI to other authorized holders through any means, whether internal or external to the agency.</li>
+</ul>
+<p>Once designated as CUI, US Federal Agencies and their contractors must assign CUI marks as prescribed by the National Archives and Records Administration (NARA) CUI Registry, and display marks as prescribed by the CUI Marking Handbook.</p>
+<p>CUI markings must be displayed on hard copy, on containers, electronic media, and to end users for IT systems.</p>
+<p>When HL7 content is designated as CUI, these computable markings can be interoperably conveyed using HL7 security label CUI tags, and may be included in HL7 text and narrative elements as human readable markings.</p>
+<p><strong>Impact of CUI markings:</strong></p>
+<p>CUI Custodians must enforce CUI security controls per applicable CUI policies. Federal agencies and their contractors must adhere to FISMA and NIST SP 800-53 security controls. Custodians, who are not Federal agencies or agency contractors, and are receivers of CUI, must adhere to NIST SP 800-171 security controls and those dictated by the Authorities indicated by the assigned CUI markings.</p>
+<p>For most participants in US healthcare information exchange, including Federal Agencies and their contractors, additional controls are required by HIPAA Security standards for health information US 42 USC 1320d-2(d)(2) https://www.govinfo.gov/content/pkg/USCODE-2016-title42/pdf/USCODE-2016-title42-chap7-subchapXI-partC-sec1320d-2.pdf</p>
+<p>Federal Agencies and their contractors may be the CUI classifier of original CUI content; or a CUI derivative classifier, which reclassifies CUI content that has been aggregated with other CUI or Unclassified Uncontrolled Information (U) or dissembled from a larger CUI content; or declassifiers, depending on the designating agency's policies.</p>
+<p>Applicable CUI policies include the following and any future applicable updates to policies or laws related to CUI:</p>
+<ul>
+<li>Executive Order 13556 https://www.federalregister.gov/articles/2010/11/09/2010-28360/controlled-unclassified-information</li>
+<li>US 32 CFR Part 2002 https://www.govinfo.gov/content/pkg/CFR-2017-title32-vol6/pdf/CFR-2017-title32-vol6-part2002.pdf</li>
+<li>NIST SP 800-171 https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r1.pdf</li>
+<li>NIST SP 800-171A https://doi.org/10.6028/NIST.SP.800-171A</li>
+<li>CUI Marking Handbook https://www.archives.gov/files/cui/20161206-cui-marking-handbook-v1-1.pdf</li>
+<li>CUI Registry - Health Information Category https://www.archives.gov/cui/registry/category-detail/health-info</li>
+<li>CUI Registry: Limited Dissemination Controls https://www.archives.gov/cui/registry/limited-dissemination</li>
+<li>CUI Policy and Guidance https://www.archives.gov/cui/registry/policy-guidance</li>
+</ul>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CPLYJPP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CPLYJPP">CPLYJPP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>comply with jurisdictional privacy policy</td><td><div><p>Custodian security system must retrieve, evaluate, and comply with applicable jurisdictional privacy policies associated with the target information.</p>
+<p><em>Usage Note:</em> CPLYJPP may be used as a security label code to inform senders and receivers of information tagged with an ActCode_ActPolicyType_ActPrivacyPolicy_ActPrivacyLaw code or an ActCode_ActPolicyType_ActInformationPolicy.JurisIP code to comply with applicable jurisdictional privacy policy.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CPLYJSP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CPLYJSP">CPLYJSP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>comply with jurisdictional security policy</td><td><div><p>Custodian security system must retrieve, evaluate, and comply with applicable jurisdictional security policies associated with the target information.</p>
+<p><em>Usage Note:</em> CPLYJSP may be used as a security label code to inform senders and receivers of information tagged with an ActCode_ActPolicyType.SecurityPolicy code to comply with applicable jurisdictional security policy.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CPLYOPP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CPLYOPP">CPLYOPP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>comply with organizational privacy policy</td><td><div><p>Custodian security system must retrieve, evaluate, and comply with applicable organizational privacy policies associated with the target information.</p>
+<p><em>Usage Note:</em> CPLYOPP may be used as a security label code to inform senders and receivers of information tagged with an ActCode_ActPolicyType_ActInformationPolicy.OrgIP code to comply with applicable organizational privacy policy.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CPLYOSP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CPLYOSP">CPLYOSP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>comply with organizational security policy</td><td><div><p>Custodian security system must retrieve, evaluate, and comply with the organizational security policies associated with the target information.</p>
+<p><em>Usage Note:</em> CPLYOSP may be used as a security label code to inform senders and receivers of information tagged with an ActCode_ActPolicyType.SecurityPolicy code to comply with applicable organizational security policy.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-DECLASSIFYLABEL"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-DECLASSIFYLABEL">DECLASSIFYLABEL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>declassify security label</td><td><div><p>Custodian security system must declassify information assigned security labels by instantiating a new version of the classified information so as to break the binding of the classifying security label when assigning a new security label that marks the information as unclassified in accordance with applicable jurisdictional privacy policies associated with the target information. The system must retain an immutable record of the previous assignment and binding.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-DEID"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-DEID">DEID</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>deidentify</td><td><div><p>Custodian system must strip information of data that would allow the identification of the source of the information or the information subject.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-DELAU"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-DELAU">DELAU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>delete after use</td><td><div><p>Custodian system must remove target information from access after use.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-DOWNGRDLABEL"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-DOWNGRDLABEL">DOWNGRDLABEL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>downgrade security label</td><td><div><p>Custodian security system must downgrade information assigned security labels by instantiating a new version of the classified information so as to break the binding of the classifying security label when assigning a new security label that marks the information as classified at a less protected level in accordance with applicable jurisdictional privacy policies associated with the target information. The system must retain an immutable record of the previous assignment and binding.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-DRIVLABEL"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-DRIVLABEL">DRIVLABEL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>derive security label</td><td><div><p>Custodian security system must assign and bind security labels derived from compilations of information by aggregation or disaggregation in order to classify information compiled in the information systems under its control for collection, access, use and disclosure in accordance with applicable jurisdictional privacy policies associated with the target information. The system must retain an immutable record of the previous assignment and binding.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-ENCRYPT"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ENCRYPT">ENCRYPT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>encrypt</td><td><div><p>Custodian system must render information unreadable by algorithmically transforming plaintext into ciphertext.</p>
+<p><em>Usage Notes:</em> A mathematical transposition of a file or data stream so that it cannot be deciphered at the receiving end without the proper key. Encryption is a security feature that assures that only the parties who are supposed to be participating in a videoconference or data transfer are able to do so. It can include a password, public and private keys, or a complex combination of all. (Per Infoway.)</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-ENCRYPTR"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ENCRYPTR">ENCRYPTR</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>encrypt at rest</td><td><div><p>Custodian system must render information unreadable and unusable by algorithmically transforming plaintext into ciphertext when &quot;at rest&quot; or in storage.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-ENCRYPTT"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ENCRYPTT">ENCRYPTT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>encrypt in transit</td><td><div><p>Custodian system must render information unreadable and unusable by algorithmically transforming plaintext into ciphertext while &quot;in transit&quot; or being transported by any means.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-ENCRYPTU"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-ENCRYPTU">ENCRYPTU</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>encrypt in use</td><td><div><p>Custodian system must render information unreadable and unusable by algorithmically transforming plaintext into ciphertext while in use such that operations permitted on the target information are limited by the license granted to the end user.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-HUAPRV"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-HUAPRV">HUAPRV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>human approval</td><td><div><p>Custodian system must require human review and approval for permission requested.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-LABEL"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-LABEL">LABEL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>assign security label</td><td><div><p>Custodian security system must assign and bind security labels in order to classify information created in the information systems under its control for collection, access, use and disclosure in accordance with applicable jurisdictional privacy policies associated with the target information. The system must retain an immutable record of the assignment and binding.</p>
+<p><em>Usage Note:</em> In security systems, security policy label assignments do not change, they may supersede prior assignments, and such reassignments are always tracked for auditing and other purposes.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-MASK"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-MASK">MASK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>mask</td><td><div><p>Custodian system must render information unreadable and unusable by algorithmically transforming plaintext into ciphertext. User may be provided a key to decrypt per license or &quot;shared secret&quot;.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-MINEC"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-MINEC">MINEC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>minimum necessary</td><td><div><p>Custodian must limit access and disclosure to the minimum information required to support an authorized user's purpose of use.</p>
+<p><em>Usage Note:</em> Limiting the information available for access and disclosure to that an authorized user or receiver &quot;needs to know&quot; in order to perform permitted workflow or purpose of use.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-PERSISTLABEL"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-PERSISTLABEL">PERSISTLABEL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>persist security label</td><td><div><p>Custodian security system must persist the binding of security labels to classify information received or imported by information systems under its control for collection, access, use and disclosure in accordance with applicable jurisdictional privacy policies associated with the target information. The system must retain an immutable record of the assignment and binding.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-PRIVMARK"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-PRIVMARK">PRIVMARK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>privacy mark</td><td><div><p>Custodian must create and/or maintain human readable security label tags as required by policy.</p>
+<p>Map: Aligns with ISO 22600-3 Section A.3.4.3 description of privacy mark: &quot;If present, the privacy-mark is not used for access control. The content of the privacy-mark may be defined by the security policy in force (identified by the security-policy-identifier) which may define a list of values to be used. Alternately, the value may be determined by the originator of the security-label.&quot;</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-CUIMark"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-CUIMark">CUIMark</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>CUI Mark</td><td><div><p>An originator must mark, persist, display, and convey computable and renderable Controlled Unclassified Information (CUI) marks as required by policy. A recipient must consume, persist, display, and reconvey CUI marks on information received based on agreements with the originator..</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>As CUI custodians, Federal Agencies and their contractors must mark, persist, display, and convey these marks.</li>
+<li>All CUI receivers must consume, persist, display, and reconvey CUI markings on information further disclosed</li>
+</ul>
+<p><em>Usage Note:</em></p>
+<p>In accordance with US 32 CFR Part 2002 and US Executive Order 13556 Controlled Unclassified Information, US Federal Agencies and their contractors are charged with classifying and marking certain information they create as Controlled Unclassified Information (CUI).</p>
+<p>The following definitions, which are provided for context, are based on terms defined by the CUI Glossary https://www.archives.gov/cui/registry/cui-glossary.html</p>
+<ul>
+<li>CUI is defined as &quot;information in any form that the Government creates or possesses, or that an entity creates or possesses for or on behalf of the Government, that a law, regulation, or Government-wide policy requires or permits an agency to handle using safeguarding or dissemination controls&quot;</li>
+<li>Designating CUI occurs when an authorized holder, consistent with US 32 CFR Part 2002 and the CUI Registry, determines that a specific item of information falls into a CUI category or subcategory.</li>
+<li>The designating agency is the executive branch agency that designates or approves the designation of a specific item of information as CUI.</li>
+<li>The authorized holder who designates the CUI must make recipients aware of the information's CUI status when disseminating that information.</li>
+<li>Disseminating occurs when authorized holders provide access, transmit, or transfer CUI to other authorized holders through any means, whether internal or external to the agency.</li>
+</ul>
+<p>Once designated as CUI, US Federal Agencies and their contractors must assign CUI marks as prescribed by the National Archives and Records Administration (NARA) CUI Registry, and display marks as prescribed by the CUI Marking Handbook.</p>
+<p>CUI markings must be displayed on hard copy, on containers, electronic media, and to end users for IT systems.</p>
+<p>When HL7 content is designated as CUI, these computable markings can be interoperably conveyed using HL7 security label CUI tags, and may be included in HL7 text and narrative elements as human readable markings.</p>
+<p><strong>Impact of CUI markings:</strong></p>
+<p>CUI Custodians must enforce CUI security controls per applicable CUI policies. Federal agencies and their contractors must adhere to FISMA and NIST SP 800-53 security controls. Custodians, who are not Federal agencies or agency contractors, and are receivers of CUI, must adhere to NIST SP 800-171 security controls and those dictated by the Authorities indicated by the assigned CUI markings.</p>
+<p>For most participants in US healthcare information exchange, including Federal Agencies and their contractors, additional controls are required by HIPAA Security standards for health information US 42 USC 1320d-2(d)(2) https://www.govinfo.gov/content/pkg/USCODE-2016-title42/pdf/USCODE-2016-title42-chap7-subchapXI-partC-sec1320d-2.pdf</p>
+<p>Federal Agencies and their contractors may be the CUI classifier of original CUI content; or a CUI derivative classifier, which reclassifies CUI content that has been aggregated with other CUI or Unclassified Uncontrolled Information (U) or dissembled from a larger CUI content; or declassifiers, depending on the designating agency's policies.</p>
+<p>Applicable CUI policies include the following and any future applicable updates to policies or laws related to CUI:</p>
+<ul>
+<li>Executive Order 13556 https://www.federalregister.gov/articles/2010/11/09/2010-28360/controlled-unclassified-information</li>
+<li>US 32 CFR Part 2002 https://www.govinfo.gov/content/pkg/CFR-2017-title32-vol6/pdf/CFR-2017-title32-vol6-part2002.pdf</li>
+<li>NIST SP 800-171 https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-171r1.pdf</li>
+<li>NIST SP 800-171A https://doi.org/10.6028/NIST.SP.800-171A</li>
+<li>CUI Marking Handbook https://www.archives.gov/files/cui/20161206-cui-marking-handbook-v1-1.pdf</li>
+<li>CUI Registry - Health Information Category https://www.archives.gov/cui/registry/category-detail/health-info</li>
+<li>CUI Registry: Limited Dissemination Controls https://www.archives.gov/cui/registry/limited-dissemination</li>
+<li>CUI Policy and Guidance https://www.archives.gov/cui/registry/policy-guidance</li>
+</ul>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-PSEUD"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-PSEUD">PSEUD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>pseudonymize</td><td><div><p>Custodian system must strip information of data that would allow the identification of the source of the information or the information subject. Custodian may retain a key to relink data necessary to reidentify the information subject.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-REDACT"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-REDACT">REDACT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>redact</td><td><div><p>Custodian system must remove information, which is not authorized to be access, used, or disclosed from records made available to otherwise authorized users.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-UPGRDLABEL"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-UPGRDLABEL">UPGRDLABEL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>upgrade security label</td><td><div><p>Custodian security system must declassify information assigned security labels by instantiating a new version of the classified information so as to break the binding of the classifying security label when assigning a new security label that marks the information as classified at a more protected level in accordance with applicable jurisdictional privacy policies associated with the target information. The system must retain an immutable record of the previous assignment and binding.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActCode-PROCESSINLINELABEL"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-PROCESSINLINELABEL">PROCESSINLINELABEL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActCode</td><td>process inline security label</td><td><div><p>Custodian security system must take note that the data object contains inline security labels and process them.</p>
+</div></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

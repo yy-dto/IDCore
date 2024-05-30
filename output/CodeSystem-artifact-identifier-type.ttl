@@ -1,0 +1,68 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/artifact-identifier-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "artifact-identifier-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/artifact-identifier-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">version-independent<a name=\"artifact-identifier-type-version-independent\"> </a></td><td>Version Independent</td><td>The version independent globally unique identifier (guid) for the artifact.</td></tr><tr><td style=\"white-space:nowrap\">version-specific<a name=\"artifact-identifier-type-version-specific\"> </a></td><td>Version Specific</td><td>The version specific globally unique identifier (guid) for the artifact.</td></tr><tr><td style=\"white-space:nowrap\">short-name<a name=\"artifact-identifier-type-short-name\"> </a></td><td>Short Name</td><td>The short name identifier for the artifact (e.g. CMS104v8).</td></tr><tr><td style=\"white-space:nowrap\">endorser<a name=\"artifact-identifier-type-endorser\"> </a></td><td>Endorser</td><td>The version-independent endorser identifier for the artifact (e.g. 0002).</td></tr><tr><td style=\"white-space:nowrap\">publisher<a name=\"artifact-identifier-type-publisher\"> </a></td><td>Publisher</td><td>The version-independent publisher identifier for the artifact (e.g. 104).</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "cqi" ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/artifact-identifier-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ArtifactIdentifierType"] ; # 
+  fhir:title [ fhir:v "Artifact Identifier Type Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-02-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Identifier types for an artifact (e.g. version-independent, version-specific, short-name, endorser, publisher)"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/artifact-identifier-type"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/artifact-identifier-type>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "version-independent" ] ;
+     fhir:display [ fhir:v "Version Independent" ] ;
+     fhir:definition [ fhir:v "The version independent globally unique identifier (guid) for the artifact." ]
+  ] [
+     fhir:code [ fhir:v "version-specific" ] ;
+     fhir:display [ fhir:v "Version Specific" ] ;
+     fhir:definition [ fhir:v "The version specific globally unique identifier (guid) for the artifact." ]
+  ] [
+     fhir:code [ fhir:v "short-name" ] ;
+     fhir:display [ fhir:v "Short Name" ] ;
+     fhir:definition [ fhir:v "The short name identifier for the artifact (e.g. CMS104v8)." ]
+  ] [
+     fhir:code [ fhir:v "endorser" ] ;
+     fhir:display [ fhir:v "Endorser" ] ;
+     fhir:definition [ fhir:v "The version-independent endorser identifier for the artifact (e.g. 0002)." ]
+  ] [
+     fhir:code [ fhir:v "publisher" ] ;
+     fhir:display [ fhir:v "Publisher" ] ;
+     fhir:definition [ fhir:v "The version-independent publisher identifier for the artifact (e.g. 104)." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

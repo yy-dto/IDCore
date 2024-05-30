@@ -1,0 +1,86 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/modifiers> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "modifiers"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/modifiers</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">a<a name=\"modifiers-a\"> </a></td><td>Repair of prior service or installation</td><td>Repair of prior service or installation.</td></tr><tr><td style=\"white-space:nowrap\">b<a name=\"modifiers-b\"> </a></td><td>Temporary service or installation</td><td>Temporary service or installation.</td></tr><tr><td style=\"white-space:nowrap\">c<a name=\"modifiers-c\"> </a></td><td>TMJ treatment</td><td>Treatment associated with TMJ.</td></tr><tr><td style=\"white-space:nowrap\">e<a name=\"modifiers-e\"> </a></td><td>Implant or associated with an implant</td><td>Implant or associated with an implant.</td></tr><tr><td style=\"white-space:nowrap\">rooh<a name=\"modifiers-rooh\"> </a></td><td>Rush or Outside of office hours</td><td>A Rush service or service performed outside of normal office hours.</td></tr><tr><td style=\"white-space:nowrap\">x<a name=\"modifiers-x\"> </a></td><td>None</td><td>None.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "fm" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/modifiers"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1151" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ModifierTypeCodes"] ; # 
+  fhir:title [ fhir:v "Modifier type Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-09T14:36:19-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set includes sample Modifier type codes."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/claim-modifiers"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/claim-modifiers>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "a" ] ;
+     fhir:display [ fhir:v "Repair of prior service or installation" ] ;
+     fhir:definition [ fhir:v "Repair of prior service or installation." ]
+  ] [
+     fhir:code [ fhir:v "b" ] ;
+     fhir:display [ fhir:v "Temporary service or installation" ] ;
+     fhir:definition [ fhir:v "Temporary service or installation." ]
+  ] [
+     fhir:code [ fhir:v "c" ] ;
+     fhir:display [ fhir:v "TMJ treatment" ] ;
+     fhir:definition [ fhir:v "Treatment associated with TMJ." ]
+  ] [
+     fhir:code [ fhir:v "e" ] ;
+     fhir:display [ fhir:v "Implant or associated with an implant" ] ;
+     fhir:definition [ fhir:v "Implant or associated with an implant." ]
+  ] [
+     fhir:code [ fhir:v "rooh" ] ;
+     fhir:display [ fhir:v "Rush or Outside of office hours" ] ;
+     fhir:definition [ fhir:v "A Rush service or service performed outside of normal office hours." ]
+  ] [
+     fhir:code [ fhir:v "x" ] ;
+     fhir:display [ fhir:v "None" ] ;
+     fhir:definition [ fhir:v "None." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,104 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/provenance-participant-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "provenance-participant-type"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/provenance-participant-type</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td><b>Lvl</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td>1</td><td style=\"white-space:nowrap\">enterer<a name=\"provenance-participant-type-enterer\"> </a></td><td>Enterer</td><td>A person entering the data into the originating system</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">performer<a name=\"provenance-participant-type-performer\"> </a></td><td>Performer</td><td>A person, animal, organization or device that who actually and principally carries out the activity</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">author<a name=\"provenance-participant-type-author\"> </a></td><td>Author</td><td>A party that originates the resource and therefore has responsibility for the information given in the resource and ownership of this resource</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">verifier<a name=\"provenance-participant-type-verifier\"> </a></td><td>Verifier</td><td>A person who verifies the correctness and appropriateness of activity</td></tr><tr><td>2</td><td style=\"white-space:nowrap\">  legal<a name=\"provenance-participant-type-legal\"> </a></td><td>Legal Authenticator</td><td>The person authenticated the content and accepted legal responsibility for its content</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">attester<a name=\"provenance-participant-type-attester\"> </a></td><td>Attester</td><td>A verifier who attests to the accuracy of the resource</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">informant<a name=\"provenance-participant-type-informant\"> </a></td><td>Informant</td><td>A person who reported information that contributed to the resource</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">custodian<a name=\"provenance-participant-type-custodian\"> </a></td><td>Custodian</td><td>The entity that is accountable for maintaining a true an accurate copy of the original record</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">assembler<a name=\"provenance-participant-type-assembler\"> </a></td><td>Assembler</td><td>A device that operates independently of an author on custodian's algorithms for data extraction of existing information for purpose of generating a new artifact.</td></tr><tr><td>1</td><td style=\"white-space:nowrap\">composer<a name=\"provenance-participant-type-composer\"> </a></td><td>Composer</td><td>A device used by an author to record new information, which may also be used by the author to select existing information for aggregation with newly recorded information for the purpose of generating a new artifact.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "sec" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "3"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/provenance-participant-type"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1131" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ProvenanceParticipantType"] ; # 
+  fhir:title [ fhir:v "Provenance participant type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-05-12T10:00:00+10:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The type of participation a provenance participant."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/provenance-agent-type"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/provenance-agent-type>
+  ] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "enterer" ] ;
+     fhir:display [ fhir:v "Enterer" ] ;
+     fhir:definition [ fhir:v "A person entering the data into the originating system" ]
+  ] [
+     fhir:code [ fhir:v "performer" ] ;
+     fhir:display [ fhir:v "Performer" ] ;
+     fhir:definition [ fhir:v "A person, animal, organization or device that who actually and principally carries out the activity" ]
+  ] [
+     fhir:code [ fhir:v "author" ] ;
+     fhir:display [ fhir:v "Author" ] ;
+     fhir:definition [ fhir:v "A party that originates the resource and therefore has responsibility for the information given in the resource and ownership of this resource" ]
+  ] [
+     fhir:code [ fhir:v "verifier" ] ;
+     fhir:display [ fhir:v "Verifier" ] ;
+     fhir:definition [ fhir:v "A person who verifies the correctness and appropriateness of activity" ] ;
+     fhir:concept ( [
+       fhir:code [ fhir:v "legal" ] ;
+       fhir:display [ fhir:v "Legal Authenticator" ] ;
+       fhir:definition [ fhir:v "The person authenticated the content and accepted legal responsibility for its content" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "attester" ] ;
+     fhir:display [ fhir:v "Attester" ] ;
+     fhir:definition [ fhir:v "A verifier who attests to the accuracy of the resource" ]
+  ] [
+     fhir:code [ fhir:v "informant" ] ;
+     fhir:display [ fhir:v "Informant" ] ;
+     fhir:definition [ fhir:v "A person who reported information that contributed to the resource" ]
+  ] [
+     fhir:code [ fhir:v "custodian" ] ;
+     fhir:display [ fhir:v "Custodian" ] ;
+     fhir:definition [ fhir:v "The entity that is accountable for maintaining a true an accurate copy of the original record" ]
+  ] [
+     fhir:code [ fhir:v "assembler" ] ;
+     fhir:display [ fhir:v "Assembler" ] ;
+     fhir:definition [ fhir:v "A device that operates independently of an author on custodian's algorithms for data extraction of existing information for purpose of generating a new artifact." ]
+  ] [
+     fhir:code [ fhir:v "composer" ] ;
+     fhir:display [ fhir:v "Composer" ] ;
+     fhir:definition [ fhir:v "A device used by an author to record new information, which may also be used by the author to select existing information for aggregation with newly recorded information for the purpose of generating a new artifact." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

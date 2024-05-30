@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="v3-ActDetectedIssueCode"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href="CodeSystem-v3-ActCode.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActCode</code></a> where concept  is-a  <a href="CodeSystem-v3-ActCode.html#v3-ActCode-ISSUE">ISSUE</a></li><li>Import all the codes that are contained in <a href="ValueSet-v3-ActSuppliedItemDetectedIssueCode.html">ActSuppliedItemDetectedIssueCode</a></li><li>Import all the codes that are contained in <a href="ValueSet-v3-ActAdministrativeDetectedIssueCode.html">ActAdministrativeDetectedIssueCode</a></li></ul></div>
+  </text>
+  <url value="http://terminology.hl7.org/ValueSet/v3-ActDetectedIssueCode"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.1.11.16124"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="ActDetectedIssueCode"/>
+  <title value="ActDetectedIssueCode"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2014-03-26"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="Identifies types of detected issues for Act class &quot;ALRT&quot;"/>
+  <copyright value="This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"/>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="ISSUE"/>
+      </filter>
+    </include>
+    <include>
+      <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActSuppliedItemDetectedIssueCode"/>
+    </include>
+    <include>
+      <valueSet value="http://terminology.hl7.org/ValueSet/v3-ActAdministrativeDetectedIssueCode"/>
+    </include>
+  </compose>
+</ValueSet>

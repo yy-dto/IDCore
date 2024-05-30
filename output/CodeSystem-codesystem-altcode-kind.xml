@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="codesystem-altcode-kind"/>
+  <meta>
+    <lastUpdated value="2020-04-09T21:10:28.568+00:00"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/codesystem-altcode-kind</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">alternate<a name="codesystem-altcode-kind-alternate"> </a></td><td>Alternate Code</td><td>The code is an alternative code that can be used in any of the circumstances that the primary code can be used.</td></tr><tr><td style="white-space:nowrap">deprecated<a name="codesystem-altcode-kind-deprecated"> </a></td><td>Deprecated</td><td>The code should no longer be used, but was used in the past.</td></tr><tr><td style="white-space:nowrap">case-insensitive<a name="codesystem-altcode-kind-case-insensitive"> </a></td><td>Case Insensitive</td><td>The code is an alternative to be used when a case insensitive code is required (when the primary codes are case sensitive).</td></tr><tr><td style="white-space:nowrap">case-sensitive<a name="codesystem-altcode-kind-case-sensitive"> </a></td><td>Case Sensitive</td><td>The code is an alternative to be used when a case sensitive code is required (when the primary codes are case insensitive).</td></tr><tr><td style="white-space:nowrap">expression<a name="codesystem-altcode-kind-expression"> </a></td><td>Expression</td><td>The code is an alternative for the primary code that is built using the expression grammar defined by the code system.</td></tr></table></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/codesystem-altcode-kind"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.4.642.1.1284"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="AlternativeCodeKind"/>
+  <title value="AlternativeCodeKind"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2020-04-09T21:10:28+00:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="Indicates the type of use for which the code is defined."/>
+  <copyright value="This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"/>
+  <caseSensitive value="true"/>
+  <valueSet value="http://terminology.hl7.org/ValueSet/codesystem-altcode-kind"/>
+  <content value="complete"/>
+  <concept>
+    <code value="alternate"/>
+    <display value="Alternate Code"/>
+    <definition value="The code is an alternative code that can be used in any of the circumstances that the primary code can be used."/>
+  </concept>
+  <concept>
+    <code value="deprecated"/>
+    <display value="Deprecated"/>
+    <definition value="The code should no longer be used, but was used in the past."/>
+  </concept>
+  <concept>
+    <code value="case-insensitive"/>
+    <display value="Case Insensitive"/>
+    <definition value="The code is an alternative to be used when a case insensitive code is required (when the primary codes are case sensitive)."/>
+  </concept>
+  <concept>
+    <code value="case-sensitive"/>
+    <display value="Case Sensitive"/>
+    <definition value="The code is an alternative to be used when a case sensitive code is required (when the primary codes are case insensitive)."/>
+  </concept>
+  <concept>
+    <code value="expression"/>
+    <display value="Expression"/>
+    <definition value="The code is an alternative for the primary code that is built using the expression grammar defined by the code system."/>
+  </concept>
+</CodeSystem>

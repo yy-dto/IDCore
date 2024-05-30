@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Country2 - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.651"}
+    h3,h4,h5,h6{--heading-prefix:"5.651"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Country2</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-v3-Country2.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-Country2.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-Country2.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: Country2
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/ValueSet/v3-Country2<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-Country2"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-Country2|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2014-03-26
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">Country2</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.1.11.20300
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Countries of the world. ISO 3166, part 1, alpha-2 set.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include codes from<a href="http://terminology.hl7.org/5.5.0/CodeSystem-ISO3166Part1.html"><code>urn:iso:std:iso:3166</code></a> where code  matches (by regex) [A-Z]{2}</li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on codesystem ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code version2018</p><p>This value set contains 249 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b> - English (English, en)</td></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AD"> </a>  AD</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AE"> </a>  AE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AF"> </a>  AF</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AG"> </a>  AG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AI"> </a>  AI</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AL"> </a>  AL</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AM"> </a>  AM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AO"> </a>  AO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AQ"> </a>  AQ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AR"> </a>  AR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AS"> </a>  AS</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AT"> </a>  AT</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AU"> </a>  AU</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AW"> </a>  AW</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AX"> </a>  AX</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-AZ"> </a>  AZ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BA"> </a>  BA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BB"> </a>  BB</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BD"> </a>  BD</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BE"> </a>  BE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BF"> </a>  BF</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BG"> </a>  BG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BH"> </a>  BH</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BI"> </a>  BI</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BJ"> </a>  BJ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BL"> </a>  BL</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BM"> </a>  BM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BN"> </a>  BN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BO"> </a>  BO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BQ"> </a>  BQ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BR"> </a>  BR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BS"> </a>  BS</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BT"> </a>  BT</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BV"> </a>  BV</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BW"> </a>  BW</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BY"> </a>  BY</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-BZ"> </a>  BZ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CA"> </a>  CA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CC"> </a>  CC</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CD"> </a>  CD</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CF"> </a>  CF</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CG"> </a>  CG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CH"> </a>  CH</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CI"> </a>  CI</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CK"> </a>  CK</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CL"> </a>  CL</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CM"> </a>  CM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CN"> </a>  CN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CO"> </a>  CO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CR"> </a>  CR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CU"> </a>  CU</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CV"> </a>  CV</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CW"> </a>  CW</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CX"> </a>  CX</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CY"> </a>  CY</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-CZ"> </a>  CZ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-DE"> </a>  DE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-DJ"> </a>  DJ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-DK"> </a>  DK</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-DM"> </a>  DM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-DO"> </a>  DO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-DZ"> </a>  DZ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-EC"> </a>  EC</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-EE"> </a>  EE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-EG"> </a>  EG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-EH"> </a>  EH</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-ER"> </a>  ER</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-ES"> </a>  ES</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-ET"> </a>  ET</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-FI"> </a>  FI</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-FJ"> </a>  FJ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-FK"> </a>  FK</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-FM"> </a>  FM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-FO"> </a>  FO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-FR"> </a>  FR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GA"> </a>  GA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GB"> </a>  GB</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GD"> </a>  GD</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GE"> </a>  GE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GF"> </a>  GF</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GG"> </a>  GG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GH"> </a>  GH</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GI"> </a>  GI</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GL"> </a>  GL</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GM"> </a>  GM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GN"> </a>  GN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GP"> </a>  GP</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GQ"> </a>  GQ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GR"> </a>  GR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GS"> </a>  GS</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GT"> </a>  GT</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GU"> </a>  GU</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GW"> </a>  GW</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-GY"> </a>  GY</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-HK"> </a>  HK</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-HM"> </a>  HM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-HN"> </a>  HN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-HR"> </a>  HR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-HT"> </a>  HT</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-HU"> </a>  HU</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-ID"> </a>  ID</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-IE"> </a>  IE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-IL"> </a>  IL</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-IM"> </a>  IM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-IN"> </a>  IN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-IO"> </a>  IO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-IQ"> </a>  IQ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-IR"> </a>  IR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-IS"> </a>  IS</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-IT"> </a>  IT</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-JE"> </a>  JE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-JM"> </a>  JM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-JO"> </a>  JO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-JP"> </a>  JP</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KE"> </a>  KE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KG"> </a>  KG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KH"> </a>  KH</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KI"> </a>  KI</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KM"> </a>  KM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KN"> </a>  KN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KP"> </a>  KP</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KR"> </a>  KR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KW"> </a>  KW</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KY"> </a>  KY</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-KZ"> </a>  KZ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LA"> </a>  LA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LB"> </a>  LB</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LC"> </a>  LC</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LI"> </a>  LI</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LK"> </a>  LK</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LR"> </a>  LR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LS"> </a>  LS</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LT"> </a>  LT</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LU"> </a>  LU</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LV"> </a>  LV</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-LY"> </a>  LY</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MA"> </a>  MA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MC"> </a>  MC</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MD"> </a>  MD</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-ME"> </a>  ME</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MF"> </a>  MF</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MG"> </a>  MG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MH"> </a>  MH</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MK"> </a>  MK</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-ML"> </a>  ML</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MM"> </a>  MM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MN"> </a>  MN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MO"> </a>  MO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MP"> </a>  MP</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MQ"> </a>  MQ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MR"> </a>  MR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MS"> </a>  MS</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MT"> </a>  MT</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MU"> </a>  MU</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MV"> </a>  MV</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MW"> </a>  MW</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MX"> </a>  MX</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MY"> </a>  MY</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-MZ"> </a>  MZ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NA"> </a>  NA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NC"> </a>  NC</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NE"> </a>  NE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NF"> </a>  NF</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NG"> </a>  NG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NI"> </a>  NI</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NL"> </a>  NL</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NO"> </a>  NO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NP"> </a>  NP</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NR"> </a>  NR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NU"> </a>  NU</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-NZ"> </a>  NZ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-OM"> </a>  OM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PA"> </a>  PA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PE"> </a>  PE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PF"> </a>  PF</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PG"> </a>  PG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PH"> </a>  PH</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PK"> </a>  PK</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PL"> </a>  PL</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PM"> </a>  PM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PN"> </a>  PN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PR"> </a>  PR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PS"> </a>  PS</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PT"> </a>  PT</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PW"> </a>  PW</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-PY"> </a>  PY</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-QA"> </a>  QA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-RE"> </a>  RE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-RO"> </a>  RO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-RS"> </a>  RS</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-RU"> </a>  RU</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-RW"> </a>  RW</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SA"> </a>  SA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SB"> </a>  SB</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SC"> </a>  SC</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SD"> </a>  SD</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SE"> </a>  SE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SG"> </a>  SG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SH"> </a>  SH</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SI"> </a>  SI</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SJ"> </a>  SJ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SK"> </a>  SK</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SL"> </a>  SL</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SM"> </a>  SM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SN"> </a>  SN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SO"> </a>  SO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SR"> </a>  SR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SS"> </a>  SS</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-ST"> </a>  ST</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SV"> </a>  SV</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SX"> </a>  SX</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SY"> </a>  SY</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-SZ"> </a>  SZ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TC"> </a>  TC</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TD"> </a>  TD</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TF"> </a>  TF</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TG"> </a>  TG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TH"> </a>  TH</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TJ"> </a>  TJ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TK"> </a>  TK</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TL"> </a>  TL</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TM"> </a>  TM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TN"> </a>  TN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TO"> </a>  TO</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TR"> </a>  TR</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TT"> </a>  TT</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TV"> </a>  TV</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TW"> </a>  TW</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-TZ"> </a>  TZ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-UA"> </a>  UA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-UG"> </a>  UG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-UM"> </a>  UM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-US"> </a>  US</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-UY"> </a>  UY</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-UZ"> </a>  UZ</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-VA"> </a>  VA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-VC"> </a>  VC</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-VE"> </a>  VE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-VG"> </a>  VG</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-VI"> </a>  VI</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-VN"> </a>  VN</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-VU"> </a>  VU</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-WF"> </a>  WF</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-WS"> </a>  WS</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-YE"> </a>  YE</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-YT"> </a>  YT</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-ZA"> </a>  ZA</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-ZM"> </a>  ZM</td><td>urn:iso:std:iso:3166</td><td/></tr><tr><td style="white-space:nowrap"><a name="urn-iso-std-iso-3166-ZW"> </a>  ZW</td><td>urn:iso:std:iso:3166</td><td/></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ISO3166Part1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>urn:iso:std:iso:3166</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="urn:iso:std:iso:3166"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:1.0.3166.1"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="ISO3166Part1"/>
+  <title value="ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-08-23T00:00:00-00:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations."/>
+  <copyright value="ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: https://www.iso.org/iso-3166-country-codes.html"/>
+  <caseSensitive value="true"/>
+  <content value="not-present"/>
+</CodeSystem>

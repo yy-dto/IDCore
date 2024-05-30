@@ -8,10 +8,12 @@ Description: "ID Core Patient profile"
 * ^identifier[=].use = #official
 * ^identifier[+].system = "https://fhir.kemkes.go.id/id/nik"
 * ^identifier[=].use = #official
+* ^identifier[+].system = "https://fhir.kemkes.go.id/id/nik-ibu"
+* ^identifier[=].use = #official
+* ^identifier[+].system = "https://fhir.kemkes.go.id/id/passport"
+* ^identifier[=].use = #official
 * ^extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/citizenshipStatus"
 * address ^extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode"
-
-* active 1..1
 * address.city 1..1
 * address.country 1..1
 * address.line 1..*

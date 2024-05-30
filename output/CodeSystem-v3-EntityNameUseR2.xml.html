@@ -1,0 +1,744 @@
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>EntityNameUseR2 - XML Representation - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.2261"}
+    h3,h4,h5,h6{--heading-prefix:"5.2261"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>EntityNameUseR2</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+<!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-v3-EntityNameUseR2.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-EntityNameUseR2.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-EntityNameUseR2.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: EntityNameUseR2 - XML Representation</h2>
+
+  <table class="colsi">
+    <tr>
+
+      <td colspan="2">
+        
+          Active
+          
+            as of 2019-03-20
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-v3-EntityNameUseR2.xml" no-download="true">Raw xml</a> | <a href="CodeSystem-v3-EntityNameUseR2.xml" download>Download</a></p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <pre class="xml" style="white-space: pre; text-wrap: nowrap;"><code style="white-space: pre; text-wrap: nowrap;">
+
+&lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a> xmlns=&quot;http://hl7.org/fhir&quot;&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;v3-EntityNameUseR2&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.language">language</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;en&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;generated&quot;/&gt;
+    &lt;div xml:lang=&quot;en&quot; xmlns=&quot;http://www.w3.org/1999/xhtml&quot; lang=&quot;en&quot;&gt;&lt;p&gt;&lt;b&gt;Properties&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;This code system  defines the following properties for its concepts&lt;/b&gt;&lt;/p&gt;&lt;table class=&quot;grid&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;URI&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Specializes&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Coding&lt;/td&gt;&lt;td&gt;The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;Generalizes&lt;/td&gt;&lt;td/&gt;&lt;td&gt;Coding&lt;/td&gt;&lt;td&gt;Inverse of Specializes.  Only included as a derived relationship.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;internalId&lt;/td&gt;&lt;td&gt;http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id&lt;/td&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;The internal identifier for the concept in the HL7 Access database repository.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;notSelectable&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#notSelectable&lt;/td&gt;&lt;td&gt;boolean&lt;/td&gt;&lt;td&gt;Indicates that the code is abstract - only intended to be used as a selector for other concepts&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;status&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#status&lt;/td&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;Designation of a concept's state. Normally is not populated unless the state is retired.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;synonymCode&lt;/td&gt;&lt;td&gt;http://hl7.org/fhir/concept-properties#synonym&lt;/td&gt;&lt;td&gt;code&lt;/td&gt;&lt;td&gt;An additional concept code that was also attributed to a concept&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;&lt;b&gt;Concepts&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2&lt;/code&gt; defines the following codes in a Is-A heirarchy:&lt;/p&gt;&lt;table class=&quot;codes&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Lvl&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;internalId&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Not Selectable&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;status&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;synonymCode&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;Assumed&lt;a name=&quot;v3-EntityNameUseR2-Assumed&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Assumed&lt;/td&gt;&lt;td&gt;**Description:**A name that a person has assumed or has been assumed to them.&lt;/td&gt;&lt;td&gt;22772&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  A&lt;a name=&quot;v3-EntityNameUseR2-A&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;business name&lt;/td&gt;&lt;td&gt;**Description:**A name used in a Professional or Business context . Examples: Continuing to use a maiden name in a professional context, or using a stage performing name (some of these names are also pseudonyms)&lt;/td&gt;&lt;td&gt;22776&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  ANON&lt;a name=&quot;v3-EntityNameUseR2-ANON&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Anonymous&lt;/td&gt;&lt;td&gt;**Description:**Anonymous assigned name (used to protect a persons identity for privacy reasons)&lt;/td&gt;&lt;td&gt;22775&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  I&lt;a name=&quot;v3-EntityNameUseR2-I&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Indigenous/Tribal&lt;/td&gt;&lt;td&gt;**Description:**e.g . Chief Red Cloud&lt;/td&gt;&lt;td&gt;22773&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  P&lt;a name=&quot;v3-EntityNameUseR2-P&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Other/Pseudonym/Alias&lt;/td&gt;&lt;td&gt;**Description:**A non-official name by which the person is sometimes known. (This may also be used to record informal names such as a nickname)&lt;/td&gt;&lt;td&gt;22774&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  R&lt;a name=&quot;v3-EntityNameUseR2-R&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;religious&lt;/td&gt;&lt;td&gt;**Description:**A name assumed as part of a religious vocation . e.g . Sister Mary Francis, Brother John&lt;/td&gt;&lt;td&gt;22777&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;C&lt;a name=&quot;v3-EntityNameUseR2-C&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;customary&lt;/td&gt;&lt;td&gt;**Description:**Known as/conventional/the one you normally use&lt;/td&gt;&lt;td&gt;22769&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td&gt;N&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background-color: #ffeeee&quot;&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;N&lt;a name=&quot;v3-EntityNameUseR2-N&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;customary&lt;/td&gt;&lt;td&gt;**Description:**Known as/conventional/the one you normally use&lt;/td&gt;&lt;td&gt;22769&lt;/td&gt;&lt;td/&gt;&lt;td&gt;retired&lt;/td&gt;&lt;td&gt;C&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;M&lt;a name=&quot;v3-EntityNameUseR2-M&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;maiden name&lt;/td&gt;&lt;td&gt;**Description:**A name used prior to marriage.Note that marriage naming customs vary greatly around the world. This name use is for use by applications that collect and store maiden names. Though the concept of maiden name is often gender specific, the use of this term is not gender specific. The use of this term does not imply any particular history for a person's name, nor should the maiden name be determined algorithmically&lt;/td&gt;&lt;td&gt;22780&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;NameRepresentationUse&lt;a name=&quot;v3-EntityNameUseR2-NameRepresentationUse&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;NameRepresentationUse&lt;/td&gt;&lt;td&gt;**Description:**Identifies the different representations of a name . The representation may affect how the name is used . (E.g . use of Ideographic for formal communications.)&lt;/td&gt;&lt;td&gt;22765&lt;/td&gt;&lt;td&gt;true&lt;/td&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  ABC&lt;a name=&quot;v3-EntityNameUseR2-ABC&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;alphabetic&lt;/td&gt;&lt;td&gt;**Description:**Alphabetic transcription of name in latin alphabet (Japanese: romaji)&lt;/td&gt;&lt;td&gt;22766&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  IDE&lt;a name=&quot;v3-EntityNameUseR2-IDE&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ideographic&lt;/td&gt;&lt;td&gt;**Description:**Ideographic representation of name (e.g., Japanese kanji, Chinese characters)&lt;/td&gt;&lt;td&gt;22767&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  SYL&lt;a name=&quot;v3-EntityNameUseR2-SYL&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;syllabic&lt;/td&gt;&lt;td&gt;**Description:**Syllabic transcription of name (e.g., Japanese kana, Korean hangul)&lt;/td&gt;&lt;td&gt;22768&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;OLD&lt;a name=&quot;v3-EntityNameUseR2-OLD&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;no longer in use&lt;/td&gt;&lt;td&gt;**Description:**This name is no longer in use (note: Names may also carry valid time ranges . This code is used to cover the situations where it is known that the name is no longer valid, but no particular time range for its use is known)&lt;/td&gt;&lt;td&gt;22778&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;2&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;  DN&lt;a name=&quot;v3-EntityNameUseR2-DN&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;do not use&lt;/td&gt;&lt;td&gt;**Description:**This name should no longer be used when interacting with the person (i.e . in addition to no longer being used, the name should not be even mentioned when interacting with the person)Note: applications are not required to compare names labeled &amp;quot;Do Not Use&amp;quot; and other names in order to eliminate name parts that are common between the other name and a name labeled &amp;quot;Do Not Use&amp;quot;.&lt;/td&gt;&lt;td&gt;22779&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;OR&lt;a name=&quot;v3-EntityNameUseR2-OR&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;official registry name&lt;/td&gt;&lt;td&gt;**Description:**The formal name as registered in an official (government) registry, but which name might not be commonly used . May correspond to the concept of legal name&lt;/td&gt;&lt;td&gt;22770&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;PHON&lt;a name=&quot;v3-EntityNameUseR2-PHON&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;phonetic&lt;/td&gt;&lt;td&gt;**Description:**The name as understood by the data enterer, i.e. a close approximation of a phonetic spelling of the name, not based on a phonetic algorithm.&lt;/td&gt;&lt;td&gt;22782&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;SRCH&lt;a name=&quot;v3-EntityNameUseR2-SRCH&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;search&lt;/td&gt;&lt;td&gt;**Description:**A name intended for use in searching or matching. This is used when the name is incomplete and contains enough details for search matching, but not enough for other uses.&lt;/td&gt;&lt;td&gt;22781&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;1&lt;/td&gt;&lt;td style=&quot;white-space:nowrap&quot;&gt;T&lt;a name=&quot;v3-EntityNameUseR2-T&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;temporary&lt;/td&gt;&lt;td&gt;**Description:**A temporary name. Note that a name valid time can provide more detailed information. This may also be used for temporary names assigned at birth or in emergency situations.&lt;/td&gt;&lt;td&gt;22771&lt;/td&gt;&lt;td/&gt;&lt;td&gt;active&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/v3-EntityNameUseR2&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.identifier">identifier</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;urn:ietf:rfc:3986&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;urn:oid:2.16.840.1.113883.5.1120&quot;/&gt;
+  &lt;/identifier&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.1.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;EntityNameUseR2&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;EntityNameUseR2&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2019-03-20&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;SatuSehat&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;SatuSehat&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;url&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;https://satusehat.kemkes.go.id/&quot;/&gt;
+    &lt;/telecom&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;email&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;fhir@dto.kemkes.go.id&quot;/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;**Description:**A set of codes advising a system or user which name in a set of names to select for a given purpose.&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.copyright">copyright</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>=&quot;This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.hierarchyMeaning">hierarchyMeaning</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;is-a&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;complete&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;antisymmetric&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;transitive&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;irreflexive&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Specializes&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Generalizes&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Specializes&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Coding&quot;/&gt;
+  &lt;/property&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;antisymmetric&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;transitive&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;irreflexive&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Generalizes&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.extension">extension</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>=&quot;http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName&quot;&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueString</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Specializes&quot;/&gt;
+    &lt;/extension&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Generalizes&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Inverse of Specializes.  Only included as a derived relationship.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Coding&quot;/&gt;
+  &lt;/property&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a>
+         <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;The internal identifier for the concept in the HL7 Access database repository.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;code&quot;/&gt;
+  &lt;/property&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;notSelectable&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/concept-properties#notSelectable&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indicates that the code is abstract - only intended to be used as a selector for other concepts&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;boolean&quot;/&gt;
+  &lt;/property&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/concept-properties#status&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Designation of a concept's state. Normally is not populated unless the state is retired.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;code&quot;/&gt;
+  &lt;/property&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property">property</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;synonymCode&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.uri">uri</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;http://hl7.org/fhir/concept-properties#synonym&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.description">description</a>
+                 <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;An additional concept code that was also attributed to a concept&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.property.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;code&quot;/&gt;
+  &lt;/property&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;Assumed&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Assumed&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**A name that a person has assumed or has been assumed to them.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;notSelectable&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22772&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;A&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;business name&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**A name used in a Professional or Business context . Examples: Continuing to use a maiden name in a professional context, or using a stage performing name (some of these names are also pseudonyms)&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+      &lt;/property&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22776&quot;/&gt;
+      &lt;/property&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ANON&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Anonymous&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**Anonymous assigned name (used to protect a persons identity for privacy reasons)&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+      &lt;/property&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22775&quot;/&gt;
+      &lt;/property&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;I&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Indigenous/Tribal&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**e.g . Chief Red Cloud&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+      &lt;/property&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22773&quot;/&gt;
+      &lt;/property&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;P&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Other/Pseudonym/Alias&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**A non-official name by which the person is sometimes known. (This may also be used to record informal names such as a nickname)&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+      &lt;/property&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22774&quot;/&gt;
+      &lt;/property&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;R&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;religious&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**A name assumed as part of a religious vocation . e.g . Sister Mary Francis, Brother John&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+      &lt;/property&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22777&quot;/&gt;
+      &lt;/property&gt;
+    &lt;/concept&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;C&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;customary&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**Known as/conventional/the one you normally use&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;synonymCode&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22769&quot;/&gt;
+    &lt;/property&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;N&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;customary&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**Known as/conventional/the one you normally use&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;retired&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;synonymCode&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;C&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22769&quot;/&gt;
+    &lt;/property&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;M&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;maiden name&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**A name used prior to marriage.Note that marriage naming customs vary greatly around the world. This name use is for use by applications that collect and store maiden names. Though the concept of maiden name is often gender specific, the use of this term is not gender specific. The use of this term does not imply any particular history for a person's name, nor should the maiden name be determined algorithmically&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22780&quot;/&gt;
+    &lt;/property&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;NameRepresentationUse&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;NameRepresentationUse&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**Identifies the different representations of a name . The representation may affect how the name is used . (E.g . use of Ideographic for formal communications.)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;notSelectable&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueBoolean</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22765&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;ABC&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;alphabetic&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**Alphabetic transcription of name in latin alphabet (Japanese: romaji)&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+      &lt;/property&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22766&quot;/&gt;
+      &lt;/property&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;IDE&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;ideographic&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**Ideographic representation of name (e.g., Japanese kanji, Chinese characters)&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+      &lt;/property&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22767&quot;/&gt;
+      &lt;/property&gt;
+    &lt;/concept&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SYL&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;syllabic&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**Syllabic transcription of name (e.g., Japanese kana, Korean hangul)&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+      &lt;/property&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22768&quot;/&gt;
+      &lt;/property&gt;
+    &lt;/concept&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;OLD&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;no longer in use&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**This name is no longer in use (note: Names may also carry valid time ranges . This code is used to cover the situations where it is known that the name is no longer valid, but no particular time range for its use is known)&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22778&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.concept">concept</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;DN&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;do not use&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                  <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**This name should no longer be used when interacting with the person (i.e . in addition to no longer being used, the name should not be even mentioned when interacting with the person)Note: applications are not required to compare names labeled &amp;quot;Do Not Use&amp;quot; and other names in order to eliminate name parts that are common between the other name and a name labeled &amp;quot;Do Not Use&amp;quot;.&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+      &lt;/property&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+        &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22779&quot;/&gt;
+      &lt;/property&gt;
+    &lt;/concept&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;OR&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;official registry name&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**The formal name as registered in an official (government) registry, but which name might not be commonly used . May correspond to the concept of legal name&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22770&quot;/&gt;
+    &lt;/property&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;PHON&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;phonetic&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**The name as understood by the data enterer, i.e. a close approximation of a phonetic spelling of the name, not based on a phonetic algorithm.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22782&quot;/&gt;
+    &lt;/property&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;SRCH&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;search&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**A name intended for use in searching or matching. This is used when the name is incomplete and contains enough details for search matching, but not enough for other uses.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22781&quot;/&gt;
+    &lt;/property&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;T&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;temporary&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;**Description:**A temporary name. Note that a name valid time can provide more detailed information. This may also be used for temporary names assigned at birth or in emergency situations.&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;status&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
+    &lt;/property&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">property</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;internalId&quot;/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">valueCode</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;22771&quot;/&gt;
+    &lt;/property&gt;
+  &lt;/concept&gt;
+&lt;/CodeSystem&gt;</code></pre>
+
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

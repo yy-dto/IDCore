@@ -1,0 +1,637 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>SecurityObservationValue - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.1717"}
+    h3,h4,h5,h6{--heading-prefix:"5.1717"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>SecurityObservationValue</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-v3-SecurityObservationValue.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-SecurityObservationValue.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-SecurityObservationValue.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: SecurityObservationValue
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/ValueSet/v3-SecurityObservationValue<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-SecurityObservationValue"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-SecurityObservationValue|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2014-03-26
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">SecurityObservationValue</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.1.11.20469
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Observation values used to indicate security observation metadata.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p>This value set includes codes based on the following rules:</p>
+<ul><li>Include codes from<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html"><code>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</code></a> where concept  is-a <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SecurityObservationValue">_SecurityObservationValue</a></li>
+<li>Import all the codes that are contained in <a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-SecurityClassificationObservationValue.html">SecurityClassificationObservationValue</a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on:</p><ul><li><a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html">codesystem Confidentiality v3.0.0 (CodeSystem)</a></li><li><a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html">codesystem ObservationValue v3.0.0 (CodeSystem)</a></li><li><a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-Confidentiality.html">valueset Confidentiality v3.0.0 (ValueSet)</a></li><li><a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-SecurityClassificationObservationValue.html">valueset SecurityClassificationObservationValue v3.0.0 (ValueSet)</a></li></ul></div><p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has 20 codes in it. In order to keep the publication size manageable, only a selection ({1} codes) of the whole set of codes is shown.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Inactive</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SecurityObservationValue"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SecurityObservationValue" title="This code is not selectable (''Abstract'')"><i>_SecurityObservationValue</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>SecurityObservationValue</td><td/><td><div><p>Observation values used to indicate security observation metadata.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECCATOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECCATOBV" title="This code is not selectable (''Abstract'')"><i>_SECCATOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>security category</td><td/><td><div><p>Abstract security observation values used to indicate security category metadata.</p>
+<p><strong>Examples:</strong> Codes conveying:</p>
+<ul>
+<li>privacy law</li>
+<li>information sensitivity</li>
+<li>consent directive types</li>
+</ul>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECCLASSOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECCLASSOBV" title="This code is not selectable (''Abstract'')"><i>_SECCLASSOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>security classification</td><td/><td><div><p>Abstract security observation values used to indicate security classification metadata.</p>
+<p><strong>Examples:</strong> Confidentiality Codes</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECCONOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECCONOBV" title="This code is not selectable (''Abstract'')"><i>_SECCONOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>security control</td><td/><td><div><p>Abstract security observation values used to indicate security control metadata.</p>
+<p><strong>Examples:</strong> Codes conveying dissemination controls, information handling caveats, purpose of use, refrain policies, and obligations to which custodians and information receivers must comply.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECINTOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECINTOBV" title="This code is not selectable (''Abstract'')"><i>_SECINTOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>security integrity</td><td/><td><div><p>Abstract security observation values used to indicate security integrity metadata.</p>
+<p><strong>Examples:</strong> Codes conveying integrity status, integrity confidence, and provenance.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECALTINTOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECALTINTOBV" title="This code is not selectable (''Abstract'')"><i>_SECALTINTOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>alteration integrity</td><td/><td><div><p>Abstract security metadata observation values used to indicate mechanism used for authorized alteration of an IT resource (data, information object, service, or system capability)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-ABSTRED"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-ABSTRED">ABSTRED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>abstracted</td><td/><td><div><p>Security metadata observation values used to indicate the use of a more abstract version of the content, e.g., replacing exact value of an age or date field with a range, or remove the left digits of a credit card number or SSN.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-AGGRED"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-AGGRED">AGGRED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>aggregated</td><td/><td><div><p>Security metadata observation values used to indicate the use of an algorithmic combination of actual values with the result of an aggregate function, e.g., average, sum, or count in order to limit disclosure of an IT resource (data, information object, service, or system capability) to the minimum necessary.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-ANONYED"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-ANONYED">ANONYED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>anonymized</td><td/><td><div><p>Security metadata observation value conveying the alteration integrity of an IT resource (data, information object, service, or system capability) by used to indicate the mechanism by which software systems can strip portions of the resource that could allow the identification of the source of the information or the information subject. No key to relink the data is retained.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-MAPPED"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-MAPPED">MAPPED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>mapped</td><td/><td><div><p>Security metadata observation value used to indicate that the IT resource semantic content has been transformed from one encoding to another.</p>
+<p><em>Usage Note:</em> &quot;MAP&quot; code does not indicate the semantic fidelity of the transformed content.</p>
+<p>To indicate semantic fidelity for maps of HL7 to other code systems, this security alteration integrity observation may be further specified using an Act valued with Value Set: MapRelationship (2.16.840.1.113883.1.11.11052).</p>
+<p>Semantic fidelity of the mapped IT Resource may also be indicated using a SecurityIntegrityConfidenceObservation.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-MASKED"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-MASKED">MASKED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>masked</td><td/><td><div><p>Security metadata observation value conveying the alteration integrity of an IT resource (data, information object, service, or system capability) by indicating the mechanism by which software systems can make data unintelligible (that is, as unreadable and unusable by algorithmically transforming plaintext into ciphertext) such that it can only be accessed or used by authorized users. An authorized user may be provided a key to decrypt per license or &quot;shared secret&quot;.</p>
+<p><em>Usage Note:</em> &quot;MASKED&quot; may be used, per applicable policy, as a flag to indicate to a user or receiver that some portion of an IT resource has been further encrypted, and may be accessed only by an authorized user or receiver to which a decryption key is provided.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-PSEUDED"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-PSEUDED">PSEUDED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>pseudonymized</td><td/><td><div><p>Security metadata observation value conveying the alteration integrity of an IT resource (data, information object, service, or system capability), by indicating the mechanism by which software systems can strip portions of the resource that could allow the identification of the source of the information or the information subject. Custodian may retain a key to relink data necessary to reidentify the information subject.</p>
+<p><em>Rationale:</em> Personal data which has been processed to make it impossible to know whose data it is. Used particularly for secondary use of health data. In some cases, it may be possible for authorized individuals to restore the identity of the individual, e.g.,for public health case management. Based on ISO/TS 25237:2008 Health informatics-Pseudonymization</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-REDACTED"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-REDACTED">REDACTED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>redacted</td><td/><td><div><p>Security metadata observation value used to indicate the mechanism by which software systems can filter an IT resource (data, information object, service, or system capability) to remove any portion of the resource that is not authorized to be access, used, or disclosed.</p>
+<p><em>Usage Note:</em> &quot;REDACTED&quot; may be used, per applicable policy, as a flag to indicate to a user or receiver that some portion of an IT resource has filtered and not included in the content accessed or received.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-SUBSETTED"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-SUBSETTED">SUBSETTED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>subsetted</td><td/><td><div><p>Metadata observation used to indicate that some information has been removed from the source object when the view this object contains was constructed because of configuration options when the view was created. The content may not be suitable for use as the basis of a record update</p>
+<p><em>Usage Note:</em> This is not suitable to be used when information is removed for security reasons - see the code REDACTED for this use.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-SYNTAC"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-SYNTAC">SYNTAC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>syntactic transform</td><td/><td><div><p>Security metadata observation value used to indicate that the IT resource syntax has been transformed from one syntactical representation to another.</p>
+<p><em>Usage Note:</em> &quot;SYNTAC&quot; code does not indicate the syntactical correctness of the syntactically transformed IT resource.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-TRSLT"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-TRSLT">TRSLT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>translated</td><td/><td><div><p>Security metadata observation value used to indicate that the IT resource has been translated from one human language to another.</p>
+<p><em>Usage Note:</em> &quot;TRSLT&quot; does not indicate the fidelity of the translation or the languages translated.</p>
+<p>The fidelity of the IT Resource translation may be indicated using a SecurityIntegrityConfidenceObservation.</p>
+<p>To indicate languages, use the Value Set:HumanLanguage (2.16.840.1.113883.1.11.11526)</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-VERSIONED"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-VERSIONED">VERSIONED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>versioned</td><td/><td><div><p>Security metadata observation value conveying the alteration integrity of an IT resource (data, information object, service, or system capability) which indicates that the resource only retains versions of an IT resource for access and use per applicable policy</p>
+<p><em>Usage Note:</em> When this code is used, expectation is that the system has removed historical versions of the data that falls outside the time period deemed to be the effective time of the applicable version.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECDATINTOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECDATINTOBV" title="This code is not selectable (''Abstract'')"><i>_SECDATINTOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>data integrity</td><td/><td><div><p>Abstract security observation values used to indicate data integrity metadata.</p>
+<p><strong>Examples:</strong> Codes conveying the mechanism used to preserve the accuracy and consistency of an IT resource such as a digital signature and a cryptographic hash function.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-CRYTOHASH"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-CRYTOHASH">CRYTOHASH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>cryptographic hash function</td><td/><td><div><p>Security metadata observation value used to indicate the mechanism by which software systems can establish that data was not modified in transit.</p>
+<p><em>Rationale:</em> This definition is intended to align with the ISO 22600-2 3.3.19 definition of cryptographic checkvalue: Information which is derived by performing a cryptographic transformation (see cryptography) on the data unit. The derivation of the checkvalue may be performed in one or more steps and is a result of a mathematical function of the key and a data unit. It is usually used to check the integrity of a data unit.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>SHA-1</li>
+<li>SHA-2 (Secure Hash Algorithm)</li>
+</ul>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-DIGSIG"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-DIGSIG">DIGSIG</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>digital signature</td><td/><td><div><p>Security metadata observation value used to indicate the mechanism by which software systems use digital signature to establish that data has not been modified.</p>
+<p><em>Rationale:</em> This definition is intended to align with the ISO 22600-2 3.3.26 definition of digital signature: Data appended to, or a cryptographic transformation (see cryptography) of, a data unit that allows a recipient of the data unit to prove the source and integrity of the data unit and protect against forgery e.g., by the recipient.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECINTCONOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECINTCONOBV" title="This code is not selectable (''Abstract'')"><i>_SECINTCONOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>integrity confidence</td><td/><td><div><p>Abstract security observation value used to indicate integrity confidence metadata.</p>
+<p><strong>Examples:</strong> Codes conveying the level of reliability and trustworthiness of an IT resource.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-HRELIABLE"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-HRELIABLE">HRELIABLE</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>highly reliable</td><td/><td><div><p>Security metadata observation value used to indicate that the veracity or trustworthiness of an IT resource (data, information object, service, or system capability) for a specified purpose of use is perceived to be or deemed by policy to be very high.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-RELIABLE"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-RELIABLE">RELIABLE</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>reliable</td><td/><td><div><p>Security metadata observation value used to indicate that the veracity or trustworthiness of an IT resource (data, information object, service, or system capability) for a specified purpose of use is perceived to be or deemed by policy to be adequate.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-UNCERTREL"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-UNCERTREL">UNCERTREL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>uncertain reliability</td><td/><td><div><p>Security metadata observation value used to indicate that the veracity or trustworthiness of an IT resource (data, information object, service, or system capability) for a specified purpose of use is perceived to be or deemed by policy to be uncertain.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-UNRELIABLE"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-UNRELIABLE">UNRELIABLE</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>unreliable</td><td/><td><div><p>Security metadata observation value used to indicate that the veracity or trustworthiness of an IT resource (data, information object, service, or system capability) for a specified purpose of use is perceived to be or deemed by policy to be inadequate.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECINTPRVOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECINTPRVOBV" title="This code is not selectable (''Abstract'')"><i>_SECINTPRVOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>provenance</td><td/><td><div><p>Abstract security metadata observation value used to indicate the provenance of an IT resource (data, information object, service, or system capability).</p>
+<p><strong>Examples:</strong> Codes conveying the provenance metadata about the entity reporting an IT resource.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECINTPRVABOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECINTPRVABOBV" title="This code is not selectable (''Abstract'')"><i>_SECINTPRVABOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>provenance asserted by</td><td/><td><div><p>Abstract security provenance metadata observation value used to indicate the entity that asserted an IT resource (data, information object, service, or system capability).</p>
+<p><strong>Examples:</strong> Codes conveying the provenance metadata about the entity asserting the resource.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-CLINAST"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-CLINAST">CLINAST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>clinician asserted</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was asserted by a clinician.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-DEVAST"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-DEVAST">DEVAST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>device asserted</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was asserted by a device.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-HCPAST"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-HCPAST">HCPAST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>healthcare professional asserted</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was asserted by a healthcare professional.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-PACQAST"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-PACQAST">PACQAST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>patient acquaintance asserted</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was asserted by a patient acquaintance.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-PATAST"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-PATAST">PATAST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>patient asserted</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was asserted by a patient.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-PAYAST"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-PAYAST">PAYAST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>payer asserted</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was asserted by a payer.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-PROAST"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-PROAST">PROAST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>professional asserted</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was asserted by a professional.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-SDMAST"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-SDMAST">SDMAST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>substitute decision maker asserted</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was asserted by a substitute decision maker.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECINTPRVRBOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECINTPRVRBOBV" title="This code is not selectable (''Abstract'')"><i>_SECINTPRVRBOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>provenance reported by</td><td/><td><div><p>Abstract security provenance metadata observation value used to indicate the entity that reported the resource (data, information object, service, or system capability).</p>
+<p><strong>Examples:</strong> Codes conveying the provenance metadata about the entity reporting an IT resource.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-CLINRPT"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-CLINRPT">CLINRPT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>clinician reported</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was reported by a clinician.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-DEVRPT"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-DEVRPT">DEVRPT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>device reported</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was reported by a device.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-HCPRPT"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-HCPRPT">HCPRPT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>healthcare professional reported</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was reported by a healthcare professional.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-PACQRPT"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-PACQRPT">PACQRPT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>patient acquaintance reported</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was reported by a patient acquaintance.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-PATRPT"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-PATRPT">PATRPT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>patient reported</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was reported by a patient.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-PAYRPT"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-PAYRPT">PAYRPT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>payer reported</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was reported by a payer.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-PRORPT"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-PRORPT">PRORPT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>professional reported</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was reported by a professional.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-SDMRPT"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-SDMRPT">SDMRPT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>substitute decision maker reported</td><td/><td><div><p>Security provenance metadata observation value used to indicate that an IT resource (data, information object, service, or system capability) was reported by a substitute decision maker.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue--SECINTSTOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-_SECINTSTOBV" title="This code is not selectable (''Abstract'')"><i>_SECINTSTOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>integrity status</td><td/><td><div><p>Abstract security observation values used to indicate integrity status metadata.</p>
+<p><strong>Examples:</strong> Codes, such as those in the HL7 DocumentClassification code system conveying the workflow status of resource as authenticated, legally authenticated, and in progress.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-SECTRSTOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-SECTRSTOBV" title="This code is not selectable (''Abstract'')"><i>SECTRSTOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>security trust observation</td><td/><td><div><p>Observation value used to indicate aspects of trust applicable to an IT resource (data, information object, service, or system capability).</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-TRSTACCRDOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-TRSTACCRDOBV">TRSTACCRDOBV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>trust accreditation observation</td><td/><td><div><p>Values for security trust accreditation metadata observation made about the formal declaration by an authority or neutral third party that validates the technical, security, trust, and business practice conformance of Trust Agents to facilitate security, interoperability, and trust among participants within a security domain or trust framework.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-TRSTAGREOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-TRSTAGREOBV">TRSTAGREOBV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>trust agreement observation</td><td/><td><div><p>Values for security trust agreement metadata observation made about privacy and security requirements with which a security domain must comply. [ISO IEC 10181-1] [ISO IEC 10181-1]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-TRSTCERTOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-TRSTCERTOBV">TRSTCERTOBV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>trust certificate observation</td><td/><td><div><p>Values for security trust certificate metadata observation made about a set of security-relevant data issued by a security authority or trusted third party, together with security information which is used to provide the integrity and data origin authentication services for an IT resource (data, information object, service, or system capability). [Based on ISO IEC 10181-1]</p>
+<p>For example, a Certificate Policy (CP), which is a named set of rules that indicates the applicability of a certificate to a particular community and/or class of application with common security requirements. A particular Certificate Policy might indicate the applicability of a type of certificate to the authentication of electronic data interchange transactions for the trading of goods within a given price range. Another example is Cross Certification with Federal Bridge.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-TRSTFWKOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-TRSTFWKOBV" title="This code is not selectable (''Abstract'')"><i>TRSTFWKOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>none supplied 5</td><td/><td><div><p>Values for security trust framework metadata observation made about a complete set of contracts, regulations or commitments that enable participating actors to rely on certain assertions by other actors to fulfill their information security requirements. [Kantara Initiative]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-TRSTLOAOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-TRSTLOAOBV" title="This code is not selectable (''Abstract'')"><i>TRSTLOAOBV</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>trust assurance observation</td><td/><td><div><p>Values for security trust assurance metadata observation made about the digital quality or reliability of a trust assertion, activity, capability, information exchange, mechanism, process, or protocol.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAN"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAN" title="This code is not selectable (''Abstract'')"><i>LOAAN</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>authentication level of assurance value</td><td/><td><div><p>The value assigned as the indicator of the digital quality or reliability of the verification and validation process used to verify the claimed identity of an entity by securely associating an identifier and its authenticator. [Based on ISO 7498-2]</p>
+<p>For example, the degree of confidence in the vetting process used to establish the identity of the individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued. [OMB M-04-04 E-Authentication Guidance for Federal Agencies]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAN1"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAN1">LOAAN1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>low authentication level of assurance</td><td/><td><div><p>Indicator of low digital quality or reliability of the digital reliability of the verification and validation process used to verify the claimed identity of an entity by securely associating an identifier and its authenticator. [Based on ISO 7498-2]</p>
+<p>The degree of confidence in the vetting process used to establish the identity of the individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued. [OMB M-04-04 E-Authentication Guidance for Federal Agencies]</p>
+<p>Low authentication level of assurance indicates that the relying party may have little or no confidence in the asserted identity's validity. Level 1 requires little or no confidence in the asserted identity. No identity proofing is required at this level, but the authentication mechanism should provide some assurance that the same claimant is accessing the protected transaction or data. A wide range of available authentication technologies can be employed and any of the token methods of Levels 2, 3, or 4, including Personal Identification Numbers (PINs), may be used. To be authenticated, the claimant must prove control of the token through a secure authentication protocol. At Level 1, long-term shared authentication secrets may be revealed to verifiers. Assertions issued about claimants as a result of a successful authentication are either cryptographically authenticated by relying parties (using approved methods) or are obtained directly from a trusted party via a secure authentication protocol. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAN2"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAN2">LOAAN2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>basic authentication level of assurance</td><td/><td><div><p>Indicator of basic digital quality or reliability of the digital reliability of the verification and validation process used to verify the claimed identity of an entity by securely associating an identifier and its authenticator. [Based on ISO 7498-2]</p>
+<p>The degree of confidence in the vetting process used to establish the identity of the individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued. [OMB M-04-04 E-Authentication Guidance for Federal Agencies]</p>
+<p>Basic authentication level of assurance indicates that the relying party may have some confidence in the asserted identity's validity. Level 2 requires confidence that the asserted identity is accurate. Level 2 provides for single-factor remote network authentication, including identity-proofing requirements for presentation of identifying materials or information. A wide range of available authentication technologies can be employed, including any of the token methods of Levels 3 or 4, as well as passwords. Successful authentication requires that the claimant prove through a secure authentication protocol that the claimant controls the token. Eavesdropper, replay, and online guessing attacks are prevented. Long-term shared authentication secrets, if used, are never revealed to any party except the claimant and verifiers operated by the CSP; however, session (temporary) shared secrets may be provided to independent verifiers by the CSP. Approved cryptographic techniques are required. Assertions issued about claimants as a result of a successful authentication are either cryptographically authenticated by relying parties (using approved methods) or are obtained directly from a trusted party via a secure authentication protocol. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAN3"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAN3">LOAAN3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>medium authentication level of assurance</td><td/><td><div><p>Indicator of medium digital quality or reliability of the digital reliability of verification and validation of the process used to verify the claimed identity of an entity by securely associating an identifier and its authenticator. [Based on ISO 7498-2]</p>
+<p>The degree of confidence in the vetting process used to establish the identity of the individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued. [OMB M-04-04 E-Authentication Guidance for Federal Agencies]</p>
+<p>Medium authentication level of assurance indicates that the relying party may have high confidence in the asserted identity's validity. Level 3 is appropriate for transactions that need high confidence in the accuracy of the asserted identity. Level 3 provides multifactor remote network authentication. At this level, identity-proofing procedures require verification of identifying materials and information. Authentication is based on proof of possession of a key or password through a cryptographic protocol. Cryptographic strength mechanisms should protect the primary authentication token (a cryptographic key) against compromise by the protocol threats, including eavesdropper, replay, online guessing, verifier impersonation, and man-in-the-middle attacks. A minimum of two authentication factors is required. Three kinds of tokens may be used:</p>
+<ul>
+<li>&quot;soft&quot; cryptographic token, which has the key stored on a general-purpose computer,</li>
+<li>&quot;hard&quot; cryptographic token, which has the key stored on a special hardware device, and</li>
+<li>&quot;one-time password&quot; device token, which has symmetric key stored on a personal hardware device that is a cryptographic module validated at FIPS 140-2 Level 1 or higher. Validation testing of cryptographic modules and algorithms for conformance to Federal Information Processing Standard (FIPS) 140-2, Security Requirements for Cryptographic Modules, is managed by NIST.</li>
+</ul>
+<p>Authentication requires that the claimant prove control of the token through a secure authentication protocol. The token must be unlocked with a password or biometric representation, or a password must be used in a secure authentication protocol, to establish two-factor authentication. Long-term shared authentication secrets, if used, are never revealed to any party except the claimant and verifiers operated directly by the CSP; however, session (temporary) shared secrets may be provided to independent verifiers by the CSP. Approved cryptographic techniques are used for all operations. Assertions issued about claimants as a result of a successful authentication are either cryptographically authenticated by relying parties (using approved methods) or are obtained directly from a trusted party via a secure authentication protocol. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAN4"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAN4">LOAAN4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>high authentication level of assurance</td><td/><td><div><p>Indicator of high digital quality or reliability of the digital reliability of the verification and validation process used to verify the claimed identity of an entity by securely associating an identifier and its authenticator. [Based on ISO 7498-2]</p>
+<p>The degree of confidence in the vetting process used to establish the identity of the individual to whom the credential was issued, and 2) the degree of confidence that the individual who uses the credential is the individual to whom the credential was issued. [OMB M-04-04 E-Authentication Guidance for Federal Agencies]</p>
+<p>High authentication level of assurance indicates that the relying party may have very high confidence in the asserted identity's validity. Level 4 is for transactions that need very high confidence in the accuracy of the asserted identity. Level 4 provides the highest practical assurance of remote network authentication. Authentication is based on proof of possession of a key through a cryptographic protocol. This level is similar to Level 3 except that only â€œhardâ€? cryptographic tokens are allowed, cryptographic module validation requirements are strengthened, and subsequent critical data transfers must be authenticated via a key that is bound to the authentication process. The token should be a hardware cryptographic module validated at FIPS 140-2 Level 2 or higher overall with at least FIPS 140-2 Level 3 physical security. This level requires a physical token, which cannot readily be copied, and operator authentication at Level 2 and higher, and ensures good, two-factor remote authentication.</p>
+<p>Level 4 requires strong cryptographic authentication of all parties and all sensitive data transfers between the parties. Either public key or symmetric key technology may be used. Authentication requires that the claimant prove through a secure authentication protocol that the claimant controls the token. Eavesdropper, replay, online guessing, verifier impersonation, and man-in-the-middle attacks are prevented. Long-term shared authentication secrets, if used, are never revealed to any party except the claimant and verifiers operated directly by the CSP; however, session (temporary) shared secrets may be provided to independent verifiers by the CSP. Strong approved cryptographic techniques are used for all operations. All sensitive data transfers are cryptographically authenticated using keys bound to the authentication process. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAP"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAP" title="This code is not selectable (''Abstract'')"><i>LOAAP</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>authentication process level of assurance value</td><td/><td><div><p>The value assigned as the indicator of the digital quality or reliability of a defined sequence of messages between a Claimant and a Verifier that demonstrates that the Claimant has possession and control of a valid token to establish his/her identity, and optionally, demonstrates to the Claimant that he or she is communicating with the intended Verifier. [Based on NIST SP 800-63-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAP1"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAP1">LOAAP1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>low authentication process level of assurance</td><td/><td><div><p>Indicator of the low digital quality or reliability of a defined sequence of messages between a Claimant and a Verifier that demonstrates that the Claimant has possession and control of a valid token to establish his/her identity, and optionally, demonstrates to the Claimant that he or she is communicating with the intended Verifier. [Based on NIST SP 800-63-2]</p>
+<p>Low authentication process level of assurance indicates that (1) long-term shared authentication secrets may be revealed to verifiers; and (2) assertions and assertion references require protection from manufacture/modification and reuse attacks. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAP2"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAP2">LOAAP2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>basic authentication process level of assurance</td><td/><td><div><p>Indicator of the basic digital quality or reliability of a defined sequence of messages between a Claimant and a Verifier that demonstrates that the Claimant has possession and control of a valid token to establish his/her identity, and optionally, demonstrates to the Claimant that he or she is communicating with the intended Verifier. [Based on NIST SP 800-63-2]</p>
+<p>Basic authentication process level of assurance indicates that long-term shared authentication secrets are never revealed to any other party except Credential Service Provider (CSP). Sessions (temporary) shared secrets may be provided to independent verifiers by CSP. Long-term shared authentication secrets, if used, are never revealed to any other party except Verifiers operated by the Credential Service Provider (CSP); however, session (temporary) shared secrets may be provided to independent Verifiers by the CSP. In addition to Level 1 requirements, assertions are resistant to disclosure, redirection, capture and substitution attacks. Approved cryptographic techniques are required. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAP3"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAP3">LOAAP3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>medium authentication process level of assurance</td><td/><td><div><p>Indicator of the medium digital quality or reliability of a defined sequence of messages between a Claimant and a Verifier that demonstrates that the Claimant has possession and control of a valid token to establish his/her identity, and optionally, demonstrates to the Claimant that he or she is communicating with the intended Verifier. [Based on NIST SP 800-63-2]</p>
+<p>Medium authentication process level of assurance indicates that the token can be unlocked with password, biometric, or uses a secure multi-token authentication protocol to establish two-factor authentication. Long-term shared authentication secrets are never revealed to any party except the Claimant and Credential Service Provider (CSP).</p>
+<p>Authentication requires that the Claimant prove, through a secure authentication protocol, that he or she controls the token. The Claimant unlocks the token with a password or biometric, or uses a secure multi-token authentication protocol to establish two-factor authentication (through proof of possession of a physical or software token in combination with some memorized secret knowledge). Long-term shared authentication secrets, if used, are never revealed to any party except the Claimant and Verifiers operated directly by the CSP; however, session (temporary) shared secrets may be provided to independent Verifiers by the CSP. In addition to Level 2 requirements, assertions are protected against repudiation by the Verifier.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAP4"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAP4">LOAAP4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>high authentication process level of assurance</td><td/><td><div><p>Indicator of the high digital quality or reliability of a defined sequence of messages between a Claimant and a Verifier that demonstrates that the Claimant has possession and control of a valid token to establish his/her identity, and optionally, demonstrates to the Claimant that he or she is communicating with the intended Verifier. [Based on NIST SP 800-63-2]</p>
+<p>High authentication process level of assurance indicates all sensitive data transfer are cryptographically authenticated using keys bound to the authentication process. Level 4 requires strong cryptographic authentication of all communicating parties and all sensitive data transfers between the parties. Either public key or symmetric key technology may be used. Authentication requires that the Claimant prove through a secure authentication protocol that he or she controls the token. All protocol threats at Level 3 are required to be prevented at Level 4. Protocols shall also be strongly resistant to man-in-the-middle attacks. Long-term shared authentication secrets, if used, are never revealed to any party except the Claimant and Verifiers operated directly by the CSP; however, session (temporary) shared secrets may be provided to independent Verifiers by the CSP. Approved cryptographic techniques are used for all operations. All sensitive data transfers are cryptographically authenticated using keys bound to the authentication process. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAS"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAS" title="This code is not selectable (''Abstract'')"><i>LOAAS</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>assertion level of assurance value</td><td/><td><div><p>The value assigned as the indicator of the high quality or reliability of the statement from a Verifier to a Relying Party (RP) that contains identity information about a Subscriber. Assertions may also contain verified attributes.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAS1"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAS1">LOAAS1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>low assertion level of assurance</td><td/><td><div><p>Indicator of the low quality or reliability of the statement from a Verifier to a Relying Party (RP) that contains identity information about a Subscriber. Assertions may also contain verified attributes.</p>
+<p>Assertions and assertion references require protection from modification and reuse attacks. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAS2"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAS2">LOAAS2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>basic assertion level of assurance</td><td/><td><div><p>Indicator of the basic quality or reliability of the statement from a Verifier to a Relying Party (RP) that contains identity information about a Subscriber. Assertions may also contain verified attributes.</p>
+<p>Assertions are resistant to disclosure, redirection, capture and substitution attacks. Approved cryptographic techniques are required for all assertion protocols. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAS3"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAS3">LOAAS3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>medium assertion level of assurance</td><td/><td><div><p>Indicator of the medium quality or reliability of the statement from a Verifier to a Relying Party (RP) that contains identity information about a Subscriber. Assertions may also contain verified attributes.</p>
+<p>Assertions are protected against repudiation by the verifier. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAAS4"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAAS4">LOAAS4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>high assertion level of assurance</td><td/><td><div><p>Indicator of the high quality or reliability of the statement from a Verifier to a Relying Party (RP) that contains identity information about a Subscriber. Assertions may also contain verified attributes.</p>
+<p>Strongly resistant to man-in-the-middle attacks. &quot;Bearer&quot; assertions are not used. &quot;Holder-of-key&quot; assertions may be used. RP maintains records of the assertions. [Summary of the technical requirements specified in NIST SP 800-63 for the four levels of assurance defined by the December 2003, the Office of Management and Budget (OMB) issued Memorandum M-04-04, E-Authentication Guidance for Federal Agencies.]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOACM"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOACM" title="This code is not selectable (''Abstract'')"><i>LOACM</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>token and credential management level of assurance value)</td><td/><td><div><p>Indicator of the digital quality or reliability of the activities performed by the Credential Service Provider (CSP) subsequent to electronic authentication registration, identity proofing and issuance activities to manage and safeguard the integrity of an issued credential and its binding to an identity. [Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOACM1"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOACM1">LOACM1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>low token and credential management level of assurance</td><td/><td><div><p>Indicator of the low digital quality or reliability of the activities performed by the Credential Service Provider (CSP) subsequent to electronic authentication registration, identity proofing and issuance activities to manage and safeguard the integrity of an issued credential and its binding to an identity. Little or no confidence that an individual has maintained control over a token that has been entrusted to him or her and that that token has not been compromised. Characteristics include weak identity binding to tokens and plaintext passwords or secrets not transmitted across a network. [Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOACM2"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOACM2">LOACM2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>basic token and credential management level of assurance</td><td/><td><div><p>Indicator of the basic digital quality or reliability of the activities performed by the Credential Service Provider (CSP) subsequent to electronic authentication registration, identity proofing and issuance activities to manage and safeguard the integrity of an issued credential and its binding to an identity. Some confidence that an individual has maintained control over a token that has been entrusted to him or her and that that token has not been compromised. Characteristics include: Verification must prove claimant controls the token; token resists online guessing, replay, session hijacking, and eavesdropping attacks; and token is at least weakly resistant to man-in-the middle attacks. [Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOACM3"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOACM3">LOACM3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>medium token and credential management level of assurance</td><td/><td><div><p>Indicator of the medium digital quality or reliability of the activities performed by the Credential Service Provider (CSP) subsequent to electronic authentication registration, identity proofing and issuance activities to manage and safeguard the integrity of an issued credential and it's binding to an identity. High confidence that an individual has maintained control over a token that has been entrusted to him or her and that that token has not been compromised. Characteristics include: Ownership of token verifiable through security authentication protocol and credential management protects against verifier impersonation attacks. [Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOACM4"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOACM4">LOACM4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>high token and credential management level of assurance</td><td/><td><div><p>Indicator of the high digital quality or reliability of the activities performed by the Credential Service Provider (CSP) subsequent to electronic authentication registration, identity proofing and issuance activities to manage and safeguard the integrity of an issued credential and it's binding to an identity. Very high confidence that an individual has maintained control over a token that has been entrusted to him or her and that that token has not been compromised. Characteristics include: Verifier can prove control of token through a secure protocol; credential management supports strong cryptographic authentication of all communication parties. [Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAID"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAID" title="This code is not selectable (''Abstract'')"><i>LOAID</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>identity proofing level of assurance</td><td/><td><div><p>Indicator of the quality or reliability in the process of ascertaining that an individual is who he or she claims to be.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAID1"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAID1">LOAID1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>low identity proofing level of assurance</td><td/><td><div><p>Indicator of low digital quality or reliability in the process of ascertaining that an individual is who he or she claims to be. Requires that a continuity of identity be maintained but does not require identity proofing. [Based on Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAID2"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAID2">LOAID2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>basic identity proofing level of assurance</td><td/><td><div><p>Indicator of some digital quality or reliability in the process of ascertaining that that an individual is who he or she claims to be. Requires identity proofing via presentation of identifying material or information. [Based on Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAID3"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAID3">LOAID3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>medium identity proofing level of assurance</td><td/><td><div><p>Indicator of high digital quality or reliability in the process of ascertaining that an individual is who he or she claims to be. Requires identity proofing procedures for verification of identifying materials and information. [Based on Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOAID4"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOAID4">LOAID4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>high identity proofing level of assurance</td><td/><td><div><p>Indicator of high digital quality or reliability in the process of ascertaining that an individual is who he or she claims to be. Requires identity proofing procedures for verification of identifying materials and information. [Based on Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOANR"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOANR" title="This code is not selectable (''Abstract'')"><i>LOANR</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>non-repudiation level of assurance value</td><td/><td><div><p>Indicator of the digital quality or reliability in the process of establishing proof of delivery and proof of origin. [Based on ISO 7498-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOANR1"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOANR1">LOANR1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>low non-repudiation level of assurance</td><td/><td><div><p>Indicator of low digital quality or reliability in the process of establishing proof of delivery and proof of origin. [Based on ISO 7498-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOANR2"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOANR2">LOANR2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>basic non-repudiation level of assurance</td><td/><td><div><p>Indicator of basic digital quality or reliability in the process of establishing proof of delivery and proof of origin. [Based on ISO 7498-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOANR3"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOANR3">LOANR3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>medium non-repudiation level of assurance</td><td/><td><div><p>Indicator of medium digital quality or reliability in the process of establishing proof of delivery and proof of origin. [Based on ISO 7498-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOANR4"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOANR4">LOANR4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>high non-repudiation level of assurance</td><td/><td><div><p>Indicator of high digital quality or reliability in the process of establishing proof of delivery and proof of origin. [Based on ISO 7498-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOARA"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOARA" title="This code is not selectable (''Abstract'')"><i>LOARA</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>remote access level of assurance value</td><td/><td><div><p>Indicator of the digital quality or reliability of the information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization's security controls. [Based on NIST SP 800-63-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOARA1"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOARA1">LOARA1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>low remote access level of assurance</td><td/><td><div><p>Indicator of low digital quality or reliability of the information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization's security controls. [Based on NIST SP 800-63-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOARA2"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOARA2">LOARA2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>basic remote access level of assurance</td><td/><td><div><p>Indicator of basic digital quality or reliability of the information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization's security controls. [Based on NIST SP 800-63-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOARA3"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOARA3">LOARA3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>medium remote access level of assurance</td><td/><td><div><p>Indicator of medium digital quality or reliability of the information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization's security controls. [Based on NIST SP 800-63-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOARA4"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOARA4">LOARA4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>high remote access level of assurance</td><td/><td><div><p>Indicator of high digital quality or reliability of the information exchange between network-connected devices where the information cannot be reliably protected end-to-end by a single organization's security controls. [Based on NIST SP 800-63-2]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOATK"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOATK" title="This code is not selectable (''Abstract'')"><i>LOATK</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>token level of assurance value</td><td/><td><div><p>Indicator of the digital quality or reliability of single and multi-token authentication. [Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOATK1"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOATK1">LOATK1</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>low token level of assurance</td><td/><td><div><p>Indicator of the low digital quality or reliability of single and multi-token authentication. Permits the use of any of the token methods of Levels 2, 3, or 4. [Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOATK2"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOATK2">LOATK2</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>basic token level of assurance</td><td/><td><div><p>Indicator of the basic digital quality or reliability of single and multi-token authentication. Requires single factor authentication using memorized secret tokens, pre-registered knowledge tokens, look-up secret tokens, out of band tokens, or single factor one-time password devices. [Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOATK3"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOATK3">LOATK3</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>medium token level of assurance</td><td/><td><div><p>Indicator of the medium digital quality or reliability of single and multi-token authentication. Requires two authentication factors. Provides multi-factor remote network authentication. Permits multi-factor software cryptographic token. [Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-LOATK4"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-LOATK4">LOATK4</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>high token level of assurance</td><td/><td><div><p>Indicator of the high digital quality or reliability of single and multi-token authentication. Requires token that is a hardware cryptographic module validated at validated at Federal Information Processing Standard (FIPS) 140-2 Level 2 or higher overall with at least FIPS 140-2 Level 3 physical security. Level 4 token requirements can be met by using the PIV authentication key of a FIPS 201 compliant Personal Identity Verification (PIV) Card. [Electronic Authentication Guideline - Recommendations of the National Institute of Standards and Technology, NIST Special Publication 800-63-1, Dec 2011]</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-ObservationValue-TRSTMECOBV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ObservationValue.html#v3-ObservationValue-TRSTMECOBV">TRSTMECOBV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ObservationValue</td><td>none supplied 6</td><td/><td><div><p>Values for security trust mechanism metadata observation made about a security architecture system component that supports enforcement of security policies.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-L"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-L">L</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>low</td><td/><td><div><p>Privacy metadata indicating that a low level of protection is required to safeguard personal and healthcare information, which has been altered in such a way as to minimize the need for confidentiality protections with some residual risks associated with re-linking. The risk of harm to an individual's reputation and sense of privacy if disclosed without authorization is considered negligible, and mitigations are in place to address reidentification risk.</p>
+<p><em>Usage Note:</em></p>
+<p>The level of protection afforded anonymized and pseudonymized, and non-personally identifiable information (e.g., a limited data set) is dictated by privacy policies and data use agreements intended to engender trust that health information can be used and disclosed with little or no risk of re-identification.</p>
+<p><strong>Example:</strong> Personal and healthcare information, which excludes 16 designated categories of direct identifiers in a HIPAA Limited Data Set. This information may be disclosed by HIPAA Covered Entities without patient authorization for a research, public health, and operations purposes if conditions are met, which includes obtaining a signed data use agreement from the recipient. See 45 CFR Section 164.514.</p>
+<p>This metadata indicates that the receiver may have an obligation to comply with a data use agreement with the discloser. The discloser may have obligations to comply with policies dictating the methods for de-identification.</p>
+<p>Confidentiality code total order hierarchy: Low (L) is less protective than <em>V, R, N,</em> and <em>M</em>, and subsumes <em>U</em>.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-M"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-M">M</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>moderate</td><td/><td><div><p>Privacy metadata indicating the level of protection required to safeguard personal and healthcare information, which if disclosed without authorization, would present a moderate risk of harm to an individual's reputation and sense of privacy.</p>
+<p><em>Usage Note:</em> The level of protection afforded moderately confidential information is dictated by privacy policies intended to engender trust in a service provider. May include publicly available information in jurisdictions that restrict uses of that information without the consent of the data subject.</p>
+<p>Privacy policies mandating moderate levels of protection, which preempt less protective privacy policies. &quot;Moderate&quot; confidentiality policies differ from and would be preempted by the prevailing privacy policies mandating the normative level of protection for information used in the delivery and management of healthcare.</p>
+<p>Confidentiality code total order hierarchy: Moderate (M) is less protective than <em>V, R, and N</em>, and subsumes all other protection levels (i.e., <em>L</em> and <em>U</em>).</p>
+<p><strong>Examples:</strong> Includes personal and health information that an individual authorizes to be collected, accessed, used or disclosed to a bank for a health credit card or savings account; to health oversight authorities; to a hospital patient directory; to worker compensation, disability, property and casualty or life insurers; and to personal health record systems, consumer-controlled devices, social media accounts and online Apps; or for marketing purposes</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-N"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-N">N</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>normal</td><td/><td><div><p>Privacy metadata indicating the level of protection required to safeguard personal and healthcare information, which if disclosed without authorization, would present a considerable risk of harm to an individual's reputation and sense of privacy.</p>
+<p><em>Usage Note:</em> The level of protection afforded normatively confidential information is dictated by the prevailing normative privacy policies, which are intended to engender patient trust in their healthcare providers.</p>
+<p>Privacy policies mandating normative levels of protection, which preempt less protective privacy policies when the information is used in the delivery and management of healthcare. May be pre-empted by jurisdictional law (e.g., for public health reporting or emergency treatment).</p>
+<p>Confidentiality code total order hierarchy: Normal (N) is less protective than <em>V</em> and <em>R</em>, and subsumes all other protection levels (i.e., <em>M, L, and U</em>).</p>
+<p>**Map:**Partial Map to ISO 13606-4 Sensitivity Level (3) Clinical Care when purpose of use is treatment: Default for normal clinical care access (i.e., most clinical staff directly caring for the patient should be able to access nearly all of the EHR). Maps to normal confidentiality for treatment information but not to ancillary care, payment and operations.</p>
+<p><strong>Examples:</strong></p>
+<p>n the US, this includes what HIPAA identifies as protected health information (PHI) under 45 CFR Section 160.103.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-R"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-R">R</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>restricted</td><td/><td><div><p>Privacy metadata indicating the level of protection required to safeguard potentially stigmatizing information, which if disclosed without authorization, would present a high risk of harm to an individual's reputation and sense of privacy.</p>
+<p><em>Usage Note:</em> The level of protection afforded restricted confidential information is dictated by specially protective organizational or jurisdictional privacy policies, including at an authorized individual's request, intended to engender patient trust in providers of sensitive services.</p>
+<p>Privacy policies mandating additional levels of protection by restricting information access preempt less protective privacy policies when the information is used in the delivery and management of healthcare. May be pre-empted by jurisdictional law (e.g., for public health reporting or emergency treatment).</p>
+<p>Confidentiality code total order hierarchy: Restricted (R) is less protective than <em>V</em>, and subsumes all other protection levels (i.e., <em>N, M, L, and U</em>).</p>
+<p><strong>Examples:</strong></p>
+<p>Includes information that is additionally protected such as sensitive conditions mental health, HIV, substance abuse, domestic violence, child abuse, genetic disease, and reproductive health; or sensitive demographic information such as a patient's standing as an employee or a celebrity. May be used to indicate proprietary or classified information that is not related to an individual (e.g., secret ingredients in a therapeutic substance; or the name of a manufacturer).</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-U"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-U">U</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>unrestricted</td><td/><td><div><p>Privacy metadata indicating that no level of protection is required to safeguard personal and healthcare information that has been disclosed by an authorized individual without restrictions on its use.</p>
+<p><strong>Examples:</strong> Includes publicly available information e.g., business name, phone, email and physical address.</p>
+<p><em>Usage Note:</em> The authorization to collect, access, use, and disclose this information may be stipulated in a contract of adhesion by a data user (e.g., via terms of service or data user privacy policies) in exchange for the data subject's use of a service.</p>
+<p>This metadata indicates that the receiver has no obligation to consider privacy policies other than its own when making access control decisions.</p>
+<p>This metadata indicates that the receiver has no obligation to consider privacy policies other than its own when making access control decisions.</p>
+<p>Confidentiality code total order hierarchy: Unrestricted (U) is less protective than <em>V, R, N, M,</em> and <em>L</em>, and is the lowest protection levels.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-V"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-V">V</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>very restricted</td><td/><td><div><p>Privacy metadata indicating the level of protection required under atypical cicumstances to safeguard potentially damaging or harmful information, which if disclosed without authorization, would (1) present an extremely high risk of harm to an individual's reputation, sense of privacy, and possibly safety; or (2) impact an individual's or organization's legal matters.</p>
+<p><em>Usage Note:</em> The level of protection afforded very restricted confidential information is dictated by specially protective privacy or legal policies intended to ensure that under atypical circumstances additional protections limit access to only those with a high 'need to know' and the information is kept in highest confidence..</p>
+<p>Privacy and legal policies mandating the highest level of protection by stringently restricting information access, preempt less protective privacy policies when the information is used in the delivery and management of healthcare including legal proceedings related to healthcare. May be pre-empted by jurisdictional law (e.g., for public health reporting or emergency treatment but only under limited circumstances).</p>
+<p>Confidentiality code total order hierarchy: Very Restricted (V) is the highest protection level and subsumes all other protection levels s (i.e., <em>R, N, M, L, and UI</em>).</p>
+<p><strong>Examples:</strong></p>
+<p>Includes information about a victim of abuse, patient requested information sensitivity, and taboo subjects relating to health status that must be discussed with the patient by an attending provider before sharing with the patient. May also include information held under a legal hold or attorney-client privilege.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality--Confidentiality"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-_Confidentiality">_Confidentiality</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>Confidentiality</td><td/><td><div><p>A specializable code and its leaf codes used in Confidentiality value sets to value the Act.Confidentiality and Role.Confidentiality attribute in accordance with the definition for concept domain &quot;Confidentiality&quot;.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality--ConfidentialityByAccessKind"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-_ConfidentialityByAccessKind" title="This code is not selectable (''Abstract'')"><i>_ConfidentialityByAccessKind</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>ConfidentialityByAccessKind</td><td>inactive</td><td><div><p><strong>Description:</strong> By accessing subject / role and relationship based rights (These concepts are mutually exclusive, one and only one is required for a valid confidentiality coding.)</p>
+<p>*Deprecation Comment:*Deprecated due to updated confidentiality codes under ActCode</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-B"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-B">B</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>business</td><td>inactive</td><td><div><p><strong>Description:</strong> Since the service class can represent knowledge structures that may be considered a trade or business secret, there is sometimes (though rarely) the need to flag those items as of business level confidentiality. However, no patient related information may ever be of this confidentiality level.</p>
+<p><em>Deprecation Comment:</em> Replced by ActCode.B</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-D"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-D">D</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>clinician</td><td>inactive</td><td><div><p><strong>Description:</strong> Only clinicians may see this item, billing and administration persons can not access this item without special permission.</p>
+<p>*Deprecation Comment:*Deprecated due to updated confidentiality codes under ActCode</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-I"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-I">I</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>individual</td><td>inactive</td><td><div><p><strong>Description:</strong> Access only to individual persons who are mentioned explicitly as actors of this service and whose actor type warrants that access (cf. to actor type code).</p>
+<p>*Deprecation Comment:*Deprecated due to updated confidentiality codes under ActCode</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality--ConfidentialityByInfoType"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-_ConfidentialityByInfoType" title="This code is not selectable (''Abstract'')"><i>_ConfidentialityByInfoType</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>ConfidentialityByInfoType</td><td>inactive</td><td><div><p><strong>Description:</strong> By information type, only for service catalog entries (multiples allowed). Not to be used with actual patient data!</p>
+<p>*Deprecation Comment:*Deprecated due to updated confidentiality codes under ActCode</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-ETH"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-ETH">ETH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>substance abuse related</td><td>inactive</td><td><div><p><strong>Description:</strong> Alcohol/drug-abuse related item</p>
+<p>*Deprecation Comment:*Replced by ActCode.ETH</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-HIV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-HIV">HIV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>HIV related</td><td>inactive</td><td><div><p><strong>Description:</strong> HIV and AIDS related item</p>
+<p>*Deprecation Comment:*Replced by ActCode.HIV</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-PSY"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-PSY">PSY</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>psychiatry relate</td><td>inactive</td><td><div><p><strong>Description:</strong> Psychiatry related item</p>
+<p>*Deprecation Comment:*Replced by ActCode.PSY</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-SDV"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-SDV">SDV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>sexual and domestic violence related</td><td>inactive</td><td><div><p><strong>Description:</strong> Sexual assault / domestic violence related item</p>
+<p>*Deprecation Comment:*Replced by ActCode.SDV</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality--ConfidentialityModifiers"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-_ConfidentialityModifiers" title="This code is not selectable (''Abstract'')"><i>_ConfidentialityModifiers</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>ConfidentialityModifiers</td><td>inactive</td><td><div><p><strong>Description:</strong> Modifiers of role based access rights (multiple allowed)</p>
+<p>*Deprecation Comment:*Deprecated due to updated confidentiality codes under ActCode</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-C"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-C">C</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>celebrity</td><td>inactive</td><td><div><p><strong>Description:</strong> Celebrities are people of public interest (VIP) including employees, whose information require special protection.</p>
+<p>*Deprecation Comment:*Replced by ActCode.CEL</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-S"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-S">S</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>sensitive</td><td>inactive</td><td><div><p><strong>Description:</strong></p>
+<p>Information for which the patient seeks heightened confidentiality. Sensitive information is not to be shared with family members. Information reported by the patient about family members is sensitive by default. Flag can be set or cleared on patient's request.</p>
+<p>*Deprecation Comment:*Deprecated due to updated confidentiality codes under ActCode</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-Confidentiality-T"> </a>  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-Confidentiality.html#v3-Confidentiality-T">T</a></td><td>http://terminology.hl7.org/CodeSystem/v3-Confidentiality</td><td>taboo</td><td>inactive</td><td><div><p><strong>Description:</strong> Information not to be disclosed or discussed with patient except through physician assigned to patient in this case. This is usually a temporary constraint only, example use is a new fatal diagnosis or finding, such as malignancy or HIV.</p>
+<p>*Deprecation Note:*Replced by ActCode.TBOO</p>
+</div></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

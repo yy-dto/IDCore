@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ActHealthInformationManagementReason - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.175"}
+    h3,h4,h5,h6{--heading-prefix:"5.175"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>ActHealthInformationManagementReason</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ActHealthInformationManagementReason.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ActHealthInformationManagementReason.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-v3-ActHealthInformationManagementReason.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: ActHealthInformationManagementReason
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/ValueSet/v3-ActHealthInformationManagementReason<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActHealthInformationManagementReason"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/ValueSet/v3-ActHealthInformationManagementReason|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2014-03-26
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ActHealthInformationManagementReason</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.1.11.20447
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>The rationale or purpose for an act relating to health information management, such as archiving information for the purpose of complying with an organization policy or jurisdictional law relating to data retention.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<p>This value set is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)</p>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><ul><li>Include codes from<a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html"><code>http://terminology.hl7.org/CodeSystem/v3-ActReason</code></a> where concept  is-a <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-_ActHealthInformationManagementReason">_ActHealthInformationManagementReason</a></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html">codesystem ActReason v3.0.0 (CodeSystem)</a></p><p>This value set contains 68 concepts</p><table class="codes"><tr><td><b>Level</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Inactive</b></td><td><b>Definition</b></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason--ActHealthInformationManagementReason"> </a>1</td><td style="white-space:nowrap">  <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-_ActHealthInformationManagementReason" title="This code is not selectable (''Abstract'')"><i>_ActHealthInformationManagementReason</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>ActHealthInformationManagementReason</td><td/><td><div><p>**Description:**The rationale or purpose for an act relating to health information management, such as archiving information for the purpose of complying with an organization policy or jurisdictional law relating to data retention.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason--ActConsentInformationAccessOverrideReason"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-_ActConsentInformationAccessOverrideReason" title="This code is not selectable (''Abstract'')"><i>_ActConsentInformationAccessOverrideReason</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>ActConsentInformationAccessOverrideReason</td><td/><td><div><p>To perform one or more operations on information to which the patient has not consented as deemed necessary by authorized entities for providing care in the best interest of the patient; providing immediately needed health care for an emergent condition; or for protecting public or third party safety.</p>
+<p><em>Usage Notes:</em> Used to convey the reason that a provider or other entity may or has accessed personal healthcare information. Typically, this involves overriding the subject's consent directives.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-OVRER"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-OVRER">OVRER</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>emergency treatment override</td><td/><td><div><p>To perform one or more operations on information to which the patient has not consented by authorized entities for treating a condition which poses an immediate threat to the patient's health and which requires immediate medical intervention.</p>
+<p><em>Usage Notes:</em> The patient is unable to provide consent, but the provider determines they have an urgent healthcare related reason to access the record.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-OVRINCOMP"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-OVRINCOMP">OVRINCOMP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>incompetency override</td><td/><td><div><p>To perform one or more operations on information to which the patient has not consented because deemed incompetent to provide consent.</p>
+<p><em>Usage Note:</em> Maps to v2 CON-16 Subject Competence Indicator (ID) 01791 Definition: Identifies whether the subject was deemed competent to provide consent. Refer to table HL7 Table 0136 - Yes/No Indicator and CON-23 Non-Subject Consenter Reason User-defined Table 0502 - Non-Subject Consenter Reason code NC &quot;Subject is not competent to consent&quot;.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-OVRPJ"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-OVRPJ">OVRPJ</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>professional judgment override</td><td/><td><div><p>To perform one or more operations on information to which the patient declined to consent for providing health care.</p>
+<p><em>Usage Notes:</em> The patient, while able to give consent, has not. However the provider believes it is in the patient's interest to access the record without patient consent.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-OVRPS"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-OVRPS">OVRPS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>public safety override</td><td/><td><div><p>To perform one or more operations on information to which the patient has not consented for public safety reasons.</p>
+<p><em>Usage Notes:</em> The patient, while able to give consent, has not. However, the provider believes that access to masked patient information is justified because of concerns related to public safety.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-OVRTPS"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-OVRTPS">OVRTPS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>third party safety override</td><td/><td><div><p>To perform one or more operations on information to which the patient has not consented for third party safety.</p>
+<p><em>Usage Notes:</em> The patient, while able to give consent, has not. However, the provider believes that access to masked patient information is justified because of concerns related to the health and safety of one or more third parties.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PurposeOfUse"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-PurposeOfUse">PurposeOfUse</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>purpose of use</td><td/><td><div><p>Reason for performing one or more operations on information, which may be permitted by source system's security policy in accordance with one or more privacy policies and consent directives.</p>
+<p><em>Usage Notes:</em> The rationale or purpose for an act relating to the management of personal health information, such as collecting personal health information for research or public health purposes.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HMARKT"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HMARKT">HMARKT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>healthcare marketing</td><td/><td><div><p>To perform one or more operations on information for marketing services and products related to health care.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HOPERAT"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HOPERAT">HOPERAT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>healthcare operations</td><td/><td><div><p>To perform one or more operations on information used for conducting administrative and contractual activities related to the provision of health care.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CAREMGT"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-CAREMGT">CAREMGT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>care management</td><td/><td><div><p>To perform analytics, evaluation and other secondary uses of treatment and healthcare related information to manage the quality, efficacy, patient safety, population health, and cost effectiveness of healthcare delivery. Explicitly excludes the use of information to organize the delivery of health care for care coordination and case management, or to provide healthcare treatment.</p>
+<p><em>Usage Note:</em> The concept of care management is narrower than the list of activities related to more general organizational objectives such as provider profiling, education of healthcare and non-healthcare professionals; insurance underwriting, premium rating, reinsurance; organizational legal, medical review, auditing, compliance and fraud and abuse detection; business planning, development, and restructuring; fund-raising; and customer service.</p>
+<p><em>Map:</em> Maps to ISO 14265 Classification Term &quot;Health service management and quality assurance&quot; described as &quot;To inform persons or processes responsible for determining the availability, quality, safety, equity and cost-effectiveness of health care services.&quot;</p>
+<p>There is a semantic gap in concepts. This classification term is described as activities, i.e., &quot;to inform persons&quot; or &quot;to inform processes&quot; rather than the rationale for performing actions/operations on information related to the activity.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-DONAT"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-DONAT">DONAT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>donation</td><td/><td><div><p>To perform one or more operations on information used for cadaveric organ, eye or tissue donation.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-FRAUD"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-FRAUD">FRAUD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>fraud</td><td/><td><div><p>To perform one or more operations on information used for fraud detection and prevention processes.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-GOV"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-GOV">GOV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>government</td><td/><td><div><p>To perform one or more operations on information used within government processes.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HACCRED"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HACCRED">HACCRED</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>health accreditation</td><td/><td><div><p>To perform one or more operations on information for conducting activities related to meeting accreditation criteria.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HCOMPL"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HCOMPL">HCOMPL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>health compliance</td><td/><td><div><p>To perform one or more operations on information used for conducting activities required to meet a mandate.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HDECD"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HDECD">HDECD</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>decedent</td><td/><td><div><p>To perform one or more operations on information used for handling deceased patient matters.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HDIRECT"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HDIRECT">HDIRECT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>directory</td><td/><td><div><p>To perform one or more operation operations on information used to manage a patient directory.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>facility</li>
+<li>enterprise</li>
+<li>payer</li>
+<li>health information exchange patient directory</li>
+</ul>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HDM"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HDM">HDM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>healthcare delivery management</td><td/><td><div><p>To perform one or more actions on information used for conducting administrative and contractual activities by or on behalf of organizational entities responsible for delivery of an individual's benefits in a healthcare program, health plan or insurance. Explicitly excludes the use of information to organize the delivery of health care for care coordination and case management, or to provide healthcare treatment.</p>
+<p><em>Usage Note:</em> Examples of activities conducted under this purpose of use: provider profiling, risk adjustment, underwriting, fraud and abuse, quality improvement population health and care management. Aligns with HIPAA Operation POU minus coordination of care or other treatment related activities. Similar to the description in SAMHSA Confidentiality of Substance Use Disorder Patient Records Supplemental notice of proposed rulemaking.</p>
+<p><em>Map:</em> Maps to ISO 14265 Classification Term &quot;Administration of care for an individual subject of care&quot; described as &quot;To inform persons or processes responsible for enabling the availability of resources or funding or permissions for providing health care services to the subject of care.&quot;</p>
+<p>However, this classification term is described as activities, i.e., &quot;to inform persons&quot; or &quot;to inform processes&quot; rather than the rationale for performing actions/operations on information related to the activity.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HLEGAL"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HLEGAL">HLEGAL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>legal</td><td/><td><div><p>To perform one or more operations on information for conducting activities required by legal proceeding.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HOUTCOMS"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HOUTCOMS">HOUTCOMS</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>health outcome measure</td><td/><td><div><p>To perform one or more operations on information used for assessing results and comparative effectiveness achieved by health care practices and interventions.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HPRGRP"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HPRGRP">HPRGRP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>health program reporting</td><td/><td><div><p>To perform one or more operations on information used for conducting activities to meet program accounting requirements.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HQUALIMP"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HQUALIMP">HQUALIMP</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>health quality improvement</td><td/><td><div><p>To perform one or more operations on information used for conducting administrative activities to improve health care quality.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HSYSADMIN"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HSYSADMIN">HSYSADMIN</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>health system administration</td><td/><td><div><p>To perform one or more operations on information to administer the electronic systems used for the delivery of health care.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-LABELING"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-LABELING">LABELING</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>labeling</td><td/><td><div><p>To perform one or more operations on information to assign, persist, and manage labels to healthcare data to characterize various aspects, such as its security classification, sensitivity, compartment, integrity, and provenance; applicable privacy, consent, security, provenance, and trust policies; and handling caveats such as purpose of use, obligations, and refrain policies.</p>
+<p>Label management includes classification of target data by constructing and binding of a label set per applicable policies, security policy information file semantics, and classification guides. Label management also includes process and procedures for subsequent revision of a label for, e.g., reclassification, downgrading classification, and declassification.</p>
+<p>Label revisions may be triggered by, e.g., expiry of classification period; changes in applicable policy, e.g., revocation of a consent directive; or changes in the governing policy domain in which the data is relocated or a copy of the data is sent. If a label is revised, an audit log should be kept and the provenance of the label changes should be tracked.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-METAMGT"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-METAMGT">METAMGT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>metadata management</td><td/><td><div><p>To perform one or more operations on information to assign, persist, and manage metadata to healthcare data to characterize various aspects used for its indexing, discovery, retrieval, and processing by systems, applications, and end users. For example, master index identifier, media type, and location.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-MEMADMIN"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-MEMADMIN">MEMADMIN</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>member administration</td><td/><td><div><p>To perform one or more operations on information to administer health care coverage to an enrollee under a policy or program.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-MILCDM"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-MILCDM">MILCDM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>military command</td><td/><td><div><p>To perform one or more operations on information for conducting activities required by military processes, procedures, policies, or law.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PATADMIN"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATADMIN">PATADMIN</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>patient administration</td><td/><td><div><p>To perform one or more operations on information used for operational activities conducted to administer the delivery of health care to a patient.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PATSFTY"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATSFTY">PATSFTY</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>patient safety</td><td/><td><div><p>To perform one or more operations on information in processes related to ensuring the safety of health care.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PERFMSR"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-PERFMSR">PERFMSR</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>performance measure</td><td/><td><div><p>To perform one or more operations on information used for monitoring performance of recommended health care practices and interventions.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-RECORDMGT"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-RECORDMGT">RECORDMGT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>records management</td><td/><td><div><p>To perform one or more operations on information used within the health records management process.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-SYSDEV"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-SYSDEV">SYSDEV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>system development</td><td/><td><div><p>To perform one or more operations on information to design, develop, implement, test, or deploy a healthcare system or application.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HTEST"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HTEST">HTEST</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>test health data</td><td/><td><div><p>To perform one or more operations on information that is simulated or synthetic health data used for testing system capabilities outside of a production or operational system environment.</p>
+<p><em>Usage Note:</em> Data marked with a HTEST security label enables an access control system to permit interfacing systems or end users provisioned with a clearance, which includes a HTEST purpose of use attribute, to test, verify, or validate that a system or application will operate in production as intended based on design specifications.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-TRAIN"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-TRAIN">TRAIN</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>training</td><td/><td><div><p>To perform one or more operations on information used in training and education.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HPAYMT"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HPAYMT">HPAYMT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>healthcare payment</td><td/><td><div><p>To perform one or more operations on information for conducting financial or contractual activities related to payment for provision of health care.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CLMATTCH"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-CLMATTCH">CLMATTCH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>claim attachment</td><td/><td><div><p>To perform one or more operations on information for provision of additional clinical evidence in support of a request for coverage or payment for health services.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-COVAUTH"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-COVAUTH">COVAUTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>coverage authorization</td><td/><td><div><p>To perform one or more operations on information for conducting prior authorization or predetermination of coverage for services.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-COVERAGE"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-COVERAGE">COVERAGE</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>coverage under policy or program</td><td/><td><div><p>To perform one or more operations on information for conducting activities related to coverage under a program or policy.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-ELIGDTRM"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-ELIGDTRM">ELIGDTRM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>eligibility determination</td><td/><td><div><p>To perform one or more operations on information used for conducting eligibility determination for coverage in a program or policy. May entail review of financial status or disability assessment.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-ELIGVER"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-ELIGVER">ELIGVER</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>eligibility verification</td><td/><td><div><p>To perform one or more operations on information used for conducting eligibility verification of coverage in a program or policy. May entail provider contacting coverage source (e.g., government health program such as workers compensation or health plan) for confirmation of enrollment, eligibility for specific services, and any applicable copays.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-ENROLLM"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-ENROLLM">ENROLLM</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>enrollment</td><td/><td><div><p>To perform one or more operations on information used for enrolling a covered party in a program or policy. May entail recording of covered party's and any dependent's demographic information and benefit choices.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-MILDCRG"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-MILDCRG">MILDCRG</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>military discharge</td><td/><td><div><p>To perform one or more operations on information for the process of releasing military personnel from their service obligations, which may include determining service merit, discharge benefits, and disability assessment.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-REMITADV"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-REMITADV">REMITADV</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>remittance advice</td><td/><td><div><p>To perform one or more operations on information about the amount remitted for a health care claim.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-HRESCH"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-HRESCH">HRESCH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>healthcare research</td><td/><td><div><p>To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge. Use of the data iincludes basic and applied research such as biomedical, population origin or ancestry, translational research, and disease, discipline, specialty specific healthcare research and clinical trial research.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-BIORCH"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-BIORCH">BIORCH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>biomedical research</td><td/><td><div><p>To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge. Use of the data must be related to specified biomedical basic or applied research. For example, research on rare plants to determine whether biologic properties may be useful for pharmaceutical development. May be used in combination with clinical trial and other healthcare research purposes of use.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CLINTRCH"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-CLINTRCH">CLINTRCH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>clinical trial research</td><td/><td><div><p>To perform one or more operations on information for conducting scientific investigations in accordance with clinical trial protocols to obtain health care knowledge.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CLINTRCHNPC"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-CLINTRCHNPC">CLINTRCHNPC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>clinical trial research without patient care</td><td/><td><div><p>To perform one or more operations on information for conducting scientific investigations in accordance with clinical trial protocols to obtain health care knowledge without provision of patient care. May be post-coordinated or used with other purposes of use such as disease, discipline, specialty, population origins or ancestry, translational healthcare research. For example, a clinical trial conducted on laboratory specimens collected from a specified patient population.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CLINTRCHPC"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-CLINTRCHPC">CLINTRCHPC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>clinical trial research with patient care</td><td/><td><div><p>To perform one or more operations on information for conducting scientific investigations with patient care in accordance with clinical trial protocols to obtain health care knowledge. May be post-coordinated or used with other purposes of use such as disease, discipline, specialty, population origins or ancestry, translational healthcare research. For example, an &quot;off-label&quot; drug used for cancer therapy administer to a specified patient population.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PRECLINTRCH"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-PRECLINTRCH">PRECLINTRCH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>preclinical trial research</td><td/><td><div><p>To perform one or more operations on information in preparation for conducting scientific investigation to obtain health care knowledge, such as research on animals or review of patient health records, to determine the feasibility of a clinical trial study; assist with protocol design; or in preparation for institutional review board or ethics committee approval process. May be post-coordinated or used with other purposes of use such as disease, discipline, specialty, population origins or ancestry, translational healthcare research.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-DSRCH"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-DSRCH">DSRCH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>disease specific healthcare research</td><td/><td><div><p>To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge. Use of the data must be related to specified conditions, diagnosis, or disease healthcare research. For example, conducting cancer research by testing reaction of tumor cells to certain biologics. May be used in combination with clinical trial and other healthcare research purposes of use.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-POARCH"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-POARCH">POARCH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>population origins or ancestry healthcare research</td><td/><td><div><p>To perform one or more operations on information, including genealogical pedigrees, historical records, surveys, family health data, health records, and genetic information, for conducting scientific investigations to obtain health care knowledge. Use of the data must be related to population origins and/or ancestry healthcare research. For example, gathering genetic specimens from a specific population in order to determine the ancestry and population origins of that group. May be used in combination with clinical trial and other healthcare research purposes of use.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-TRANSRCH"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-TRANSRCH">TRANSRCH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>translational healthcare research</td><td/><td><div><p>To perform one or more operations on information for conducting scientific investigations to obtain health care knowledge related to evidence based medicine during the course of providing healthcare treatment. Sometimes referred to as &quot;bench to bedside&quot;, which is the iterative feedback loop between healthcare research and clinical trials with input from information collected in the course of routine provision of healthcare. For example, by extending a patient encounter to conduct a survey related to a research topic such as attitudes about use of a wellness device that a patient agreed to use. May be used in combination with clinical trial and other healthcare research purposes of use.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PATRQT"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-PATRQT">PATRQT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>patient requested</td><td/><td><div><p>To perform one or more operations on information in response to a patient's request.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-FAMRQT"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-FAMRQT">FAMRQT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>family requested</td><td/><td><div><p>To perform one or more operations on information in response to a request by a family member authorized by the patient.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PWATRNY"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-PWATRNY">PWATRNY</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>power of attorney</td><td/><td><div><p>To perform one or more operations on information in response to a request by a person appointed as the patient's legal representative.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-SUPNWK"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-SUPNWK">SUPNWK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>support network</td><td/><td><div><p>To perform one or more operations on information in response to a request by a person authorized by the patient.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-PUBHLTH"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-PUBHLTH">PUBHLTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>public health</td><td/><td><div><p>To perform one or more operations on information for conducting public health activities, such as the reporting of notifiable conditions.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-DISASTER"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-DISASTER">DISASTER</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>disaster</td><td/><td><div><p>To perform one or more operations on information used for provision of immediately needed health care to a population of living subjects located in a disaster zone.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-THREAT"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-THREAT">THREAT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>threat</td><td/><td><div><p>To perform one or more operations on information used to prevent injury or disease to living subjects who may be the target of violence.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-TREAT"> </a>3</td><td style="white-space:nowrap">      <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-TREAT">TREAT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>treatment</td><td/><td><div><p>To perform one or more operations on information for provision of health care.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-CLINTRL"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-CLINTRL">CLINTRL</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>clinical trial</td><td/><td><div><p>To perform health care as part of the clinical trial protocol.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-COC"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-COC">COC</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>coordination of care</td><td/><td><div><p>To perform one or more actions on information in order to organize the provision and case management of an individual's healthcare, including: Monitoring a person's goals, needs, and preferences; acting as the communication link between two or more participants concerned with a person's health and wellness; organizing and facilitating care activities and promoting self-management by advocating for, empowering, and educating a person; and ensuring safe, appropriate, non-duplicative, and effective integrated care.</p>
+<p><em>Usage Note:</em> Use when describing these functions: 1. Monitoring a person's goals, needs, and preferences. 2. Acting as the communication link between two or more participants concerned with a person's health and wellness. 3. Organizing and facilitating care activities and promoting self-management by advocating for, empowering, and educating a person. 4. Ensuring safe, appropriate, non-duplicative, and effective integrated care.</p>
+<p>The goal is to clearly differentiate this type of coordination of care from HIPAA Operations by specifying that these actions on information are undertaken in the provision of healthcare treatment.</p>
+<p>For similar uses of this concept, see SAMHSA Confidentiality of Substance Use Disorder Patient Records Supplemental notice of proposed rulemaking, which differentiates concepts of care coordination and case management for the provision of treatment as specifically distinct from activities related to health care delivery management and the operations of organizational entities involved in the delivery of healthcare.</p>
+<p><em>Map:</em> Maps to ISO 14265 Classification Terms: &quot;Support of care activities within the provider organisation for an individual subject of care&quot; described as &quot;To inform persons or processes enabling others to provide health care services to the subject of care.&quot; &quot;Subject of Care Uses&quot; described as &quot;To inform the subject of care in support of his or her own interests.&quot;</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-ETREAT"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-ETREAT">ETREAT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>Emergency Treatment</td><td/><td><div><p>To perform one or more operations on information for provision of immediately needed health care for an emergent condition.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-BTG"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-BTG">BTG</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>break the glass</td><td/><td><div><p>To perform policy override operations on information for provision of immediately needed health care for an emergent condition affecting potential harm, death or patient safety by end users who are not provisioned for this purpose of use. Includes override of organizational provisioning policies and may include override of subject of care consent directive restricting access.</p>
+<p><em>Map:</em> Partially Maps to ISO 14265 Classification Term &quot;Emergency care provision to an individual subject of care&quot; described as &quot;To inform persons needing to provide health care services to the subject of care urgently, possibly needing to over-ride the policies and consents pertaining to Purpose 1 above.&quot; Purpose 1 is equivalent to HL7 treatment purpose of use: &quot;Clinical care provision to an individual subject of care&quot; described as &quot;To inform persons or processes responsible for providing health care services to the subject of care.&quot; The ISO description conflates both of the proposed specializations of HL7 ETREAT: break the glass and the typically broader access to health information normally available to providers who are provisioned for emergency workflows on a regular basis, e.g., Emergency Room providers. Examples of greater access than is normally accessible by providers based on the need to know are access to sensitive information for which access typically requires a patient's consent. This is not an override of a patient's dissent to disclose sensitive information in cases where the applicable policy waives the need for that consent to access this information. In US, Title 38 Section 7332 and 42 CFR Part 2 both permit emergency access without the need to override a patient's consent directive; rather, this access is a limitation to the patient's right to dissent from disclosure.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-ERTREAT"> </a>5</td><td style="white-space:nowrap">          <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-ERTREAT">ERTREAT</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>emergency room treatment</td><td/><td><div><p>To perform one or more operations on information for provision of immediately needed health care for an emergent condition in an emergency room or similar emergent care context by end users provisioned for this purpose, which does not constitute as policy override such as in a &quot;Break the Glass&quot; purpose of use.</p>
+<p>Map:Partially Maps to ISO 14265 Classification Term &quot;Emergency care provision to an individual subject of care&quot; described as &quot;To inform persons needing to provide health care services to the subject of care urgently, possibly needing to over-ride the policies and consents pertaining to Purpose 1 above.&quot; Purpose 1 is equivalent to HL7 treatment purpose of use: &quot;Clinical care provision to an individual subject of care&quot; described as &quot;To inform persons or processes responsible for providing health care services to the subject of care.&quot;</p>
+<p>The ISO description conflates both of the proposed specializations of HL7 ETREAT: break the glass and the typically broader access to health information normally available to providers who are provisioned for emergency workflows on a regular basis, e.g., Emergency Room providers. Examples of greater access than is normally accessible by providers based on the need to know are access to sensitive information for which access typically requires a patient's consent. This is not an override of a patient's dissent to disclose sensitive information in cases where the applicable policy waives the need for that consent to access this information. In US, Title 38 Section 7332 and 42 CFR Part 2 both permit emergency access without the need to override a patient's consent directive; rather, this access is a limitation to the patient's right to dissent from disclosure.</p>
+<p>There is a semantic gap in concepts. This classification term is described as activities &quot;to inform persons&quot; rather than the rationale for performing actions/operations on information related to the activity.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason-POPHLTH"> </a>4</td><td style="white-space:nowrap">        <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-POPHLTH">POPHLTH</a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>population health</td><td/><td><div><p>To perform one or more operations on information for provision of health care to a population of living subjects, e.g., needle exchange program.</p>
+</div></td></tr><tr><td><a name="http---terminology.hl7.org-CodeSystem-v3-ActReason--ActHealthInformationPrivacyReason"> </a>2</td><td style="white-space:nowrap">    <a href="http://terminology.hl7.org/5.5.0/CodeSystem-v3-ActReason.html#v3-ActReason-_ActHealthInformationPrivacyReason" title="This code is not selectable (''Abstract'')"><i>_ActHealthInformationPrivacyReason</i></a></td><td>http://terminology.hl7.org/CodeSystem/v3-ActReason</td><td>ActHealthInformationPrivacyReason</td><td>inactive</td><td><div><p>**Description:**The rationale or purpose for an act relating to the management of personal health information, such as collecting personal health information for research or public health purposes.</p>
+</div></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

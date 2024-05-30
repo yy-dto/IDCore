@@ -4,7 +4,7 @@ Profile: IDCoreEncounterIMP
 Parent: IDCoreEncounter
 Description: "Encounter profile for inpatient patient"
 * location.extension ^extension[0].url = "value"
-* location.extension ^extension[=].valueCodeableConcept = $locationServiceClass-Inpatient#1
+* location.extension ^extension[=].valueCodeableConcept.coding[0].system = $locationServiceClass-Inpatient
 
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $v3-ParticipationType = http://terminology.hl7.org/CodeSystem/v3-ParticipationType

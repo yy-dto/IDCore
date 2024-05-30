@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/csaid> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "csaid"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/csaid</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/csaid"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.6.235" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "Csaid"] ; # 
+  fhir:title [ fhir:v "CAN/CSA-Z795-96"] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20T00:00:00-04:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Inactive since 2015.   Nature of injury (NOI) codes, which are part of the Work Injury or Disease Information coding system (CAN/CSA-Z795-96 - R2003).\r\n\r\nThe CSA code set includes 3 parts: Nature of injury (NOI), body part (BP), side of body (SB).\r\n\r\nFor example:\r\n\r\n *  NOI - Cut or laceration Injury = 03400\r\n *  BP - Upper Arm body part = 31100\r\n *  SOB - Left Side of Body = L\r\n\r\nThe Body Part codes are qualified by the Side of Body codes code system, to be more precise in specifying the location of the injury being coded.\r\n\r\nCode set is maintained by the Canadian Standards Association (CSA).\r\n\r\nset is maintained by the Canadian Standards Association (CSA).\r\n\r\nThe Canadian Standards Association 5060 Spectrum Way Mississauga, Ontario Canada L4W 5N6\r\n\r\nPhone: (416) 747-4000 1-800-463-6727 Fax: (416) 747-2473"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="APDRG"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://uri.hddaccess.com/cs/apdrg</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="http://uri.hddaccess.com/cs/apdrg"/>
+  <version value="0.1.0"/>
+  <name value="APDRG"/>
+  <title value="All Patient Diagnosis Related Groups (AP DRGs)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2020-11-12T00:00:00-04:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="In 1987, the state of New York passed legislation instituting a DRG-based prospective payment system for all non-Medicare patients. The legislation included a requirement that the New York State Department of Health (NYDH) evaluate the applicability of the DRGs to a non-Medicare population. In particular, the legislation required that the DRGs be evaluated with respect to neonates and patients with Human Immunodeficiency Virus (HIV) infections. NYDH entered into an agreement with 3M HIS to assist with the evaluation of the need for DRG modifications as well as to make the necessary changes in the DRG definitions and software. The DRG definitions developed by NYDH and 3M HIS are referred to as the All Patient DRGs (AP DRGs)."/>
+  <caseSensitive value="true"/>
+  <content value="not-present"/>
+</CodeSystem>

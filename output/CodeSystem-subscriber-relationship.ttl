@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/subscriber-relationship> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "subscriber-relationship"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/subscriber-relationship</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">child<a name=\"subscriber-relationship-child\"> </a></td><td>Child</td><td>The Beneficiary is a child of the Subscriber</td></tr><tr><td style=\"white-space:nowrap\">parent<a name=\"subscriber-relationship-parent\"> </a></td><td>Parent</td><td>The Beneficiary is a parent of the Subscriber</td></tr><tr><td style=\"white-space:nowrap\">spouse<a name=\"subscriber-relationship-spouse\"> </a></td><td>Spouse</td><td>The Beneficiary is a spouse or equivalent of the Subscriber</td></tr><tr><td style=\"white-space:nowrap\">common<a name=\"subscriber-relationship-common\"> </a></td><td>Common Law Spouse</td><td>The Beneficiary is a common law spouse or equivalent of the Subscriber</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"subscriber-relationship-other\"> </a></td><td>Other</td><td>The Beneficiary has some other relationship the Subscriber</td></tr><tr><td style=\"white-space:nowrap\">self<a name=\"subscriber-relationship-self\"> </a></td><td>Self</td><td>The Beneficiary is the Subscriber</td></tr><tr><td style=\"white-space:nowrap\">injured<a name=\"subscriber-relationship-injured\"> </a></td><td>Injured Party</td><td>The Beneficiary is covered under insurance of the subscriber due to an injury.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "fm" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/subscriber-relationship"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1386" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "SubscriberRelationshipCodes"] ; # 
+  fhir:title [ fhir:v "SubscriberPolicyholder Relationship Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-09T14:36:19-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set includes codes for the relationship between the Subscriber and the Beneficiary (insured/covered party/patient)."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/subscriber-relationship"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/subscriber-relationship>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "child" ] ;
+     fhir:display [ fhir:v "Child" ] ;
+     fhir:definition [ fhir:v "The Beneficiary is a child of the Subscriber" ]
+  ] [
+     fhir:code [ fhir:v "parent" ] ;
+     fhir:display [ fhir:v "Parent" ] ;
+     fhir:definition [ fhir:v "The Beneficiary is a parent of the Subscriber" ]
+  ] [
+     fhir:code [ fhir:v "spouse" ] ;
+     fhir:display [ fhir:v "Spouse" ] ;
+     fhir:definition [ fhir:v "The Beneficiary is a spouse or equivalent of the Subscriber" ]
+  ] [
+     fhir:code [ fhir:v "common" ] ;
+     fhir:display [ fhir:v "Common Law Spouse" ] ;
+     fhir:definition [ fhir:v "The Beneficiary is a common law spouse or equivalent of the Subscriber" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "Other" ] ;
+     fhir:definition [ fhir:v "The Beneficiary has some other relationship the Subscriber" ]
+  ] [
+     fhir:code [ fhir:v "self" ] ;
+     fhir:display [ fhir:v "Self" ] ;
+     fhir:definition [ fhir:v "The Beneficiary is the Subscriber" ]
+  ] [
+     fhir:code [ fhir:v "injured" ] ;
+     fhir:display [ fhir:v "Injured Party" ] ;
+     fhir:definition [ fhir:v "The Beneficiary is covered under insurance of the subscriber due to an injury." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

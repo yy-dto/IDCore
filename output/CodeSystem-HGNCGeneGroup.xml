@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="HGNCGeneGroup"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://www.genenames.org/genegroup</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="http://www.genenames.org/genegroup"/>
+  <version value="0.1.0"/>
+  <name value="HGNCGeneGroup"/>
+  <title value="HUGO Gene Nomenclature Committee Gene Group"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-08-25T00:00:00-00:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="The HGNC is responsible for approving unique symbols and names for human loci, including protein coding genes, ncRNA genes and pseudogenes, to allow unambiguous scientific communication.&#xD;&#xA;&#xD;&#xA;For each known human gene we approve a gene name and symbol (short-form abbreviation). All approved symbols are stored in the HGNC database,[www.genenames.org](https://www.genenames.org/tools/search), a curated online repository of HGNC-approved gene nomenclature, gene groups and associated resources including links to genomic, proteomic and phenotypic information. Each symbol is unique and we ensure that each gene is only given one approved gene symbol. It is necessary to provide a unique symbol for each gene so that we and others can talk about them, and this also facilitates electronic data retrieval from publications and databases. Please see https://www.genenames.org/ for more info."/>
+  <copyright value="It is a condition of HGNC funding from NIH and the Welcome Trust that the nomenclature and information provided is freely available to all. Anyone may use the HGNC data, but we request that they reference the *&quot;HUGO Gene Nomenclature Committee at the European Bioinformatics Institute&quot;* and the website where possible."/>
+  <caseSensitive value="true"/>
+  <content value="not-present"/>
+</CodeSystem>

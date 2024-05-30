@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="NDFRT"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>http://hl7.org/fhir/ndfrt</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="http://hl7.org/fhir/ndfrt"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.6.209"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="NDFRT"/>
+  <title value="National Drug File Reference Terminology (NDF-RT)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2022-08-23T00:00:00-00:00"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="NDF-RT is a concept-oriented terminology, a collection of concepts, each of which represents a single, unique meaning. Every concept has one fully-specified name and an arbitrary number of other names, all of which are intended to mean the same thing and are therefore synonymous terms. Synonymous terms from external vocabulary sources may have associated unique identifiers. Publication of NDF-RT has ended. The Medication Reference Terminology (MED-RT) is the evolutionary successor to the NDF-RT."/>
+  <copyright value="NDF-RT is released as part of UMLS. Therefore, each successive release has the date of the UMLS release as its version."/>
+  <caseSensitive value="true"/>
+  <content value="not-present"/>
+</CodeSystem>

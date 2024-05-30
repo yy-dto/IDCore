@@ -15,7 +15,7 @@
   fhir:language [ fhir:v "Indonesia"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">not-eval<a name=\"KemkesPrevTBTreatment-not-eval\"> </a></td><td>Pernah diobati tidak diketahui hasilnya</td></tr><tr><td style=\"white-space:nowrap\">non-standard-treatment<a name=\"KemkesPrevTBTreatment-non-standard-treatment\"> </a></td><td>Pasien TB yang mempunyai riwayat pengobatan TB yang tidak standar</td></tr><tr><td style=\"white-space:nowrap\">treatment-non-conversion-1<a name=\"KemkesPrevTBTreatment-treatment-non-conversion-1\"> </a></td><td>Pasien TB pengobatan kategori 1 yang tidak konversi</td></tr><tr><td style=\"white-space:nowrap\">history-of-close-contact-with-TB-DR<a name=\"KemkesPrevTBTreatment-history-of-close-contact-with-TB-DR\"> </a></td><td>Terduga TB yang mempunyai riwayat kontak erat dengan pasien TB RO</td></tr><tr><td style=\"white-space:nowrap\">TB-DR-relapse<a name=\"KemkesPrevTBTreatment-TB-DR-relapse\"> </a></td><td>Pasien TB RO kasus kambuh</td></tr><tr><td style=\"white-space:nowrap\">TB-DR-returns<a name=\"KemkesPrevTBTreatment-TB-DR-returns\"> </a></td><td>Pasien TB RO yang kembali setelah putus berobat</td></tr><tr><td style=\"white-space:nowrap\">treatment-non-conversion-2<a name=\"KemkesPrevTBTreatment-treatment-non-conversion-2\"> </a></td><td>Pasien TB pengobatan kategori 2 yang tidak konversi setelah 3 bulan pengobatan</td></tr><tr><td style=\"white-space:nowrap\">co-infected-TBHIV<a name=\"KemkesPrevTBTreatment-co-infected-TBHIV\"> </a></td><td>Pasien ko-infeksi TB-HIV yang tidak respons secara klinis maupun bakteriologis terhadap pemberian OAT</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"Indonesia\" lang=\"Indonesia\"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment</code> defines the following codes in a Is-A hierarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">not-eval<a name=\"KemkesPrevTBTreatment-not-eval\"> </a></td><td>Pernah diobati tidak diketahui hasilnya</td></tr><tr><td style=\"white-space:nowrap\">non-standard-treatment<a name=\"KemkesPrevTBTreatment-non-standard-treatment\"> </a></td><td>Pasien TB yang mempunyai riwayat pengobatan TB yang tidak standar</td></tr><tr><td style=\"white-space:nowrap\">treatment-non-conversion-1<a name=\"KemkesPrevTBTreatment-treatment-non-conversion-1\"> </a></td><td>Pasien TB pengobatan kategori 1 yang tidak konversi</td></tr><tr><td style=\"white-space:nowrap\">history-of-close-contact-with-TB-DR<a name=\"KemkesPrevTBTreatment-history-of-close-contact-with-TB-DR\"> </a></td><td>Terduga TB yang mempunyai riwayat kontak erat dengan pasien TB RO</td></tr><tr><td style=\"white-space:nowrap\">TB-DR-relapse<a name=\"KemkesPrevTBTreatment-TB-DR-relapse\"> </a></td><td>Pasien TB RO kasus kambuh</td></tr><tr><td style=\"white-space:nowrap\">TB-DR-returns<a name=\"KemkesPrevTBTreatment-TB-DR-returns\"> </a></td><td>Pasien TB RO yang kembali setelah putus berobat</td></tr><tr><td style=\"white-space:nowrap\">treatment-non-conversion-2<a name=\"KemkesPrevTBTreatment-treatment-non-conversion-2\"> </a></td><td>Pasien TB pengobatan kategori 2 yang tidak konversi setelah 3 bulan pengobatan</td></tr><tr><td style=\"white-space:nowrap\">co-infected-TBHIV<a name=\"KemkesPrevTBTreatment-co-infected-TBHIV\"> </a></td><td>Pasien ko-infeksi TB-HIV yang tidak respons secara klinis maupun bakteriologis terhadap pemberian OAT</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://terminology.kemkes.go.id/CodeSystem/prev-tb-treatment"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -24,12 +24,15 @@
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:date [ fhir:v "2024-02-05T00:00:00.000Z"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "Thomas Chaidir"] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
   fhir:contact ( [
-     fhir:name [ fhir:v "Thomas Chaidir" ] ;
+     fhir:name [ fhir:v "SatuSehat" ] ;
      fhir:telecom ( [
        fhir:system [ fhir:v "url" ] ;
        fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
      ] )
   ] ) ; # 
   fhir:description [ fhir:v "Terminology Kemkes prev-tb-treatment CodeSystem"] ; # 

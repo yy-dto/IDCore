@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Religious Affiliation - ID Core Implementation Guide v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/hl7.css" rel="stylesheet"/>
+    <link href="assets/css/fhir-ig.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.2643"}
+    h3,h4,h5,h6{--heading-prefix:"5.2643"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+        <div id="hl7-nav">
+          <a id="hl7-logo" no-external="true" href="https://satusehat.kemkes.go.id/platform">
+            <img height="50" alt="Visit the FHIR website" src="assets/images/satset-logo.png"/>
+          </a>
+        </div>
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+        </div>
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="searchform.html"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">ID Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Modul Pelayanan
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="resume-medis-jilid1.html">Resume Medis Jilid 1</a>
+      </li>
+      <li>
+        <a href="resume-medis-jilid2.html">Resume Medis Jilid 2</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase1.html">Rawat Jalan Fase 1</a>
+      </li>
+      <li>
+        <a href="rawat-inap-fase2.html">Rawat Jalan Fase 2</a>
+      </li>
+      <li>
+        <a href="igd-fase1.html">IGD Fase 1</a>
+      </li>
+      <li>
+        <a href="igd-fase2.html">IGD Fase 2</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Penerapan (Use Case)
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="imunisasi.html">Imunisasi</a>
+      </li>
+      <li>
+        <a href="gizi-tumbang.html">Gizi &amp; Tumbuh Kembang</a>
+      </li>
+      <li>
+        <a href="shk.html">Skrining Hipotiroid Kongenital (SHK)</a>
+      </li>
+      <li>
+        <a href="anc.html">Antenatal Care (ANC)</a>
+      </li>
+      <li>
+        <a href="inc.html">Intranatal Care (INC)</a>
+      </li>
+      <li>
+        <a href="pnc.html">Postnatal Care (PNC)</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Sistem DICOM
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="architecture.html">Arsitektur</a>
+      </li>
+      <li>
+        <a href="dicom-requirement.html">Kebutuhan Sistem dan Instalasi Router</a>
+      </li>
+      <li>
+        <a href="dicom-router.html">DICOM Router</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Religious Affiliation</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">ID Core Implementation Guide - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="https://fhir.kemkes.go.id/r4/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-ReligiousAffiliation.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-ReligiousAffiliation.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-v3-ReligiousAffiliation.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">CodeSystem: Religious Affiliation
+
+  </h2>
+
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation<button title="Click to copy URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation|0.1.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2019-03-20
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ReligiousAffiliation</span></td>
+    </tr>
+
+    <tr>
+      <td colspan="5">
+        <i>Other Identifiers:</i> OID:2.16.840.1.113883.5.1076
+      </td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>Assigment of spiritual faith affiliation</p>
+
+</p>
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <p>
+  This Code system is referenced in the content logical definition of the following value sets:
+  </p>
+
+  
+<ul>
+ <li><a href="http://terminology.hl7.org/5.5.0/ValueSet-v3-ReligiousAffiliation.html">ReligiousAffiliation</a></li>
+</ul>
+
+
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p>
+<table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr>
+<tr><td>Specializes</td>
+<td>Specializes</td>
+<td></td>
+<td>Coding</td>
+<td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr>
+<tr><td>Generalizes</td>
+<td>Generalizes</td>
+<td></td>
+<td>Coding</td>
+<td>Inverse of Specializes.  Only included as a derived relationship.</td></tr>
+<tr><td>internalId</td>
+<td>internalId</td>
+<td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td>
+<td>code</td>
+<td>The internal identifier for the concept in the HL7 Access database repository.</td></tr>
+<tr><td>status</td>
+<td>status</td>
+<td>http://hl7.org/fhir/concept-properties#status</td>
+<td>code</td>
+<td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation</code> defines the following codes in a Is-A hierarchy:</p>
+<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>internalId</b></td><td><b>status</b></td></tr>
+<tr><td style="white-space:nowrap">1001<a name="v3-ReligiousAffiliation-1001"> </a></td>
+<td>Adventist</td>
+<td>19186</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1002<a name="v3-ReligiousAffiliation-1002"> </a></td>
+<td>African Religions</td>
+<td>19187</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1003<a name="v3-ReligiousAffiliation-1003"> </a></td>
+<td>Afro-Caribbean Religions</td>
+<td>19188</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1004<a name="v3-ReligiousAffiliation-1004"> </a></td>
+<td>Agnosticism</td>
+<td>19189</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1005<a name="v3-ReligiousAffiliation-1005"> </a></td>
+<td>Anglican</td>
+<td>19190</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1006<a name="v3-ReligiousAffiliation-1006"> </a></td>
+<td>Animism</td>
+<td>19191</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1007<a name="v3-ReligiousAffiliation-1007"> </a></td>
+<td>Atheism</td>
+<td>19192</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1008<a name="v3-ReligiousAffiliation-1008"> </a></td>
+<td>Babi &amp; Baha'I faiths</td>
+<td>19193</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1009<a name="v3-ReligiousAffiliation-1009"> </a></td>
+<td>Baptist</td>
+<td>19194</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1010<a name="v3-ReligiousAffiliation-1010"> </a></td>
+<td>Bon</td>
+<td>19195</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1011<a name="v3-ReligiousAffiliation-1011"> </a></td>
+<td>Cao Dai</td>
+<td>19196</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1012<a name="v3-ReligiousAffiliation-1012"> </a></td>
+<td>Celticism</td>
+<td>19197</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1013<a name="v3-ReligiousAffiliation-1013"> </a></td>
+<td>Christian (non-Catholic, non-specific)</td>
+<td>19198</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1014<a name="v3-ReligiousAffiliation-1014"> </a></td>
+<td>Confucianism</td>
+<td>19199</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1015<a name="v3-ReligiousAffiliation-1015"> </a></td>
+<td>Cyberculture Religions</td>
+<td>19200</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1016<a name="v3-ReligiousAffiliation-1016"> </a></td>
+<td>Divination</td>
+<td>19201</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1017<a name="v3-ReligiousAffiliation-1017"> </a></td>
+<td>Fourth Way</td>
+<td>19202</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1018<a name="v3-ReligiousAffiliation-1018"> </a></td>
+<td>Free Daism</td>
+<td>19203</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1019<a name="v3-ReligiousAffiliation-1019"> </a></td>
+<td>Gnosis</td>
+<td>19204</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1020<a name="v3-ReligiousAffiliation-1020"> </a></td>
+<td>Hinduism</td>
+<td>19205</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1021<a name="v3-ReligiousAffiliation-1021"> </a></td>
+<td>Humanism</td>
+<td>19206</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1022<a name="v3-ReligiousAffiliation-1022"> </a></td>
+<td>Independent</td>
+<td>19207</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1023<a name="v3-ReligiousAffiliation-1023"> </a></td>
+<td>Islam</td>
+<td>19208</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1024<a name="v3-ReligiousAffiliation-1024"> </a></td>
+<td>Jainism</td>
+<td>19209</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1025<a name="v3-ReligiousAffiliation-1025"> </a></td>
+<td>Jehovah's Witnesses</td>
+<td>19210</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1026<a name="v3-ReligiousAffiliation-1026"> </a></td>
+<td>Judaism</td>
+<td>19211</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1027<a name="v3-ReligiousAffiliation-1027"> </a></td>
+<td>Latter Day Saints</td>
+<td>19212</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1028<a name="v3-ReligiousAffiliation-1028"> </a></td>
+<td>Lutheran</td>
+<td>19213</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1029<a name="v3-ReligiousAffiliation-1029"> </a></td>
+<td>Mahayana</td>
+<td>19214</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1030<a name="v3-ReligiousAffiliation-1030"> </a></td>
+<td>Meditation</td>
+<td>19215</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1031<a name="v3-ReligiousAffiliation-1031"> </a></td>
+<td>Messianic Judaism</td>
+<td>19216</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1032<a name="v3-ReligiousAffiliation-1032"> </a></td>
+<td>Mitraism</td>
+<td>19217</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1033<a name="v3-ReligiousAffiliation-1033"> </a></td>
+<td>New Age</td>
+<td>19218</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1034<a name="v3-ReligiousAffiliation-1034"> </a></td>
+<td>non-Roman Catholic</td>
+<td>19219</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1035<a name="v3-ReligiousAffiliation-1035"> </a></td>
+<td>Occult</td>
+<td>19220</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1036<a name="v3-ReligiousAffiliation-1036"> </a></td>
+<td>Orthodox</td>
+<td>19221</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1037<a name="v3-ReligiousAffiliation-1037"> </a></td>
+<td>Paganism</td>
+<td>19222</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1038<a name="v3-ReligiousAffiliation-1038"> </a></td>
+<td>Pentecostal</td>
+<td>19223</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1039<a name="v3-ReligiousAffiliation-1039"> </a></td>
+<td>Process, The</td>
+<td>19224</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1040<a name="v3-ReligiousAffiliation-1040"> </a></td>
+<td>Reformed/Presbyterian</td>
+<td>19225</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1041<a name="v3-ReligiousAffiliation-1041"> </a></td>
+<td>Roman Catholic Church</td>
+<td>19226</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1042<a name="v3-ReligiousAffiliation-1042"> </a></td>
+<td>Satanism</td>
+<td>19227</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1043<a name="v3-ReligiousAffiliation-1043"> </a></td>
+<td>Scientology</td>
+<td>19228</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1044<a name="v3-ReligiousAffiliation-1044"> </a></td>
+<td>Shamanism</td>
+<td>19229</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1045<a name="v3-ReligiousAffiliation-1045"> </a></td>
+<td>Shiite (Islam)</td>
+<td>19230</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1046<a name="v3-ReligiousAffiliation-1046"> </a></td>
+<td>Shinto</td>
+<td>19231</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1047<a name="v3-ReligiousAffiliation-1047"> </a></td>
+<td>Sikism</td>
+<td>19232</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1048<a name="v3-ReligiousAffiliation-1048"> </a></td>
+<td>Spiritualism</td>
+<td>19233</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1049<a name="v3-ReligiousAffiliation-1049"> </a></td>
+<td>Sunni (Islam)</td>
+<td>19234</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1050<a name="v3-ReligiousAffiliation-1050"> </a></td>
+<td>Taoism</td>
+<td>19235</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1051<a name="v3-ReligiousAffiliation-1051"> </a></td>
+<td>Theravada</td>
+<td>19236</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1052<a name="v3-ReligiousAffiliation-1052"> </a></td>
+<td>Unitarian-Universalism</td>
+<td>19237</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1053<a name="v3-ReligiousAffiliation-1053"> </a></td>
+<td>Universal Life Church</td>
+<td>19238</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1054<a name="v3-ReligiousAffiliation-1054"> </a></td>
+<td>Vajrayana (Tibetan)</td>
+<td>19239</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1055<a name="v3-ReligiousAffiliation-1055"> </a></td>
+<td>Veda</td>
+<td>19240</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1056<a name="v3-ReligiousAffiliation-1056"> </a></td>
+<td>Voodoo</td>
+<td>19241</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1057<a name="v3-ReligiousAffiliation-1057"> </a></td>
+<td>Wicca</td>
+<td>19242</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1058<a name="v3-ReligiousAffiliation-1058"> </a></td>
+<td>Yaohushua</td>
+<td>19243</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1059<a name="v3-ReligiousAffiliation-1059"> </a></td>
+<td>Zen Buddhism</td>
+<td>19244</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1060<a name="v3-ReligiousAffiliation-1060"> </a></td>
+<td>Zoroastrianism</td>
+<td>19245</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1061<a name="v3-ReligiousAffiliation-1061"> </a></td>
+<td>Assembly of God</td>
+<td>21466</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1062<a name="v3-ReligiousAffiliation-1062"> </a></td>
+<td>Brethren</td>
+<td>21467</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1063<a name="v3-ReligiousAffiliation-1063"> </a></td>
+<td>Christian Scientist</td>
+<td>21468</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1064<a name="v3-ReligiousAffiliation-1064"> </a></td>
+<td>Church of Christ</td>
+<td>21469</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1065<a name="v3-ReligiousAffiliation-1065"> </a></td>
+<td>Church of God</td>
+<td>21470</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1066<a name="v3-ReligiousAffiliation-1066"> </a></td>
+<td>Congregational</td>
+<td>21471</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1067<a name="v3-ReligiousAffiliation-1067"> </a></td>
+<td>Disciples of Christ</td>
+<td>21472</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1068<a name="v3-ReligiousAffiliation-1068"> </a></td>
+<td>Eastern Orthodox</td>
+<td>21473</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1069<a name="v3-ReligiousAffiliation-1069"> </a></td>
+<td>Episcopalian</td>
+<td>21474</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1070<a name="v3-ReligiousAffiliation-1070"> </a></td>
+<td>Evangelical Covenant</td>
+<td>21475</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1071<a name="v3-ReligiousAffiliation-1071"> </a></td>
+<td>Friends</td>
+<td>21476</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1072<a name="v3-ReligiousAffiliation-1072"> </a></td>
+<td>Full Gospel</td>
+<td>21477</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1073<a name="v3-ReligiousAffiliation-1073"> </a></td>
+<td>Methodist</td>
+<td>21478</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1074<a name="v3-ReligiousAffiliation-1074"> </a></td>
+<td>Native American</td>
+<td>21479</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1075<a name="v3-ReligiousAffiliation-1075"> </a></td>
+<td>Nazarene</td>
+<td>21480</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1076<a name="v3-ReligiousAffiliation-1076"> </a></td>
+<td>Presbyterian</td>
+<td>21481</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1077<a name="v3-ReligiousAffiliation-1077"> </a></td>
+<td>Protestant</td>
+<td>21482</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1078<a name="v3-ReligiousAffiliation-1078"> </a></td>
+<td>Protestant, No Denomination</td>
+<td>21483</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1079<a name="v3-ReligiousAffiliation-1079"> </a></td>
+<td>Reformed</td>
+<td>21484</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1080<a name="v3-ReligiousAffiliation-1080"> </a></td>
+<td>Salvation Army</td>
+<td>21485</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1081<a name="v3-ReligiousAffiliation-1081"> </a></td>
+<td>Unitarian Universalist</td>
+<td>21486</td>
+<td>active</td></tr>
+<tr><td style="white-space:nowrap">1082<a name="v3-ReligiousAffiliation-1082"> </a></td>
+<td>United Church of Christ</td>
+<td>21487</td>
+<td>active</td></tr></table></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="https://satusehat.kemkes.go.id/">SatuSehat</a>.  Package hl7.fhir.id.core#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, May 29, 2024 21:39+0700">2024-05-29</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+                 | <a style="color: #81BEF7" target="_blank" href="https://fhir.kemkes.go.id/r4/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+                 <a style="color: #81BEF7" target="_blank" href="http://hl7.org/fhir-issues">Propose a change</a>
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

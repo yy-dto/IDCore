@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/ValueSet/mif-conceptRelationshipKind> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mif-conceptRelationshipKind"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"CodeSystem-hl7TermMaintInfra.html\"><code>http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra</code></a> where concept  is-a  <a href=\"CodeSystem-hl7TermMaintInfra.html#hl7TermMaintInfra-MIF-ConceptRelationshipKind\">MIF-ConceptRelationshipKind</a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"CodeSystem-hl7TermMaintInfra.html\"><code>http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-hl7TermMaintInfra.html#hl7TermMaintInfra-MIF-ConceptRelationshipKind\">MIF-ConceptRelationshipKind</a></td><td/><td>Grouper code for MIF SupportedConceptRelationship.relationshipKind codes</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/ValueSet/mif-conceptRelationshipKind"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "MIFConceptRelationshipKind"] ; # 
+  fhir:title [ fhir:v "MIF Concept Relationship Kind"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-09T14:36:19-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for use in the ext-mif-relationship-relationshipKind to capture V3 Model Interchange Format (MIF) SupportedConceptRelationship.relationshipKind values"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "MIF-ConceptRelationshipKind" ]
+       ] )
+     ] ) ;
+     fhir:exclude ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "MIF-ConceptRelationshipKind" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

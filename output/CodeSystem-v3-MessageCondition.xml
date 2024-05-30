@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="v3-MessageCondition"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-MessageCondition</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td style="white-space:nowrap">0<a name="v3-MessageCondition-0"> </a></td><td>Message accepted</td><td>Success. Optional, as in version 2.x the AA conveys success. Used for systems that must always return a status code.</td><td>10131</td><td>active</td></tr><tr><td style="white-space:nowrap">100<a name="v3-MessageCondition-100"> </a></td><td>Sequence error</td><td>The message elements were not in the proper order, or required elements are missing.</td><td>10132</td><td>active</td></tr><tr><td style="white-space:nowrap">101<a name="v3-MessageCondition-101"> </a></td><td>Missing required element.</td><td>A required message element is missing.</td><td>10133</td><td>active</td></tr><tr><td style="white-space:nowrap">102<a name="v3-MessageCondition-102"> </a></td><td>Data type error</td><td>An element is represented by a data type that is not compatible with that which is allowable.</td><td>10134</td><td>active</td></tr><tr><td style="white-space:nowrap">103<a name="v3-MessageCondition-103"> </a></td><td>Table value not found</td><td>The value received for a common HL7 or user defined table was not found to match allowable table values.</td><td>10135</td><td>active</td></tr><tr><td style="white-space:nowrap">200<a name="v3-MessageCondition-200"> </a></td><td>Unsupported message type</td><td>The message type is not supported.</td><td>10136</td><td>active</td></tr><tr><td style="white-space:nowrap">201<a name="v3-MessageCondition-201"> </a></td><td>Unsupported interaction</td><td>The identified interaction is not supported.</td><td>10137</td><td>active</td></tr><tr><td style="white-space:nowrap">202<a name="v3-MessageCondition-202"> </a></td><td>Unsupported ProcessingID</td><td>The ProcessingID is not supported.</td><td>10138</td><td>active</td></tr><tr><td style="white-space:nowrap">203<a name="v3-MessageCondition-203"> </a></td><td>Unsupported VersionID</td><td>The VersionID is not supported.</td><td>10139</td><td>active</td></tr><tr><td style="white-space:nowrap">204<a name="v3-MessageCondition-204"> </a></td><td>Unknown key identifier</td><td>The identifier for a patient, order, etc. was not found. Occurs for transactions other than additions.</td><td>10140</td><td>active</td></tr><tr><td style="white-space:nowrap">205<a name="v3-MessageCondition-205"> </a></td><td>Duplicate key identifier</td><td>The identifier for a patient, order, etc. already exists. Occurs in response to addition transactions (e.g. new Admit, new Order, etc.).</td><td>10141</td><td>active</td></tr><tr><td style="white-space:nowrap">206<a name="v3-MessageCondition-206"> </a></td><td>Application record locked</td><td>The transaction could not be performed at the application storage level, e.g. database locked.</td><td>10142</td><td>active</td></tr><tr><td style="white-space:nowrap">207<a name="v3-MessageCondition-207"> </a></td><td>Application internal error</td><td>A catchall for internal errors not explicitly covered by other error codes.</td><td>10143</td><td>active</td></tr></table></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/v3-MessageCondition"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.5.80"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="MessageCondition"/>
+  <title value="MessageCondition"/>
+  <status value="retired"/>
+  <experimental value="false"/>
+  <date value="2019-03-20"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="**Deprecation Comment:** Deprecated as per 11/2008 Harmonization cleanup; internal and obsolete HL7 usage, no longer used.This isn't referenced in the RIM and is a copy of old v2 codes. It's superseded by AcknowledgementDetailCode"/>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="is-a"/>
+  <content value="complete"/>
+  <property>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry">
+      <valueCode value="antisymmetric"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity">
+      <valueCode value="transitive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity">
+      <valueCode value="irreflexive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind">
+      <valueCode value="Specializes"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName">
+      <valueString value="Generalizes"/>
+    </extension>
+    <code value="Specializes"/>
+    <description value="The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry">
+      <valueCode value="antisymmetric"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity">
+      <valueCode value="transitive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity">
+      <valueCode value="irreflexive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind">
+      <valueCode value="Generalizes"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName">
+      <valueString value="Specializes"/>
+    </extension>
+    <code value="Generalizes"/>
+    <description value="Inverse of Specializes.  Only included as a derived relationship."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <code value="internalId"/>
+    <uri value="http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"/>
+    <description value="The internal identifier for the concept in the HL7 Access database repository."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="Designation of a concept's state. Normally is not populated unless the state is retired."/>
+    <type value="code"/>
+  </property>
+  <concept>
+    <code value="0"/>
+    <display value="Message accepted"/>
+    <definition value="Success. Optional, as in version 2.x the AA conveys success. Used for systems that must always return a status code."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10131"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="100"/>
+    <display value="Sequence error"/>
+    <definition value="The message elements were not in the proper order, or required elements are missing."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10132"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="101"/>
+    <display value="Missing required element."/>
+    <definition value="A required message element is missing."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10133"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="102"/>
+    <display value="Data type error"/>
+    <definition value="An element is represented by a data type that is not compatible with that which is allowable."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10134"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="103"/>
+    <display value="Table value not found"/>
+    <definition value="The value received for a common HL7 or user defined table was not found to match allowable table values."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10135"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="200"/>
+    <display value="Unsupported message type"/>
+    <definition value="The message type is not supported."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10136"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="201"/>
+    <display value="Unsupported interaction"/>
+    <definition value="The identified interaction is not supported."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10137"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="202"/>
+    <display value="Unsupported ProcessingID"/>
+    <definition value="The ProcessingID is not supported."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10138"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="203"/>
+    <display value="Unsupported VersionID"/>
+    <definition value="The VersionID is not supported."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10139"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="204"/>
+    <display value="Unknown key identifier"/>
+    <definition value="The identifier for a patient, order, etc. was not found. Occurs for transactions other than additions."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10140"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="205"/>
+    <display value="Duplicate key identifier"/>
+    <definition value="The identifier for a patient, order, etc. already exists. Occurs in response to addition transactions (e.g. new Admit, new Order, etc.)."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10141"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="206"/>
+    <display value="Application record locked"/>
+    <definition value="The transaction could not be performed at the application storage level, e.g. database locked."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10142"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="207"/>
+    <display value="Application internal error"/>
+    <definition value="A catchall for internal errors not explicitly covered by other error codes."/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="10143"/>
+    </property>
+  </concept>
+</CodeSystem>

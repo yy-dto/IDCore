@@ -4,7 +4,7 @@
   <id value="KemkesCancerMCategory"/>
   <language value="English"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="English" lang="English"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/cancer-m-category</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">M0<a name="KemkesCancerMCategory-M0"> </a></td></tr><tr><td style="white-space:nowrap">M1<a name="KemkesCancerMCategory-M1"> </a></td></tr><tr><td style="white-space:nowrap">M1a<a name="KemkesCancerMCategory-M1a"> </a></td></tr><tr><td style="white-space:nowrap">M1b<a name="KemkesCancerMCategory-M1b"> </a></td></tr><tr><td style="white-space:nowrap">M1c<a name="KemkesCancerMCategory-M1c"> </a></td></tr><tr><td style="white-space:nowrap">MX<a name="KemkesCancerMCategory-MX"> </a></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml" xml:lang="English" lang="English"><p>This case-sensitive code system <code>http://terminology.kemkes.go.id/CodeSystem/cancer-m-category</code> defines the following codes in a Is-A hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">M0<a name="KemkesCancerMCategory-M0"> </a></td></tr><tr><td style="white-space:nowrap">M1<a name="KemkesCancerMCategory-M1"> </a></td></tr><tr><td style="white-space:nowrap">M1a<a name="KemkesCancerMCategory-M1a"> </a></td></tr><tr><td style="white-space:nowrap">M1b<a name="KemkesCancerMCategory-M1b"> </a></td></tr><tr><td style="white-space:nowrap">M1c<a name="KemkesCancerMCategory-M1c"> </a></td></tr><tr><td style="white-space:nowrap">MX<a name="KemkesCancerMCategory-MX"> </a></td></tr></table></div>
   </text>
   <url value="http://terminology.kemkes.go.id/CodeSystem/cancer-m-category"/>
   <version value="0.1.0"/>
@@ -13,12 +13,16 @@
   <status value="active"/>
   <experimental value="false"/>
   <date value="2024-02-05T00:00:00.000Z"/>
-  <publisher value="Thomas Chaidir"/>
+  <publisher value="SatuSehat"/>
   <contact>
-    <name value="Thomas Chaidir"/>
+    <name value="SatuSehat"/>
     <telecom>
       <system value="url"/>
       <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
     </telecom>
   </contact>
   <caseSensitive value="true"/>

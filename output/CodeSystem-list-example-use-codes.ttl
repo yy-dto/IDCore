@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/list-example-use-codes> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "list-example-use-codes"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/list-example-use-codes</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">alerts<a name=\"list-example-use-codes-alerts\"> </a></td><td>Alerts</td><td>A list of alerts for the patient.</td></tr><tr><td style=\"white-space:nowrap\">adverserxns<a name=\"list-example-use-codes-adverserxns\"> </a></td><td>Adverse Reactions</td><td>A list of part adverse reactions.</td></tr><tr><td style=\"white-space:nowrap\">allergies<a name=\"list-example-use-codes-allergies\"> </a></td><td>Allergies</td><td>A list of Allergies for the patient.</td></tr><tr><td style=\"white-space:nowrap\">medications<a name=\"list-example-use-codes-medications\"> </a></td><td>Medication List</td><td>A list of medication statements for the patient.</td></tr><tr><td style=\"white-space:nowrap\">problems<a name=\"list-example-use-codes-problems\"> </a></td><td>Problem List</td><td>A list of problems that the patient is known of have (or have had in the past).</td></tr><tr><td style=\"white-space:nowrap\">worklist<a name=\"list-example-use-codes-worklist\"> </a></td><td>Worklist</td><td>A list of items that constitute a set of work to be performed (typically this code would be specialized for more specific uses, such as a ward round list).</td></tr><tr><td style=\"white-space:nowrap\">waiting<a name=\"list-example-use-codes-waiting\"> </a></td><td>Waiting List</td><td>A list of items waiting for an event (perhaps a surgical patient waiting list).</td></tr><tr><td style=\"white-space:nowrap\">protocols<a name=\"list-example-use-codes-protocols\"> </a></td><td>Protocols</td><td>A set of protocols to be followed.</td></tr><tr><td style=\"white-space:nowrap\">plans<a name=\"list-example-use-codes-plans\"> </a></td><td>Care Plans</td><td>A set of care plans that apply in a particular context of care.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "fhir" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/list-example-use-codes"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1105" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ExampleUseCodesForList"] ; # 
+  fhir:title [ fhir:v "Example Use Codes for List"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-09T14:36:19-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Example use codes for the List resource - typical kinds of use."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/list-example-codes"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/list-example-codes>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "alerts" ] ;
+     fhir:display [ fhir:v "Alerts" ] ;
+     fhir:definition [ fhir:v "A list of alerts for the patient." ]
+  ] [
+     fhir:code [ fhir:v "adverserxns" ] ;
+     fhir:display [ fhir:v "Adverse Reactions" ] ;
+     fhir:definition [ fhir:v "A list of part adverse reactions." ]
+  ] [
+     fhir:code [ fhir:v "allergies" ] ;
+     fhir:display [ fhir:v "Allergies" ] ;
+     fhir:definition [ fhir:v "A list of Allergies for the patient." ]
+  ] [
+     fhir:code [ fhir:v "medications" ] ;
+     fhir:display [ fhir:v "Medication List" ] ;
+     fhir:definition [ fhir:v "A list of medication statements for the patient." ]
+  ] [
+     fhir:code [ fhir:v "problems" ] ;
+     fhir:display [ fhir:v "Problem List" ] ;
+     fhir:definition [ fhir:v "A list of problems that the patient is known of have (or have had in the past)." ]
+  ] [
+     fhir:code [ fhir:v "worklist" ] ;
+     fhir:display [ fhir:v "Worklist" ] ;
+     fhir:definition [ fhir:v "A list of items that constitute a set of work to be performed (typically this code would be specialized for more specific uses, such as a ward round list)." ]
+  ] [
+     fhir:code [ fhir:v "waiting" ] ;
+     fhir:display [ fhir:v "Waiting List" ] ;
+     fhir:definition [ fhir:v "A list of items waiting for an event (perhaps a surgical patient waiting list)." ]
+  ] [
+     fhir:code [ fhir:v "protocols" ] ;
+     fhir:display [ fhir:v "Protocols" ] ;
+     fhir:definition [ fhir:v "A set of protocols to be followed." ]
+  ] [
+     fhir:code [ fhir:v "plans" ] ;
+     fhir:display [ fhir:v "Care Plans" ] ;
+     fhir:definition [ fhir:v "A set of care plans that apply in a particular context of care." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

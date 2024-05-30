@@ -1,0 +1,186 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-CompressionAlgorithm> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-CompressionAlgorithm"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>howApplies</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-how-applies</td><td>string</td><td>Haven't a clue!</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-CompressionAlgorithm</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>howApplies</b></td><td><b>status</b></td></tr><tr><td style=\"white-space:nowrap\">BZ<a name=\"v3-CompressionAlgorithm-BZ\"> </a></td><td>bzip</td><td>bzip-2 compression format. See \\[http://www.bzip.org/\\] for more information.</td><td>23535</td><td/><td>active</td></tr><tr><td style=\"white-space:nowrap\">DF<a name=\"v3-CompressionAlgorithm-DF\"> </a></td><td>deflate</td><td>The deflate compressed data format as specified in RFC 1951 \\[http://www.ietf.org/rfc/rfc1951.txt\\].</td><td>10621</td><td>mandatory</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">GZ<a name=\"v3-CompressionAlgorithm-GZ\"> </a></td><td>gzip</td><td>A compressed data format that is compatible with the widely used GZIP utility as specified in RFC 1952 \\[http://www.ietf.org/rfc/rfc1952.txt\\] (uses the deflate algorithm).</td><td>10622</td><td>other</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">Z<a name=\"v3-CompressionAlgorithm-Z\"> </a></td><td>compress</td><td>Original UNIX compress algorithm and file format using the LZC algorithm (a variant of LZW). Patent encumbered and less efficient than deflate.</td><td>10624</td><td>deprecated</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">Z7<a name=\"v3-CompressionAlgorithm-Z7\"> </a></td><td>Z7</td><td>7z compression file format. See \\[http://www.7-zip.org/7z.html\\] for more information.</td><td>23536</td><td/><td>active</td></tr><tr><td style=\"white-space:nowrap\">ZL<a name=\"v3-CompressionAlgorithm-ZL\"> </a></td><td>zlib</td><td>A compressed data format that also uses the deflate algorithm. Specified as RFC 1950 \\[http://www.ietf.org/rfc/rfc1952.txt\\]</td><td>10623</td><td>other</td><td>active</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-CompressionAlgorithm"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.1009" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "CompressionAlgorithm"] ; # 
+  fhir:title [ fhir:v "CompressionAlgorithm"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type of compression algorithm used"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "howApplies" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-how-applies"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Haven't a clue!" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BZ" ] ;
+     fhir:display [ fhir:v "bzip" ] ;
+     fhir:definition [ fhir:v "bzip-2 compression format. See \\[http://www.bzip.org/\\] for more information." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23535" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DF" ] ;
+     fhir:display [ fhir:v "deflate" ] ;
+     fhir:definition [ fhir:v "The deflate compressed data format as specified in RFC 1951 \\[http://www.ietf.org/rfc/rfc1951.txt\\]." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10621" ]
+     ] [
+       fhir:code [ fhir:v "howApplies" ] ;
+       fhir:value [ fhir:v "mandatory" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "GZ" ] ;
+     fhir:display [ fhir:v "gzip" ] ;
+     fhir:definition [ fhir:v "A compressed data format that is compatible with the widely used GZIP utility as specified in RFC 1952 \\[http://www.ietf.org/rfc/rfc1952.txt\\] (uses the deflate algorithm)." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10622" ]
+     ] [
+       fhir:code [ fhir:v "howApplies" ] ;
+       fhir:value [ fhir:v "other" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Z" ] ;
+     fhir:display [ fhir:v "compress" ] ;
+     fhir:definition [ fhir:v "Original UNIX compress algorithm and file format using the LZC algorithm (a variant of LZW). Patent encumbered and less efficient than deflate." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10624" ]
+     ] [
+       fhir:code [ fhir:v "howApplies" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "Z7" ] ;
+     fhir:display [ fhir:v "Z7" ] ;
+     fhir:definition [ fhir:v "7z compression file format. See \\[http://www.7-zip.org/7z.html\\] for more information." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "23536" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "ZL" ] ;
+     fhir:display [ fhir:v "zlib" ] ;
+     fhir:definition [ fhir:v "A compressed data format that also uses the deflate algorithm. Specified as RFC 1950 \\[http://www.ietf.org/rfc/rfc1952.txt\\]" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10623" ]
+     ] [
+       fhir:code [ fhir:v "howApplies" ] ;
+       fhir:value [ fhir:v "other" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

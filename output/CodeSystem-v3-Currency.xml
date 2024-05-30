@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="v3-Currency"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-Currency</code> defines the following codes in a Is-A heirarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td style="white-space:nowrap">ARS<a name="v3-Currency-ARS"> </a></td><td>Argentine Peso</td><td>Argentine Peso, monetary currency of Argentina</td><td>17389</td><td>active</td></tr><tr><td style="white-space:nowrap">AUD<a name="v3-Currency-AUD"> </a></td><td>Australian Dollar</td><td>Australian Dollar, monetary currency of Australia</td><td>17390</td><td>active</td></tr><tr><td style="white-space:nowrap">BRL<a name="v3-Currency-BRL"> </a></td><td>Brazilian Real</td><td>Brazilian Real, monetary currency of Brazil</td><td>17391</td><td>active</td></tr><tr><td style="white-space:nowrap">CAD<a name="v3-Currency-CAD"> </a></td><td>Canadian Dollar</td><td>Canadian Dollar, monetary currency of Canada</td><td>17392</td><td>active</td></tr><tr><td style="white-space:nowrap">CHF<a name="v3-Currency-CHF"> </a></td><td>Swiss Franc</td><td>Swiss Franc, monetary currency of Switzerland</td><td>17410</td><td>active</td></tr><tr><td style="white-space:nowrap">CLF<a name="v3-Currency-CLF"> </a></td><td>Unidades de Formento</td><td>Unidades de Formento, monetary currency of Chile</td><td>17393</td><td>active</td></tr><tr><td style="white-space:nowrap">CNY<a name="v3-Currency-CNY"> </a></td><td>Yuan Renminbi</td><td>Yuan Renminbi, monetary currency of China</td><td>17394</td><td>active</td></tr><tr><td style="white-space:nowrap">DEM<a name="v3-Currency-DEM"> </a></td><td>Deutsche Mark</td><td>Deutsche Mark, monetary currency of Germany</td><td>17398</td><td>active</td></tr><tr><td style="white-space:nowrap">ESP<a name="v3-Currency-ESP"> </a></td><td>Spanish Peseta</td><td>Spanish Peseta, monetary currency of Spain</td><td>17409</td><td>active</td></tr><tr><td style="white-space:nowrap">EUR<a name="v3-Currency-EUR"> </a></td><td>Euro</td><td>Euro, monetary currency of European Union</td><td>17395</td><td>active</td></tr><tr><td style="white-space:nowrap">FIM<a name="v3-Currency-FIM"> </a></td><td>Markka</td><td>Markka, monetary currency of Finland</td><td>17396</td><td>active</td></tr><tr><td style="white-space:nowrap">FRF<a name="v3-Currency-FRF"> </a></td><td>French Franc</td><td>French Franc, monetary currency of France</td><td>17397</td><td>active</td></tr><tr><td style="white-space:nowrap">GBP<a name="v3-Currency-GBP"> </a></td><td>Pound Sterling</td><td>Pound Sterling, monetary currency of United Kingdom</td><td>17414</td><td>active</td></tr><tr><td style="white-space:nowrap">ILS<a name="v3-Currency-ILS"> </a></td><td>Shekel</td><td>Shekel, monetary currency of Israel</td><td>17400</td><td>active</td></tr><tr><td style="white-space:nowrap">INR<a name="v3-Currency-INR"> </a></td><td>Indian Rupee</td><td>Indian Rupee, monetary currency of India</td><td>17399</td><td>active</td></tr><tr><td style="white-space:nowrap">JPY<a name="v3-Currency-JPY"> </a></td><td>Yen</td><td>Yen, monetary currency of Japan</td><td>17401</td><td>active</td></tr><tr><td style="white-space:nowrap">KRW<a name="v3-Currency-KRW"> </a></td><td>Won</td><td>Won, monetary currency of Korea (South)</td><td>17402</td><td>active</td></tr><tr><td style="white-space:nowrap">MXN<a name="v3-Currency-MXN"> </a></td><td>Mexican Nuevo Peso</td><td>Mexican Nuevo Peso, monetary currency of Mexico</td><td>17403</td><td>active</td></tr><tr><td style="white-space:nowrap">NLG<a name="v3-Currency-NLG"> </a></td><td>Netherlands Guilder</td><td>Netherlands Guilder, monetary currency of Netherlands</td><td>17404</td><td>active</td></tr><tr><td style="white-space:nowrap">NZD<a name="v3-Currency-NZD"> </a></td><td>New Zealand Dollar</td><td>New Zealand Dollar, monetary currency of New Zealand</td><td>17405</td><td>active</td></tr><tr><td style="white-space:nowrap">PHP<a name="v3-Currency-PHP"> </a></td><td>Philippine Peso</td><td>Philippine Peso, monetary currency of Philippines</td><td>17406</td><td>active</td></tr><tr><td style="white-space:nowrap">RUR<a name="v3-Currency-RUR"> </a></td><td>Russian Ruble</td><td>Russian Ruble, monetary currency of Russian Federation</td><td>17407</td><td>active</td></tr><tr><td style="white-space:nowrap">THB<a name="v3-Currency-THB"> </a></td><td>Baht</td><td>Baht, monetary currency of Thailand</td><td>17412</td><td>active</td></tr><tr><td style="white-space:nowrap">TRL<a name="v3-Currency-TRL"> </a></td><td>Lira</td><td>Lira, monetary currency of Turkey</td><td>17413</td><td>active</td></tr><tr><td style="white-space:nowrap">TWD<a name="v3-Currency-TWD"> </a></td><td>Taiwan Dollar</td><td>Taiwan Dollar, monetary currency of Taiwan</td><td>17411</td><td>active</td></tr><tr><td style="white-space:nowrap">USD<a name="v3-Currency-USD"> </a></td><td>US Dollar</td><td>US Dollar, monetary currency of United States</td><td>17415</td><td>active</td></tr><tr><td style="white-space:nowrap">ZAR<a name="v3-Currency-ZAR"> </a></td><td>Rand</td><td>Rand, monetary currency of South Africa</td><td>17408</td><td>active</td></tr></table></div>
+  </text>
+  <url value="http://terminology.hl7.org/CodeSystem/v3-Currency"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.5.1058"/>
+  </identifier>
+  <version value="0.1.0"/>
+  <name value="Currency"/>
+  <title value="Currency"/>
+  <status value="retired"/>
+  <experimental value="false"/>
+  <date value="2019-03-20"/>
+  <publisher value="SatuSehat"/>
+  <contact>
+    <name value="SatuSehat"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://satusehat.kemkes.go.id/"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="fhir@dto.kemkes.go.id"/>
+    </telecom>
+  </contact>
+  <description value="The currency unit as defined in ISO 4217.&#xD;&#xA;&#xD;&#xA;Created prior to ISO ruling on OIDs for ISO code tables defined in ISO standards. Retired. Replaced by 1.0.4217 iso4217."/>
+  <caseSensitive value="true"/>
+  <hierarchyMeaning value="is-a"/>
+  <content value="complete"/>
+  <property>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry">
+      <valueCode value="antisymmetric"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity">
+      <valueCode value="transitive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity">
+      <valueCode value="irreflexive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind">
+      <valueCode value="Specializes"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName">
+      <valueString value="Generalizes"/>
+    </extension>
+    <code value="Specializes"/>
+    <description value="The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry">
+      <valueCode value="antisymmetric"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity">
+      <valueCode value="transitive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity">
+      <valueCode value="irreflexive"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable">
+      <valueBoolean value="true"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind">
+      <valueCode value="Generalizes"/>
+    </extension>
+    <extension url="http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName">
+      <valueString value="Specializes"/>
+    </extension>
+    <code value="Generalizes"/>
+    <description value="Inverse of Specializes.  Only included as a derived relationship."/>
+    <type value="Coding"/>
+  </property>
+  <property>
+    <code value="internalId"/>
+    <uri value="http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"/>
+    <description value="The internal identifier for the concept in the HL7 Access database repository."/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="status"/>
+    <uri value="http://hl7.org/fhir/concept-properties#status"/>
+    <description value="Designation of a concept's state. Normally is not populated unless the state is retired."/>
+    <type value="code"/>
+  </property>
+  <concept>
+    <code value="ARS"/>
+    <display value="Argentine Peso"/>
+    <definition value="Argentine Peso, monetary currency of Argentina"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17389"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="AUD"/>
+    <display value="Australian Dollar"/>
+    <definition value="Australian Dollar, monetary currency of Australia"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17390"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="BRL"/>
+    <display value="Brazilian Real"/>
+    <definition value="Brazilian Real, monetary currency of Brazil"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17391"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CAD"/>
+    <display value="Canadian Dollar"/>
+    <definition value="Canadian Dollar, monetary currency of Canada"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17392"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CHF"/>
+    <display value="Swiss Franc"/>
+    <definition value="Swiss Franc, monetary currency of Switzerland"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17410"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CLF"/>
+    <display value="Unidades de Formento"/>
+    <definition value="Unidades de Formento, monetary currency of Chile"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17393"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="CNY"/>
+    <display value="Yuan Renminbi"/>
+    <definition value="Yuan Renminbi, monetary currency of China"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17394"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="DEM"/>
+    <display value="Deutsche Mark"/>
+    <definition value="Deutsche Mark, monetary currency of Germany"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17398"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ESP"/>
+    <display value="Spanish Peseta"/>
+    <definition value="Spanish Peseta, monetary currency of Spain"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17409"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="EUR"/>
+    <display value="Euro"/>
+    <definition value="Euro, monetary currency of European Union"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17395"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="FIM"/>
+    <display value="Markka"/>
+    <definition value="Markka, monetary currency of Finland"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17396"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="FRF"/>
+    <display value="French Franc"/>
+    <definition value="French Franc, monetary currency of France"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17397"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="GBP"/>
+    <display value="Pound Sterling"/>
+    <definition value="Pound Sterling, monetary currency of United Kingdom"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17414"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ILS"/>
+    <display value="Shekel"/>
+    <definition value="Shekel, monetary currency of Israel"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17400"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="INR"/>
+    <display value="Indian Rupee"/>
+    <definition value="Indian Rupee, monetary currency of India"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17399"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="JPY"/>
+    <display value="Yen"/>
+    <definition value="Yen, monetary currency of Japan"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17401"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="KRW"/>
+    <display value="Won"/>
+    <definition value="Won, monetary currency of Korea (South)"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17402"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="MXN"/>
+    <display value="Mexican Nuevo Peso"/>
+    <definition value="Mexican Nuevo Peso, monetary currency of Mexico"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17403"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NLG"/>
+    <display value="Netherlands Guilder"/>
+    <definition value="Netherlands Guilder, monetary currency of Netherlands"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17404"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NZD"/>
+    <display value="New Zealand Dollar"/>
+    <definition value="New Zealand Dollar, monetary currency of New Zealand"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17405"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="PHP"/>
+    <display value="Philippine Peso"/>
+    <definition value="Philippine Peso, monetary currency of Philippines"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17406"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="RUR"/>
+    <display value="Russian Ruble"/>
+    <definition value="Russian Ruble, monetary currency of Russian Federation"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17407"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="THB"/>
+    <display value="Baht"/>
+    <definition value="Baht, monetary currency of Thailand"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17412"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="TRL"/>
+    <display value="Lira"/>
+    <definition value="Lira, monetary currency of Turkey"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17413"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="TWD"/>
+    <display value="Taiwan Dollar"/>
+    <definition value="Taiwan Dollar, monetary currency of Taiwan"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17411"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="USD"/>
+    <display value="US Dollar"/>
+    <definition value="US Dollar, monetary currency of United States"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17415"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="ZAR"/>
+    <display value="Rand"/>
+    <definition value="Rand, monetary currency of South Africa"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="active"/>
+    </property>
+    <property>
+      <code value="internalId"/>
+      <valueCode value="17408"/>
+    </property>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,42 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/ICD-9DualCoding> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ICD-9DualCoding"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/ICD-9DualCoding</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/ICD-9DualCoding"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.6.261" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "ICD9DualCoding"] ; # 
+  fhir:title [ fhir:v "ICD-9 Dual Coding"] ; # 
+  fhir:status [ fhir:v "retired"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2021-11-09T10:00:00+10:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "ICD-9 Dual Coding Expression Syntax\", description: ICD-9 allows dual coding. Refer to Section ?? of the ICD-9 Instruction Manual (ref?).\r\n\r\nThis OID identifies the code system that describes how to encode Dual Coding in a CD compatible expression (for Datatypes R2 CD only).\r\n\r\nAn ICD-9 dual code expression SHALL consist of two ICD-9 codes separated by space. This code system SHALL NOT be used for single ICD-9 codes; the normal ICD-9 code system oid which is 2.16.840.1.113883.6.3 should be used in this case. DisplayName SHALL not be used.\r\n\r\nDual code expressions SHALL only be used per the rules described in the ICD-9 instruction manual.\r\n\r\n**An example CD:**<br></br><example code=\"989.5 E905.9\" codeSystem=\"2.16.840.1.113883.6.261\"><br></br><originalText value=\"ANAPHYLAXIS DUE TO BITE OR STING\"/><br></br></example><br></br>Where 989.5 is: \"Toxic effect of venom\" and E905.9 is: \"Bite or sting\""] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] . # 
+
+# -------------------------------------------------------------------------------------
+

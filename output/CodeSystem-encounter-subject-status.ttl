@@ -1,0 +1,82 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/encounter-subject-status> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "encounter-subject-status"] ; # 
+  fhir:meta [
+     fhir:lastUpdated [ fhir:v "2020-04-09T21:10:28.568+00:00"^^xsd:dateTime ] ;
+     fhir:profile ( [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/shareablecodesystem>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/encounter-subject-status</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">arrived<a name=\"encounter-subject-status-arrived\"> </a></td><td>Arrived</td><td>The subject has arrived at the physical or virtual location and is ready to receive care.</td></tr><tr><td style=\"white-space:nowrap\">triaged<a name=\"encounter-subject-status-triaged\"> </a></td><td>Triaged</td><td>The subject has been seen triaged by staff and is waiting for further care.</td></tr><tr><td style=\"white-space:nowrap\">receiving-care<a name=\"encounter-subject-status-receiving-care\"> </a></td><td>Receiving Care</td><td>The subject is present and commenced receiving care.  This can include periods of waiting between care.</td></tr><tr><td style=\"white-space:nowrap\">on-leave<a name=\"encounter-subject-status-on-leave\"> </a></td><td>On Leave</td><td>The subject has left the physical or virtual location, but is expected to return and resume care as part of this encounter.</td></tr><tr><td style=\"white-space:nowrap\">departed<a name=\"encounter-subject-status-departed\"> </a></td><td>Departed</td><td>The subject has left the physical or virtual location, and is not expected to return as part of this encounter.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "pa" ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2"^^xsd:integer ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/encounter-subject-status"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.4.642.1.1420" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EncounterSubjectStatus"] ; # 
+  fhir:title [ fhir:v "Encounter subject status"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-03-09T14:36:19-07:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This example value set defines a set of codes that can be used to indicate the status of the subject within the encounter"] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://terminology.hl7.org/ValueSet/encounter-subject-status"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/ValueSet/encounter-subject-status>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "arrived" ] ;
+     fhir:display [ fhir:v "Arrived" ] ;
+     fhir:definition [ fhir:v "The subject has arrived at the physical or virtual location and is ready to receive care." ]
+  ] [
+     fhir:code [ fhir:v "triaged" ] ;
+     fhir:display [ fhir:v "Triaged" ] ;
+     fhir:definition [ fhir:v "The subject has been seen triaged by staff and is waiting for further care." ]
+  ] [
+     fhir:code [ fhir:v "receiving-care" ] ;
+     fhir:display [ fhir:v "Receiving Care" ] ;
+     fhir:definition [ fhir:v "The subject is present and commenced receiving care.  This can include periods of waiting between care." ]
+  ] [
+     fhir:code [ fhir:v "on-leave" ] ;
+     fhir:display [ fhir:v "On Leave" ] ;
+     fhir:definition [ fhir:v "The subject has left the physical or virtual location, but is expected to return and resume care as part of this encounter." ]
+  ] [
+     fhir:code [ fhir:v "departed" ] ;
+     fhir:display [ fhir:v "Departed" ] ;
+     fhir:definition [ fhir:v "The subject has left the physical or virtual location, and is not expected to return as part of this encounter." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

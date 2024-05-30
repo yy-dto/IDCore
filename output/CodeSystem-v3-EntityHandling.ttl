@@ -1,0 +1,301 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://fhir.kemkes.go.id/r4/CodeSystem/v3-EntityHandling> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "v3-EntityHandling"] ; # 
+  fhir:language [ fhir:v "en"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>Specializes</td><td/><td>Coding</td><td>The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric.</td></tr><tr><td>Generalizes</td><td/><td>Coding</td><td>Inverse of Specializes.  Only included as a derived relationship.</td></tr><tr><td>internalId</td><td>http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id</td><td>code</td><td>The internal identifier for the concept in the HL7 Access database repository.</td></tr><tr><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>Designation of a concept's state. Normally is not populated unless the state is retired.</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://terminology.hl7.org/CodeSystem/v3-EntityHandling</code> defines the following codes in a Is-A heirarchy:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>internalId</b></td><td><b>status</b></td></tr><tr><td style=\"white-space:nowrap\">AMB<a name=\"v3-EntityHandling-AMB\"> </a></td><td>Ambient Temperature</td><td>Keep at ambient temperature, 22 +/- 2C</td><td>10394</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">C37<a name=\"v3-EntityHandling-C37\"> </a></td><td>Body Temperature</td><td>Critical to keep at body temperature 36-38C</td><td>10395</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">CAMB<a name=\"v3-EntityHandling-CAMB\"> </a></td><td>Critical Ambient temperature</td><td>Critical ambient - must not be refrigerated or frozen.</td><td>14405</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">CATM<a name=\"v3-EntityHandling-CATM\"> </a></td><td>Protect from Air</td><td>Critical. Do not expose to atmosphere. Do not uncap.</td><td>14409</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">CFRZ<a name=\"v3-EntityHandling-CFRZ\"> </a></td><td>Critical frozen</td><td>Critical frozen. Specimen must not be allowed to thaw until immediately prior to testing.</td><td>14407</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">CREF<a name=\"v3-EntityHandling-CREF\"> </a></td><td>Critical refrigerated temperature</td><td>Critical refrigerated - must not be allowed to freeze or warm until imediately prior to testing.</td><td>14406</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">DFRZ<a name=\"v3-EntityHandling-DFRZ\"> </a></td><td>Deep Frozen</td><td>Deep Frozen -16 to -20C.</td><td>10398</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">DRY<a name=\"v3-EntityHandling-DRY\"> </a></td><td>dry</td><td>Keep in a dry environment</td><td>10400</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">FRZ<a name=\"v3-EntityHandling-FRZ\"> </a></td><td>frozen</td><td>Keep frozen below 0 ?C</td><td>10397</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">MTLF<a name=\"v3-EntityHandling-MTLF\"> </a></td><td>Metal Free</td><td>Container is free of heavy metals, including lead.</td><td>14410</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">NTR<a name=\"v3-EntityHandling-NTR\"> </a></td><td>nitrogen</td><td>Keep in liquid nitrogen</td><td>10399</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">PRTL<a name=\"v3-EntityHandling-PRTL\"> </a></td><td>Protect from Light</td><td>Protect from light (eg. Wrap in aluminum foil).</td><td>10401</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">PSA<a name=\"v3-EntityHandling-PSA\"> </a></td><td>do not shake</td><td>Do not shake</td><td>10404</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">PSO<a name=\"v3-EntityHandling-PSO\"> </a></td><td>no shock</td><td>Protect against shock</td><td>10402</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">REF<a name=\"v3-EntityHandling-REF\"> </a></td><td>Refrigerated temperature</td><td>Keep at refrigerated temperature:4-8C Accidental warming or freezing is of little consequence.</td><td>10396</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">SBU<a name=\"v3-EntityHandling-SBU\"> </a></td><td>Shake before use</td><td>Shake thoroughly before using</td><td>14393</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">UFRZ<a name=\"v3-EntityHandling-UFRZ\"> </a></td><td>Ultra frozen</td><td>Ultra cold frozen -75 to -85C. Ultra cold freezer is typically at temperature of dry ice.</td><td>14408</td><td>active</td></tr><tr><td style=\"white-space:nowrap\">UPR<a name=\"v3-EntityHandling-UPR\"> </a></td><td>upright</td><td>Keep upright, do not turn upside down</td><td>10403</td><td>active</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-EntityHandling"^^xsd:anyURI] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "urn:ietf:rfc:3986"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "urn:oid:2.16.840.1.113883.5.42" ]
+  ] ) ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "EntityHandling"] ; # 
+  fhir:title [ fhir:v "EntityHandling"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2019-03-20"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "SatuSehat"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "SatuSehat" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://satusehat.kemkes.go.id/" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "fhir@dto.kemkes.go.id" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Special handling requirements for an Entity.\r\n\r\n*Example:*Keep at room temperature; Keep frozen below 0 C; Keep in a dry environment; Keep upright, do not turn upside down."] ; # 
+  fhir:copyright [ fhir:v "This material derives from the HL7 Terminology THO. THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: https://terminology.hl7.org/license"] ; # 
+  fhir:caseSensitive [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:hierarchyMeaning [ fhir:v "is-a"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:property ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Specializes" ] ;
+     fhir:description [ fhir:v "The child code is a more narrow version of the concept represented by the parent code.  I.e. Every child concept is also a valid parent concept.  Used to allow determination of subsumption.  Must be transitive, irreflexive, antisymmetric." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-symmetry"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "antisymmetric" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-transitivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "transitive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-reflexivity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "irreflexive" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-isNavigable"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-relationshipKind"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Generalizes" ]
+     ] [
+       fhir:url [ fhir:v "http://terminology.hl7.org/StructureDefinition/ext-mif-relationship-inverseName"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Specializes" ]
+     ] ) ;
+     fhir:code [ fhir:v "Generalizes" ] ;
+     fhir:description [ fhir:v "Inverse of Specializes.  Only included as a derived relationship." ] ;
+     fhir:type [ fhir:v "Coding" ]
+  ] [
+     fhir:code [ fhir:v "internalId" ] ;
+     fhir:uri [ fhir:v "http://terminology.hl7.org/CodeSystem/utg-concept-properties#v3-internal-id"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "The internal identifier for the concept in the HL7 Access database repository." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "status" ] ;
+     fhir:uri [ fhir:v "http://hl7.org/fhir/concept-properties#status"^^xsd:anyURI ] ;
+     fhir:description [ fhir:v "Designation of a concept's state. Normally is not populated unless the state is retired." ] ;
+     fhir:type [ fhir:v "code" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "AMB" ] ;
+     fhir:display [ fhir:v "Ambient Temperature" ] ;
+     fhir:definition [ fhir:v "Keep at ambient temperature, 22 +/- 2C" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10394" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "C37" ] ;
+     fhir:display [ fhir:v "Body Temperature" ] ;
+     fhir:definition [ fhir:v "Critical to keep at body temperature 36-38C" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10395" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "CAMB" ] ;
+     fhir:display [ fhir:v "Critical Ambient temperature" ] ;
+     fhir:definition [ fhir:v "Critical ambient - must not be refrigerated or frozen." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "14405" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "CATM" ] ;
+     fhir:display [ fhir:v "Protect from Air" ] ;
+     fhir:definition [ fhir:v "Critical. Do not expose to atmosphere. Do not uncap." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "14409" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "CFRZ" ] ;
+     fhir:display [ fhir:v "Critical frozen" ] ;
+     fhir:definition [ fhir:v "Critical frozen. Specimen must not be allowed to thaw until immediately prior to testing." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "14407" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "CREF" ] ;
+     fhir:display [ fhir:v "Critical refrigerated temperature" ] ;
+     fhir:definition [ fhir:v "Critical refrigerated - must not be allowed to freeze or warm until imediately prior to testing." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "14406" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DFRZ" ] ;
+     fhir:display [ fhir:v "Deep Frozen" ] ;
+     fhir:definition [ fhir:v "Deep Frozen -16 to -20C." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10398" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "DRY" ] ;
+     fhir:display [ fhir:v "dry" ] ;
+     fhir:definition [ fhir:v "Keep in a dry environment" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10400" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "FRZ" ] ;
+     fhir:display [ fhir:v "frozen" ] ;
+     fhir:definition [ fhir:v "Keep frozen below 0 ?C" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10397" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "MTLF" ] ;
+     fhir:display [ fhir:v "Metal Free" ] ;
+     fhir:definition [ fhir:v "Container is free of heavy metals, including lead." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "14410" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NTR" ] ;
+     fhir:display [ fhir:v "nitrogen" ] ;
+     fhir:definition [ fhir:v "Keep in liquid nitrogen" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10399" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "PRTL" ] ;
+     fhir:display [ fhir:v "Protect from Light" ] ;
+     fhir:definition [ fhir:v "Protect from light (eg. Wrap in aluminum foil)." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10401" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "PSA" ] ;
+     fhir:display [ fhir:v "do not shake" ] ;
+     fhir:definition [ fhir:v "Do not shake" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10404" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "PSO" ] ;
+     fhir:display [ fhir:v "no shock" ] ;
+     fhir:definition [ fhir:v "Protect against shock" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10402" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "REF" ] ;
+     fhir:display [ fhir:v "Refrigerated temperature" ] ;
+     fhir:definition [ fhir:v "Keep at refrigerated temperature:4-8C Accidental warming or freezing is of little consequence." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10396" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "SBU" ] ;
+     fhir:display [ fhir:v "Shake before use" ] ;
+     fhir:definition [ fhir:v "Shake thoroughly before using" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "14393" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "UFRZ" ] ;
+     fhir:display [ fhir:v "Ultra frozen" ] ;
+     fhir:definition [ fhir:v "Ultra cold frozen -75 to -85C. Ultra cold freezer is typically at temperature of dry ice." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "14408" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "UPR" ] ;
+     fhir:display [ fhir:v "upright" ] ;
+     fhir:definition [ fhir:v "Keep upright, do not turn upside down" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] [
+       fhir:code [ fhir:v "internalId" ] ;
+       fhir:value [ fhir:v "10403" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+
