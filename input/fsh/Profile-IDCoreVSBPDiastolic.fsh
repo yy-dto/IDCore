@@ -21,6 +21,7 @@ Description: "Profile for diastolic blood pressure value."
 * code.coding[BPCode].code only code
 * code.coding[BPCode].code = #8462-4  (exactly)
 * code.coding[BPCode].display ^short = "Diastolic blood pressure"
+* valueQuantity obeys dias-ele-1
 * valueQuantity 1..1
 * valueQuantity only Quantity
 * valueQuantity.value 1..1 MS

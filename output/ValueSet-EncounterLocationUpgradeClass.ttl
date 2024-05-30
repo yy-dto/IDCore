@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "EncounterLocationUpgradeClass"] ; # 
   fhir:title [ fhir:v "Encounter Location Upgrade Class"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-05-29T21:39:03+07:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-05-30T10:41:30+07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "SatuSehat"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "SatuSehat" ] ;

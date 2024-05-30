@@ -21,6 +21,7 @@ Description: "Profile for systolic blood pressure value."
 * code.coding[BPCode].code only code
 * code.coding[BPCode].code = #8480-6 (exactly)
 * code.coding[BPCode].display ^short = "Systolic blood pressure"
+* valueQuantity obeys sys-ele-1
 * valueQuantity 1..1
 * valueQuantity only Quantity
 * valueQuantity.value 1..1 MS

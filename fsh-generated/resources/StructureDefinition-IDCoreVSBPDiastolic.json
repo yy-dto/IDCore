@@ -82,6 +82,16 @@
           {
             "code": "Quantity"
           }
+        ],
+        "constraint": [
+          {
+            "key": "dias-ele-1",
+            "human": "Observation value should be between 0 - 450 #mm[Hg]",
+            "source": "http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-diastolic",
+            "severity": "error",
+            "expression": "Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450",
+            "xpath": "@value|f:*|h:div"
+          }
         ]
       },
       {

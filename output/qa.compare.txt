@@ -1,7 +1,7 @@
 IDCore : Validation Results
 =========================================
 
-err = 5698, warn = 2947, info = 500
+err = 5700, warn = 2947, info = 500
 $--
 Generated $--. FHIR version $-- for hl7.fhir.id.core#$-- (canonical = https://fhir.kemkes.go.id/r4)
  Build Errors : 852 / 17 / 0
@@ -51,8 +51,8 @@ Generated $--. FHIR version $-- for hl7.fhir.id.core#$-- (canonical = https://fh
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreObservationVitalSigns : 5 / 1 / 1
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCorePatient : 7 / 1 / 1
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCorePractitioner : 7 / 1 / 1
- C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreVSBPDiastolic : 3 / 1 / 1
- C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreVSBPSystolic : 3 / 1 / 1
+ C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreVSBPDiastolic : 4 / 1 / 1
+ C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreVSBPSystolic : 4 / 1 / 1
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\ValueSet-EncounterLocationServiceClassExtension : 2 / 2 / 2
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\ValueSet-EncounterLocationServiceClassInpatient : 2 / 2 / 1
  C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\ValueSet-EncounterLocationServiceClassOutpatient : 2 / 2 / 1
@@ -3937,11 +3937,13 @@ ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdict
 WARNING: StructureDefinition.where(url = 'https://fhir.kemkes.go.id/r4/StructureDefinition/IDCorePractitioner'): The Implementation Guide contains no examples for this profile
 == fsh-generated\resources\StructureDefinition-IDCoreVSBPDiastolic.json ==
 ERROR: StructureDefinition.where(url = 'http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-diastolic'): Conformance resource C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreVSBPDiastolic.json - the canonical URL (https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreVSBPDiastolic) does not match the URL (http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-diastolic)
+ERROR: StructureDefinition/IDCoreVSBPDiastolic: StructureDefinition.snapshot.element[45].constraint[1]: Error in constraint 'dias-ele-1' with expression 'Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450': Error evaluating FHIRPath expression: The name 'Observation' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Quantity] (@char 7)
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.id.core, jurisdiction = urn:iso:std:iso:3166#ID) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#ID "null"')
 WARNING: StructureDefinition.where(url = 'http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-diastolic'): The Implementation Guide contains no examples for this profile
 ERROR: C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreVSBPDiastolic: URL Mismatch https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreVSBPDiastolic vs http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-diastolic
 == fsh-generated\resources\StructureDefinition-IDCoreVSBPSystolic.json ==
 ERROR: StructureDefinition.where(url = 'http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-systolic'): Conformance resource C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreVSBPSystolic.json - the canonical URL (https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreVSBPSystolic) does not match the URL (http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-systolic)
+ERROR: StructureDefinition/IDCoreVSBPSystolic: StructureDefinition.snapshot.element[45].constraint[1]: Error in constraint 'sys-ele-1' with expression 'Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450': Error evaluating FHIRPath expression: The name 'Observation' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Quantity] (@char 7)
 ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.id.core, jurisdiction = urn:iso:std:iso:3166#ID) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#ID "null"')
 WARNING: StructureDefinition.where(url = 'http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-systolic'): The Implementation Guide contains no examples for this profile
 ERROR: C:\Users\yukey\Documents\work\fhir_ig\ig-test\IDCore\fsh-generated\resources\StructureDefinition-IDCoreVSBPSystolic: URL Mismatch https://fhir.kemkes.go.id/r4/StructureDefinition/IDCoreVSBPSystolic vs http://terminology.kemkes.go.id/vitals/StructureDefinition/vs-bp-systolic

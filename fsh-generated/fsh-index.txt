@@ -44,8 +44,8 @@ StructureDefinition-IDCoreObservation.json               IDCoreObservation      
 StructureDefinition-IDCoreObservationVitalSigns.json     IDCoreObservationVitalSigns               Profile     Profile-IDCoreObservationVitalSigns.fsh                            13 - 39
 StructureDefinition-IDCorePatient.json                   IDCorePatient                             Profile     Profile-IDCorePatient.fsh                                          4 - 35
 StructureDefinition-IDCorePractitioner.json              IDCorePractitioner                        Profile     Profile-IDCorePractitioner.fsh                                     4 - 29
-StructureDefinition-IDCoreVSBPDiastolic.json             IDCoreVSBPDiastolic                       Profile     Profile-IDCoreVSBPDiastolic.fsh                                    3 - 36
-StructureDefinition-IDCoreVSBPSystolic.json              IDCoreVSBPSystolic                        Profile     Profile-IDCoreVSBPSystolic.fsh                                     3 - 36
+StructureDefinition-IDCoreVSBPDiastolic.json             IDCoreVSBPDiastolic                       Profile     Profile-IDCoreVSBPDiastolic.fsh                                    3 - 37
+StructureDefinition-IDCoreVSBPSystolic.json              IDCoreVSBPSystolic                        Profile     Profile-IDCoreVSBPSystolic.fsh                                     3 - 37
 ValueSet-EncounterLocationServiceClassExtension.json     EncounterLocationServiceClassExtension    ValueSet    ValueSet-KemkesEncounterLocationServiceClassExtension.fsh          1 - 6
 ValueSet-EncounterLocationServiceClassInpatient.json     EncounterLocationServiceClassInpatient    ValueSet    ValueSet-KemkesEncounterLocationServiceClass-Inpatient.fsh         1 - 5
 ValueSet-EncounterLocationServiceClassOutpatient.json    EncounterLocationServiceClassOutpatient   ValueSet    ValueSet-KemkesEncounterLocationServiceClass-Outpatient.fsh        1 - 5
