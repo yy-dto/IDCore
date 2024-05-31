@@ -3,40 +3,39 @@
   "id": "AddressExtension",
   "extension": [
     {
-      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode",
       "extension": [
         {
-          "url": "province",
-          "valueCode": "74"
+          "url": "province"
         },
         {
-          "url": "city",
-          "valueCode": "3"
+          "url": "city"
         },
         {
-          "url": "district",
-          "valueCode": "26"
+          "url": "district"
         },
         {
-          "url": "village",
-          "valueCode": "1008"
+          "url": "village"
         },
         {
-          "url": "rw",
-          "valueCode": "1"
+          "url": "rw"
         },
         {
-          "url": "rt",
-          "valueCode": "1"
+          "url": "rt"
         }
       ]
     }
   ],
   "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension",
   "name": "AddressExtension",
-  "title": "Address administrative code extension",
   "status": "active",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

@@ -29,6 +29,33 @@
   "status": "active",
   "description": "ID Core Patient profile",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "loinc",
+      "uri": "http://loinc.org",
+      "name": "LOINC code for the element"
+    }
+  ],
   "kind": "resource",
   "abstract": false,
   "type": "Patient",
@@ -112,15 +139,6 @@
             "code": "boolean"
           }
         ]
-      },
-      {
-        "id": "Patient.address",
-        "extension": [
-          {
-            "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode"
-          }
-        ],
-        "path": "Patient.address"
       },
       {
         "id": "Patient.address.extension",

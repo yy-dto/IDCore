@@ -1,21 +1,15 @@
 Extension: AddressExtension
-Title: "Address administrative code extension"
+Id: AddressExtension
 Context: Patient.address, Practitioner.address
-* ^url = "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension"
-* ^extension.url = "https://fhir.kemkes.go.id/r4/StructureDefinition/administrativeCode"
+* url = "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension" (exactly)
 * ^extension.extension[0].url = "province"
-* ^extension.extension[=].valueCode = #74
 * ^extension.extension[+].url = "city"
-* ^extension.extension[=].valueCode = #3
 * ^extension.extension[+].url = "district"
-* ^extension.extension[=].valueCode = #26
 * ^extension.extension[+].url = "village"
-* ^extension.extension[=].valueCode = #1008
 * ^extension.extension[+].url = "rw"
-* ^extension.extension[=].valueCode = #1
 * ^extension.extension[+].url = "rt"
-* ^extension.extension[=].valueCode = #1
 * . ^short = "Patient address administrative code extention"
+* extension 4..*
 * extension contains 
     province 1..1 and
     city 1..1 and
@@ -41,4 +35,3 @@ Context: Patient.address, Practitioner.address
 * extension[rt].url 1..1
 * extension[rt].value[x] 1..1
 * extension[rt].value[x] only code
-* url = "https://fhir.kemkes.go.id/r4/StructureDefinition/AddressExtension" (exactly)

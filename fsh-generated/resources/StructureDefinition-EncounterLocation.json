@@ -3,38 +3,47 @@
   "id": "EncounterLocation",
   "extension": [
     {
-      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass",
       "extension": [
         {
-          "url": "value",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "reguler",
-                "system": "http://terminology.kemkes.go.id/CodeSystem/locationServiceClass-Outpatient"
-              }
-            ]
-          }
+          "url": "value"
         },
         {
-          "url": "upgradeClassIndicator",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "kelas-tetap",
-                "system": "http://terminology.kemkes.go.id/CodeSystem/locationUpgradeClass"
-              }
-            ]
-          }
+          "url": "upgradeClassIndicator"
+        }
+      ],
+      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/ServiceClass"
+    }
+  ],
+  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation",
+  "version": "0.1.0",
+  "name": "EncounterLocation",
+  "title": "Encounter Location Extention",
+  "status": "active",
+  "date": "2024-05-30T10:41:30+07:00",
+  "publisher": "SatuSehat",
+  "contact": [
+    {
+      "name": "SatuSehat",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://satusehat.kemkes.go.id/"
+        },
+        {
+          "system": "email",
+          "value": "fhir@dto.kemkes.go.id"
         }
       ]
     }
   ],
-  "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/EncounterLocation",
-  "name": "EncounterLocation",
-  "title": "Encounter Location Extention",
-  "status": "active",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [
@@ -56,41 +65,28 @@
       {
         "id": "Extension.extension",
         "path": "Extension.extension",
-        "min": 1
+        "min": 2
       },
       {
-        "id": "Extension.extension:serviceClass",
+        "id": "Extension.extension:locationServiceClass",
         "path": "Extension.extension",
-        "sliceName": "serviceClass",
-        "min": 1,
-        "max": "1"
-      },
-      {
-        "id": "Extension.extension:serviceClass.extension",
-        "path": "Extension.extension.extension",
-        "min": 2,
-        "max": "2"
-      },
-      {
-        "id": "Extension.extension:serviceClass.extension:locationServiceClass",
-        "path": "Extension.extension.extension",
         "sliceName": "locationServiceClass",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:serviceClass.extension:locationServiceClass.extension",
-        "path": "Extension.extension.extension.extension",
+        "id": "Extension.extension:locationServiceClass.extension",
+        "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:serviceClass.extension:locationServiceClass.url",
-        "path": "Extension.extension.extension.url",
+        "id": "Extension.extension:locationServiceClass.url",
+        "path": "Extension.extension.url",
         "fixedUri": "locationServiceClass"
       },
       {
-        "id": "Extension.extension:serviceClass.extension:locationServiceClass.value[x]",
-        "path": "Extension.extension.extension.value[x]",
+        "id": "Extension.extension:locationServiceClass.value[x]",
+        "path": "Extension.extension.value[x]",
         "min": 1,
         "type": [
           {
@@ -103,25 +99,25 @@
         }
       },
       {
-        "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator",
-        "path": "Extension.extension.extension",
+        "id": "Extension.extension:upgradeClassIndicator",
+        "path": "Extension.extension",
         "sliceName": "upgradeClassIndicator",
         "min": 1,
         "max": "1"
       },
       {
-        "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator.extension",
-        "path": "Extension.extension.extension.extension",
+        "id": "Extension.extension:upgradeClassIndicator.extension",
+        "path": "Extension.extension.extension",
         "max": "0"
       },
       {
-        "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator.url",
-        "path": "Extension.extension.extension.url",
+        "id": "Extension.extension:upgradeClassIndicator.url",
+        "path": "Extension.extension.url",
         "fixedUri": "upgradeClassIndicator"
       },
       {
-        "id": "Extension.extension:serviceClass.extension:upgradeClassIndicator.value[x]",
-        "path": "Extension.extension.extension.value[x]",
+        "id": "Extension.extension:upgradeClassIndicator.value[x]",
+        "path": "Extension.extension.value[x]",
         "min": 1,
         "type": [
           {
@@ -132,16 +128,6 @@
           "strength": "required",
           "valueSet": "http://terminology.kemkes.go.id/ValueSet/locationUpgradeClass"
         }
-      },
-      {
-        "id": "Extension.extension:serviceClass.url",
-        "path": "Extension.extension.url",
-        "fixedUri": "serviceClass"
-      },
-      {
-        "id": "Extension.extension:serviceClass.value[x]",
-        "path": "Extension.extension.value[x]",
-        "max": "0"
       },
       {
         "id": "Extension.url",

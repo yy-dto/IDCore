@@ -3776,7 +3776,7 @@
         "reference": {
           "reference": "StructureDefinition/AddressExtension"
         },
-        "name": "Address administrative code extension",
+        "name": "AddressExtension",
         "exampleBoolean": false
       },
       {

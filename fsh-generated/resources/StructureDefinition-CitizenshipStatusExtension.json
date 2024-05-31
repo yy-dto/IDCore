@@ -1,17 +1,18 @@
 {
   "resourceType": "StructureDefinition",
   "id": "CitizenshipStatusExtension",
-  "extension": [
-    {
-      "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/citizenshipStatus",
-      "valueCode": "WNI"
-    }
-  ],
   "url": "https://fhir.kemkes.go.id/r4/StructureDefinition/CitizenshipStatusExtension",
   "name": "CitizenshipStatusExtension",
   "title": "Patient citizenship status extension",
   "status": "active",
   "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
   "kind": "complex-type",
   "abstract": false,
   "context": [

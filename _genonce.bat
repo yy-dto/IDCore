@@ -10,7 +10,7 @@ GOTO igpublish
 
 :isonline
 ECHO We're online
-SET txoption=2048m
+SET txoption=3072m
 
 :igpublish
 

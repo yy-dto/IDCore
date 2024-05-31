@@ -244,8 +244,8 @@
     "fshName": "IDCoreEncounter",
     "fshType": "Instance",
     "fshFile": "Profile-IDCoreEncounter.fsh",
-    "startLine": 47,
-    "endLine": 67
+    "startLine": 43,
+    "endLine": 63
   },
   {
     "outputFile": "Encounter-IDCoreEncounterEMER.json",
@@ -269,7 +269,7 @@
     "fshType": "Extension",
     "fshFile": "Extension-AddressExtension.fsh",
     "startLine": 1,
-    "endLine": 44
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-CitizenshipStatusExtension.json",
@@ -277,7 +277,7 @@
     "fshType": "Extension",
     "fshFile": "Extension-CitizenshipStatusExtension.fsh",
     "startLine": 1,
-    "endLine": 12
+    "endLine": 10
   },
   {
     "outputFile": "StructureDefinition-EncounterLocation.json",
@@ -285,7 +285,7 @@
     "fshType": "Extension",
     "fshFile": "Extension-EncounterLocation.fsh",
     "startLine": 7,
-    "endLine": 29
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-IDCoreCondition.json",
@@ -301,7 +301,7 @@
     "fshType": "Profile",
     "fshFile": "Profile-IDCoreEncounter.fsh",
     "startLine": 9,
-    "endLine": 45
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-IDCoreEncounterEMER.json",
@@ -349,7 +349,7 @@
     "fshType": "Profile",
     "fshFile": "Profile-IDCorePatient.fsh",
     "startLine": 4,
-    "endLine": 35
+    "endLine": 34
   },
   {
     "outputFile": "StructureDefinition-IDCorePractitioner.json",

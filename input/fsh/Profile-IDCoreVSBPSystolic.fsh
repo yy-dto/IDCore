@@ -39,5 +39,5 @@ Description: "Profile for systolic blood pressure value."
 Invariant: sys-ele-1
 Description: "Observation value should be between 0 - 450 #mm[Hg]"
 * severity = #error
-* expression = "Observation.value.as(Quantity).value >= 0 and Observation.value.as(Quantity).value <= 450"
+* expression = "value.as(Quantity).value >= 0 and value.as(Quantity).value <= 450"
 * xpath = "@value|f:*|h:div"
